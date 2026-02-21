@@ -1,0 +1,1837 @@
+{
+  "run_start": "2026-02-21T21:35:45.609168",
+  "run_end": "2026-02-21T21:36:00.801561",
+  "run_duration_s": 15.192,
+  "api_keys": {
+    "Google": {
+      "status": "✅ Válida",
+      "total_models": 42,
+      "models_gemini3": [
+        "models/gemini-3-pro-preview",
+        "models/gemini-3-flash-preview",
+        "models/gemini-3.1-pro-preview",
+        "models/gemini-3.1-pro-preview-customtools",
+        "models/gemini-3-pro-image-preview"
+      ],
+      "models": [
+        "models/gemini-2.5-flash",
+        "models/gemini-2.5-pro",
+        "models/gemini-2.0-flash",
+        "models/gemini-2.0-flash-001",
+        "models/gemini-2.0-flash-lite-001",
+        "models/gemini-2.0-flash-lite",
+        "models/gemini-2.5-flash-preview-tts",
+        "models/gemini-2.5-pro-preview-tts",
+        "models/gemma-3-1b-it",
+        "models/gemma-3-4b-it",
+        "models/gemma-3-12b-it",
+        "models/gemma-3-27b-it",
+        "models/gemma-3n-e4b-it",
+        "models/gemma-3n-e2b-it",
+        "models/gemini-flash-latest",
+        "models/gemini-flash-lite-latest",
+        "models/gemini-pro-latest",
+        "models/gemini-2.5-flash-lite",
+        "models/gemini-2.5-flash-image",
+        "models/gemini-2.5-flash-lite-preview-09-2025",
+        "models/gemini-3-pro-preview",
+        "models/gemini-3-flash-preview",
+        "models/gemini-3.1-pro-preview",
+        "models/gemini-3.1-pro-preview-customtools",
+        "models/gemini-3-pro-image-preview",
+        "models/nano-banana-pro-preview",
+        "models/gemini-robotics-er-1.5-preview",
+        "models/gemini-2.5-computer-use-preview-10-2025",
+        "models/deep-research-pro-preview-12-2025",
+        "models/gemini-embedding-001",
+        "models/aqa",
+        "models/imagen-4.0-generate-001",
+        "models/imagen-4.0-ultra-generate-001",
+        "models/imagen-4.0-fast-generate-001",
+        "models/veo-2.0-generate-001",
+        "models/veo-3.0-generate-001",
+        "models/veo-3.0-fast-generate-001",
+        "models/veo-3.1-generate-preview",
+        "models/veo-3.1-fast-generate-preview",
+        "models/gemini-2.5-flash-native-audio-latest",
+        "models/gemini-2.5-flash-native-audio-preview-09-2025",
+        "models/gemini-2.5-flash-native-audio-preview-12-2025"
+      ],
+      "models_detail": [
+        {
+          "name": "models/gemini-2.5-flash",
+          "display_name": "Gemini 2.5 Flash",
+          "description": "Stable version of Gemini 2.5 Flash, our mid-size multimodal model that supports …",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-2.5-pro",
+          "display_name": "Gemini 2.5 Pro",
+          "description": "Stable release (June 17th, 2025) of Gemini 2.5 Pro",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-2.0-flash",
+          "display_name": "Gemini 2.0 Flash",
+          "description": "Gemini 2.0 Flash",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemini-2.0-flash-001",
+          "display_name": "Gemini 2.0 Flash 001",
+          "description": "Stable version of Gemini 2.0 Flash, our fast and versatile multimodal model for …",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemini-2.0-flash-lite-001",
+          "display_name": "Gemini 2.0 Flash-Lite 001",
+          "description": "Stable version of Gemini 2.0 Flash-Lite",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemini-2.0-flash-lite",
+          "display_name": "Gemini 2.0 Flash-Lite",
+          "description": "Gemini 2.0 Flash-Lite",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemini-2.5-flash-preview-tts",
+          "display_name": "Gemini 2.5 Flash Preview TTS",
+          "description": "Gemini 2.5 Flash Preview TTS",
+          "methods": [
+            "countTokens",
+            "generateContent"
+          ],
+          "input_limit": 8192,
+          "output_limit": 16384
+        },
+        {
+          "name": "models/gemini-2.5-pro-preview-tts",
+          "display_name": "Gemini 2.5 Pro Preview TTS",
+          "description": "Gemini 2.5 Pro Preview TTS",
+          "methods": [
+            "countTokens",
+            "generateContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 8192,
+          "output_limit": 16384
+        },
+        {
+          "name": "models/gemma-3-1b-it",
+          "display_name": "Gemma 3 1B",
+          "description": "",
+          "methods": [
+            "generateContent",
+            "countTokens"
+          ],
+          "input_limit": 32768,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemma-3-4b-it",
+          "display_name": "Gemma 3 4B",
+          "description": "",
+          "methods": [
+            "generateContent",
+            "countTokens"
+          ],
+          "input_limit": 32768,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemma-3-12b-it",
+          "display_name": "Gemma 3 12B",
+          "description": "",
+          "methods": [
+            "generateContent",
+            "countTokens"
+          ],
+          "input_limit": 32768,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemma-3-27b-it",
+          "display_name": "Gemma 3 27B",
+          "description": "",
+          "methods": [
+            "generateContent",
+            "countTokens"
+          ],
+          "input_limit": 131072,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemma-3n-e4b-it",
+          "display_name": "Gemma 3n E4B",
+          "description": "",
+          "methods": [
+            "generateContent",
+            "countTokens"
+          ],
+          "input_limit": 8192,
+          "output_limit": 2048
+        },
+        {
+          "name": "models/gemma-3n-e2b-it",
+          "display_name": "Gemma 3n E2B",
+          "description": "",
+          "methods": [
+            "generateContent",
+            "countTokens"
+          ],
+          "input_limit": 8192,
+          "output_limit": 2048
+        },
+        {
+          "name": "models/gemini-flash-latest",
+          "display_name": "Gemini Flash Latest",
+          "description": "Latest release of Gemini Flash",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-flash-lite-latest",
+          "display_name": "Gemini Flash-Lite Latest",
+          "description": "Latest release of Gemini Flash-Lite",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-pro-latest",
+          "display_name": "Gemini Pro Latest",
+          "description": "Latest release of Gemini Pro",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-2.5-flash-lite",
+          "display_name": "Gemini 2.5 Flash-Lite",
+          "description": "Stable version of Gemini 2.5 Flash-Lite, released in July of 2025",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-2.5-flash-image",
+          "display_name": "Nano Banana",
+          "description": "Gemini 2.5 Flash Preview Image",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "batchGenerateContent"
+          ],
+          "input_limit": 32768,
+          "output_limit": 32768
+        },
+        {
+          "name": "models/gemini-2.5-flash-lite-preview-09-2025",
+          "display_name": "Gemini 2.5 Flash-Lite Preview Sep 2025",
+          "description": "Preview release (Septempber 25th, 2025) of Gemini 2.5 Flash-Lite",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-3-pro-preview",
+          "display_name": "Gemini 3 Pro Preview",
+          "description": "Gemini 3 Pro Preview",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-3-flash-preview",
+          "display_name": "Gemini 3 Flash Preview",
+          "description": "Gemini 3 Flash Preview",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-3.1-pro-preview",
+          "display_name": "Gemini 3.1 Pro Preview",
+          "description": "Gemini 3.1 Pro Preview",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-3.1-pro-preview-customtools",
+          "display_name": "Gemini 3.1 Pro Preview Custom Tools",
+          "description": "Gemini 3.1 Pro Preview optimized for custom tool usage",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "createCachedContent",
+            "batchGenerateContent"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-3-pro-image-preview",
+          "display_name": "Nano Banana Pro",
+          "description": "Gemini 3 Pro Image Preview",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "batchGenerateContent"
+          ],
+          "input_limit": 131072,
+          "output_limit": 32768
+        },
+        {
+          "name": "models/nano-banana-pro-preview",
+          "display_name": "Nano Banana Pro",
+          "description": "Gemini 3 Pro Image Preview",
+          "methods": [
+            "generateContent",
+            "countTokens",
+            "batchGenerateContent"
+          ],
+          "input_limit": 131072,
+          "output_limit": 32768
+        },
+        {
+          "name": "models/gemini-robotics-er-1.5-preview",
+          "display_name": "Gemini Robotics-ER 1.5 Preview",
+          "description": "Gemini Robotics-ER 1.5 Preview",
+          "methods": [
+            "generateContent",
+            "countTokens"
+          ],
+          "input_limit": 1048576,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-2.5-computer-use-preview-10-2025",
+          "display_name": "Gemini 2.5 Computer Use Preview 10-2025",
+          "description": "Gemini 2.5 Computer Use Preview 10-2025",
+          "methods": [
+            "generateContent",
+            "countTokens"
+          ],
+          "input_limit": 131072,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/deep-research-pro-preview-12-2025",
+          "display_name": "Deep Research Pro Preview (Dec-12-2025)",
+          "description": "Preview release (December 12th, 2025) of Deep Research Pro",
+          "methods": [
+            "generateContent",
+            "countTokens"
+          ],
+          "input_limit": 131072,
+          "output_limit": 65536
+        },
+        {
+          "name": "models/gemini-embedding-001",
+          "display_name": "Gemini Embedding 001",
+          "description": "Obtain a distributed representation of a text.",
+          "methods": [
+            "embedContent",
+            "countTextTokens",
+            "countTokens",
+            "asyncBatchEmbedContent"
+          ],
+          "input_limit": 2048,
+          "output_limit": 1
+        },
+        {
+          "name": "models/aqa",
+          "display_name": "Model that performs Attributed Question Answering.",
+          "description": "Model trained to return answers to questions that are grounded in provided sourc…",
+          "methods": [
+            "generateAnswer"
+          ],
+          "input_limit": 7168,
+          "output_limit": 1024
+        },
+        {
+          "name": "models/imagen-4.0-generate-001",
+          "display_name": "Imagen 4",
+          "description": "Vertex served Imagen 4.0 model",
+          "methods": [
+            "predict"
+          ],
+          "input_limit": 480,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/imagen-4.0-ultra-generate-001",
+          "display_name": "Imagen 4 Ultra",
+          "description": "Vertex served Imagen 4.0 ultra model",
+          "methods": [
+            "predict"
+          ],
+          "input_limit": 480,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/imagen-4.0-fast-generate-001",
+          "display_name": "Imagen 4 Fast",
+          "description": "Vertex served Imagen 4.0 Fast model",
+          "methods": [
+            "predict"
+          ],
+          "input_limit": 480,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/veo-2.0-generate-001",
+          "display_name": "Veo 2",
+          "description": "Vertex served Veo 2 model. Access to this model requires billing to be enabled o…",
+          "methods": [
+            "predictLongRunning"
+          ],
+          "input_limit": 480,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/veo-3.0-generate-001",
+          "display_name": "Veo 3",
+          "description": "Veo 3",
+          "methods": [
+            "predictLongRunning"
+          ],
+          "input_limit": 480,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/veo-3.0-fast-generate-001",
+          "display_name": "Veo 3 fast",
+          "description": "Veo 3 fast",
+          "methods": [
+            "predictLongRunning"
+          ],
+          "input_limit": 480,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/veo-3.1-generate-preview",
+          "display_name": "Veo 3.1",
+          "description": "Veo 3.1",
+          "methods": [
+            "predictLongRunning"
+          ],
+          "input_limit": 480,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/veo-3.1-fast-generate-preview",
+          "display_name": "Veo 3.1 fast",
+          "description": "Veo 3.1 fast",
+          "methods": [
+            "predictLongRunning"
+          ],
+          "input_limit": 480,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemini-2.5-flash-native-audio-latest",
+          "display_name": "Gemini 2.5 Flash Native Audio Latest",
+          "description": "Latest release of Gemini 2.5 Flash Native Audio",
+          "methods": [
+            "countTokens",
+            "bidiGenerateContent"
+          ],
+          "input_limit": 131072,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemini-2.5-flash-native-audio-preview-09-2025",
+          "display_name": "Gemini 2.5 Flash Native Audio Preview 09-2025",
+          "description": "Gemini 2.5 Flash Native Audio Preview 09-2025",
+          "methods": [
+            "countTokens",
+            "bidiGenerateContent"
+          ],
+          "input_limit": 131072,
+          "output_limit": 8192
+        },
+        {
+          "name": "models/gemini-2.5-flash-native-audio-preview-12-2025",
+          "display_name": "Gemini 2.5 Flash Native Audio Preview 12-2025",
+          "description": "Gemini 2.5 Flash Native Audio Preview 12-2025",
+          "methods": [
+            "countTokens",
+            "bidiGenerateContent"
+          ],
+          "input_limit": 131072,
+          "output_limit": 8192
+        }
+      ],
+      "credits": "⚠️  Não exposto via SDK — ver console.cloud.google.com"
+    },
+    "OpenAI": {
+      "status": "✅ Válida",
+      "total_models": 119,
+      "models": [
+        "gpt-5.2-codex",
+        "chatgpt-image-latest",
+        "gpt-audio-mini-2025-12-15",
+        "gpt-realtime-mini-2025-12-15",
+        "gpt-4o-mini-tts-2025-12-15",
+        "gpt-4o-mini-tts-2025-03-20",
+        "gpt-4o-mini-transcribe-2025-03-20",
+        "gpt-4o-mini-transcribe-2025-12-15",
+        "gpt-5.2-chat-latest",
+        "gpt-5.2-pro",
+        "gpt-5.2-pro-2025-12-11",
+        "gpt-5.2",
+        "gpt-5.2-2025-12-11",
+        "gpt-image-1.5",
+        "gpt-5.1-codex-max",
+        "gpt-5.1-codex-mini",
+        "gpt-5.1-codex",
+        "gpt-5.1",
+        "gpt-5.1-2025-11-13",
+        "gpt-5.1-chat-latest",
+        "gpt-5-search-api-2025-10-14",
+        "sora-2-pro",
+        "sora-2",
+        "gpt-realtime-mini-2025-10-06",
+        "gpt-realtime-mini",
+        "gpt-5-search-api",
+        "gpt-audio-mini-2025-10-06",
+        "gpt-audio-mini",
+        "gpt-5-pro",
+        "gpt-5-pro-2025-10-06",
+        "gpt-image-1-mini",
+        "gpt-5-codex",
+        "gpt-audio",
+        "gpt-realtime-2025-08-28",
+        "gpt-realtime",
+        "gpt-audio-2025-08-28",
+        "gpt-5-nano",
+        "gpt-5-nano-2025-08-07",
+        "gpt-5-mini",
+        "gpt-5-mini-2025-08-07",
+        "gpt-5",
+        "gpt-5-2025-08-07",
+        "gpt-5-chat-latest",
+        "o4-mini-deep-research-2025-06-26",
+        "o3-deep-research-2025-06-26",
+        "gpt-4o-transcribe-diarize",
+        "o3-deep-research",
+        "o4-mini-deep-research",
+        "o3-pro-2025-06-10",
+        "gpt-4o-audio-preview-2025-06-03",
+        "gpt-4o-realtime-preview-2025-06-03",
+        "o3-pro",
+        "gpt-image-1",
+        "gpt-4.1-nano",
+        "gpt-4.1-nano-2025-04-14",
+        "gpt-4.1-mini",
+        "gpt-4.1-mini-2025-04-14",
+        "gpt-4.1",
+        "gpt-4.1-2025-04-14",
+        "o4-mini",
+        "o3",
+        "o4-mini-2025-04-16",
+        "o3-2025-04-16",
+        "gpt-4o-mini-tts",
+        "o1-pro",
+        "o1-pro-2025-03-19",
+        "gpt-4o-mini-transcribe",
+        "gpt-4o-transcribe",
+        "gpt-4o-mini-search-preview",
+        "gpt-4o-mini-search-preview-2025-03-11",
+        "gpt-4o-search-preview",
+        "gpt-4o-search-preview-2025-03-11",
+        "computer-use-preview-2025-03-11",
+        "gpt-4o-2024-11-20",
+        "o3-mini-2025-01-31",
+        "o3-mini",
+        "computer-use-preview",
+        "gpt-4o-mini-audio-preview",
+        "gpt-4o-mini-realtime-preview",
+        "o1",
+        "o1-2024-12-17",
+        "gpt-4o-mini-audio-preview-2024-12-17",
+        "gpt-4o-mini-realtime-preview-2024-12-17",
+        "gpt-4o-audio-preview-2024-12-17",
+        "gpt-4o-realtime-preview-2024-12-17",
+        "omni-moderation-2024-09-26",
+        "omni-moderation-latest",
+        "gpt-4o-realtime-preview",
+        "gpt-4o-audio-preview",
+        "gpt-4o-2024-08-06",
+        "gpt-4o-mini",
+        "gpt-4o-mini-2024-07-18",
+        "gpt-4o-2024-05-13",
+        "gpt-4o",
+        "gpt-4-turbo-2024-04-09",
+        "gpt-4-turbo",
+        "gpt-3.5-turbo-0125",
+        "gpt-4-turbo-preview",
+        "gpt-4-0125-preview",
+        "text-embedding-3-large",
+        "text-embedding-3-small",
+        "tts-1-hd-1106",
+        "tts-1-1106",
+        "tts-1-hd",
+        "gpt-3.5-turbo-1106",
+        "gpt-4-1106-preview",
+        "dall-e-2",
+        "dall-e-3",
+        "gpt-3.5-turbo-instruct-0914",
+        "gpt-3.5-turbo-instruct",
+        "babbage-002",
+        "davinci-002",
+        "gpt-4",
+        "gpt-4-0613",
+        "gpt-3.5-turbo-16k",
+        "tts-1",
+        "gpt-3.5-turbo",
+        "whisper-1",
+        "text-embedding-ada-002"
+      ],
+      "models_detail": [
+        {
+          "id": "gpt-5.2-codex",
+          "display": "gpt-5.2-codex",
+          "category": "Other",
+          "created_at": "2025-12-19",
+          "owned_by": "system"
+        },
+        {
+          "id": "chatgpt-image-latest",
+          "display": "ChatGPT Image",
+          "category": "Specialized",
+          "created_at": "2025-12-16",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-audio-mini-2025-12-15",
+          "display": "gpt-audio-mini-2025-12-15",
+          "category": "Other",
+          "created_at": "2025-12-15",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-realtime-mini-2025-12-15",
+          "display": "gpt-realtime-mini-2025-12-15",
+          "category": "Other",
+          "created_at": "2025-12-13",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-tts-2025-12-15",
+          "display": "gpt-4o-mini-tts-2025-12-15",
+          "category": "Other",
+          "created_at": "2025-12-13",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-tts-2025-03-20",
+          "display": "gpt-4o-mini-tts-2025-03-20",
+          "category": "Other",
+          "created_at": "2025-12-13",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-transcribe-2025-03-20",
+          "display": "gpt-4o-mini-transcribe-2025-03-20",
+          "category": "Other",
+          "created_at": "2025-12-13",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-transcribe-2025-12-15",
+          "display": "gpt-4o-mini-transcribe-2025-12-15",
+          "category": "Other",
+          "created_at": "2025-12-13",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.2-chat-latest",
+          "display": "gpt-5.2-chat-latest",
+          "category": "Other",
+          "created_at": "2025-12-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.2-pro",
+          "display": "GPT-5.2 Pro",
+          "category": "Frontier",
+          "created_at": "2025-12-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.2-pro-2025-12-11",
+          "display": "gpt-5.2-pro-2025-12-11",
+          "category": "Other",
+          "created_at": "2025-12-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.2",
+          "display": "GPT-5.2",
+          "category": "Frontier",
+          "created_at": "2025-12-09",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.2-2025-12-11",
+          "display": "gpt-5.2-2025-12-11",
+          "category": "Other",
+          "created_at": "2025-12-09",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-image-1.5",
+          "display": "GPT Image 1.5",
+          "category": "Specialized",
+          "created_at": "2025-11-25",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.1-codex-max",
+          "display": "gpt-5.1-codex-max",
+          "category": "Other",
+          "created_at": "2025-11-20",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.1-codex-mini",
+          "display": "gpt-5.1-codex-mini",
+          "category": "Other",
+          "created_at": "2025-11-13",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.1-codex",
+          "display": "gpt-5.1-codex",
+          "category": "Other",
+          "created_at": "2025-11-12",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.1",
+          "display": "GPT-5.1",
+          "category": "Frontier",
+          "created_at": "2025-11-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.1-2025-11-13",
+          "display": "gpt-5.1-2025-11-13",
+          "category": "Other",
+          "created_at": "2025-11-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5.1-chat-latest",
+          "display": "gpt-5.1-chat-latest",
+          "category": "Other",
+          "created_at": "2025-11-07",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-search-api-2025-10-14",
+          "display": "gpt-5-search-api-2025-10-14",
+          "category": "Other",
+          "created_at": "2025-10-09",
+          "owned_by": "system"
+        },
+        {
+          "id": "sora-2-pro",
+          "display": "Sora 2 Pro",
+          "category": "Specialized",
+          "created_at": "2025-10-05",
+          "owned_by": "system"
+        },
+        {
+          "id": "sora-2",
+          "display": "Sora 2",
+          "category": "Specialized",
+          "created_at": "2025-10-05",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-realtime-mini-2025-10-06",
+          "display": "gpt-realtime-mini-2025-10-06",
+          "category": "Other",
+          "created_at": "2025-10-03",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-realtime-mini",
+          "display": "GPT Realtime mini",
+          "category": "Realtime",
+          "created_at": "2025-10-03",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-search-api",
+          "display": "gpt-5-search-api",
+          "category": "Other",
+          "created_at": "2025-10-03",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-audio-mini-2025-10-06",
+          "display": "gpt-audio-mini-2025-10-06",
+          "category": "Other",
+          "created_at": "2025-10-03",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-audio-mini",
+          "display": "GPT Audio mini",
+          "category": "Realtime",
+          "created_at": "2025-10-03",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-pro",
+          "display": "gpt-5-pro",
+          "category": "Other",
+          "created_at": "2025-10-03",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-pro-2025-10-06",
+          "display": "gpt-5-pro-2025-10-06",
+          "category": "Other",
+          "created_at": "2025-10-03",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-image-1-mini",
+          "display": "GPT Image 1 mini",
+          "category": "Specialized",
+          "created_at": "2025-09-26",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-codex",
+          "display": "gpt-5-codex",
+          "category": "Other",
+          "created_at": "2025-09-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-audio",
+          "display": "GPT Audio",
+          "category": "Realtime",
+          "created_at": "2025-08-28",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-realtime-2025-08-28",
+          "display": "gpt-realtime-2025-08-28",
+          "category": "Other",
+          "created_at": "2025-08-27",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-realtime",
+          "display": "GPT Realtime",
+          "category": "Realtime",
+          "created_at": "2025-08-27",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-audio-2025-08-28",
+          "display": "gpt-audio-2025-08-28",
+          "category": "Other",
+          "created_at": "2025-08-27",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-nano",
+          "display": "GPT-5 nano",
+          "category": "Frontier",
+          "created_at": "2025-08-05",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-nano-2025-08-07",
+          "display": "gpt-5-nano-2025-08-07",
+          "category": "Other",
+          "created_at": "2025-08-05",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-mini",
+          "display": "GPT-5 mini",
+          "category": "Frontier",
+          "created_at": "2025-08-05",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-mini-2025-08-07",
+          "display": "gpt-5-mini-2025-08-07",
+          "category": "Other",
+          "created_at": "2025-08-05",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5",
+          "display": "GPT-5",
+          "category": "Frontier",
+          "created_at": "2025-08-05",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-2025-08-07",
+          "display": "gpt-5-2025-08-07",
+          "category": "Other",
+          "created_at": "2025-08-01",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-5-chat-latest",
+          "display": "gpt-5-chat-latest",
+          "category": "Other",
+          "created_at": "2025-08-01",
+          "owned_by": "system"
+        },
+        {
+          "id": "o4-mini-deep-research-2025-06-26",
+          "display": "o4-mini-deep-research-2025-06-26",
+          "category": "Other",
+          "created_at": "2025-06-25",
+          "owned_by": "system"
+        },
+        {
+          "id": "o3-deep-research-2025-06-26",
+          "display": "o3-deep-research-2025-06-26",
+          "category": "Other",
+          "created_at": "2025-06-25",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-transcribe-diarize",
+          "display": "gpt-4o-transcribe-diarize",
+          "category": "Other",
+          "created_at": "2025-06-24",
+          "owned_by": "system"
+        },
+        {
+          "id": "o3-deep-research",
+          "display": "o3 Deep Research",
+          "category": "Specialized",
+          "created_at": "2025-06-13",
+          "owned_by": "system"
+        },
+        {
+          "id": "o4-mini-deep-research",
+          "display": "o4-mini Deep Research",
+          "category": "Specialized",
+          "created_at": "2025-06-11",
+          "owned_by": "system"
+        },
+        {
+          "id": "o3-pro-2025-06-10",
+          "display": "o3-pro-2025-06-10",
+          "category": "Other",
+          "created_at": "2025-06-05",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-audio-preview-2025-06-03",
+          "display": "gpt-4o-audio-preview-2025-06-03",
+          "category": "Other",
+          "created_at": "2025-06-02",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-realtime-preview-2025-06-03",
+          "display": "gpt-4o-realtime-preview-2025-06-03",
+          "category": "Other",
+          "created_at": "2025-06-02",
+          "owned_by": "system"
+        },
+        {
+          "id": "o3-pro",
+          "display": "o3-pro",
+          "category": "Reasoning",
+          "created_at": "2025-05-28",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-image-1",
+          "display": "GPT Image 1",
+          "category": "Specialized",
+          "created_at": "2025-04-24",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4.1-nano",
+          "display": "GPT-4.1 nano",
+          "category": "Frontier",
+          "created_at": "2025-04-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4.1-nano-2025-04-14",
+          "display": "gpt-4.1-nano-2025-04-14",
+          "category": "Other",
+          "created_at": "2025-04-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4.1-mini",
+          "display": "GPT-4.1 mini",
+          "category": "Frontier",
+          "created_at": "2025-04-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4.1-mini-2025-04-14",
+          "display": "gpt-4.1-mini-2025-04-14",
+          "category": "Other",
+          "created_at": "2025-04-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4.1",
+          "display": "GPT-4.1",
+          "category": "Frontier",
+          "created_at": "2025-04-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4.1-2025-04-14",
+          "display": "gpt-4.1-2025-04-14",
+          "category": "Other",
+          "created_at": "2025-04-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "o4-mini",
+          "display": "o4-mini",
+          "category": "Reasoning",
+          "created_at": "2025-04-09",
+          "owned_by": "system"
+        },
+        {
+          "id": "o3",
+          "display": "o3",
+          "category": "Reasoning",
+          "created_at": "2025-04-09",
+          "owned_by": "system"
+        },
+        {
+          "id": "o4-mini-2025-04-16",
+          "display": "o4-mini-2025-04-16",
+          "category": "Other",
+          "created_at": "2025-04-08",
+          "owned_by": "system"
+        },
+        {
+          "id": "o3-2025-04-16",
+          "display": "o3-2025-04-16",
+          "category": "Other",
+          "created_at": "2025-04-08",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-tts",
+          "display": "GPT-4o mini TTS",
+          "category": "Specialized",
+          "created_at": "2025-03-19",
+          "owned_by": "system"
+        },
+        {
+          "id": "o1-pro",
+          "display": "o1-pro",
+          "category": "Reasoning",
+          "created_at": "2025-03-17",
+          "owned_by": "system"
+        },
+        {
+          "id": "o1-pro-2025-03-19",
+          "display": "o1-pro-2025-03-19",
+          "category": "Other",
+          "created_at": "2025-03-17",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-transcribe",
+          "display": "GPT-4o mini Transcribe",
+          "category": "Specialized",
+          "created_at": "2025-03-15",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-transcribe",
+          "display": "GPT-4o Transcribe",
+          "category": "Specialized",
+          "created_at": "2025-03-15",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-search-preview",
+          "display": "gpt-4o-mini-search-preview",
+          "category": "Other",
+          "created_at": "2025-03-07",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-search-preview-2025-03-11",
+          "display": "gpt-4o-mini-search-preview-2025-03-11",
+          "category": "Other",
+          "created_at": "2025-03-07",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-search-preview",
+          "display": "gpt-4o-search-preview",
+          "category": "Other",
+          "created_at": "2025-03-07",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-search-preview-2025-03-11",
+          "display": "gpt-4o-search-preview-2025-03-11",
+          "category": "Other",
+          "created_at": "2025-03-07",
+          "owned_by": "system"
+        },
+        {
+          "id": "computer-use-preview-2025-03-11",
+          "display": "computer-use-preview-2025-03-11",
+          "category": "Other",
+          "created_at": "2025-03-07",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-2024-11-20",
+          "display": "gpt-4o-2024-11-20",
+          "category": "Other",
+          "created_at": "2025-02-12",
+          "owned_by": "system"
+        },
+        {
+          "id": "o3-mini-2025-01-31",
+          "display": "o3-mini-2025-01-31",
+          "category": "Other",
+          "created_at": "2025-01-27",
+          "owned_by": "system"
+        },
+        {
+          "id": "o3-mini",
+          "display": "o3-mini",
+          "category": "Reasoning",
+          "created_at": "2025-01-17",
+          "owned_by": "system"
+        },
+        {
+          "id": "computer-use-preview",
+          "display": "computer-use-preview",
+          "category": "Other",
+          "created_at": "2024-12-20",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-audio-preview",
+          "display": "gpt-4o-mini-audio-preview",
+          "category": "Other",
+          "created_at": "2024-12-16",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-realtime-preview",
+          "display": "gpt-4o-mini-realtime-preview",
+          "category": "Other",
+          "created_at": "2024-12-16",
+          "owned_by": "system"
+        },
+        {
+          "id": "o1",
+          "display": "o1",
+          "category": "Reasoning",
+          "created_at": "2024-12-16",
+          "owned_by": "system"
+        },
+        {
+          "id": "o1-2024-12-17",
+          "display": "o1-2024-12-17",
+          "category": "Other",
+          "created_at": "2024-12-16",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-audio-preview-2024-12-17",
+          "display": "gpt-4o-mini-audio-preview-2024-12-17",
+          "category": "Other",
+          "created_at": "2024-12-13",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-realtime-preview-2024-12-17",
+          "display": "gpt-4o-mini-realtime-preview-2024-12-17",
+          "category": "Other",
+          "created_at": "2024-12-13",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-audio-preview-2024-12-17",
+          "display": "gpt-4o-audio-preview-2024-12-17",
+          "category": "Other",
+          "created_at": "2024-12-12",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-realtime-preview-2024-12-17",
+          "display": "gpt-4o-realtime-preview-2024-12-17",
+          "category": "Other",
+          "created_at": "2024-12-11",
+          "owned_by": "system"
+        },
+        {
+          "id": "omni-moderation-2024-09-26",
+          "display": "omni-moderation-2024-09-26",
+          "category": "Other",
+          "created_at": "2024-11-27",
+          "owned_by": "system"
+        },
+        {
+          "id": "omni-moderation-latest",
+          "display": "omni-moderation-latest",
+          "category": "Other",
+          "created_at": "2024-11-15",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-realtime-preview",
+          "display": "gpt-4o-realtime-preview",
+          "category": "Other",
+          "created_at": "2024-09-30",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-audio-preview",
+          "display": "gpt-4o-audio-preview",
+          "category": "Other",
+          "created_at": "2024-09-27",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-2024-08-06",
+          "display": "gpt-4o-2024-08-06",
+          "category": "Other",
+          "created_at": "2024-08-04",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini",
+          "display": "GPT-4o mini",
+          "category": "Legacy",
+          "created_at": "2024-07-16",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-mini-2024-07-18",
+          "display": "gpt-4o-mini-2024-07-18",
+          "category": "Other",
+          "created_at": "2024-07-16",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o-2024-05-13",
+          "display": "gpt-4o-2024-05-13",
+          "category": "Other",
+          "created_at": "2024-05-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4o",
+          "display": "GPT-4o",
+          "category": "Legacy",
+          "created_at": "2024-05-10",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4-turbo-2024-04-09",
+          "display": "gpt-4-turbo-2024-04-09",
+          "category": "Other",
+          "created_at": "2024-04-08",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4-turbo",
+          "display": "GPT-4 Turbo",
+          "category": "Legacy",
+          "created_at": "2024-04-05",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-3.5-turbo-0125",
+          "display": "gpt-3.5-turbo-0125",
+          "category": "Other",
+          "created_at": "2024-01-23",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4-turbo-preview",
+          "display": "gpt-4-turbo-preview",
+          "category": "Other",
+          "created_at": "2024-01-23",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4-0125-preview",
+          "display": "gpt-4-0125-preview",
+          "category": "Other",
+          "created_at": "2024-01-23",
+          "owned_by": "system"
+        },
+        {
+          "id": "text-embedding-3-large",
+          "display": "text-embedding-3-large",
+          "category": "Other",
+          "created_at": "2024-01-22",
+          "owned_by": "system"
+        },
+        {
+          "id": "text-embedding-3-small",
+          "display": "text-embedding-3-small",
+          "category": "Other",
+          "created_at": "2024-01-22",
+          "owned_by": "system"
+        },
+        {
+          "id": "tts-1-hd-1106",
+          "display": "tts-1-hd-1106",
+          "category": "Other",
+          "created_at": "2023-11-03",
+          "owned_by": "system"
+        },
+        {
+          "id": "tts-1-1106",
+          "display": "tts-1-1106",
+          "category": "Other",
+          "created_at": "2023-11-03",
+          "owned_by": "system"
+        },
+        {
+          "id": "tts-1-hd",
+          "display": "tts-1-hd",
+          "category": "Other",
+          "created_at": "2023-11-03",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-3.5-turbo-1106",
+          "display": "gpt-3.5-turbo-1106",
+          "category": "Other",
+          "created_at": "2023-11-02",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4-1106-preview",
+          "display": "gpt-4-1106-preview",
+          "category": "Other",
+          "created_at": "2023-11-02",
+          "owned_by": "system"
+        },
+        {
+          "id": "dall-e-2",
+          "display": "dall-e-2",
+          "category": "Other",
+          "created_at": "2023-11-01",
+          "owned_by": "system"
+        },
+        {
+          "id": "dall-e-3",
+          "display": "dall-e-3",
+          "category": "Other",
+          "created_at": "2023-10-31",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-3.5-turbo-instruct-0914",
+          "display": "gpt-3.5-turbo-instruct-0914",
+          "category": "Other",
+          "created_at": "2023-09-07",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-3.5-turbo-instruct",
+          "display": "gpt-3.5-turbo-instruct",
+          "category": "Other",
+          "created_at": "2023-08-24",
+          "owned_by": "system"
+        },
+        {
+          "id": "babbage-002",
+          "display": "babbage-002",
+          "category": "Other",
+          "created_at": "2023-08-21",
+          "owned_by": "system"
+        },
+        {
+          "id": "davinci-002",
+          "display": "davinci-002",
+          "category": "Other",
+          "created_at": "2023-08-21",
+          "owned_by": "system"
+        },
+        {
+          "id": "gpt-4",
+          "display": "GPT-4",
+          "category": "Legacy",
+          "created_at": "2023-06-27",
+          "owned_by": "openai"
+        },
+        {
+          "id": "gpt-4-0613",
+          "display": "gpt-4-0613",
+          "category": "Other",
+          "created_at": "2023-06-12",
+          "owned_by": "openai"
+        },
+        {
+          "id": "gpt-3.5-turbo-16k",
+          "display": "gpt-3.5-turbo-16k",
+          "category": "Other",
+          "created_at": "2023-05-10",
+          "owned_by": "openai-internal"
+        },
+        {
+          "id": "tts-1",
+          "display": "tts-1",
+          "category": "Other",
+          "created_at": "2023-04-19",
+          "owned_by": "openai-internal"
+        },
+        {
+          "id": "gpt-3.5-turbo",
+          "display": "GPT-3.5 Turbo",
+          "category": "Legacy",
+          "created_at": "2023-02-28",
+          "owned_by": "openai"
+        },
+        {
+          "id": "whisper-1",
+          "display": "whisper-1",
+          "category": "Other",
+          "created_at": "2023-02-27",
+          "owned_by": "openai-internal"
+        },
+        {
+          "id": "text-embedding-ada-002",
+          "display": "text-embedding-ada-002",
+          "category": "Other",
+          "created_at": "2022-12-16",
+          "owned_by": "openai-internal"
+        }
+      ],
+      "credits": "⚠️  Ver: https://platform.openai.com/account/usage"
+    },
+    "Anthropic": {
+      "status": "✅ Válida",
+      "total_models": 9,
+      "models": [
+        "claude-sonnet-4-6",
+        "claude-opus-4-6",
+        "claude-opus-4-5-20251101",
+        "claude-haiku-4-5-20251001",
+        "claude-sonnet-4-5-20250929",
+        "claude-opus-4-1-20250805",
+        "claude-opus-4-20250514",
+        "claude-sonnet-4-20250514",
+        "claude-3-haiku-20240307"
+      ],
+      "models_detail": [
+        {
+          "id": "claude-sonnet-4-6",
+          "display_name": "Claude Sonnet 4.6",
+          "created_at": "2026-02-17 00:00:00+00:00",
+          "type": "model"
+        },
+        {
+          "id": "claude-opus-4-6",
+          "display_name": "Claude Opus 4.6",
+          "created_at": "2026-02-04 00:00:00+00:00",
+          "type": "model"
+        },
+        {
+          "id": "claude-opus-4-5-20251101",
+          "display_name": "Claude Opus 4.5",
+          "created_at": "2025-11-24 00:00:00+00:00",
+          "type": "model"
+        },
+        {
+          "id": "claude-haiku-4-5-20251001",
+          "display_name": "Claude Haiku 4.5",
+          "created_at": "2025-10-15 00:00:00+00:00",
+          "type": "model"
+        },
+        {
+          "id": "claude-sonnet-4-5-20250929",
+          "display_name": "Claude Sonnet 4.5",
+          "created_at": "2025-09-29 00:00:00+00:00",
+          "type": "model"
+        },
+        {
+          "id": "claude-opus-4-1-20250805",
+          "display_name": "Claude Opus 4.1",
+          "created_at": "2025-08-05 00:00:00+00:00",
+          "type": "model"
+        },
+        {
+          "id": "claude-opus-4-20250514",
+          "display_name": "Claude Opus 4",
+          "created_at": "2025-05-22 00:00:00+00:00",
+          "type": "model"
+        },
+        {
+          "id": "claude-sonnet-4-20250514",
+          "display_name": "Claude Sonnet 4",
+          "created_at": "2025-05-22 00:00:00+00:00",
+          "type": "model"
+        },
+        {
+          "id": "claude-3-haiku-20240307",
+          "display_name": "Claude Haiku 3",
+          "created_at": "2024-03-07 00:00:00+00:00",
+          "type": "model"
+        }
+      ],
+      "credits": "⚠️  Ver: https://console.anthropic.com"
+    },
+    "xAI": {
+      "status": "✅ Válida",
+      "total_models": 13,
+      "models": [
+        "grok-2-vision-1212",
+        "grok-3",
+        "grok-3-mini",
+        "grok-4-0709",
+        "grok-4-1-fast-non-reasoning",
+        "grok-4-1-fast-reasoning",
+        "grok-4-fast-non-reasoning",
+        "grok-4-fast-reasoning",
+        "grok-code-fast-1",
+        "grok-2-image-1212",
+        "grok-imagine-image",
+        "grok-imagine-image-pro",
+        "grok-imagine-video"
+      ],
+      "models_detail": [
+        {
+          "id": "grok-2-vision-1212",
+          "context": 32768,
+          "input_usd": 2.0,
+          "output_usd": 10.0,
+          "type": "language"
+        },
+        {
+          "id": "grok-3",
+          "context": 131072,
+          "input_usd": 3.0,
+          "output_usd": 15.0,
+          "type": "language"
+        },
+        {
+          "id": "grok-3-mini",
+          "context": 131072,
+          "input_usd": 0.3,
+          "output_usd": 0.5,
+          "type": "language"
+        },
+        {
+          "id": "grok-4-0709",
+          "context": 256000,
+          "input_usd": 3.0,
+          "output_usd": 15.0,
+          "type": "language"
+        },
+        {
+          "id": "grok-4-1-fast-non-reasoning",
+          "context": 2000000,
+          "input_usd": 0.2,
+          "output_usd": 0.5,
+          "type": "language"
+        },
+        {
+          "id": "grok-4-1-fast-reasoning",
+          "context": 2000000,
+          "input_usd": 0.2,
+          "output_usd": 0.5,
+          "type": "language"
+        },
+        {
+          "id": "grok-4-fast-non-reasoning",
+          "context": 2000000,
+          "input_usd": 0.2,
+          "output_usd": 0.5,
+          "type": "language"
+        },
+        {
+          "id": "grok-4-fast-reasoning",
+          "context": 2000000,
+          "input_usd": 0.2,
+          "output_usd": 0.5,
+          "type": "language"
+        },
+        {
+          "id": "grok-code-fast-1",
+          "context": 256000,
+          "input_usd": 0.2,
+          "output_usd": 1.5,
+          "type": "language"
+        },
+        {
+          "id": "grok-2-image-1212",
+          "context": "?",
+          "input_usd": "?",
+          "output_usd": "?",
+          "type": "image/video"
+        },
+        {
+          "id": "grok-imagine-image",
+          "context": "?",
+          "input_usd": "?",
+          "output_usd": "?",
+          "type": "image/video"
+        },
+        {
+          "id": "grok-imagine-image-pro",
+          "context": "?",
+          "input_usd": "?",
+          "output_usd": "?",
+          "type": "image/video"
+        },
+        {
+          "id": "grok-imagine-video",
+          "context": "?",
+          "input_usd": "?",
+          "output_usd": "?",
+          "type": "image/video"
+        }
+      ],
+      "credits": "⚠️  Ver: https://console.x.ai"
+    },
+    "Perplexity": {
+      "status": "✅ Key definida",
+      "total_models": 4,
+      "models": [
+        "sonar",
+        "sonar-pro",
+        "sonar-reasoning-pro",
+        "sonar-deep-research"
+      ],
+      "models_detail": [
+        {
+          "id": "sonar",
+          "category": "Search",
+          "context": 200000,
+          "input": 1.0,
+          "output": 1.0,
+          "req": 0.005
+        },
+        {
+          "id": "sonar-pro",
+          "category": "Search",
+          "context": 200000,
+          "input": 3.0,
+          "output": 15.0,
+          "req": 0.005
+        },
+        {
+          "id": "sonar-reasoning-pro",
+          "category": "Reasoning",
+          "context": 130000,
+          "input": 2.0,
+          "output": 8.0,
+          "req": 0.005
+        },
+        {
+          "id": "sonar-deep-research",
+          "category": "Research",
+          "context": 128000,
+          "input": 2.0,
+          "output": 8.0,
+          "req": 0.005
+        }
+      ],
+      "credits": "⚠️  Ver: https://www.perplexity.ai/settings/api"
+    },
+    "HuggingFace": {
+      "status": "✅ Válida",
+      "username": "dpolonia",
+      "account_type": "user",
+      "plan": "?",
+      "top_text_gen_models": [
+        "Qwen/Qwen2.5-7B-Instruct",
+        "Qwen/Qwen3-0.6B",
+        "openai-community/gpt2",
+        "Qwen/Qwen2.5-1.5B-Instruct",
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "Qwen/Qwen2.5-0.5B-Instruct",
+        "openai/gpt-oss-20b",
+        "Qwen/Qwen2.5-3B-Instruct",
+        "Qwen/Qwen3-8B",
+        "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5"
+      ],
+      "credits": "⚠️  Ver: https://huggingface.co/settings/billing"
+    }
+  },
+  "calls": [
+    {
+      "provider": "Google",
+      "model": "models/gemini-3-flash-preview",
+      "prompt": "Resuma numa frase o conceito de 'Knowledge-Based View' aplicado à gestão de inovação.",
+      "response": "A **Knowledge-Based View (KBV)** postula que o conhecimento é o recurso estratégico mais valioso de uma organização, sendo a capacidade de criar, integrar e aplicar esse saber o principal motor para a geração de inovações e vantagem competitiva sustentável.",
+      "elapsed_s": 4.377,
+      "input_tokens": 21,
+      "output_tokens": 54,
+      "total_tokens": 489,
+      "cost_usd": 8.89e-06,
+      "timestamp_start": "2026-02-21T21:35:55.162322"
+    },
+    {
+      "provider": "OpenAI",
+      "model": "gpt-4.1-nano",
+      "prompt": "Resuma numa frase o conceito de 'Knowledge-Based View' aplicado à gestão de inovação.",
+      "response": "A 'Knowledge-Based View' aplicada à gestão de inovação enfatiza que o sucesso inovador depende do uso estratégico do conhecimento organizacional como principal fonte de vantagem competitiva.",
+      "elapsed_s": 1.229,
+      "input_tokens": 25,
+      "output_tokens": 34,
+      "total_tokens": 59,
+      "cost_usd": 8.05e-06,
+      "timestamp_start": "2026-02-21T21:35:56.392939"
+    },
+    {
+      "provider": "Anthropic",
+      "model": "claude-3-haiku-20240307",
+      "prompt": "Resuma numa frase o conceito de 'Knowledge-Based View' aplicado à gestão de inovação.",
+      "response": "O conceito de 'Knowledge-Based View' na gestão de inovação enfatiza a importância do conhecimento organizacional como recurso estratégico-chave, no qual a criação, integração e aplicação do conhecimento são fundamentais para o desenvolvimento de inovações e a obtenção de vantagem competitiva sustentável.",
+      "elapsed_s": 1.38,
+      "input_tokens": 34,
+      "output_tokens": 82,
+      "total_tokens": 116,
+      "cost_usd": 5.55e-05,
+      "timestamp_start": "2026-02-21T21:35:57.774838"
+    },
+    {
+      "provider": "xAI",
+      "model": "grok-4-1-fast-non-reasoning",
+      "prompt": "Resuma numa frase o conceito de 'Knowledge-Based View' aplicado à gestão de inovação.",
+      "response": "O Knowledge-Based View aplicado à gestão de inovação concebe o conhecimento como o recurso estratégico mais crítico das organizações, enfatizando sua criação, partilha e aplicação como motores fundamentais para gerar vantagens competitivas sustentáveis por meio de inovações radicais ou incrementais.",
+      "elapsed_s": 1.155,
+      "input_tokens": 186,
+      "output_tokens": 53,
+      "total_tokens": 239,
+      "cost_usd": 3.185e-05,
+      "timestamp_start": "2026-02-21T21:35:58.929964"
+    },
+    {
+      "provider": "Perplexity",
+      "model": "sonar",
+      "prompt": "Resuma numa frase o conceito de 'Knowledge-Based View' aplicado à gestão de inovação.",
+      "response": "O **Knowledge-Based View (KBV)** aplicado à gestão de inovação considera o conhecimento como o recurso estratégico mais crítico e escasso das firmas, cuja criação, integração, compartilhamento e aplicação geram vantagem competitiva sustentável por meio de processos inovadores[1][3][4][6].",
+      "elapsed_s": 1.87,
+      "input_tokens": 24,
+      "output_tokens": 83,
+      "total_tokens": 107,
+      "cost_usd": 5.35e-05,
+      "timestamp_start": "2026-02-21T21:36:00.801561"
+    }
+  ],
+  "summary": {
+    "total_tokens": 1010,
+    "total_cost_usd": 0.00015779,
+    "providers_tested": [
+      "OpenAI",
+      "Perplexity",
+      "xAI",
+      "Google",
+      "Anthropic"
+    ]
+  }
+}
