@@ -39,16 +39,14 @@ def run_synthetic_interview(persona_id, num_turns=5):
     for turn in range(num_turns):
         # 1. Interviewer (Mark) generates a question
         question, mark_in, mark_out = interviewer.generate_question(target_profile['attributes'], history)
-        logger.log_interaction("openai", os.getenv("INTERVIEWER_MODEL", "gpt-4o-mini"), history, question, mark_in, mark_out)
+        logger.log_interaction("openai", "gpt-5.2", history, question, mark_in, mark_out)
         
         history.append({"role": "user", "content": question})
         print(f"Mark: {question}\n")
         
         # 2. Persona responds (Routing to specific vendor API based on target_model)
-        override = os.environ.get("TARGET_MODEL_OVERRIDE")
-        target_model = override if override else target_profile['target_model']
-        provider = target_model.split('/')[0]
-        model_string = target_model.split('/')[1] 
+        provider = target_profile['target_model'].split('/')[0]
+        model_string = target_profile['target_model'].split('/')[1] 
         system_instruction = f"You are {target_profile['name']}, a {target_profile['type']}. Your attributes: {target_profile['attributes']}. Respond in the first person, naturally and conversationally. Do not break character."
         
         if provider == 'anthropic':

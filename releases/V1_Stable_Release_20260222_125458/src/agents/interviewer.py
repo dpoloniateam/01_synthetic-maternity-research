@@ -31,7 +31,7 @@ class InterviewerAgent:
         messages = [{"role": "system", "content": system_prompt}] + history
         
         response = self.client.chat.completions.create(
-            model=os.getenv("INTERVIEWER_MODEL", "gpt-4o-mini"), # Using cheap model for savings mode
+            model="gpt-5.2", # Leveraging frontier model from OpenAI
             messages=messages,
             temperature=0.7
         )
