@@ -1,0 +1,28 @@
+# 4. Results: Study 1 
+
+## 4.1. Evaluative Analysis of Conversational Yield: From Surface Needs to Latent Insights
+A fundamental challenge in front-end innovation research involves transcending surface-level user requests to uncover the latent, structural, and emotional drivers that truly inform breakthrough product and service design (Goffin et al., 2010; Von Hippel, 1986). To evaluate the efficacy of our LLM-driven qualitative interviewing protocol, we conducted a comparative analysis of the conversational data yielded by two distinct prompt calibrations of the Generative Interviewer Agent (Mark). 
+
+Our analysis utilized a structured classification rubric that delineates between **Needs** (i.e., explicit, logistical, or transactional requirements focusing on *what* the user wants) and **Insights** (i.e., latent understandings revealing structural, emotional, or power-dynamic drivers, focusing on *why* the user behaves or feels a certain way).
+
+### 4.1.1. Baseline Extraction (Mark V1): The "Customer Service" Paradigm
+In the initial simulation, the interviewer agent (Mark V1) operated with a generalized objective to identify support gaps within the maternity journey. However, lacking strict qualitative constraints, the Large Language Model (LLM) defaulted to a solution-oriented "customer service" paradigm—a known bias in commercially trained conversational agents.
+
+**Probing Strategy:** The unconstrained agent consistently utilized closed-choice and logistical framing, pushing the synthetic persona to prematurely select administrative solutions. For instance, the agent asked, *"What would you want the most in-the-moment: help drafting the message to your professor/manager, knowing exactly what accommodations you can reasonably ask for, or having someone from the clinic who can directly contact the school/work on your behalf?"*
+
+**Data Yield (Predominantly Needs):** Because Mark V1 constrained the dialogue to mechanistic problem-solving, the extracted data remained entirely on the surface level. The participant explicitly requested standardized channels for medical advocacy (e.g., formal excuse letters) and a dedicated liaison (e.g., a social worker) to draft emails to authority figures. While these functional requirements are actionable, they fail to uncover the root systemic friction causing the participant's distress. The baseline model missed critical opportunities to interrogate the stigma and power imbalances intrinsic to the participant's requirement to constantly "prove" their medical necessity.
+
+### 4.1.2. Calibrated Extraction (Mark V2): The Qualitative Researcher Paradigm
+Following iterative prompt engineering interventions, we injected strict negative constraints against multiple-choice structures and enforced an investigative focus on "Why" and "How" regarding structural barriers and emotional states. 
+
+**Probing Strategy:** Mark V2 entirely abandoned solution-oriented framing, instead targeting the participant's affective responses, social conditioning, and interactions with institutional power structures. The calibrated agent deployed probes such as, *"How do those reactions—your manager’s doubts, your advisor’s 'be realistic,' and your dad going quiet—change what you feel you’re allowed to ask for or expect from them right now?"* and *"How did you learn... that asking for accommodations or support means you’re 'proving them right,' rather than just getting what you need to stay well?"*
+
+**Data Yield (High-Fidelity Insights):** The calibrated prompt successfully forced the persona into deep, reflective elaboration, yielding powerful latent insights surrounding identity, stigma, and systemic disenfranchisement that are critical for human-centered design in healthcare:
+*   **Insight 1 (Structural Power Dynamics):** The participant experiences institutional skepticism from both academic and occupational figures that preemptively writes off her capacity to succeed. This systemic assumption of failure creates a hostile environment where utilizing standard accommodations is perceived not as a right, but as a capitulation.
+*   **Insight 2 (Internalized Stigma):** The participant is paralyzed by the ingrained belief that "struggle is private." Having internalized the judgment of family and peers, she equates asking for help with confirming negative societal stereotypes about young, single mothers.
+*   **Insight 3 (Behavioral Defense Mechanisms):** The participant engages in extreme self-isolation and physical endurance (e.g., hiding severe pain at work, ignoring food insecurity, avoiding available support groups) specifically to protect herself from the vulnerability of institutional let-down and the shame associated with failing to navigate a system unequipped for her demographic.
+
+## 4.2. Study 1 Conclusion and Implications for Innovation Practice
+The prompt calibration successfully and dramatically shifted the data yield from *Needs* to *Insights*. By constraining the LLM from engaging in "helpful" logistical problem-solving (V1) and forcing it to act as an investigative sociologist (V2), the synthetic interview ceased to be a simple requirements-gathering exercise. 
+
+Instead, it functioned as a highly efficacious tool for uncovering the latent emotional and structural forces that dictate user behaviors in marginalized populations. This demonstrates that for LLM-augmented qualitative research to be viable in early-stage innovation and service design, researchers must employ strict negative constraints to override the foundational models' innate bias toward immediate, surface-level resolution.

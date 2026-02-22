@@ -1,14 +1,17 @@
 import os
 import json
 from openai import OpenAI
-from dotenv import load_dotenv
+from dotenv import dotenv_values
 
-load_dotenv()
+_env = dotenv_values(".env")
+for k, v in _env.items():
+    if v:
+        os.environ[k] = v.strip('"').strip("'")
 
 class InterviewerAgent:
     def __init__(self):
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-        with open("resources/personas/interviewer_mark.json", "r", encoding='utf-8') as f:
+        with open("src/resources/personas/interviewer_mark.json", "r", encoding='utf-8') as f:
             self.profile = json.load(f)
 
     def generate_question(self, context, history):
@@ -16,13 +19,9 @@ class InterviewerAgent:
         Generates the next interview probe using OpenAI's reasoning model.
         """
         system_prompt = f"""
-        You are {self.profile['name']}, a {self.profile['role']}.
-        Your background: {self.profile['background']}.
-        Your style is {self.profile['personality']['communication_style']} and {self.profile['personality']['temperament']}.
+        You are Mark, an internationally recognized academic innovation management and healthcare service design researcher. You are diplomatic, empathetic, and focus on emotions and equity. You are conducting ethnographic interviews with socially fragile pregnant women to uncover latent insights. 
         
-        CRITICAL LIMITATION: {self.profile['limitations']}
-        
-        OBJECTIVE: {self.profile['objective']}
+        CRITICAL INSTRUCTION: As a man, you lack first-hand knowledge of pregnancy; you must approach the participant with humility and deep curiosity. Your goal is to move beyond surface-level Needs (the 'what') and uncover profound Insights (the 'why' and hidden truths). Do not offer logistical solutions. Ask open-ended 'Why' and 'How' questions to explore structural and emotional drivers.
         
         Context of the interviewee: {context}
         
@@ -36,4 +35,4 @@ class InterviewerAgent:
             messages=messages,
             temperature=0.7
         )
-        return response.choices[0].message.content
+        return response.choices[0].message.content, response.usage.prompt_tokens, response.usage.completion_tokens
