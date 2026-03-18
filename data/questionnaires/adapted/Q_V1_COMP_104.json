@@ -1,0 +1,1013 @@
+{
+  "persona_id": "comp_104",
+  "persona_name": "Diedre",
+  "journey_stage": "second_trimester",
+  "risk_level": "low",
+  "vulnerability_flags": [
+    "immigration"
+  ],
+  "complications": [],
+  "relevant_phases": [
+    "pregnancy"
+  ],
+  "base_question_count": 37,
+  "adapted_question_count": 17,
+  "filtered_out": 20,
+  "added_probes": 2,
+  "questions": [
+    {
+      "question_id": "V1_PREG_Q01",
+      "version": 1,
+      "journey_phase": "pregnancy",
+      "question_text": "Tell me about the moment you found out you were pregnant — and what the weeks that followed were like for you.",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREG_Q01_P01",
+          "probe_text": "What emotions came up for you — and did those feelings surprise you at all?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q01_P02",
+          "probe_text": "Who did you tell, and when? What guided those decisions?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "partner_role"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q01_P03",
+          "probe_text": "How quickly were you able to access healthcare, and how did that first contact with the system feel?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "Has being told your pregnancy is 'low-risk' felt reassuring, or did you sometimes wish they took things more seriously?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "dignity_respect"
+          ],
+          "probe_id": "V1_PREG_Q01_UNIV_04",
+          "source": "universal_adaptation"
+        },
+        {
+          "probe_text": "How has navigating the healthcare system been different from what you're used to?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "power_dynamics"
+          ],
+          "probe_id": "V1_PREG_Q01_UNIV_05",
+          "source": "universal_adaptation"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "hcp_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "responsiveness",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "identity_tensions",
+        "informal_care_networks",
+        "continuity_of_care"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "77386006"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_miscarriage_history",
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V1_PREG_Q02",
+      "version": 1,
+      "journey_phase": "pregnancy",
+      "question_text": "Tell me about your antenatal care — the appointments, check-ups, and the people who looked after you during your pregnancy. What was that experience like overall?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREG_Q02_P01",
+          "probe_text": "Did you see the same midwife or provider regularly, or was it different people each time? How did that feel?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q02_P02",
+          "probe_text": "Were there moments when you felt your concerns were fully listened to — or moments when they weren't?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q02_P03",
+          "probe_text": "Was there anything about the care environment — the clinic, the waiting room, the way appointments were run — that stood out positively or negatively?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "dignity_respect"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_thematic_areas": [
+        "hcp_interactions",
+        "goals_expectations"
+      ],
+      "target_servqual_dimensions": [
+        "reliability",
+        "empathy",
+        "tangibles"
+      ],
+      "target_latent_dimensions": [
+        "continuity_of_care",
+        "dignity_respect",
+        "power_dynamics"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "48194001"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk",
+        "if_rural",
+        "if_language_barrier"
+      ]
+    },
+    {
+      "question_id": "V1_PREG_Q03",
+      "version": 1,
+      "journey_phase": "pregnancy",
+      "question_text": "Tell me about any screening or testing you were offered or had during your pregnancy — how did you make sense of it all and make decisions about it?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREG_Q03_P01",
+          "probe_text": "How was the information about tests explained to you — did you feel you had enough to make the decision that was right for you?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q03_P02",
+          "probe_text": "Did you do any research outside of what your care team told you — and if so, where did you look?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q03_P03",
+          "probe_text": "Were there any tests or decisions that felt particularly stressful or emotionally charged? Can you tell me more about that?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "identity_tensions"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "decision_making",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "assurance",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "autonomy_vs_dependence",
+        "digital_information_seeking",
+        "power_dynamics"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "15394000",
+        "11687002",
+        "69896004"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk",
+        "if_gestational_diabetes"
+      ]
+    },
+    {
+      "question_id": "V1_PREG_Q04",
+      "version": 1,
+      "journey_phase": "pregnancy",
+      "question_text": "Tell me about where you turned for information and support during your pregnancy — what sources mattered most to you, and why?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREG_Q04_P01",
+          "probe_text": "Did you use any apps, websites, forums, or social media groups? What did you get from those that you couldn't get elsewhere?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q04_P02",
+          "probe_text": "Was there ever a conflict between what you read or heard informally and what your healthcare provider told you? How did you navigate that?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q04_P03",
+          "probe_text": "Were there things you were looking for that you struggled to find — gaps in the information or support available?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "latent_needs"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "digital_information",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "reliability",
+        "responsiveness"
+      ],
+      "target_latent_dimensions": [
+        "digital_information_seeking",
+        "trust_distrust",
+        "informal_care_networks"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_language_barrier",
+        "if_rural"
+      ]
+    },
+    {
+      "question_id": "V1_PREG_Q05",
+      "version": 1,
+      "journey_phase": "pregnancy",
+      "question_text": "Tell me about how your body changing during pregnancy felt for you — physically and emotionally. How did you relate to those changes?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREG_Q05_P01",
+          "probe_text": "Were there aspects of the physical changes that were harder to come to terms with than others?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "body_image_autonomy",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q05_P02",
+          "probe_text": "How did physical examinations — being weighed, scanned, or examined — feel? Were there times that felt comfortable or uncomfortable?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "body_image_autonomy",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q05_P03",
+          "probe_text": "Did your partner, family, or friends respond to your changing body in ways that affected how you felt?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "partner_role",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "body_image_autonomy",
+        "identity_tensions",
+        "dignity_respect"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "48194001"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V1_PREG_Q06",
+      "version": 1,
+      "journey_phase": "pregnancy",
+      "question_text": "Tell me about the role your partner, family, or close friends played during your pregnancy. What was their involvement like?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREG_Q06_P01",
+          "probe_text": "How included did your partner or support person feel in appointments and decisions — and how did you feel about that?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "partner_role",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q06_P02",
+          "probe_text": "Were there moments when the support you received didn't match what you actually needed?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "latent_needs"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q06_P03",
+          "probe_text": "Did your family's own experiences of pregnancy shape the advice or expectations they had for you?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "identity_tensions"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "informal_caregiver_interactions",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "partner_role",
+        "informal_care_networks",
+        "intergenerational_patterns"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [],
+      "ehr_adaptation_triggers": [
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V1_PREG_Q07",
+      "version": 1,
+      "journey_phase": "pregnancy",
+      "question_text": "Tell me about any worries or fears you carried during your pregnancy — about your health, your baby, the birth, or anything else.",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREG_Q07_P01",
+          "probe_text": "Were you able to share those fears with your care team — and if so, how did they respond?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q07_P02",
+          "probe_text": "Were any of your fears linked to previous experiences — your own or in your family?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREG_Q07_P03",
+          "probe_text": "Were there things you were worried about that you felt you couldn't raise, or that weren't taken seriously when you did?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "structural_barriers"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "risks_barriers"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "trust_distrust",
+        "power_dynamics",
+        "intergenerational_patterns"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "386639001",
+        "161744009",
+        "17369002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_miscarriage_history",
+        "if_high_risk"
+      ]
+    },
+    {
+      "id": "V1_GAP_Q01",
+      "phase": "preconception",
+      "target": "goals_expectations",
+      "question_text": "When you first started thinking about having a child, what did you hope your relationship with your healthcare providers would look like — and were there any ways you worried it might not live up to that?",
+      "register": "warm_conversational",
+      "question_type": "open_ended",
+      "kbv_dimensions": [
+        "goals",
+        "motivations",
+        "latent_needs"
+      ],
+      "latent_dimensions_targeted": [
+        "trust_distrust",
+        "dignity_respect"
+      ],
+      "probes": [
+        {
+          "probe_text": "What would it have meant to you to feel genuinely respected by a doctor or midwife at that stage?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Had you heard anything — from friends, family, or your own past experiences — that made you feel uncertain about whether you could trust the system?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Was there a particular kind of relationship you were hoping for, or a particular kind you were hoping to avoid?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "journey_phase_rationale": "Preconception is when foundational expectations about the care system are formed; surfacing trust and dignity aspirations here reveals how prior experiences or second-hand narratives shape the entire care-seeking trajectory.",
+      "evaluation_contribution_estimates": {
+        "service_quality_gap_detection": 0.82,
+        "latent_need_surfacing": 0.88,
+        "empowerment_assessment": 0.74
+      },
+      "thematic_tags": [
+        "trust",
+        "dignity",
+        "expectations_formation",
+        "anticipated_care_quality"
+      ]
+    },
+    {
+      "id": "V1_GAP_Q02",
+      "phase": "preconception",
+      "target": "decision_making",
+      "question_text": "Thinking back to when you and your partner — or the people closest to you — were weighing up whether and when to start trying for a baby, how did those conversations actually go? Who felt like they had the most say, and did that feel right to you?",
+      "register": "warm_conversational",
+      "question_type": "open_ended",
+      "kbv_dimensions": [
+        "behaviours",
+        "motivations",
+        "latent_needs"
+      ],
+      "latent_dimensions_targeted": [
+        "partner_role",
+        "power_dynamics",
+        "intergenerational_patterns"
+      ],
+      "probes": [
+        {
+          "probe_text": "Did older family members — parents or grandparents — have a view that found its way into the decision, even indirectly?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Were there moments where you felt your voice carried less weight than someone else's, or more weight than felt comfortable?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How did your partner's readiness — or hesitation — shape what you decided to do and when?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "journey_phase_rationale": "The preconception decision is rarely made by one person in isolation; mapping partner influence and intergenerational pressure here reveals structural power dynamics that persist through the entire maternity journey.",
+      "evaluation_contribution_estimates": {
+        "service_quality_gap_detection": 0.65,
+        "latent_need_surfacing": 0.91,
+        "empowerment_assessment": 0.87
+      },
+      "thematic_tags": [
+        "partner_dynamics",
+        "family_pressure",
+        "intergenerational_influence",
+        "decision_power",
+        "relational_context"
+      ]
+    },
+    {
+      "id": "V1_GAP_Q03",
+      "phase": "preconception",
+      "target": "emotional_experiences",
+      "question_text": "Before you became pregnant, how did you feel about your body and what it was capable of — and did those feelings change at all as you started thinking about pregnancy?",
+      "register": "warm_conversational",
+      "question_type": "open_ended",
+      "kbv_dimensions": [
+        "motivations",
+        "latent_needs",
+        "goals"
+      ],
+      "latent_dimensions_targeted": [
+        "body_image_autonomy",
+        "trust_distrust"
+      ],
+      "probes": [
+        {
+          "probe_text": "Were there things about your body you felt confident about, and things that worried you or felt uncertain?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Did you feel like your body was something you understood and could rely on, or did it feel more unpredictable at that stage?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Did any past experiences — with your health, your body, or with healthcare — affect how much you trusted yourself or the process?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "journey_phase_rationale": "Preconception is a critical window for body-self relationship formation; latent distrust in one's own body or in medical systems often originates here and shapes how women engage with care throughout pregnancy.",
+      "evaluation_contribution_estimates": {
+        "service_quality_gap_detection": 0.71,
+        "latent_need_surfacing": 0.93,
+        "empowerment_assessment": 0.85
+      },
+      "thematic_tags": [
+        "body_image",
+        "bodily_trust",
+        "self_efficacy",
+        "emotional_readiness",
+        "prior_health_experiences"
+      ]
+    },
+    {
+      "id": "V1_GAP_Q04",
+      "phase": "preconception",
+      "target": "hcp_interactions",
+      "question_text": "If you saw a GP, nurse, or any other health professional before you became pregnant — even just for something routine — what was that experience like, and did it give you any sense of what maternity care might be like down the line?",
+      "register": "warm_conversational",
+      "question_type": "open_ended",
+      "kbv_dimensions": [
+        "behaviours",
+        "latent_needs",
+        "goals"
+      ],
+      "latent_dimensions_targeted": [
+        "continuity_of_care"
+      ],
+      "probes": [
+        {
+          "probe_text": "Did you see the same person more than once, or were you always meeting someone new?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "If you did speak to someone about your plans to have a baby, did they follow up with you, or did the conversation feel like a one-off?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How important was it to you at that stage to feel like someone in the system actually knew you and your situation?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "journey_phase_rationale": "Preconception contacts with the health system are often the first signal of whether continuity will be available; women who experience fragmented care at this stage frequently disengage or develop protective avoidance behaviours during pregnancy.",
+      "evaluation_contribution_estimates": {
+        "service_quality_gap_detection": 0.89,
+        "latent_need_surfacing": 0.8,
+        "empowerment_assessment": 0.68
+      },
+      "thematic_tags": [
+        "continuity_of_care",
+        "relational_continuity",
+        "system_navigation",
+        "early_hcp_contact"
+      ]
+    },
+    {
+      "id": "V1_GAP_Q05",
+      "phase": "preconception",
+      "target": "informal_caregiver_interactions",
+      "question_text": "Before you were pregnant, what kinds of conversations were you having with the people around you — family, friends, your partner — about having a baby, and whose input felt most meaningful to you?",
+      "register": "warm_conversational",
+      "question_type": "open_ended",
+      "kbv_dimensions": [
+        "motivations",
+        "behaviours",
+        "latent_needs"
+      ],
+      "latent_dimensions_targeted": [
+        "informal_care_networks",
+        "partner_role",
+        "intergenerational_patterns"
+      ],
+      "probes": [
+        {
+          "probe_text": "Did your mum, mother-in-law, or older women in your family share their own experiences — and did that help or complicate things?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How involved was your partner in those informal conversations, and did their perspective align with yours?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Were there people in your network who had been through pregnancy recently whose advice carried particular weight?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "journey_phase_rationale": "Informal networks are primary knowledge brokers in the preconception phase; understanding the layering of partner influence, peer narratives, and intergenerational transmission reveals how formal care must position itself relative to existing knowledge ecosystems.",
+      "evaluation_contribution_estimates": {
+        "service_quality_gap_detection": 0.63,
+        "latent_need_surfacing": 0.92,
+        "empowerment_assessment": 0.76
+      },
+      "thematic_tags": [
+        "peer_networks",
+        "family_influence",
+        "intergenerational_knowledge",
+        "partner_involvement",
+        "informal_information_seeking"
+      ]
+    },
+    {
+      "id": "V1_GAP_Q06",
+      "phase": "preconception",
+      "target": "risks_barriers",
+      "question_text": "Were there things about your own body, your health history, or just the way you felt about yourself physically that made the idea of pregnancy feel complicated or uncertain — even before anything had actually happened?",
+      "register": "warm_conversational",
+      "question_type": "open_ended",
+      "kbv_dimensions": [
+        "motivations",
+        "latent_needs",
+        "behaviours"
+      ],
+      "latent_dimensions_targeted": [
+        "body_image_autonomy"
+      ],
+      "probes": [
+        {
+          "probe_text": "Did you have any concerns about your weight, fitness, or a health condition that felt like it might be a barrier?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Were there ways in which your relationship with your body made you feel more or less in control of what was ahead?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Did those feelings affect whether — or when — you felt ready to start trying, or whether you sought advice first?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "journey_phase_rationale": "Body image concerns and perceived bodily competence in the preconception phase frequently operate as hidden barriers to care-seeking; unless explicitly surfaced, they remain invisible to providers and are misclassified as disengagement.",
+      "evaluation_contribution_estimates": {
+        "service_quality_gap_detection": 0.78,
+        "latent_need_surfacing": 0.94,
+        "empowerment_assessment": 0.83
+      },
+      "thematic_tags": [
+        "body_image",
+        "perceived_bodily_risk",
+        "health_literacy",
+        "self_assessed_readiness",
+        "hidden_barriers"
+      ]
+    },
+    {
+      "id": "V1_GAP_Q07",
+      "phase": "preconception",
+      "target": "support_sources",
+      "question_text": "In the time before you became pregnant, was there any one person — professional or otherwise — who felt like a consistent, reliable source of support or guidance, someone you could come back to with questions?",
+      "register": "warm_conversational",
+      "question_type": "open_ended",
+      "kbv_dimensions": [
+        "goals",
+        "latent_needs",
+        "behaviours"
+      ],
+      "latent_dimensions_targeted": [
+        "continuity_of_care"
+      ],
+      "probes": [
+        {
+          "probe_text": "What made that person feel reliable or trustworthy as a source of support at that stage?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "If there wasn't anyone like that, what did the absence of that kind of consistent support feel like?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Did you wish the healthcare system had offered that kind of ongoing relationship before pregnancy, or was that not something you had thought about?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "journey_phase_rationale": "The presence or absence of a consistent support anchor in the preconception phase is a strong predictor of care-seeking behaviour and emotional resilience during pregnancy; this question makes visible an unmet continuity need that formal services rarely address pre-pregnancy.",
+      "evaluation_contribution_estimates": {
+        "service_quality_gap_detection": 0.86,
+        "latent_need_surfacing": 0.88,
+        "empowerment_assessment": 0.72
+      },
+      "thematic_tags": [
+        "continuity_of_care",
+        "relational_support",
+        "trusted_advisor",
+        "support_anchor",
+        "unmet_need"
+      ]
+    },
+    {
+      "id": "V1_GAP_Q08",
+      "phase": "preconception",
+      "target": "agency_disempowerment",
+      "question_text": "As you were thinking about whether to have a baby, did it feel like a decision you were genuinely free to make in your own time and your own way — or were there pressures, expectations, or circumstances that meant it was never quite fully your choice?",
+      "register": "warm_conversational",
+      "question_type": "open_ended",
+      "kbv_dimensions": [
+        "motivations",
+        "latent_needs",
+        "behaviours"
+      ],
+      "latent_dimensions_targeted": [
+        "autonomy_vs_dependence"
+      ],
+      "probes": [
+        {
+          "probe_text": "Were there financial, relationship, or cultural factors that made you feel like the timing was out of your hands?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Looking back, do you feel like you owned that decision — or that it was shaped more by what other people needed or expected?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Were there ways the healthcare system — or the lack of support from it — made you feel more or less in control of that choice?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "journey_phase_rationale": "Autonomy in the preconception decision is the foundational condition for empowered care engagement; women who experience the decision as externally determined are more likely to adopt dependent, passive orientations toward maternity care provision.",
+      "evaluation_contribution_estimates": {
+        "service_quality_gap_detection": 0.74,
+        "latent_need_surfacing": 0.95,
+        "empowerment_assessment": 0.96
+      },
+      "thematic_tags": [
+        "autonomy",
+        "reproductive_agency",
+        "structural_constraint",
+        "decision_ownership",
+        "empowerment"
+      ]
+    },
+    {
+      "id": "V1_GAP_Q09",
+      "phase": "pregnancy",
+      "target": "goals_expectations",
+      "question_text": "Once you were pregnant, how much did you feel like you were in the driving seat of your own care — and were there moments when you felt yourself handing that over to others, willingly or not?",
+      "register": "warm_conversational",
+      "question_type": "open_ended",
+      "kbv_dimensions": [
+        "goals",
+        "motivations",
+        "latent_needs"
+      ],
+      "latent_dimensions_targeted": [
+        "autonomy_vs_dependence"
+      ],
+      "probes": [
+        {
+          "probe_text": "Were there points where relying on others felt like a relief, and others where it felt like losing something?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Did your sense of how much control you wanted shift as the pregnancy progressed — did your expectations change?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Were there things you wished you had been more involved in deciding, or things you were glad someone else took off your plate?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "journey_phase_rationale": "The autonomy-dependence axis during pregnancy is dynamic; mapping how women's expectations about self-determination evolve across the antenatal journey reveals both unmet empowerment needs and moments where dependency is actively welcomed but unacknowledged by services.",
+      "evaluation_contribution_estimates": {
+        "service_quality_gap_detection": 0.85,
+        "latent_need_surfacing": 0.91,
+        "empowerment_assessment": 0.94
+      },
+      "thematic_tags": [
+        "autonomy",
+        "dependence",
+        "shared_decision_making",
+        "evolving_expectations",
+        "control_in_care"
+      ]
+    },
+    {
+      "id": "V1_GAP_Q10",
+      "phase": "pregnancy",
+      "target": "decision_making",
+      "question_text": "When decisions came up during your pregnancy — about tests, appointments, birth plans, or anything else — how did you and your partner navigate those together, and did it ever feel like you weren't quite on the same page?",
+      "register": "warm_conversational",
+      "question_type": "open_ended",
+      "kbv_dimensions": [
+        "behaviours",
+        "motivations",
+        "latent_needs"
+      ],
+      "latent_dimensions_targeted": [
+        "partner_role"
+      ],
+      "probes": [
+        {
+          "probe_text": "Were there decisions where your partner's view really mattered to you, and ones where you needed it to be your call alone?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Did healthcare providers address your partner as part of the decision-making process, or did that feel like it was mostly between you and the clinician?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Were there times when having a partner involved made things easier — or more complicated?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "journey_phase_rationale": "Partner involvement in antenatal decision-making is consistently under-assessed in care models; this question surfaces the lived relational texture of joint decision-making, including tensions, exclusions, and supportive dynamics that shape women's experience of care agency.",
+      "evaluation_contribution_estimates": {
+        "service_quality_gap_detection": 0.79,
+        "latent_need_surfacing": 0.88,
+        "empowerment_assessment": 0.83
+      },
+      "thematic_tags": [
+        "partner_role",
+        "joint_decision_making",
+        "relational_dynamics",
+        "provider_inclusion_of_partner",
+        "antenatal_agency"
+      ]
+    }
+  ],
+  "adapted_at": "2026-03-17T23:25:28.202600"
+}

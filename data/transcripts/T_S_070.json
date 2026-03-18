@@ -1,0 +1,672 @@
+{
+  "session_id": "S_070",
+  "status": "completed",
+  "persona_id": "comp_052",
+  "persona_name": "Camellia",
+  "persona_journey_stage": "birth",
+  "persona_risk_level": "medium",
+  "persona_vulnerability_flags": [
+    "low_social_support",
+    "previous_loss"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 3,
+  "questionnaire_strategy": "Scenario-Based / Critical Incident",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "google/gemini-3.1-flash-lite-preview",
+  "environment": "dev",
+  "timestamp": "2026-03-18T00:41:51.184734",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Camellia, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're going through the birth experience, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s nice to meet you. I suppose I’m ready. It’s hard to put into words, really—the last nine months have felt like a long, high-stakes marathon where I’m simultaneously the athlete and the coach. \n\nI’m forty-three, and I think everyone—the nurses, the doctors, even the people at the grocery store—sees that number first. They see \"geriatric pregnancy\" and they start checking boxes. I get it, I do. I’ve read every journal article on placental function and preeclampsia risks; I know exactly what could go wrong. But sometimes I feel like I’m just a collection of risks to them, instead of, you know, a woman who is finally about to meet her baby after a lot of heartbreak. \n\nThe hardest part isn’t the medical stuff, though. It’s the logistics. My husband and I are doing this on our own—no family nearby to help, no car. Every time I feel a tightening, I’m not just thinking about the labor; I’m frantically calculating if a ride-share will actually show up or if the bus will be on time. It makes me feel so small, so exposed. I just want to walk into that delivery room and feel like they’re looking at *me*, not just my chart. I want to feel safe, but it’s hard to feel safe when you’re worried about the commute.",
+      "responding_to_question_id": null,
+      "input_tokens": 781,
+      "output_tokens": 303
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you've written a birth plan and you arrive at the labour ward. The midwife who receives you glances at your plan briefly, sets it aside, and moves on to routine checks. How does that moment land for you?",
+      "question_id": "V3_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "It lands like a physical blow. Honestly, I think my throat just tightened up even thinking about it. \n\nI’ve spent months researching every single intervention—pitocin, epidurals, delayed cord clamping—because knowledge is the only thing that makes me feel like I have a sliver of control. When I hand over that plan, it’s not because I’m trying to be difficult or \"that\" patient. It’s because I’m terrified. I’ve had a loss before, and that grief never really leaves the room; it’s like a shadow in the corner of every ultrasound. That piece of paper represents my attempt to make sure my baby—and I—aren’t just pushed through a conveyor belt of procedures.\n\nWhen they set it aside without really looking, it’s like they’re saying, \"We’ve seen this a thousand times, you’re just another older woman with a textbook.\" It makes me feel invisible. I’m already stressed about how we even *got* here—the scramble to get a ride, the isolation of doing this without a village—and then to feel unheard in the one place where I’m supposed to be protected? It’s devastating. It makes me want to shrink back, to stop asking questions, and that’s the last thing I need when I’m already so scared of what’s coming next.",
+      "responding_to_question_id": "V3_BIRTH_Q01",
+      "input_tokens": 1132,
+      "output_tokens": 289
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're in established labour and the pain is much more intense than you'd anticipated. A midwife suggests an epidural, but you had wanted to manage without one. What happens inside you in that moment, and how do you decide?",
+      "question_id": "V3_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "motivations"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "That moment feels like a collision between my pride and my survival instinct. When the midwife suggests the epidural, my first reaction is a sharp, defensive spike of panic. I feel like I’m failing the \"test\" I’ve been studying for. I’ve spent these last months trying to curate a specific, controlled experience—partly because I’m a control freak, and partly because I’ve spent so much time feeling like my body was a landscape of risks. Declining the epidural felt like the one way I could prove to myself that I was still in the driver's seat.\n\nBut then reality hits. The pain isn't abstract anymore; it’s consuming. Every contraction makes me feel like I’m being pulled under water. I look at my husband, and I can see the fear in his eyes, which only makes me feel more isolated, like we’re drowning together in this hospital room. \n\nI think I’d start searching the midwife’s face for validation. Is she suggesting it because she thinks I’m failing, or because she sees me struggling and wants me to be able to rest? If she’s kind, if she frames it as a tool rather than a failure, I think I’d break. I’d probably say yes, but with a lot of tears, feeling like I’m letting go of the one thing I actually had control over.",
+      "responding_to_question_id": "V3_BIRTH_Q02",
+      "input_tokens": 1473,
+      "output_tokens": 292
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine your labour has stalled and the obstetric team is recommending an emergency caesarean. Things start moving very quickly. Walk me through what that experience was like from the moment they told you.",
+      "question_id": "V3_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "The air in the room just… vacuumed out. One second, I was focused on my breathing, trying to stay present, and the next, there were extra people in the room, their voices dropping into that sharp, professional, \"emergency\" register. The calm, rhythmic pacing we had been trying to maintain just shattered.\n\nMy heart wasn’t racing; it was hammering against my ribs, hard enough that I thought everyone could hear it. The biggest thing I felt wasn’t fear of the surgery itself—I’d read the statistics on C-sections; I knew the mechanics. It was a crushing, sudden feeling of isolation. It felt like I was being moved onto an assembly line. My husband looked so small, standing to the side, and I felt this desperate, primal need to reach out to him, but everything was moving too fast.\n\nI felt like an object being prepared for a procedure rather than a woman about to meet her child. I wanted to ask questions—about the anesthesia, about the recovery—but the words felt stuck in my throat. I just kept thinking about that bus ride we’d been so worried about, the way the world outside was still spinning while ours had completely stopped. I was terrified, and mostly, I just wanted someone to stop the clock for one second and look me in the eye and treat me like a person, not a crisis.",
+      "responding_to_question_id": "V3_BIRTH_Q03",
+      "input_tokens": 1804,
+      "output_tokens": 284
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine your birth companion has been asked to wait outside the room for a clinical procedure. You're left alone with staff you've only just met. Describe what that moment feels like and what you most need in those minutes.",
+      "question_id": "V3_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "partner_role",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "That moment is absolute, crushing silence. When the door clicks shut behind my husband, the room suddenly feels cold and impossibly vast. It’s like being stripped of the only anchor I have in a world that’s already felt so precarious. I know the staff are just doing their jobs, and I know they're technically competent, but that doesn't stop the panic from rising up my throat. I feel like a specimen on a cold steel table, not a woman who has spent forty-three years waiting for this heartbeat. \n\nWhat I need in those minutes? I don’t need more information—I’ve read enough to know what’s happening. I need a human connection that isn't transactional. I need one of them to stop, look at my face, and maybe just put a steadying hand on my shoulder, not to check my pulse, but just to let me know I’m not alone in this. I need them to acknowledge that this is terrifying, that I’m exhausted, and that they see me—not as a \"geriatric\" case or an emergency surgery, but as a person who is scared out of her mind. A simple, \"You're doing okay, Camellia, I'm right here,\" would mean more than any medical update. I just need to feel human again.",
+      "responding_to_question_id": "V3_BIRTH_Q04",
+      "input_tokens": 2136,
+      "output_tokens": 276
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "In moments like that — without your companion present — how did the behaviour of the clinical staff either compensate for that absence or make it feel more acute?",
+      "question_id": null,
+      "probe_id": "V3_BIRTH_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s the difference between being a person and being a project. When I’m left alone, the staff who just go through the motions—the ones who click their pens, check the monitors, and only look at the screens—they make the absence feel like a canyon. It’s isolating. It’s like they’re performing surgery on an object, and I’m just the inconvenient container for that object. In those moments, I feel the \"geriatric\" label vibrating in the room. I feel like they’re thinking, *She’s older, she’s higher risk, just get this over with.* It makes me want to scream, but I’m too drained to make a sound.\n\nBut then, there was this one nurse. She didn't have to say much. She just caught my eye while she was adjusting an IV line and she gave me this look—not a pitying look, but a steady, grounded one. She stayed close enough that I could feel her presence, and she spoke to me like I was a friend she’d known for years, not a patient. She explained what she was doing, but she asked how *I* was holding up. That simple gesture shifted everything. It didn't replace my husband, nothing could, but it filled that empty, cold space just enough so I didn't feel like I was drifting away entirely. It made me feel seen, and that’s all I’ve ever really wanted.",
+      "responding_to_question_id": "V3_BIRTH_Q04_P01",
+      "input_tokens": 2444,
+      "output_tokens": 307
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine it's the immediate aftermath of birth — your baby has arrived, and the room begins to shift from the intensity of labour. Walk me through the next thirty minutes as you experienced them, or as you imagine them.",
+      "question_id": "V3_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "It feels like the world has suddenly shrunk back down to the size of a single heartbeat. The roar of the medical chaos—the machines, the rapid-fire instructions, the sterile smells—it all fades into a muffled hum. \n\nThose first thirty minutes are a blur of relief and overwhelming, fragile awe. The physical exhaustion is so profound it feels like my bones are turning to water, but then they place the baby on my chest. That weight... it’s the only thing that matters. My hands are shaking, and I’m terrified I might drop them, or that I’ll break them, or that something will happen to pull them away from me again. I’m checking their fingers and toes, just searching for proof that this is real, that all that anxiety and that long, lonely wait finally landed us here.\n\nMy husband is there, finally allowed back, and we’re just staring at each other, weeping silently. We don't really have words yet. There's a nurse nearby, finally quiet, just monitoring us from the periphery. I feel a strange sense of vulnerability, like I’m still standing on a cliff’s edge, but I’m holding the one thing that keeps me anchored. I just want to memorize the curve of their cheek, to hold on to this tiny life, and pray that the rest of the world leaves us alone for just a little while longer.",
+      "responding_to_question_id": "V3_BIRTH_Q05",
+      "input_tokens": 2798,
+      "output_tokens": 290
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there moments in those first minutes where you felt the clinical team's priorities and your own were pulling in different directions? What happened?",
+      "question_id": null,
+      "probe_id": "V3_BIRTH_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "The transition to the postpartum phase felt like a battle over ownership of the moment. For me, those first thirty minutes were a sacred space, a fragile bubble I needed to inhabit to process the shift from fear to motherhood. I wanted to just breathe, to skin-to-skin, to let the adrenaline crash and the love take over.\n\nBut the clinical team? They were already operating on a different clock. Almost immediately, the focus shifted from my baby and me to the logistics of the \"after-birth\"—the charts, the vitals, the placental delivery, the weighing. It felt like they were trying to harvest the baby for measurements the second they arrived. I remember feeling a sharp, protective anger when they kept reaching in, trying to take the baby to the warmer or to check stats. \n\nI kept thinking, *Can't you see this is the first time we're breathing?* I wanted to advocate for us, to say, \"Give us five more minutes,\" but I felt so physically depleted and emotionally raw that I felt like I had no voice. It was like they were rushing to close out the file, and I was trying to open the first chapter of my life. I knew the clinical checks were necessary, I really did, but their efficiency felt like an intrusion on a miracle. I just wanted them to be guests in our room, not managers of it.",
+      "responding_to_question_id": "V3_BIRTH_Q05_P01",
+      "input_tokens": 3118,
+      "output_tokens": 284
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you had a particular fear about childbirth — something that had been building throughout your pregnancy. Now picture yourself facing that specific fear during labour. What was it like, and what — if anything — helped?",
+      "question_id": "V3_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "trust_distrust",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "My biggest fear was that my body would simply \"fail\" to do what it was supposed to do—that because of my age, my history of loss, and just the sheer, terrifying weight of this first-time experience, my body would give up, or that something would go wrong that I wouldn’t be able to intellectualize my way out of. I was terrified of that clinical detachment where the situation becomes an \"emergency\" and I lose all agency. \n\nWhen that fear manifested during labor—the stall, the rush of the medical team, the feeling of losing control—it was paralyzing. I felt like I was literally falling apart.\n\nWhat helped was so small, almost invisible. During the chaos, one nurse caught me looking at her with absolute terror. She didn’t just talk *at* me, she leaned in until she was in my line of sight and said, \"Camellia, you are still the mother here. We are just the support.\" She kept eye contact while the others were busy with their machines. That one second of human connection anchored me back to myself. She acknowledged that while my body was under medical stress, I was still the person at the center of the experience. It didn't stop the medical necessity of what was happening, but it stopped me from feeling like a patient on a conveyor belt. It helped me breathe, just enough.",
+      "responding_to_question_id": "V3_BIRTH_Q06",
+      "input_tokens": 3445,
+      "output_tokens": 283
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine it's your first night at home with your newborn after being discharged from hospital. You're exhausted, possibly in pain, and your baby won't settle. What does that night feel like, and who — if anyone — is there with you?",
+      "question_id": "V3_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "The hospital was a chaotic, sterile environment, but at least there were call buttons and people trained to answer them. Now, the silence of our apartment is deafening. It’s 3:00 AM, the shadows in the corner of the room feel long and heavy, and the baby is crying in that way that feels like it’s vibrating right through my sternum. \n\nMy body is screaming—the physical recovery is so much more intense than any book mentioned—but the exhaustion isn't just physical. It’s this deep, soul-level depletion. My husband is doing his best, pacing the floor with the baby, but we’re both hovering in this state of shock. We don’t have a mother, a sister, or a neighbor to call. It’s just us. The isolation that followed me through the pregnancy has suddenly intensified. I look at my husband, and I can see he’s as terrified as I am; we’re both learning on the fly, and there is absolutely no margin for error.\n\nI feel that pang of loneliness again, sharp and stinging. I find myself wishing for someone—anyone—who has been through this to just sit in the room and tell me we aren’t failing. Every cry makes my heart lurch, and I’m constantly checking for signs of something wrong, haunted by my previous loss. We are completely, entirely on our own, and it feels like holding a flickering candle in a hurricane.",
+      "responding_to_question_id": "V3_POST_Q01",
+      "input_tokens": 3783,
+      "output_tokens": 305
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "When you were discharged, how prepared did you feel for what was actually waiting for you at home — and what was the biggest gap between what you expected and what you found?",
+      "question_id": null,
+      "probe_id": "V3_POST_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "structural_barriers",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "I felt like I was being sent out into a storm with a map that had all the key streets erased. The hospital provided plenty of pamphlets on \"what to expect,\" and I’d spent months scouring forums and reading the medical journals, so I felt like I had the data. I knew about the recovery timelines, the feedings, the signs of distress. But the gap between *knowing* the data and *living* the reality is a chasm.\n\nThe biggest gap was the psychological weight of the isolation. Everyone talks about the \"newborn fog,\" but nobody tells you how that fog interacts with a lack of a village. I expected to feel like a team of three; I didn't realize that without any support system, my husband and I would be so focused on just keeping our heads above water that we’d struggle to even look at each other. \n\nI thought home would be a place of quiet recovery. Instead, it felt like an arena where every unanswered question felt like a high-stakes failure. I was prepared for the physical pain, but I wasn't prepared for the sheer silence of the apartment when the baby cries and there’s no one to hand the baby to so I can just breathe for five minutes. It’s that lack of a safety net—the feeling that if we stumble, there’s no one to catch us—that I never truly accounted for.",
+      "responding_to_question_id": "V3_POST_Q01_P01",
+      "input_tokens": 4125,
+      "output_tokens": 286
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're trying to breastfeed for the first time and it isn't going as you hoped. A midwife visits and watches you try, then offers advice. Describe what that moment feels like, physically and emotionally.",
+      "question_id": "V3_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "My nerves are already frayed, and the frustration is a physical thing—a tight, hot knot in my chest. My breasts are tender, and the baby’s constant, hungry rooting feels less like a miracle and more like a demand I don't know how to meet. I feel exposed, sitting there with my shirt pulled up, trying to coordinate these tiny, slippery limbs while my body still feels like it doesn't quite belong to me.\n\nWhen the midwife watches, I feel like a student taking a high-stakes exam I haven’t studied for. Every time I fumble, I feel a wave of shame. I’ve read the diagrams; I know the \"latch\" mechanics. Why can’t my body just *do* it? Emotionally, I’m terrified she’s going to tell me I’m failing—that this is yet another thing I can’t get right.\n\nWhen she offers advice, it depends entirely on her tone. If she’s brisk, \"fixing\" me like she’s adjusting a machine, I feel small and incompetent. But if she touches my arm, slows down, and just says, \"This is the hardest thing you'll do today, let’s try this together,\" the tension breaks. I need her to be a teammate, not a proctor. I need to know that the struggle is normal, so I can stop feeling like I’m breaking the baby because I’m forty-three and \"past my prime.\" I just want grace.",
+      "responding_to_question_id": "V3_POST_Q02",
+      "input_tokens": 4458,
+      "output_tokens": 314
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did it feel to have someone observing something so intimate and physically difficult? Did you feel supported, observed, or judged — or some mix of all three?",
+      "question_id": null,
+      "probe_id": "V3_POST_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "It was a volatile mix of all three, honestly. I think when you’re that vulnerable—physically exposed, bleeding, exhausted, and trying to feed a tiny human—it’s impossible not to feel observed. It’s like being under a spotlight that’s too bright, and every little tremor in my hand feels like a performance review.\n\nThe support was there, theoretically—I knew they were trained to help—but it felt so transactional. If the midwife sat down, mirrored my breathing, and spoke in a low, gentle voice, I felt supported. It felt like, *Okay, we are in this together, and I have a partner in this room.* But if she just stood over me, hovering while I struggled, it felt like judgment. Even if she didn't say a word, her silence felt heavy. I’d catch myself thinking, *Is she wondering why I’m struggling? Is she thinking I’m too old for this, that I should have known better?*\n\nThat’s the danger of it: when you don’t have a mother or a sister there, the midwife becomes the only reference point for whether you’re doing it \"right.\" If they don’t provide that warmth, you start to judge yourself. You feel like a broken object that needs to be repaired. I didn't want to be *observed*; I wanted to be held up by someone who wasn't just checking a clinical box.",
+      "responding_to_question_id": "V3_POST_Q02_P01",
+      "input_tokens": 4806,
+      "output_tokens": 302
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine it's six weeks after birth. You're sitting in the GP surgery for your postnatal check. The appointment lasts ten minutes. What do you hope will happen in that room — and what does happen?",
+      "question_id": "V3_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "In that room, I’m hoping for a mirror. I’m hoping to sit down and have someone look at me—the real me—and ask, \"How are *you* holding up?\" I want them to acknowledge the sheer, terrifying intensity of the last six weeks. I want them to ask about the anxiety that keeps me awake, the ghost of my previous loss that still lingers in the nursery, and the physical toll of a birth I’m still processing. I want to feel like a person who has survived a transformation, not just a chart being closed out.\n\nBut instead, the ten minutes feel like a sprint. The GP is efficient, focused on the \"routine\" markers. They check my blood pressure, maybe ask about my incision or if I’m having any physical pain, and breeze through the \"postnatal blues\" questions as if they’re just reading from a menu. It’s clinical. It’s fast. It feels like they’re already ushering me out the door to make room for the next person.\n\nWhen they finish and say, \"Everything looks good, see you in a year,\" I feel a sharp, hollow ache. They’ve cleared me medically, but they’ve missed the fact that I’m still underwater. I walk out of that office feeling like I’ve been abandoned to manage the hardest job of my life without any real sense of being seen or understood.",
+      "responding_to_question_id": "V3_POST_Q03",
+      "input_tokens": 5153,
+      "output_tokens": 294
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there things you wanted to raise — about your mental health, your relationship, your body, or your sense of yourself — that the appointment didn't create space for?",
+      "question_id": null,
+      "probe_id": "V3_POST_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "There was so much I wanted to say, but the ticking of the clock in that room was louder than my own voice. I wanted to tell them that the anxiety about the baby—the fear that something will go wrong, a residue from my past loss—is so heavy I can barely breathe sometimes. I wanted to talk about how the isolation of these past six weeks has frayed the edges of my marriage, how we’re both just exhausted shadows of ourselves. \n\nBut there was no space for that. The doctor’s questions felt like they were designed for \"yes\" or \"no\" answers, and I found myself defaulting to, \"I'm fine, I'm adjusting,\" because that’s the script for a forty-three-year-old mother who is supposed to \"know better.\" To actually say, *“I’m terrified, I’m lonely, and I don’t know who I am anymore,”* would have taken more time and emotional energy than the appointment allowed. \n\nInstead, I held it all in. I just nodded, let them check the physical healing, and walked out. I left that room feeling like I’d failed the test of \"being a mother\" because I couldn't articulate the depth of the struggle in under sixty seconds. The space they provided was for my body, but it was completely closed off to my soul.",
+      "responding_to_question_id": "V3_POST_Q03_P01",
+      "input_tokens": 5484,
+      "output_tokens": 284
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're lying awake at 3am with your baby, and you find yourself feeling a deep sadness or flatness that you can't quite name. You pick up your phone. What do you do with it?",
+      "question_id": "V3_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "I just sit there in the dark, the blue light of the screen feeling painfully harsh against the quiet room. My thumb hovers over my contacts, but then I remember it’s 3:00 AM—there’s no one to call. Even if there were, how could I explain this? How could I tell anyone that I have this beautiful, long-awaited child in my arms and yet I feel this hollow, aching void?\n\nI find myself scrolling through social media, watching other mothers’ curated lives—the ones who seem to have the support, the energy, and the effortless grace that I feel I’ve lost somewhere between the hospital discharge and tonight. It makes me feel even smaller, even more isolated. \n\nThen, I switch to Google. I type in things like \"postpartum flatness,\" \"normal to feel sad after birth,\" or \"loneliness of new motherhood at 43.\" I’m looking for a mirror, a sign that I’m not the only one who feels this way, but the results are all clinical, cold articles about \"symptoms.\" They don’t speak to the soul-deep ache of it. I’m just looking for someone to say, *“I see you, you’re not broken, you’re just grieving the life you had and terrified of the one you’re living.”* I put the phone down, the sadness still there, and I just hold the baby, waiting for the sun to rise.",
+      "responding_to_question_id": "V3_POST_Q04",
+      "input_tokens": 5815,
+      "output_tokens": 306
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What were you looking for in those late-night searches or scrolling — reassurance, connection, information, or something else?",
+      "question_id": null,
+      "probe_id": "V3_POST_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "I think I was looking for a witness. It sounds strange, doesn't it? I’m looking at these screens, and really, I’m just desperate for someone to say, \"I know. I’ve been in that dark room at 3:00 AM, and I felt the exact same way.\"\n\nInformation doesn't help much. I have enough information; I’ve spent months filling my brain with facts about infant mortality, development milestones, and postpartum hormonal shifts. Knowing the \"why\" behind the chemical dip doesn't make the loneliness feel any less cold. Reassurance is nice, but it feels hollow when it’s just a generic article saying \"this too shall pass.\"\n\nWhat I’m truly hunting for is a connection—a real, raw voice that cuts through the silence of this apartment. I want to know that I’m not the only woman, especially not the only forty-three-year-old, who feels like she’s holding her entire world together with frayed nerves and sheer willpower. I want to see a crack in someone else’s perfect, curated life. I need to know that this flatness, this exhaustion, and this terrifying, overwhelming love can coexist without me being a \"failed\" mother. I’m just trying to prove to myself that I’m still a human being, and not just a vessel for a baby and a set of medical recovery markers.",
+      "responding_to_question_id": "V3_POST_Q04_P01",
+      "input_tokens": 6147,
+      "output_tokens": 293
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine your partner has returned to work and you're alone with your baby for the first full day. Describe that day — not just the logistics, but the emotional texture of it.",
+      "question_id": "V3_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "The house feels enormous. My husband left hours ago, and the click of the front door closing sounded like a final judgment. It’s just me and this tiny, breathing mystery.\n\nThe emotional texture of the day is a frantic, jagged rhythm. One minute I’m flooded with this fierce, almost painful love, watching the baby sleep, and the next, I’m drowning in a sudden, cold wave of panic because I don’t know if I’m \"doing this\" correctly. Every time the baby stirs, my heart leaps into my throat, half-expecting a disaster. I find myself pacing the living room, whispering to the baby just so I can hear a human voice in the room.\n\nIt’s the silence that breaks me. I realize I’ve been holding my breath all morning, waiting for my husband to come back and validate that we’re still okay, that I haven’t somehow done something wrong while he was gone. I keep checking the clock, counting down the hours until he’s home. It’s not just that I’m tired; it’s that I’m lonely in a way I’ve never known. I’m a mother, I have this baby, but I feel like I’m standing on a tiny island in the middle of a vast, indifferent ocean, waiting for a boat that’s still hours away.",
+      "responding_to_question_id": "V3_POST_Q05",
+      "input_tokens": 6479,
+      "output_tokens": 286
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How had you and your partner prepared for this transition — and were those preparations adequate? What hadn't you anticipated?",
+      "question_id": null,
+      "probe_id": "V3_POST_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "partner_role",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "We talked about the logistics endlessly. We bought the right supplies, we researched infant care, we even set up a rigid, color-coded feeding and sleep schedule on the fridge. My husband and I treated it like a project management exercise—if we had enough diapers, enough pre-made meals, and a clear plan for who did what, we thought we could insulate ourselves from the chaos. We felt prepared because we had the *stuff*. \n\nBut our preparations were entirely clinical. We didn't prepare for the emotional erosion that happens when you're both running on two hours of sleep. We anticipated the fatigue, but not the way that fatigue would make us strangers in our own living room. \n\nWhat I hadn't anticipated was the sheer, crushing weight of the isolation. I thought we were a team of two, but I realized too late that we were a team of two *without a bench*. When he left for work, the \"team\" didn't just split in half; the whole system collapsed because there was no community to step in. I didn't account for the way my own past loss would make every quiet moment feel like a threat, or how my husband would be so terrified of \"messing up\" that he’d retreat into work tasks instead of connecting with me. We prepared for the baby, but we completely ignored the fact that we needed someone to take care of *us*.",
+      "responding_to_question_id": "V3_POST_Q05_P01",
+      "input_tokens": 6791,
+      "output_tokens": 290
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're approaching your return to work. You're thinking about how you'll explain to your employer what the last few months have involved, and whether your job will still fit who you are now. What's that internal conversation like?",
+      "question_id": "V3_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "The internal conversation is a mess of anxiety and strategic maneuvering. I’ve spent my career being the person who stays late, hits every target, and maintains that professional, \"no-fuss\" persona. But the woman who left for maternity leave? She’s a ghost. The woman coming back is haunted by a birth that felt like a high-stakes emergency, terrified by the isolation of the last six weeks, and fundamentally changed by the sheer vulnerability of keeping this baby alive.\n\nI wonder, *how do I bridge this?* If I’m honest—if I tell them I’m still struggling with the emotional residue of a complicated delivery, or that the lack of support at home has left me frayed—will they see me as a liability? Will they view me through the same \"geriatric\" lens as my medical team? I feel like I have to perform a version of \"bouncing back\" that isn’t real. \n\nI’m terrified that if I show any softness, any need for flexibility, I’ll be pushed out. But the bigger fear is that even if they accommodate me, the job itself—those reports, those meetings, that life—won’t fit anymore. It feels small and inconsequential compared to the life-and-death stakes I’ve been living in. I’m trying to figure out how to be an employee again when I’m still just trying to find my footing as a mother.",
+      "responding_to_question_id": "V3_POST_Q06",
+      "input_tokens": 7134,
+      "output_tokens": 298
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Has becoming a parent changed how you see your professional identity — your ambitions, your sense of what matters, or how you want your days structured? In what ways?",
+      "question_id": null,
+      "probe_id": "V3_POST_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "Before, my work was my armor. Being the \"expert\" who could navigate complex logistics—that was how I proved my worth, especially as an older woman in a world that often wants us to be invisible. I thrived on the precision, the long hours, and the sense of control.\n\nNow? Everything feels different. It’s like the scale of what is \"important\" has been totally recalibrated. The things I used to stress over—deadlines, emails, office politics—they feel almost abstract now, like echoes of a life I’m not entirely sure I still inhabit. My ambition hasn't vanished, but it’s shifted. I don’t want to be the \"expert\" who just powers through; I want to be the person who understands the value of time and the fragility of things.\n\nI find myself craving structure that isn't just about productivity. I want days where I’m not constantly looking at a clock, counting down to the next deadline or the next transit connection. I want my life to have room for *presence*. But I’m terrified that the professional world doesn't have a place for that—that to be a mother at forty-three is to be forced into a binary choice between my career and this overwhelming, fragile, beautiful responsibility I’ve been handed. I’m mourning the woman who could do it all, and I’m scared of the woman I’m becoming because I don’t know if society values her.",
+      "responding_to_question_id": "V3_POST_Q06_P01",
+      "input_tokens": 7467,
+      "output_tokens": 306
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're at a new parents' group for the first time, surrounded by other people who have also recently given birth. You notice yourself comparing your experience to theirs. What comes up for you in that room?",
+      "question_id": "V3_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "I sit in the folding chair, my hands gripping my coffee cup like a lifeline, scanning the room. Everyone looks so… *composed*. I see young women, some with their own mothers hovering nearby, tucking blankets around babies that are sleeping soundly. I hear someone mention \"my husband's family is coming for the week to help,\" and I feel that familiar, sharp ache in my chest. \n\nComparison is a thief, I know that, but I can’t help it. My mind immediately flashes back to my own birth experience—the emergency, the isolation, the fear—and then to the lonely, exhausted 3:00 AMs at home. I wonder if they’ve ever felt like they were drifting out to sea with no anchor. I feel like a decade older than some of them, and that \"geriatric\" label hits me again; I feel like a case study among peers. \n\nI start cataloging the differences. Did they have a seamless delivery? Do they have a village? I want to scream, *“I’m terrified, I’m lonely, and I’m just trying to survive,”* but instead, I smile when a woman next to me asks how I’m doing. I say, \"I’m fine, just adjusting.\" I play the role. But inside, I’m desperately searching for one person whose eyes show that same flicker of panic. I’m looking for a crack in their facade so I don't have to be the only one holding mine up.",
+      "responding_to_question_id": "V3_POST_Q07",
+      "input_tokens": 7819,
+      "output_tokens": 317
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there aspects of your birth or postnatal experience that felt hard to talk about in that room — things that felt 'outside the norm' of what others were sharing?",
+      "question_id": null,
+      "probe_id": "V3_POST_Q07_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "The most difficult thing to voice is the sheer, overwhelming *fear* that stays with me, even now that we’re safe at home. When others talk about their births, they often frame them as \"hard work\" or \"the big life event,\" but they usually have a narrative of support—the partner who was there, the grandmother who came to stay, the village. \n\nWhen I listen to them, I realize my experience feels like a survival story, not just a life transition. How do I mention the panic of not having a car and the crushing isolation of doing this without any family nearby without it sounding like I’m \"that\" woman—the one who couldn't manage the basics? I feel like my logistical struggles—the transit, the lack of support, the way my age made every medical intervention feel like a critique—are seen as personal failures. \n\nTalking about the ghost of my previous loss feels even more impossible. When they’re sharing stories about baby gear or sleep schedules, bringing up the weight of my past grief feels like I’m bringing a thundercloud into a sunny room. I don't want to be the \"heavy\" one, the woman who ruins the moment. So, I keep the real story—the fear of the ambulance, the silence of the apartment, the weight of being forty-three—tucked away, and I just nod along to the easier conversations.",
+      "responding_to_question_id": "V3_POST_Q07_P01",
+      "input_tokens": 8171,
+      "output_tokens": 291
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "You know, there’s one thing I keep coming back to. When you’re labeled \"high-risk\" or \"geriatric,\" the focus becomes entirely on the *outcome*—a healthy baby, a successful surgery, a discharged patient. But nobody talks about the *humanity* required to get us through those gates.\n\nI think the most important thing I’ve learned—and it’s a lesson I’m still processing—is that being a mother at forty-three isn’t just a biological challenge. It’s an emotional one that’s made ten times harder by being invisible. We talk about \"maternity care\" as if it’s just heart rates and blood pressure, but for me, it was also about how I was looked at in the waiting room, how I was spoken to when I was left alone, and whether anyone actually saw the person beneath the \"risky\" label.\n\nI just wish there was more space for grace. Not just for the baby, but for the mothers who are doing this without a village, who are terrified of the logistics, and who are mourning the selves they had to leave behind. I don’t want to be a case study anymore. I want to be someone who is supported through the hardest, most beautiful thing I’ve ever done. Thank you for listening—really listening—because for the first time in a while, I don't feel like I'm screaming into the void.",
+      "responding_to_question_id": null,
+      "input_tokens": 8518,
+      "output_tokens": 302
+    }
+  ],
+  "metadata": {
+    "total_turns": 48,
+    "questions_asked": 13,
+    "probes_deployed": 9,
+    "adaptive_followups": 0,
+    "total_input_tokens": 111281,
+    "total_output_tokens": 7082,
+    "estimated_cost_usd": 0.1254,
+    "duration_seconds": 68.6,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 221
+  },
+  "errors": []
+}

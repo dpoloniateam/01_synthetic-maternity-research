@@ -1,0 +1,417 @@
+{
+  "persona_id": "comp_089",
+  "persona_name": "Corie",
+  "journey_stage": "preconception",
+  "risk_level": "low",
+  "vulnerability_flags": [
+    "rural_isolation"
+  ],
+  "complications": [],
+  "relevant_phases": [
+    "preconception"
+  ],
+  "base_question_count": 34,
+  "adapted_question_count": 6,
+  "filtered_out": 28,
+  "added_probes": 1,
+  "questions": [
+    {
+      "question_id": "V3_PREC_Q01",
+      "version": 3,
+      "journey_phase": "preconception",
+      "question_text": "Imagine you've just decided with your partner — or on your own — that you'd like to start trying for a baby. Walk me through what that moment felt like and what your very first steps were.",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREC_Q01_P01",
+          "probe_text": "You mentioned taking those first steps — what made you choose that particular action rather than something else, like speaking to a doctor first or doing your own research online?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q01_P02",
+          "probe_text": "How did the people closest to you — your partner, family, friends — respond when you shared this decision, or did you keep it private for a while? What influenced that choice?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "partner_role"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q01_P03",
+          "probe_text": "Was there anything about how your own mother or older female relatives had experienced becoming a parent that shaped how you were feeling in that moment?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "How does distance to your hospital or clinic affect your pregnancy experience?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers"
+          ],
+          "probe_id": "V3_PREC_Q01_UNIV_04",
+          "source": "universal_adaptation"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "goals_expectations",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "autonomy_vs_dependence",
+        "intergenerational_patterns"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "77386006"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V3_PREC_Q02",
+      "version": 3,
+      "journey_phase": "preconception",
+      "question_text": "Imagine you've booked a preconception appointment with your GP and you're sitting in the waiting room. What's going through your mind as you wait, and what are you hoping will happen in that consultation?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREC_Q02_P01",
+          "probe_text": "When you imagined how that appointment would go, how did you picture the GP responding to you — and how did reality compare, if you've had that experience?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q02_P02",
+          "probe_text": "Were there things you wanted to raise in that appointment but felt unsure about bringing up? What held you back?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q02_P03",
+          "probe_text": "Did practical things like getting time off work, transport, or cost play any part in how you approached or prepared for that appointment?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "hcp_interactions",
+        "goals_expectations"
+      ],
+      "target_servqual_dimensions": [
+        "assurance",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V3_PREC_Q03",
+      "version": 3,
+      "journey_phase": "preconception",
+      "question_text": "Imagine you've been trying to conceive for several months without success. A close friend suggests you try a fertility app she found helpful. How do you react to that suggestion, and what do you do next?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREC_Q03_P01",
+          "probe_text": "What would make you trust or distrust the information you find in a fertility app compared to what a healthcare professional might tell you?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q03_P02",
+          "probe_text": "How did tracking your cycle or fertility — whether through an app or another method — change how you felt about your body during this period?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "body_image_autonomy",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q03_P03",
+          "probe_text": "Were there online communities, forums, or social media groups you turned to? What did you find there that you couldn't find elsewhere?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "digital_information",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "reliability",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "digital_information_seeking",
+        "informal_care_networks"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "77386006"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V3_PREC_Q04",
+      "version": 3,
+      "journey_phase": "preconception",
+      "question_text": "Imagine you've just had a difficult conversation with your partner about whether you're both truly ready to have a child — financially, emotionally, practically. What does 'being ready' actually mean to you, and who or what helped you form that picture?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREC_Q04_P01",
+          "probe_text": "When you think about the financial side of readiness, were there specific worries — like maternity leave, childcare costs, housing — that felt most pressing? Where did those concerns come from?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q04_P02",
+          "probe_text": "Did you and your partner agree on what readiness looked like, or were there tensions between your different visions? How did you navigate that?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "partner_role",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q04_P03",
+          "probe_text": "How much did your family's expectations — or the cultural context you grew up in — shape your sense of when it was the 'right' time?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "goals"
+      ],
+      "target_thematic_areas": [
+        "goals_expectations",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "identity_tensions",
+        "partner_role"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [],
+      "ehr_adaptation_triggers": [
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V3_PREC_Q05",
+      "version": 3,
+      "journey_phase": "preconception",
+      "question_text": "Imagine you've experienced a previous pregnancy loss and are now considering trying again. You're sitting with that knowledge as you think about the future. What thoughts and feelings come up, and what would you need from a healthcare team to feel supported going forward?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREC_Q05_P01",
+          "probe_text": "When you imagine going back into the healthcare system after loss, what do you most fear about those interactions — and what would make them feel safer?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q05_P02",
+          "probe_text": "Was there anything a healthcare professional said or did — either after the loss or now — that felt particularly unhelpful or helpful? What made the difference?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q05_P03",
+          "probe_text": "Outside of the healthcare system, where have you found understanding or support — whether from people in your life or online communities of people who've been through similar experiences?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "trust_distrust",
+        "dignity_respect"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "17369002",
+        "161744009"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_miscarriage_history"
+      ]
+    },
+    {
+      "question_id": "V3_PREC_Q06",
+      "version": 3,
+      "journey_phase": "preconception",
+      "question_text": "Imagine you have a pre-existing health condition and you're wondering how it might affect a future pregnancy. You decide to look it up before speaking to anyone medical. What do you search for, and how does what you find make you feel?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREC_Q06_P01",
+          "probe_text": "What sources did you find most credible — and what made you trust or distrust them? Were there gaps that left you more anxious rather than reassured?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q06_P02",
+          "probe_text": "When you eventually spoke with a healthcare professional about your condition and pregnancy, how prepared did you feel — and did they acknowledge the research you'd already done?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREC_Q06_P03",
+          "probe_text": "Did your condition change the way you thought about your body and its ability to carry a pregnancy? How did you hold that uncertainty day to day?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "body_image_autonomy",
+            "identity_tensions"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "digital_information",
+        "risks_barriers"
+      ],
+      "target_servqual_dimensions": [
+        "assurance",
+        "reliability"
+      ],
+      "target_latent_dimensions": [
+        "digital_information_seeking",
+        "autonomy_vs_dependence"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "48194001"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk"
+      ]
+    }
+  ],
+  "adapted_at": "2026-03-17T23:25:28.243010"
+}

@@ -1,0 +1,692 @@
+{
+  "session_id": "S_171",
+  "status": "completed",
+  "persona_id": "comp_143",
+  "persona_name": "Hedy",
+  "persona_journey_stage": "third_trimester",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 2,
+  "questionnaire_strategy": "Thematic Deep-Dive",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T01:50:17.724922",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Hedy, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're getting closer to your due date, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in seat and offers a small smile*\n\nYeah, of course. I'm happy to talk about it, honestly. It's... it's been a lot.\n\n*pauses, tucking hair behind ear*\n\nSo I'm a pediatric nurse, which I think immediately complicates things in ways people don't always understand. When I came in for my first appointment this pregnancy, I could feel myself doing this thing where I'm throwing around clinical terms, almost like I'm trying to prove I belong in the conversation as an equal, you know? Like if they see me as \"one of them,\" they'll be more honest with me. But the reality is, I'm terrified half the time.\n\n*laughs a little nervously*\n\nMy first pregnancy went smoothly, which was great, but it also means my brain spent this whole second pregnancy waiting for something to go wrong. I work with babies every single day—I know exactly what can happen. And that's... that's a lot to carry when you're pregnant yourself.\n\nThe hardest part is wanting to just be a patient. To not know everything. To be vulnerable without worrying that my OB thinks I'm being dramatic because they assume I understand the statistics better than I understand my own body's signals.\n\n*meets your eyes*\n\nI think that's what I really want people to understand about this experience. Sometimes knowing too much is its own kind of burden.",
+      "responding_to_question_id": null,
+      "input_tokens": 804,
+      "output_tokens": 304
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your goals for your antenatal care during pregnancy, what did you most want from your interactions with midwives, doctors, and the wider care system — and to what extent were those goals met?",
+      "question_id": "V2_PREG_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath, considering the question carefully*\n\nHonestly? My main goal was to be *seen*. Not as the nurse who knows all the right answers, but as the woman who's actually going through this. I wanted my care team to understand that just because I work in pediatrics doesn't mean I have it all figured out for myself.\n\n*fidgets with hands*\n\nWhat I really needed was permission to not be the expert in the room. I needed them to slow down, explain things like I was a person, not a colleague. And maybe... maybe check in emotionally, not just clinically. Like, last month when my baby's movements changed for an hour, I completely spiraled. I called my OB in a panic, and yes, everything was fine, but I needed someone to say \"that fear you just felt is valid\" instead of just reassuring me with percentages.\n\n*voice gets quieter*\n\nTo be honest, that hasn't happened much. My OB is competent—really competent—but I think they assume I'm fine because I talk the talk. There's this unspoken thing where they seem to think my clinical knowledge acts as a buffer against anxiety. It doesn't.\n\n*looks up*\n\nWhat I *have* gotten is efficient care. Checkups are quick, results come back, no red flags. But efficient isn't the same as actually meeting someone where they are. I needed someone to ask me how I'm *really* doing, not just how the baby's doing.",
+      "responding_to_question_id": "V2_PREG_Q01",
+      "input_tokens": 1156,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about how you sought and used information during your pregnancy — from healthcare providers, online sources, apps, books, and people around you — how did you decide what to trust and act upon?",
+      "question_id": "V2_PREG_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "trust_distrust",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, a bit ruefully*\n\nOh man, this is where my job becomes both a blessing and a curse. I probably use information differently than most pregnant people because I already have this clinical framework in my head.\n\n*leans back*\n\nWith my care team, I trust them by default, but I'm also... skeptical? Like, I'll ask a question, get an answer, and then I'm mentally cross-referencing it against what I learned in nursing school or what I've seen on the unit. That sounds smart in theory, but it actually creates this weird distance. I'm never fully trusting, never fully surrendering to their expertise because I think I already know the landscape.\n\n*picks at the armrest*\n\nWith online stuff and apps—which I definitely use—I'm probably *more* critical than the average person. I understand sample sizes and selection bias, so I don't panic about every rare complication I read about. But that knowledge can be isolating too. My friends will share their fears, and I'm sitting there thinking about statistical likelihood instead of just... feeling with them.\n\n*voice softens*\n\nWhat I've realized I trust most is my body and my gut. When the movements changed that time, no amount of reassuring statistics mattered. I *felt* something was different, and that instinct turned out to be right. \n\nI think I lean too heavily on clinical knowledge and not enough on my own intuition. And honestly? I wish someone had told me it's okay to do both. That knowing the statistics doesn't mean I have to stop trusting myself.",
+      "responding_to_question_id": "V2_PREG_Q02",
+      "input_tokens": 1527,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the emotional landscape of your pregnancy — the highs, the anxieties, the uncertainties — what feelings were most prominent, and how well did your care environment support you in managing them?",
+      "question_id": "V2_PREG_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "dignity_respect",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, eyes getting a little watery*\n\nOh. That's... that's the real question, isn't it?\n\n*takes a moment*\n\nThe anxiety is constant. I wake up some mornings and I'm fine, and then I'll remember I'm pregnant and this wave of \"what if\" just hits me. What if something goes wrong? What if I can't handle two kids? What if my body doesn't cooperate this time? It's exhausting because intellectually, I *know* my risk is low. I've read the data. But knowing and feeling are completely different things.\n\n*voice cracks slightly*\n\nAnd then there's this grief I didn't expect. I'm unmarried, which genuinely doesn't bother me—I have an incredible support system. But there are these moments where I feel the weight of doing this alone in a system that assumes you shouldn't be. My OB is professional about it, but I can sense the unspoken question marks sometimes. That loneliness is real.\n\n*wipes eyes quickly*\n\nThe joy is there too—my first kid is so excited, and I'm excited—but it gets buried under the clinical anxiety. I spend my days teaching parents to read their baby's cues, and I can't stop doing that with my own pregnancy. It's like I can't just *be* pregnant.\n\n*looks directly at you*\n\nMy care environment? It's been competent but cold. Nobody's asked me how I'm actually *feeling*. They check boxes, I check boxes, and we both pretend that's enough. But I'm drowning sometimes, and I don't think anyone knows.",
+      "responding_to_question_id": "V2_PREG_Q03",
+      "input_tokens": 1916,
+      "output_tokens": 359
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the decisions you faced during pregnancy — including screening tests, monitoring choices, and care options — how did you go about making those decisions, and who or what most influenced them?",
+      "question_id": "V2_PREG_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*settles back, thinking*\n\nSo here's the thing—because I'm \"low-risk\" and because I'm a nurse, there's this assumption that I'm just going to consent to whatever's standard protocol. And mostly, I have. The screening tests, the monitoring schedule, all of it. But I've noticed I don't really *decide* so much as I just... go along.\n\n*shifts uncomfortably*\n\nMy first pregnancy was straightforward, so I had this false sense that I could just repeat that experience. But this time, I actually wanted to think through some things differently. Like, I wanted to ask more questions about continuous fetal monitoring during labor—I know the data on it, I know the controversy—but when I brought it up, my OB kind of... brushed past it? Not rudely, but like, \"you know this stuff, so you'll be fine with whatever happens.\"\n\n*voice gets frustrated*\n\nWhat influences me most is honestly just my clinical knowledge and what I've seen go well on the unit. But that's actually a problem because I'm making decisions based on professional experience, not on what *I* need as a person. My village—my mom, my best friend—they've tried to weigh in, but I shut them down sometimes. I'm like, \"I know what I'm doing,\" when really I'm just scared and using knowledge as armor.\n\n*looks away*\n\nThe truth? I haven't made many real decisions. I've mostly accepted what's offered. And I'm not sure if that's because I trust my care team or because I'm too exhausted to advocate for myself. Probably both.",
+      "responding_to_question_id": "V2_PREG_Q04",
+      "input_tokens": 2317,
+      "output_tokens": 357
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the physical changes in your body during pregnancy, how did those changes affect how you felt about yourself — and were those feelings acknowledged or addressed within your care?",
+      "question_id": "V2_PREG_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*lets out a long breath, touching her lower back*\n\nGod, the physical stuff is real. I'm twenty-five, I thought I'd bounce back easily like I did last time, but this pregnancy has been... harder on my body. I'm exhausted in a way I wasn't before. My back is killing me. I get winded walking up the stairs, which is humiliating when you work in healthcare and you're supposed to be fit and capable.\n\n*looks down at herself*\n\nAnd it's weird because I spend my days teaching parents about infant development, looking competent and put-together, and then I come home and I can barely get comfortable. I feel like my body has betrayed me in some way. Like it's not mine anymore—it belongs to the baby, and I'm just... existing in this stretched-out, achy version of myself.\n\n*voice gets quieter*\n\nThe weight gain bothers me more than I expected. I know intellectually it's necessary, but emotionally? I feel invisible. And my OB's approach is just like, \"this is normal, you're fine.\" Which is true, but it doesn't address the fact that I'm grieving my body a little bit. That I feel disconnected from myself.\n\n*meets your eyes*\n\nNobody's really asked me how I feel about these changes. They measure my weight, they check my swelling, they assess function. But they don't ask if I'm okay with what's happening to me. If I'm scared about postpartum recovery. If I miss feeling like myself.\n\n*pauses*\n\nI think my care team assumes that because I'm a nurse, I understand it's temporary. But understanding something intellectually doesn't make it less disorienting to live through.",
+      "responding_to_question_id": "V2_PREG_Q05",
+      "input_tokens": 2712,
+      "output_tokens": 381
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there aspects of your physical transformation that felt unexpected, difficult, or that nobody had prepared you for?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in seat, looking a bit vulnerable*\n\nYeah. A lot, actually.\n\n*hesitates, then continues*\n\nThe emotional side of the physical stuff caught me off guard. I knew intellectually what happens to your body—I teach it, for God's sake—but nobody really prepared me for how *lonely* it feels. Like, my first pregnancy, I had more support around me emotionally. This time, I'm managing it mostly alone, and the physical discomfort becomes this symbol of that isolation, you know?\n\n*rubs temples*\n\nAnd the anxiety that comes with physical sensations? That was unexpected. Every time my body does something different—a cramp, a shift in movement, swelling that seems off—my clinical brain immediately jumps to worst-case scenarios. I *know* the probability data, but my body doesn't care about statistics. It just sends signals and I catastrophize.\n\n*voice gets smaller*\n\nThe pelvic pain has been brutal this time. Last pregnancy, I didn't experience it like this. I thought my body would just... cooperate the same way twice. But it hasn't. And I feel like I'm supposed to just push through because I'm young, I'm healthy, I'm a nurse. Nobody says it out loud, but there's this expectation that I should handle it stoically.\n\n*looks up*\n\nWhat really got me was realizing how much of my identity is wrapped up in being capable and strong. When my body started failing at basic things—climbing stairs, sleeping comfortably—I didn't know who I was anymore. And that's something nobody warns you about. The identity loss.",
+      "responding_to_question_id": "V2_PREG_Q05_P01",
+      "input_tokens": 3117,
+      "output_tokens": 357
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the informal support you received during pregnancy — from partners, family, friends, or online communities — how did that support compare to what you received from healthcare professionals, and what role did each play?",
+      "question_id": "V2_PREG_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "partner_role",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*softens noticeably*\n\nOh, my village is everything. Genuinely. My mom has been incredible—she comes over, she helps with my first kid, she doesn't ask a million questions. She just... shows up. And my best friend, she'll text me at random like, \"how are you *actually* doing?\" Not the clinical answer, the real one.\n\n*pauses*\n\nBut here's the complicated part—I don't always let them in the way I could. With my mom, I catch myself explaining things medically, like I need to earn the right to be vulnerable by proving I understand what's happening. With my friend, I minimize stuff because I don't want to be the person who complains. I'm supposed to be the capable one, remember?\n\n*leans forward*\n\nOnline communities have been... mixed. There are these pregnancy groups where people share genuine fears, and I read them thinking, \"I get that,\" but I don't usually post. When I do, I end up giving advice instead of asking for support. It's this automatic thing I do.\n\n*voice becomes reflective*\n\nThe difference between my informal support and my healthcare team is stark. My village meets me as a *person*. They see that I'm scared and tired and uncertain. My care team sees a low-risk patient who happens to work in medicine. \n\n*meets your eyes*\n\nWhat I actually needed—what would've made a difference—is if my healthcare providers could've been more like my village. Less efficient, more human. My mom doesn't need to understand my APGAR score fears; she just holds space for them. And that's what I'm missing from my OB.",
+      "responding_to_question_id": "V2_PREG_Q06",
+      "input_tokens": 3520,
+      "output_tokens": 366
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your goals and expectations for your birth experience — what you hoped labour and delivery would be like — how clearly could you articulate those goals at the time, and how well did the care system support you in pursuing them?",
+      "question_id": "V2_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs a bit nervously, then sobers*\n\nOkay, so... I haven't really articulated goals. Like, formally. And that's probably telling, right?\n\n*fidgets with hands*\n\nMy first labor was textbook. I went in, contractions progressed normally, no complications, healthy baby. And I think because of that, I've just assumed this one will be the same. But that's not actually a *goal*—that's just... hoping lightning strikes twice.\n\n*pauses, looking uncertain*\n\nThe thing is, when I try to think about what I actually *want* from labor, my clinical brain immediately takes over. Do I want continuous monitoring? I know the data says it doesn't improve outcomes for low-risk people, but I also know what can go wrong. Do I want an epidural? Pain management options? I can recite the risks and benefits of everything, but I can't actually say what *I* want because I'm too busy weighing every possible scenario.\n\n*voice gets quieter*\n\nI've never sat down with my OB and said, \"here's what matters to me.\" I've never written a birth plan. Part of me thinks that's because I'm confident, but really? I think it's because I'm terrified. If I articulate what I want and something goes wrong, I'll blame myself for not being flexible enough. So I'm just... planning to go with the flow. Which isn't really a plan.\n\n*looks at you directly*\n\nThe care system hasn't pushed me to think about this either. And maybe they assume I don't need to because I understand the medical side. But understanding labor clinically and experiencing it are completely different things. I need someone to ask me what *I* actually want, not what makes sense on paper.",
+      "responding_to_question_id": "V2_BIRTH_Q01",
+      "input_tokens": 3937,
+      "output_tokens": 390
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the decisions you were asked to make during labour and delivery — around pain management, interventions, and procedures — how well-equipped did you feel to participate in those decisions in the moment?",
+      "question_id": "V2_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, expression becoming more serious*\n\nOkay, so I haven't given birth yet. I'm still in my third trimester. But I've definitely thought about this because I've *seen* labor from the other side—from the clinical side—and that's both helpful and paralyzing.\n\n*rubs face*\n\nWhen I think about being in labor and having to make decisions in the moment, I honestly don't know how I'll handle it. Part of me thinks my clinical knowledge will be an asset—I'll understand what they're saying, I won't panic about normal labor progression. But another part of me is terrified that same knowledge will make me *overthink* everything.\n\n*voice gets hesitant*\n\nLike, if they suggest an intervention, my brain will immediately calculate risk-benefit ratios instead of just trusting my body or trusting them. And I'll probably use clinical language to mask that I'm actually scared. My OB will think I'm on board with whatever they suggest because I'm nodding and asking the \"right\" questions, when really I'm just protecting myself behind terminology.\n\n*looks vulnerable*\n\nThe honest truth? I don't feel equipped at all. And nobody's helping me prepare for that. We haven't talked about what I actually *want* versus what I think I *should* do. Haven't discussed how I might feel when I'm in pain and exhausted and vulnerable.\n\n*voice cracks slightly*\n\nI'm worried I'll disappear during labor. That Hedy the person will vanish and just the nurse will show up. And nobody will notice the difference.",
+      "responding_to_question_id": "V2_BIRTH_Q02",
+      "input_tokens": 4372,
+      "output_tokens": 348
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the emotional experience of your labour and delivery — from the very beginning through to the moment your baby was born — what were the most powerful feelings, and were you able to process them in the birth environment?",
+      "question_id": "V2_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "dignity_respect",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, eyes getting distant*\n\nI haven't done this yet. I'm still waiting. And I think that's actually important to say because the anticipation itself is its own emotional landscape.\n\n*voice becomes quieter, more introspective*\n\nBut I can tell you what I'm terrified of feeling—or not feeling. With my first labor, I remember this moment right after my daughter was born where I just... broke open. All this emotion I didn't even know I was carrying just came pouring out. Pure love, relief, gratitude. It was overwhelming and beautiful.\n\n*fidgets*\n\nThis time, I'm scared that won't happen the same way. That I'll be in my head the entire time, analyzing contractions, monitoring my own pain response, watching the fetal monitor like I'm reading it clinically instead of just experiencing my baby coming into the world. That the clinical part of me will prevent me from fully *feeling* it.\n\n*looks vulnerable*\n\nAnd there's this fear that nobody in the birth room will understand that I need to be held emotionally, not just managed medically. That because I'm a nurse, they'll assume I'm fine, when really I might be falling apart internally.\n\n*voice wavers*\n\nI keep having these moments where I imagine holding my baby and crying—not knowing if it's joy or grief or fear or all of it mixed together. And I don't know if the birth environment will make space for that complexity. Or if I'll just... suppress it to seem capable.\n\n*pauses*\n\nThat's what keeps me up at night, honestly. Not the physical labor. The emotional part I can't control.",
+      "responding_to_question_id": "V2_BIRTH_Q03",
+      "input_tokens": 4768,
+      "output_tokens": 362
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the behaviour and communication of your midwives, doctors, and care team during your birth, what interactions stood out — positively or negatively — and what made them significant?",
+      "question_id": "V2_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "power_dynamics",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, looking a bit caught off guard*\n\nRight, so... I haven't given birth yet. I keep forgetting you might be asking about things that haven't happened.\n\n*shifts uncomfortably*\n\nBut I can tell you what I'm *anticipating* based on my pregnancy care so far, and what I'm dreading.\n\n*voice becomes more animated*\n\nWhat's stood out negatively during my prenatal care is this feeling of being... looked through? Like my OB is competent and professional, but there's no real *connection*. When I ask questions, I get thorough answers, but they're delivered in a way that assumes I don't need emotional reassurance. They see \"nurse\" and skip the humanity part.\n\n*leans forward*\n\nI had one appointment where I mentioned I was anxious about fetal movement changes, and the response was basically, \"that's normal, here's the data.\" Not \"that must have been scary\" or \"let's talk about what you're feeling.\" Just... data. Which I already have.\n\n*voice gets quieter*\n\nFor labor, I'm terrified of that same dynamic amplified. I'm worried my care team will treat me like a colleague instead of a patient in active labor. That they'll assume because I work in healthcare, I don't need hand-holding or validation. That my pain or fear will be minimized because they think I understand the clinical reality.\n\n*meets your eyes*\n\nWhat would matter to me in that moment? Someone seeing *me*—not the nurse, not the person who knows about APGAR scores. Just... a woman bringing her baby into the world who needs to be treated with gentleness.",
+      "responding_to_question_id": "V2_BIRTH_Q04",
+      "input_tokens": 5173,
+      "output_tokens": 367
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the physical environment of the place where you gave birth — the facilities, the equipment, the space — how did that environment affect your comfort, safety, and overall experience of birth?",
+      "question_id": "V2_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "dignity_respect",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, a bit sheepish*\n\nI haven't given birth yet. I'm still waiting for that. I'm in my third trimester, so it's coming, but it hasn't happened.\n\n*settles back in chair*\n\nBut I can tell you what I'm nervous about regarding the environment. I've been to labor and delivery units plenty of times as a nurse, and I know what they look like—the monitors, the clinical fluorescent lighting, all of it. And that knowledge is a double-edged sword.\n\n*speaks more slowly*\n\nOn one hand, I understand the equipment. I know why things are there. But on the other hand, I'm hyperaware of how *clinical* it all is. How it's designed for safety and monitoring, not necessarily for making someone feel safe and human, you know?\n\n*voice becomes more thoughtful*\n\nI'm worried the environment will reinforce that clinical detachment I'm already prone to. Like, I'll be in labor, and instead of sinking into the experience, I'll be mentally cataloging the monitors, noting the placement of equipment, observing the nurses like I'm part of the team instead of the patient.\n\n*looks vulnerable*\n\nWhat I actually need is to feel held by the space. I need it to feel intimate enough that I can be vulnerable, but I'm not sure a hospital labor room can provide that. Especially when I'm already predisposed to stay in my head.\n\n*pauses*\n\nDoes that make sense? The environment matters because of who I am, not just what it physically contains.",
+      "responding_to_question_id": "V2_BIRTH_Q05",
+      "input_tokens": 5583,
+      "output_tokens": 342
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about any complications, unexpected events, or emergency interventions during your birth, how were these communicated to you, and how did you experience the shift from a planned to an unplanned situation?",
+      "question_id": "V2_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*shakes head slowly*\n\nI haven't given birth yet, so I don't have actual complications to talk about. I'm still waiting for labor to start.\n\n*but voice becomes more anxious*\n\nThough honestly? I think about this constantly. What if something *does* go wrong? And that's where my clinical knowledge becomes a curse.\n\n*leans forward, intensity building*\n\nI know too much about what can happen. I've managed complications on the pediatric side—babies who needed resuscitation, parents who got blindsided by unexpected outcomes. And my brain won't stop replaying those scenarios in the context of my own birth.\n\n*voice gets quieter, more vulnerable*\n\nIf something unexpected happens during my labor, I'm terrified of two things. First, that my clinical knowledge will make me *more* anxious instead of less, because I'll understand exactly what's at stake. Second, that my care team will communicate with me like I'm a colleague instead of a frightened pregnant woman.\n\n*rubs arms*\n\nLike, if they need to do an emergency intervention, will they explain it in clinical terms assuming I'll understand? Or will they actually pause and talk to me as a person who's scared? Because understanding the medical reasoning doesn't make the fear go away.\n\n*meets your eyes*\n\nI think what scares me most is being unprepared emotionally for a plot twist, even though I'm overprepared clinically. That gap between knowing the medicine and being able to *feel* safe when things change—that's where I'm vulnerable.",
+      "responding_to_question_id": "V2_BIRTH_Q06",
+      "input_tokens": 5971,
+      "output_tokens": 339
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q13",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath*\n\nThe thing I haven't said yet is... I'm not sure I'll actually *tell* my care team if I'm struggling in the moment. Like, if labor gets really hard or unexpected things happen, I might just... internalize it. Protect myself by staying clinical.\n\n*voice becomes strained*\n\nBecause if I admit I'm scared, if I say \"I don't understand what's happening\" or \"I need support,\" then I'm not the capable nurse anymore. I'm just a vulnerable person. And I've spent so long building this identity that I'm not sure I know how to let it go, even when I desperately need to.\n\n*looks away*\n\nMy first labor was smooth, which means I have this false confidence going into this one. But what if it's different this time? What if my body doesn't cooperate? What if I need interventions I wasn't expecting? \n\n*voice cracks slightly*\n\nI think the real complication I'm most terrified of isn't medical—it's emotional. It's the possibility that I'll go through labor completely disconnected from myself, performing competence while dying inside. That I'll come out the other side with a healthy baby but feeling like I wasn't actually *there* for my own birth experience.\n\n*pauses, collecting herself*\n\nAnd nobody can fix that with clinical communication or proper protocols. That's something I have to figure out about myself. How to be the nurse *and* the patient. How to let people see me struggling without feeling like I've failed.\n\n*quietly*\n\nI don't know if I'm ready for that yet.",
+      "responding_to_question_id": "Q13",
+      "input_tokens": 6319,
+      "output_tokens": 355
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q14",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits quietly for a moment, then speaks more softly*\n\nI think what I'm really struggling with is that I've built this entire identity around being the one who *knows*. The one who can handle crisis, who understands the clinical side, who teaches other people how to manage fear. And now I'm supposed to just... be vulnerable? That feels impossible.\n\n*fidgets with hands*\n\nMy daughter keeps asking me questions about the baby coming, and I answer them like I'm reading from a textbook. \"The baby will cry, that's normal. The baby will eat, that's normal.\" But what I'm not saying is that I'm terrified. That I don't know how to be a mother of two. That sometimes I wake up in the middle of the night in a panic about things that probably won't even happen.\n\n*voice becomes more raw*\n\nAnd with my care team, I've never actually said any of that out loud. I've never sat down and said, \"I'm scared. I need more from you than competence. I need you to see that I'm drowning a little bit.\" Because what if they think less of me? What if they assume I'm unstable or anxious in a way that affects my care?\n\n*looks directly at you*\n\nThe truth is, I think I use my nursing knowledge as a wall between myself and feeling things fully. And I don't know how to take that wall down, especially not in a hospital setting where everything is measured and monitored.\n\n*pauses, voice wavering*\n\nI want someone to tell me it's okay to not be okay. Not in a clinical way. Just... human to human.",
+      "responding_to_question_id": "Q14",
+      "input_tokens": 6683,
+      "output_tokens": 360
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q15",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a long pause, eyes getting glassy*\n\nI think I'm also angry. And I haven't really let myself feel that until right now.\n\n*voice gets harder*\n\nI'm angry that being a nurse means I'm expected to have all the answers. That my competence is both my superpower and my prison. I'm angry that my OB hasn't asked me what I actually need—they've just assumed. I'm angry that I can't just be a pregnant woman without constantly analyzing everything through a clinical lens.\n\n*stands up a bit, then sits back down*\n\nAnd I'm angry at myself, which is worse. Because I *know* how to advocate. I do it for patients all the time. But when it comes to my own care, I freeze. I make myself smaller. I use big words to hide how small I actually feel.\n\n*voice breaks slightly*\n\nMy first kid's father... we're not together anymore, and I'm okay with that. But sometimes I resent that I have to do this alone. That I don't have a partner to say \"you're doing great, you're going to be okay.\" My mom tries, my friends try, but it's not the same. And my care team is supposed to be professional, so they maintain this distance.\n\n*wipes eyes*\n\nI think what I'm most afraid of isn't the birth itself. It's that I'll get through it—successfully, medically perfectly—and still feel completely alone in the experience. That I'll have this beautiful second baby and feel this hollow loneliness because nobody ever really *saw* me during any of this.\n\n*voice quieter*\n\nThat's the complication I'm actually terrified of. The emotional one nobody can fix with an ultrasound.",
+      "responding_to_question_id": "Q15",
+      "input_tokens": 7052,
+      "output_tokens": 381
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q16",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits with the silence for a moment, then speaks very quietly*\n\nI think I've been preparing for the wrong thing this whole time.\n\n*looks down at hands*\n\nI've been mentally preparing for medical complications, for labor pain, for the logistics of having two kids. I've been reading about infant development and refreshing my knowledge on everything that could go wrong. But what I actually need to prepare for is... allowing myself to need people. To not have all the answers. To be taken care of instead of being the one doing the taking care of.\n\n*voice becomes almost whisper-like*\n\nAnd that terrifies me more than anything medical ever could.\n\n*pauses*\n\nBecause if I let my guard down during labor—if I cry, if I ask for help, if I admit I'm scared—then what? Do I become a different person? Do people see me as weak? Do I lose the thing that's kept me functioning, which is this sense that I can handle anything?\n\n*rubs face*\n\nMy first pregnancy, I was younger. I didn't have a career yet. I could just... be a pregnant person. Now I'm supposed to be the expert, the capable one, the nurse who knows better. And somewhere in there, I lost track of the fact that I'm still just a twenty-five-year-old woman who's about to push a human out of her body.\n\n*voice cracks*\n\nI think what I need—and what I'm asking for in saying all of this—is for someone to give me permission to not be okay. To not be the nurse. To just be Hedy, who is scared and tired and needs to be held.\n\n*meets your eyes, vulnerable*\n\nIs that allowed?",
+      "responding_to_question_id": "Q16",
+      "input_tokens": 7442,
+      "output_tokens": 375
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did older female relatives, such as your mother or grandmother, share advice or stories that influenced how you thought about getting pregnant?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "*softens noticeably, a small smile appearing*\n\nOh, my mom. She's been... she's been everything, honestly.\n\n*settles back in chair*\n\nShe had me young—she was only twenty when I was born—and she doesn't hide that it was hard. Really hard. Single motherhood, working multiple jobs, all of it. But she also doesn't make it seem like a tragedy, you know? She tells these stories about me as a baby where she's laughing, even when the circumstances were really difficult.\n\n*voice becomes warmer*\n\nWhen I told her I was pregnant the first time, unmarried, she didn't flinch. She just said, \"okay, we're doing this together.\" And she meant it. She was at my daughter's birth, she's been here every step. I think watching her navigate motherhood with such grace—without needing a partner to validate her—that gave me permission to do this my way too.\n\n*pauses, becoming more reflective*\n\nBut there's also this unspoken pressure I feel from her. Like, because she sacrificed so much, I have to be extra capable. Extra put-together. I can't let her see me struggling because she already gave so much. So I perform competence around her too, in a different way.\n\n*voice gets quieter*\n\nMy grandmother—my mom's mom—she had seven kids. She doesn't talk much, but when she does, it's about how women's bodies are strong. How birth is natural. And I think that's shaped me too, but in a complicated way. It's made me feel like I *should* be able to handle this without complaint.\n\n*looks at you*\n\nNeither of them prepared me for the loneliness part, though.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 7845,
+      "output_tokens": 387
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q17",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans forward, voice becoming more thoughtful*\n\nActually, I think my mom did try to prepare me for it. I just wasn't listening.\n\n*rubs chin*\n\nAfter my first daughter was born, my mom sat with me one night—I was exhausted, hormonal, overwhelmed—and she said something like, \"you're going to feel alone even when you're surrounded by people. That's motherhood.\" And I remember thinking she was being dramatic or pessimistic. I had my village, I had support, I had a job I loved. How could I possibly feel alone?\n\n*voice becomes quieter*\n\nBut I do. I feel it constantly. And I think it's because I'm not actually *letting* people in the way my mom was trying to tell me to. She was saying, \"you need to be vulnerable, you need to ask for help, you need to let people take care of you.\" And I heard it as weakness.\n\n*pauses*\n\nMy grandmother used to say that women's bodies are strong, but she also—and I'm only realizing this now—she was always surrounded by other women during her births and recoveries. She had her mother, her sisters, neighbors. She wasn't doing it alone in a hospital with professionals who maintain distance.\n\n*voice gets strained*\n\nI think what they were both trying to tell me is that strength isn't about doing everything yourself. It's about knowing when to surrender. Knowing when to ask. And I've completely missed that message because I've been so focused on proving I can handle it all.\n\n*looks vulnerable*\n\nI'm twenty-five and I feel like I'm supposed to have this all figured out. But I don't. And I think my mom and grandmother would tell me that's okay if I'd actually let them.",
+      "responding_to_question_id": "Q17",
+      "input_tokens": 8241,
+      "output_tokens": 391
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q18",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits with that for a moment, then speaks very slowly*\n\nYou know what the worst part is? I think I'm repeating the cycle.\n\n*voice becomes strained*\n\nMy mom sacrificed so much to prove she could do it alone, to show the world that being a single mother didn't make her less capable. And now I'm doing the exact same thing. I'm performing this version of myself that doesn't need anything, that has all the answers, that can handle two kids and a full-time job and be a perfect nurse and a perfect mother.\n\n*rubs eyes*\n\nAnd my daughter is watching me. She's already learning that you don't ask for help. That you push through. That needing someone is... I don't know, weakness? Failure?\n\n*voice cracks*\n\nI don't want that for her. I don't want her to grow up thinking she has to be invincible. But that's what I'm modeling. Every single day.\n\n*pauses, collecting herself*\n\nAnd with this second baby coming, I'm terrified I won't have the emotional capacity to break that pattern. I'm going to be exhausted, overwhelmed, probably postpartum depressed knowing my history. And I'm going to smile and say \"I'm fine, I've got this,\" instead of actually reaching out.\n\n*looks directly at you*\n\nMy mom tried to tell me that strength is asking for help. That vulnerability isn't the opposite of capability—it's actually part of it. But I've spent my whole life proving her wrong, which means I'm actually proving her right in the worst possible way.\n\n*voice becomes smaller*\n\nI need to change this before the baby comes. But I don't know how.",
+      "responding_to_question_id": "Q18",
+      "input_tokens": 8641,
+      "output_tokens": 376
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a specific situation where you felt judged, overlooked, or not treated as a capable decision-maker regarding your reproductive health?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, jaw tightening*\n\nYeah. There was this one appointment about six weeks ago that I keep replaying in my head.\n\n*leans forward, voice becoming more agitated*\n\nI mentioned to my OB that I was having really intrusive thoughts about things going wrong. Like, detailed catastrophic scenarios. And instead of exploring that—asking if I had a history of anxiety, if this was new, if I needed support—she just... moved on. She literally said, \"well, your numbers are all good, so you should feel reassured.\"\n\n*voice hardens*\n\nBut here's the thing that got me: I think she didn't take it seriously *because* I'm a nurse. Like, in her mind, I was probably just being clinically aware, not actually anxious. She treated my concern like professional curiosity instead of like a real mental health symptom that needed attention.\n\n*stands up, paces slightly*\n\nAnd I let it happen. I didn't push back. I just nodded and said, \"yeah, okay,\" even though I was screaming internally. Because part of me thought, \"well, she's right, I *do* understand the statistics, so logically I should feel fine.\" But logic doesn't stop the 2 a.m. panic attacks.\n\n*sits back down, voice becoming more vulnerable*\n\nWhat really stung was realizing that by being knowledgeable, I'd made myself invisible. My OB saw a capable healthcare worker who didn't need emotional support, not a pregnant woman who was actually struggling. And I didn't advocate for myself because I was too busy trying to *be* that capable person she saw.\n\n*quietly*\n\nThat's the moment I realized nobody was actually seeing *me*.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 9049,
+      "output_tokens": 383
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q19",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "*voice becomes more intense*\n\nAnd the worst part is, I *let* her do that to me. I could have pushed back. I could have said, \"no, actually, I need you to take this seriously. I need a referral to someone who can help me manage these thoughts.\" But instead, I accepted her dismissal because it validated this image I've been working so hard to maintain.\n\n*rubs face in frustration*\n\nI think I've been complicit in my own invisibility. Every time I use clinical language, every time I nod along without advocating, every time I pretend I'm fine when I'm not—I'm telling my care team that they don't need to look deeper. That Hedy the nurse is handling it.\n\n*voice wavers*\n\nBut Hedy the *person* is not handling it. Hedy the person is terrified and lonely and having intrusive thoughts about her baby dying. Hedy the person needs someone to say, \"this sounds really hard, and we're going to help you through it.\"\n\n*pauses, getting emotional*\n\nAnd I think what makes it worse is that I work with babies whose mothers are experiencing postpartum depression and anxiety. I *teach* people to recognize the signs in themselves. I know the screening tools. I know the interventions. But when it comes to my own mental health, I just... swallow it. I minimize it. I perform wellness.\n\n*voice becomes quieter, more raw*\n\nThat appointment made me realize that my clinical knowledge isn't protecting me—it's isolating me. It's creating this wall between me and the care I actually need. And my OB, instead of breaking down that wall, just accepted it as fact.\n\n*looks at you with pain in eyes*\n\nShe treated my competence as a substitute for my humanity. And I let her.",
+      "responding_to_question_id": "Q19",
+      "input_tokens": 9441,
+      "output_tokens": 404
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q20",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits in silence for a long moment, visibly struggling*\n\nI think... I think I'm angry at myself for not knowing how to ask for help.\n\n*voice becomes shaky*\n\nBecause it's not really about my OB, is it? She's doing her job. She's competent and professional. But I'm the one who decided that being knowledgeable meant I didn't deserve to be vulnerable. I'm the one who decided that having clinical language meant I could hide behind it.\n\n*stands up, paces to the window*\n\nAnd now I'm about to give birth in a few weeks, and I'm realizing I've set myself up to be completely alone in that moment. Even surrounded by people, I'll be alone. Because I've trained everyone—including myself—to believe that Hedy the nurse doesn't need emotional support. That Hedy the nurse has it all figured out.\n\n*voice cracks*\n\nBut what if I don't? What if I completely fall apart during labor and nobody notices because they're all expecting me to be the calm one? What if I need someone to hold my hand and tell me I'm doing okay, but I'm too busy performing competence to actually ask for it?\n\n*turns back*\n\nMy mom keeps trying to tell me it's okay to not be okay. And I keep pushing her away because admitting I need her feels like... like admitting I've failed somehow. Like proving that single motherhood is hard, which somehow vindicates everyone who questioned my ability to do this in the first place.\n\n*voice becomes almost desperate*\n\nI don't want to fail my kids by teaching them that needing people is weakness. But I don't know how to stop.",
+      "responding_to_question_id": "Q20",
+      "input_tokens": 9854,
+      "output_tokens": 371
+    },
+    {
+      "turn_number": 49,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there moments when a healthcare provider dismissed or minimised a concern you raised about your body or a symptom you were experiencing, and how did that make you feel?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 50,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits back down heavily, looking exhausted*\n\nYeah. Multiple times, actually.\n\n*voice becomes tight*\n\nThere was this time around week twenty-eight when I noticed my feet were swelling differently than they had with my first pregnancy. Not just swollen—asymmetrical. And I know preeclampsia can present that way, so I mentioned it to my OB. Very calmly, very professionally. Just flagging it as something I'd noticed.\n\n*pauses, jaw clenching*\n\nShe did a quick exam, checked my blood pressure—normal—and basically said, \"pregnancy swelling is normal, you know this.\" And that was it. She moved on to the next thing. No discussion about monitoring it, no acknowledgment that I might have legitimate concerns based on my clinical knowledge. Just... dismissed.\n\n*voice becomes more strained*\n\nAnd I sat there thinking, \"did she just dismiss me because my blood pressure is fine, or because she thinks I'm being neurotic?\" Because here's the thing—if a regular patient came in saying their swelling was asymmetrical and they were worried, would she have taken more time? Or does she assume that because I'm a nurse, I'm just being hypervigilant?\n\n*rubs arms*\n\nIt made me feel... small. Like my concern wasn't valid just because I understand the medical side. Like understanding the pathophysiology somehow disqualifies me from being actually scared about it.\n\n*voice quiets*\n\nAnd the worst part? I didn't push back. I just accepted it. Because part of me thought, \"she's probably right, I'm probably being paranoid.\"\n\n*looks at you*\n\nBut what if I wasn't? What if something *had* been wrong and I'd minimized my own instinct because a doctor told me not to worry?",
+      "responding_to_question_id": "P1",
+      "input_tokens": 10262,
+      "output_tokens": 397
+    },
+    {
+      "turn_number": 51,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 52,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, visibly emotional*\n\nYeah. There's... there's one thing.\n\n*pauses, gathering courage*\n\nI need someone to know that being knowledgeable doesn't mean you don't need care. That expertise can actually be a barrier to getting what you really need, which is just... to be seen as a human being going through something profound.\n\n*voice becomes more urgent*\n\nI think healthcare providers need to understand that when someone comes in and uses clinical language or seems composed, that doesn't mean they're fine. Sometimes it means the opposite. It means they're protecting themselves because they're terrified.\n\n*stands up, wrapping arms around herself*\n\nAnd I need to say this out loud: I'm scared. I'm scared about labor. I'm scared about postpartum. I'm scared I'm going to disappear into motherhood and never find myself again. I'm scared that my daughter will learn from watching me that love means sacrificing yourself completely. I'm scared that my second baby will grow up in a house where the mother is always performing strength instead of actually being present.\n\n*voice breaks*\n\nI need my care team to see that. Not because I tell them—because they *ask*. Because they look past the competence and see the vulnerability underneath.\n\n*sits back down, exhausted*\n\nAnd maybe... maybe I need to learn how to let them. How to be both the nurse *and* the patient. How to ask for help without feeling like I've failed.\n\n*quietly*\n\nThat's what I really need from maternity care. Not just medical competence. Permission to be human.",
+      "responding_to_question_id": null,
+      "input_tokens": 10715,
+      "output_tokens": 354
+    }
+  ],
+  "metadata": {
+    "total_turns": 52,
+    "questions_asked": 20,
+    "probes_deployed": 4,
+    "adaptive_followups": 0,
+    "total_input_tokens": 148417,
+    "total_output_tokens": 9476,
+    "estimated_cost_usd": 0.1674,
+    "duration_seconds": 142.0,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 252
+  },
+  "errors": []
+}

@@ -1,0 +1,447 @@
+{
+  "session_id": "S_204",
+  "status": "completed",
+  "persona_id": "comp_137",
+  "persona_name": "Grayce",
+  "persona_journey_stage": "postpartum",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [
+    "low_income",
+    "previous_loss"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 5,
+  "questionnaire_strategy": "Relational / Stakeholder Map",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T02:13:41.821679",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Grayce, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're adjusting to life after having your baby, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath, fidgets with a coffee mug*\n\nYeah, okay. I appreciate you saying that. It's... it's strange to talk about this stuff, honestly. I'm not usually the one who needs help, you know? That's been the hardest part to swallow.\n\n*pauses, looking down*\n\nThe pregnancy and birth itself went fine — textbook, really. No complications. But the postpartum part? That's been this whole other thing I wasn't prepared for, even though I probably should've been. I spent years in pediatrics watching families go through crisis after crisis. I knew all the warning signs, all the things that could go wrong. I thought that knowledge would protect me somehow.\n\n*voice gets quieter*\n\nInstead, it's like... I can't turn it off. Three in the morning, I'm counting my daughter's breaths. I'm checking her diapers like I'm running a clinical assessment. Part of me knows I'm spiraling, but the other part is convinced that my vigilance is the only thing keeping her safe.\n\nAnd being divorced, being on a tight income — there's this constant background anxiety. Like, can I afford to call the nurse with my questions? Will they judge me for being alone? Will they think I should have it all figured out because I have medical training?\n\n*looks up*\n\nSo yeah, I'm adjusting. But some days it feels like I'm just barely holding it together. Sorry, that's probably heavy for an opening.",
+      "responding_to_question_id": null,
+      "input_tokens": 797,
+      "output_tokens": 326
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who surrounded you in the days and weeks after your baby was born. Who showed up for you, and who were you surprised by — either by their presence or their absence?",
+      "question_id": "V5_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs bitterly, shaking head*\n\nOh man. That's... yeah. That's the thing that still stings a little.\n\nMy ex wasn't really there. I mean, he shows up for visits, but in those crucial first weeks? I was alone in my apartment with a newborn, trying to figure out how to breastfeed, how to bathe her, how to not completely fall apart. He had his life to get back to, I guess.\n\n*fidgets with the mug again*\n\nMy mom came for about ten days. She was helpful with the logistics — dishes, laundry, that stuff — but she and I have this complicated thing where she defaults to telling me I'm doing it wrong. Even with my background, maybe especially because of it. So I ended up feeling more anxious when she was there, not less. Once she left, I was relieved and devastated at the same time.\n\n*voice gets softer*\n\nThe nurse who does the home visits... she's been consistent, which matters more than I can say. But I don't really let her in. I'm always a little guarded, you know? Because if she finds out I'm a nurse, I worry she'll think I don't need her. Or worse — that I should be handling all this better than I am.\n\n*looks up with tired eyes*\n\nThe truth is, I didn't have anyone checking on *me*. Everyone's focused on the baby — is she feeding, is she gaining weight — but nobody asked if I was okay. If I was terrified. And I couldn't really admit it to anyone.",
+      "responding_to_question_id": "V5_POST_Q01",
+      "input_tokens": 1166,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in day-to-day support — a health visitor, a postnatal group, an online community — that became important to you?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably in seat*\n\nThe visiting nurse is really it for me, formally speaking. She comes by regularly, and I do appreciate that structure — having someone scheduled to check in. But like I said, I keep her at arm's length. She asks the right questions about the baby, about feeding and sleep and all that. Sometimes she'll ask how *I'm* doing, and I always say \"fine\" even when I'm absolutely not fine.\n\n*rubs face*\n\nI haven't joined any postnatal groups. The thought of sitting in a room with other mothers, making small talk, pretending to be fine... I can't. Plus, logistically, I'm trying to figure out childcare and get back to work. There's no time, and honestly? I don't want to be around people right now. I know that's probably not healthy, but I can't face the comparison thing — like, everyone's baby is sleeping through the night and mine isn't, or whatever.\n\n*pauses, slightly defensive*\n\nOnline communities are a minefield for me. I'll start reading some parenting forum and suddenly I'm in this rabbit hole of worst-case scenarios. With my medical background, I can't unsee what I read. I know what sepsis looks like. I know how fast things deteriorate. So I mostly stay off those sites now.\n\n*looks away*\n\nIt's lonely, I'm not going to lie. But reaching out feels... I don't know. Like admitting I can't handle this alone, and I'm already barely holding it together as it is.",
+      "responding_to_question_id": "V5_POST_Q01_P01",
+      "input_tokens": 1553,
+      "output_tokens": 342
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people involved in your feeding journey — whether you breastfed, formula-fed, or mixed-fed. Who helped you, who gave you conflicting advice, and how did those relationships shape your choices?",
+      "question_id": "V5_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "dignity_respect",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a long breath, eyes getting watery*\n\nBreastfeeding. I'm doing it. And it's... it's been this whole thing.\n\n*voice tightens slightly*\n\nI wanted to breastfeed. I had this idea in my head that it was the right thing, the healthy thing, especially given my background. I knew all the statistics about infant health outcomes. But the reality? Those first weeks were brutal. Pain, engorgement, latching issues — all the stuff I intellectually knew could happen but wasn't prepared to actually *live through*.\n\n*fidgets*\n\nMy mom was very pro-breastfeeding, very \"just push through the pain, it gets better.\" The lactation consultant at the hospital was helpful but brief — she had three other patients waiting. And my visiting nurse keeps asking how it's going, but there's this underlying assumption that I should know what I'm doing because I'm a nurse. She doesn't realize that knowing the theory and actually doing it with your own baby's mouth on your breast are two completely different things.\n\n*pauses, voice quieter*\n\nI looked up some stuff online early on, and there was all this conflicting information about supply, about whether she was getting enough. That spiraled me into obsession mode — weighing her before and after feeds, timing everything. I think I drove myself half-crazy.\n\n*looks down*\n\nThe hardest part is I can't tell anyone how much I'm struggling with it because they'll think I should have it figured out. So I just... keep going. Keep feeding her, keep monitoring, keep terrifying myself over nothing. Some days I fantasize about formula, about the freedom of that. But that feels like failure.",
+      "responding_to_question_id": "V5_POST_Q02",
+      "input_tokens": 1945,
+      "output_tokens": 373
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved — a lactation consultant, a feeding group, an app, or family members — and how did their views align or conflict?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*rubs eyes tiredly*\n\nHonestly, the lactation consultant I saw in the hospital was kind of a blur. She was efficient, professional, but I think she saw me as a straightforward postpartum case — low-risk, educated background. She didn't dig deeper. I didn't tell her about my anxiety or my obsessive monitoring. Why would I? She probably had twenty other patients that day.\n\n*leans back*\n\nI downloaded a couple of feeding apps. That was a mistake. You log every feed, every wet diaper, and suddenly you're staring at data that may or may not mean anything. But because I know what normal infant hydration looks like and what dehydration looks like, I'm analyzing every number like it's a clinical chart. One app said her output was borderline, and I spiraled for a week thinking she wasn't getting enough.\n\n*voice gets frustrated*\n\nMy mom kept saying \"just feed her when she cries, don't overthink it.\" Easy for her to say when she's not the one doing it. And my ex, when he's here, he doesn't really engage with the feeding piece at all. It's my job, my responsibility, my worry.\n\n*pauses, vulnerable*\n\nThe visiting nurse — she's tried to reassure me that everything looks fine, that the baby's gaining weight appropriately. But I don't fully believe her because I think she's... I don't know, being nice? Or maybe she's not catching something I would catch if I had the bandwidth to actually think clearly instead of just spiraling at 3 AM.\n\n*quietly*\n\nI don't have a support system around this. It's just me and my fear.",
+      "responding_to_question_id": "V5_POST_Q02_P01",
+      "input_tokens": 2351,
+      "output_tokens": 369
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who noticed — or who missed — changes in your emotional wellbeing after your baby was born. Who checked in with you about how you were feeling as a person, not just as a new mother?",
+      "question_id": "V5_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*long silence, eyes filling with tears*\n\nNobody. That's the honest answer.\n\n*voice cracks slightly*\n\nThe visiting nurse asks \"how are you feeling?\" in this clinical way, but I think she's checking for postpartum depression screeners, you know? The standard questions. I always say I'm fine because if I say I'm not, it becomes A Thing. It gets documented. And then what? I'm the divorced nurse with mental health issues. They take my kid away? That's probably irrational, but...\n\n*wipes eyes*\n\nMy mom didn't ask. She was in crisis-management mode — keeping the house functioning, making sure the baby was fed. She didn't sit down and say, \"Hey, how are you really doing with all this?\" My ex definitely didn't. And my work colleagues? I haven't told anyone there what's really going on. They know I had a baby, they know I'm on maternity leave, but I'm terrified to go back and admit that I've been a mess.\n\n*voice gets quieter, almost ashamed*\n\nSometimes I think about calling someone — a therapist, a crisis line, something — but then I think, what would I even say? That I can't stop checking if my baby is breathing? That I'm sniffing her diapers? That I'm completely alone in this?\n\n*looks directly at you*\n\nThe hardest part is nobody saw me disappearing. Everyone was looking at the baby. And I just... faded into the background, becoming this anxious, obsessive version of myself. Still am, really.",
+      "responding_to_question_id": "V5_POST_Q03",
+      "input_tokens": 2769,
+      "output_tokens": 349
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in picking up on signs that you were struggling — a health visitor, your GP, your partner, a friend?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*shakes head slowly*\n\nMy GP? I haven't been back since the six-week postpartum checkup. That appointment was perfunctory — they checked my bleeding, asked if I was having any pain, and that was it. I remember sitting there thinking, \"Don't you want to know if I'm losing my mind?\" But I didn't say anything.\n\n*voice hardens slightly*\n\nThe visiting nurse comes every couple weeks now. She's observant — I'll give her that. A few times I think she's noticed I look tired or... off. There was one visit where she asked if I was getting sleep, and I made a joke about it being impossible with a newborn. She laughed and moved on. I think she was giving me an opening, actually, but I couldn't take it.\n\n*rubs face*\n\nI don't have friends I'm close enough to call. Not here in Yarmouth anyway. I'm isolated by choice and circumstance — single income, working whenever I can find work, trying to keep it together. There's nobody stopping by. Nobody texting to check in on me specifically.\n\n*voice gets bitter*\n\nAnd my ex? He doesn't see me as a person anymore. I'm just the mother of his child. The logistics coordinator. He doesn't notice if I'm struggling because he's not really looking at me.\n\n*pauses, quieter*\n\nI think the worst part is I wouldn't even know how to tell someone. How do you explain that you're terrified all the time? That you're doing clinical assessments on your own baby at 3 AM? That you know exactly how fast things can go wrong because you've seen it happen? Nobody wants to hear that. It's too heavy.",
+      "responding_to_question_id": "V5_POST_Q03_P01",
+      "input_tokens": 3148,
+      "output_tokens": 378
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how your relationship with your partner — or your closest person — changed after your baby arrived. Who were you to each other, and how did the arrival of a baby reshape that?",
+      "question_id": "V5_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, but there's no humor in it*\n\nMy ex and I... we were done before the baby even arrived, really. I think we both knew it. But we tried. We actually tried for a while, and then I got pregnant, and instead of bringing us together, it just highlighted all the fractures.\n\n*picks at the edge of the mug*\n\nHe was present for the pregnancy in the logistical sense — came to appointments, helped set up the nursery. But emotionally? He was checked out. I remember being in labor thinking, \"This is it. This is supposed to be our moment,\" and he was on his phone half the time. Not maliciously, just... absent in a way that made me realize I was going to do this alone.\n\n*voice gets quieter*\n\nAfter she was born, it got worse. He'd come for visits, hold her for a bit, then hand her back. No real engagement with the hard parts — the 3 AM feedings, the diaper blowouts, the absolute terror of being responsible for this tiny human. I needed him to see me, to understand what I was going through, and he just... couldn't. Or wouldn't.\n\n*looks away*\n\nNow we're divorced. He pays child support, shows up on his scheduled days. We're civil. But there's this hollowness to it all. He doesn't know how much I'm struggling. He doesn't ask. And I wouldn't tell him anyway because it feels like admitting defeat somehow.\n\n*voice cracks slightly*\n\nI thought becoming parents together would fix things. Instead, it just proved we were never really a team.",
+      "responding_to_question_id": "V5_POST_Q04",
+      "input_tokens": 3568,
+      "output_tokens": 361
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the healthcare professionals who supported you after your birth — your community midwife, health visitor, GP. Which of those relationships felt continuous with your pregnancy care, and which felt like starting again from scratch?",
+      "question_id": "V5_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*settles back, thinking*\n\nThe midwife during pregnancy was... fine. Routine appointments, checking vitals, standard stuff. I don't think I really connected with her on a personal level, but she was competent. And then after I gave birth, it was like she vanished. I think I saw her maybe once postpartum? Two weeks in, something like that. She checked the baby, checked my stitches, asked basic questions, and then I was transferred to the health visitor. It felt abrupt.\n\n*voice becomes more engaged*\n\nThe health visitor is the one I see regularly now. She's been consistent, which matters. But it also feels like starting from scratch because she doesn't know my full story — the pregnancy anxiety, the relationship falling apart, any of that context. She comes in fresh, looking at a low-risk postpartum case with a healthy baby. Check the box, move on.\n\n*hesitates*\n\nI've only been back to my GP once since the six-week checkup, and that was just to get a repeat prescription. No real conversation. I think if I showed up and actually told them what's going on — the obsessive monitoring, the intrusive thoughts, the fact that I'm terrified every single day — they'd probably refer me somewhere. Maybe that would be good. But it also feels like admitting I can't handle this.\n\n*looks uncomfortable*\n\nThe hardest part is none of them really bridge that gap. They're not continuous with the pregnancy experience. It's like my care got fragmented right when I needed it most. And because I'm keeping my nursing background quiet, they're not pushing harder to understand what I actually need.",
+      "responding_to_question_id": "V5_POST_Q05",
+      "input_tokens": 3976,
+      "output_tokens": 365
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your return to work — or your decision not to return — and the people involved in that transition. Who supported you, who put pressure on you, and how did that shape your experience of becoming a working parent?",
+      "question_id": "V5_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*exhales heavily, stress visible in shoulders*\n\nI'm not back yet. I'm supposed to be, soon, but I keep... delaying it in my head. Financially, I have to go back. I can't afford not to. But the thought of it terrifies me.\n\n*voice gets tight*\n\nFinding childcare is the first nightmare. I'm on a limited income, so I'm looking at subsidized options, waiting lists, places that may or may not be reliable. And every option feels like I'm gambling with my daughter's safety. I know that's irrational — intellectually I know daycare is normal and fine — but all I can think about is exposure to illnesses, inadequate supervision, missed feeding cues.\n\n*rubs temples*\n\nThere's nobody really supporting this transition. My ex? He's not offering to help with childcare costs or scheduling. My mom made it clear she can't be the backup plan — she has her own life. My employer is just waiting for me to show up. They don't care about my anxiety or my situation.\n\n*voice becomes quieter, vulnerable*\n\nAnd there's this guilt layered underneath everything. Like, I should want to get back to work. I was a nurse. I had this career identity. But now the thought of leaving her, of not being there to monitor everything, of trusting someone else with her care... I feel like I'm choosing work over her safety, even though logically I know that's not true.\n\n*looks down*\n\nI think once I go back, everything will fall apart. And nobody's going to catch me when it does.",
+      "responding_to_question_id": "V5_POST_Q06",
+      "input_tokens": 4390,
+      "output_tokens": 351
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your sense of who you are — did going back to work feel like reclaiming something, or losing something, or both?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits very still for a moment*\n\nBoth. Definitely both.\n\n*voice wavers slightly*\n\nI was someone before all this. A pediatric nurse. That was my identity. I was competent, knowledgeable, people respected that. And honestly? I miss it. I miss having a purpose outside of checking whether my baby's diaper smells off or counting her respirations.\n\n*pauses, struggling with emotion*\n\nBut here's the thing — I can't go back to being that person. Not right now. Because that person understood clinical things in a detached way. She could assess a sick infant, provide care, move on to the next patient. Now I can't detach. Every piece of knowledge I have feels like it's weaponized against me.\n\n*voice gets harder*\n\nWhen I think about going back to work, I don't feel like I'm reclaiming myself. I feel like I'm abandoning her. And I feel like a fraud. How am I supposed to educate other parents about infant health when I'm completely unraveling about my own child's wellbeing?\n\n*looks directly at you, eyes wet*\n\nI think what I've lost is the ability to be both things at once — the capable professional and the terrified mother. They can't coexist in me right now. So going back to work doesn't feel like reclaiming something. It feels like splitting myself in half and hoping one half doesn't completely shatter while the other one's at the hospital.\n\n*quietly*\n\nI don't know who I am anymore.",
+      "responding_to_question_id": "V5_POST_Q06_P01",
+      "input_tokens": 4774,
+      "output_tokens": 341
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the communities — online or in person — that became part of your postpartum world. Who did you connect with, and what did those communities offer that more formal support couldn't?",
+      "question_id": "V5_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, shakes head*\n\nHonestly? I haven't really connected with any communities. And I think that's the problem, not the solution.\n\n*fidgets with hands*\n\nI tried the online parenting forums early on, like I mentioned. But it backfired pretty quickly. I'd read one post about a baby with gastroenteritis and suddenly I'm spiraling, thinking about dehydration protocols and clinical deterioration. Someone would post about their baby's stool color and I'd be analyzing it like it was a lab report. It fed my anxiety instead of helping it.\n\n*voice gets quieter*\n\nThere's a postnatal group that meets at the community center here in Yarmouth. I drove by it once. Saw women going in with their babies, looking like they had it together, and I just... couldn't. I sat in my car for twenty minutes and then left. The thought of sitting in a circle talking about sleep schedules and feeding while I'm barely holding it together felt impossible.\n\n*looks away*\n\nAnd mom friends? I don't have any. I'm isolated by circumstance and by choice. I work irregular hours when I can find work, I'm dealing with this alone. There's no natural entry point to those communities.\n\n*voice becomes almost bitter*\n\nThe thing is, maybe I need a community. Maybe if I had other mothers to talk to, to normalize what I'm feeling, it would help. But I can't bring myself to be vulnerable like that with strangers. And everyone I know either doesn't have kids or has moved away or is living a completely different life than me.\n\n*quietly*\n\nSo I'm just... alone in this.",
+      "responding_to_question_id": "V5_POST_Q07",
+      "input_tokens": 5158,
+      "output_tokens": 367
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in pointing you toward those communities — a midwife, a friend, an algorithm — and how did that shape which communities you found?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q07_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs bitterly*\n\nNobody really pointed me toward anything. That's kind of the problem.\n\n*leans forward*\n\nMy visiting nurse mentioned the postnatal group once, in passing. She said something like, \"Some mothers find it helpful to connect with others,\" but it wasn't a real recommendation. It felt more like she was checking a box — like, \"I mentioned resources, now my job is done.\" She didn't follow up, didn't ask if I'd gone, didn't seem to think it was critical.\n\n*rubs face*\n\nThe online communities? I found those myself. Google searches at 2 AM when I couldn't sleep, when I was convinced something was wrong. \"Infant jaundice,\" \"newborn stool color,\" \"how to tell if baby is dehydrated.\" The algorithm just kept feeding me more and more content — forums, Reddit threads, medical sites. It was a rabbit hole I dug myself into.\n\n*voice gets quieter*\n\nNobody offered me therapist recommendations. Nobody said, \"Hey, you might benefit from talking to someone.\" The nurse hasn't done that. My GP didn't. My mom definitely didn't.\n\n*looks down*\n\nI think if someone I trusted — really trusted — had sat down and said, \"I'm concerned about you. Here's a group, here's a therapist, here's someone who can help,\" maybe I would've listened. But it would've had to come from someone who actually saw me struggling. And nobody did.\n\n*pauses*\n\nOr maybe they did see it and didn't know how to say anything.",
+      "responding_to_question_id": "V5_POST_Q07_P01",
+      "input_tokens": 5560,
+      "output_tokens": 348
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about any moments after your birth when you felt that you — as a person, not just as a new mother — were seen and cared for. Who made that happen, and what did they do or say?",
+      "question_id": "V5_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*goes very quiet, eyes getting glassy*\n\nI... \n\n*takes a shaky breath*\n\nThere was one moment. One. With my visiting nurse, actually. It was maybe three weeks postpartum, and I was having a really bad day. My daughter had been fussy, I hadn't slept in what felt like forever, and I just... broke down during the appointment. Like, actually crying, not holding it together.\n\n*voice gets very small*\n\nShe didn't immediately pivot to the baby. She just... sat with me for a minute. She asked me my name — not \"mom,\" not \"Mrs. So-and-so\" — just Grayce. And she asked how *I* was doing. Not the baby. Me.\n\n*wipes eyes*\n\nShe said something like, \"This is really hard. You're doing a hard thing alone.\" And I think that was the first time anyone had acknowledged that the situation itself was difficult, not just that I should be handling it better because I'm a nurse or because I'm supposed to be strong.\n\n*pauses, voice wavers*\n\nShe brought me tea. Like, she got up and made me tea in my own kitchen while I sat there falling apart. It was such a small thing, but it made me feel like I existed as a person in that moment, not just as a vessel for keeping a baby alive.\n\n*looks down*\n\nBut then the appointment ended and she left, and I was alone again. And I never told her how much that mattered because I didn't want to be... needy. Dependent.\n\n*quietly*\n\nThat was the only time I felt truly seen.",
+      "responding_to_question_id": "V5_POST_Q08",
+      "input_tokens": 5956,
+      "output_tokens": 360
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits back, thinking carefully*\n\nYeah, actually. There is something.\n\n*voice becomes more deliberate*\n\nI think the thing I wish someone understood is that having medical knowledge doesn't protect you. It does the opposite. I can recite infection protocols and dehydration signs and all the things that can go catastrophically wrong. And that knowledge has become a prison.\n\n*looks directly at you*\n\nBut also — and this is important — I think people see a nurse and they assume everything's fine. They assume I know what I'm doing. They don't realize that knowing theoretically and living it are completely different. And the shame of that gap? It keeps me isolated.\n\n*voice gets stronger*\n\nI need someone to ask me direct questions. Not \"how are you?\" — that's too vague and I'll lie. But something like, \"Are you having intrusive thoughts about your baby getting sick? Are you checking on her constantly? Are you struggling?\" Real questions. And then actually listen to the answer instead of just reassuring me that everything's fine.\n\n*pauses*\n\nAnd practically speaking — childcare support, flexible work options, actual mental health resources that don't feel like admitting defeat. The financial piece is suffocating. I can't afford to not work, but I can't afford good childcare, and I'm terrified to leave her.\n\n*voice becomes quieter*\n\nI'm afraid I'm going to break before anyone realizes I need help. And by then it might be too late — for me, for her, for everything.\n\n*looks at you*\n\nThat matters too.",
+      "responding_to_question_id": null,
+      "input_tokens": 6372,
+      "output_tokens": 345
+    }
+  ],
+  "metadata": {
+    "total_turns": 30,
+    "questions_asked": 8,
+    "probes_deployed": 5,
+    "adaptive_followups": 0,
+    "total_input_tokens": 53483,
+    "total_output_tokens": 5327,
+    "estimated_cost_usd": 0.0641,
+    "duration_seconds": 85.0,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 249
+  },
+  "errors": []
+}

@@ -1,0 +1,800 @@
+{
+  "session_id": "S_137",
+  "status": "completed",
+  "persona_id": "comp_017",
+  "persona_name": "Adela",
+  "persona_journey_stage": "first_trimester",
+  "persona_risk_level": "medium",
+  "persona_vulnerability_flags": [
+    "low_income",
+    "low_social_support",
+    "previous_loss"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 2,
+  "questionnaire_strategy": "Thematic Deep-Dive",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T01:32:04.796317",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Adela, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're in the early stages of pregnancy, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in seat, hands folded over my stomach*\n\nYeah, okay. Thank you for... for actually asking me to talk about it. Most of the time people just want to look at the numbers, you know? The test results, the ultrasound images. Not really me.\n\n*pauses, looking down*\n\nSo this is my fifth time. Fifth. And I know that probably sounds like I should be used to it by now, but honestly? It gets harder each time, not easier. Because each time I think, \"Maybe this is it. Maybe this one will work.\" And then... it doesn't.\n\nThe first four times, I lost them all before I could even tell people. Before twelve weeks. So now I'm terrified all the time. Every single day. I go to the bathroom and I'm holding my breath, checking for blood. I know that probably sounds dramatic, but when you've been through it, you understand.\n\n*rubs eyes*\n\nWhat's hard is feeling like just a case number at the clinic. They're nice enough, don't get me wrong. But they don't see that I'm working two jobs trying to save money, that I'm doing this completely alone, that I can barely afford the train fare to get there. They talk about statistics like that's supposed to make me feel better.\n\nI just... I need someone to see that I'm a person. That I'm scared. And that I really, really want this baby to survive.",
+      "responding_to_question_id": null,
+      "input_tokens": 833,
+      "output_tokens": 317
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your goals for starting or growing your family, what were the most important outcomes you hoped to achieve — for yourself, your relationship, and your future child?",
+      "question_id": "V2_PREC_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "intergenerational_patterns",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs a little, but there's no humor in it*\n\nMy relationship? There's no... it's just me. That's part of why this is so hard, honestly. I'm doing this alone.\n\n*looks away for a moment*\n\nWhen I think about what I wanted... I mean, I didn't plan any of this. I grew up in a house with my mom and my siblings, and I always imagined I'd have a partner, you know? Someone to share this with. But life doesn't always work out that way. I met someone, and I thought it was going somewhere, but when I got pregnant the first time, he was gone. Just... gone. So now I'm here figuring it out by myself.\n\n*voice gets quieter*\n\nFor me personally? I want to be a mother so badly. That's the biggest thing. I want to know what it feels like to hold my baby, to see their face. I want to be able to tell them that I fought for them, that I didn't give up even when everything felt impossible. \n\n*touches stomach again*\n\nAnd for my future child... I want them to have a better life than what I had. I want to be able to provide, you know? Right now I'm struggling, and I know that. But I keep thinking if I can just get through this pregnancy, if this baby makes it, then I'll figure out the rest. I'll work harder, save more, find better jobs.\n\nI just need one to stay. That's all I'm asking for.",
+      "responding_to_question_id": "V2_PREC_Q01",
+      "input_tokens": 1188,
+      "output_tokens": 335
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "You mentioned [goal] — can you tell me more specifically what that would look like if it was fully achieved?",
+      "question_id": null,
+      "probe_id": "V2_PREC_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "goals_expectations",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*tilts head slightly, a bit confused*\n\nI'm sorry, which one are you asking about? There's so many things I'm hoping for...\n\n*waits a moment, then continues*\n\nBut I think... I think the biggest one is just holding my baby. Alive. At the end of nine months. That sounds simple, right? But for me it's everything.\n\n*fidgets with hands*\n\nWhat that looks like... I don't know, maybe I'm being naive, but I imagine myself in a hospital bed, exhausted but happy, and they put this tiny person on my chest. And I get to stay with them. I get to take them home. I get to wake up at three in the morning because they're crying, and instead of it being a nightmare, it's just... my life. My normal.\n\n*voice cracks slightly*\n\nAnd then after that, I want to be able to give them things. Not fancy things, just... stability. A safe place to live. Food. Being able to take them to the doctor without worrying about how I'm going to pay for it. Maybe someday even put them through school.\n\n*looks up*\n\nRight now it feels impossible because I'm barely keeping my head above water. But if I could just get past these first twelve weeks, past that danger zone... maybe then I could breathe a little. Maybe then I could actually start imagining a future instead of just bracing for the next loss.\n\nDoes that make sense?",
+      "responding_to_question_id": "V2_PREC_Q01_P01",
+      "input_tokens": 1549,
+      "output_tokens": 322
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your motivations for seeking preconception care or health advice before becoming pregnant, what was it that prompted you to take action — or, if you did not seek any care, what held you back?",
+      "question_id": "V2_PREC_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "digital_information_seeking",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, but it's sharp, almost bitter*\n\nPreconception care? No, I... I didn't do that. I didn't know that was even a thing, honestly. Or maybe I did on some level, but it wasn't something I could access.\n\n*leans back*\n\nLook, the first pregnancy just happened. I wasn't planning it. I wasn't with someone stable or thinking about the future like that. And by the time I realized I was pregnant, I was already losing it. So there was no time for \"preconception\" anything.\n\n*voice gets defensive*\n\nAnd then after the first loss, the second, the third... I mean, what was I supposed to do? Go to a doctor and say what? \"Hey, can you help me prepare my body for a pregnancy that might not stick?\" I didn't have insurance most of the time. I was just trying to survive month to month. I couldn't afford to plan ahead like that.\n\n*softens a bit*\n\nEven now, I'm in the clinic, but it's because I'm already pregnant. If I had money and time and stability, maybe I would have gone to someone before getting pregnant. Maybe I would have done all the things they say you're supposed to do—take vitamins, eat right, manage stress.\n\n*shakes head*\n\nBut that's not my reality. My reality is just... trying to hold on to this one when it comes, you know? Not preparing for something that might never happen.",
+      "responding_to_question_id": "V2_PREC_Q02",
+      "input_tokens": 1919,
+      "output_tokens": 325
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What specifically triggered that decision at that moment rather than earlier or later?",
+      "question_id": null,
+      "probe_id": "V2_PREC_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, uncomfortable*\n\nI mean... it wasn't really a decision, if I'm being honest. This pregnancy just happened. I wasn't planning it.\n\n*shifts in seat*\n\nThere's a guy... we weren't together anymore when I found out. It was a mistake, kind of. One of those things that just... happens when you're lonely and someone pays attention to you for five minutes. I didn't think I could get pregnant again after what happened before, so I wasn't being as careful as I should have been.\n\n*looks down at hands*\n\nWhen I realized I was late, I took a test at like two in the morning in a gas station bathroom because I couldn't afford to go to the clinic first. And it was positive. And I just... I cried. I don't even know if they were happy tears or terrified tears, probably both.\n\n*voice gets quieter*\n\nI didn't decide to come to the clinic right away, either. I was scared. I was thinking maybe if I just waited, maybe it would go away like the others. But this time it didn't, and at some point I just... I needed to know if it was real. If it was going to last.\n\n*meets eyes briefly*\n\nSo I made an appointment. Not because I was being proactive or planning ahead. Just because I had to know what was happening to my body. There wasn't really a choice involved—it was just survival mode, you know?",
+      "responding_to_question_id": "V2_PREC_Q02_P01",
+      "input_tokens": 2261,
+      "output_tokens": 317
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about how you actually behaved during the preconception period — your lifestyle choices, health actions, information-seeking — what did you do, and how did those behaviours reflect what you truly believed was important?",
+      "question_id": "V2_PREC_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "intergenerational_patterns",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, defensive*\n\nI mean, I wasn't in a preconception period. That's the thing. There wasn't time for that.\n\n*pauses, then softens*\n\nBut... okay. If we're talking about what I was actually doing before I got pregnant? I wasn't doing much of anything intentional, honestly. I was working, trying to pay my bills, trying not to think too hard about my life falling apart.\n\n*rubs face*\n\nI wasn't taking vitamins. I wasn't going to the doctor regularly. I was probably not eating as healthy as I should because... I don't know, when you're stressed and poor, you eat what's cheap and fast. A lot of fast food. A lot of coffee because I was exhausted from working so much.\n\n*voice gets quieter, more vulnerable*\n\nI was drinking sometimes. Not like, a lot, but... yeah. I was smoking cigarettes when someone would give me one at work. I wasn't exercising. I was stressed all the time about money.\n\n*looks up, almost angry*\n\nBut what did that reflect? That I didn't care about my health? No. It reflected that I was just trying to survive. That I didn't have the luxury to think about hypothetical future babies when I was worried about paying rent. That I didn't have money for a gym membership or organic groceries or therapy for my anxiety.\n\n*softer*\n\nIf someone had actually helped me before... maybe things would be different. But nobody asked.",
+      "responding_to_question_id": "V2_PREC_Q03",
+      "input_tokens": 2627,
+      "output_tokens": 332
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your emotional experience during the preconception period — the waiting, the uncertainty, and the anticipation — what feelings stand out most strongly, and were any of those feelings hard to acknowledge or talk about?",
+      "question_id": "V2_PREC_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "partner_role",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*looks uncomfortable, shifts in seat*\n\nI... there wasn't really a preconception period for me to feel things about, you know? I wasn't waiting or anticipating anything. I wasn't thinking about having a baby.\n\n*pauses, quieter*\n\nBut I think what you're asking about is how I felt before I found out I was pregnant. And that's... that's harder to talk about.\n\n*fidgets with hands*\n\nI was lonely. Really lonely. And I think part of me was looking for someone to fill that, even though I knew it was stupid. Even though I had already lost four pregnancies and I knew what that pain felt like. But when you're alone night after night, and someone shows you attention... you want to believe it means something, you know?\n\n*voice cracks slightly*\n\nAnd there was this weird thing happening where I was both terrified of getting pregnant again and also... secretly hoping for it? Which sounds insane. Because I know the losses are brutal. But being a mother is the one thing that feels like it would make my life mean something. Like I would finally have a purpose.\n\n*looks away*\n\nI don't think I let myself really feel that hope, though. I kept it buried because hope just meant more heartbreak. So I just... existed. Worked. Went through the motions. Didn't let myself dream about anything.\n\n*quietly*\n\nThat's the hardest part to say out loud.",
+      "responding_to_question_id": "V2_PREC_Q04",
+      "input_tokens": 3007,
+      "output_tokens": 318
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the barriers you encountered — or anticipated — in your path to conception or early pregnancy preparation, what were the most significant obstacles, and how did you navigate them?",
+      "question_id": "V2_PREC_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*lets out a long breath*\n\nOh man. Where do I even start?\n\n*counts on fingers*\n\nMoney is the biggest one. Everything costs money. I don't have insurance half the time because my jobs don't offer it, and when I do, the deductible is so high it might as well not exist. So going to a doctor before I'm pregnant? That's not happening. I can barely afford to go when I am pregnant.\n\n*leans forward*\n\nAnd time. I work full-time, sometimes two jobs. When am I supposed to go to appointments? When am I supposed to research healthy pregnancy stuff or take vitamins or any of that? I'm exhausted. By the time I get home, I'm just trying to eat something and sleep so I can do it all again tomorrow.\n\n*voice gets harder*\n\nTransportation is another thing nobody talks about. I take the T. It's expensive, it's unreliable, and it's exhausting when you're already tired. Getting to the clinic takes an hour, sometimes more. That's time I'm not working, which means money I'm losing.\n\n*rubs temples*\n\nAnd then there's the loneliness piece. No partner means no support, no one to help financially, no one to come with me to appointments. I'm doing all of this completely by myself.\n\n*quieter*\n\nAs for navigating it? I don't know if I really did. I just... survived. I showed up when I could. I didn't ask for help because I was ashamed. And I hoped for the best.",
+      "responding_to_question_id": "V2_PREC_Q05",
+      "input_tokens": 3364,
+      "output_tokens": 342
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were those barriers primarily practical, emotional, relational, or something else — and can you give me a concrete example?",
+      "question_id": null,
+      "probe_id": "V2_PREC_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans back, thinking*\n\nIt's... all of it, actually. They're all tangled up together.\n\n*takes a moment*\n\nLike, okay. A concrete example. Last month, I realized I hadn't been to the clinic in a while because of the fourth loss. I knew I needed to go get checked out, get on some kind of plan before trying again. But I didn't go.\n\n*counts off on fingers*\n\nPractically? I didn't have the $15 for the T fare that day. That sounds stupid, but it's real. I needed that money for food. Emotionally? I was terrified. I didn't want to hear another doctor tell me my body was broken, that my recurrent losses were \"just one of those things.\" Relationally? I had no one to encourage me to go, no one to say \"Come on, let's go together.\" My mom doesn't really understand all this, and my friends... I've kind of pulled away from them because I'm embarrassed.\n\n*voice gets smaller*\n\nSo it wasn't just \"I can't afford it\" or \"I'm scared.\" It was all of it at once, layered on top of each other. The practical thing — no money — mixed with the emotional thing — fear — mixed with being alone.\n\n*looks up*\n\nAnd when you have all three hitting you at the same time, you just don't go. You stay home. You pretend you're fine. You wait until you're desperate or something forces you to act.\n\nThat's how it works for me, anyway.",
+      "responding_to_question_id": "V2_PREC_Q05_P01",
+      "input_tokens": 3733,
+      "output_tokens": 344
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your goals for your antenatal care during pregnancy, what did you most want from your interactions with midwives, doctors, and the wider care system — and to what extent were those goals met?",
+      "question_id": "V2_PREG_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath, choosing words carefully*\n\nWhat I wanted was... I wanted someone to see me. Not just my chart, not just the numbers and the history of loss. Me. Adela. The person who's terrified every single day.\n\n*voice shakes slightly*\n\nI wanted them to ask me how I'm actually doing, not just ask clinical questions. I wanted someone to acknowledge that this is hard, that I'm doing this alone, that I'm scared out of my mind. And I wanted them to actually have time for me, you know? Not rush through the appointment like I'm just another patient.\n\n*pauses*\n\nI also wanted... concrete help. Like, information about what to do if I start bleeding. Who to call. What's normal versus emergency. Because the first time I lost one, I didn't know what was happening. I was alone in my apartment, panicking, not knowing if I should go to the ER or what.\n\n*looks down*\n\nAnd I wanted them to help me figure out the practical stuff. How to afford care when I don't have insurance. How to take time off work for appointments without losing my job. Resources for someone in my situation.\n\n*laughs bitterly*\n\nHow much have those goals been met? Not much. The doctor is professional, but she's busy. I get maybe ten minutes. She tells me my risk level and sends me for tests. Nobody's asking how I'm doing emotionally. Nobody's offering resources.\n\n*quieter*\n\nI'm just... managing on my own, like always.",
+      "responding_to_question_id": "V2_PREG_Q01",
+      "input_tokens": 4125,
+      "output_tokens": 339
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about how you sought and used information during your pregnancy — from healthcare providers, online sources, apps, books, and people around you — how did you decide what to trust and act upon?",
+      "question_id": "V2_PREG_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "trust_distrust",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in seat, looks a bit sheepish*\n\nOkay, so... I do a lot of googling. Maybe too much, honestly. Like, way too much.\n\n*rubs face*\n\nEvery symptom, every weird feeling, I'm on my phone at night looking it up. And then I'm down this rabbit hole of worst-case scenarios because Google is terrible for anxiety. I'll read about miscarriage statistics and complications and I'm spiraling, convinced something's wrong.\n\n*voice gets quieter*\n\nBut here's the thing — I don't really trust what the doctors tell me because I feel like they're not being honest about how bad things could go. Or maybe they are, and I'm just in denial. I don't know. So I look online to... I guess to prepare myself? To know what to watch for?\n\n*pauses*\n\nMy mom gives me advice sometimes, old remedies and stuff. Like, she tells me to rest, to eat certain foods. I listen to her, but I don't know if any of it actually helps. My friends... most of them haven't been through this, so I don't really talk to them about it.\n\n*looks frustrated*\n\nThe problem is I don't know what to trust. The clinic gives me one piece of information, online forums say something completely different, my mom says something else. And I'm just here trying to figure out what's actually going to keep this baby alive.\n\n*quietly*\n\nA lot of the time I just... do nothing. I wait. I don't act on anything because I'm afraid of making it worse.",
+      "responding_to_question_id": "V2_PREG_Q02",
+      "input_tokens": 4508,
+      "output_tokens": 348
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the emotional landscape of your pregnancy — the highs, the anxieties, the uncertainties — what feelings were most prominent, and how well did your care environment support you in managing them?",
+      "question_id": "V2_PREG_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "dignity_respect",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath*\n\nThe anxiety is... it's constant. Like, it doesn't go away. Not for a second.\n\n*places hand on stomach*\n\nEvery morning I wake up and the first thing I do is check for blood. Every bathroom trip, I'm terrified. When I have a cramp, my heart starts racing. I can't enjoy anything because I'm waiting for the other shoe to drop. I keep thinking, \"Okay, maybe I'll let myself feel happy at twelve weeks. Maybe then I can relax.\"\n\n*voice gets tighter*\n\nBut I know what happens at twelve weeks. I've been there four times. So even that doesn't feel safe.\n\n*looks away*\n\nThere are these moments though... like when I felt something move the other day, or when I heard the heartbeat at the clinic. For like, maybe thirty seconds, I felt this surge of hope and joy. Like, \"Oh my god, this might actually be happening.\" And then immediately it turns into terror because now I have more to lose.\n\n*voice breaks*\n\nAs for the care environment supporting me? Not really. The ultrasound tech goes quiet and I'm convinced something's wrong. The doctor talks about statistics and risk factors. Nobody asks me how I'm coping emotionally. There's no counselor, no therapist, nothing.\n\n*quietly, almost angry*\n\nI'm managing my mental health alone, on the T, in the middle of the night when I can't sleep. That's the support I get.",
+      "responding_to_question_id": "V2_PREG_Q03",
+      "input_tokens": 4902,
+      "output_tokens": 331
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the decisions you faced during pregnancy — including screening tests, monitoring choices, and care options — how did you go about making those decisions, and who or what most influenced them?",
+      "question_id": "V2_PREG_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*rubs temples*\n\nHonestly? Most of the time I just do what the doctor tells me to do. Because I don't feel like I have a choice, and because I'm terrified that if I don't do everything \"right,\" something will go wrong.\n\n*leans forward*\n\nWhen they said I should do the screening tests, I did them. I didn't really understand what they were testing for or what the results meant, but I did them because... what if I didn't and something was wrong that could have been caught?\n\n*voice gets anxious*\n\nThe problem is I don't feel like anyone's really explaining my options to me. It's not like they're saying, \"Here are three approaches, here's what each one means, what do you want to do?\" It's more like, \"You need this test.\" Okay, I get the test. I don't know enough to question it.\n\n*pauses*\n\nAnd the online stuff influences me too, but in bad ways. I'll read horror stories and then I'm terrified of everything. Or I'll read about some natural thing that's supposed to help and I'll try it, but I don't know if it's actually safe.\n\n*voice gets quieter, more vulnerable*\n\nReally, what influences my decisions the most is just... fear. Fear of losing this baby. So I say yes to everything. I do everything they ask. I follow every piece of advice I find online that sounds promising.\n\n*looks down*\n\nBut nobody's asking what I actually want. What would make me feel safer or more in control. I'm just... going along.",
+      "responding_to_question_id": "V2_PREG_Q04",
+      "input_tokens": 5275,
+      "output_tokens": 350
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the physical changes in your body during pregnancy, how did those changes affect how you felt about yourself — and were those feelings acknowledged or addressed within your care?",
+      "question_id": "V2_PREG_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, crosses arms*\n\nI... that's harder to talk about.\n\n*pauses*\n\nMy body feels like it's not mine anymore, you know? Like it's just this vessel that I'm terrified is going to fail me again. I'm not thinking about getting bigger or stretch marks or any of that normal pregnancy stuff. I'm just... scanning myself for disaster.\n\n*voice gets quieter*\n\nI notice every change — my breasts are sore, I'm more tired, my stomach feels different. But instead of thinking \"Oh, that's a sign the baby's growing,\" I'm thinking \"Is this normal? Is something wrong?\" Because my body has betrayed me four times already.\n\n*rubs stomach*\n\nAnd there's this weird disconnect where I'm trying to bond with what's happening inside me, but I'm also afraid to. Like, if I get too attached to my body feeling pregnant, if I start believing in this baby... then losing it will hurt even more.\n\n*looks up, frustrated*\n\nThe clinic? They don't talk about any of this. They just measure me, check my weight, listen to the heartbeat. They're not asking how I feel about my changing body or if I'm struggling emotionally with all of this. It's just clinical.\n\n*voice cracks*\n\nI wish someone would acknowledge that for me, having a pregnant body is triggering. That it's hard to trust it. That I need help with that, not just... monitoring.",
+      "responding_to_question_id": "V2_PREG_Q05",
+      "input_tokens": 5663,
+      "output_tokens": 324
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the informal support you received during pregnancy — from partners, family, friends, or online communities — how did that support compare to what you received from healthcare professionals, and what role did each play?",
+      "question_id": "V2_PREG_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "partner_role",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, but it's hollow*\n\nInformal support? I don't really have much of that.\n\n*looks down*\n\nMy mom knows I'm pregnant, and she's trying, I guess. But she doesn't really get it. She had me young and it was fine, so she thinks I'm being dramatic about all my fears. She keeps saying things like \"Just relax, everything will be fine,\" which... doesn't help. It actually makes me feel like she doesn't understand how serious this is for me.\n\n*voice gets smaller*\n\nMy friends... I've kind of disappeared from their lives, honestly. I didn't want to keep telling them about losses, and now I don't want to tell them about the pregnancy because I'm terrified I'll lose it again and then have to explain that to everyone. It's easier to just be alone.\n\n*pauses*\n\nThe guy, the father... he doesn't know I'm keeping the baby. I haven't told him. So there's definitely no support there.\n\n*fidgets*\n\nAs for online communities, I'm in a few forums for people with recurrent loss, and that's... that's actually the only place where people get it. Where I don't feel crazy for being terrified. Those strangers understand in a way nobody in my actual life does.\n\n*voice gets harder*\n\nBut comparing that to healthcare? The professionals have credentials and information, but they don't have time for me. The online people have time, but they can't actually help me medically or practically.\n\n*quietly*\n\nSo I'm getting pieces of support from everywhere, but nothing that really covers everything I need.",
+      "responding_to_question_id": "V2_PREG_Q06",
+      "input_tokens": 6033,
+      "output_tokens": 356
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q12",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "*stares at hands for a moment*\n\nI think what I'm realizing, saying all this out loud, is that I'm really isolated. Like, deeply isolated.\n\n*voice trembles*\n\nThe healthcare system is supposed to be there for me, but it feels transactional. They do their job, I do mine, and then I leave. There's no relationship. And everyone else in my life either doesn't understand or I've pushed away because I'm too scared to be vulnerable.\n\n*looks up*\n\nSo I'm managing this pregnancy completely alone, making decisions I don't fully understand, trying to stay positive when everything in me is braced for catastrophe. And nobody's really checking in on me as a person. Nobody's asking, \"Adela, how are you actually doing? What do you need?\"\n\n*voice gets quieter*\n\nThe healthcare providers, they see \"medium risk, history of loss, low income.\" But they don't see that I'm working myself to exhaustion, that I'm skipping meals to pay for appointments, that some nights I lie awake at three in the morning just listening to my body, trying to figure out if something's wrong.\n\n*pauses*\n\nAnd the people who care about me — my mom, my friends — they're not equipped to help with the medical stuff, and I don't know how to ask them for emotional support without feeling like a burden.\n\n*rubs face*\n\nI just... I feel like I'm supposed to do this alone. And that's exhausting. That's the hardest part, honestly. Not the physical stuff. The loneliness.",
+      "responding_to_question_id": "Q12",
+      "input_tokens": 6398,
+      "output_tokens": 349
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q13",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits quietly for a moment, then continues*\n\nI think what scares me most is that even if this baby makes it, even if I get to hold them at the end... I don't know if I'm equipped to do this. To be a mother alone.\n\n*voice shakes*\n\nLike, I want it so badly. I want to be someone's mom. But I'm barely keeping myself afloat financially. What happens when the baby comes and I can't work as much? How do I pay rent and buy formula and... everything?\n\n*looks up, eyes wet*\n\nAnd there's this shame underneath all of it. Shame that I'm in this situation. Shame that I don't have a partner. Shame that I'm struggling. When I sit in that clinic waiting room, I feel like everyone can see it written on my face — that I'm a single mom, that I'm poor, that I made mistakes.\n\n*voice gets harder*\n\nThe healthcare system doesn't help with any of that. They're not asking, \"What barriers does Adela face? How can we actually support her?\" They're just... treating my pregnancy like it's separate from my life. Like the medical stuff is their job and everything else is my problem.\n\n*pauses*\n\nBut it's all connected, you know? My stress affects my body. My financial stress affects my ability to eat well and get to appointments. My isolation affects my mental health. You can't just treat the pregnancy in isolation.\n\n*quietly*\n\nI just wish someone would see all of me and help me figure this out. Not just the clinical parts. All of it.",
+      "responding_to_question_id": "Q13",
+      "input_tokens": 6756,
+      "output_tokens": 353
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there aspects of your physical self that you felt proud of, anxious about, or uncertain about in relation to pregnancy?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, seems caught off guard by the question*\n\nProud of? I... that's not something I usually think about.\n\n*shifts uncomfortably*\n\nI guess I'm proud that my body is still trying, you know? Even after four losses, it's still capable of getting pregnant. That takes something. My body keeps showing up, even when I've lost faith in it.\n\n*touches stomach gently*\n\nAnd there's this weird thing where feeling the baby move — even though it scares me — it also makes me feel... powerful? Like, my body is doing something amazing right now. Creating life. I'm not used to thinking about my body as capable of anything good.\n\n*voice gets quieter*\n\nBut the anxiety... that's bigger. I'm anxious about everything. Like, am I eating enough? Is my body getting what it needs? I look at myself and I'm thinking, \"Are you strong enough to carry this baby to term? Are you healthy enough?\" \n\n*looks away*\n\nAnd there's this body dysmorphia thing happening where I'm not really seeing myself. I'm just seeing a vessel. A risky vessel. My boobs are sore and it makes me think something's wrong. I'm tired and I think maybe my body is failing. I get a craving and I wonder if I'm eating the wrong thing.\n\n*voice cracks*\n\nI wish I could just... feel proud of what my body is doing. But mostly I just feel terrified of it.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 7137,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q14",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath*\n\nYou know what's messed up? I catch myself sometimes looking in the mirror and I don't even recognize myself anymore. Not because I'm getting bigger — I barely am at this point — but because... this doesn't feel real yet. Or maybe it feels too real and I'm trying to protect myself from it.\n\n*rubs face*\n\nI think I'm dissociating from my own body a little bit. Like, I'm aware of the physical changes — the soreness, the nausea, the exhaustion — but I'm not... connecting to them emotionally. Because if I do, if I really let myself feel pregnant, then I have to believe this baby is real. And if the baby is real, then I have so much more to lose.\n\n*voice gets smaller*\n\nSo it's easier to just... exist in my body without really being in it. Does that make sense? I go through the motions. I take care of myself because I know I have to. But I'm not like, celebrating or marveling at what's happening. I'm just... surviving it.\n\n*pauses, then more quietly*\n\nSometimes I wonder if that's damaging. If my baby can sense that I'm not fully there, you know? That their mother is terrified and disconnected. But then I think, \"Well, at least they're alive right now. At least there's still a heartbeat.\"\n\n*looks at hands*\n\nThat's the goal. Just... keep going. Keep the heartbeat going. Everything else is secondary.",
+      "responding_to_question_id": "Q14",
+      "input_tokens": 7473,
+      "output_tokens": 339
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there moments where you felt a healthcare professional spoke to you in a way that felt dismissive or condescending?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "*jaw tightens, nods slowly*\n\nYeah. Yeah, there have been moments.\n\n*leans forward*\n\nLike, one time I was asking my doctor about my anxiety — about how scared I am all the time — and she kind of... brushed past it? She was like, \"Well, some anxiety in pregnancy is normal. Just try to relax and reduce stress.\" And I'm sitting there thinking, \"Reduce stress? I'm working two jobs, I have no partner, I'm terrified of losing this baby for the fifth time, and you're telling me to relax?\"\n\n*voice gets harder*\n\nIt felt dismissive. Like my anxiety wasn't a real medical concern, it was just something I needed to get over. She didn't ask why I was anxious. She didn't acknowledge that my anxiety is completely rational given my history.\n\n*pauses*\n\nAnd there was this one time when I mentioned money was tight and I was worried about affording prenatal vitamins. The nurse just... looked at me like I was being irresponsible. Like, \"Well, you need those for the baby.\" Yeah, I know. But I also need to eat. Nobody offered to help me figure it out. Just judgment.\n\n*voice cracks slightly*\n\nThe worst part is when they use clinical language about my losses — \"spontaneous abortion,\" \"non-viable pregnancy\" — like those words don't mean anything. Those were my babies. My hopes. And they talk about them like they're just data points in my file.\n\n*quietly*\n\nI feel like they think I should be used to this by now. That it should be easier the fifth time.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 7839,
+      "output_tokens": 360
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q15",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "*voice gets quieter, more raw*\n\nThere's this underlying feeling I get from them that I'm... irresponsible. Like, they don't say it out loud, but I can feel it. I'm a young, single woman without a stable job or partner, and they're treating me like I should have known better. Like this is my fault somehow.\n\n*looks down*\n\nOne doctor asked me about my sexual history in a way that felt... judgmental. Not clinical, but like she was asking because she was disappointed in me. And I wanted to say, \"I'm not a bad person. I made mistakes, but I'm here trying to take care of this baby.\"\n\n*pauses, then continues*\n\nWhat really gets me is when they talk about my \"non-compliance\" or whatever. Like, if I miss an appointment because I had to work, or if I can't afford a test right away, they act like I'm not taking this seriously. But I am. I'm taking it so seriously it's destroying me.\n\n*voice shakes*\n\nThey don't understand that for me, every single day of this pregnancy is a victory. Every day without bleeding is a miracle. And they're sitting there with their stable jobs and their partners and their insurance, telling me what I should be doing like they understand what my life is like.\n\n*looks up, eyes wet*\n\nI just want someone to say, \"This is really hard. You're doing an amazing job under impossible circumstances.\" Instead I get... clinical coldness. Like I'm a problem to be managed, not a person.\n\n*quietly*\n\nThat's what hurts the most.",
+      "responding_to_question_id": "Q15",
+      "input_tokens": 8208,
+      "output_tokens": 355
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did older female relatives, such as your mother or grandmother, share advice or stories that influenced how you thought about getting pregnant?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "*relaxes slightly, becomes more reflective*\n\nYeah, my mom... she has a lot of opinions about pregnancy.\n\n*small smile*\n\nShe had me when she was really young, like nineteen. And it was hard, but she made it work. She always talks about how strong she was, how she just pushed through everything. And I think part of me grew up thinking that's what you do — you just... endure it.\n\n*pauses*\n\nShe keeps telling me stories about when she was pregnant with me, how she worked up until the day before I was born, how she didn't complain, how she just... did it. And I think there's this expectation that I should be the same way. That I shouldn't be so anxious or scared. That I should just accept it and move on.\n\n*voice gets quieter*\n\nBut what she doesn't understand is that I'm not her. I don't have the same resilience or the same... I don't know, confidence? She was young and naive and maybe that helped her. I'm older and I've lost four pregnancies. I know too much now.\n\n*fidgets*\n\nMy abuela, my grandmother, she passed away before all this started. But my mom talks about how Abuela had like six kids, no problem, just kept going. Like that's supposed to make me feel better? Like if I'm struggling, I'm weak somehow?\n\n*looks up*\n\nI love my mom, but sometimes her stories just make me feel worse about myself. Like I'm failing at something that should be natural and easy.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 8591,
+      "output_tokens": 345
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q16",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "*voice gets softer, more vulnerable*\n\nI think what I'm realizing is that their generation didn't really talk about feelings or struggles. They just... did it. And they're passing that down to me — this idea that you don't complain, you don't ask for help, you just keep moving.\n\n*pauses*\n\nBut that's killing me, honestly. I'm trying so hard to be strong like my mom, to just push through like my abuela supposedly did. But I'm drowning. And when I try to tell my mom that, she doesn't know what to do with that information. She thinks I'm being dramatic.\n\n*looks away*\n\nThere's also this cultural thing, I think. Like, in our family, being a mother is... it's everything. It's your purpose, your identity, your worth. So when I can't seem to carry a pregnancy to term, it feels like I'm failing at the one thing that's supposed to define me as a woman.\n\n*voice cracks*\n\nMy mom keeps saying things like, \"Don't worry, it will happen,\" or \"Your time will come,\" like it's just fate or God's plan. But that doesn't help me. That doesn't tell me what to do when I'm terrified. That doesn't acknowledge that I'm suffering right now.\n\n*quietly*\n\nI wish she could just sit with me in this. Not tell me stories about how strong she was, but ask me how I'm doing. Ask me what I need. That would mean more than anything.\n\n*pauses*\n\nBut I don't think she knows how to do that.",
+      "responding_to_question_id": "Q16",
+      "input_tokens": 8945,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there specific platforms, websites, or communities you returned to regularly, and what made them feel credible or useful?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods, more animated*\n\nYeah, okay. So I'm on this forum — it's specifically for people with recurrent pregnancy loss. And I go there... probably way too much, honestly. Like, multiple times a day.\n\n*leans forward*\n\nWhat makes it credible is that everyone there has actually lived it. They're not doctors talking down to you. They're women who've lost pregnancies, who are terrified, who understand exactly what it feels like to see that ultrasound tech go quiet. They get it without me having to explain.\n\n*voice gets quieter*\n\nAnd they share their stories — like, \"I had four losses and then this one stuck,\" or \"I'm on my fifth pregnancy now and here's what helped me.\" It gives me hope, you know? Like, it's possible. Other people have made it through.\n\n*pauses*\n\nThere's also this Facebook group for single moms, and I lurk there mostly. Don't post much. But seeing other women doing this alone, figuring out childcare and finances... it helps me feel less crazy. Like, okay, this is hard but it's possible.\n\n*fidgets*\n\nThe thing is, I trust those spaces more than I trust my doctor sometimes. Because those women aren't being paid to see me. They're sharing because they care. They're not rushing through their stories like I'm taking up their time.\n\n*voice gets smaller*\n\nThough I will say, sometimes the forums make me worse. Like, someone will post about a complication and then I'm googling that symptom at midnight convinced I have it too.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 9324,
+      "output_tokens": 350
+    },
+    {
+      "turn_number": 49,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q17",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 50,
+      "role": "persona",
+      "type": "response",
+      "text": "*rubs eyes*\n\nYeah, so... the internet is kind of a double-edged sword for me. It's helpful and destructive at the same time.\n\n*leans back*\n\nLike, I'll go on these forums looking for reassurance, and I'll find it. Someone will say, \"I had spotting at eight weeks and everything was fine,\" and I'm like, \"Okay, maybe I'm okay too.\" But then someone else will post about their loss and suddenly I'm spiraling.\n\n*voice gets anxious*\n\nI've spent entire nights on pregnancy loss websites, reading about statistics and complications. And intellectually I know that just because something can happen doesn't mean it will happen to me, but my brain doesn't work that way. My brain reads the worst-case scenario and thinks, \"That's going to be me.\"\n\n*pauses*\n\nWhat I've noticed is that I trust certain forums and certain people more than others. Like, there's this one woman on the recurrent loss forum who's been through seven pregnancies and three losses, and she just... she doesn't sugarcoat anything but she's also not doom-and-gloom. When she says something, I believe her because she's been through so much.\n\n*voice gets quieter*\n\nBut I also don't trust general pregnancy websites or apps because they don't account for my history. They're written for people having their first normal pregnancy. They don't understand that every milestone for me is terrifying, not exciting.\n\n*looks up*\n\nThe problem is, I'm relying on strangers on the internet more than I'm relying on my actual healthcare team. And that's not... that's not ideal. But at least those strangers make me feel less alone.",
+      "responding_to_question_id": "Q17",
+      "input_tokens": 9683,
+      "output_tokens": 380
+    },
+    {
+      "turn_number": 51,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a specific situation where you felt judged, overlooked, or not treated as a capable decision-maker regarding your reproductive health?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 52,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a sharp breath, eyes get watery*\n\nOh god, yeah. There's one that keeps replaying in my head.\n\n*voice gets tight*\n\nI went to the clinic about three weeks ago, and I wanted to talk about my options if something goes wrong again. Like, I wanted to know — if I start bleeding, what do I do? Do I go to the ER? Do I call the clinic? What's the plan? Because last time, with the third loss, I didn't know what was happening and I just sat in my apartment alone, terrified.\n\n*pauses, collecting herself*\n\nSo I asked my doctor this, and she basically... she dismissed me. She said, \"Well, let's just focus on keeping this pregnancy viable right now. We can cross that bridge if we come to it.\" And I'm sitting there thinking, \"But I need to know now. I need to be prepared. I need to feel in control of something.\"\n\n*voice shakes*\n\nAnd then she looked at my chart and asked about my job situation — like, why was that relevant? — and I told her I was between jobs, trying to find something stable. And I swear her whole demeanor changed. Like, she was thinking, \"Oh, you're unstable. You can't handle this.\"\n\n*looks away*\n\nShe didn't ask me what I needed. She didn't ask if I had a support system or if I was managing okay emotionally. She just... made assumptions. And then she basically told me what I was going to do — the tests I needed, the schedule I needed to keep — like I didn't get a say in any of it.\n\n*voice gets quieter, more bitter*\n\nIt felt like she thought I was incapable of making good decisions because of my circumstances. Like, because I'm poor and single, I must be reckless or irresponsible. She wasn't treating me like a partner in my own care. She was treating me like a problem to manage.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 10095,
+      "output_tokens": 434
+    },
+    {
+      "turn_number": 53,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q18",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 54,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits in silence for a moment, then continues*\n\nWhat really got me was that I was trying to be proactive. I was trying to prepare myself mentally and practically for what might happen. And instead of respecting that, she shut me down. Like my concerns weren't valid.\n\n*voice gets harder*\n\nAnd I think part of it is that she sees my file — four losses, no partner, low income — and she's already decided who I am. She's decided I'm not capable of handling complexity or nuance. So she just tells me what to do and expects me to follow along.\n\n*pauses*\n\nBut here's the thing — I've managed four pregnancies and four losses completely alone. I've navigated the healthcare system on my own, I've made decisions about my body, I've grieved in silence. I'm incredibly capable. Just because my life looks different than hers doesn't mean I'm less intelligent or less able to understand my own care.\n\n*looks up, eyes intense*\n\nAnd what bothers me most is that she didn't even realize she was doing it. She probably went home thinking she was being a good doctor, following her protocols. But she made me feel small. Like my input didn't matter. Like I was just a number in a system.\n\n*voice cracks*\n\nI wanted to say to her, \"I know my body. I know what I've been through. Please treat me like I'm smart enough to understand what's happening to me and what my options are.\" But I didn't. Because I was afraid if I pushed back, she'd judge me even more.\n\n*quietly*\n\nSo I just nodded and agreed to everything and left feeling more alone than when I came in.",
+      "responding_to_question_id": "Q18",
+      "input_tokens": 10538,
+      "output_tokens": 371
+    },
+    {
+      "turn_number": 55,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did you have reliable and private access to a smartphone or computer throughout your pregnancy, and did that change at any point?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 56,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly*\n\nI have a smartphone, yeah. It's like... five years old and the battery dies randomly, but I have one. That's my lifeline, honestly.\n\n*pulls it out, protective*\n\nI can't afford a lot of things, but I keep my phone plan going because it's how I stay connected. It's how I get to work — I use apps for gig jobs sometimes. It's how I communicate with the clinic. It's how I access those forums I was telling you about.\n\n*pauses*\n\nThe privacy part is trickier though. I share an apartment with a roommate, so I don't have a ton of physical privacy. But on my phone, yeah, I can close the door to my room and be alone with my stuff. Nobody's monitoring what I'm doing.\n\n*voice gets quieter*\n\nThough sometimes I worry about that too, you know? Like, I'm reading all this stuff about pregnancy and loss and my roommate doesn't really know what I'm going through. So I'm quiet about it. I keep my phone close.\n\n*fidgets*\n\nThere was a period a few months ago when I couldn't afford to pay my phone bill for like two weeks. And I was panicking because I couldn't access anything — no communication with anyone, no forums, no information. Just completely cut off. That was... that was really isolating.\n\n*looks up*\n\nBut mostly I have access. The internet is probably one of the few things I prioritize because without it, I feel completely lost.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 10936,
+      "output_tokens": 336
+    },
+    {
+      "turn_number": 57,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q19",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 58,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans back, thinking*\n\nI think what the phone represents for me is... control, in a weird way. Like, everything else in my life feels out of control — my body, my finances, my circumstances. But on my phone, I can search for information. I can reach out to people. I can find answers at three in the morning when I can't sleep.\n\n*voice gets softer*\n\nEven though sometimes those answers aren't helpful. Even though sometimes I'm just feeding my anxiety by obsessively googling. At least I'm doing something. At least I feel like I have some agency.\n\n*pauses*\n\nThe clinic doesn't really give me information in a way I can take home and process. They tell me things during appointments and then I'm left trying to remember what they said. But if I can google it, if I can read it again and again, I feel like I understand it better. I feel less powerless.\n\n*fidgets with phone*\n\nAnd the forums... they're like my support group that I can access anytime. When I'm having a panic attack at work, I can go to the bathroom and scroll through stories from other women who've been through this. It makes me feel less alone in a way that nothing else does.\n\n*voice gets quieter*\n\nBut I also worry sometimes that I'm addicted to having that access. Like, what if my phone breaks? What if I can't pay the bill? I don't have a backup plan for connection. I don't have other people I can call or talk to regularly.\n\n*looks down*\n\nSo my phone is both a lifeline and a reminder of how isolated I really am.",
+      "responding_to_question_id": "Q19",
+      "input_tokens": 11281,
+      "output_tokens": 360
+    },
+    {
+      "turn_number": 59,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there moments when a healthcare provider dismissed or minimised a concern you raised about your body or a symptom you were experiencing, and how did that make you feel?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 60,
+      "role": "persona",
+      "type": "response",
+      "text": "*face hardens, jaw clenches*\n\nYes. Multiple times.\n\n*takes a breath*\n\nThere was this one time early on when I called the clinic because I was having really sharp cramping. Like, worse than period cramps. And I was terrified because cramping was one of the first signs with my second loss. So I called, and the nurse was like, \"Oh, cramping is totally normal in early pregnancy. Just rest and drink water.\"\n\n*voice gets tighter*\n\nAnd I'm thinking, \"But I've been pregnant four times before. I know what normal feels like for me. This doesn't feel normal.\" But she just... brushed me off. Didn't ask me any follow-up questions. Didn't say, \"Come in and let us check.\" Just... \"Rest and call back if it gets worse.\"\n\n*pauses, visibly upset*\n\nSo I did. I rested. And the cramping continued, and I was terrified all night. And nothing happened — the pregnancy continued — but the point is, my concern wasn't taken seriously. It was minimized.\n\n*voice shakes*\n\nAnd there was another time when I mentioned I was having trouble sleeping because of anxiety, and the doctor said, \"Well, pregnancy insomnia is common. You'll adjust.\" Like, this isn't just normal pregnancy insomnia. This is me lying awake at three in the morning convinced the baby is dead.\n\n*looks away*\n\nWhat made me feel awful was that I felt stupid for even bringing it up. Like, I was wasting their time with my irrational fears. So now I don't report things unless they're really severe. And that's dangerous, right? That means I might miss something important because I don't want to bother them with something that might be \"normal.\"\n\n*voice gets quieter*\n\nThey made me feel like my body's signals aren't trustworthy. Like I'm just an anxious person overreacting. But I know my body. And when something feels wrong, it feels wrong.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 11678,
+      "output_tokens": 446
+    },
+    {
+      "turn_number": 61,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 62,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, looks thoughtful, then emotional*\n\nYeah, actually. There is something.\n\n*takes a shaky breath*\n\nI want to say that I'm not just a statistic. I'm not just \"recurrent loss\" or \"high risk\" or \"low income, no support.\" I'm a person who desperately wants to be a mother. And I'm doing everything I can with what I have.\n\n*voice cracks slightly*\n\nI think healthcare providers need to understand that the way they talk to us, the way they look at us — it matters. It affects how we feel about ourselves and our pregnancies. When you treat someone like they're incapable or irresponsible, they start to believe it.\n\n*looks up*\n\nAnd I want them to know that being poor and single and scared doesn't make me a bad mother. It doesn't mean I don't deserve support or respect or to have my voice heard. It just means I'm fighting harder than some people have to fight.\n\n*pauses, more quietly*\n\nI also want to say... I'm grateful. For people like you who actually ask. Who listen. Who treat me like I matter. Because most of the time I feel invisible. And being seen — really seen — that's what I need most.\n\n*small, fragile smile*\n\nAnd I hope this baby makes it. I hope I get to find out what it feels like to be a mom. Because that's the one thing that would make sense of all of this.",
+      "responding_to_question_id": null,
+      "input_tokens": 12180,
+      "output_tokens": 326
+    }
+  ],
+  "metadata": {
+    "total_turns": 62,
+    "questions_asked": 19,
+    "probes_deployed": 10,
+    "adaptive_followups": 0,
+    "total_input_tokens": 198049,
+    "total_output_tokens": 10783,
+    "estimated_cost_usd": 0.2196,
+    "duration_seconds": 170.0,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "goals_expectations",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 238
+  },
+  "errors": []
+}

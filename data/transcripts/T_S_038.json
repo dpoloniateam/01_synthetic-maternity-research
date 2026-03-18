@@ -1,0 +1,706 @@
+{
+  "session_id": "S_038",
+  "status": "completed",
+  "persona_id": "comp_043",
+  "persona_name": "Basilia",
+  "persona_journey_stage": "second_trimester",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [
+    "single_parent"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 2,
+  "questionnaire_strategy": "Thematic Deep-Dive",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "google/gemini-3.1-flash-lite-preview",
+  "environment": "dev",
+  "timestamp": "2026-03-18T00:19:52.198996",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Basilia, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're in the middle of your pregnancy, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "I appreciate you asking. It’s… it’s been a lot, honestly. I think when you’re twenty-one and living in a place like Holden, everyone has a very specific idea of how your life is supposed to look. When I walk into the clinic, I see these older couples, and it’s hard not to notice the empty chair next to me. \n\nEverything about the clinical side is fine, I guess. My midwife is kind, but she’s always checking her watch, and she tells me my blood pressure is perfect and the baby is growing exactly as she should. I know that’s good news—I’ve read all the books, I know the lung development stages by heart—but it’s hard to feel \"perfect\" when I go home to a quiet house and the weight of the future hits me all at once.\n\nI want to be seen as more than just a low-risk case on a chart. I spend so much time obsessing over the details because it’s the only way I can grab onto some control, but I’m terrified that when I’m actually in labor, the silence is going to be the only thing I hear. I just want to know that someone is looking out for the person, not just the pregnancy. Does that make sense?",
+      "responding_to_question_id": null,
+      "input_tokens": 774,
+      "output_tokens": 272
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your goals for your antenatal care during pregnancy, what did you most want from your interactions with midwives, doctors, and the wider care system — and to what extent were those goals met?",
+      "question_id": "V2_PREG_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "Honestly? I just wanted someone to acknowledge that this is hard. I didn’t need them to fix my life or tell me I was brave—I just needed them to look me in the eye and see me as a person, not just a “low-risk” file folder. \n\nWhen I’m in those appointments, I’m constantly analyzing their tone. I want them to ask, \"How are you *actually* doing?\" Instead, I get the standard script: \"Fundal height is normal, fetal heart rate is good, see you in four weeks.\" I know my vitals are textbook, but my anxiety isn't. When I bring up a fear—like how I'm going to manage on my own after the birth—it feels like they don’t quite know what to do with that. It’s like they’re trained to handle the biology, but the human side of me just falls through the cracks.\n\nTo be fair, they’ve never been rude or dismissive, but they’ve never really reached out, either. I think I was hoping for more of a partnership, someone who understood that when you’re doing this alone, every little twinge feels like a mountain. I’m just a data point to them, a box they’ve checked off. I suppose I’ve met my clinical goals, but the emotional ones? Those are still very much unmet.",
+      "responding_to_question_id": "V2_PREG_Q01",
+      "input_tokens": 1090,
+      "output_tokens": 293
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a specific appointment or interaction that felt closest to what you had hoped care would look like?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "There was one afternoon about three weeks ago, right after I’d had my anatomy scan. I was sitting on the edge of the paper-covered table, and the ultrasound tech—she was a little older, maybe closer to my mom's age—noticed I was staring at my hands instead of the screen.\n\nI’d spent the whole morning spiraling about whether I was doing enough, or if I was somehow failing this baby before she was even born because I’m so scared. The tech didn't just rattle off the measurements. She paused, looked at me, and said, \"You’re doing a great job, and she’s looking perfectly healthy. You should be proud of how well you’re taking care of her.\"\n\nIt sounds so small, doesn't it? But hearing someone acknowledge that I’m *doing* this—that I’m responsible for the heartbeat on that screen—felt like taking a full breath for the first time in months. She didn't rush me to get dressed. She just let me sit there for a second and hold that moment. That’s all I ever really want: just for someone to see that this isn't just a clinical process. It’s my life. I just wish that kind of acknowledgment wasn't so rare.",
+      "responding_to_question_id": "V2_PREG_Q01_P01",
+      "input_tokens": 1406,
+      "output_tokens": 270
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about how you sought and used information during your pregnancy — from healthcare providers, online sources, apps, books, and people around you — how did you decide what to trust and act upon?",
+      "question_id": "V2_PREG_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "trust_distrust",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "I’m a chronic researcher. I think that’s just how I cope—if I can read enough about fetal development or common symptoms, I can convince myself I’m prepared for anything. My phone is cluttered with apps, and I have a stack of books on my nightstand that I’ve practically memorized.\n\nBut the problem with the internet is that it’s a double-edged sword. One minute I’m looking up something harmless, and the next, I’m spiraling down a forum thread about a worst-case scenario. It’s exhausting. When I’m alone, it’s too easy to believe the loudest, scariest voice online.\n\nWhen it comes to my doctors, I have to trust them because they have the credentials, but I find myself \"fact-checking\" them afterward. If I get home and the doctor said something felt \"fine,\" I’ll spend hours reading clinical studies just to see if their version of \"fine\" aligns with the data. It’s an obsessive loop. I don’t really have a support system in Holden—my friends are all off doing their own things, and I’m just here, feeling like an outsider in my own life. So, I end up trusting the numbers and the books more than I trust people. At least the numbers don't look at me with pity or judgment. They just are what they are. It’s lonely, but at least it feels certain.",
+      "responding_to_question_id": "V2_PREG_Q02",
+      "input_tokens": 1719,
+      "output_tokens": 303
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Which sources did you find most useful, and what made them trustworthy in your eyes?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "trust_distrust",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "I mostly stick to the medical journals or sites like the Mayo Clinic—places that don’t use emojis or try to sell me \"mommy-and-me\" products. I trust those because they’re cold, dry, and objective. They don’t care about my relationship status or my age; they just report the stats. When I read about the mechanics of the anatomy scan or how the placenta functions, there’s no room for someone to look at me with that soft, pitying \"Oh, poor thing\" expression. That look—it makes me feel like I’m a tragedy instead of a mother.\n\nHonestly, the most useful thing I’ve found wasn't a book at all. It was the movement. Feeling the baby flutter is the only thing that feels completely real and \"mine\" without needing a second opinion or a peer-reviewed article to explain it. \n\nI’ve stopped talking to most people around here because everyone has an opinion on how I should be \"handling\" this. Most of them have never been in my shoes, yet they offer advice like it’s gospel. So, I look for information that treats me like a student of my own pregnancy. If a source talks to me like I’m a capable adult rather than a kid in over her head, that’s when I listen. I just want facts, because facts are the only thing that don't change based on who's standing in the room.",
+      "responding_to_question_id": "V2_PREG_Q02_P01",
+      "input_tokens": 2041,
+      "output_tokens": 302
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the emotional landscape of your pregnancy — the highs, the anxieties, the uncertainties — what feelings were most prominent, and how well did your care environment support you in managing them?",
+      "question_id": "V2_PREG_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "dignity_respect",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "The most prominent feeling, if I’m being honest, is a heavy, persistent sense of isolation. It’s like being in a room where everyone is speaking a language I don’t quite know, even though I’m reading the same manual they are. There’s this constant hum of anxiety—what if I don't know what to do when she cries? What if I’m not enough? It’s not just the fear of the labor itself; it’s the fear of the silence that waits on the other side.\n\nMy care environment has been… dismissive of that landscape. They’re excellent at managing the biological milestones, but they act like the emotional side is something I should just handle on my own time, outside of the clinic walls. When I mention feeling overwhelmed, they’ll smile and say something generic like, \"That's perfectly normal, you're doing great,\" before moving on to the blood pressure cuff. \n\nIt feels like they’re trying to keep the appointment tidy. They want a \"low-risk\" pregnancy, and they seem to view my anxiety as a bit of a clutter. I leave the office feeling physically fine but emotionally heavy, like I’m holding my breath until the next check-up. They’re great at keeping me healthy, but they haven't helped me feel *ready*. There’s a big difference between surviving a pregnancy and actually feeling supported through it.",
+      "responding_to_question_id": "V2_PREG_Q03",
+      "input_tokens": 2384,
+      "output_tokens": 298
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a period during your pregnancy when you felt most emotionally unsupported — what was happening and what would have helped?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "It was a couple of weeks ago, right after I had a minor health scare—just some dizziness and heart palpitations that probably were nothing, but it sent me into a total tailspin. I called the office, and they brought me in for an unscheduled check-up.\n\nEverything was normal. The baby was fine, my heart was fine. The midwife was very efficient, very clinical. She told me, \"You’re perfectly healthy, everything is stable,\" and that was the end of it. She closed the chart and stood up to leave. I was still sitting there, my hands shaking a little, trying to find the words to say that I felt like I was drowning in fear. I wanted to ask her, *“But what if I collapse at home alone? Who is going to help me?”* But I couldn't get it out. The way she was already halfway out the door made me feel like I was just being a burden, or worse, \"hysterical.\" \n\nWhat would have helped? It sounds so simple, but I just needed her to sit down. I needed her to ask, \"You seem really shaken—is there anything else going on?\" Instead, I walked out to my car and cried in the parking lot for twenty minutes because I realized that the only person who was going to keep me sane was me. I felt invisible.",
+      "responding_to_question_id": "V2_PREG_Q03_P01",
+      "input_tokens": 2708,
+      "output_tokens": 281
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the decisions you faced during pregnancy — including screening tests, monitoring choices, and care options — how did you go about making those decisions, and who or what most influenced them?",
+      "question_id": "V2_PREG_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "I’m very meticulous about my decisions. Since I don't have a partner to talk things through with at the dinner table, I treat every choice like an academic project. For things like the genetic screening or the anatomy scan, I spent hours—sometimes days—reading the actual literature, looking at the accuracy rates, and mapping out the pros and cons. \n\nMy provider is usually a neutral party; she gives me the pamphlets and lets me ask questions, but she rarely steers me one way or the other. It feels like she’s waiting for *me* to tell *her* what I want. Sometimes I wonder if that’s because she respects my autonomy, or if it’s just easier to treat me like a self-sufficient client who doesn’t need guidance.\n\nHonestly, the biggest influence is just my own fear of \"getting it wrong.\" When you’re doing this solo, you feel like you don’t have any margin for error. If I choose a certain test or procedure, it’s because I’ve convinced myself it’s the most \"logical\" path to safety. I’m not making decisions out of excitement or anticipation; I’m making them out of a desperate need to avoid a mistake. It’s hard to make life-altering choices when you’re constantly looking over your own shoulder, wondering if you’re making the right call for someone who can’t speak for herself yet.",
+      "responding_to_question_id": "V2_PREG_Q04",
+      "input_tokens": 3030,
+      "output_tokens": 297
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you walk me through a specific decision point — what were the options, how did you weigh them, and what did you ultimately choose?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "The genetic screening was the hardest one. I remember sitting at my kitchen table, my laptop open, with three different tabs comparing the different types of non-invasive prenatal testing. I felt completely paralyzed because the brochures at the clinic were so… sanitised. They made it look like a simple \"yes or no\" choice, but to me, it felt like a moral weight.\n\nI weighed the options for days. On one hand, I could choose not to know certain things—to just let the pregnancy unfold naturally. But when you’re on your own, the \"unknown\" is terrifying. I kept thinking, *If there’s a complication I don't know about, how will I handle it without someone to lean on?* I’m already navigating this without a partner; the idea of being blindsided by a medical reality I wasn't prepared for felt like a failure of my responsibility to the baby.\n\nI ultimately chose the comprehensive screening. I didn't tell my midwife that I was doing it because I was afraid of the result—I told her I was doing it because \"knowledge is power.\" I lied, or at least I masked it. I chose it because if the data says the baby is healthy, I can sleep at night. I needed the statistics to validate my stability, because I couldn't trust my own nerves to tell me that everything was going to be okay.",
+      "responding_to_question_id": "V2_PREG_Q04_P01",
+      "input_tokens": 3357,
+      "output_tokens": 287
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the physical changes in your body during pregnancy, how did those changes affect how you felt about yourself — and were those feelings acknowledged or addressed within your care?",
+      "question_id": "V2_PREG_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s strange. I watch my stomach grow, and sometimes it feels like a miracle, and other times it just feels like a physical manifestation of everything I’m scared of. At twenty-one, I’m supposed to be out with friends, maybe figuring out my career, but instead, I’m watching my skin stretch and my clothes stop fitting, and it’s a constant reminder that my life is being rewritten.\n\nPhysically, I feel… fragile. Every time I get a cramp or feel a weird flutter, I wonder if it’s a sign of a problem, and because I don’t have someone else here to say, \"Don't worry, that's normal,\" I’m the only one left to manage the panic. My care providers address the body perfectly fine—they measure the bump, they listen to the heartbeat—but they never talk about what it feels like to *be* in this body.\n\nThey see the biology, but they don't see the person dealing with the weight of it. I’ve gained weight, my back hurts, and I’m exhausted in a way sleep doesn't fix, but it’s the emotional weight that’s the hardest to carry. I feel like I’m in a fishbowl—the baby is safe, the monitors are green, but I’m swimming alone, and nobody in the office seems to notice that the water is getting a little murky. They just keep checking the temperature and calling it a success.",
+      "responding_to_question_id": "V2_PREG_Q05",
+      "input_tokens": 3681,
+      "output_tokens": 312
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there aspects of your physical transformation that felt unexpected, difficult, or that nobody had prepared you for?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "Everyone talks about the bump, right? They talk about the \"glow\" or the backaches or the craving for pickles. But nobody tells you about the profound sense of vulnerability that comes with your body changing when you’re doing this solo.\n\nThe most unexpected thing—and the thing I really wasn't prepared for—is the way people look at you. When you’re alone and your stomach starts to show, you feel like you’re wearing a neon sign that says *“Insecure”* or *“Complicated.”* I walk into the grocery store or the clinic, and I see people’s eyes flicker to my hand, looking for a ring that isn't there. It makes me feel like my body isn't just mine anymore; it’s a public spectacle, or a cautionary tale.\n\nI also wasn't prepared for how lonely the physical changes would be. When I feel a kick, it’s this incredible, secret conversation between me and the baby. It’s beautiful, truly. But then I realize I have no one to share that movement with, no one to put their hand on my stomach and share the wonder. It’s like experiencing a miracle in a room by myself. My midwife notices that the baby is moving well, which is great, but she doesn't see how that movement is both my greatest joy and a crushing reminder of my solitude. Nobody prepares you for how heavy that mix of feelings is to carry in your own skin.",
+      "responding_to_question_id": "V2_PREG_Q05_P01",
+      "input_tokens": 4016,
+      "output_tokens": 307
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the informal support you received during pregnancy — from partners, family, friends, or online communities — how did that support compare to what you received from healthcare professionals, and what role did each play?",
+      "question_id": "V2_PREG_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "partner_role",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "There’s a massive canyon between the two. The healthcare professionals offer me \"safety\"—or at least the illusion of it—while the informal side of things… well, there’s not much of an informal side, to be honest. \n\nMy friends are in that phase of life where we’re supposed to be going to concerts or stressing over entry-level jobs. When I told them, the distance just grew. They don't know how to talk to me anymore, and I don't know how to translate my life into something they can relate to. I tried joining an online group for young mothers, but that just made me feel like an imposter. They talk about their partners, about how their husbands are painting the nursery or rubbing their feet, and I’d just sit there reading it, feeling smaller and more exposed than before.\n\nMy healthcare providers play the role of the \"fixers.\" They keep the gears turning. They’re functional. But they don't provide *connection*. I suppose I don't expect them to be my best friend, but the professional coldness is so rigid that it leaves no room for me to be human. I’m living in a space where I’m too old to be a kid needing help, but too young to have the life experience to handle this with the grace people expect. I’m essentially managing the medical side through professionals and the emotional side through complete, heavy silence. It’s a very solitary way to build a life.",
+      "responding_to_question_id": "V2_PREG_Q06",
+      "input_tokens": 4368,
+      "output_tokens": 310
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a moment when informal support made a meaningful difference to your experience — what happened and why did it matter?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s hard to call it \"support\" in the traditional sense, but there’s this woman I see at the bus stop near the clinic sometimes. She’s definitely older, maybe in her sixties, and she has this kind, tired face. One day, I was sitting there, struggling to get my coat zipped up because my belly was finally getting in the way, and I was just so frustrated and exhausted that I started to tear up.\n\nShe didn't ask me a million intrusive questions. She didn't look at my ring finger. She just reached over, helped me pull the zipper up, and said, \"It’s a lot, isn't it? But you’re doing a good job.\"\n\nThat was it. That was the whole interaction. But it mattered because, for the first time in months, nobody was looking at me like a \"problem\" to be solved or a \"situation\" to be analyzed. She just saw another person who was tired and carrying something heavy, and she offered a moment of grace. It didn't change the medical reality or the fact that I’m doing this solo, but it cracked the shell of isolation for a minute. It reminded me that there’s a world outside of cold clinic rooms and my own obsessive research—a world where someone can acknowledge you without needing to label you. It was a small, quiet, human moment in a life that feels mostly like a series of clinical checklists.",
+      "responding_to_question_id": "V2_PREG_Q06_P01",
+      "input_tokens": 4704,
+      "output_tokens": 301
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q7",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "I keep thinking about that woman at the bus stop, and then I think about my next appointment on Tuesday. It’s funny how the two worlds are so disconnected. I’ll go in, they’ll check the vitals, they’ll say \"all good,\" and I’ll walk out feeling like I’m a ghost again.\n\nI’m starting to wonder what happens *after* the birth. The midwives talk about the delivery like it’s the end of a race—you get the medal, the baby is out, and then you’re just discharged. But for me, that’s when the real, terrifying part starts. Who’s going to be there to tell me if the baby’s crying is \"normal\" at 3:00 AM? Who’s going to remind me that I’m doing a good job when I’m sleep-deprived and terrified of making a single wrong move? \n\nSometimes I lie in bed and put my hand on my stomach, and I talk to her—the baby—but it’s not the same as having someone to talk *to*. I feel like I’m constantly rehearsing for a performance where I’m the lead actor, the director, and the only person in the audience. I don’t know if I’m asking for too much, wanting the clinic to be a place where I can actually exhale. I just want to know that when I walk into that room for the last time before the birth, I’m not just a successful low-risk case, but someone they’ll remember as a person who was trying her absolute best. Do you think that’s possible in a system that’s so focused on the stats?",
+      "responding_to_question_id": "Q7",
+      "input_tokens": 5013,
+      "output_tokens": 359
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q8",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "I’ve been thinking about what you just asked—is it possible for the system to really see me? Or is it just programmed to be efficient?\n\nSome days, I look at the sterile white walls of the clinic and I feel like I’m in a factory. It’s not that the staff is mean; they’re actually quite precise. But they’re so focused on the *outcomes*—the heartbeat, the blood pressure, the healthy anatomy—that they don't seem to have space for the *process*. They’re so used to seeing me come in, hit the targets, and stay \"low-risk\" that I think they’ve stopped looking for the person behind the chart. To them, my lack of drama is a sign that I’m fine. But the silence isn't \"fine\"—it’s heavy.\n\nIf I could change one thing, it wouldn't be the medicine. It would be the ten minutes after the exam. If someone just sat down, looked at me, and asked, \"How is the rest of your life going? Who is going to be there when you get home today?\" it would change everything. It would mean that my struggle is valid, not just a nuisance that doesn't fit into the clinical flow.\n\nI’m terrified that when I’m actually in labor, I’ll be surrounded by people who are technically excellent but emotionally miles away. I don't want to just be a successful case study in their records. I want to be human. I want to feel like I’m not carrying this entire future on my back alone. I think I’m just… waiting for someone to offer a bit of that grace, like that woman at the bus stop did. Is that too much to ask for from a medical system? Maybe. But it’s what I need to feel like I can actually get to the other side of this.",
+      "responding_to_question_id": "Q8",
+      "input_tokens": 5380,
+      "output_tokens": 399
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there aspects of your physical self that you felt proud of, anxious about, or uncertain about in relation to pregnancy?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "I feel this strange, push-pull relationship with my own body. There are days when I look in the mirror—when I’m alone in the bathroom—and I feel a fierce sense of pride. I see my skin stretching and the way my bump rounds out, and I think, *I am doing this.* My body is building a human heart, a brain, a set of lungs, all on its own. It’s the most complex thing I’ve ever achieved, and it’s happening without any outside interference. That, for a second, feels like a triumph.\n\nBut then, the anxiety kicks back in. I’m twenty-one, and my body feels like it’s being hijacked by forces I don’t fully understand. I worry about the \"small\" things—if my back hurts, or if I’m too tired—because I don’t have someone to tell me if that’s a red flag or just part of the process. I’m constantly scanning myself, looking for symptoms, almost like I’m a detective investigating my own anatomy. It’s exhausting to be both the person experiencing the pregnancy and the person solely responsible for auditing its safety.\n\nI’m uncertain about what I’ll be *after*. I look at my body and I see a future version of me that I don’t know yet—a mother, a solo parent, someone who has to be everything for someone else. I’m proud of my strength, but I’m terrified of my own fragility. I just wish there was someone to tell me, \"Your body is doing exactly what it's supposed to,\" in a way that felt like they were talking to *me*, and not just checking a box on a clinical form. Sometimes I feel like a vessel for the baby, and while that’s a miracle, it’s also really lonely.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 5805,
+      "output_tokens": 389
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q9",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "I think that’s the hardest part—the silence. Even when I’m surrounded by people, or when I’m in a room with a nurse taking my vitals, I feel like I’m sitting in this giant, empty space. \n\nIt’s like being a lighthouse keeper. I have the light—I have the life inside me—and I’m keeping the rhythm, checking the charts, making sure everything is aligned. But there’s no one else on the island. People outside look at a lighthouse and think it’s majestic or sturdy, but they don’t think about how cold it gets when the sun goes down and you’re the only one there to keep the flame from flickering out.\n\nI’ve started to realize that my fear isn’t really about the medicine. The medicine is, thankfully, solid. It’s that I’m expected to be both the anchor and the sail. When you’re twenty-one and alone, you’re just… you’re just trying to keep your head above water. I keep waiting for a professional to say, \"I know you’re doing this alone, and it’s okay to be scared, and I’m going to stay right here until you’re done.\" Not because I’m \"low risk,\" but because they see that I’m human.\n\nIf I can just make it through the delivery, and I see her face for the first time… maybe that’s when the silence finally breaks. I just hope that when that happens, I’m not still feeling like I’m the only one in the room. I don't want to raise her in that kind of quiet. I want to build a home that's loud, and messy, and full of people who actually see us. But until then, I’ll just keep reading, and checking my pulse, and trying to be my own best advocate. It’s all I’ve got.",
+      "responding_to_question_id": "Q9",
+      "input_tokens": 6202,
+      "output_tokens": 409
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there moments where you felt a healthcare professional spoke to you in a way that felt dismissive or condescending?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "I remember a check-up a few weeks back. I was feeling overwhelmed—the kind of \"I can’t do this\" weight that feels like it’s pressing on your chest—and I finally decided to say something. I told the nurse practitioner, \"I’m just worried. I feel so alone, and I’m scared about what happens after the baby is born. Does it get easier?\"\n\nShe didn’t even look up from her screen. She just kept typing, probably entering my vitals, and gave this light, airy laugh. She said, \"Oh, honey, don't worry about that now! You're young, you'll bounce back, and you've got plenty of time to figure out the parenting stuff. Just focus on enjoying these last few months; they go by so fast!\"\n\nIt felt like a slap. \"Enjoying\" it? \"Bounce back\"? She treated my legitimate, terrifying uncertainty about my future as if it were just some cute, youthful melodrama. She dismissed the complexity of being a single mother at twenty-one with a pat on the head and a smile that didn't reach her eyes. \n\nIt made me feel so small. Like I was a child playing house, not a woman preparing to bring a life into the world. It’s hard to advocate for yourself when the person who holds the power in the room treats your fears like they’re just \"first-time mom nerves\" instead of the reality of my life. I haven't mentioned my fears since. It’s just safer to stay quiet and be the \"good, low-risk patient\" than to be patronized again.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 6636,
+      "output_tokens": 345
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q10",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "I wonder if I’ll ever be able to look back at this time—this strange, quiet, heavy time—and feel like I was truly seen. When I’m in that clinic, I feel like I’m wearing a costume of someone who has it all together. I keep my hair pulled back, I wear these modest, practical clothes, and I make sure I have my questions written down in my notebook. I’m playing the part of the “perfectly compliant patient.” But underneath? I feel like I’m vibrating with the sheer weight of what’s coming.\n\nThe thing is, nobody asks about the \"after\" unless I bring it up, and when I do, they treat it like it’s a million years away. But for me, it feels like it’s tomorrow. I’m thinking about how I’ll get the baby home from the hospital. I’m thinking about the car seat, and the groceries, and who I can call when I’m in tears at 3:00 AM and the baby won't stop crying. \n\nDoes my care provider ever think about that when she checks my fundal height? Or is she just thinking about her next appointment? I feel like I’m trapped in this bubble where everyone is focused on the *product* of the pregnancy—a healthy baby—but completely ignoring the *process* of me becoming a mother without a partner. \n\nI’m so tired of being \"low-risk.\" It sounds like a compliment, but it feels like a cage. It means I don't \"qualify\" for extra support, or extra time, or even a real conversation about how my life is about to change forever. I just want someone to look at me—not my chart, not my vitals—and say, \"I see you, and you’re going to be okay.\" Is that so much to ask? Maybe I’m just waiting for someone to give me the courage I haven't quite found on my own yet.",
+      "responding_to_question_id": "Q10",
+      "input_tokens": 6989,
+      "output_tokens": 421
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did older female relatives, such as your mother or grandmother, share advice or stories that influenced how you thought about getting pregnant?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "My mom… it’s complicated. When I told her, the silence between us wasn’t empty; it was heavy with everything she didn’t say. She didn’t yell or cry, she just looked at me with this mix of exhaustion and quiet resignation. She’s had a hard life in Holden, and I think she saw her own struggle reflected in my face. She told me, \"You’re making this harder than it needs to be,\" and I think that’s the refrain of her generation—just push through, don’t talk about it, and keep your head down.\n\nI don’t hear stories about \"the miracle of birth\" from her. I hear stories about the cost. She talks about the money, the exhaustion, and the way your own identity just sort of evaporates into the work of keeping a household running. It made me feel like I was signing up for a life of quiet sacrifice, rather than this beautiful new beginning everyone puts on greeting cards.\n\nMy grandmother is a bit different, but she’s older and set in her ways. She’ll touch my stomach and whisper about how \"everything happens for a reason,\" but that doesn't actually help me navigate the doctor appointments or the fear of being alone at night. It’s advice that feels meant to soothe *them*, not me.\n\nIt’s ironic—I’m surrounded by women who have done this, but I feel more alone than ever. They’ve turned their experiences into survival manuals, but they don’t share the messy, frightening truth of it. I’m just trying to figure out how to be a mother without becoming the version of them that forgot how to be a person.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 7437,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q11",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "Sometimes I feel like I'm playing a role I wasn't cast for, and the script is changing every single day. I look at my mom, and I see how much she’s had to hold in over the years, and it scares me, because I’m starting to mirror that silence. I go to the doctor, and I’m \"fine.\" I go home, and I’m \"coping.\" I go to work, and I’m \"professional.\" \n\nBut who is the real Basilia? The one who lays awake in the dark, checking the baby's movement, counting kicks just to make sure there's still a heartbeat to tether me to this world? \n\nI think the biggest realization I’ve had lately is that I’m mourning the life I thought I’d have. I’m mourning the version of my twenties where I could just *be*—not a project, not a patient, not a mother-in-waiting, just a person. I feel like I’ve skipped a whole chapter of my life, and I’m being shoved into the next one before I’ve even finished the current one. \n\nI don't know if that's \"supportable\" by a clinical system. I suspect it isn't. But if I could tell the healthcare world one thing, it’s that being \"low-risk\" is a clinical state, not a personal one. My life is anything but low-risk right now, and I’m tired of having to pretend it’s all just another day at the office. I just want to be seen for all of it—the fear, the joy, the loneliness, and the strength. Is that enough to ask for?",
+      "responding_to_question_id": "Q11",
+      "input_tokens": 7797,
+      "output_tokens": 363
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there specific platforms, websites, or communities you returned to regularly, and what made them feel credible or useful?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "I tend to cycle through a few medical databases, the kind that are strictly research-based. I find myself clicking on the same few articles on the Mayo Clinic website or even reading bits of studies on NIH databases. I think they feel credible to me because there’s zero room for opinion. When an article explains exactly how the body metabolizes nutrients during the second trimester, there’s no judgment in the text. It doesn't ask me about a partner or my future. It just gives me the data, and I feel like I can trust data because it’s indifferent to my situation.\n\nI used to spend more time on those \"mom-to-be\" forums, but I stopped. Every time someone posted about their husband or partner, or even just someone bringing them a glass of water, I felt this sting of inadequacy. It felt like I was reading a fairy tale while I was sitting in the cold, harsh reality of my living room. \n\nThe sites I stick to now are the ones that treat the body like a machine. It feels \"useful\" because it helps me manage the physical risk. If I can prove to myself that I’m eating the right things and hitting every milestone, I feel like I’ve built a wall between me and the chaos. It’s not comfort—it’s just a way to hold on when everything feels like it’s slipping out of my control.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 8185,
+      "output_tokens": 290
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q12",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "I’ve been thinking more about that wall I mentioned—how I use the data to keep the chaos out. It’s a bit pathetic, isn't it? Needing an NIH study to tell me I’m okay when I’m staring at a nursery I’ve painted and furnished entirely by myself. But when you’re building a life on your own, the \"facts\" are the only things that don't lie to you. They don't look at you with that soft, pitying expression that says, *“Poor thing, she’s doing this all by herself.”* They just give you the measurements. They just give you the reality.\n\nSometimes I think the hardest part is that I’m simultaneously so proud of my autonomy and so desperate to be relieved of it. I’ve become this expert on my own biology, but it’s a lonely kind of expertise. I know more about my fetal development than most people my age, and I should feel empowered by that. Instead, it feels like I’m just preparing for a test I’m terrified I’m going to fail. \n\nI don’t know. I’m just… I’m tired of being the only one in the room who knows the stakes. I’m tired of the clinic being a place where I check boxes instead of a place where I can actually unpack the weight of all this. I think that’s why I’m speaking to you. Maybe I just need to say it out loud once, to someone who isn't checking my blood pressure, just to see if it makes the silence any less loud. Does that make sense?",
+      "responding_to_question_id": "Q12",
+      "input_tokens": 8483,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a specific situation where you felt judged, overlooked, or not treated as a capable decision-maker regarding your reproductive health?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "It happened during my routine anatomy scan. The technician was clearly focused on getting those specific, perfect images required for the report. As she maneuvered the transducer, she kept talking to the \"baby\" instead of to me. She’d say things like, \"Oh, look at those perfect feet, she's going to be a dancer!\"—and I’m sure it’s meant to be sweet, but it felt like I was just the backdrop. I was the furniture in the room.\n\nI had a specific question about a measurement I’d read about in a study, something about the brain development markers they look for at this stage. When I asked her, she didn't even stop the scan. She just gave this dismissive, practiced smile and said, \"Don't you worry about the technical details, hon. Everything looks textbook, and that’s all you need to know. Let the doctors handle the science, you just relax.\"\n\nThat phrase—\"let the doctors handle the science\"—was like a gut punch. It implied that because I’m twenty-one and alone, my interest in my own pregnancy is just a symptom of anxiety rather than a rational, capable curiosity. She decided *for me* that I didn’t need to be informed, only managed. It was the ultimate way to tell me that my intellect and my agency didn't matter as much as my compliance. It made me feel like an object being processed rather than a mother learning about her child.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 8855,
+      "output_tokens": 309
+    },
+    {
+      "turn_number": 49,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q13",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 50,
+      "role": "persona",
+      "type": "response",
+      "text": "I think what hurts the most about that moment isn’t just the condescension—it’s the realization that I’m being managed for *their* convenience, not my own peace of mind. By telling me \"don't worry about the technical details,\" she wasn't just shutting down a conversation; she was effectively telling me that my need for understanding was an inconvenience to her workflow. It’s like they have this script for how a patient should act: quiet, compliant, and happy. If you deviate from that script by asking too many questions, they just try to redirect you back to the \"happy mom\" part they’ve already planned for you.\n\nWhen I look back at my appointments, I realize how much of my energy has gone into managing *their* comfort. I don’t push back when they’re dismissive, and I don’t ask for more time, because I’m so terrified of being labeled \"difficult.\" In a system that already sees me as a demographic—\"young, single, low-risk\"—being seen as \"difficult\" feels like it could jeopardize the quality of care I get.\n\nI’m playing this long, exhausting game of chess where I have to be smart enough to know what’s happening in my own body, but \"dumb\" enough to not offend the person providing the care. It’s an impossible balance to strike. And at the end of the day, I’m the one who goes home to the silence, not them. I’m the one who has to process the weight of it all. I just wish, for once, someone would treat me like a partner in this, rather than a passenger.",
+      "responding_to_question_id": "Q13",
+      "input_tokens": 9172,
+      "output_tokens": 348
+    },
+    {
+      "turn_number": 51,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q14",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 52,
+      "role": "persona",
+      "type": "response",
+      "text": "I keep coming back to the idea of the \"passenger.\" That's exactly how it feels. Like I’m sitting in the back of this medical machine, and the doors are locked, and I’m just watching the scenery—the lab reports, the ultrasounds—go by without being able to pull the steering wheel. Everyone else has a map, and I’m just being driven toward the day of my labor, and I don't know if I’m prepared for the destination.\n\nPeople always say, \"You'll know what to do when the baby's here,\" like it’s some magical, biological instinct. But I’m terrified that I’ll be sitting in that hospital room, and for the first time, there won't be a monitor for me to look at, or a nurse to call for a reading. It’ll just be me, and a tiny life that’s entirely dependent on me, and that silence—that heavy, terrifying, beautiful silence—is going to be so loud. \n\nI’m building this life for us, and I’m proud of that. I’m working full-time, I’m reading the books, I’m showing up to every appointment on time. But I’m so exhausted from holding it all together. I just want to be able to say, \"I'm scared,\" and have someone hear me without trying to \"fix\" it with a smiley face or a pamphlet. I want someone to acknowledge that being twenty-one and starting this journey alone is a heavy, monumental thing. \n\nI think that’s why I’m here today. Even if nothing changes for the next person, at least I’ve said it. At least I’ve admitted that I’m more than just a low-risk case. I’m a person, and I’m trying, and that has to count for something, right?",
+      "responding_to_question_id": "Q14",
+      "input_tokens": 9528,
+      "output_tokens": 400
+    },
+    {
+      "turn_number": 53,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there moments when a healthcare provider dismissed or minimised a concern you raised about your body or a symptom you were experiencing, and how did that make you feel?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 54,
+      "role": "persona",
+      "type": "response",
+      "text": "There was a time when I had these persistent, dull aches in my lower back and legs that didn't feel like the typical \"pregnancy discomfort\" I read about. I went in, and I specifically used the word \"throbbing.\" I wanted them to know it wasn't just a mild ache. The midwife just touched my stomach, did a quick check, and said, \"Oh, Basilia, that's just the baby getting bigger and your ligaments stretching. It’s totally normal. Just try some light stretching and a warm bath.\"\n\nShe said it with that clinical cheerfulness that makes you feel like you're complaining about the weather. But I wasn't complaining; I was reporting a change in my body. When I tried to elaborate, she was already picking up her chart to leave. \n\nThat dismissiveness made me feel incredibly small and, honestly, quite stupid. It made me second-guess my own perception of my pain. I walked out of there feeling like I was \"being dramatic,\" which is the worst thing you can feel when you’re already alone. It’s like, if a professional tells me my body is fine, then I must be the one who’s broken or over-sensitive. \n\nIt makes you stop sharing. If you bring up a concern and it gets labeled as \"normal,\" you eventually learn that the only way to be a \"good patient\" is to ignore your own instincts. That silence—that suppression of my own voice—is what I take home with me. It’s a very lonely, isolating feeling to have your own experience of your body invalidated by someone who’s supposed to be your partner in this.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 9963,
+      "output_tokens": 346
+    },
+    {
+      "turn_number": 55,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 56,
+      "role": "persona",
+      "type": "response",
+      "text": "I think the one thing that gets lost in all these appointments, for me, is the idea of \"becoming.\" Everyone treats the baby as the person who is *becoming*—growing, developing, getting ready for the world—but they forget that I am becoming a mother in the exact same span of time. \n\nBeing twenty-one and doing this alone… it’s a total identity shift. I’m mourning the girl I was, the one who didn't have to think about car seats or hospital discharge plans or the weight of being the only person who can make the right decision at 3:00 AM. I’m moving toward this massive, life-altering role, and I’m doing it with very little scaffolding.\n\nI just wish the system could build in a moment to honor that transition, too. Not just checking my blood pressure, but checking in on how *I* am adjusting to the idea of being her entire world. Because when I walk out of that clinic, I’m not just a successful low-risk patient. I’m a young woman standing on the edge of the biggest cliff of her life, trying to figure out how to fly before she hits the ground. \n\nI’m really grateful you listened. It’s the first time in this entire pregnancy that I haven’t felt like I was being audited—just heard. And for tonight, that makes the silence feel a little less heavy.",
+      "responding_to_question_id": null,
+      "input_tokens": 10365,
+      "output_tokens": 300
+    }
+  ],
+  "metadata": {
+    "total_turns": 56,
+    "questions_asked": 14,
+    "probes_deployed": 12,
+    "adaptive_followups": 0,
+    "total_input_tokens": 151088,
+    "total_output_tokens": 9206,
+    "estimated_cost_usd": 0.1695,
+    "duration_seconds": 78.6,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 227
+  },
+  "errors": []
+}

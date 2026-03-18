@@ -1,0 +1,416 @@
+{
+  "persona_id": "comp_048",
+  "persona_name": "Brinda",
+  "journey_stage": "preconception",
+  "risk_level": "low",
+  "vulnerability_flags": [],
+  "complications": [],
+  "relevant_phases": [
+    "preconception"
+  ],
+  "base_question_count": 37,
+  "adapted_question_count": 6,
+  "filtered_out": 31,
+  "added_probes": 0,
+  "questions": [
+    {
+      "question_id": "V1_PREC_Q01",
+      "version": 1,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about the time when you first started thinking seriously about having a baby — what was going on in your life, and what did that feel like?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREC_Q01_P01",
+          "probe_text": "What felt most important to you at that point — what were you hoping for or working towards?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "intergenerational_patterns"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q01_P02",
+          "probe_text": "Was there anything that felt uncertain or unsettled for you as you started thinking about this?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "partner_role"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q01_P03",
+          "probe_text": "Looking back, were there any pressures — from family, relationships, work, or circumstances — that shaped the timing or the decision?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "intergenerational_patterns"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "goals_expectations",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "identity_tensions",
+        "intergenerational_patterns",
+        "partner_role"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "77386006"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V1_PREC_Q02",
+      "version": 1,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about how you went about preparing — or thinking about preparing — for pregnancy. What steps, if any, did you take, and what guided those choices?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREC_Q02_P01",
+          "probe_text": "Where did you go to find out what you needed to know — friends, family, online, a doctor?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q02_P02",
+          "probe_text": "Was there anything you felt you couldn't easily access — information, a service, a conversation — during this time?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q02_P03",
+          "probe_text": "How did any advice or information you received compare to what you were expecting or hoping to hear?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "decision_making",
+        "digital_information"
+      ],
+      "target_servqual_dimensions": [
+        "reliability",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "digital_information_seeking",
+        "structural_barriers",
+        "trust_distrust"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_language_barrier",
+        "if_rural"
+      ]
+    },
+    {
+      "question_id": "V1_PREC_Q03",
+      "version": 1,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about any conversations you had with a GP, midwife, or other health professional before you became pregnant. What was that like?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREC_Q03_P01",
+          "probe_text": "Did you feel heard and taken seriously in those conversations? Can you tell me more about that?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q03_P02",
+          "probe_text": "Was there anything you wanted to raise but didn't — or something that wasn't addressed that you felt was important?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "latent_needs",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q03_P03",
+          "probe_text": "If you didn't see a health professional at this stage, what stopped you or why didn't it feel necessary?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "trust_distrust"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "hcp_interactions",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "assurance",
+        "empathy",
+        "responsiveness"
+      ],
+      "target_latent_dimensions": [
+        "power_dynamics",
+        "dignity_respect",
+        "trust_distrust"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk",
+        "if_language_barrier"
+      ]
+    },
+    {
+      "question_id": "V1_PREC_Q04",
+      "version": 1,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about what it was like to try to conceive — however long or short that period was for you. What stands out most from that time?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREC_Q04_P01",
+          "probe_text": "How did this period affect your relationship with your partner, or with those close to you?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "partner_role",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q04_P02",
+          "probe_text": "Were there moments during this time when you felt the process was out of your hands — medically or otherwise?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q04_P03",
+          "probe_text": "Did any previous experiences — your own health, a past pregnancy, or family history — shape how you felt during this time?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "identity_tensions"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "autonomy_vs_dependence",
+        "partner_role",
+        "intergenerational_patterns"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "17369002",
+        "161744009"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_miscarriage_history",
+        "if_high_risk",
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V1_PREC_Q05",
+      "version": 1,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about the picture you had in your mind of what pregnancy and becoming a parent would be like — where did those ideas come from?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREC_Q05_P01",
+          "probe_text": "How much were those ideas shaped by your own family's experiences — your mother's, or others close to you?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q05_P02",
+          "probe_text": "Were there aspects of pregnancy or parenthood that felt exciting, and others that felt worrying or uncertain?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q05_P03",
+          "probe_text": "Did social media, apps, or online communities play any role in forming or changing those expectations?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "goals_expectations",
+        "digital_information"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "intergenerational_patterns",
+        "identity_tensions",
+        "digital_information_seeking"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V1_PREC_Q06",
+      "version": 1,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about any financial, practical, or life circumstances that were part of the picture as you were thinking about having a baby.",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V1_PREC_Q06_P01",
+          "probe_text": "Were there things you felt you needed to have 'in place' before starting, and did that match what actually happened?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q06_P02",
+          "probe_text": "How did work or career considerations factor into your thinking or timing?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V1_PREC_Q06_P03",
+          "probe_text": "Were there financial or access barriers that made any part of this stage harder than you expected?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "power_dynamics"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "risks_barriers",
+        "goals_expectations"
+      ],
+      "target_servqual_dimensions": [
+        "reliability"
+      ],
+      "target_latent_dimensions": [
+        "structural_barriers",
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [],
+      "ehr_adaptation_triggers": [
+        "if_single_parent",
+        "if_rural",
+        "if_language_barrier"
+      ]
+    }
+  ],
+  "adapted_at": "2026-03-17T23:25:28.195973"
+}

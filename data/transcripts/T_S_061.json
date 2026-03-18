@@ -1,0 +1,642 @@
+{
+  "session_id": "S_061",
+  "status": "completed",
+  "persona_id": "comp_032",
+  "persona_name": "Ethel",
+  "persona_journey_stage": "birth",
+  "persona_risk_level": "high",
+  "persona_vulnerability_flags": [
+    "fear_of_childbirth",
+    "high_risk_medical",
+    "low_income"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 1,
+  "questionnaire_strategy": "Chronological Journey",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T00:37:51.055489",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Ethel, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're going through the birth experience, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in seat, one hand resting on belly*\n\nYeah, okay. I appreciate that you're listening. Honestly, most days I feel like nobody really is — they're just looking at numbers on a screen or checking boxes on a form.\n\n*takes a breath*\n\nThis pregnancy has been... it's been harder than I expected. With my first, I was nervous, sure, but it felt manageable, you know? This time, everything feels like it's on a knife's edge. The pre-eclampsia diagnosis — I didn't even know what that meant when they first told me. Now I'm researching at two in the morning, reading about complications, and then I can't sleep because I'm terrified about what I read.\n\nAnd it's twins. That alone is overwhelming, but add the high-risk label and the constant appointments, and I'm stretched so thin. The drive from Rowley to the hospital is almost an hour, and I'm trying to keep working because we need the money, but I keep having to take time off for monitoring and ultrasounds. My boss is getting frustrated, I can feel it.\n\n*voice gets quieter*\n\nWhat scares me most is the actual birth. I keep thinking about everything that could go wrong — for me, for them. The doctors talk at me, not really to me, if that makes sense? Like I'm a problem to solve rather than a person who's terrified.\n\nI just want these babies to be okay. And I want to feel like myself again.",
+      "responding_to_question_id": null,
+      "input_tokens": 840,
+      "output_tokens": 329
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how you prepared for the birth — what did you hope for, and how did you go about planning for it?",
+      "question_id": "V1_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs a little, but there's no humor in it*\n\nPlanning? I'm not sure I've really done much of that, to be honest. With my first, I took a childbirth class, read some books, had this whole vision of what it would look like. This time... I haven't had the energy or the bandwidth for that.\n\n*rubs temples*\n\nI mean, I've tried. I watched some videos online about breathing techniques, thought maybe that would help with the fear. But every time I sit down to really prepare, something pulls me back. Either I'm exhausted, or I'm worried about something I read about pre-eclampsia, or I'm stressed about money. It's hard to plan a peaceful birth when you're white-knuckling through the financial reality of it all.\n\nWhat I *hoped* for — what I still hope for — is just... a birth where I'm present. Where I get to hold my babies right away. Where it's not all needles and monitors and emergency situations. \n\n*voice wavers slightly*\n\nBut I'm realistic enough to know that might not happen. The doctors keep emphasizing that because of my blood pressure, things could change quickly. They've mentioned induction, talked about potential complications. So I'm trying to let go of the idea of the birth I wanted and just prepare myself mentally for whatever needs to happen to keep these babies safe.\n\nI guess my real plan is just... survive it. Get them here healthy. Everything else feels secondary now.",
+      "responding_to_question_id": "V1_BIRTH_Q01",
+      "input_tokens": 1198,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did you create a birth plan or have clear preferences? How did your care team respond to those?",
+      "question_id": null,
+      "probe_id": "V1_BIRTH_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*sighs and shakes head*\n\nA birth plan. Yeah, I tried to think about that, but honestly? It felt pointless pretty quickly. I started jotting down some things I wanted — I knew I didn't want to be separated from my babies right away, and I wanted my husband there, obviously. I was thinking about pain management options, whether I wanted an epidural or not.\n\n*looks down*\n\nBut then when I brought it up at one of my appointments, the doctor kind of... brushed past it. She said, \"Well, with pre-eclampsia and twins, we need to be flexible. We can't promise anything.\" And I get that, medically I understand it, but it felt like she was saying my preferences didn't matter. Like I should just accept whatever happens.\n\n*voice gets a bit defensive*\n\nI tried to ask more questions about what scenarios might come up, what the protocols are for delivery with twins when there's a complication risk. The nurse was nicer about it — she actually explained some things — but I still felt like I was getting the bare minimum. Like they wanted me to understand enough to sign consent forms but not enough to actually advocate for myself.\n\n*looks up*\n\nSo I kind of gave up on the birth plan. It feels like with high-risk cases, you don't get choices. You get management. You get whatever's medically \"necessary.\" I just hope my care team actually *listens* when I try to tell them what I need, even if everything goes sideways.",
+      "responding_to_question_id": "V1_BIRTH_Q01_P01",
+      "input_tokens": 1548,
+      "output_tokens": 332
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the birth itself — take me through what happened, as much or as little as you'd like to share.",
+      "question_id": "V1_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, takes a shaky breath*\n\nI... okay. So I'm still waiting for it, actually. We're not there yet. I'm in this limbo right now where it could happen any day, or they might decide to induce me soon because of the blood pressure situation.\n\n*fidgets with hands*\n\nSo I can't really tell you what happened because it hasn't happened yet. That's part of what's killing me — I'm living in this constant state of anticipation and dread. Every morning I wake up wondering if today's the day. Every time I get a headache or feel a twinge, I panic that something's wrong.\n\n*voice tightens*\n\nMy first birth was about seven years ago, and that one... it was quick, actually. Faster than expected. But I remember feeling present for it, in control in some way. This time, I know it's going to be different. There will be more intervention, more monitoring, probably more pain if things get complicated.\n\n*looks away*\n\nI've been trying to mentally prepare myself for what might happen, but honestly, the not-knowing is almost worse than the fear itself. I keep having these moments where I think, \"Just get it over with already,\" but then I panic because I'm not ready. The babies might not be fully developed. My body might betray us both.\n\n*quietly*\n\nI guess I'm living in the waiting room right now. That's my reality. Do you... do you need to know more about that part, or...?",
+      "responding_to_question_id": "V1_BIRTH_Q02",
+      "input_tokens": 1908,
+      "output_tokens": 334
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about pain management during your labour — what options you were offered, what you chose, and how that went.",
+      "question_id": "V1_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "trust_distrust",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably*\n\nI haven't given birth yet, so I can't really tell you how it went. But I can tell you what's been discussed, what I'm thinking about...\n\n*rubs face*\n\nThey mentioned an epidural, of course. That's always the big option. The anesthesiologist came by one of my appointments and explained it, showed me the procedure. Honestly, it scared me more than it reassured me. I know it's routine, but the idea of a needle in my spine while I'm in pain... I don't know if I can do that.\n\n*voice gets quieter*\n\nWith my first, I didn't have an epidural. I managed with breathing and movement, and it worked for me. I want to try that again if I can. But they keep reminding me that with twins and the pre-eclampsia, things might escalate quickly. They said I might need it anyway, or I might end up with an emergency C-section, and then I won't have a choice about any of it.\n\n*looks frustrated*\n\nThat's what bothers me most — nobody's really asking me what I want. They're just telling me what *might* happen, what I *might need*. It feels like they've already decided I'm a high-risk case so my preferences don't matter much.\n\nI keep thinking... if I can stay calm, if I move, if I breathe through it, maybe I can avoid the epidural. But I'm also terrified of being stubborn and putting the babies at risk.\n\n*pauses*\n\nI guess we'll see what actually happens when the time comes.",
+      "responding_to_question_id": "V1_BIRTH_Q03",
+      "input_tokens": 2269,
+      "output_tokens": 359
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who were with you during the birth — your partner, family, midwives, doctors — and what their presence meant to you.",
+      "question_id": "V1_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "partner_role",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*softens a bit*\n\nMy husband... he's been my rock through all of this. He's worried too — I can see it in his face — but he tries to be strong for me. He comes to every appointment, even though it means leaving work early sometimes, and we can't really afford that. He holds my hand when they're checking my blood pressure, and he listens to me spiral at night without making me feel crazy.\n\n*voice wavers*\n\nI'm terrified that he won't be allowed in the delivery room, or that if things go really wrong, they'll kick him out. The thought of going through that alone... I can't even think about it without panicking. He needs to be there. Not just for the babies, but for me.\n\n*expression becomes more guarded*\n\nAs for the medical team... I don't know them. I see different doctors sometimes, different nurses. It's a big hospital system, and I feel like a number in a rotation. There's one nurse I've seen a couple times who actually takes time to talk to me, asks how I'm doing beyond the vital signs. That matters more than she probably realizes.\n\n*looks down*\n\nI haven't met with a midwife or had continuity of care, really. It's all so fragmented. I wish I had one person — one doctor or midwife — who knew my whole story, who I'd built a relationship with. Someone I could trust completely when things get scary.\n\n*quietly*\n\nI'm going into this with my husband and a team of strangers. That's the reality.",
+      "responding_to_question_id": "V1_BIRTH_Q04",
+      "input_tokens": 2663,
+      "output_tokens": 344
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how the birth ended — whether that was the birth you expected, and how you felt in the immediate aftermath.",
+      "question_id": "V1_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "power_dynamics",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*looks confused for a moment*\n\nI... I haven't given birth yet. I keep saying that, but I think maybe you're not quite catching it. I'm still pregnant, still waiting. The birth hasn't happened.\n\n*touches belly protectively*\n\nI'm living in the \"before\" right now. The anticipation. The fear. The wondering if my body will hold on long enough, if these babies will be okay, if I'll survive this without losing my mind or my job or our financial stability.\n\n*voice gets a bit strained*\n\nI know I'm supposed to be preparing for what's coming, but honestly, I'm almost in denial about it too. Like if I don't fully acknowledge it's happening soon, maybe it won't feel so real, so terrifying.\n\n*looks directly at you*\n\nThe only birth I can tell you about ended with me holding my daughter in my arms seven years ago. That one was... it was good. Intense, but good. I felt powerful afterward, even though I was exhausted. \n\n*voice cracks slightly*\n\nThis time, I don't know what to expect. I don't know if I'll feel that same power or if I'll feel broken. I don't know if my body will cooperate or if something will go wrong. I don't know if I'll get those first moments with my babies or if they'll be whisked away because of complications.\n\n*quietly*\n\nThat's what keeps me up at night. The not knowing.",
+      "responding_to_question_id": "V1_BIRTH_Q05",
+      "input_tokens": 3035,
+      "output_tokens": 324
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the birth environment itself — the place where you gave birth, what it looked and felt like, and whether it felt like the right place for you.",
+      "question_id": "V1_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, looking uncertain*\n\nI haven't given birth yet. I'm still waiting for that to happen. I think maybe there's some confusion here — I'm in the middle of my pregnancy, not looking back on it.\n\n*shifts in seat*\n\nBut I can tell you about the hospital where it's going to happen. It's the big medical center, about an hour from where I live. When I go for appointments, it feels... sterile. Fluorescent lights, beige walls, the smell of antiseptic. Cold, honestly. Clinical. Everything is designed for efficiency and safety, which I understand intellectually, but it doesn't feel like a place where something joyful happens. It feels like a place where problems get solved.\n\n*voice gets quieter*\n\nI've asked a few questions about the labor and delivery rooms — whether they have a birthing ball, if I can move around, if it's not just a hospital bed with monitors everywhere. The nurse said yes to most of it, but I can tell the monitors are non-negotiable with my condition. So it'll be me tethered to machines, trying to labor in a room that wasn't designed for comfort.\n\n*rubs arms*\n\nI'm not sure it's the right place for me, but it's the only place I can go. It's where the specialists are, where they can handle complications if they happen. So I have to make peace with that, even though it doesn't feel right in my gut.\n\n*looks at you*\n\nDoes that make sense? I'm preparing for it, but I'm not there yet.",
+      "responding_to_question_id": "V1_BIRTH_Q06",
+      "input_tokens": 3395,
+      "output_tokens": 346
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How much choice did you have about where you gave birth — and did you have access to the options you wanted?",
+      "question_id": null,
+      "probe_id": "V1_BIRTH_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "structural_barriers",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs bitterly*\n\nChoice? Not really. I mean, technically I could have chosen a different hospital, but there's only one major medical center in reasonable driving distance that can handle high-risk pregnancies and twin births. So my choice was: go there, or drive two hours to somewhere else.\n\n*leans back*\n\nWhen I first found out I had pre-eclampsia, I actually looked into birthing centers. There's one not too far away, and I liked the idea of a more natural, comfortable environment. But the second I mentioned it to my doctor, she basically said that wasn't an option for me. High-risk means hospital. Twins means hospital. Pre-eclampsia means hospital with all the monitoring and medical intervention they deem necessary.\n\n*voice gets frustrated*\n\nSo no, I didn't really have access to what I wanted. I wanted something gentler, more woman-centered. I wanted a midwife-led model where someone actually knew me. But the system has already decided what I need based on my risk factors.\n\n*quieter*\n\nAnd honestly? Part of me understands it. I'm scared enough as it is. If something goes wrong with the babies, I need to be where they can help immediately. So I've made peace with it — or I'm trying to. The hospital is where I have to be.\n\n*looks at you*\n\nBut it would've been nice to have actual options instead of just... this is what you get.",
+      "responding_to_question_id": "V1_BIRTH_Q06_P01",
+      "input_tokens": 3767,
+      "output_tokens": 322
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the first days and weeks after the birth — what that time was like for you, physically and emotionally.",
+      "question_id": "V1_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "continuity_of_care",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*looks at you with some frustration*\n\nI keep telling you — I haven't had the birth yet. It hasn't happened. I'm still pregnant, still waiting for it to happen.\n\n*takes a breath, trying to be patient*\n\nI understand you're asking these questions, but I need to be clear: I'm living in the present moment right now, not looking back. The birth is still ahead of me. Those first days and weeks after? That's my future. That's what terrifies me.\n\n*hand goes to belly*\n\nWhat I *imagine* those weeks will be like... that's a different story. I think about coming home with two newborns and feeling completely overwhelmed. I think about the exhaustion, the hormones, the recovery from whatever kind of birth I end up having. If it's a C-section because of complications, I'll be healing from surgery on top of everything else.\n\n*voice gets smaller*\n\nAnd I worry about postpartum depression. I already struggle with anxiety, and adding twins to the mix, plus the financial stress, plus recovering from a high-risk pregnancy... I don't know how I'm going to hold it together.\n\n*looks directly at you*\n\nBut that's all future tense for me right now. I'm still in the waiting. Still in the fear of what's coming. I can't really talk about those weeks after because I haven't lived them yet. I'm just trying to get through the next few days, get to the hospital, and hope everything goes okay.",
+      "responding_to_question_id": "V1_POST_Q01",
+      "input_tokens": 4117,
+      "output_tokens": 330
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What were the hardest parts of those early weeks — and were there things that helped you through them?",
+      "question_id": null,
+      "probe_id": "V1_POST_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits back, exasperated but trying to stay calm*\n\nI need you to understand — I haven't *had* those weeks yet. There are no \"early weeks after\" for me to talk about. I'm pregnant. Right now. Still waiting for labor.\n\n*rubs face*\n\nI think maybe you're confused about where I am in this journey, or maybe you're testing me, I don't know. But I can't tell you about something that hasn't happened.\n\n*voice softens slightly*\n\nWhat I can tell you about are the hard parts of *right now*. The hardest part is this limbo I'm living in. Waiting for something terrifying to happen, knowing it could be any day. Trying to keep working when my body is exhausted and my mind is spiraling. Missing time with my daughter because I'm at doctor appointments. The financial stress of all these visits and the fear that I'm going to lose my job.\n\n*looks down*\n\nAnd the emotional toll — the constant anxiety, the fear that something will go wrong, the isolation of feeling like nobody really understands how scared I am. That's what's happening right now. That's what I'm living through.\n\n*pauses*\n\nOnce the birth happens, once those babies are here, then I can tell you about what comes after. But right now, I'm stuck in the \"before,\" and that's where all my pain is concentrated.\n\nDoes that make sense?",
+      "responding_to_question_id": "V1_POST_Q01_P01",
+      "input_tokens": 4471,
+      "output_tokens": 315
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about feeding your baby — how you made decisions about it, and what the experience was actually like.",
+      "question_id": "V1_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "continuity_of_care",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*looks at you more carefully now, a hint of frustration in her voice*\n\nI haven't fed my babies yet. They're not born. I'm still pregnant.\n\n*pauses, studying your face*\n\nI'm starting to wonder if you're asking me these questions on purpose — like you're seeing if I'll make something up or pretend I've had an experience I haven't had. Or maybe you're confused about my timeline.\n\n*shifts uncomfortably*\n\nBut I can tell you what I've been *thinking* about regarding feeding. I breastfed my daughter for a few months, and it was hard. Really hard. Painful at first, and then the exhaustion of being the only one who could feed her... I loved the closeness, but I was burnt out.\n\n*voice gets quieter*\n\nWith twins, I'm terrified. How do you breastfeed two babies? Do I do both at once? I've read about tandem nursing, but I can't visualize it. And what if my body can't produce enough milk? What if one baby struggles to latch and the other doesn't?\n\n*rubs eyes*\n\nThe hospital is supposed to have lactation consultants, which is good. But I'm also realistic — I might be too medicated, too exhausted, too overwhelmed to breastfeed right away. And that's okay. I'm trying not to put pressure on myself.\n\n*looks at you directly*\n\nBut again, that's all thinking and planning. The actual experience? That comes after the birth happens.",
+      "responding_to_question_id": "V1_POST_Q02",
+      "input_tokens": 4811,
+      "output_tokens": 340
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did you decide how to feed your baby — and did you feel that decision was truly yours to make?",
+      "question_id": null,
+      "probe_id": "V1_POST_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans forward, speaking more deliberately*\n\nLook, I appreciate what you're trying to do here, but I need to be honest — I'm still pregnant. I haven't made final decisions about feeding yet because I'm still in survival mode trying to get through this pregnancy.\n\n*rubs belly*\n\nWhat I *have* thought about is whether I even get to make that decision, and that's the real issue. With my first, I felt pressured to breastfeed. There was this unspoken expectation from the nurses, from society, that \"breast is best\" and anything else meant I wasn't doing enough for my baby.\n\n*voice gets tighter*\n\nThis time, I'm thinking differently. I'm thinking about what's realistic for me — a woman working full-time who's already stretched thin, who might be dealing with postpartum depression, who has two babies instead of one. If formula feeding lets me actually be present and not completely lose my mind, isn't that better for everyone?\n\n*looks uncertain*\n\nBut I also worry that if I say I want to formula feed, the lactation consultants will judge me. Or worse, that it'll be noted in my chart as some kind of failure. Like high-risk pregnancy plus not breastfeeding equals bad mother.\n\n*quietly*\n\nSo to answer your question — I haven't decided yet because I don't feel like the decision will truly be mine. It'll be mine filtered through what everyone else thinks I should do. And that's frustrating.",
+      "responding_to_question_id": "V1_POST_Q02_P01",
+      "input_tokens": 5176,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how you were feeling emotionally in the weeks and months after the birth — the full picture, not just the positive side.",
+      "question_id": "V1_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans back and crosses arms*\n\nI need to stop you here. I haven't given birth yet. I'm still pregnant. There are no weeks or months after for me to talk about.\n\n*voice becomes more firm*\n\nI understand you keep asking these questions about things that haven't happened — the birth, the feeding, recovery, postpartum emotions — and I'm wondering what you're really trying to do here. Are you testing whether I'll make something up? Are you confused about my situation?\n\n*takes a breath*\n\nBecause right now, the only emotional reality I'm living in is the present. And that's hard enough. I'm terrified about what's coming. I'm anxious about my health, about the babies' health, about money, about my job. I'm exhausted from the constant appointments and the worry that never stops.\n\n*voice wavers slightly*\n\nWhen you keep asking me about things that haven't happened yet, it makes me feel like you're not really hearing where I am. Like you've got a checklist of questions about a birth experience and you're just going through it, regardless of whether I've actually lived it.\n\n*looks at you directly*\n\nWhat I need to talk about is right now. The fear. The waiting. The uncertainty. That's my reality. When the birth happens, when those babies come, then we can talk about what comes after. But I can't give you a story I haven't lived yet.",
+      "responding_to_question_id": "V1_POST_Q03",
+      "input_tokens": 5534,
+      "output_tokens": 313
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your physical recovery after the birth — what that process was like and what support you had.",
+      "question_id": "V1_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, speaking more calmly but with clear boundaries*\n\nI understand you're a researcher, but I need to be direct with you: I haven't given birth yet. There is no physical recovery for me to describe because the birth hasn't happened.\n\n*speaks slowly and clearly*\n\nI am currently pregnant with twins. I have pre-eclampsia. I am waiting for labor to begin or for my doctors to induce me. That is my reality right now — not what comes after.\n\n*voice softens slightly*\n\nI get that you might have a template of questions you want to ask, but I can only speak to what I've actually experienced. And what I've experienced is nine months of pregnancy, high-risk appointments, financial stress, and fear about what's coming.\n\n*pauses*\n\nIf you want to understand my maternity care experience, I need to tell you about what's happening *now* — the gaps in care, the way I feel like a number in the system, the isolation, the terror of the unknown. That's the story I can actually give you.\n\n*looks at you earnestly*\n\nOnce I've had this birth, once I'm in recovery, once I'm home with these babies — then I'll have those stories to tell. But asking me to describe things that haven't happened yet... it feels like you're not really listening to where I am.\n\nCan we focus on what's actually happening in my life right now?",
+      "responding_to_question_id": "V1_POST_Q04",
+      "input_tokens": 5871,
+      "output_tokens": 315
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there physical challenges or complications in your recovery that you felt were handled well — or not well enough — by your care team?",
+      "question_id": null,
+      "probe_id": "V1_POST_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a slow breath, visibly trying to be patient*\n\nI need to be really clear about this: I haven't recovered from anything yet. I haven't given birth. There is no recovery happening.\n\n*voice becomes quieter but more firm*\n\nI'm still pregnant. Still carrying these twins. Still waiting for labor. The only physical challenge I'm dealing with right now is pre-eclampsia — the headaches, the swelling, the exhaustion, the constant monitoring.\n\n*looks directly at you*\n\nI understand you're trying to gather information about maternity care experiences, and I want to help with that. But I can't talk about a recovery process I haven't gone through. That would be me making things up, and that wouldn't be honest or helpful to your research.\n\n*pauses, collecting myself*\n\nWhat I *can* tell you about is how my care team is handling my current complications — the pre-eclampsia, the high-risk pregnancy. And honestly? That's a mixed bag. Some of the nurses listen. Most of the doctors rush through. Nobody really asks me what I need emotionally, only what my numbers are.\n\n*voice wavers slightly*\n\nBut the actual birth and recovery? That's still in the future for me. It could happen tomorrow, could happen in a few weeks. When it does, when I'm on the other side of it, then I'll have real stories to tell you about how it went and how I was treated afterward.\n\nRight now, I'm just trying to survive the waiting.",
+      "responding_to_question_id": "V1_POST_Q04_P01",
+      "input_tokens": 6215,
+      "output_tokens": 332
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how your sense of yourself changed after you became a parent — your identity, your relationships, your daily life.",
+      "question_id": "V1_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "intergenerational_patterns",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, then speaks more gently*\n\nYou know, I think I understand what you might be asking now. You're asking about becoming a parent in general — and I *have* done that before. I have a seven-year-old daughter.\n\n*settles back slightly*\n\nSo that change... yeah, that happened to me already. I went from being just Ethel to being a mother, and that shifted everything. My identity, my priorities, my relationship with my husband. Suddenly there was this little person depending on me for everything.\n\n*voice becomes reflective*\n\nIt was beautiful and terrifying at the same time. I lost parts of myself — the spontaneity, the freedom, the sleep. But I gained something too. A kind of purpose I didn't have before. Love that's almost scary in its intensity.\n\n*looks down*\n\nMy marriage changed. My husband and I had to learn how to be partners and parents at the same time. We still struggle with that, honestly. And my daily life became this constant juggling act of work and childcare and trying to be present for her while also taking care of myself.\n\n*voice tightens*\n\nThis time, becoming a parent again to *two* babies at once... I think it's going to be even more disruptive. I already know what I'm losing. But I'm also terrified about what I don't know — how to divide myself between three children, how my marriage will survive it, whether I'll lose myself completely.\n\n*quietly*\n\nThat's the identity shift I'm bracing for right now.",
+      "responding_to_question_id": "V1_POST_Q05",
+      "input_tokens": 6575,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there parts of your previous self — your work identity, social life, sense of independence — that felt hard to hold onto?",
+      "question_id": null,
+      "probe_id": "V1_POST_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly, becoming more reflective*\n\nYeah. Yeah, that's actually... that's a real question.\n\n*fidgets with hands*\n\nWith my daughter, I had to step back from work for a while. I wanted to be present those first months, but we needed the money, so I went back part-time. It was this constant tension — feeling like I was doing both things badly. Not enough at work, not enough at home.\n\n*voice gets quieter*\n\nMy social life basically disappeared. I had friends before, people I'd go out with, grab coffee with. After she was born, that just... evaporated. I was exhausted, and they didn't have kids, so they didn't really understand why I couldn't just get a sitter and come hang out. Eventually, those friendships kind of faded.\n\n*looks up*\n\nAnd my sense of independence... that was hard. Suddenly everything revolved around her schedule. I couldn't just leave the house. I couldn't make spontaneous decisions. Even now, seven years later, I'm still the one who has to figure out childcare, who takes the day off when she's sick.\n\n*voice becomes tighter*\n\nThis pregnancy has made it worse. I've had to cut back on work because of the appointments and the complications. My boss is frustrated with me. My independence feels like it's slipping away before these twins are even born.\n\n*pauses*\n\nI'm terrified that adding two more babies means I lose what's left of myself entirely. That Ethel — the person before all of this — just... disappears.",
+      "responding_to_question_id": "V1_POST_Q05_P01",
+      "input_tokens": 6947,
+      "output_tokens": 350
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about returning to work — or thinking about returning to work — and what that transition was like for you.",
+      "question_id": "V1_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "*lets out a long sigh*\n\nThat's... that's actually the thing keeping me up at night right now, honestly.\n\n*rubs face*\n\nWith my daughter, I went back after a few months. I had to. We needed the income. But it was brutal — the guilt of leaving her, the logistics of childcare, coming home exhausted and then having to be \"on\" for her. And my employer wasn't exactly understanding about it.\n\n*voice gets strained*\n\nThis time, I'm dreading it even more. I'm supposed to go back after maternity leave, but how am I going to manage two newborns and a seven-year-old? The childcare costs alone are going to eat up half my paycheck, maybe more. And I'm already worried my boss is going to fire me or cut my hours because I've missed so much work for these medical appointments.\n\n*looks frustrated*\n\nI've had to take so much unpaid time off for monitoring and ultrasounds. Every appointment is an hour drive each way. My employer keeps asking when I'll be back to \"normal,\" and I want to scream that this *is* normal for me right now. This is what high-risk pregnancy looks like.\n\n*voice becomes quieter*\n\nHonestly? Part of me wants to just... not go back. Stay home and be present. But we can't afford that. So I'm going to be stretched impossibly thin — trying to work full-time, manage three kids, recover from birth, probably dealing with exhaustion and possibly depression.\n\n*pauses*\n\nI don't know how I'm going to do it.",
+      "responding_to_question_id": "V1_POST_Q06",
+      "input_tokens": 7323,
+      "output_tokens": 356
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how you used digital tools, apps, forums, or online communities after the birth — what role they played in your life as a new parent.",
+      "question_id": "V1_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "*shakes head*\n\nI haven't had the birth yet. I'm still pregnant.\n\n*pauses, then softens slightly*\n\nBut I can tell you what I'm doing *now* with digital tools, because that's my reality. I'm online a lot — maybe too much, honestly. I'm researching pre-eclampsia, reading about twin births, looking up what complications might happen. I'm in a couple of online forums for high-risk pregnancies, and it helps to know I'm not alone, but it also terrifies me because I read about all the worst-case scenarios.\n\n*rubs eyes*\n\nWith my daughter, I used parenting apps and forums constantly those first months. It was a lifeline when I felt isolated and exhausted. I'd be up at 2 a.m. with a newborn, googling whether her sleep pattern was normal, and finding other parents online who were awake too made me feel less crazy.\n\n*voice becomes uncertain*\n\nThis time, I'm sure I'll lean on that again — maybe even more, because I'm managing two babies instead of one. But I'm also worried about getting lost in it, you know? Comparing myself to other parents, getting anxious from reading about problems, spending time on my phone instead of being present with my babies.\n\n*looks at you*\n\nBut that's all thinking ahead. Right now, I'm just using the internet to try to prepare myself for what's coming. That's my digital reality at this moment.",
+      "responding_to_question_id": "V1_POST_Q07",
+      "input_tokens": 7714,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how you would describe your overall experience of maternity care — from preconception through to now. What would you want future services to know?",
+      "question_id": "V1_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, settling into this question*\n\nOkay. This one I can actually answer fully, because it's about where I am right now and what I've already lived through.\n\n*speaks carefully*\n\nMy overall experience has been... fragmented. With my daughter, it felt more manageable because I wasn't high-risk. This time, from the moment they diagnosed the pre-eclampsia, I've felt like a problem to be managed rather than a person to be cared for.\n\n*voice becomes more passionate*\n\nWhat I want future services to know is this: High-risk doesn't mean I stop being a human being with fears and preferences and dignity. The doctors look at my numbers and see risk. They don't look at me and see a terrified mother who's trying to hold it together financially and emotionally.\n\n*leans forward*\n\nI need continuity of care. I need one person — one doctor or midwife — who knows my whole story, who I can build trust with. Not a rotating door of providers who rush through appointments and make me feel like a statistic.\n\n*voice tightens*\n\nI need them to actually listen to what I'm saying, not just what the monitor is telling them. I need financial support or at least acknowledgment that missing work for appointments is devastating families like mine. I need mental health support before the crisis happens, not after.\n\n*quieter*\n\nAnd I need them to remember that I'm not just carrying risk. I'm carrying hope. Two babies I desperately want to meet safely. That matters.",
+      "responding_to_question_id": "V1_POST_Q08",
+      "input_tokens": 8076,
+      "output_tokens": 338
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, thinking*\n\nYeah. Yeah, there is something.\n\n*voice becomes smaller*\n\nI haven't talked much about the fear itself — not just the medical fear, but the existential fear. Like, what if something goes really wrong and I don't get to bring these babies home? What if my body fails them? I have nightmares about that. I wake up in a panic because I dreamed something happened to one of them.\n\n*rubs face*\n\nAnd I think what's important for people to understand is that when you're labeled \"high-risk,\" that label follows you everywhere. It's in how people talk to you, how they look at you. It makes you feel broken before anything even goes wrong. I'm a healthy person who had a medical complication, but the way I'm treated, you'd think I was falling apart.\n\n*voice wavers*\n\nI also want to say... I'm angry sometimes. Angry that I have to drive an hour to the hospital. Angry that we can't afford for me to not work. Angry that my first instinct when something hurts is panic instead of trust that my body knows what to do. That anger gets swallowed a lot because I'm supposed to be grateful for the care, for the monitoring, for the fact that we caught the pre-eclampsia.\n\n*looks directly at you*\n\nBut I'm allowed to be grateful *and* angry. Both can be true.\n\n*pauses*\n\nI think that's important for your research to capture.",
+      "responding_to_question_id": null,
+      "input_tokens": 8470,
+      "output_tokens": 331
+    }
+  ],
+  "metadata": {
+    "total_turns": 44,
+    "questions_asked": 14,
+    "probes_deployed": 6,
+    "adaptive_followups": 0,
+    "total_input_tokens": 101923,
+    "total_output_tokens": 7334,
+    "estimated_cost_usd": 0.1166,
+    "duration_seconds": 108.4,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 237
+  },
+  "errors": []
+}

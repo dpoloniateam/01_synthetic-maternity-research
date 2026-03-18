@@ -1,0 +1,339 @@
+{
+  "session_id": "S_088",
+  "status": "completed",
+  "persona_id": "comp_136",
+  "persona_name": "Gloria",
+  "persona_journey_stage": "preconception",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [
+    "mental_health",
+    "previous_loss",
+    "previous_trauma",
+    "rural_isolation"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 3,
+  "questionnaire_strategy": "Scenario-Based / Critical Incident",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "google/gemini-3.1-flash-lite-preview",
+  "environment": "dev",
+  "timestamp": "2026-03-18T00:51:31.611642",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Gloria, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're thinking about starting a family, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s… it’s a lot to put into words. Honestly, just saying it out loud feels like I’m inviting something heavy into the room. I’m only twenty-one, and everyone around here in Wayland just sees \"low-risk.\" They see a healthy, young Hispanic woman, and they check their boxes. But those boxes? They feel like cages. \n\nI’ve been trying to talk about the things that actually matter—the way my heart races when I think about the past, or the trauma that feels like it’s etched into my skin—but the clinical environment is so cold. When I sat in that office, I tried to mention my mental health, the history that keeps me up at night, but the doctor just focused on my blood pressure. She told me my vitals were perfect. It felt like she was talking to a machine, not a person. \n\nI want to be a mother. I want to build something better, something secure. But I’m terrified that I’m just walking into another cycle. I’m not just worried about pregnancy; I’m worried about the silence here in these woods, and how it mirrors the silence inside me. Does that make sense? I’m looking for someone to see *me*, not just a chart. If I’m going to do this, I need to know I’m not alone in the dark.",
+      "responding_to_question_id": null,
+      "input_tokens": 749,
+      "output_tokens": 293
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you've just decided with your partner — or on your own — that you'd like to start trying for a baby. Walk me through what that moment felt like and what your very first steps were.",
+      "question_id": "V3_PREC_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "It wasn’t a romantic moment with candlelight or anything like that. It was just a Tuesday, quiet and heavy, like the air always is out here. I was sitting on the porch watching the trees, and the thought just… landed. It felt less like a decision and more like a terrifying, inevitable question: *Are you going to let the history stop with you, or are you going to keep passing it down?* \n\nMy first step was reaching out to my doctor, which felt like a massive, clumsy reach into the dark. I wanted to talk about my history, about the trauma I carry, and how that might shift once I’m actually pregnant. I wanted to ask how we’d handle the anxiety, or if there were resources for someone like me—someone who knows too much about cortisol and attachment theory and is scared stiff that I’ll accidentally replicate my own mother’s mistakes.\n\nBut the appointment was so clinical, so brief. It was just a list of vitamins and a smile that didn't reach her eyes. She gave me a brochure about folic acid, but there wasn't a single line in it about how to survive the fear of yourself. I walked out of that clinic feeling smaller than when I walked in. I want this so badly, but I’m doing it alone in my head, and that’s the loneliest part.",
+      "responding_to_question_id": "V3_PREC_Q01",
+      "input_tokens": 1087,
+      "output_tokens": 283
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "You mentioned taking those first steps — what made you choose that particular action rather than something else, like speaking to a doctor first or doing your own research online?",
+      "question_id": null,
+      "probe_id": "V3_PREC_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "I think I went to the doctor first because, in my mind, that’s what \"doing it right\" looks like. We’re taught that the medical system is the gatekeeper to everything, right? If you want to be a mother, you go to the professional to get the \"all clear.\" I guess I was hoping for some kind of validation—not just that my body was ready, but that *I* was ready. I wanted her to say, \"I see your history, and here is how we’re going to hold space for you.\"\n\nBut doing my own research online? That feels like stepping into a minefield. If I start searching for \"generational trauma and parenting,\" I get ten thousand articles telling me exactly how I’m going to ruin my child before they’re even born. The internet is full of people telling you to be a \"secure base,\" but none of them tell you how to be that when you’re still trying to re-parent yourself. \n\nI chose the doctor because I wanted a human connection, someone who could look at me and acknowledge that I’m trying to survive my past while planning for a future. I didn't want a pamphlet; I wanted a witness. But I suppose I learned quickly that a medical chart isn't the same thing as being witnessed.",
+      "responding_to_question_id": "V3_PREC_Q01_P01",
+      "input_tokens": 1404,
+      "output_tokens": 274
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you've booked a preconception appointment with your GP and you're sitting in the waiting room. What's going through your mind as you wait, and what are you hoping will happen in that consultation?",
+      "question_id": "V3_PREC_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "The waiting room is always too quiet. The magazines are outdated, and the ticking of the clock feels like it’s counting down to a performance I’m not prepared for. My hands are usually restless—picking at my cuticles or smoothing my skirt—because I’m trying to keep my breathing steady. Every time a door opens, I jump a little. I’m hyper-vigilant, scanning the room for safety, even here.\n\nWhat’s going through my mind? Mostly, I’m rehearsing. I’m thinking, *“Don’t let them see how scared you are, or they’ll think you’re unfit.”* That’s the irony, isn't it? I’m afraid to be honest about my trauma because I’m terrified a doctor will flag me as “high-risk” in the wrong way. \n\nI’m hoping for something I’ve never really had: a conversation that doesn’t feel like an interrogation. I want to tell them about the nightmares, the panic, the fear that I don’t know how to comfort a crying infant because I wasn't comforted when I was one. I want them to look up from their tablet, put it aside, and just listen. I’m not asking for a miracle cure; I’m asking for them to acknowledge that my mental health is just as important as my bloodwork. I need to hear that I can be a good mother despite the wreckage I’m coming from. I need to feel like I’m a person, not just a set of stats.",
+      "responding_to_question_id": "V3_PREC_Q02",
+      "input_tokens": 1724,
+      "output_tokens": 330
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you've been trying to conceive for several months without success. A close friend suggests you try a fertility app she found helpful. How do you react to that suggestion, and what do you do next?",
+      "question_id": "V3_PREC_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "I think I’d just nod and thank her, maybe even force a little smile, but inside? I’d feel this immediate, sharp sense of exhaustion. It’s hard to explain to people—even friends—that adding *another* tracker to my life feels like adding another shackle. \n\nIf I start using an app, I’m not just tracking a cycle anymore. I’m turning my body into a data point. I’m already hyper-analyzing everything—my stress levels, my heart rate, the way my stomach flips when I hear a loud noise—and giving that data to an algorithm just feels like another way to commodify my own anxiety. It’s not that I don’t want to be a mother; it’s that I’m scared the \"trying\" part is going to become a performance, a frantic race to match up with the little blue lights on a screen.\n\nWhat do I do next? I’ll probably download it, because I’m desperate to do things \"right,\" just like everyone says. I’ll log the data, and I’ll watch the predictions, and I’ll hate myself for feeling so detached from my own rhythm. I’ll find myself staring at the phone at 2:00 AM, wondering if the app knows anything about the way my childhood trauma makes it hard to trust my own biology. It’ll just be another thing keeping me awake in the dark.",
+      "responding_to_question_id": "V3_PREC_Q03",
+      "input_tokens": 2098,
+      "output_tokens": 302
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What would make you trust or distrust the information you find in a fertility app compared to what a healthcare professional might tell you?",
+      "question_id": null,
+      "probe_id": "V3_PREC_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "trust_distrust",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "Trust is such a fragile thing for me. When a healthcare professional speaks, there’s an inherent power dynamic—I’m sitting on the paper-covered table, and they have the degree on the wall. I *want* to trust them because that’s the system, but when they prioritize my BMI or my vitals over the things that actually make me feel like I'm falling apart, that trust just evaporates. It makes me feel like they’re blind to the person behind the symptoms.\n\nWith an app, I don’t really have \"trust\" in the way people usually mean it. I see it more like a cold, objective mirror. I don’t trust the app to understand my soul or my history, but I do trust that it won’t look at me with judgment or indifference. It’s just math. It doesn’t look at me and make assumptions about my socioeconomic background or my \"low-risk\" status. \n\nBut honestly? Both of them feel like they're looking at a map, while I’m the one actually walking through the woods. The doctor looks at the map and tells me the path is flat, ignoring the mountain I’m climbing. The app looks at the map and gives me a GPS coordinate, ignoring the fact that I’m lost in the dark. I think I’d only truly trust someone who was willing to put the map down and just walk the path with me.",
+      "responding_to_question_id": "V3_PREC_Q03_P01",
+      "input_tokens": 2427,
+      "output_tokens": 299
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you've just had a difficult conversation with your partner about whether you're both truly ready to have a child — financially, emotionally, practically. What does 'being ready' actually mean to you, and who or what helped you form that picture?",
+      "question_id": "V3_PREC_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "goals"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "That conversation with my partner always leaves me feeling hollowed out. We talk about money—whether we can afford a nursery, or if my job is secure enough—but those are the easy parts. The \"readiness\" that keeps me up at night isn't about bank accounts. To me, being ready means knowing that when the baby cries, I won’t instinctively freeze or pull away because I’m being triggered by a sound that reminds me of my own childhood. \n\nI think I formed this picture of \"readiness\" from the inverse—from watching how *not* to do it. I grew up in a house where emotions were either ignored or turned into weapons. So, in my head, \"ready\" means being a safe harbor. It means having a nervous system that is regulated enough that I can be a secure base for someone else. \n\nI didn’t get this from a book or a doctor. I got it from the therapists I couldn't afford to keep seeing and from the hours I spent reading about attachment theory when I was younger, trying to understand why I felt so fragmented. \"Ready\" means I’ve done enough work on my own trauma that I’m not asking my child to fix me. It’s a terrifyingly high bar to set for myself, and some days, I look at that picture and I’m convinced I’ll never actually reach it.",
+      "responding_to_question_id": "V3_PREC_Q04",
+      "input_tokens": 2780,
+      "output_tokens": 290
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you've experienced a previous pregnancy loss and are now considering trying again. You're sitting with that knowledge as you think about the future. What thoughts and feelings come up, and what would you need from a healthcare team to feel supported going forward?",
+      "question_id": "V3_PREC_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "trust_distrust",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "The loss… it’s like a phantom limb. I still feel the weight of what should have been, but it’s intangible, something I can’t quite grab hold of. Whenever I think about trying again, there’s this immediate, cold flicker of terror. It’s like standing on the edge of a cliff, knowing I’ve already fallen once, and being told, \"Jump again, it’ll be different this time.\" \n\nThe medical system treated my loss as a \"clinical event\"—an unfortunate statistic, a rounding error in my file. They were efficient, sure. They moved on quickly. But my heart didn't. Every time I imagine going back, I’m terrified that I’ll be sitting in that same sterile room, and the person across from me will treat me like a sequence of biological steps rather than a grieving person who is trying to be brave.\n\nIf I’m going to do this again, I need a team that acts like human beings. I need them to remember my name without looking at the chart. I need them to acknowledge that my anxiety isn't just \"overthinking\"—it’s a valid response to trauma. I need them to slow down, to actually ask how I’m holding up, and to offer me a space where I don’t have to be \"low-risk\" or \"high-risk\"—just a person who needs to be held steady.",
+      "responding_to_question_id": "V3_PREC_Q05",
+      "input_tokens": 3124,
+      "output_tokens": 296
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you have a pre-existing health condition and you're wondering how it might affect a future pregnancy. You decide to look it up before speaking to anyone medical. What do you search for, and how does what you find make you feel?",
+      "question_id": "V3_PREC_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "I search for things like \"impact of chronic stress on fetal development\" or \"how to prevent trauma passing to baby.\" I know, I know—it’s the absolute worst thing I could do. I’m essentially googling my own worst fears, looking for a way to prove that I’m already failing before I’ve even begun.\n\nWhat I find is just… sterile noise. Most of the articles are written in this detached, scientific tone that focuses entirely on risks, complications, and worst-case scenarios. They treat my mental health history as a list of red flags. I’ll read about cortisol levels affecting the baby's brain development, and I’ll feel this wave of suffocating guilt. It makes me feel like my own body is a trap, a dangerous place for a life to grow. \n\nInstead of answers, I just get more data points to obsess over. It confirms that the medical world doesn’t know how to talk about the *experience* of being human while being sick or traumatized. It leaves me feeling small, isolated, and fundamentally broken. I’m not looking for a lecture on risk; I’m looking for a roadmap to resilience, but the internet only ever gives me a list of reasons to be afraid.",
+      "responding_to_question_id": "V3_PREC_Q06",
+      "input_tokens": 3472,
+      "output_tokens": 260
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What sources did you find most credible — and what made you trust or distrust them? Were there gaps that left you more anxious rather than reassured?",
+      "question_id": null,
+      "probe_id": "V3_PREC_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "digital_information_seeking",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "Honestly, the only things that feel even remotely \"credible\" are the forums or blogs where other women are actually talking—the ones where they admit they’re scared, that they cry in the bathroom, that they’re struggling to keep their heads above water. When I read a doctor’s website, it’s all polished and sterile, and it feels like a lecture. But when I read someone else’s account of their trauma, it feels like a mirror. I trust the shared experience more than the clinical summary because at least it isn't trying to pretend that \"healthy\" is just a box you check.\n\nBut even those forums have gaps. They can be echo chambers of pure, unadulterated anxiety. You read one story about a traumatic birth or a struggle with attachment, and it’s like gasoline on my own fire. There’s no professional bridge, no one to say, \"Yes, this is scary, but here is how we handle it.\" \n\nThe gap is the silence between the raw, messy truth of being a person and the cold, clinical distance of being a patient. I need someone who can translate the science into something that doesn't feel like a death sentence for my peace of mind. Without that, I’m left to navigate the fear entirely on my own, and that’s a heavy weight to carry through a pregnancy.",
+      "responding_to_question_id": "V3_PREC_Q06_P01",
+      "input_tokens": 3763,
+      "output_tokens": 283
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "I think what I really want to say is that I am tired of being \"managed.\" I’m tired of the way the system sees my demographic—young, unmarried, Hispanic—and immediately categorizes me as someone who needs to be educated or corrected, rather than someone who needs to be heard. \n\nThere’s this unspoken pressure to be the \"perfect\" patient, to hide the parts of me that aren't \"low-risk\" on paper so I don't get labeled as a problem. But the pregnancy isn't just a physiological process for me. It is a psychological one. It’s an act of defiance against a history that told me I wasn't enough. When a doctor dismisses my fear as just \"nerves,\" they’re dismissing the years I’ve spent trying to heal. \n\nI just want the people in charge of my care to understand that when I walk into that office, I’m bringing my ancestors, my scars, and my deep, vibrating fear of the future with me. I don’t need more pamphlets on prenatal vitamins. I need a provider who knows that the most important thing they can offer me isn't a prescription—it's a little bit of grace and the patience to listen. I want to be able to walk into that clinic and be treated like a person, not a chart. That’s all. I just want to be seen.",
+      "responding_to_question_id": null,
+      "input_tokens": 4102,
+      "output_tokens": 293
+    }
+  ],
+  "metadata": {
+    "total_turns": 22,
+    "questions_asked": 6,
+    "probes_deployed": 3,
+    "adaptive_followups": 0,
+    "total_input_tokens": 26730,
+    "total_output_tokens": 3203,
+    "estimated_cost_usd": 0.0331,
+    "duration_seconds": 28.2,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 221
+  },
+  "errors": []
+}

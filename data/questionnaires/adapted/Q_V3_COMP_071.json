@@ -1,0 +1,478 @@
+{
+  "persona_id": "comp_071",
+  "persona_name": "Chasity",
+  "journey_stage": "postpartum",
+  "risk_level": "low",
+  "vulnerability_flags": [],
+  "complications": [],
+  "relevant_phases": [
+    "postpartum"
+  ],
+  "base_question_count": 34,
+  "adapted_question_count": 7,
+  "filtered_out": 27,
+  "added_probes": 0,
+  "questions": [
+    {
+      "question_id": "V3_POST_Q01",
+      "version": 3,
+      "journey_phase": "postpartum",
+      "question_text": "Imagine it's your first night at home with your newborn after being discharged from hospital. You're exhausted, possibly in pain, and your baby won't settle. What does that night feel like, and who — if anyone — is there with you?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_POST_Q01_P01",
+          "probe_text": "When you were discharged, how prepared did you feel for what was actually waiting for you at home — and what was the biggest gap between what you expected and what you found?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q01_P02",
+          "probe_text": "If you needed help that night — whether practical, emotional, or clinical — how easy was it to access? What did you do?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q01_P03",
+          "probe_text": "Was there anything about the physical realities of your own recovery that night that you hadn't been prepared for — things that hadn't been mentioned before discharge?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "dignity_respect"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_thematic_areas": [
+        "risks_barriers",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "responsiveness",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent",
+        "if_rural"
+      ]
+    },
+    {
+      "question_id": "V3_POST_Q02",
+      "version": 3,
+      "journey_phase": "postpartum",
+      "question_text": "Imagine you're trying to breastfeed for the first time and it isn't going as you hoped. A midwife visits and watches you try, then offers advice. Describe what that moment feels like, physically and emotionally.",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_POST_Q02_P01",
+          "probe_text": "How did it feel to have someone observing something so intimate and physically difficult? Did you feel supported, observed, or judged — or some mix of all three?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "body_image_autonomy"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q02_P02",
+          "probe_text": "Did the advice you received feel consistent across different midwives or healthcare contacts — or were you given conflicting information? How did that affect you?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q02_P03",
+          "probe_text": "When or if you considered formula feeding, what kinds of reactions — from professionals, family, or social media — did you encounter, and how did those affect your choices?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "hcp_interactions",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "body_image_autonomy",
+        "dignity_respect"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V3_POST_Q03",
+      "version": 3,
+      "journey_phase": "postpartum",
+      "question_text": "Imagine it's six weeks after birth. You're sitting in the GP surgery for your postnatal check. The appointment lasts ten minutes. What do you hope will happen in that room — and what does happen?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_POST_Q03_P01",
+          "probe_text": "Were there things you wanted to raise — about your mental health, your relationship, your body, or your sense of yourself — that the appointment didn't create space for?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q03_P02",
+          "probe_text": "How did the GP's focus compare to your own priorities in that appointment — and did you leave feeling that your whole experience of the past six weeks had been acknowledged?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q03_P03",
+          "probe_text": "If you were feeling low, anxious, or not like yourself in those weeks, how easy was it to say that out loud in that appointment — and what made it easy or hard?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "structural_barriers"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "hcp_interactions",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "reliability"
+      ],
+      "target_latent_dimensions": [
+        "identity_tensions",
+        "continuity_of_care"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V3_POST_Q04",
+      "version": 3,
+      "journey_phase": "postpartum",
+      "question_text": "Imagine you're lying awake at 3am with your baby, and you find yourself feeling a deep sadness or flatness that you can't quite name. You pick up your phone. What do you do with it?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_POST_Q04_P01",
+          "probe_text": "What were you looking for in those late-night searches or scrolling — reassurance, connection, information, or something else?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q04_P02",
+          "probe_text": "Was there a point at which you recognised what you were feeling might be more than 'baby blues' — and when you did, who was the first person you told or the first place you sought help?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q04_P03",
+          "probe_text": "Were there cultural, family, or personal beliefs about how new mothers 'should' feel that made it harder to acknowledge or name what you were going through?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "identity_tensions"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "digital_information"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "responsiveness"
+      ],
+      "target_latent_dimensions": [
+        "digital_information_seeking",
+        "identity_tensions"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent",
+        "if_language_barrier"
+      ]
+    },
+    {
+      "question_id": "V3_POST_Q05",
+      "version": 3,
+      "journey_phase": "postpartum",
+      "question_text": "Imagine your partner has returned to work and you're alone with your baby for the first full day. Describe that day — not just the logistics, but the emotional texture of it.",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_POST_Q05_P01",
+          "probe_text": "How had you and your partner prepared for this transition — and were those preparations adequate? What hadn't you anticipated?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "partner_role",
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q05_P02",
+          "probe_text": "What was the relationship between your identity before becoming a mother and how you experienced yourself in that day at home? Did they feel connected or very different?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "body_image_autonomy"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q05_P03",
+          "probe_text": "Who or what held you together on that day — whether a person, a community, an app, or something else entirely?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "identity_tensions",
+        "partner_role"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V3_POST_Q06",
+      "version": 3,
+      "journey_phase": "postpartum",
+      "question_text": "Imagine you're approaching your return to work. You're thinking about how you'll explain to your employer what the last few months have involved, and whether your job will still fit who you are now. What's that internal conversation like?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_POST_Q06_P01",
+          "probe_text": "Has becoming a parent changed how you see your professional identity — your ambitions, your sense of what matters, or how you want your days structured? In what ways?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q06_P02",
+          "probe_text": "Were there conversations you needed to have with your employer, partner, or childcare providers to make return to work possible — and what was difficult or unspoken in those conversations?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "partner_role"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q06_P03",
+          "probe_text": "How did the experience of maternity care — the quality, the continuity, the way you were treated — affect your sense of confidence and readiness for this transition?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "goals_expectations",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V3_POST_Q07",
+      "version": 3,
+      "journey_phase": "postpartum",
+      "question_text": "Imagine you're at a new parents' group for the first time, surrounded by other people who have also recently given birth. You notice yourself comparing your experience to theirs. What comes up for you in that room?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_POST_Q07_P01",
+          "probe_text": "Were there aspects of your birth or postnatal experience that felt hard to talk about in that room — things that felt 'outside the norm' of what others were sharing?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q07_P02",
+          "probe_text": "How did the group — whether in person, online, or both — function as a source of practical information, emotional support, or something else? What was most valuable?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_POST_Q07_P03",
+          "probe_text": "Did the demographics or backgrounds of people in the group shape your experience of it — did you feel you fully belonged, or were there differences that created distance?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "intergenerational_patterns"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "informal_caregiver_interactions",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_language_barrier",
+        "if_rural"
+      ]
+    }
+  ],
+  "adapted_at": "2026-03-17T23:25:28.239268"
+}

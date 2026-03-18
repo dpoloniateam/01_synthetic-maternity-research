@@ -1,0 +1,343 @@
+{
+  "session_id": "S_212",
+  "status": "completed",
+  "persona_id": "comp_026",
+  "persona_name": "Andrea",
+  "persona_journey_stage": "preconception",
+  "persona_risk_level": "medium",
+  "persona_vulnerability_flags": [
+    "low_social_support",
+    "previous_loss"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 5,
+  "questionnaire_strategy": "Relational / Stakeholder Map",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T02:16:15.286991",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Andrea, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're thinking about starting a family, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in seat, tucking hair behind ear*\n\nYeah, okay. Thanks for... for asking me to do this. Honestly, I'm nervous talking about it out loud, but I guess that's the point, right?\n\n*pauses, looking down at hands*\n\nSo, I just had this checkup yesterday, and it's all kind of hitting me at once. Like, I'm not even pregnant yet, but suddenly I'm thinking about folic acid and my family's health problems, and it feels so real and so scary at the same time. My doctor kept saying things like \"medium risk\" because of the hypertension stuff that runs in my family, and all I could think was... what if I mess this up? What if my body can't do what it's supposed to do?\n\n*voice gets quieter*\n\nThe hardest part isn't even the medical stuff, honestly. It's that I'm doing this alone. My Mami — she passed away last year, and she was supposed to be here for all of this. She would have known what to do, you know? My friends are busy with their own lives, and I'm just... here. Trying to figure out how to take care of a baby when I can barely take care of myself sometimes.\n\nAnd the logistics are killing me. The bus situation is insane. I almost missed my appointment yesterday because of a delay. How am I supposed to manage doctor visits, transportation, work — everything?\n\n*looks up*\n\nSorry, I'm probably rambling. Where should I start?",
+      "responding_to_question_id": null,
+      "input_tokens": 780,
+      "output_tokens": 334
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who were part of your world when you first started thinking about having a baby — who came to mind, and what role did each of them play in those early conversations?",
+      "question_id": "V5_PREC_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "intergenerational_patterns",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes get a little watery, takes a breath*\n\nOkay, so... that's the thing. There really wasn't anyone to have those conversations with, you know?\n\n*fidgets with phone*\n\nMy Mami was everything. She was the one I talked to about everything — boys, school, my future. We'd sit in the kitchen while she made arroz con pollo, and she'd tell me stories about when she was pregnant with me, what it was like. I always imagined that when it was my turn, she'd be there doing the same thing. But she got sick two years ago, and last year... \n\n*pauses, composing herself*\n\nI don't really have my papi in the picture, and most of my cousins are back in Puerto Rico. My friends here, they're nice, but they're all focused on college and careers. None of them are thinking about babies yet. So when I started feeling this pull toward motherhood, I didn't really have anyone to talk to about it. I just kind of... kept it inside.\n\nThe only people who knew were at the clinic when I went for my checkup. The nurse was kind — she listened and didn't judge me for being young or single. But it's not the same as having family, you know? Having someone who actually *gets* it because they're living their own life around you.\n\n*looks away*\n\nSometimes I wonder if that's why I want this so badly. Like maybe a baby would be my family again. Is that crazy to say?",
+      "responding_to_question_id": "V5_PREC_Q01",
+      "input_tokens": 1156,
+      "output_tokens": 334
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in those early conversations that perhaps surprised you — someone you didn't expect to turn to?",
+      "question_id": null,
+      "probe_id": "V5_PREC_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs a little, but it sounds sad*\n\nHonestly? Nobody. That's kind of the problem.\n\n*rubs face*\n\nI mean, there's my supervisor at work — well, the job I'm trying to keep while I look for something more stable. She's older, maybe in her fifties, and one day she noticed I was looking at something on my phone about pregnancy and prenatal care. She didn't judge me or anything. She just asked if I was okay, and something about how she asked made me... I don't know, made me feel seen? We talked for like five minutes on a break, and she told me about when she had her kids young, before it was as accepted.\n\n*looks up*\n\nBut I didn't really have a \"conversation\" with her, you know? It was more like she noticed something and I had a moment where I wasn't completely alone with it. That was something, at least. She said if I needed flexibility with my schedule for appointments, to let her know. \n\n*voice gets quieter*\n\nI guess I was surprised that this random supervisor cared more than some of my actual friends. But it also made me realize how isolated I really am. One kind word from someone at work shouldn't feel like such a big deal, but it did. It made me feel like maybe I wasn't crazy for wanting this, even if I'm terrified and alone.\n\n*shrugs*\n\nThat's probably the closest thing I have to someone in my corner right now.",
+      "responding_to_question_id": "V5_PREC_Q01_P01",
+      "input_tokens": 1515,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your partner's involvement — or the involvement of someone close to you — when you were deciding whether and when to try for a baby. How did those conversations go, and who held the most influence?",
+      "question_id": "V5_PREC_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "partner_role",
+        "autonomy_vs_dependence",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, looks away*\n\nThere... there's no partner. That's kind of the whole thing.\n\n*voice gets smaller*\n\nI know that probably sounds irresponsible or whatever, but I'm not trying to get pregnant right now just to trap someone or anything like that. I just... I want to be a mother. And I'm twenty, I'm healthy enough — well, except for the family stuff — and I have a job, even if it's not perfect. So why should I wait around for some guy who might never show up?\n\n*defensive tone creeps in slightly*\n\nMy doctor asked me the same way you're asking, like... are you sure you're ready to do this alone? And yeah, I'm terrified. But I'm already alone, you know? At least if I have a baby, I won't be.\n\n*pauses, softer*\n\nThe truth is, there was someone I cared about, but he wasn't ready for anything serious. He wanted to keep things casual, and I realized I couldn't do that anymore. I needed more. So that door kind of closed.\n\n*looks down*\n\nNobody really influenced my decision except me. And maybe... maybe my Mami's memory. Like, wanting to create the family she would have wanted for me. That sounds romantic in my head, but saying it out loud, I know it's complicated.\n\n*quietly*\n\nThere's no one to talk to about it. Just me and my thoughts.",
+      "responding_to_question_id": "V5_PREC_Q02",
+      "input_tokens": 1888,
+      "output_tokens": 323
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there moments when you and your partner — or people close to you — wanted different things? How did you navigate that?",
+      "question_id": null,
+      "probe_id": "V5_PREC_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "partner_role",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, looks at you directly*\n\nI think you're still asking about a partner, and I need to be clear — there isn't one. There's nobody I'm in a relationship with right now, and there hasn't been for a while.\n\n*shifts in seat*\n\nBut yeah, there were... moments. With the guy I mentioned. We wanted different things, and I couldn't navigate it because he wasn't willing to have a real conversation about a future together. He just wanted things to stay the way they were, and I realized I couldn't keep doing that. It wasn't like we sat down and talked it out — it was more like I had to make a choice between staying with someone who didn't want what I wanted, or letting him go.\n\n*voice gets a bit frustrated*\n\nAnd that's kind of been the pattern with a lot of people in my life. Either they're not there, or they're not on the same page. My Mami understood me. My friends don't really get this. The clinic staff listens but they're not my people, you know?\n\n*looks down*\n\nSo I'm navigating it alone. I'm navigating all of it alone. That's why I'm here talking to you, I guess. Because I need to figure out how to do this without someone in my corner, and that scares me more than anything else.\n\n*quietly*\n\nDoes that make sense? I'm not trying to be difficult. I just need you to understand that there's no partner to have different ideas with. It's just me deciding what I want for my life.",
+      "responding_to_question_id": "V5_PREC_Q02_P01",
+      "input_tokens": 2239,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Think about the healthcare professionals you saw before you became pregnant — a GP, a fertility specialist, or anyone else. Tell me about those relationships. Who felt most helpful, and who felt more distant?",
+      "question_id": "V5_PREC_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "trust_distrust",
+        "structural_barriers",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly, seems relieved to talk about this*\n\nOkay, so the nurse at the clinic — she was really the first person I actually sat down with about all this. She didn't make me feel stupid for being twenty and thinking about having a baby. She just... listened. Asked me questions about my family history, my living situation, what I wanted.\n\n*voice becomes more animated*\n\nShe's the one who brought up the hypertension stuff and told me about the folic acid. And honestly? She was helpful, but she also scared me a little bit. Like, when she said \"medium risk,\" I heard \"your body might fail.\" She didn't say that, but that's what landed in my head.\n\n*fidgets*\n\nWhat was harder was that she kept giving me all these recommendations — eat fresh foods, take the vitamins, manage stress — but she didn't really ask how I was actually going to *do* those things. Like, she didn't know I'd have to take three buses to get to a decent grocery store. She didn't know about the transportation nightmare I deal with every day.\n\n*looks frustrated*\n\nThere's no fertility specialist or anything. I'm just at the clinic. The doctor was more distant, more clinical. She did the checkup, explained the risks, handed me pamphlets. Very professional, but I didn't feel like a person to her, you know? I felt like a case file.\n\n*quietly*\n\nThe nurse was better, but even she couldn't really help me figure out the life stuff.",
+      "responding_to_question_id": "V5_PREC_Q03",
+      "input_tokens": 2625,
+      "output_tokens": 335
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people — online or offline — who you turned to for information and reassurance before you got pregnant. Who was most influential, and how did their advice or stories shape what you believed about pregnancy?",
+      "question_id": "V5_PREC_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs a little nervously*\n\nHonestly? A lot of it has been online. Like, late at night when I can't sleep, I'm scrolling through forums and Reddit threads about pregnancy and being a single mom. There's something comforting about reading other people's stories, you know? Like, oh, I'm not the only one terrified and alone.\n\n*pulls out phone*\n\nI follow some Instagram accounts of single mothers, and their posts make it look... I don't know, doable? Beautiful, even. Seeing their babies and how they talk about it — it makes me feel less crazy for wanting this.\n\n*voice gets quieter*\n\nBut then I also see the comments sometimes, where people are really harsh about women having babies alone. And that gets in my head. I'll read something that says I'm selfish, or that I'm setting a child up for failure, and I spiral a little bit.\n\n*looks up*\n\nThe clinic pamphlets are okay, but they're so clinical and sterile. They don't talk about the emotional stuff or what it's actually like. The nurse tried to give me information about support groups for young mothers, but honestly, the idea of sitting in a room with strangers talking about my feelings...\n\n*trails off*\n\nI think the most influential thing has been other people's stories online. Women who've done it alone and survived. That's what keeps me going — knowing someone else has been where I am and made it work. But I don't really have a real person I trust to talk to about this stuff. That's the gap, I think.",
+      "responding_to_question_id": "V5_PREC_Q04",
+      "input_tokens": 3006,
+      "output_tokens": 347
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the women in your family — your mother, grandmothers, sisters, or aunts — and how their experiences of pregnancy and motherhood influenced your own thinking before you even started trying.",
+      "question_id": "V5_PREC_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "intergenerational_patterns",
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes immediately get glossy, voice becomes soft*\n\nMy Mami... she's the one. She's always been the one.\n\n*takes a shaky breath*\n\nShe had me when she was twenty-three, which back then felt older than twenty, but not by much. She used to tell me stories about being pregnant with me — how scared she was, how my papi wasn't really there, how she figured it out anyway. She made it sound like... like it was hard, but it was worth it. Like I was worth it.\n\n*voice cracks slightly*\n\nShe talked about the pain and the exhaustion, but what I remember most is how much love she had. She'd put her hand on her belly when she talked about carrying me, and there was this softness in her face. Like, no matter how hard it was, she was so glad I existed.\n\n*wipes eyes*\n\nI have aunts back in Puerto Rico who've had babies, but I wasn't close to them. My abuela — my Mami's mother — she passed before I was old enough to really know her. So it was just my Mami showing me what motherhood looked like. Showing me that a woman could do it alone if she had to, and still love fiercely.\n\n*voice becomes quieter, more vulnerable*\n\nAnd now she's gone, and I don't have her anymore to ask questions or to hold my hand through this. So when I think about having a baby... I'm trying to honor what she showed me, but I'm also terrified because I don't have her anymore. That's the biggest influence, I think. Missing her and wanting to create the kind of love she gave me.",
+      "responding_to_question_id": "V5_PREC_Q05",
+      "input_tokens": 3398,
+      "output_tokens": 371
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about a time — if there was one — when trying to conceive felt harder than you expected. Who was around you during that period, and how did those relationships change or hold steady?",
+      "question_id": "V5_PREC_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "trust_distrust",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, looks confused for a moment*\n\nWait, I'm not... I haven't actually started trying yet. That's what I keep saying, I think. I'm in the planning stage, you know? The preconception stuff. I just had that checkup yesterday.\n\n*shifts uncomfortably*\n\nBut I guess you're asking about the emotional part of it — the harder feelings that come before you even start trying. And yeah, that's been really hard.\n\n*voice gets quieter*\n\nThere's this weight I carry around every day, just thinking about it. Wanting something so badly but feeling like I'm not ready, or like the world isn't ready for me to do this. And I don't have anyone around me during this time. That's the thing — I'm going through this alone right now, before anything even happens.\n\n*looks down*\n\nMy work supervisor was kind that one time, but we don't have an ongoing relationship about it. My friends don't know how deep this goes for me. And without my Mami... there's just this silence. This loneliness that feels bigger than the wanting.\n\n*voice becomes firmer*\n\nSo the relationships haven't changed because I haven't really let anyone in enough for them to change. They just stay the same — surface level, distant. Which makes this whole process feel even more isolating.\n\n*looks up*\n\nThat's maybe the hardest part right now. Not the medical stuff or the logistics. It's that I'm carrying this alone before I even start.",
+      "responding_to_question_id": "V5_PREC_Q06",
+      "input_tokens": 3812,
+      "output_tokens": 332
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in supporting you — or perhaps adding to the pressure — at that time?",
+      "question_id": null,
+      "probe_id": "V5_PREC_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*looks at you with a slight frown*\n\nI think... I think you might not be hearing what I'm saying. There really isn't anyone else involved right now. That's kind of the whole issue.\n\n*speaks more directly*\n\nLike, I went to the clinic appointment alone. I took the bus by myself, sat in the waiting room by myself, got the news about my risk level by myself. I came home to my apartment — which I share with a roommate I barely talk to — and I sat on my bed looking at the folic acid bottle alone.\n\n*voice gets a bit frustrated but not unkind*\n\nThere's no support system. No pressure from family pushing me to have a baby. No partner saying \"let's do this together.\" No close friends checking in on me. My supervisor had one nice moment, but she's not involved in my life like that. My Mami's not here anymore.\n\n*softer tone*\n\nSo the pressure I feel? That's all internal. It's me thinking about whether I'm strong enough, whether my body will cooperate, whether I'm being selfish or brave or just stupid. It's me wondering if I can actually do this alone.\n\n*pauses*\n\nAnd that's actually what I need help with. Not more people pressuring me or supporting me in ways I don't have access to. I need to figure out how to navigate this system — the healthcare system, the transportation, the affordability — without someone holding my hand through it all.\n\nDoes that make sense?",
+      "responding_to_question_id": "V5_PREC_Q06_P01",
+      "input_tokens": 4166,
+      "output_tokens": 330
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, thinking, then speaks slowly*\n\nYeah, actually. There is something.\n\n*leans forward slightly*\n\nI feel like we've been talking a lot about what I don't have — no partner, no family, no support system. And that's all true and it's all hard. But I want you to understand that I'm not broken or pathetic because of that. I'm not asking for pity.\n\n*voice becomes stronger*\n\nWhat I need is for the healthcare system to actually see me. Not as a \"medium risk\" case file or a young single mother stereotype. But as a person who's trying to do something really hard and brave, and who needs actual help navigating the real obstacles — like how do I get to appointments when the buses don't run on time? How do I afford fresh food when I'm barely making rent? How do I take folic acid and manage stress when my life is stressful?\n\n*looks directly at you*\n\nThe clinic gave me pamphlets. They gave me information. But nobody asked me how I was actually going to *live* while doing all of this. Nobody connected me to resources or case management or anything practical. The nurse was kind, but kindness doesn't get me across town.\n\n*voice becomes quieter but determined*\n\nAnd... I guess I also want to say that I'm still going to try. Even though I'm scared and alone and the system feels stacked against me. My Mami would have wanted me to. So I'm going to figure this out, somehow.\n\n*pauses*\n\nI just wish I didn't have to do it completely alone.",
+      "responding_to_question_id": null,
+      "input_tokens": 4552,
+      "output_tokens": 352
+    }
+  ],
+  "metadata": {
+    "total_turns": 22,
+    "questions_asked": 6,
+    "probes_deployed": 3,
+    "adaptive_followups": 0,
+    "total_input_tokens": 29137,
+    "total_output_tokens": 3728,
+    "estimated_cost_usd": 0.0366,
+    "duration_seconds": 56.5,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 262
+  },
+  "errors": []
+}

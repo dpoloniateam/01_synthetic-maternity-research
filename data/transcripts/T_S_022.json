@@ -1,0 +1,446 @@
+{
+  "session_id": "S_022",
+  "status": "completed",
+  "persona_id": "comp_119",
+  "persona_name": "Elva",
+  "persona_journey_stage": "postpartum",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 2,
+  "questionnaire_strategy": "Thematic Deep-Dive",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-17T23:58:51.054009",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Elva, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're adjusting to life after having your baby, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts slightly, cradling Leo a bit closer even though he's sleeping*\n\nThank you for asking. Honestly, it's nice to talk about this with someone who's actually listening rather than just... checking boxes.\n\nMy pregnancy and delivery were textbook—low-risk, straightforward. My midwife was fantastic, really supportive. But I think I expected that once he was born, I'd just... know what to do, you know? Like all that reading and research would suddenly click into place. Instead, I'm three weeks in and I'm oscillating between feeling like the most anxious person alive and completely amazed by how his little hand grips my finger.\n\n*laughs a bit self-consciously*\n\nThe hardest part has actually been reconciling the science I understand intellectually with the absolute uncertainty of motherhood. I know the statistics on weight loss in newborns. I know what \"normal\" breastfeeding looks like biochemically. But when he's crying at three in the morning and I can't tell if he's getting enough milk, all of that falls away. I end up tracking everything—wet diapers, feeding duration, timing between clusters—and part of me knows I'm doing it because it makes me feel like I have some control when I really don't.\n\n*pauses, looking at Leo's face*\n\nMy midwife has been wonderful about supporting that, actually. She validates my questions without feeding into the anxiety. That's made a real difference.\n\nWhat would help you most to know?",
+      "responding_to_question_id": null,
+      "input_tokens": 824,
+      "output_tokens": 330
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your goals for recovery and support in the days and weeks after birth, what did you most want or need — and how well did the postnatal care you received address those needs?",
+      "question_id": "V2_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath, considering the question carefully*\n\nHonestly, I went into postpartum thinking I'd need medical oversight—monitoring for infection, blood clots, all those clinical complications. And yes, I got that. My midwife scheduled check-ins, she was thorough. But what I actually needed, what I'm *still* figuring out, is permission to be confused and uncertain without treating it like a problem to solve.\n\n*shifts uncomfortably*\n\nI wanted someone to tell me it's normal to feel this disconnect between understanding breastfeeding physiology and feeling completely lost when he won't latch properly. My midwife does validate that, thankfully. She'll answer my questions without judgment, but she also gently pushes back sometimes—like when I was obsessing over the fat content of my hindmilk, she said, \"Elva, he's gaining weight. Trust your body.\" That was hard to hear but needed.\n\n*looks down at Leo*\n\nWhat I didn't get enough of, I think, was just... permission to stop analyzing for five minutes. There's this gap between clinical postpartum care—the bleeding, the healing, the physical recovery—and what I'd call emotional postpartum care. I recovered physically fine. But emotionally? I'm still learning that vulnerability isn't a failure of my intellect.\n\nMy midwife checked my incision and my bleeding, which was perfect. But no one really prepared me for how much harder the *mental* part would be than the physical part. That's on me partly, but it's also something I think gets overlooked.",
+      "responding_to_question_id": "V2_POST_Q01",
+      "input_tokens": 1198,
+      "output_tokens": 350
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What did 'good' postnatal care look like in your mind before you gave birth — and how did that compare to what you actually experienced?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, a bit ruefully*\n\nOh, I had this very neat picture. I thought good postnatal care meant efficient, evidence-based monitoring. Regular appointments to check vitals, maybe some bloodwork, clear guidelines about when to call if something seemed off. Very... clinical. I imagined myself being that ideal patient—asking informed questions, understanding the medical reasoning, moving through recovery like it was another project to manage.\n\n*pauses, fidgeting with the blanket around Leo*\n\nWhat I actually got was... messier and more human than I expected. My midwife would come by and yes, she'd check all the clinical boxes. But then she'd sit with me while I was having a meltdown about whether my milk supply was adequate, and instead of just giving me reassurance, she'd help me think through what I was actually afraid of. That wasn't in my pre-birth mental model at all.\n\nThe disconnect was stark, honestly. I expected to *need* the clinical care. What surprised me—what still surprises me—is how much I've needed someone to validate that I'm allowed to not have all the answers. That knowing the science doesn't protect you from the terror of a baby's cry at 3 AM.\n\n*looks up*\n\nI thought \"good care\" meant being fixed. Fixed physically, fixed quickly. But what I've actually needed is someone to sit with me in the uncertainty and say, \"This is hard, and you're doing it anyway.\" That's harder to provide in a clinical model, I think. But it matters so much more than I realized.",
+      "responding_to_question_id": "V2_POST_Q01_P01",
+      "input_tokens": 1582,
+      "output_tokens": 345
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about feeding your baby — whether through breastfeeding, formula, or a combination — what motivated your choices, and how supported did you feel in pursuing the approach you wanted?",
+      "question_id": "V2_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "dignity_respect",
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts position slightly, becoming more animated*\n\nI always planned to breastfeed. That was... I don't know, maybe naive, but it felt like the natural extension of all my reading. I understood the immunological benefits, the bonding cascade, all of it. So there wasn't really a decision to make in my mind—it was just what I would do.\n\n*pauses, and her expression becomes more vulnerable*\n\nBut the reality of it? That's been humbling. Those first few days were brutal. He had a shallow latch initially, and I was in pain, second-guessing everything. My midwife was supportive—she didn't push me toward formula, but she also didn't shame me for considering it. She brought in a lactation consultant, we worked through positioning, and things improved. So technically, I got good support.\n\n*looks down at Leo, a slight frown appearing*\n\nWhat's harder is that I'm *still* wrestling with it. Not the mechanics anymore—those are better. But the psychological part. I track every feeding like it's data. Wet diapers, swallowing patterns, cluster feeding windows. And I know—*intellectually* I know—that this precision isn't actually helping. It's just... it's how I cope with the fear that I'm not enough, that my body won't provide enough.\n\n*voice softens*\n\nSometimes I wonder if I'd feel less anxious if I'd just given him formula from the start. That's a terrible thing to admit, right? But my midwife did ask me early on what I actually *wanted* versus what I thought I *should* do. I didn't have a good answer then. I'm still working on that.",
+      "responding_to_question_id": "V2_POST_Q02",
+      "input_tokens": 1969,
+      "output_tokens": 377
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What drove your feeding choices — were they primarily personal, medical, cultural, or shaped by pressure from others?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a moment, choosing words carefully*\n\nIt was... mostly me. My own expectations of myself, I think. I grew up in a pretty science-minded household—my parents are both analytical people—so there was this implicit idea that if you understand how something works, you should optimize for it. Breastfeeding has all these documented benefits, so of course that's what I would do.\n\n*glances away briefly*\n\nMy husband was supportive either way, which I appreciated but also sometimes frustrated me because I wanted him to care more passionately about the \"right\" choice. My midwife never pushed me—she presented options, answered questions, didn't judge. That was actually really refreshing compared to what some friends have told me about their experiences.\n\n*voice becomes quieter, more introspective*\n\nBut I don't think the pressure came from other people so much as from *inside* me. There's this voice in my head—probably shaped by all those parenting books and studies I read—that says breastfeeding is what good mothers do. What *educated* mothers do. And when it got hard, instead of questioning whether I actually wanted to do it, I just... intensified my approach. Started tracking everything obsessively, like if I could just gather enough data, I could make it work perfectly.\n\n*looks directly at you*\n\nNo one explicitly told me to breastfeed. But I internalized this message that it was the \"right\" choice, the intelligent choice. And now I'm stuck wondering if I chose it for me or for some version of who I thought I should be as a mother. That's... that's something I'm still unpacking.",
+      "responding_to_question_id": "V2_POST_Q02_P01",
+      "input_tokens": 2371,
+      "output_tokens": 363
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your emotional and mental health in the weeks and months after birth — the adjustment, the challenges, and the moments of wellbeing — what stands out most, and how well-supported did you feel?",
+      "question_id": "V2_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "power_dynamics",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*exhales slowly, rubbing her face*\n\nThis is the question that actually matters, isn't it? Because physically, I'm fine. Recovery went smoothly. But emotionally...\n\n*pauses, searching for words*\n\nWhat stands out most is this oscillation between moments of profound love and equally profound terror. I'll be watching Leo sleep and feel this overwhelming sense of awe, like my heart is actually outside my body. And then five minutes later I'm catastrophizing—did he eat enough, is his breathing normal, am I doing irreparable damage by being anxious around him?\n\n*voice becomes tighter*\n\nThe mental piece that's been hardest is the loss of control. I've built my entire adult life on being able to research something thoroughly and then execute it competently. But motherhood doesn't work that way. Leo will cry for reasons I can't solve with information, and that... that breaks something in me every time.\n\n*looks down*\n\nAs for support—my midwife has been good about checking in, asking how I'm adjusting emotionally. But I don't think either of us has named what might actually be happening. There's anxiety here, probably more than typical new-parent anxiety. I'm tracking things obsessively, I'm not sleeping well even when he sleeps, and I feel this constant low-level dread.\n\n*voice wavers slightly*\n\nNo one's screened me for postpartum depression or anxiety. Should they have? I don't know. Part of me wonders if naming it would make it more real, and part of me wonders if I'm just being a perfectionist about motherhood too.",
+      "responding_to_question_id": "V2_POST_Q03",
+      "input_tokens": 2782,
+      "output_tokens": 357
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a period when you felt particularly low, overwhelmed, or unlike yourself — what was happening and who or what helped?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, eyes getting a bit watery*\n\nDay nine. That's when it hit hardest. Leo had lost more weight than expected by then—still within normal range, but seeing those numbers... I just spiraled. I remember sitting in the kitchen at like 2 AM, pumping because I was convinced my milk supply was tanking, and I just started crying. Not gentle crying. The kind where you can't catch your breath.\n\n*pauses, composing herself slightly*\n\nMy husband found me and I couldn't even articulate what was wrong. I kept saying, \"I'm failing him, I'm failing him,\" but logically I knew that made no sense. Leo was fine. The pediatrician said he was fine. But my brain was screaming that I wasn't doing enough, that my body was broken, that I was going to ruin him somehow.\n\n*wipes her eyes*\n\nWhat helped was... honestly, my husband just sitting with me. Not trying to fix it with data or reassurance—just being there. And the next morning, my midwife called for a routine check-in, and I broke down during that call. She listened without rushing me, then gently suggested I talk to my OB about how I was feeling. She didn't say \"postpartum depression,\" but she implied it.\n\n*voice becomes quieter*\n\nI made an appointment but I haven't gone yet. It's been a week and I keep finding reasons to postpone. Part of me knows I should, but another part feels like admitting it would mean I'm weak, that all my preparation and knowledge failed me. Which is... logically absurd. But that's where my head is.\n\n*looks at you uncertainly*\n\nDoes that make sense?",
+      "responding_to_question_id": "V2_POST_Q03_P01",
+      "input_tokens": 3169,
+      "output_tokens": 384
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the shift in your identity and sense of self after becoming a parent, what tensions or changes were most significant — and how did those changes interact with your other roles, such as partner, professional, or daughter?",
+      "question_id": "V2_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "intergenerational_patterns",
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*lets out a long, complicated laugh*\n\nOh god. This is the thing nobody really talks about, is it?\n\n*settles back, cradling Leo*\n\nI left my job three months before he was born. I thought I was making this deliberate choice—I wanted to be present, to focus on early motherhood, to be *available* in a way my career didn't allow. But I think what actually happened is I lost a huge part of my identity without replacing it with anything sustainable.\n\n*voice becomes more strained*\n\nAt work, I was competent. People respected my analysis, my thoroughness. I had measurable outcomes. Now? I'm measuring my worth in wet diapers and ounces of milk. And intellectually, I understand that's important work. But emotionally, I feel... erased. Like the version of me that existed before Leo is trapped behind glass, watching this exhausted, obsessive version take over.\n\n*glances toward an unseen window*\n\nMy marriage is strained, if I'm being honest. My husband's still working full-time, and there's this resentment I didn't anticipate. He gets to be his normal self—he goes to work, he comes home to us. I'm supposed to be grateful for this time, but some days I'm furious that he gets to exist outside of this bubble while I'm... here. Leaking, sleep-deprived, unable to remember my own password.\n\n*voice softens but remains troubled*\n\nAnd my parents? My mom keeps offering to help, but when she does, I feel judged. Like she's silently assessing whether I'm doing it \"right.\" I can't ask for support without feeling like I'm admitting failure.\n\n*looks at you directly*\n\nI don't know who I am right now. And that terrifies me more than any medical complication ever could.",
+      "responding_to_question_id": "V2_POST_Q04",
+      "input_tokens": 3602,
+      "output_tokens": 413
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the support you received from your partner in the postpartum period — in caring for the baby, supporting your recovery, and sharing emotional labour — how would you describe that experience, and what would have made it better?",
+      "question_id": "V2_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, her jaw tightening slightly*\n\nHe's trying. I need to say that first because I think I'm being unfair sometimes. He changes diapers, he's gotten up at night when I ask him to, he brings me water and snacks. He's... present in the logistical sense.\n\n*pauses, struggling*\n\nBut there's this gap between doing those things and actually understanding what I'm going through. Like, he'll come home from work and I'm desperate to hand Leo off, to have thirty minutes where I'm not responsible for keeping a human alive. And he'll take him, which is good. But then I'm alone and I don't know what to do with myself. I can't relax because I'm listening for Leo, wondering if my husband is handling things right, if he's reading the cries correctly.\n\n*voice becomes quieter, more vulnerable*\n\nWhat's harder is the emotional piece. He keeps trying to logic me out of my anxiety. \"The pediatrician said he's fine, so he's fine.\" \"You're a smart person, you can handle this.\" And I *know* he means well, but it makes me feel like my fears aren't valid, like I should just be able to think my way out of this.\n\n*looks down at Leo*\n\nWhat would help? I think... he'd need to understand that I need him to sit with me in the uncertainty sometimes. Not fix it. Not reassure me that everything's fine. Just acknowledge that I'm scared and that's okay. And maybe he needs to understand that me needing support isn't a failure—it's just what I need right now.\n\n*hesitates*\n\nAlso, I think we both need help figuring out how to be partners again, not just co-parents managing a baby. That scares me too.",
+      "responding_to_question_id": "V2_POST_Q05",
+      "input_tokens": 4066,
+      "output_tokens": 401
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did the division of caregiving responsibilities compare to what you and your partner had discussed or assumed before the birth?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs bitterly*\n\nWe didn't really discuss it. That's the honest answer. We talked about logistics—who would take parental leave, when he'd go back to work—but we didn't actually talk about *how* we'd divide the daily work of caring for a baby and supporting each other through it.\n\n*shifts uncomfortably*\n\nI think we both defaulted to traditional assumptions without naming them. He assumed I'd be the primary caregiver because I was home. I assumed the same thing, honestly. But I also assumed—and I'm realizing this now—that being home meant I'd have more flexibility, more ability to manage everything. And he could just... continue his life largely as before.\n\n*voice rises slightly*\n\nWhat I didn't anticipate was how completely consuming it would be. I'm not just caring for Leo. I'm managing his feeding schedule, his sleep, coordinating pediatrician appointments, tracking his development, worrying about all of it constantly. My husband helps when I ask, but he doesn't *see* what needs to be done the way I do. He comes home and expects to relax because he's been at work all day. Meanwhile, I've been \"at work\" since 6 AM and I don't get to clock out.\n\n*pauses, her tone becoming more conflicted*\n\nAnd here's the thing—I chose this. I left my job. So I can't really complain that he's working and I'm not. But I don't think either of us understood how much the emotional labor would fall on me. The mental load of keeping track of everything, the invisible work.\n\n*looks directly at you*\n\nWe need to actually talk about it. But I don't know how to start that conversation without it turning into a fight.",
+      "responding_to_question_id": "V2_POST_Q05_P01",
+      "input_tokens": 4493,
+      "output_tokens": 388
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the barriers you encountered in accessing postnatal support — whether physical, emotional, informational, or systemic — what were the most significant, and what impact did they have on your recovery and wellbeing?",
+      "question_id": "V2_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*settles back, thinking carefully*\n\nThe biggest barrier is probably me, honestly. I have access to good care—my midwife is excellent, I have insurance, I live in a place with resources. But I keep... not using them fully.\n\n*fidgets with the edge of Leo's blanket*\n\nMy midwife suggested I talk to my OB about my anxiety, and I haven't done it. Part of it is logistical—finding childcare to go to an appointment feels impossibly complicated. But mostly it's this internal barrier where admitting I need mental health support feels like admitting that all my preparation failed. That my intellect can't protect me from postpartum depression or anxiety or whatever this is.\n\n*voice becomes quieter*\n\nThere's also this gap in the actual care system. My midwife is wonderful, but she's checking my physical recovery. My OB would be for medical issues. But who's checking in on the identity crisis, the marital tension, the fact that I've lost myself? There's no clear pathway for that. I could see a therapist, but that requires me to actually make the call, and I'm too exhausted and overwhelmed to navigate that right now.\n\n*looks frustrated*\n\nAnd timing—the postpartum checkup is usually six weeks. By then, you're either fine or you're in crisis. There's no middle ground. No one checked in on me at week two when things started falling apart emotionally. They just... assumed that physical recovery meant I was okay overall.\n\n*pauses*\n\nThe systemic barrier is that postpartum care treats the body and the baby as separate from the mother's mental state. But they're not. They're completely intertwined. And no one's really bridging that gap.",
+      "responding_to_question_id": "V2_POST_Q06",
+      "input_tokens": 4931,
+      "output_tokens": 386
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about how you used digital tools, apps, social media, or online communities after birth — to seek information, find support, or track your recovery — what role did those resources play, and what were their limits?",
+      "question_id": "V2_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*grimaces slightly*\n\nOh, I'm... I'm very online about this. Maybe too online.\n\n*pulls out her phone almost reflexively, then catches herself*\n\nI have apps for tracking his wet diapers, his feeding duration, his sleep patterns. I'm in three different parenting Facebook groups. I read studies on milk supply, infant neurodevelopment, postpartum recovery. I watch YouTube videos about latch techniques at 3 AM when I can't sleep. It's become this compulsive thing where I feel like if I can just access the right information, everything will click into place.\n\n*voice becomes self-aware and slightly ashamed*\n\nThe problem is that the internet is... it's this echo chamber of worst-case scenarios mixed with perfect Instagram motherhood. I'll read about tongue-tie complications and convince myself Leo has it, then spend two hours researching solutions before my midwife gently points out that his latch is actually fine. Or I'll see photos of other women who look radiant at three weeks postpartum and feel like a failure because I look exhausted and feral.\n\n*sets phone down deliberately*\n\nThe apps are particularly insidious because they make me feel like I'm being scientific and proactive, but really I'm just feeding my anxiety. I track everything obsessively, then panic when the numbers don't match what the app says is \"normal.\" It's become another way to feel out of control while pretending I have control.\n\n*pauses*\n\nWhat I actually needed from online communities was connection—to know other women felt this confused and terrified. What I got instead was information overload and comparison. Those are not the same thing.\n\n*looks at you*\n\nI should probably delete the apps.",
+      "responding_to_question_id": "V2_POST_Q07",
+      "input_tokens": 5366,
+      "output_tokens": 379
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you reflect on your entire maternity journey — from preconception through to the postpartum period — what do you wish had been done differently by the care system, and what single change would have made the greatest difference to your experience?",
+      "question_id": "V2_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "latent_needs"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a long pause, her eyes getting distant*\n\nIf I'm being completely honest? I wish someone had challenged my assumptions earlier. Not aggressively, but... gently. Like, during pregnancy, my midwife could have asked me why I was so attached to breastfeeding, what that meant to me beyond the science. She could have said, \"You're very knowledgeable about the biology. But what do you actually want for yourself as a mother?\" Instead, I just steamrolled forward with my plan, and then felt devastated when reality didn't match my expectations.\n\n*voice becomes more thoughtful*\n\nBut the single change that would matter most? I think it's integrating mental health screening and support into postpartum care as a *standard*, not an afterthought. Not just at six weeks—at two weeks, three weeks. When things are starting to crack but before they completely shatter.\n\n*looks directly at you*\n\nAnd not just screening. Actual support. Someone who helps you untangle what's clinical anxiety from what's normal adjustment, who talks to you about identity loss and marital tension and the gap between who you thought you'd be and who you actually are. Someone who validates that knowing the science doesn't protect you from the messy, terrifying reality of motherhood.\n\n*voice wavers slightly*\n\nIf my midwife had said at week two, \"I'm noticing some signs of postpartum anxiety. Let's connect you with someone who specializes in this,\" instead of waiting for me to volunteer that information... I think I'd feel less alone right now.\n\n*pauses*\n\nI needed permission to struggle before I hit crisis point.",
+      "responding_to_question_id": "V2_POST_Q08",
+      "input_tokens": 5797,
+      "output_tokens": 363
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe the specific moment or phase where you felt most let down by the system — what was the gap and what would have helped?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q08_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes get watery, her voice becomes strained*\n\nDay nine. After that breakdown I mentioned. My midwife called for a routine check-in, I fell apart on the phone, and she suggested I talk to my OB. Very supportive, very gentle. But then... nothing. No one followed up. No one said, \"Here's a therapist number, here's a crisis line, here's what postpartum anxiety looks like and why you should take it seriously.\"\n\n*voice shakes slightly*\n\nI was supposed to just... make that call myself? While I'm spiraling, sleep-deprived, convinced I'm failing at the one job that actually matters? The midwife had created this opening, this moment where I was vulnerable and asking for help. And then the system just... handed it back to me to figure out alone.\n\n*wipes her eyes*\n\nWhat would have helped is someone saying, \"I'm going to make this appointment for you. Or I'm going to call my colleague and have them reach out to you directly.\" Removing the barrier of me having to navigate it. Because in that moment, I couldn't. I was too deep in it.\n\n*voice becomes quieter, more raw*\n\nThere's also this gap between what my midwife could see—the physical recovery—and what the mental health system could address. They exist in completely separate silos. My midwife saw me crying and anxious but isn't trained to diagnose postpartum depression. My OB isn't seeing me at all. And I'm just... stuck in the middle, waiting for someone to actually connect the dots.\n\n*looks at you*\n\nI needed the system to do the work for me. I didn't have the capacity to advocate for myself.",
+      "responding_to_question_id": "V2_POST_Q08_P01",
+      "input_tokens": 6191,
+      "output_tokens": 382
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses for a long moment, holding Leo a little closer*\n\nYeah, actually. There's something I keep coming back to but haven't quite articulated.\n\n*looks thoughtful, almost vulnerable*\n\nI think I need people to understand that being educated and informed doesn't protect you from postpartum struggle. If anything, it might make it worse. Because I know *exactly* what's happening biochemically—the oxytocin, the cortisol spikes, the sleep deprivation effects on cognition. And I can't logic my way out of it. That gap between understanding and feeling is... it's devastating in a way I didn't anticipate.\n\n*voice becomes softer*\n\nThere's also this thing about perfectionism that I don't think gets talked about enough in postpartum care. I came into this thinking I could optimize motherhood the way I've optimized everything else in my life. And the system—the apps, the tracking, the data-driven approach to parenting—it enabled that. But what I actually needed was permission to be mediocre, to be uncertain, to just... be.\n\n*looks directly at you*\n\nAnd finally, I want to say that my midwife was genuinely good. But good isn't enough when the gaps are systemic. She can't solve the fact that I'm isolated, that my partner and I aren't communicating, that I haven't gotten real mental health support. One excellent healthcare provider can't bridge all those gaps alone.\n\n*pauses, her voice wavers*\n\nI'm going to call my OB this week. I think hearing myself say all this out loud... it helped. So thank you for that.",
+      "responding_to_question_id": null,
+      "input_tokens": 6629,
+      "output_tokens": 363
+    }
+  ],
+  "metadata": {
+    "total_turns": 30,
+    "questions_asked": 8,
+    "probes_deployed": 5,
+    "adaptive_followups": 0,
+    "total_input_tokens": 54970,
+    "total_output_tokens": 5581,
+    "estimated_cost_usd": 0.0661,
+    "duration_seconds": 86.6,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "latent_needs",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 246
+  },
+  "errors": []
+}

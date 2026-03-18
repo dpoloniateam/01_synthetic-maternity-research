@@ -1,0 +1,819 @@
+{
+  "session_id": "S_291",
+  "status": "completed",
+  "persona_id": "comp_092",
+  "persona_name": "Daisey",
+  "persona_journey_stage": "third_trimester",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 4,
+  "questionnaire_strategy": "Expectation-Perception Gap",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T03:13:49.469302",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Daisey, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're getting closer to your due date, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in seat, hand instinctively moving to belly*\n\nOf course, yes—thank you for asking. I... I appreciate that you're genuinely interested in the personal part of this, not just the clinical metrics.\n\n*pauses, considering where to start*\n\nHonestly? I'm in this strange liminal space right now. I'm thirty-five, I've spent my whole career understanding child development, the neurobiology of bonding, all of it. And I thought that would make me feel more prepared, but instead it's almost... paralyzing sometimes. I lie awake at night knowing *exactly* why adequate sleep matters for her developing brain, which is ironic because my anxiety about it is destroying my sleep.\n\nThe medical side has been straightforward—my providers are wonderful, very thorough. But there's this assumption that because I'm older, employed, low-risk, I've got everything figured out. Nobody's really asked me how I'm *feeling* about doing this alone. And I'm not looking for pity or anything, it's just... *laughs softly* I know all the research on infant attachment, and I'm terrified I'll intellectualize my way through the most important moments instead of just *feeling* them, you know?\n\nThe waiting room appointments are efficient but quick. They see the data points—no complications, everything's progressing normally—and that's reassuring. But I'm also just a woman who's never done this before, and sometimes I need more than \"everything looks perfect.\"\n\nDoes that make sense?",
+      "responding_to_question_id": null,
+      "input_tokens": 821,
+      "output_tokens": 337
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you first found out you were pregnant, what did you expect your first antenatal appointments to be like — the environment, the people, the information you'd receive? And what were they actually like?",
+      "question_id": "V4_PREG_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans back, eyes softening with recollection*\n\nOh, I had this very specific vision. I think I imagined something more... intimate, maybe? Like, I expected to sit down with someone who would really *see* me—not just the pregnancy, but the person carrying it. Someone who would ask about my support system, my fears, my questions. I thought there'd be time for that.\n\n*expression becomes more guarded*\n\nThe reality is... clinical. Efficient. Which, intellectually, I understand. The hospital is excellent. My midwife is sharp, genuinely competent. But the appointments feel like a series of checkboxes. Vitals, weight, fundal height, listen to the heartbeat, urine sample. Boom. Done in fifteen minutes. It's all very by-the-book.\n\n*rubs belly thoughtfully*\n\nWhat surprised me most was how *rushed* it felt, given that I'm supposedly low-risk and uncomplicated. I thought maybe that would mean they had more time for me, but it's almost the opposite—because there are no red flags, there's nothing to discuss deeply. They see a competent woman in her mid-thirties who has her life together, and I think they assume I don't need much hand-holding.\n\n*voice becomes quieter*\n\nThe environment is fine, sterile, functional. But sitting in that waiting room alone, watching couples and families... I felt a bit invisible. Not in a dramatic way, just... the assumption was always about somebody else's partner being in the room, not about me navigating this solo.\n\nIt's honestly been lonelier than I expected.",
+      "responding_to_question_id": "V4_PREG_Q01",
+      "input_tokens": 1203,
+      "output_tokens": 361
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before your screening tests and scans, what did you expect the process of understanding your results to be like — how information would be given, by whom, and in what way? And what was the reality?",
+      "question_id": "V4_PREG_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, fingers fidgeting*\n\nI expected—and this is maybe naive—but I expected someone to actually *sit* with me and walk through the results. Like, explain what they mean, what the numbers mean, answer questions that might not be medical but are... existential, I guess?\n\n*laughs a bit self-consciously*\n\nBecause I *know* the science. I can read a percentile chart, understand risk stratification. But there's a difference between intellectually understanding a result and emotionally processing what it means for your actual baby. I thought there would be space for both.\n\nWhat actually happened was... I got the bloodwork back via the patient portal. Just numbers and a line saying \"low risk, no further testing recommended.\" My midwife mentioned it briefly at my next appointment—reassured me everything was fine—and we moved on. No real conversation about what those specific results indicated, what they were screening for beyond the obvious, nothing.\n\n*voice becomes more animated, slightly frustrated*\n\nAnd I'm someone who *wants* the technical details. I have the background to understand them. But even I felt a bit lost, like I was supposed to just be grateful and relieved and move forward. The ultrasound was similar—very quick, very professional. Baby looks good, anatomy's all normal, here's your picture. \n\n*pauses*\n\nI think what bothered me most was that there was no acknowledgment that I might want to *understand* what they're seeing, not just be reassured it's fine. It felt impersonal, almost dismissive of my intelligence or my need to process information my own way.",
+      "responding_to_question_id": "V4_PREG_Q02",
+      "input_tokens": 1609,
+      "output_tokens": 357
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During your pregnancy, what did you expect in terms of having a consistent midwife or care provider who knew your history and situation? And what continuity of care did you actually experience?",
+      "question_id": "V4_PREG_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*expression becomes noticeably more vulnerable*\n\nI think I expected... well, I hoped for consistency. Someone who would know my name, remember what we discussed last time, ask follow-up questions. Someone who understood the specific context of my life—that I'm doing this alone, that I have particular anxieties rooted in my professional background, that I *need* certain things even if I don't always voice them.\n\n*pauses, looking down*\n\nThe reality is that I have a primary midwife, which I'm grateful for. She's excellent clinically. But there's not much continuity beyond that. I see her maybe every four weeks, and each appointment feels like we're starting fresh in some ways. She's busy, the practice is busy. Sometimes I get roomed by a nurse I've never seen before. Sometimes I have questions I want to ask her specifically, but by the time I see her next, the moment has passed or I've resolved it myself.\n\n*voice becomes quieter, more emotional*\n\nWhat I didn't expect was how much I'd crave that consistency. I think because I'm alone, I needed more from these relationships than maybe someone with a partner at home would. My midwife is kind, but she doesn't *know* me. She doesn't know that I overthink things, that I need reassurance wrapped in evidence, that I'm terrified about bonding even though I understand the neurobiology.\n\n*looks up*\n\nThere's an assumption that because I'm competent and independent, I can handle fragmented care. But honestly? I needed someone who truly *saw* me across these months, not just at appointments.",
+      "responding_to_question_id": "V4_PREG_Q03",
+      "input_tokens": 2007,
+      "output_tokens": 358
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During pregnancy, what did you expect in terms of how your changing body would be discussed and examined by healthcare providers? And how did those interactions actually feel?",
+      "question_id": "V4_PREG_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, becomes visibly more uncomfortable*\n\nI think I expected... professionalism, obviously. But also some acknowledgment that this body isn't just a clinical object. I'm a woman in her mid-thirties watching myself transform in ways I can't control, and that's psychologically complex, not just medically interesting.\n\n*fidgets with hands*\n\nWhat I expected was someone to ask about how I'm *experiencing* the changes. The weight gain, the stretch marks, the way my body doesn't feel like my own anymore. I thought maybe there'd be space to talk about that without it being weird or self-indulgent.\n\n*voice becomes more guarded*\n\nThe reality has been... transactional. The exams are efficient and professional, which is good, but they're also very detached. I'm measured, weighed, my belly is palpated. The midwife makes clinical observations—\"fundal height is right on track,\" \"you're carrying well\"—but there's no real engagement with *me* in this body. No one's asked how I'm feeling about the physical changes, whether I'm struggling with body image, whether I'm grieving my old self a bit.\n\n*pauses, becomes more emotional*\n\nAnd maybe that sounds petty, but when you're alone and your body is literally becoming a vessel for someone else, you need someone to acknowledge that's a big deal psychologically, not just physiologically. Instead, I feel like... an incubator. A low-risk incubator with good vitals.\n\n*voice quieter*\n\nI've never been examined in a way that felt dehumanizing, but I've also never felt truly *seen* either.",
+      "responding_to_question_id": "V4_PREG_Q04",
+      "input_tokens": 2399,
+      "output_tokens": 373
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there any examinations or conversations about your body that left you feeling uncomfortable or unprepared? What happened?",
+      "question_id": null,
+      "probe_id": "V4_PREG_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*becomes visibly tense, crosses arms slightly*\n\nThe cervical exams during labor readiness checks... I wasn't really prepared for how vulnerable that would feel. My midwife explained what she was doing, which I appreciated, but there's a difference between intellectual understanding and the actual *experience* of it.\n\n*looks away briefly*\n\nWhat got to me more than the physical exam itself was the lack of... I don't know, emotional scaffolding around it? She just said, \"I'm going to check your cervix now,\" and I nodded like I understood, and then it happened. But internally I was bracing, uncertain, and no one really asked afterward how that felt for me. It was just another checkpoint.\n\n*voice becomes quieter, more hesitant*\n\nAnd there were these moments during routine exams where I felt objectified in subtle ways. Like, a nurse or resident would come in with my midwife, and my belly would be examined by multiple hands while they discussed measurements and positioning as if I wasn't there. Professional commentary, nothing inappropriate, but I felt like... an anatomical specimen. Not a person who needed privacy or explanation.\n\n*pauses, choosing words carefully*\n\nThe hardest part was that I couldn't quite articulate my discomfort in the moment. Because rationally, I know it's necessary. I *understand* the medical purpose. But there's this gap between intellectual acceptance and emotional comfort that nobody really addresses. I just smile and nod and then go home and feel a bit raw about it.\n\n*looks up*\n\nI needed someone to ask, \"How was that for you?\" And they never did.",
+      "responding_to_question_id": "V4_PREG_Q04_P01",
+      "input_tokens": 2798,
+      "output_tokens": 357
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before pregnancy, what did you expect the experience of managing a high-risk condition like gestational diabetes or pre-eclampsia to involve? If relevant, how did the reality of managing it differ from your expectations?",
+      "question_id": "V4_PREG_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "trust_distrust",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*relaxes slightly, shifts posture*\n\nOh, well—I don't have either of those, actually. My pregnancy has been textbook low-risk, which is... it's a relief, genuinely. No gestational diabetes, no hypertension, nothing flagged. Everything's progressed smoothly from a medical standpoint.\n\n*pauses thoughtfully*\n\nBut you know, it's interesting you ask that, because I think the *absence* of a complication has created its own challenge. If I had gestational diabetes or pre-eclampsia, I think there would be more structured support, more frequent appointments, more conversations. My providers would have to spend time with me, educating me about management, monitoring closely.\n\n*voice becomes more reflective*\n\nInstead, because I'm low-risk, the assumption seems to be that I don't need much. And sometimes I wonder if my anxiety about the transition to motherhood, my overthinking about development and bonding, would feel more legitimate if I had a concrete medical condition to manage. Like, then my need for more support would be *justified*.\n\n*laughs softly, somewhat self-consciously*\n\nThat's probably a weird thing to say. I'm grateful I don't have complications. I genuinely am. But there's this isolating quality to being the \"easy\" patient. You get less attention, fewer resources, less structured care. And while everything's medically fine, I'm still struggling emotionally and psychologically.\n\n*looks directly at you*\n\nSometimes I think the healthcare system is better equipped to handle the women with measurable problems than the ones like me—low-risk but not low-need, if that makes sense.",
+      "responding_to_question_id": "V4_PREG_Q05",
+      "input_tokens": 3202,
+      "output_tokens": 365
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During pregnancy, what did you expect in terms of being able to access care promptly when you had a concern — whether urgent or not? And how responsive was the system when you needed it?",
+      "question_id": "V4_PREG_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans forward, becomes more animated*\n\nI expected to be able to reach someone relatively quickly if I had a concern. Not emergencies necessarily—I knew those go to labor and delivery—but like, a question I needed answered or something that worried me. I thought there'd be a nurse line or some kind of accessible pathway.\n\n*expression becomes frustrated*\n\nThe reality is... it's a bit of a maze, honestly. There's a patient portal where I can message my midwife, which is helpful in theory. But the response time is inconsistent. Sometimes she gets back to me within hours, sometimes it takes a day or two. And when you're at 2:00 AM convinced something's wrong with fetal movement, a day-long wait feels impossibly long.\n\n*voice becomes more strained*\n\nI've called the practice a few times with questions, and I get routed to whoever's available that day—not necessarily my midwife. The person is polite, but they don't know my history, my baseline, my specific concerns. So I end up re-explaining everything. It's exhausting when you're already anxious.\n\n*rubs face*\n\nAnd there's this weird power dynamic where I don't want to seem like I'm overreacting or being neurotic, so I minimize my concerns. \"Everything's probably fine, I just wanted to check...\" But that means I'm filtering what I actually need help with. The system doesn't really make space for the grey area—the non-emergency but legitimate worries that keep you up at night.\n\n*quieter*\n\nI needed faster, more reliable access to someone who actually knows me.",
+      "responding_to_question_id": "V4_PREG_Q06",
+      "input_tokens": 3609,
+      "output_tokens": 358
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During pregnancy, what did you expect the role of your family, friends, or community to be in supporting you? And how did that informal support network actually show up — or not?",
+      "question_id": "V4_PREG_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses for a long moment, becomes noticeably more vulnerable*\n\nI think I expected... well, I'm not sure what I expected, actually. That's part of the problem.\n\n*voice becomes quieter*\n\nI don't have a partner. My parents are wonderful, but they live upstate. They call, they ask how I'm doing, they've offered to help after the baby comes. But there's a distance—both literal and emotional—that makes it hard to really lean on them the way maybe I need to. My mom has her own anxieties about becoming a grandmother to a baby without a father in the picture, which I didn't fully anticipate. So sometimes our conversations become about managing *her* feelings instead of me processing mine.\n\n*fidgets*\n\nMy friends have been supportive in surface ways. They throw me a shower, they ask about appointments. But most of them don't have kids yet, so there's a gap in understanding. And I think because I present as competent and together, they assume I'm fine. They don't realize that coming home to an empty apartment after a prenatal visit and having no one to process it with is... lonely.\n\n*voice cracks slightly*\n\nWhat I didn't expect was how isolating this would feel despite having people who care about me. I have a professional community, an intellectual community, but not really a maternal community. No one who's walked this specific path—single, older, professional, carrying all this knowledge but also all this fear.\n\n*looks down*\n\nI think I needed permission to admit I was struggling, not just reassurance that everything would be fine.",
+      "responding_to_question_id": "V4_PREG_Q07",
+      "input_tokens": 4007,
+      "output_tokens": 351
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before labour, what did you expect creating and using a birth plan to be like — how it would be received by staff and how much it would guide your care? And what actually happened with your birth plan during labour?",
+      "question_id": "V4_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, glances up*\n\nWell, I haven't given birth yet, so I'm still in that anticipatory phase. But I've been thinking about it obsessively, honestly.\n\n*laughs nervously*\n\nWhat I expected was that I'd write something thoughtful—evidence-based preferences around skin-to-skin contact, delayed cord clamping, minimal interventions unless medically necessary—and that it would be respected as a framework for my care. I thought my midwife would review it with me, ask questions, integrate it into the actual birth experience.\n\n*becomes more hesitant*\n\nBut when I brought it up at my last appointment, there was this... polite dismissal? She said something like, \"We'll keep it on file, but labor doesn't always go according to plan.\" Which is true, I *know* that intellectually. But it felt like my preferences weren't being taken seriously, like they were naive or unrealistic.\n\n*voice becomes more anxious*\n\nWhat I'm actually expecting now is that my birth plan will be a piece of paper in my chart that nobody really references. That when I'm in labor and vulnerable and not thinking clearly, the medical staff will make decisions based on protocol and efficiency, not my actual values. And because I'm alone, there's no one advocating for me, no one saying, \"Wait, Daisey wanted to try this first.\"\n\n*looks directly at you*\n\nI'm terrified that I'll intellectually understand why they're intervening while emotionally feeling like my autonomy is being stripped away. And I have no buffer for that.",
+      "responding_to_question_id": "V4_BIRTH_Q01",
+      "input_tokens": 4405,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before labour, what did you expect your pain management options to be — the range available, how they'd be offered, and how you'd be supported in deciding? And what was the reality of pain management during your labour?",
+      "question_id": "V4_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, becomes slightly defensive*\n\nI haven't labored yet, so I'm still in the expectation phase with this one too. But I've done a lot of research—probably too much, if I'm honest.\n\n*shifts in seat*\n\nI expected there would be a clear conversation with my midwife about what's available. Epidural, nitrous oxide, movement, positioning, continuous support. I thought she'd present options without judgment and help me think through what might align with my values and pain tolerance. I wanted to feel empowered to choose, not pressured either way.\n\n*voice becomes more uncertain*\n\nThe reality so far has been... vague, actually. When I've asked about pain management preferences, the responses have been pretty generic. \"We'll see how you're handling it when you're in labor\" or \"Most people end up wanting an epidural.\" Which, fine, but that's not really preparing me for decision-making in the moment.\n\n*becomes more anxious*\n\nWhat worries me is that I'll be in active labor, overwhelmed, and suddenly faced with choices I haven't really thought through deeply. And my midwife won't know my specific needs—like, I need *information* to feel in control, even in pain. I need someone explaining what's happening, why they're suggesting something, what the trade-offs are.\n\n*voice quieter*\n\nBeing alone means there's no one just... holding space for me while I figure this out. No partner saying, \"You've got this,\" no one advocating if I change my mind. I'm terrified I'll feel abandoned in that moment.",
+      "responding_to_question_id": "V4_BIRTH_Q02",
+      "input_tokens": 4805,
+      "output_tokens": 355
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there pain management options you wanted but weren't able to access? What got in the way?",
+      "question_id": null,
+      "probe_id": "V4_BIRTH_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "structural_barriers",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*hesitates, becomes thoughtful*\n\nI mean, I haven't been in labor yet, so I can't speak to what I'll actually want or need in the moment. That's part of my anxiety, honestly—I don't know how I'll experience pain, and I'm trying to prepare for something unknowable.\n\n*pauses, choosing words carefully*\n\nBut there's something I've been thinking about that feels relevant. Continuous labor support—a doula or dedicated birth partner—that's something I would have wanted access to, and it's not really been presented as an option. My midwife will be there, but she'll also be managing the clinical side, monitoring fetal heart rate, all of that. She can't just *be* with me emotionally in the way a doula could.\n\n*voice becomes quieter*\n\nI looked into hiring a doula, actually. But financially, it felt like a luxury I couldn't quite justify on my own. There's no partner to split the cost, and the hospital doesn't provide that service. So that support—which research shows significantly improves birth experiences and outcomes—just... isn't accessible to me.\n\n*looks down*\n\nI think that's been the real barrier. Not lack of medical pain management options, but lack of emotional and physical support during labor. The healthcare system seems designed around the assumption that you'll have someone there for you. When you don't, there are gaps that money and insurance don't cover.\n\n*quietly*\n\nSo I guess the answer is: continuous, dedicated emotional support during labor. That's what I wanted and couldn't access.",
+      "responding_to_question_id": "V4_BIRTH_Q02_P01",
+      "input_tokens": 5183,
+      "output_tokens": 348
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you arrived at the birth setting — whether hospital, birth centre, or home — what did you expect it to feel like in terms of safety, comfort, and how you'd be welcomed? And what was your actual experience of the environment when you arrived?",
+      "question_id": "V4_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "trust_distrust",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*stops, looks at you with slight confusion*\n\nI haven't given birth yet. I'm still in the third trimester, a few weeks out still.\n\n*adjusts position, hand on belly*\n\nBut I've been to the labor and delivery unit for a tour, and I think about what it will be like constantly. What I expected was something that feels... I don't know, less clinical? More like a space designed for birthing people, not just a medical facility that happens to have births in it.\n\n*voice becomes more reflective*\n\nThe reality of what I saw was bright fluorescent lights, beeping monitors, that hospital smell. Very functional. The room they showed me had a bed and some basic comfort measures—a birthing ball, a shower—but it all felt secondary to the medical equipment. Like comfort was an afterthought.\n\n*becomes more anxious*\n\nWhat struck me was how institutional it felt. I kept thinking, \"I'm going to be in the most vulnerable moment of my life, and I'm going to be in this sterile, busy place surrounded by people I don't know.\" There's supposed to be a certain sacredness to birth, right? And this felt very... procedural.\n\n*pauses, more quietly*\n\nBeing alone made it feel even more stark. Other women will have partners there, family, people creating intimacy in that space. I'll have my midwife, who's professional and caring, but we don't have that deep relational history. I'm worried the environment will feel cold, and I'll feel invisible in it.\n\n*looks at you*\n\nDoes that make sense?",
+      "responding_to_question_id": "V4_BIRTH_Q03",
+      "input_tokens": 5586,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What was the biggest surprise about the physical environment or the immediate atmosphere when you arrived?",
+      "question_id": null,
+      "probe_id": "V4_BIRTH_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "trust_distrust",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, expression shifts to slight confusion*\n\nI... I haven't arrived yet. I haven't given birth. I'm still pregnant, waiting for labor to start.\n\n*touches belly gently*\n\nI think there might be some confusion about my timeline. I'm in my third trimester—still weeks away from actually going into labor and arriving at the hospital. I've done a tour of the L&D unit, but that's not the same as actually being there in active labor, you know?\n\n*becomes more introspective*\n\nMaybe that's part of what makes this so hard, actually. All of this is anticipatory. I'm sitting with all these expectations and fears about what it will be like, but I haven't lived through any of it yet. So I'm catastrophizing in my head, imagining worst-case scenarios, reading research about birth environments and maternal experience...\n\n*voice becomes quieter*\n\nIt's the waiting that's killing me sometimes. The unknown of what it will actually *feel* like when I'm there, in labor, alone. I can intellectualize all the medical aspects, but the emotional reality? That's still ahead of me, and I'm terrified I won't be ready for it, even though I've prepared as much as I can.\n\n*looks at you directly*\n\nWhen it happens, I'm sure there will be surprises. Things I didn't anticipate. But right now, all I have are expectations and anxiety about the experience I'm about to have.",
+      "responding_to_question_id": "V4_BIRTH_Q03_P01",
+      "input_tokens": 5958,
+      "output_tokens": 323
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "If your birth involved an unexpected intervention or complication, what did you expect the process of being informed and involved in those decisions to look like? And how were those decisions actually made and communicated in the moment?",
+      "question_id": "V4_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*becomes visibly more tense, shifts uncomfortably*\n\nI haven't experienced that yet either. I'm still waiting to go into labor.\n\n*pauses, voice becomes more strained*\n\nBut God, I think about this constantly. What if something unexpected happens? What if I need an emergency cesarean, or induction, or... I don't know. I've read all the statistics, I understand the medical rationale for interventions, but understanding it intellectually and consenting to it in a moment of panic and pain are two completely different things.\n\n*fidgets with hands*\n\nWhat I expect is that I want to be *informed*. I want someone explaining what's happening, why it's necessary, what the alternatives are—even if there isn't time for a lengthy discussion. I want to feel like I'm making decisions, not having decisions made *for* me, even if the end result is the same.\n\n*voice becomes quieter, more vulnerable*\n\nBut being alone, I'm worried that won't happen. I'm worried a doctor will come in and say, \"We need to do X,\" and because I'm exhausted and in pain and have no one there advocating for me, I'll just... comply. And then I'll spend months afterward wondering if I could have asked more questions, if there were other options.\n\n*looks away*\n\nI think that's actually my biggest fear about labor. Not the pain itself, but losing agency in the moment. Having something done *to* me rather than with me. And having no one there to make sure my voice is heard.",
+      "responding_to_question_id": "V4_BIRTH_Q04",
+      "input_tokens": 6327,
+      "output_tokens": 341
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During labour, what did you expect the midwife or doctor present to provide in terms of emotional support and personal attention — not just clinical care? And what did you actually experience from the staff who were with you?",
+      "question_id": "V4_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "*stops, becomes slightly frustrated*\n\nI haven't given birth yet. I keep saying this, and I feel like I'm repeating myself, but I'm still pregnant. Still waiting.\n\n*takes a breath, softens slightly*\n\nBut yes, I think about this constantly. What I expect is someone who sees me as a person in labor, not just a body progressing through stages. Someone who checks in emotionally, not just clinically. Who notices if I'm scared or overwhelmed and addresses that, not just the cervical dilation.\n\n*voice becomes more hesitant*\n\nMy midwife is competent and kind, but I don't know her well enough to know if she'll be that person. We have a professional relationship, not a deep one. I've had maybe eight or nine appointments with her. Will she remember that I overthink things? That I need explanations, reassurance wrapped in evidence? Or will she be in clinical mode, doing her job efficiently?\n\n*becomes more anxious*\n\nAnd there's this gap between what I need and what I think the system is equipped to provide. I need someone to *stay* with me emotionally. But midwives are managing multiple patients, multiple labors sometimes. So I'm afraid I'll get the minimum—clinically excellent care but emotionally... abandoned.\n\n*voice cracks slightly*\n\nBeing alone makes that gap feel impossibly wide. Other women have partners or families creating that emotional cocoon. I have a professional who will monitor my vitals and progress.\n\n*pauses*\n\nI don't know what I'll actually experience until I'm there. And that terrifies me.",
+      "responding_to_question_id": "V4_BIRTH_Q05",
+      "input_tokens": 6715,
+      "output_tokens": 354
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before birth, what did you expect the immediate period after your baby was born to be like — skin-to-skin contact, who would be present, what would be done? And what actually happened in those first moments after delivery?",
+      "question_id": "V4_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "*becomes very still, hand moves protectively to belly*\n\nI haven't given birth yet. I'm still waiting for that to happen.\n\n*voice becomes quieter, more emotional*\n\nBut I've thought about those first moments probably more than any other part of this experience. Because that's where all my clinical knowledge meets my deepest fear—that I won't feel what I'm supposed to feel, that my brain will be analyzing instead of experiencing.\n\n*pauses, struggling slightly*\n\nWhat I expect is skin-to-skin contact immediately. I know the neurobiology of it—the oxytocin release, the temperature regulation, the beginning of bonding. I've read all the research. I want that for her, and for me. I want to feel that raw, unscripted moment of meeting her for the first time.\n\n*voice becomes more vulnerable*\n\nBut I'm terrified that instead of just *feeling* it, I'll be cataloging it. Checking off boxes. \"Okay, skin-to-skin is happening, good. Is her respiratory rate normal? Are her eyes tracking?\" My professional brain won't shut off.\n\n*looks down*\n\nAnd because I'm alone, there won't be anyone there just witnessing it with me, celebrating it. No partner crying, no family members in the room. Just me and the medical staff. Which is fine clinically, but emotionally...\n\n*voice trails off*\n\nI don't know what those first moments will actually be like. I'm trying to prepare myself to just be present, to let myself feel something other than analysis. But I won't know if I can do that until it happens.",
+      "responding_to_question_id": "V4_BIRTH_Q06",
+      "input_tokens": 7119,
+      "output_tokens": 358
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q14",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, becomes more introspective*\n\nI think what really scares me about those first moments is that I'll be completely alone in processing them. Like, other mothers have someone to turn to and say, \"Did you see that? Isn't she beautiful?\" Someone to hold their hand and say, \"You did it.\"\n\n*voice becomes quieter, more raw*\n\nI'll have medical staff, which is necessary and professional, but it's not the same. They'll be documenting Apgar scores and checking for complications. My midwife will be doing her job. And I'll be... what? Just me and this baby, trying to figure out how to be a mother while also managing the fact that I'm doing it alone.\n\n*pauses, becomes emotional*\n\nI've been trying to reframe that in my head—like, that's actually beautiful, just me and her in those first moments. No distractions, no mediating presence. But honestly? I'm grieving a bit. I'm grieving the partner I don't have, the family I don't have there, the conventional narrative of birth that I'm not getting to have.\n\n*wipes eyes*\n\nAnd I feel guilty for that grief, because intellectually I know plenty of women do this alone and are fine. But I'm allowed to feel sad about it too, right? I'm allowed to want something I don't have while also being grateful for what I do have.\n\n*looks up, voice still shaky*\n\nThose first moments—I just want to feel like a mother. Not a researcher observing motherhood. Not a woman managing her anxiety. Just... present with my daughter.",
+      "responding_to_question_id": "Q14",
+      "input_tokens": 7486,
+      "output_tokens": 362
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q15",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes another breath, becomes more reflective*\n\nAnd I think part of what makes this harder is that I *know* the fourth trimester is coming. I know the sleep deprivation, the hormonal shifts, the vulnerability of those early weeks. I know the statistics on postpartum depression, especially for women without strong support systems. I know all of it.\n\n*rubs face tiredly*\n\nSo even in those beautiful first moments with her, there's this shadow of dread. Like I'm supposed to be in this bubble of joy and bonding, but my brain is already thinking about what comes next. How am I going to manage alone? Who am I going to call at 3:00 AM when I'm convinced something's wrong? My mom is upstate. My friends have their own lives. My midwife won't be my midwife anymore after discharge.\n\n*voice becomes strained*\n\nAnd I feel like I should be more prepared for this. I've *studied* child development. I should be able to handle the infant stage. But knowing something intellectually and *living* it are so different. I'm terrified I'll be overwhelmed and have no one to tell me it's normal, that I'm not failing.\n\n*pauses, becomes quieter*\n\nWhat I haven't really talked to anyone about is the fear that I'll feel disconnected from her. That all this anxiety and overthinking will create distance between us. That I'll be so focused on doing everything \"right\"—providing the right stimulation, the right attachment, the right everything—that I'll miss just being her mother.\n\n*looks directly at you*\n\nI need someone to tell me that's going to be okay. That I'm going to be okay.",
+      "responding_to_question_id": "Q15",
+      "input_tokens": 7857,
+      "output_tokens": 377
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there specific decisions — such as timing, fertility testing, or lifestyle changes — where you felt pressure to align with your partner's preferences over your own?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, slight confusion crosses face*\n\nI don't have a partner. I'm single. That's been part of this whole experience—navigating pregnancy and becoming a mother without a co-parent.\n\n*shifts slightly, becomes more guarded*\n\nI think maybe you're asking about external pressure in general? Because there's definitely been some of that, but not from a partner.\n\n*voice becomes quieter*\n\nMy parents, especially my mom, had... opinions about the timing of this. About whether I should have waited, whether I was ready. There was this unspoken judgment about doing it alone, about whether it was \"responsible.\" I didn't have to align with anyone's reproductive preferences, but I did feel this weight of their concerns, their worry about how I'd manage.\n\n*pauses, becomes more reflective*\n\nAnd honestly, I put pressure on myself. I delayed trying to conceive for years because I was waiting for the \"right\" circumstances—the right partner, the right time, the right everything. And then I realized I was waiting for something that might never come. So I made this choice deliberately, on my own terms.\n\n*voice becomes slightly defensive*\n\nWhich sounds empowering when I say it like that. But the reality has been lonely. There's no one whose preferences I had to negotiate with, but there's also no one sharing the responsibility or the decision-making weight.\n\n*looks at you*\n\nSo the pressure I felt was more internal and familial, not from a partner. Does that distinction matter for what you're researching?",
+      "responding_to_question_id": "P1",
+      "input_tokens": 8268,
+      "output_tokens": 336
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q16",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "*settles back, becomes more contemplative*\n\nI think what's been harder than I expected is that people assume because I made this choice deliberately, I should be fine with all the isolation that comes with it. Like, I chose this, so I don't get to complain about doing it alone.\n\n*voice becomes more strained*\n\nBut choosing to become a mother and choosing to not have a partner are two different decisions, you know? I wanted to be a mother. I didn't want to do it without support. Those things can both be true.\n\n*pauses, fidgets with hands*\n\nAnd there's this weird cultural narrative around single motherhood by choice—like you're supposed to be this independent, self-sufficient woman who doesn't need anyone. Which plays into my whole thing about appearing competent and having it all figured out. So even when I'm struggling, I'm reluctant to say it out loud because I feel like I'm undermining my own choice.\n\n*voice becomes quieter*\n\nMy providers assume that because I'm educated and financially stable and physically healthy, I have everything I need. But they don't see the nights I lie awake wondering if I'm making a huge mistake. They don't see me watching couples in the waiting room and feeling this sharp ache. They don't understand that my independence doesn't mean I don't desperately want connection and support.\n\n*looks away*\n\nI think what I needed from my care team was acknowledgment that single motherhood, even when chosen, comes with real vulnerabilities. That my competence doesn't erase my loneliness. That I deserved more attention, more check-ins, more emotional scaffolding because of my circumstances, not less.\n\n*voice cracks slightly*\n\nInstead, I've felt invisible in a different way than I expected.",
+      "responding_to_question_id": "Q16",
+      "input_tokens": 8613,
+      "output_tokens": 389
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were you given unsolicited comments about your weight, diet, or physical appearance? How did those comments land?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "*becomes noticeably defensive, shifts uncomfortably*\n\nNot from my providers, actually. They've been pretty professional about that. My midwife mentioned my weight gain is \"right on track\" but in a factual way, not judgmental.\n\n*pauses, becomes more vulnerable*\n\nBut the comments have come from everywhere else. Family, friends, strangers at the grocery store. \"You're carrying so high, are you sure it's not twins?\" \"You look so small for how far along you are.\" \"You're going to have so much weight to lose after.\"\n\n*voice becomes tighter*\n\nWhat's been harder is the unsolicited commentary about my *body* in relation to being single. Like, there's this assumption that I should be trying to stay \"attractive\" or something. My mom made a comment once about whether I was worried my body would affect my dating prospects after the baby. And I just... I couldn't even respond to that. I'm growing a human and you're thinking about my desirability?\n\n*becomes more emotional*\n\nThe pregnancy has made me feel both hypervisible and invisible. Strangers touch my belly without asking. People stare. But also, I feel like my body is no longer mine—it belongs to the baby, to the medical system, to other people's opinions about what a pregnant body should look like.\n\n*voice becomes quieter*\n\nWhat I didn't expect was how much that would intertwine with being single. Like, my body is supposed to be evidence of my \"choices\" or my \"irresponsibility\" or whatever narrative people want to project onto me.\n\n*pauses*\n\nMy providers haven't been part of that, but the lack of protection from it has been notable.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 9028,
+      "output_tokens": 377
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q17",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a moment, becomes more introspective*\n\nI think what's been hardest is that I've internalized a lot of that commentary. I catch myself in the mirror and think about how my body looks different, and there's this layer of shame underneath it that isn't really about pregnancy—it's about being a woman alone, visibly alone, in a way that invites judgment.\n\n*voice becomes strained*\n\nBecause if I had a partner, the narrative would be different. \"Oh, she's glowing, she's nesting, she's preparing for her family.\" But being alone, there's this undertone of... I don't know, pity? Judgment? Like people are trying to figure out what \"happened\" to me, why I'm doing this without a man.\n\n*pauses, becomes more emotional*\n\nAnd I've realized my healthcare providers haven't really protected me from that either. They see me as a low-risk patient, so maybe they assume I'm emotionally resilient enough to handle the social stuff on my own. But I'm not. I'm tired of defending my choices. I'm tired of feeling like my body is public property that everyone gets to comment on.\n\n*voice cracks slightly*\n\nWhat I needed from them was some acknowledgment that this vulnerability—being pregnant and alone and visible—is real. That it's not just about my medical care, but about my dignity as a person. Maybe asking, \"How are you feeling about how people are responding to your pregnancy?\" Or saying, \"Your body is doing amazing work, regardless of what anyone else thinks.\"\n\n*wipes eyes*\n\nInstead, the clinical detachment sometimes felt like complicity. Like, you're not protecting me from the world's judgment; you're just not seeing me as a whole person who needs that protection.",
+      "responding_to_question_id": "Q17",
+      "input_tokens": 9414,
+      "output_tokens": 389
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Which informal sources — people or communities — did you turn to first, before or instead of a healthcare provider?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "*becomes quieter, more reflective*\n\nHonestly? The internet. Books. Research papers. That was my first instinct—to educate myself, to understand what was happening to my body from an evidence-based perspective.\n\n*laughs self-consciously*\n\nWhich makes sense given my background, but it's also kind of pathological, right? I was reading studies about fetal development and maternal physiology instead of just... talking to someone about how I was actually *feeling*.\n\n*pauses*\n\nMy mom was my first real person. I called her when I got the positive test, and she was shocked but supportive. But our conversations are complicated. She's worried about me, which means she's also worried *for* me in a way that doesn't always feel safe. Like, I can't fully express my fears without her catastrophizing or trying to fix things.\n\n*becomes more hesitant*\n\nI have a close friend from grad school who has a kid, and I've leaned on her more as I've gotten further along. She gets the professional side of me—she's also in academia—but she also has actual motherhood experience. So she's been helpful for reality-checking my anxiety. But there's still this gap because she has a partner, and her experience is fundamentally different from mine.\n\n*voice becomes quieter*\n\nI didn't really turn to my healthcare providers first because I assumed they'd just give me clinical information. I needed emotional processing first, and I didn't know how to ask for that from them. So I went to the internet, to books, to people who already knew me.\n\n*looks down*\n\nI think I needed permission to ask my midwife for more than just medical care.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 9828,
+      "output_tokens": 372
+    },
+    {
+      "turn_number": 49,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q18",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 50,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath, becomes more vulnerable*\n\nWhat's interesting is that I've been so focused on gathering information and preparing intellectually that I haven't really built a maternal community. Like, there are prenatal classes offered at the hospital, support groups for pregnant people, all of that. But I haven't gone to any of it.\n\n*pauses, self-aware*\n\nI think partly because I was afraid of being the only single woman in a room full of couples. And partly because my academic brain told me those things were \"less rigorous\" than reading research papers. Which is ridiculous, honestly. I need community more than I need another article about neuroplasticity.\n\n*voice becomes more strained*\n\nBut by the time I realized that, it felt too late. I'm a few weeks from my due date. I don't want to walk into a class full of strangers right now. And that's on me, but it also reflects how isolated I've let myself become.\n\n*becomes more emotional*\n\nI think if my providers had actively encouraged community connection—not just mentioned it casually but actually advocated for it—I might have done it. If someone had said, \"Being alone is hard, and you deserve support from other people going through this,\" maybe I would have prioritized it differently.\n\n*voice quieter*\n\nInstead, I've relied on my mom, my one friend, the internet, and my own overthinking brain. Which is a pretty fragile support system for what's coming.\n\n*looks at you*\n\nI'm realizing now how much I needed my healthcare team to see that my low-risk medical status didn't mean my emotional needs were low-risk.",
+      "responding_to_question_id": "Q18",
+      "input_tokens": 10209,
+      "output_tokens": 361
+    },
+    {
+      "turn_number": 51,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q19",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 52,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits with the silence for a moment, becomes very still*\n\nI think... I think I'm scared that after the baby comes, all of this is going to hit me at once. Right now I'm in this holding pattern of preparation and anxiety, but there's still a theoretical quality to it. She's not here yet. I can still imagine myself handling it.\n\n*voice becomes tremulous*\n\nBut once she arrives, it becomes real. And I'll be alone with this tiny human who is entirely dependent on me, and there won't be anyone to tag in when I'm exhausted. No one to say, \"You're doing great, go sleep, I've got her.\" No one to just... witness what I'm going through and validate that it's hard.\n\n*pauses, becomes more emotional*\n\nAnd I'm terrified about postpartum depression, if I'm being honest. I know the risk factors—I'm older, I'm single, I have limited support, I'm an overthinker with a tendency toward anxiety. That's a profile. And no one has really sat down with me and said, \"Here's what we're watching for. Here's how you reach out if you're struggling. Here's what support looks like.\"\n\n*voice cracks*\n\nMy midwife will discharge me after six weeks, and then what? I see my OB for a postpartum visit, and then... I'm on my own. With a newborn. With hormones crashing. With the fourth trimester that I've read so much about but have no one to live through it with.\n\n*wipes eyes*\n\nI think what I needed was for someone in my care team to acknowledge that my medical low-risk status doesn't protect me from the emotional and psychological challenges ahead. To say, \"We see you're doing this alone, and that matters. Let's make sure you have a real plan for support.\"\n\n*looks directly at you*\n\nInstead, I feel like I've been prepared for the medical event of birth but not for the actual experience of becoming a mother in isolation.",
+      "responding_to_question_id": "Q19",
+      "input_tokens": 10579,
+      "output_tokens": 446
+    },
+    {
+      "turn_number": 53,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Was there a moment when your trust in a provider was broken — something they said, missed, or failed to explain?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 54,
+      "role": "persona",
+      "type": "response",
+      "text": "*becomes very still, jaw tightens slightly*\n\nNot broken, exactly. But... there was a moment that stuck with me.\n\n*pauses, choosing words carefully*\n\nI had a question about something I'd read regarding fetal monitoring in labor—specifically about continuous monitoring versus intermittent, and the research on outcomes. I brought it up at an appointment because I wanted to understand the options, the evidence, what my midwife's approach would be.\n\n*voice becomes quieter, more strained*\n\nAnd she basically shut it down. She said, \"We follow hospital protocol,\" and moved on. Didn't engage with my question at all. Didn't explain *why* the protocol exists, didn't acknowledge that there's legitimate debate in the literature about continuous versus intermittent monitoring.\n\n*becomes more emotional*\n\nWhat hurt was that she treated my question like I was being difficult or anxious, when really I was just trying to understand my own care. And because I know the research, I could tell she was being dismissive of that knowledge. Like, \"You think you know something, but I'm the expert here.\"\n\n*pauses*\n\nIt made me feel unheard. It made me realize that even though I have expertise in child development, I don't have expertise in *my own birth*, and that gap is where my voice disappears. She has the power, the credentials, the authority. And my questions, even reasonable ones grounded in evidence, feel like a threat to that.\n\n*voice becomes quieter*\n\nI don't think she intended to break my trust. But in that moment, I learned that my voice might not matter when it comes to decisions about my own body and my own labor.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 11052,
+      "output_tokens": 368
+    },
+    {
+      "turn_number": 55,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q20",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 56,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, becomes more vulnerable*\n\nAnd what made it worse is that I couldn't really push back. Because I'm alone, and I need her. I need to be on good terms with my midwife going into labor. If I challenge her on protocol, what if that affects how she treats me during birth? What if she resents me for questioning her?\n\n*voice becomes strained*\n\nThat's a power dynamic I didn't fully appreciate until that moment. When you have a partner, you can advocate together. You can push back as a unit. But alone, I'm dependent on her goodwill. So I smiled and nodded, and I wrote down my questions to research later on my own.\n\n*pauses, becomes more emotional*\n\nWhich is exactly what I've been doing this whole pregnancy—managing my own care in isolation, gathering information, trying to be prepared for every scenario, because I can't fully trust that my providers will see me or advocate for me. I'm my own advocate, my own support system, my own everything.\n\n*voice cracks slightly*\n\nAnd that's exhausting. It's lonely. Because at some point, I need to be able to just... surrender to the process. To trust someone. To not have to be the expert in my own medical care. But that moment with my midwife reminded me that I can't fully do that.\n\n*wipes eyes*\n\nSo I'll go into labor with all this preparation, all this knowledge, all this anxiety about whether my voice will actually be heard. And I'll be alone, without anyone there just... believing in me. Trusting me. Making sure I'm treated with dignity.\n\n*voice becomes very quiet*\n\nThat's what broke my trust a little. Not one big thing, but the realization that I can't rely on my care team to protect my autonomy.",
+      "responding_to_question_id": "Q20",
+      "input_tokens": 11429,
+      "output_tokens": 402
+    },
+    {
+      "turn_number": 57,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there appointments, scans, or care moments where your partner's absence left you feeling isolated or unsupported?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 58,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly, becomes very quiet*\n\nEvery single appointment, honestly. But there are specific moments that stand out.\n\n*pauses, voice becomes strained*\n\nThe anatomy scan was... it was hard. I remember lying there, watching the ultrasound screen, seeing her for the first time in detail—her face, her spine, all these intricate details—and I was completely alone. The technician was professional, clinical. My midwife wasn't even there. And I just felt this wave of loneliness that I wasn't expecting.\n\n*voice cracks slightly*\n\nBecause that's supposed to be this beautiful moment you share with someone, right? The moment you really see your baby. And I was experiencing it solo, with a stranger moving a probe around my belly while I tried not to cry.\n\n*pauses, becomes more emotional*\n\nI took a photo of the ultrasound image home and stared at it, wishing I had someone to show it to who would feel the same excitement I did. My mom was excited when I called her, but it's not the same. She's not the other parent. She's not sharing this journey with me in that fundamental way.\n\n*voice becomes quieter*\n\nAnd there have been other moments too. When I've had questions or concerns and I've had to call my midwife alone, without someone there to help me articulate what I'm worried about. When I've sat in waiting rooms watching partners hold their girlfriends' hands and felt this sharp ache.\n\n*wipes eyes*\n\nBut the ultrasound... that one really got me. Because I realized in that moment that so much of this experience is going to be solitary. And no amount of preparation can change that.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 11858,
+      "output_tokens": 375
+    },
+    {
+      "turn_number": 59,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q21",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 60,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a moment, becomes more reflective*\n\nI think what made the ultrasound harder was that I couldn't just sit with the joy of it. I had to immediately shift into clinical mode—assessing the measurements, checking that everything looked normal, making sure there were no red flags. Because I was alone with that information, and I needed to process it intellectually to feel safe.\n\n*voice becomes strained*\n\nIf I had a partner there, maybe I could have just... felt it. Let someone else worry about whether the measurements were right while I just marveled at seeing her. But alone, I had to be both the person experiencing the miracle and the person analyzing the data. There was no division of labor, emotional or otherwise.\n\n*pauses, becomes more vulnerable*\n\nAnd that's been the pattern throughout this pregnancy. I can't just *be* a pregnant woman. I have to be a pregnant woman who also understands the neurobiology of fetal development, who's analyzing her own care, who's preparing for every possible scenario because there's no one else to do it for me.\n\n*voice becomes quieter*\n\nThe isolation isn't just about not having someone there physically. It's about not having someone to share the emotional weight of it. To say, \"This is scary,\" and have them say, \"I know, I'm scared too, but we're in this together.\" Instead, I'm managing my own fear, my own excitement, my own everything.\n\n*looks away*\n\nAnd I worry that by the time she's born, I'll be so exhausted from carrying all of this alone that I won't have anything left to give her. That I'll be running on fumes, still in analysis mode, still trying to manage everything myself.\n\n*voice becomes very small*\n\nThat's what really scares me about her arrival.",
+      "responding_to_question_id": "Q21",
+      "input_tokens": 12242,
+      "output_tokens": 396
+    },
+    {
+      "turn_number": 61,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did you ever go online specifically because you felt you couldn't get enough information from your care provider — what were you looking for that you hadn't received?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 62,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods emphatically, becomes more animated*\n\nAll the time. Constantly, actually.\n\n*leans forward slightly*\n\nI'd come home from appointments with so many unanswered questions. Not because my midwife was withholding information, but because the appointments are so rushed. Fifteen minutes isn't enough time to really discuss what I want to discuss. So I'd go home and immediately start researching—PubMed, pregnancy forums, evidence-based websites.\n\n*voice becomes more specific*\n\nI was looking for narratives, honestly. Not just clinical data. I wanted to know what other women experienced in labor, how they coped, what surprised them. My providers give me the medical framework—this is what happens during transition, here's how contractions progress—but they don't prepare you for the *experience* of it. The emotional reality.\n\n*pauses, becomes more vulnerable*\n\nAnd I was looking for reassurance about specific anxieties that felt too small to bring up in appointments. Like, \"Is it normal to feel disconnected from the pregnancy sometimes?\" or \"Will I actually know how to hold her?\" or \"What if I don't feel immediate love?\" Those aren't clinical questions, so I didn't ask them. I just... googled them at night.\n\n*voice becomes quieter*\n\nI was also searching for stories about single mothers. About what the fourth trimester actually looks like when you're alone. About postpartum depression in women without partners. Because my providers don't have those conversations with me. They assume because I'm medically low-risk, I'm emotionally prepared.\n\n*looks at you*\n\nI needed someone to ask me what I was really afraid of, not just what my vital signs were.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 12672,
+      "output_tokens": 378
+    },
+    {
+      "turn_number": 63,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 64,
+      "role": "persona",
+      "type": "response",
+      "text": "*becomes very still, takes a long breath*\n\nI think... I think what I want to say is that I don't need my providers to fix the fact that I'm alone. That's not their job, and it's not possible anyway.\n\n*pauses, voice becomes more measured*\n\nBut I need them to *see* it. To acknowledge that being a single woman in her mid-thirties carrying a baby without a partner is a specific kind of vulnerability that deserves attention and care, not dismissal disguised as efficiency.\n\n*becomes more emotional*\n\nI'm competent. I'm educated. I'm medically low-risk. But those things don't protect me from loneliness, from fear, from the very real challenge of navigating motherhood alone. And I think the healthcare system—my providers included—treat those two things as if they're contradictory. Like, if you're competent, you shouldn't need emotional support. If you're low-risk medically, you're low-risk emotionally.\n\n*voice cracks slightly*\n\nThat's not true. And I needed someone to say that to me. To say, \"Your circumstances are harder, and that matters. Let's make sure you have real support.\"\n\n*pauses, wipes eyes*\n\nI also want to say that I'm grateful for my midwife's clinical care. She's been thorough and professional. But I wish there had been more space—more time, more genuine curiosity—for the whole person I am. Not just the pregnant body.\n\n*looks directly at you*\n\nAnd maybe this is for other women too. Maybe maternity care needs to expand beyond risk stratification and vital signs. Because low-risk doesn't mean low-need. Low-risk doesn't mean you're not terrified and lonely and hoping someone sees you.\n\n*voice becomes very quiet*\n\nI'm about to meet my daughter in a few weeks, and I'm excited and terrified in equal measure. And I'm going to do it alone. But it shouldn't have to feel quite so isolating from within the healthcare system that's supposed to be supporting me.",
+      "responding_to_question_id": null,
+      "input_tokens": 13106,
+      "output_tokens": 458
+    }
+  ],
+  "metadata": {
+    "total_turns": 64,
+    "questions_asked": 21,
+    "probes_deployed": 9,
+    "adaptive_followups": 0,
+    "total_input_tokens": 221394,
+    "total_output_tokens": 11786,
+    "estimated_cost_usd": 0.245,
+    "duration_seconds": 179.5,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 308
+  },
+  "errors": []
+}

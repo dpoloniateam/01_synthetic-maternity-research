@@ -1,0 +1,594 @@
+{
+  "session_id": "S_275",
+  "status": "completed",
+  "persona_id": "comp_073",
+  "persona_name": "Cheri",
+  "persona_journey_stage": "second_trimester",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [
+    "low_income"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 4,
+  "questionnaire_strategy": "Expectation-Perception Gap",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "google/gemini-3.1-flash-lite-preview",
+  "environment": "dev",
+  "timestamp": "2026-03-18T02:58:38.395235",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Cheri, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're in the middle of your pregnancy, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "Thanks for asking. It feels... weird, honestly, sitting on this side of the desk. I spent years in an office helping couples navigate these exact months, explaining the biology of a developing fetus like it was just a series of textbook checklists. But being the one in the plastic chair, counting down the days until my next scan while simultaneously checking my bank app to see if I can afford the co-pay, it’s a whole different reality. \n\nI’m halfway through my second trimester now, and it’s a strange headspace to be in. I know exactly what’s happening inside me—I can practically visualize the anatomy scan results before they happen—but knowing the science doesn’t make the anxiety go away. If anything, it makes it worse because I know exactly what could go wrong. \n\nThe biggest thing, though? It’s the feeling of being a \"number.\" My doctor is sweet, truly, but when she rattles off my vitals, I feel like she’s reciting a script I used to read myself. I catch myself wanting to jump in and correct her or ask more technical questions, but then I remember I'm not the professional in the room right now; I’m just the patient with a budget that doesn't stretch nearly as far as it needs to. It’s hard to feel like my care is a priority when my biggest complication is just trying to make ends meet.",
+      "responding_to_question_id": null,
+      "input_tokens": 773,
+      "output_tokens": 293
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you first found out you were pregnant, what did you expect your first antenatal appointments to be like — the environment, the people, the information you'd receive? And what were they actually like?",
+      "question_id": "V4_PREG_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "I guess I expected it to be familiar. Since I used to work in clinical care, I imagined the appointments would feel like coming home to a space I understood. I expected to be the \"easy\" patient—the one who didn't need the extra explanations or the coddling. I thought I’d breeze through those first intake visits because I already knew the protocol: the weight, the urine dip, the quick Doppler check.\n\nBut the reality? It felt colder than I remembered. When you’re on the clock in an office, you’re focused on the efficiency of the visit, not necessarily the person sitting in front of you. Now that I’m the one sitting there, the \"efficiency\" just feels dismissive. There’s no room in those fifteen-minute slots for the life happening outside the office—like the knot in my stomach when I think about how I’m going to juggle a third child with my current job situation. \n\nI expected to be treated as a partner in my care, but instead, I’m just a chart entry that they need to move on from quickly to stay on schedule. I keep looking for that moment of connection, that look that says, \"I see you, and I know this is hard,\" but mostly, I just get a sanitized, clinical version of myself staring back at me.",
+      "responding_to_question_id": "V4_PREG_Q01",
+      "input_tokens": 1110,
+      "output_tokens": 277
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before your screening tests and scans, what did you expect the process of understanding your results to be like — how information would be given, by whom, and in what way? And what was the reality?",
+      "question_id": "V4_PREG_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "I think because of my background, I expected a conversation. I used to pride myself on how I delivered news—making sure parents understood the nuances, the risks, and the \"so what now?\" part of the results. I thought, *well, at least I’ll be the one getting the good, clear communication I always gave to others.* I expected a sit-down where we’d look at the data, and I’d be treated like an intelligent participant who could handle the technical talk.\n\nThe reality is... it’s mostly just a portal notification. I get this ping on my phone, and there’s a string of numbers that I have to interpret for myself while I’m sitting in my car or at work. It feels so impersonal. When I do get to see the doctor, she’s so busy trying to hit the next room that the \"explanation\" is usually just, \"Everything looks normal, any questions?\" \n\nIt’s that \"any questions?\" that gets me. I have a hundred questions, but when the room feels like it’s already halfway out the door, I clam up. I don’t want to be the difficult patient who holds them up. It’s funny—I know exactly what the labs mean, but being the one receiving them via a screen makes me feel so small and, honestly, kind of invisible.",
+      "responding_to_question_id": "V4_PREG_Q02",
+      "input_tokens": 1430,
+      "output_tokens": 283
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During your pregnancy, what did you expect in terms of having a consistent midwife or care provider who knew your history and situation? And what continuity of care did you actually experience?",
+      "question_id": "V4_PREG_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "I think I foolishly expected a \"team\" approach. You know, the kind of care where the provider asks, \"How are the kids?\" or remembers that I was worried about my iron levels last time without having to flip through three pages of digital notes first. When I was the one working in clinics, we tried to build that rapport because we knew how much it lowered a patient's cortisol levels to just feel *known*. I expected that for myself. I expected a midwife or a doctor who would look at my chart—my third pregnancy, single mom, tight finances—and see a person who is doing a balancing act, not just a set of vitals.\n\nThe reality? It’s been a revolving door. I rarely see the same person twice. Every appointment starts with me reciting my own history, like I’m auditioning to be a patient. \"Third pregnancy, no complications, iron is low.\" I’m the one providing the continuity of care for them, because they clearly haven’t had the time to dive into my file. It’s isolating. I’m carrying all this fear and all this logistical weight, and I’m carrying it alone because there isn’t one single person who’s actually *with* me through this. I’m just a recurring appointment on their calendar, and I’m the one who has to show up and remind them who I am every time. It’s exhausting.",
+      "responding_to_question_id": "V4_PREG_Q03",
+      "input_tokens": 1750,
+      "output_tokens": 297
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During pregnancy, what did you expect in terms of how your changing body would be discussed and examined by healthcare providers? And how did those interactions actually feel?",
+      "question_id": "V4_PREG_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "I think I expected the physical exams to feel like an objective check-in—just a routine assessment of health. In my old job, I saw these exams as a way to ensure the baby was hitting growth milestones, and it felt very matter-of-fact. I assumed that would be my experience too: a professional, respectful look at how my body was adapting to the third pregnancy.\n\nBut the reality? It feels incredibly vulnerable, especially now that I'm at a point where I'm just trying to hold everything together. When they check my fundal height or listen for the heartbeat, it’s done so quickly that I feel like a piece of equipment they’re calibrating. There’s no acknowledgment of the fact that I’m exhausted, or that my body is under a lot of stress from working and managing my other two. \n\nIt feels like my body is being examined for data, but nobody is looking at *me*. The coldness of the gel, the way they move my gown, the focus purely on the baby’s metrics—it makes me feel like a vessel. It’s strange, knowing the mechanics of why they do these things, but still wanting a little bit of human softness. I’m not just a set of vitals or a growing uterus; I’m a person whose body is currently her only tool for providing for her family. A little acknowledgement of that would change everything.",
+      "responding_to_question_id": "V4_PREG_Q04",
+      "input_tokens": 2080,
+      "output_tokens": 294
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there any examinations or conversations about your body that left you feeling uncomfortable or unprepared? What happened?",
+      "question_id": null,
+      "probe_id": "V4_PREG_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "There was one time recently—my blood pressure was up just a little bit. It was likely from the stress of the morning, trying to get the kids squared away and then dealing with the traffic getting to the clinic. The nurse didn't ask me about my morning, or how I’d been sleeping, or if I’d had a particularly rough week. She just kept repeating the cuff, muttering about how it was \"abnormal.\"\n\nShe didn’t ask, she just *told* me. She started talking about preeclampsia protocols and bed rest, rattling off the potential risks as if I hadn't spent years studying them myself. She was so focused on the machine’s output that she didn't see me practically hyperventilating in that chair. I had to stop her, my voice shaking, and explain that I’d been rushing and that I was just stressed about my job. \n\nI knew *why* she was being \"thorough,\" but it felt like an interrogation rather than a conversation. It made me feel like my own body was working against me, or like I was doing something wrong, like I was failing at the one job I have right now: keeping this baby safe. I walked out of there feeling like a liability rather than a mother-to-be. It’s hard to feel confident in your own skin when the people supposed to be supporting you treat your health like a series of red flags.",
+      "responding_to_question_id": "V4_PREG_Q04_P01",
+      "input_tokens": 2396,
+      "output_tokens": 297
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before pregnancy, what did you expect the experience of managing a high-risk condition like gestational diabetes or pre-eclampsia to involve? If relevant, how did the reality of managing it differ from your expectations?",
+      "question_id": "V4_PREG_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "trust_distrust",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "Even though I haven't been officially diagnosed with anything \"high-risk\" yet, that constant, low-level fear of it is always there. When I was the educator, I used to give out these neatly printed packets about gestational diabetes or preeclampsia with such a calm, steady voice. I’d explain the diet changes or the blood pressure logs as if they were just simple math. I genuinely believed that if a patient just followed the instructions, the system would catch them. I thought, *if something goes wrong, the care team is right there to bridge the gap.*\n\nThe reality I’m living now is that those \"complications\" are actually massive life-upheavals. If I were told tomorrow that I had gestational diabetes, my first thought wouldn't be \"how do I balance my glucose levels?\" It would be, \"How can I possibly afford fresh produce or a specific diet on my income?\" or \"How do I manage extra monitoring appointments when I don't have the flexibility at work to just take off?\"\n\nThe medical side feels manageable because I know the science, but the *logistical* side—the part the clinicians never really see—is terrifying. A diagnosis isn't just a medical condition; for someone like me, it’s a financial and scheduling crisis. I realize now that those pamphlets I used to hand out weren't nearly enough. They were for people who had the luxury of time and stability, not for someone trying to keep her head above water.",
+      "responding_to_question_id": "V4_PREG_Q05",
+      "input_tokens": 2736,
+      "output_tokens": 310
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What was missing from the support offered — information, emotional acknowledgement, practical help?",
+      "question_id": null,
+      "probe_id": "V4_PREG_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "structural_barriers",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "Everything is missing, to be honest. It’s a total disconnect. \n\nOn a practical level, nobody has ever asked, \"How are you getting here?\" or \"How does this appointment time work with your job?\" It’s just, \"Can you make it at 10:00 AM on a Tuesday?\" as if that’s a neutral request. When I’m sitting there, my brain is already doing the mental math on the lost hourly wages and the bus fare, but the clinic acts like that doesn't exist. They see me as a body in a chair, not a person with a life that’s already stretched to its absolute breaking point.\n\nBut more than the logistics, it’s the lack of human acknowledgement. I want a provider who realizes that I’m not just a \"low-risk pregnancy\"—I’m a woman who is terrified of the silence because I don't have a safety net. I don't need another pamphlet on prenatal nutrition; I know what I should be eating. I need someone to say, \"I see that you’re doing this on your own, and that’s incredibly hard. How can we make this easier for you?\" \n\nI’m mourning the professional I used to be, who probably gave great clinical advice but missed the human heart behind it. I feel like I’m trapped in a system that can fix my iron levels but can’t see the exhaustion in my eyes. It’s deeply lonely.",
+      "responding_to_question_id": "V4_PREG_Q05_P01",
+      "input_tokens": 3064,
+      "output_tokens": 310
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During pregnancy, what did you expect in terms of being able to access care promptly when you had a concern — whether urgent or not? And how responsive was the system when you needed it?",
+      "question_id": "V4_PREG_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "I used to tell my patients, \"If you're worried, call us—better safe than sorry.\" I really believed in that open-door policy. I thought the system was designed to be a safety net, something that would catch you the moment you felt like you were tripping. I genuinely believed that if a woman felt something was \"off,\" there would be a nurse or a midwife there to validate that, or at least help her triage the concern over the phone without making her feel like a burden.\n\nThe reality? It’s like hitting a wall of bureaucracy. When I’ve had those moments of late-night panic—maybe the baby’s movements felt a little different or I felt a sharp pain that probably wasn't anything—I hesitate for hours. I don’t want to be \"that\" patient. I know how the staff groans when the phones ring at 4:55 PM. When I finally *do* call, I’m greeted by an automated system, then a receptionist who’s clearly stressed, and then a nurse who sounds like she’s reciting a liability script. \n\nThey don't make you feel like you’re being \"safe\"; they make you feel like you’re being inconvenient. It’s impossible to get a prompt, human response. Everything is filtered through the lens of \"can this wait until your next appointment?\" It turns every little ache or worry into a solitary, sleepless night of Googling, because the \"safety net\" feels more like a gatekeeper.",
+      "responding_to_question_id": "V4_PREG_Q06",
+      "input_tokens": 3414,
+      "output_tokens": 316
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During pregnancy, what did you expect the role of your family, friends, or community to be in supporting you? And how did that informal support network actually show up — or not?",
+      "question_id": "V4_PREG_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "I think I came into this expecting that my past life in the medical field would translate to some kind of status or security, but the truth is, pregnancy in this position really strips the mask away. I don't have a partner to handle the household or share the financial weight, and that changes the dynamic with everyone around me.\n\nMy friends are mostly in that \"twenties\" phase—figuring out their own careers, going out, living for the weekend. They’re kind, sure, but there’s this wall. When I talk about the pregnancy, I can see them trying to be supportive, but they don't *get* it. They don't understand the paralyzing fear of the anatomy scan or the crushing math of a car seat budget. I feel like I’m speaking a language they haven't learned yet.\n\nAs for family, it’s complicated. I’m the one who’s supposed to be the \"expert\"—the one who knows the systems. People look at me and assume I have it handled because I used to teach these things. They don't see the nights where I'm in my kitchen, eating something cheap so I can save for the next ultrasound co-pay, wondering if I’m really going to pull this off. I feel like I can’t tell them how scared I am, because that would mean admitting that my professional knowledge hasn't protected me from reality. I’m the one providing the support, even when I’m the one who needs it most.",
+      "responding_to_question_id": "V4_PREG_Q07",
+      "input_tokens": 3769,
+      "output_tokens": 318
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there forms of support you received from family or community that you hadn't expected — or support you expected that didn't materialise?",
+      "question_id": null,
+      "probe_id": "V4_PREG_Q07_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "I think I expected that because I’d spent years \"doing the work\"—helping other women, being the reliable one in the office—that when it was my turn, there would be some sort of communal net to catch me. I expected people to rally, maybe in that way you see in movies or hear about in classes, where the community steps in to help with gear or just to show up.\n\nBut it’s been the opposite of that. The support I expected—the active, \"let me help you with this\" kind of outreach—hasn't really materialized. People see me as the person who knows what she’s doing. They think, *Oh, Cheri’s got it, she knows the medical stuff, she knows how to handle the appointments.* It’s a lonely place to be when everyone thinks you’re the expert, so they don’t think you need to be held. \n\nThe support that *has* appeared, though, is quieter and sometimes unexpected. It’s a coworker dropping off a bag of groceries without making a big deal out of it, or a friend who just sits with me on the couch to watch a movie without asking about the baby or the finances. They don't have the words for what I'm going through, and they can't fix the systemic stuff, but they’ve started to realize that I’m just tired. It’s not much, but it’s the only thing keeping me upright some days.",
+      "responding_to_question_id": "V4_PREG_Q07_P01",
+      "input_tokens": 4118,
+      "output_tokens": 310
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q8",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "I keep thinking about that phrase, \"the glow.\" People say it to me, and I just want to laugh—or cry. If I have a glow, it’s just the sweat of someone who’s spent the last two hours calculating the cost of diapers versus the electric bill. \n\nIt’s so weird because I know exactly how this baby is growing. I can picture the neural tube closing, the heart chambers forming—I’ve explained it all a thousand times to other people. But knowing the biology doesn't make the baby feel any less like a miracle, or any less like a responsibility that I’m terrified I’m not equipped for. Sometimes, at night, I put my hand on my stomach and just talk to them. I find myself apologizing, you know? Like, \"I’m sorry we’re starting with so little, but I promise I’m trying.\" \n\nI think the hardest part is that I’m trying to bridge these two worlds. I have this professional brain that knows what the \"standard of care\" is supposed to look like, and then I have this life that is nowhere near that standard. When I walk out of that clinic, I feel like I’m leaving a piece of my dignity on the floor. I wish they knew that when they talk to me, they’re talking to someone who’s seen the other side of the desk. I wish they’d just ask me *once*, \"Cheri, are you okay?\" instead of \"Cheri, how’s your weight?\" \n\nI just want this little one to be healthy. That’s the only goal. But sometimes, I wonder if the system is actually making it harder to get there than it needs to be. Is it too much to ask for just a little bit of humanity in the middle of all this data?",
+      "responding_to_question_id": "Q8",
+      "input_tokens": 4436,
+      "output_tokens": 383
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q9",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s funny, the things that stay with you. I remember, back when I worked in that office, I’d see women coming in, and sometimes I’d be frustrated because they hadn’t read the pamphlets or they’d missed an appointment. I thought I was being a good, diligent professional by being annoyed. Now? I want to go back and shake that version of myself. \n\nI missed the *why*. I didn't see the woman who had to take two buses to get to the clinic, or the one whose boss docked her pay every time she stepped out for a check-up. I was just worried about my schedule and the clinic’s metrics. Now I’m the woman on the bus, and I’m terrified to miss a single appointment because I know how quickly you can get labeled as \"non-compliant.\" It’s such an ugly word. It implies you don’t care about your baby, when in reality, you’re just trying to keep your life from falling apart so you *can* care for them.\n\nI’m sitting here, and my biggest fear isn't the birth. I know how to breathe through contractions. I know what an Apgar score is. I know the stages of labor like the back of my hand. My fear is what happens *after*. It’s the silence between those postpartum visits, the worry that I won’t have the support I need to heal. I see the way people look at single moms on a budget—they offer pity, but they don't offer *partnership*. \n\nI’m fighting to make sure this baby doesn’t grow up feeling like they’re a statistic, even if the system treats me like one. Every time I get a bill I can't pay or a, \"We’ll see you next time\" from a doctor who doesn't even know my favorite color, I just hold onto my stomach a little tighter. I’m doing this. I’m really doing this. I just wish the road didn't have to be quite this lonely.",
+      "responding_to_question_id": "Q9",
+      "input_tokens": 4827,
+      "output_tokens": 435
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q10",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "Sometimes I wonder if my professional background is actually a curse. When I walk into that clinic, my brain automatically goes into \"employee mode.\" I look at the sterile layout, the way the triage nurse organizes her charts, and the rhythm of the lobby, and I can’t stop analyzing. I see the cracks in the system because I helped build them, in a way. I know the pressure the providers are under, the quotas they have to meet, and the way they're forced to prioritize the \"legal chart\" over the person sitting in front of them. \n\nBecause I know *why* they do what they do, I feel like I have to be the \"good patient.\" I have to be quiet, I have to be compliant, I have to make their day easier, because I know how much of a headache the difficult patients were for my old boss. So, I swallow my questions. I hold back my fear. I pretend the anxiety isn't making my heart race when the Doppler takes a second too long to find the heartbeat. \n\nI’m effectively policing myself, and it’s exhausting. It’s like I’m in a tug-of-war between the person who knows the medical protocols and the person who is just a tired, broke, pregnant woman who needs someone to hold her hand. I’m starting to realize that the system isn't just failing me—it’s silencing me, and I’m letting it happen because I’m so used to being the one in the white coat. But I’m not in the white coat anymore. I’m in the paper gown, and I’m terrified that if I finally speak up and demand more, I’ll be labeled as \"difficult\" and it’ll somehow impact the care my baby receives. It’s a lose-lose. I just want to be seen. Just once.",
+      "responding_to_question_id": "Q10",
+      "input_tokens": 5270,
+      "output_tokens": 390
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q11",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "You know, the most insulting part is the \"routine.\" Every time I sit in that exam room, staring at the same posters about nutrition and fetal development—posters I likely hung in an office exactly like this one years ago—I feel like I’m living in a museum of my own past life. I know the \"standard of care\" by heart. I know that if I were the one at the desk, I’d be checking the boxes, smiling professionally, and moving on to the next patient in precisely fifteen minutes. It makes me realize just how much of maternity care is built on the assumption that the woman sitting there has infinite time and a support system that doesn't include her bank account.\n\nWhen the nurse asks, \"Are you feeling any anxiety?\" it’s a clinical question. It’s meant to trigger a checkbox for mental health screening. But my \"anxiety\" isn't a medical diagnosis they can treat with a pamphlet or a referral to a support group; it’s the structural weight of being a single mother in a system that doesn't accommodate anything outside of a neat, middle-class narrative. \n\nI’m balancing a job search with prenatal appointments, and every time I have to choose between a shift at work and an extra ultrasound, I feel like I’m failing. I wish they’d stop asking me about \"anxiety\" as if it’s a symptom to be suppressed and start asking me about my *life* as a factor that influences my health. I’m not \"anxious\"—I’m *circumstantially stressed*. There’s a world of difference, but here, in this plastic chair, I’m just another chart with a high-risk lifestyle and a low-risk body. I just hope that by the time the baby arrives, I haven't forgotten how to be anything other than a patient, or a professional, and finally remember how to just be a mom.",
+      "responding_to_question_id": "Q11",
+      "input_tokens": 5668,
+      "output_tokens": 402
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Which informal sources — people or communities — did you turn to first, before or instead of a healthcare provider?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "Honestly, the first place I turned was my own bookshelf. It sounds so tragic, doesn't it? I have all these old textbooks and clinical guides from when I was training. I spent the first few weeks of this pregnancy cross-referencing everything—my symptoms, my risks, my nutrient intake—against the literature. It’s like I couldn't trust the doctors to be thorough enough, so I had to be my own clinician. That’s not a healthy way to experience a pregnancy, but it was the only way I felt like I had control over anything.\n\nWhen I couldn’t find the answers there, I didn't go to my doctor. I went to internet forums—the ones for moms who are struggling, not the \"perfect pregnancy\" blogs. I searched for \"pregnancy on a budget\" and \"single mom prenatal care.\" I didn't want advice from someone who had a partner to take the kids while she napped or a savings account that cushioned the blow of a sick day. I needed to talk to people who were counting pennies for diapers while feeling their baby kick. \n\nI didn't turn to my family because I didn't want them to worry, and I didn't turn to my doctor because I was afraid of being judged or \"flagged.\" It’s a sad state of affairs when your most trusted support system is a random message board full of strangers who don't know your name, but at least there, nobody is looking at my chart and checking their watch. I can just admit I’m scared, and someone will finally say, \"Me too.\" That kind of validation is worth more than any clinical advice I’ve gotten in that office.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 6094,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q12",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "I think what I struggle with most—what really keeps me up at night—is the fear that I’m being perceived as \"difficult\" simply because I’m informed. When I speak with the nurses or the doctor, I find myself code-switching. I try to sound less like a medical professional and more like a \"typical\" patient, because I’ve seen how providers talk about \"those patients\" behind closed doors. You know, the ones who ask too many questions, who challenge the timing of a scan, or who show up with their own research. They’re called \"anxious,\" \"non-compliant,\" or \"high-maintenance.\" \n\nI don’t want to be *that person*. I just want to survive this. But by hiding who I am, I feel like I’m losing a piece of myself. I spent years building that knowledge, and now it’s like a secret I have to keep to ensure I’m treated with basic respect. It’s a performative act, every single appointment. I walk in, I nod at the right times, I minimize my pain, I ask the \"appropriate\" amount of questions, and I leave. \n\nIf they only knew that I’m analyzing their bedside manner as much as they’re analyzing my vitals. They see a young, single, low-income woman and they make a thousand assumptions about my literacy, my intentions, and my stability. They don’t see the woman who used to explain genetic screening protocols to nervous couples. They don’t see me. They see a chart entry that fits a specific, narrow box, and it’s like I’m trapped in that box, unable to breathe. I’m just trying to make it to the other side with a healthy baby, but God, I wish I didn't have to navigate a system that feels like it’s set up to break me rather than build me up.",
+      "responding_to_question_id": "Q12",
+      "input_tokens": 6454,
+      "output_tokens": 401
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there appointments or decisions where you felt your input was genuinely sought, versus times when you felt you were simply being informed of a plan?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "Honestly? It’s almost always the latter. I’ve learned that \"Are you okay with this?\" is rarely a question; it’s a courtesy wrap-up to a decision that’s already been made by the protocol.\n\nI remember when my doctor brought up genetic screening. I’d spent years explaining the nuances of those tests, knowing the benefits and the limitations. When she started the \"standard\" talk, I tried to steer the conversation toward my specific preferences and the logistical trade-offs of the follow-up tests if something came back \"concerning.\" I wasn't just being a nerd; I was trying to manage my own sanity and my bank account. But she just did that polite, tight-lipped smile that says, *I appreciate the input, but I have a script to follow.* She kept defaulting to the standard procedure, and it felt like she was talking to a wall. \n\nIt’s disheartening because I *want* to be a partner in this. I know enough to have a nuanced conversation, but the system isn't built for nuance. It’s built for liability and efficiency. When I push, I see that look of annoyance—like I’m complicating a simple process. So, I stop pushing. I take the packet, I nod, and I accept the plan they’ve laid out for me, even if I know there were other options that might have fit my life better. I’m just a box to be checked. If I’m not \"informed,\" I’m \"non-compliant.\" There’s no middle ground where a woman’s intelligence—or her reality—is actually valued.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 6885,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q13",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "The thing is, I’ve spent so much time being the person who hands out the \"informed consent\" forms. I used to tell patients, \"This is your body, these are your choices,\" and I genuinely believed it. But now, sitting in that chair, I see the power dynamic for what it really is: a performance. \n\nWhen a provider hands me a sheet of paper and asks if I have any questions, it’s not really an invitation for a dialogue. It’s a formality. It’s a way to ensure their back is covered if things go south. They aren't looking for my input on what’s best for *me*; they’re looking for my agreement with what’s safest for *them*. \n\nI find myself constantly weighing the cost of being \"difficult.\" If I push back on an unnecessary scan or ask for a different approach to my iron supplement because the current one is wreaking havoc on my stomach, I’m gambling with their perception of me. I’m scared that if I don’t fit the mold of the \"grateful, easy patient,\" they’ll stop listening to me altogether. And as a single mom on a budget, I can’t afford to be ignored. \n\nI’m constantly monitoring my own behavior, trying to strike that impossible balance: knowledgeable enough to protect myself, but ignorant enough to be likable. It’s draining. I’m carrying the mental load of being my own patient advocate, my own budgeter, and my own protector, all while trying to nurture this life inside me. I’m exhausted. I just want someone to stop reading from the chart and look at me—the real me—and realize I’m doing the best I can in a system that doesn't want to see me.",
+      "responding_to_question_id": "Q13",
+      "input_tokens": 7236,
+      "output_tokens": 373
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q14",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "Sometimes I catch my reflection in the clinic window, and I barely recognize myself. I used to stand in the hallway of an office just like this one, adjusting my scrubs, ready to guide a couple through their first ultrasound, feeling like I was part of a competent, well-oiled machine. Now, I see this tired, guarded girl in a hospital-issue gown, clutching a crumpled lab result like it’s a lifeline, and I feel this wave of resentment. Not just at the system—though heaven knows that’s a big part of it—but at the *myth* of the expert.\n\nI realize now that the medical training I had was a shield. I thought I knew how to \"do\" pregnancy because I knew the anatomy, the timing, and the risks. But that knowledge is just information; it isn't care. Real care is human. It’s being heard when you mention the bus schedule, being acknowledged when you express fear about the future, and being treated as a person whose life—with its messy, non-clinical details—matters as much as the baby’s heartbeat.\n\nI’m tired of the performance. I’m tired of being the \"good, quiet patient\" to make the doctor’s day easier. And most of all, I’m terrified that when I finally reach the end of this, when I’m holding this little one, I’ll look back on these months and realize I spent the whole time apologizing for existing in a system that didn't know how to see me. I just want to make it to the other side. I just want us to be okay. Is that really too much to ask?",
+      "responding_to_question_id": "Q14",
+      "input_tokens": 7617,
+      "output_tokens": 347
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there appointments, scans, or care moments where your partner's absence left you feeling isolated or unsupported?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "The most painful times weren't the \"big\" moments, like the anatomy scan—though those were definitely lonely. It was the quiet, logistical moments. It was sitting in the waiting room, trying to keep my posture up while listening to other women laugh with their partners about what color to paint the nursery or who’s going to handle the night shifts. I’d look down at my folder and realize I was going to be the one doing the night shifts, the early mornings, the budget meetings, and the medical decisions all by myself. \n\nWhen I was in the office working, I used to be the one to tell the \"other\" partner to make sure he was \"really\" listening, as if that would fix everything. I thought support was about a presence in the room. But now I know that even if someone were sitting in that plastic chair next to me, I might still feel isolated if they didn't *really* see the weight I’m carrying. \n\nThe absence isn’t just about a person not being there; it’s about the absence of a witness. There’s no one to hold my hand when I’m scared, no one to help me remember the doctor’s instructions when I’m too stressed to process them, and no one to share the burden of the financial decisions. I’m the only one who knows the full truth of how hard this is. And in those moments, the clinic room feels so vast, and I feel so incredibly small.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 7988,
+      "output_tokens": 310
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q15",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "I keep looking at these pamphlets they give me—you know, the ones with the smiling, nuclear families on the front, living in these bright, clean, suburban homes. I used to be the one handing those out, thinking I was providing \"helpful resources.\" Now, when I see them sitting on my kitchen counter, they feel less like information and more like a reminder of what I don’t have. \n\nThere’s this gap between the reality of being a pregnant woman on a limited income and the idealized version of maternity care these clinics seem to cater to. I’m not saying they don't *try*, but their \"try\" is so superficial. It’s like they have a script for how to deal with the medical stuff, but they have absolutely no language for the life stuff. \n\nWhen I’m in that office, I’m constantly calculating. If I ask for a referral, does that mean more co-pays? If I mention I’m having trouble sleeping because I’m worried about rent, will they just write me a prescription or will they actually hear me? Most of the time, I stay quiet. I’ve learned that the \"system\" is best navigated by being the quiet, agreeable patient who doesn't ask for much. \n\nBut God, it wears you down. I just want someone to look at me—not at my chart, not at my blood pressure, but *at me*—and just say, \"I know you're doing this by yourself, and you're doing a hell of a job.\" Because right now, I don't feel like a person. I feel like a task they have to complete before they can get to the next one. And that’s a hard way to walk through the most vulnerable, beautiful, terrifying months of your life.",
+      "responding_to_question_id": "Q15",
+      "input_tokens": 8306,
+      "output_tokens": 378
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "I think the only thing I’d add is that I don’t want to be painted as a martyr, or even just a \"struggling\" statistic. I’m a person who spent years *being* the professional, and I know exactly where the seams are failing. \n\nIf there’s one thing I wish people in maternity care would realize, it’s that \"low risk\" does not mean \"low maintenance\" in terms of human needs. We have this habit of assuming that if the pregnancy is medically straightforward, the woman must be doing fine. But the reality is that the logistical, financial, and emotional weight of pregnancy for someone in my position is a full-time, high-stress job in itself. \n\nI’m carrying this baby, I’m working, I’m managing a household on a shoestring budget, and I’m navigating a healthcare system that views me as a collection of data points. It’s an enormous amount of work, and it’s happening entirely in the shadows of those fifteen-minute appointments. \n\nI just want the people in those white coats to realize that every patient has a \"behind-the-scenes\" life that’s just as important as the fetal heartbeat monitor. If they could just acknowledge that—if they could just stop seeing \"low risk\" as a reason to look away and start seeing it as an opportunity to actually connect—that would change everything. Because right now, I’m not just a patient. I’m a woman trying to build a future, and I’m doing it, for better or worse, entirely on my own.",
+      "responding_to_question_id": null,
+      "input_tokens": 8740,
+      "output_tokens": 336
+    }
+  ],
+  "metadata": {
+    "total_turns": 46,
+    "questions_asked": 15,
+    "probes_deployed": 6,
+    "adaptive_followups": 0,
+    "total_input_tokens": 106161,
+    "total_output_tokens": 7755,
+    "estimated_cost_usd": 0.1217,
+    "duration_seconds": 68.5,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 245
+  },
+  "errors": []
+}

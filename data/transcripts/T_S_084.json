@@ -1,0 +1,360 @@
+{
+  "session_id": "S_084",
+  "status": "completed",
+  "persona_id": "comp_071",
+  "persona_name": "Chasity",
+  "persona_journey_stage": "postpartum",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 3,
+  "questionnaire_strategy": "Scenario-Based / Critical Incident",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T00:50:28.841569",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Chasity, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're adjusting to life after having your baby, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts slightly in the chair, glancing over at the bassinet before looking back*\n\nYeah, of course. I mean, thank you for asking. It's... it's actually kind of nice to talk about this with someone who's not just assuming I've got it all figured out, you know?\n\n*fidgets with the edge of my sleeve*\n\nSo, Leo's almost two weeks old now, and honestly? It's been this weird mix of things. Like, on one hand, I work in neonatal screening, so I know what to look for, and that should be reassuring, right? But it's actually kind of a curse sometimes. I find myself obsessing over stuff that probably doesn't matter—like I'll notice his skin has this slight yellowing and my brain just spirals into all the bilirubin protocols I know about.\n\n*laughs a little, but it sounds tired*\n\nThe medical team treated my discharge like it was... routine. Which I guess it was, medically speaking. I'm young, healthy, low-risk. But being unmarried here in Orange, and honestly, trying to figure out how to balance being a mom with going back to work? That part didn't come with a discharge packet, you know?\n\n*pauses, picking at a thread*\n\nI think what I'm struggling with most is that I can't just be a normal new mom who trusts the process. I know too much about what can go wrong. So I'm caught between being grateful that Leo's healthy and absolutely terrified that I'm missing something obvious.\n\nDoes that make sense?",
+      "responding_to_question_id": null,
+      "input_tokens": 825,
+      "output_tokens": 342
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine it's your first night at home with your newborn after being discharged from hospital. You're exhausted, possibly in pain, and your baby won't settle. What does that night feel like, and who — if anyone — is there with you?",
+      "question_id": "V3_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes get a little glassy, and I look down at my hands*\n\nOh man. That night was... it was really hard, actually.\n\n*takes a breath*\n\nI came home to this quiet house, and it was just me and Leo. My mom had to get back — she works shifts at the hospital, and she'd already taken time off for the birth. My dad's not really in the picture, and Leo's dad... we're not together. He was supportive during the pregnancy, but he's got his own stuff going on, and honestly, I didn't want to ask him to stay. I guess I thought I could just handle it on my own.\n\n*voice gets quieter*\n\nBut that first night, Leo wouldn't stop crying. I was bleeding through pads faster than I expected, my stitches were on fire, and every time I'd get him settled and try to lie down, he'd start up again. And my brain kept doing this thing where I'd recognize the cry patterns — was it hunger? Discomfort? Gas? — and I couldn't just turn that off. I was analyzing instead of just... being present.\n\n*rubs eyes tiredly*\n\nAround 3 AM, I called my colleague from work. Not for medical advice — just to hear someone say it was normal. That I wasn't failing. I think what hurt most wasn't the physical pain. It was the loneliness of it. Like, I'm supposed to know what I'm doing, so nobody checked in to see if I actually needed help.\n\n*looks up*\n\nI should've asked for it.",
+      "responding_to_question_id": "V3_POST_Q01",
+      "input_tokens": 1224,
+      "output_tokens": 348
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "When you were discharged, how prepared did you feel for what was actually waiting for you at home — and what was the biggest gap between what you expected and what you found?",
+      "question_id": null,
+      "probe_id": "V3_POST_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "structural_barriers",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans back, thinking for a moment*\n\nYou know, I thought I was more prepared than I actually was. Like, I've watched countless mothers come through the hospital, heard their stories, seen the screening protocols... I figured I had the clinical side down. But there's this massive difference between knowing something intellectually and living it.\n\n*rubs face*\n\nI expected the physical recovery to be manageable. I work in healthcare, so pain and bleeding and stitches — I get it. What I didn't expect was how *alone* that would feel. The hospital team discharged me like I was just another low-risk case, which I am, but they didn't ask about my support system. Nobody said, \"Hey, you're a single mom in a small town. Do you have people?\" They just... assumed I'd be fine because I'm a nurse.\n\n*voice tightens*\n\nAnd the emotional part? That blindsided me. I thought I'd feel this immediate bonding, this instinctive joy. And I do love Leo — it's fierce and terrifying. But I also felt this crushing responsibility and anxiety that nobody really prepared me for. Like, I can screen for metabolic disorders, but nobody taught me how to handle the postpartum OCD spiral where I'm checking if he's breathing every five minutes.\n\n*looks directly at you*\n\nThe biggest gap was that I needed someone to treat me like a vulnerable person, not a competent professional. I needed permission to be scared and struggling. Instead, I got discharged like I had all the answers. Turns out, knowing the answers and knowing what to *do* are completely different things.",
+      "responding_to_question_id": "V3_POST_Q01_P01",
+      "input_tokens": 1611,
+      "output_tokens": 359
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're trying to breastfeed for the first time and it isn't going as you hoped. A midwife visits and watches you try, then offers advice. Describe what that moment feels like, physically and emotionally.",
+      "question_id": "V3_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, crossing arms*\n\nOh God, yeah. That was... that was really hard.\n\n*takes a shaky breath*\n\nSo the midwife came by on day three, and Leo was latching but it wasn't right. I could feel it — like this sharp, shooting pain that made me want to cry every time he'd suck. And I'm sitting there topless, leaking, my nipples are cracked, and this woman is watching me try to do something that's supposed to be the most natural thing in the world, except it feels like failure.\n\n*voice gets quieter*\n\nThe worst part? I *knew* what was wrong. I could feel the latch was shallow, and I've explained proper latch to a hundred mothers. So while the midwife's giving me tips — which were good, they were helpful — there's this voice in my head screaming that I should already know this. That I shouldn't need help. That I'm a nurse and I'm failing at the most basic thing.\n\n*looks away*\n\nPhysically, it was excruciating. But emotionally? I felt so small. So ashamed. She was kind — genuinely kind — but I couldn't accept that kindness because it meant admitting I didn't have it figured out. I remember her saying, \"This is hard for everyone,\" and I just nodded and pretended to listen while internally falling apart.\n\n*touches chest*\n\nI think what I needed in that moment wasn't just advice. I needed someone to say it was okay to struggle. To name that the gap between knowing and doing is real and valid.",
+      "responding_to_question_id": "V3_POST_Q02",
+      "input_tokens": 2023,
+      "output_tokens": 355
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine it's six weeks after birth. You're sitting in the GP surgery for your postnatal check. The appointment lasts ten minutes. What do you hope will happen in that room — and what does happen?",
+      "question_id": "V3_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, but there's bitterness in it*\n\nOh man, the six-week check. Yeah, that was... that was exactly what I expected, which is the problem.\n\n*settles back*\n\nGoing in, I had this tiny hope, you know? That someone would actually *ask* how I'm doing. Not the clinical stuff — the real stuff. Like, are you sleeping? Are you okay mentally? Do you feel supported? Because by six weeks, I'm back at work part-time, trying to pump between patients, my stitches are healed but I'm still bleeding a little, and I haven't slept more than two hours straight in... I don't even know how long.\n\n*voice gets quieter*\n\nBut the GP checked my blood pressure, asked if I was bleeding — which, fine, that's important — and then asked if I had questions. That was it. Ten minutes. He didn't ask about my mood. Didn't ask if I was struggling with intrusive thoughts about something happening to Leo. Didn't ask if being back at work while pumping was actually sustainable or if I was drowning.\n\n*looks up, frustrated*\n\nWhat actually happened was he cleared me for \"normal activity\" and sent me on my way. I think he saw \"healthy young nurse\" and thought that meant everything was fine. But healthy and fine are not the same thing.\n\n*voice cracks slightly*\n\nI wanted someone to see that I was holding it together by a thread. Instead, I got a ten-minute box check and a pat on the back.",
+      "responding_to_question_id": "V3_POST_Q03",
+      "input_tokens": 2426,
+      "output_tokens": 342
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there things you wanted to raise — about your mental health, your relationship, your body, or your sense of yourself — that the appointment didn't create space for?",
+      "question_id": null,
+      "probe_id": "V3_POST_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes get watery, and I have to pause for a moment*\n\nYeah. Yeah, there were.\n\n*voice is shaky*\n\nI wanted to talk about how I'm not sleeping even when Leo sleeps, because my brain won't shut off. I'm running through worst-case scenarios — SIDS, undiagnosed metabolic disorders that somehow slipped through screening, everything. And I know it's irrational, but knowing it's irrational doesn't make it stop. I wanted to ask if that was normal or if I needed help.\n\n*wipes eyes quickly*\n\nAnd my body... I wanted to talk about how disconnected I feel from it. Like, I grew this baby, my body did this incredible thing, but now I look in the mirror and I don't recognize myself. I'm leaking from places, my stomach is soft in a way that terrifies me, and I can't reconcile the nurse who knows anatomy with the woman who feels like a stranger in her own skin.\n\n*voice drops*\n\nBut mostly? I wanted to talk about Leo's dad. About how lonely it is to do this alone, even though it was my choice. About how I see other families and feel this sharp ache that nobody warned me about. The GP didn't even ask about my support system or my relationship status beyond \"any concerns at home?\" Like that was a box to tick.\n\n*looks directly at you*\n\nI think what I needed was for someone to say, \"This is really hard and you don't have to pretend you have it together.\" Instead, I left that appointment feeling more invisible than ever.",
+      "responding_to_question_id": "V3_POST_Q03_P01",
+      "input_tokens": 2805,
+      "output_tokens": 350
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're lying awake at 3am with your baby, and you find yourself feeling a deep sadness or flatness that you can't quite name. You pick up your phone. What do you do with it?",
+      "question_id": "V3_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*pulls knees up slightly, hugging myself*\n\nI... I scroll. That's what I do.\n\n*voice is small*\n\nI open my phone and I look at Instagram, and I see all these other new moms looking radiant and posting about how blessed they are, and I feel even worse. Like, what's wrong with me that I'm not feeling that? Leo's healthy, I'm healthy, I have a job, I have skills... so why do I feel like I'm drowning?\n\n*fidgets with phone*\n\nSometimes I'll look up postpartum depression symptoms, but then I convince myself I don't have it because I'm not actively suicidal or anything. I'm functional. I go to work, I feed Leo, I do the things. So it's not that bad, right? It's just... sadness. Or tiredness. Or the weight of everything catching up.\n\n*voice gets quieter, more vulnerable*\n\nSometimes I text my colleague at like 3 AM asking stupid questions about feeding or sleep, and she usually doesn't respond until morning. I think I'm looking for permission to feel bad without actually saying \"I feel bad.\" Like if I frame it as a clinical question, it's legitimate.\n\n*looks down*\n\nI haven't called my doctor. I haven't told anyone this specific feeling because... I guess I'm scared. Scared they'll think I can't handle being a mom. Scared they'll judge me for struggling when I'm supposed to know better. Scared that saying it out loud makes it real.\n\n*pause*\n\nSo I just lie there in the dark and scroll until I'm too exhausted to think.",
+      "responding_to_question_id": "V3_POST_Q04",
+      "input_tokens": 3205,
+      "output_tokens": 361
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What were you looking for in those late-night searches or scrolling — reassurance, connection, information, or something else?",
+      "question_id": null,
+      "probe_id": "V3_POST_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits quietly for a moment, really thinking about this*\n\nI think... I was looking for proof that I wasn't broken.\n\n*voice is hesitant*\n\nLike, if I could find enough posts or articles saying \"this is normal, other moms feel this way,\" then maybe I wouldn't have to actually admit something was wrong. I could just tell myself, \"See? Everyone feels flat and sad at 3 AM. This is just postpartum life.\" And then I could keep going without having to ask for help or be vulnerable about it.\n\n*rubs eyes*\n\nBut also, I was looking for a way out that didn't involve talking to anyone. Because talking to someone means I have to say the words out loud, and once I say them, they become real. They become something I have to deal with instead of just... existing in this gray space where I'm functioning but not actually living.\n\n*voice cracks slightly*\n\nAnd honestly? I think I was looking for permission. Permission to not be okay without it being a crisis. Like, I wanted someone — anyone — to say, \"You can struggle and still be a good mom. You can struggle and still be a good nurse.\" But scrolling at 3 AM doesn't give you that. It just makes you feel more alone because you're reading about other people's highlight reels instead of their actual pain.\n\n*looks up, tears in eyes*\n\nI was searching for connection while actively isolating myself. Which, now that I say it out loud, sounds pretty messed up, doesn't it?",
+      "responding_to_question_id": "V3_POST_Q04_P01",
+      "input_tokens": 3595,
+      "output_tokens": 337
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine your partner has returned to work and you're alone with your baby for the first full day. Describe that day — not just the logistics, but the emotional texture of it.",
+      "question_id": "V3_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, looking confused for a moment*\n\nActually... there isn't a partner to return to work. That's kind of the thing.\n\n*shifts uncomfortably*\n\nLeo's dad and I, we're not together. He was supportive during pregnancy, came to some appointments, but we're not in a relationship. So there was no \"partner returning to work\" moment. It was just... me, alone, from day one.\n\n*voice gets quieter*\n\nI think that's partly why that first full day alone hit so hard. There was no transition period where someone else took over for a few hours. No sense of \"okay, we're dividing this.\" It was just me and this tiny human who needed everything, and I was the only one there to give it.\n\n*looks down*\n\nI remember the day my mom left after staying those first few days. I stood at the window watching her car pull away, and I felt this panic rise in my chest. Like, what if Leo cries and I can't figure out why? What if I fall asleep and something happens? What if I mess up?\n\n*voice wavers*\n\nThe emotional texture was lonely. Really, really lonely. I was going through the motions — changing diapers, feeding, soothing — but underneath it all was this constant undertone of fear and isolation. And guilt, because I kept thinking about how Leo deserved better than just me fumbling through this alone.\n\n*meets your eyes*\n\nNobody really acknowledges how different that experience is.",
+      "responding_to_question_id": "V3_POST_Q05",
+      "input_tokens": 3973,
+      "output_tokens": 331
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're approaching your return to work. You're thinking about how you'll explain to your employer what the last few months have involved, and whether your job will still fit who you are now. What's that internal conversation like?",
+      "question_id": "V3_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a long breath, looking anxious*\n\nOh God, that's... that's what keeps me up at night now, actually.\n\n*runs hand through hair*\n\nSo I work in neonatal screening at the hospital, right? I love that work. But going back feels impossible in this weird way I didn't expect. Like, I'm supposed to walk in there and be the professional who explains to parents why their baby's heel prick matters, and I'm doing that while my own breasts are leaking through my scrubs because I haven't pumped in four hours.\n\n*voice gets tight*\n\nThe internal conversation is basically me arguing with myself. One part's like, \"You can do this. You're a good nurse. You know this job.\" But the other part is screaming, \"How are you supposed to focus on someone else's metabolic screening results when you're terrified about your own baby? How do you leave him for eight hours?\"\n\n*looks away*\n\nAnd I can't really explain that to my employer without sounding... I don't know, unprofessional? Unstable? Like, I can't say, \"Hey, I'm struggling with intrusive thoughts and I'm exhausted and I'm not sure I can be present at work.\" That feels like admitting I can't handle being both a mom and a nurse.\n\n*voice cracks*\n\nBut honestly? I'm not sure who I am anymore. I was the competent one. The one who knew things. Now I'm just... fragmented. Half my brain is at work, half is with Leo, and neither half feels complete.\n\n*pause*\n\nI'm scared they'll see I've changed and realize I'm not the person they hired.",
+      "responding_to_question_id": "V3_POST_Q06",
+      "input_tokens": 4355,
+      "output_tokens": 374
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're at a new parents' group for the first time, surrounded by other people who have also recently given birth. You notice yourself comparing your experience to theirs. What comes up for you in that room?",
+      "question_id": "V3_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, wrapping arms around myself*\n\nI actually... I haven't gone to one. I know I should, but I haven't.\n\n*looks down*\n\nI think part of me is terrified of what I'd feel in that room. Because I already do the comparison thing in my head constantly, and being in a room full of other new moms would just amplify it. Like, I'd see someone breastfeeding easily and think about my cracked nipples. I'd hear about their supportive partners and feel that sharp ache about doing this alone.\n\n*voice gets quieter*\n\nAnd then there's the nurse thing. Everyone would probably know who I am or what I do, and I'd feel like I have to perform competence. Like I can't just sit there and admit I'm struggling because then people would wonder, \"Isn't she supposed to know better?\" There's this expectation in a small town that you should have your shit together if you work in healthcare.\n\n*picks at cuticle*\n\nBut also, I think I'd compare myself upward, you know? I'd sit there thinking everyone else has it more figured out than me. That their sadness is situational and mine is... something else. Something wrong. And then I'd feel even more isolated because I'd be convinced I'm the only one actually failing at this.\n\n*looks up, vulnerable*\n\nHonestly? I think going to a group would make me feel more alone, not less. Because I'd be surrounded by people and still unable to actually connect. Still unable to say the real stuff.\n\n*pause*\n\nMaybe that's something I need to work on.",
+      "responding_to_question_id": "V3_POST_Q07",
+      "input_tokens": 4777,
+      "output_tokens": 360
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a moment, collecting thoughts, eyes getting watery again*\n\nYeah, actually. There is something.\n\n*voice is shaky*\n\nI think what I wish someone had told me is that being knowledgeable doesn't protect you from being vulnerable. I spent so much time thinking that because I understand the medical side, I'd be fine. That knowing the risks meant I could prevent the pain. But that's not how this works.\n\n*wipes eyes*\n\nAnd I wish someone had asked me directly — not in a checkbox way — if I was okay. Not \"any concerns?\" but actually sitting with me and saying, \"This is really hard. What do you need?\" Because I don't know how to ask for help. I don't know how to admit that I'm drowning without feeling like I'm failing at the one thing I'm supposed to be naturally good at.\n\n*voice cracks*\n\nLeo is almost two weeks old and I love him so much it terrifies me. But I'm also scared that I'm already messing him up by not being present enough, by being too anxious, by being alone. And nobody's really talked to me about that — the guilt, the fear, the way motherhood has completely dismantled who I thought I was.\n\n*looks directly at you*\n\nI think what maternity care needs is to see the whole person, not just the patient. To understand that a young, unmarried, competent nurse still needs support. That we're all fragile in this moment, even the ones who are supposed to know better.\n\n*pause*\n\nThat's what I wish had happened.",
+      "responding_to_question_id": null,
+      "input_tokens": 5193,
+      "output_tokens": 349
+    }
+  ],
+  "metadata": {
+    "total_turns": 24,
+    "questions_asked": 7,
+    "probes_deployed": 3,
+    "adaptive_followups": 0,
+    "total_input_tokens": 36012,
+    "total_output_tokens": 4208,
+    "estimated_cost_usd": 0.0444,
+    "duration_seconds": 63.5,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers"
+    ],
+    "catch_all_response_length": 258
+  },
+  "errors": []
+}

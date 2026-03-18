@@ -1,0 +1,1595 @@
+{
+  "persona_id": "comp_095",
+  "persona_name": "Laronda",
+  "journey_stage": "third_trimester",
+  "risk_level": "high",
+  "vulnerability_flags": [
+    "fear_of_childbirth",
+    "high_risk_medical",
+    "previous_trauma"
+  ],
+  "complications": [
+    "pre_eclampsia"
+  ],
+  "relevant_phases": [
+    "birth",
+    "pregnancy"
+  ],
+  "base_question_count": 34,
+  "adapted_question_count": 21,
+  "filtered_out": 13,
+  "added_probes": 27,
+  "questions": [
+    {
+      "question_id": "V3_PREG_Q01",
+      "version": 3,
+      "journey_phase": "pregnancy",
+      "question_text": "Imagine it's the morning after you've taken a positive pregnancy test. Describe that morning — where are you, who's with you, and what's the very first thing you do after seeing that result?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREG_Q01_P01",
+          "probe_text": "When you decided who to tell first — or whether to tell anyone at all — what was behind that decision? What felt safe or risky about sharing the news?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q01_P02",
+          "probe_text": "What was the mix of emotions you were navigating that morning — and were any of them ones you hadn't expected to feel?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q01_P03",
+          "probe_text": "When you thought about contacting a midwife or GP to register the pregnancy, what did you actually know about the process, and how did you find out what to do?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "What has it been like having more frequent monitoring and specialist appointments?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "probe_id": "V3_PREG_Q01_UNIV_04",
+          "source": "universal_adaptation"
+        },
+        {
+          "probe_text": "How has your medical risk status changed how you relate to your care team?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "trust_distrust"
+          ],
+          "probe_id": "V3_PREG_Q01_UNIV_05",
+          "source": "universal_adaptation"
+        },
+        {
+          "probe_text": "Have your past experiences ever made medical appointments or examinations feel difficult?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "dignity_respect",
+            "body_image_autonomy"
+          ],
+          "probe_id": "V3_PREG_Q01_UNIV_06",
+          "source": "universal_adaptation"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "goals_expectations"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "responsiveness"
+      ],
+      "target_latent_dimensions": [
+        "identity_tensions",
+        "informal_care_networks"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "77386006"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V3_PREG_Q02",
+      "version": 3,
+      "journey_phase": "pregnancy",
+      "question_text": "Imagine you're at your 20-week anomaly scan. The sonographer goes quiet for a moment and says they need to take a closer look at something. What goes through your mind in that silence, and how do you respond in the room?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREG_Q02_P01",
+          "probe_text": "In that moment, how much did you feel like you could ask questions or speak up — or did something stop you? What shaped that?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q02_P02",
+          "probe_text": "After leaving the scan, where did you turn for information or support while waiting for more news? How helpful were those sources?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q02_P03",
+          "probe_text": "If you think about the way information was communicated to you during that scan — or in the days after — what would you have wanted to be different?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "What has it been like having more frequent monitoring and specialist appointments?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "probe_id": "V3_PREG_Q02_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "How has being labelled 'high-risk' affected your feelings about the pregnancy?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "power_dynamics"
+          ],
+          "probe_id": "V3_PREG_Q02_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "Do you feel the level of medical attention has been reassuring or anxiety-inducing?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "autonomy_vs_dependence"
+          ],
+          "probe_id": "V3_PREG_Q02_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "hcp_interactions",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V3_PREG_Q03",
+      "version": 3,
+      "journey_phase": "pregnancy",
+      "question_text": "Imagine you've just been offered the option of a screening test for a chromosomal condition. The midwife explains the test briefly and asks if you'd like to go ahead. How does that conversation feel, and how do you make your decision?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREG_Q03_P01",
+          "probe_text": "Did you feel you had enough time and information to make that decision freely — or did you sense any pressure, either to accept or decline?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q03_P02",
+          "probe_text": "Who else, if anyone, did you consult before deciding — and what did those conversations add that the clinical information didn't?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "intergenerational_patterns"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q03_P03",
+          "probe_text": "Did your own values, beliefs, or prior experiences shape how you approached this decision in a way that the midwife may not have been aware of?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "What has it been like having more frequent monitoring and specialist appointments?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "probe_id": "V3_PREG_Q03_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "How has being labelled 'high-risk' affected your feelings about the pregnancy?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "power_dynamics"
+          ],
+          "probe_id": "V3_PREG_Q03_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "Do you feel the level of medical attention has been reassuring or anxiety-inducing?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "autonomy_vs_dependence"
+          ],
+          "probe_id": "V3_PREG_Q03_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "decision_making",
+        "hcp_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "assurance",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "77386006"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk",
+        "if_language_barrier"
+      ]
+    },
+    {
+      "question_id": "V3_PREG_Q04",
+      "version": 3,
+      "journey_phase": "pregnancy",
+      "question_text": "Imagine you're 28 weeks pregnant and you receive a call from a midwife you've never met before, telling you about a result from your routine blood test. This is the third different midwife you've spoken to this pregnancy. How does that feel, and what does it mean for how you receive that information?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREG_Q04_P01",
+          "probe_text": "Can you describe what it's been like to build a picture of your care across different midwives and appointments — has anything fallen through the cracks?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q04_P02",
+          "probe_text": "How does it affect the way you communicate when you're speaking with someone who doesn't know your history? Do you find yourself editing what you say?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q04_P03",
+          "probe_text": "What would consistent care from one midwife have meant to you during this pregnancy — practically and emotionally?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "What has it been like having more frequent monitoring and specialist appointments?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "probe_id": "V3_PREG_Q04_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "How has being labelled 'high-risk' affected your feelings about the pregnancy?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "power_dynamics"
+          ],
+          "probe_id": "V3_PREG_Q04_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "Do you feel the level of medical attention has been reassuring or anxiety-inducing?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "autonomy_vs_dependence"
+          ],
+          "probe_id": "V3_PREG_Q04_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_thematic_areas": [
+        "hcp_interactions",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "reliability",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "continuity_of_care",
+        "trust_distrust"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "69896004"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk",
+        "if_rural"
+      ]
+    },
+    {
+      "question_id": "V3_PREG_Q05",
+      "version": 3,
+      "journey_phase": "pregnancy",
+      "question_text": "Imagine it's 2am and you're 32 weeks pregnant. You've noticed something that worries you — reduced fetal movements. You're not sure whether to call the hospital or wait until morning. Walk me through what you're thinking and what you do.",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREG_Q05_P01",
+          "probe_text": "What made it hard to decide whether to call — was it uncertainty about whether your concern was 'serious enough,' worry about being dismissed, or something else entirely?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q05_P02",
+          "probe_text": "If you searched online or messaged anyone during that 2am window — what were you hoping to find, and what did you actually find?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q05_P03",
+          "probe_text": "When you did make contact — with the hospital, a midwife, or anyone else — how were you received? Did it affect your willingness to call again in a future moment of concern?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "What has it been like having more frequent monitoring and specialist appointments?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "probe_id": "V3_PREG_Q05_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "How has being labelled 'high-risk' affected your feelings about the pregnancy?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "power_dynamics"
+          ],
+          "probe_id": "V3_PREG_Q05_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "Do you feel the level of medical attention has been reassuring or anxiety-inducing?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "autonomy_vs_dependence"
+          ],
+          "probe_id": "V3_PREG_Q05_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "risks_barriers",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "responsiveness",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "48194001"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk",
+        "if_rural",
+        "if_language_barrier"
+      ]
+    },
+    {
+      "question_id": "V3_PREG_Q06",
+      "version": 3,
+      "journey_phase": "pregnancy",
+      "question_text": "Imagine you've been diagnosed with gestational diabetes midway through your pregnancy. Your midwife hands you a leaflet and refers you to a dietitian. Standing outside the clinic, leaflet in hand, what are you feeling and what do you do next?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREG_Q06_P01",
+          "probe_text": "What questions did you have in that moment that the leaflet didn't answer — and where did you go to find those answers?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q06_P02",
+          "probe_text": "How did the diagnosis change how you felt about your body and your pregnancy — and were those feelings acknowledged by your care team?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "body_image_autonomy",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q06_P03",
+          "probe_text": "Were there practical barriers — time, cost, access, language — that made managing the diagnosis harder than it needed to be?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "risks_barriers",
+        "hcp_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "reliability",
+        "tangibles"
+      ],
+      "target_latent_dimensions": [
+        "structural_barriers",
+        "body_image_autonomy"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "11687002",
+        "77386006"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_gestational_diabetes",
+        "if_language_barrier"
+      ]
+    },
+    {
+      "question_id": "V3_PREG_Q07",
+      "version": 3,
+      "journey_phase": "pregnancy",
+      "question_text": "Imagine you're scrolling through a pregnancy forum late at night and you come across a thread full of birth horror stories. You can't stop reading. What's drawing you in, and what do you do with those feelings afterwards?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_PREG_Q07_P01",
+          "probe_text": "After reading stories like that, did you find yourself raising your concerns with a midwife or doctor — or did you hold onto them quietly? What made you decide either way?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q07_P02",
+          "probe_text": "How do you weigh information you find online against what your care team tells you — and are there moments when they conflict?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_PREG_Q07_P03",
+          "probe_text": "Were there fears building during your pregnancy that you feel weren't really picked up or addressed in your antenatal appointments?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "dignity_respect"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "digital_information",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "digital_information_seeking",
+        "trust_distrust"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "386639001"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V3_BIRTH_Q01",
+      "version": 3,
+      "journey_phase": "birth",
+      "question_text": "Imagine you've written a birth plan and you arrive at the labour ward. The midwife who receives you glances at your plan briefly, sets it aside, and moves on to routine checks. How does that moment land for you?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_BIRTH_Q01_P01",
+          "probe_text": "What had you put into that birth plan — and what had you hoped it would communicate about you, beyond the practical preferences?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q01_P02",
+          "probe_text": "In that moment, did you say anything — or did you let it go? What shaped your response?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q01_P03",
+          "probe_text": "Looking back, how much of what you'd hoped for from your birth actually happened — and for the parts that didn't, how have you made sense of that?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "What has it been like having more frequent monitoring and specialist appointments?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "probe_id": "V3_BIRTH_Q01_UNIV_04",
+          "source": "universal_adaptation"
+        },
+        {
+          "probe_text": "How has your medical risk status changed how you relate to your care team?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "trust_distrust"
+          ],
+          "probe_id": "V3_BIRTH_Q01_UNIV_05",
+          "source": "universal_adaptation"
+        },
+        {
+          "probe_text": "Have your past experiences ever made medical appointments or examinations feel difficult?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "dignity_respect",
+            "body_image_autonomy"
+          ],
+          "probe_id": "V3_BIRTH_Q01_UNIV_06",
+          "source": "universal_adaptation"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "agency_disempowerment",
+        "hcp_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V3_BIRTH_Q02",
+      "version": 3,
+      "journey_phase": "birth",
+      "question_text": "Imagine you're in established labour and the pain is much more intense than you'd anticipated. A midwife suggests an epidural, but you had wanted to manage without one. What happens inside you in that moment, and how do you decide?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_BIRTH_Q02_P01",
+          "probe_text": "In that moment of intense pain, how clear-headed did you feel in making that decision — and do you feel you had what you needed to make a genuinely free choice?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q02_P02",
+          "probe_text": "Was your partner or birth companion able to support you in that moment — and did the staff include them in the conversation?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "partner_role",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q02_P03",
+          "probe_text": "Afterwards, how did you feel about the choice you made — or had made for you — regarding pain relief? Has that feeling changed over time?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "body_image_autonomy",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "What has it been like having more frequent monitoring and specialist appointments?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "probe_id": "V3_BIRTH_Q02_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "How has being labelled 'high-risk' affected your feelings about the pregnancy?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "power_dynamics"
+          ],
+          "probe_id": "V3_BIRTH_Q02_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "Do you feel the level of medical attention has been reassuring or anxiety-inducing?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "autonomy_vs_dependence"
+          ],
+          "probe_id": "V3_BIRTH_Q02_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "decision_making",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "responsiveness"
+      ],
+      "target_latent_dimensions": [
+        "autonomy_vs_dependence",
+        "body_image_autonomy"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V3_BIRTH_Q03",
+      "version": 3,
+      "journey_phase": "birth",
+      "question_text": "Imagine your labour has stalled and the obstetric team is recommending an emergency caesarean. Things start moving very quickly. Walk me through what that experience was like from the moment they told you.",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_BIRTH_Q03_P01",
+          "probe_text": "In that rapid sequence of events, did you ever feel that things were happening to your body without your full understanding or agreement? What stands out?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q03_P02",
+          "probe_text": "Was there a particular person — a midwife, doctor, your partner, or anyone else — who made you feel anchored in that situation? What did they do that helped?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "partner_role"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q03_P03",
+          "probe_text": "In the hours and days after, was there any space given to process what had happened — was anyone from the clinical team available to debrief with you?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "What has it been like having more frequent monitoring and specialist appointments?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "probe_id": "V3_BIRTH_Q03_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "How has being labelled 'high-risk' affected your feelings about the pregnancy?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "power_dynamics"
+          ],
+          "probe_id": "V3_BIRTH_Q03_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "Do you feel the level of medical attention has been reassuring or anxiety-inducing?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "autonomy_vs_dependence"
+          ],
+          "probe_id": "V3_BIRTH_Q03_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "agency_disempowerment",
+        "hcp_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "assurance",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "power_dynamics",
+        "dignity_respect"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "200839001",
+        "15394000"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V3_BIRTH_Q04",
+      "version": 3,
+      "journey_phase": "birth",
+      "question_text": "Imagine your birth companion has been asked to wait outside the room for a clinical procedure. You're left alone with staff you've only just met. Describe what that moment feels like and what you most need in those minutes.",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_BIRTH_Q04_P01",
+          "probe_text": "In moments like that — without your companion present — how did the behaviour of the clinical staff either compensate for that absence or make it feel more acute?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "partner_role"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q04_P02",
+          "probe_text": "Were there things you wish you had been able to say or ask for in those moments but couldn't? What got in the way?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q04_P03",
+          "probe_text": "How did your experience of the physical environment — the room, the equipment, the sound and light — affect how safe or unsafe you felt?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "body_image_autonomy",
+            "structural_barriers"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "informal_caregiver_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "tangibles"
+      ],
+      "target_latent_dimensions": [
+        "partner_role",
+        "dignity_respect"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V3_BIRTH_Q05",
+      "version": 3,
+      "journey_phase": "birth",
+      "question_text": "Imagine it's the immediate aftermath of birth — your baby has arrived, and the room begins to shift from the intensity of labour. Walk me through the next thirty minutes as you experienced them, or as you imagine them.",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_BIRTH_Q05_P01",
+          "probe_text": "Were there moments in those first minutes where you felt the clinical team's priorities and your own were pulling in different directions? What happened?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q05_P02",
+          "probe_text": "How were your preferences about skin-to-skin contact, cord clamping, or first feeding handled — and to what extent did those preferences feel respected in the moment?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q05_P03",
+          "probe_text": "Looking back, is there something that happened — or didn't happen — in those first thirty minutes that you still think about? What is it, and why does it stay with you?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "trust_distrust"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "hcp_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "dignity_respect",
+        "identity_tensions"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V3_BIRTH_Q06",
+      "version": 3,
+      "journey_phase": "birth",
+      "question_text": "Imagine you had a particular fear about childbirth — something that had been building throughout your pregnancy. Now picture yourself facing that specific fear during labour. What was it like, and what — if anything — helped?",
+      "question_type": "scenario",
+      "probes": [
+        {
+          "probe_id": "V3_BIRTH_Q06_P01",
+          "probe_text": "Had you ever been able to share that fear openly with anyone in your care team during pregnancy? If so, how was it received — and if not, what stopped you?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q06_P02",
+          "probe_text": "Did that fear connect to anything in your personal history — previous experiences of hospitals, medical procedures, or experiences of loss?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V3_BIRTH_Q06_P03",
+          "probe_text": "In the moment of facing that fear, what did you most need from the people around you — and did you get it?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "What has it been like having more frequent monitoring and specialist appointments?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "probe_id": "V3_BIRTH_Q06_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "How has being labelled 'high-risk' affected your feelings about the pregnancy?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "power_dynamics"
+          ],
+          "probe_id": "V3_BIRTH_Q06_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        },
+        {
+          "probe_text": "Do you feel the level of medical attention has been reassuring or anxiety-inducing?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "autonomy_vs_dependence"
+          ],
+          "probe_id": "V3_BIRTH_Q06_EHR_RISK",
+          "source": "ehr_risk",
+          "trigger": "high_risk"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "trust_distrust",
+        "intergenerational_patterns"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "386639001",
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_miscarriage_history",
+        "if_high_risk"
+      ]
+    },
+    {
+      "id": "V3_GAP_Q01",
+      "version": "V3_GAP",
+      "register": "empathetic_situational",
+      "question_type": "scenario",
+      "phase": "preconception",
+      "thematic_targets": [
+        "decision_making"
+      ],
+      "latent_dimensions": [
+        "autonomy_vs_dependence",
+        "intergenerational_patterns",
+        "partner_role",
+        "power_dynamics"
+      ],
+      "text": "Imagine you are seriously considering starting a family and you share this with your partner and your closest family members — perhaps a parent or sibling. Their reactions are strong and very different from each other: your partner has clear ideas about timing that don't fully align with yours, and a parent shares their own experience of when they had children, perhaps implying you should follow a similar path. Can you walk me through how you would navigate that situation — whose voice would carry the most weight in your final decision, and why?",
+      "probes": [
+        {
+          "probe_text": "In that moment, how much of the decision would feel truly yours versus shaped by others' expectations?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "If your partner's preference conflicted with yours, how do you think that tension would be resolved — and who would feel most heard?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "When you picture the way decisions like this were made in your family growing up, does that pattern feel like something you would want to repeat, resist, or change?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Are there any unspoken power dynamics — financial, cultural, or relational — that would make it harder to act on your own preference?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "kbv_dimensions": [
+        "goals",
+        "motivations",
+        "latent_needs"
+      ],
+      "evaluation_contribution": {
+        "autonomy_vs_dependence": 0.35,
+        "intergenerational_patterns": 0.25,
+        "partner_role": 0.25,
+        "power_dynamics": 0.15
+      }
+    },
+    {
+      "id": "V3_GAP_Q02",
+      "version": "V3_GAP",
+      "register": "empathetic_situational",
+      "question_type": "scenario",
+      "phase": "preconception",
+      "thematic_targets": [
+        "emotional_experiences"
+      ],
+      "latent_dimensions": [
+        "body_image_autonomy"
+      ],
+      "text": "Picture this: you have just come from a preconception appointment where the healthcare provider made several comments about your weight, your diet, or the shape of your body — framed as 'things to address before trying to conceive.' You leave the clinic and find yourself thinking about what was said. How do you imagine that experience would sit with you emotionally in the hours and days afterwards?",
+      "probes": [
+        {
+          "probe_text": "Would those comments change how you feel about your body and its readiness or capability to carry a pregnancy?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How much ownership would you feel over decisions about your own body in that moment — empowered, scrutinised, or something else?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Would you feel comfortable pushing back on or questioning that advice, or would the clinical authority of the provider make that difficult?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How might that interaction influence whether you sought further preconception care at all?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "kbv_dimensions": [
+        "motivations",
+        "latent_needs",
+        "behaviours"
+      ],
+      "evaluation_contribution": {
+        "body_image_autonomy": 0.7,
+        "power_dynamics": 0.2,
+        "dignity_respect": 0.1
+      }
+    },
+    {
+      "id": "V3_GAP_Q03",
+      "version": "V3_GAP",
+      "register": "empathetic_situational",
+      "question_type": "scenario",
+      "phase": "preconception",
+      "thematic_targets": [
+        "hcp_interactions"
+      ],
+      "latent_dimensions": [
+        "continuity_of_care"
+      ],
+      "text": "Suppose you have spent several months building a relationship with a GP or nurse who knows your medical history and understands your hopes around pregnancy. Then, just as you are about to start trying to conceive, that person leaves the practice and you are assigned to someone new who has no background on you at all. How do you think that change would affect the care you received and how you felt going into this important phase?",
+      "probes": [
+        {
+          "probe_text": "What information or understanding would feel most lost in that handover — clinical details, or something more personal?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How would you go about re-establishing trust with a new provider at such a significant moment?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Would that disruption make you more likely to seek information or reassurance from other sources — family, friends, or online?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Has anything like this happened to you before in your healthcare experience, and if so, how did it affect you?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "kbv_dimensions": [
+        "goals",
+        "motivations",
+        "latent_needs"
+      ],
+      "evaluation_contribution": {
+        "continuity_of_care": 0.65,
+        "trust_distrust": 0.25,
+        "informal_care_networks": 0.1
+      }
+    },
+    {
+      "id": "V3_GAP_Q04",
+      "version": "V3_GAP",
+      "register": "empathetic_situational",
+      "question_type": "scenario",
+      "phase": "preconception",
+      "thematic_targets": [
+        "informal_caregiver_interactions"
+      ],
+      "latent_dimensions": [
+        "informal_care_networks",
+        "partner_role",
+        "intergenerational_patterns"
+      ],
+      "text": "Imagine that in the weeks after you and your partner decide you would like to try for a baby, the people closest to you — perhaps a mother, mother-in-law, close friend, or sister — each start offering advice, opinions, and their own stories about getting pregnant. Some of it is welcome; some of it feels intrusive or contradictory. How would you picture navigating that web of informal support and influence?",
+      "probes": [
+        {
+          "probe_text": "Whose informal guidance would you genuinely value, and what would make their input feel helpful rather than overwhelming?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How would your partner factor into managing or filtering that input — would you tackle it together or separately?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Are there pieces of advice rooted in older generational experiences that you would feel you had to politely set aside?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How would you balance honouring those relationships while still making decisions that feel right for you and your partner?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "kbv_dimensions": [
+        "motivations",
+        "behaviours",
+        "latent_needs"
+      ],
+      "evaluation_contribution": {
+        "informal_care_networks": 0.35,
+        "partner_role": 0.3,
+        "intergenerational_patterns": 0.35
+      }
+    },
+    {
+      "id": "V3_GAP_Q05",
+      "version": "V3_GAP",
+      "register": "empathetic_situational",
+      "question_type": "scenario",
+      "phase": "preconception",
+      "thematic_targets": [
+        "digital_information",
+        "risks_barriers"
+      ],
+      "latent_dimensions": [
+        "structural_barriers"
+      ],
+      "text": "Picture yourself wanting to look up reliable preconception health information online — perhaps about nutrition, fertility, or what tests you might need — but you run into a series of obstacles: the best resources are behind a paywall, the free content is difficult to read or not in your first language, or you simply do not have a stable enough internet connection at home to access it consistently. How would that situation affect your ability to prepare for pregnancy?",
+      "probes": [
+        {
+          "probe_text": "Which of those barriers — cost, language, literacy, or connectivity — would feel most significant for someone in your situation?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Would those barriers push you towards less reliable sources, or would you find another route to the information you needed?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How would not having access to good information at this stage affect your confidence going into preconception conversations with a healthcare provider?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Do you think these kinds of access barriers affect everyone equally, or are some groups of women much more disadvantaged — and why?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "kbv_dimensions": [
+        "goals",
+        "behaviours",
+        "latent_needs"
+      ],
+      "evaluation_contribution": {
+        "structural_barriers": 0.75,
+        "autonomy_vs_dependence": 0.15,
+        "trust_distrust": 0.1
+      }
+    },
+    {
+      "id": "V3_GAP_Q06",
+      "version": "V3_GAP",
+      "register": "empathetic_situational",
+      "question_type": "scenario",
+      "phase": "preconception",
+      "thematic_targets": [
+        "support_sources"
+      ],
+      "latent_dimensions": [
+        "partner_role"
+      ],
+      "text": "Imagine you are going through a particularly anxious period before trying to conceive — perhaps worrying about your fertility, your health, or whether the timing is right. You turn to your partner for support, but they respond in a way that feels dismissive or minimising — telling you not to worry, or suggesting you are overthinking it. How do you think that response would affect you, and where would you turn instead?",
+      "probes": [
+        {
+          "probe_text": "What kind of support from your partner would have felt most meaningful in that moment — practical help, emotional validation, or just being listened to?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "If your partner was not able to provide that support, how would it affect the way you faced the uncertainty ahead?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Would you feel comfortable telling your partner directly what you needed, or would that feel difficult — and why?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Who else in your life, or what other resource, would step in as a support source if your partner was not fully present in that way?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "kbv_dimensions": [
+        "motivations",
+        "latent_needs",
+        "behaviours"
+      ],
+      "evaluation_contribution": {
+        "partner_role": 0.65,
+        "informal_care_networks": 0.2,
+        "autonomy_vs_dependence": 0.15
+      }
+    },
+    {
+      "id": "V3_GAP_Q07",
+      "version": "V3_GAP",
+      "register": "empathetic_situational",
+      "question_type": "scenario",
+      "phase": "preconception",
+      "thematic_targets": [
+        "agency_disempowerment"
+      ],
+      "latent_dimensions": [
+        "power_dynamics",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "text": "Consider this situation: you attend a preconception consultation and the healthcare provider speaks mainly to your partner, uses clinical language without explanation, and makes a decision about a referral or test without asking for your input or explaining why. You leave feeling as though the appointment happened around you rather than with you. How would that experience land, and what would it take for you to feel respected and genuinely involved in your own care?",
+      "probes": [
+        {
+          "probe_text": "In that moment, how much agency — real influence over what happens to your body — would you feel you had?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Would you feel able to interrupt, ask questions, or push back in that consultation, or would the power dynamic make that feel impossible?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How would being sidelined in favour of your partner affect your sense of dignity and your trust in the care system going forward?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "What would a consultation look like that genuinely centred your autonomy and treated you as the primary decision-maker about your own reproductive health?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "kbv_dimensions": [
+        "goals",
+        "latent_needs",
+        "motivations"
+      ],
+      "evaluation_contribution": {
+        "power_dynamics": 0.35,
+        "autonomy_vs_dependence": 0.35,
+        "dignity_respect": 0.3
+      }
+    },
+    {
+      "id": "V3_GAP_Q08",
+      "version": "V3_GAP",
+      "register": "empathetic_situational",
+      "question_type": "scenario",
+      "phase": "pregnancy",
+      "thematic_targets": [
+        "goals_expectations",
+        "decision_making"
+      ],
+      "latent_dimensions": [
+        "trust_distrust",
+        "dignity_respect",
+        "partner_role"
+      ],
+      "text": "Imagine you are partway through your pregnancy and you receive unexpected news at a routine scan — something that needs further investigation. The sonographer gives you very little information before leaving the room, and when your midwife follows up, her explanation feels rushed and uses terms you do not fully understand. Your partner is present and starts asking questions on your behalf, but you notice the midwife is directing all her answers to them rather than to you. How do you think you would feel in that moment, and how might it shape your expectations of care going forward?",
+      "probes": [
+        {
+          "probe_text": "What would trust in your care team look like at a moment like that — what would they need to do or say for you to feel genuinely supported?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How would being spoken over or around by the midwife — even if unintentionally — affect your sense of dignity and your confidence in the system?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "Would that experience change the goals you had set for your pregnancy care — for example, making you more guarded, more assertive, or more likely to seek a second opinion?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        },
+        {
+          "probe_text": "How would your partner's role in that moment feel to you — helpful and protective, or inadvertently reinforcing the dynamic that left you feeling sidelined?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [],
+          "source": "base"
+        }
+      ],
+      "kbv_dimensions": [
+        "goals",
+        "motivations",
+        "latent_needs",
+        "behaviours"
+      ],
+      "evaluation_contribution": {
+        "trust_distrust": 0.3,
+        "dignity_respect": 0.35,
+        "partner_role": 0.35
+      }
+    }
+  ],
+  "adapted_at": "2026-03-17T23:25:28.352252"
+}

@@ -1,0 +1,620 @@
+{
+  "session_id": "S_153",
+  "status": "completed",
+  "persona_id": "comp_025",
+  "persona_name": "Dorine",
+  "persona_journey_stage": "second_trimester",
+  "persona_risk_level": "high",
+  "persona_vulnerability_flags": [
+    "fear_of_childbirth",
+    "high_risk_medical",
+    "previous_trauma",
+    "single_parent"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 2,
+  "questionnaire_strategy": "Thematic Deep-Dive",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "google/gemini-3.1-flash-lite-preview",
+  "environment": "dev",
+  "timestamp": "2026-03-18T01:37:48.416161",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Dorine, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're in the middle of your pregnancy, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "I appreciate you asking. It’s… well, it’s a lot to put into words. Most days, I feel like I’m walking on thin ice, honestly. Being twenty-four weeks along should be the \"sweet spot,\" right? But every time I look at that blood pressure monitor, my heart just starts hammering against my ribs. \n\nIt’s hard to explain the weight of it to someone who hasn't been there. When I was pregnant with my first, I didn’t know what to look for, and then everything just went dark. That memory of the world shaking—of the doctors rushing in while I felt like I was fading away—it never really leaves you. Now, it’s like I’m always waiting for that same copper taste to hit my tongue again. \n\nMy husband is working so much, and with our first little one running around, I’m basically doing it all alone. The house is quiet, and that’s when the silence gets loud. My doctors are good, they really are, but sometimes I feel like I’m just a set of vitals in a chart to them. They talk about \"management,\" but I’m just trying to keep my anxiety from spiraling. I just want to make it to the end and bring this baby home. It's... it's a lot to carry, you know?",
+      "responding_to_question_id": null,
+      "input_tokens": 788,
+      "output_tokens": 288
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your goals for your antenatal care during pregnancy, what did you most want from your interactions with midwives, doctors, and the wider care system — and to what extent were those goals met?",
+      "question_id": "V2_PREG_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "Honestly, what I wanted—what I *need*—is to be seen as more than just a ticking bomb. I know I’m high-risk. I know the stats better than anyone because I’ve lived the worst-case scenario. When I sit in that exam room, I’m not looking for a lecture on blood pressure management; I already have a stack of pamphlets on that. What I’m looking for is someone to just look me in the eye and acknowledge that I am terrified.\n\nI wanted a partner in this, not just a technician. I wanted someone who would sit with me for an extra minute when they see my hands shaking as they wrap the cuff, instead of just scribbling numbers on a digital chart and rushing off to the next patient. Are those goals met? Only partially. The doctors are clinically brilliant—I’m alive because they know their stuff—but they treat the trauma like it’s a separate, inconvenient file. \n\nI’m struggling to find that middle ground where I feel safe enough to stop holding my breath. I want to feel like my care team is holding me up, not just monitoring me while I drift out to sea. Sometimes I leave the clinic feeling lonelier than when I walked in, just carrying a heavier bag of warnings.",
+      "responding_to_question_id": "V2_PREG_Q01",
+      "input_tokens": 1120,
+      "output_tokens": 266
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about how you sought and used information during your pregnancy — from healthcare providers, online sources, apps, books, and people around you — how did you decide what to trust and act upon?",
+      "question_id": "V2_PREG_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "trust_distrust",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "That’s a complicated balance for me. My instinct, honestly, is to trust my own body more than anything else now, but my body betrayed me once, so I’m in this constant tug-of-war. \n\nWhen it comes to my doctors, I trust their clinical judgment—I’d be foolish not to, given my history. But I’ve learned the hard way that \"medical management\" doesn't always account for the human experience. As for online sources and apps? I try to stay away. I used to be a regular on the forums, but reading other women's horror stories just makes the brain fog thicker and the panic sharper. It’s like pouring gasoline on a fire. \n\nI’ve become very guarded. I filter everything through the lens of my own trauma. If I read a suggestion or hear a piece of advice, I weigh it against that moment I almost lost everything. I’m skeptical of anything that sounds too \"perfect\" or lighthearted about birth. I mostly rely on my own blood pressure logs and how I’m *feeling* day-to-day. If something feels off, I don't wait for an app to tell me; I’m already at the clinic. I don't have the luxury of being casual about information anymore. Everything feels like a survival guide, and I’m just trying to read the right pages.",
+      "responding_to_question_id": "V2_PREG_Q02",
+      "input_tokens": 1429,
+      "output_tokens": 290
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Which sources did you find most useful, and what made them trustworthy in your eyes?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "trust_distrust",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "That’s a hard question, because \"useful\" and \"trustworthy\" feel like two very different things when your nerves are as frayed as mine. \n\nHonestly, the most useful thing hasn't been a book or an app. It’s been the one nurse at the clinic—let’s call her Sarah—who actually pauses. She doesn’t just come in with the cuff and the clipboard; she asks, \"How are you doing, really?\" on the days when I look like I haven't slept. She’s the only one who doesn’t talk *at* me. That small, human connection makes her clinical advice feel so much more grounded. If she tells me to rest or keep an eye on a specific symptom, I listen, because she’s shown me she sees the person behind the diagnosis.\n\nEverything else? It’s hit or miss. I struggle to trust those generic baby apps that give you these cheerful, bubbly updates about the size of the baby. It feels almost insulting when I’m sitting there feeling like I’m in a minefield. I’ve found some comfort in reading clinical journals, actually—not the scary stuff, but the straightforward science. The cold, hard data is sometimes easier to handle than someone’s flowery, \"everything will be perfect\" birth story. Data doesn't lie, and it doesn't try to gaslight me into feeling okay when I'm clearly not. Trust, for me, is found in honesty and in people who aren't afraid of my fear.",
+      "responding_to_question_id": "V2_PREG_Q02_P01",
+      "input_tokens": 1738,
+      "output_tokens": 322
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the emotional landscape of your pregnancy — the highs, the anxieties, the uncertainties — what feelings were most prominent, and how well did your care environment support you in managing them?",
+      "question_id": "V2_PREG_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "dignity_respect",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "The emotional landscape? It feels like living on that beach near my house—one minute the sun is out and it’s beautiful, and the next, the fog rolls in and you can’t see five feet in front of you. \n\nThe most prominent feeling isn't even \"anxiety\" anymore; it’s a constant, low-grade hyper-vigilance. My nerves are always firing, waiting for the floor to drop out. There are flickers of joy, of course—I felt the baby move yesterday, and for a second, I just breathed. But that joy is always immediately followed by a wave of guilt, like I’m not allowed to be happy because I’m waiting for the next \"event.\"\n\nMy care environment… it’s just not built for this. The office is cold and clinical, designed to move people through like a conveyor belt. There’s no room for the fear. I feel like if I started crying in the exam room, they wouldn't know what to do with me. They’d probably just call in a social worker or hand me a brochure. They are great at handling the *physical* risks, but the emotional exhaustion of being a single parent in a high-risk pregnancy? That’s entirely invisible to them. I feel like I’m navigating a war zone alone, and my commanders are only interested in my ammunition count.",
+      "responding_to_question_id": "V2_PREG_Q03",
+      "input_tokens": 2101,
+      "output_tokens": 289
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a period during your pregnancy when you felt most emotionally unsupported — what was happening and what would have helped?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "It was about a month ago. I was having a particularly bad week—my husband was gone, my daughter was sick, and I’d been having these persistent, dull headaches that felt exactly like the ones I had right before I crashed the first time. I went into the clinic, feeling like I was fraying at the edges. I told the doctor, \"I’m scared. This feels familiar, and I feel like I’m spiraling.\"\n\nShe checked my pressure—it was fine, right in the normal range—and she basically patted my arm and said, \"Everything looks perfect, Dorine. Your numbers are great. You’re doing a great job, just try to relax.\"\n\nShe was smiling, but it felt like a slap in the face. She was checking the box for \"physical health,\" but she completely erased my reality. She didn't ask *why* I was scared or acknowledge that my fear wasn't about the numbers, but about the trauma etched into my brain. What would have helped? I just needed her to slow down. I needed her to say, \"I hear you. It makes total sense that you're terrified given what you went through, and I’m going to stay right here with you until we figure out why you’re hurting.\" I just wanted to be heard, not managed. Instead, I left feeling small, foolish, and even more alone.",
+      "responding_to_question_id": "V2_PREG_Q03_P01",
+      "input_tokens": 2416,
+      "output_tokens": 292
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the decisions you faced during pregnancy — including screening tests, monitoring choices, and care options — how did you go about making those decisions, and who or what most influenced them?",
+      "question_id": "V2_PREG_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "The decision-making process feels less like a choice and more like a strategy for survival. Because I’ve been through the absolute worst, my threshold for \"intervention\" is very different from a first-time mother. I find myself opting for *more* monitoring, not less. If the doctors offer an extra scan or a specialized test, I take it every single time. It’s like a tax I have to pay to get one step closer to the due date. \n\nThe biggest influence, honestly, is the shadow of that first delivery. My husband is supportive, but he wasn’t there for the chaos, and he has this optimistic way of looking at things that—while it's good for him—sometimes makes me feel like he doesn't quite grasp the stakes. So, most of the big decisions fall on me. I look at the medical literature, I weigh the risks of doing something versus doing nothing, and I choose the path that makes me feel like I’m exerting some kind of control.\n\nI’m the one who has to live with the physical aftermath, so I’m the one who decides how much \"management\" I can tolerate. I don't care if a test is uncomfortable or time-consuming; if it gives me even a few hours of clarity, I’m in. I’ve stopped trying to please the staff by being the \"easy patient.\" My priority is the baby, and my compass is my own fear. It’s heavy, but it’s the only way I know how to get through this.",
+      "responding_to_question_id": "V2_PREG_Q04",
+      "input_tokens": 2749,
+      "output_tokens": 322
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you walk me through a specific decision point — what were the options, how did you weigh them, and what did you ultimately choose?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "The biggest one was deciding whether or not to go on blood pressure medication a few weeks ago. My readings were creeping up, just teasing the line of concern. My doctor presented it as a \"wait and see\" approach versus starting me on a low dose now to keep things stable. \n\nThe \"wait and see\" option terrified me. That’s essentially what happened the first time—I waited, I watched, I told myself it was just stress, and then the eclampsia hit. The memory of losing consciousness, of the sirens, it’s like a playback loop in my mind. On the other hand, I worried about the meds affecting the baby. I spent three nights awake, staring at the ceiling, looking up every clinical trial I could find on the impact of these drugs during the second trimester. \n\nUltimately, I chose the medication. I realized that my own mental state—my constant, frantic monitoring—was likely pushing my blood pressure even higher. I needed to know that *something* was actively fighting to keep the numbers down. It wasn't just about the biology; it was about reclaiming a sense of agency. Taking that pill every morning feels like a tiny, necessary shield. It doesn't take the fear away completely, but it makes me feel like I’m not just sitting here waiting for the storm to break. I’m doing something.",
+      "responding_to_question_id": "V2_PREG_Q04_P01",
+      "input_tokens": 3101,
+      "output_tokens": 281
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the physical changes in your body during pregnancy, how did those changes affect how you felt about yourself — and were those feelings acknowledged or addressed within your care?",
+      "question_id": "V2_PREG_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s hard to feel \"connected\" to a body that I view as a potential crime scene. You know how people talk about that \"pregnancy glow\"? For me, every physical change feels like a warning sign. When my ankles swell, I don't think, *Oh, I’m growing a human*; I think, *Is this the start of the edema again?* Every bit of weight gain, every backache—it’s all data for the catastrophe I’m trying to avoid. \n\nIt makes me feel detached from myself. I’m living in my head, constantly checking for symptoms, and the physical reality of pregnancy just feels like a constant, invasive reminder of my vulnerability. \n\nWithin my care, this is almost never addressed. The doctors look at the weight gain as a standard metric, a line on a graph. They don't see the woman beneath the numbers who is mourning her own sense of safety. They see a body that is \"progressing normally,\" but they don't acknowledge that I’m mourning the loss of a carefree experience. I feel like a vessel being monitored rather than a person. I think if someone—even once—had asked, \"How does it feel to be in your body right now, given everything you’ve been through?\" it might have changed everything. But instead, it’s just, \"Weight looks good, blood pressure is fine, see you in two weeks.\" I feel like a stranger in my own skin.",
+      "responding_to_question_id": "V2_PREG_Q05",
+      "input_tokens": 3419,
+      "output_tokens": 307
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there aspects of your physical transformation that felt unexpected, difficult, or that nobody had prepared you for?",
+      "question_id": null,
+      "probe_id": "V2_PREG_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "The thing nobody tells you is how much your brain starts to treat your own body as the enemy. Everyone talks about the morning sickness or the fatigue, but they don't talk about the hyper-vigilance—the way your nervous system gets stuck in \"fight or flight\" mode because your body once tried to shut down on you.\n\nI wasn’t prepared for the sheer sensory overload. Every little flutter or stretch makes me jump. I’ll be sitting here in Sandwich, just trying to focus on my daughter, and I’ll feel a sharp cramp or a change in my pulse, and suddenly the room feels like it's spinning. It's not just physical; it's a full-body flashback. I expected to feel powerful, like I was \"creating life,\" but instead, I feel like a spectator trapped in a building that’s prone to structural failure. \n\nNobody told me that when you have a history like mine, your body stops being \"yours.\" It belongs to the risks, the statistics, and the waiting room. I look in the mirror and I don't see a mother-to-be; I see a ticking clock. It’s a very lonely, very heavy way to exist, and I don't think any of the prenatal classes or books really capture that specific, hollow kind of fear.",
+      "responding_to_question_id": "V2_PREG_Q05_P01",
+      "input_tokens": 3749,
+      "output_tokens": 279
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the informal support you received during pregnancy — from partners, family, friends, or online communities — how did that support compare to what you received from healthcare professionals, and what role did each play?",
+      "question_id": "V2_PREG_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "partner_role",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s a strange divide. The healthcare professionals provide the \"what,\" but my personal circle is supposed to provide the \"how\" of surviving the day-to-day. The problem is that most people in my life—my husband included—are so desperate for me to have a \"good\" pregnancy that they tend to dismiss the dark stuff. They want to talk about strollers and baby showers, and they get quiet or uncomfortable when I try to explain that I'm terrified of dying on the table again. It feels like they’re trying to shield themselves from my reality, which just leaves me feeling even more isolated.\n\nMy husband, he’s wonderful in his own way, but he wasn’t there for the first time. He didn't see me after the eclampsia, when I couldn't even remember my own name for a while. Because he didn't see the terror, he views it as a \"past problem\" that’s been solved. He acts like this is just a normal, beautiful journey. \n\nSo, I’m left with this: the doctors give me the cold, hard numbers that keep me alive, but they ignore my humanity. My friends and family give me the love and the fluff, but they ignore the trauma. I’m trapped in the middle, craving a place where those two things—the medical safety and the emotional acknowledgment—actually meet. It makes me feel like I’m constantly translating myself into different languages just to be understood.",
+      "responding_to_question_id": "V2_PREG_Q06",
+      "input_tokens": 4073,
+      "output_tokens": 307
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q7",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s just… it’s exhausting. Imagine constantly having to decide whether to be the \"good, quiet patient\" who nods and smiles so everyone feels comfortable, or the \"difficult\" one who asks too many questions because she's terrified she might not wake up to see her kids grow up. \n\nI think about the gap between how people treat a \"normal\" pregnancy and mine. People want to buy you cute onesies and talk about baby names. They want to celebrate, and I *want* to celebrate, but I feel like I’m standing behind a thick sheet of glass. I see them enjoying the moment, but I’m over here just trying to keep my blood pressure from spiking over a thought. \n\nI’ve realized that I’m not just grieving the trauma of the past; I’m grieving the pregnancy I’m \"supposed\" to be having. The one where I’m not scared of the dark, where I’m not analyzing my own pulse, where I don't feel like a medical project. \n\nIf I could change one thing—just one thing—it would be for the medical world to integrate mental health into the check-up as naturally as they check my urine or my blood. I don’t want to be sent to a separate office down the hall to talk about my feelings. I want the person sticking the needle in my arm to look me in the face and ask, \"Are you okay today?\" and actually *wait* for the answer. We focus so much on the baby’s health, which is vital, but if the mother is breaking apart on the inside, how does that not affect everything else? I'm just… I'm just trying to keep it all together until I can hold this baby and know, for certain, that we’re both okay.",
+      "responding_to_question_id": "Q7",
+      "input_tokens": 4388,
+      "output_tokens": 381
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q8",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "You know, there’s this specific silence in my house when my daughter is down for a nap and the sun is starting to shift across the floorboards. It’s supposed to be peaceful. But in that silence, my mind is always calculating: *What’s the next milestone? When is the next appointment? Did I feel a headache today?* \n\nIt’s almost like I’ve developed a sixth sense for disaster, and it’s a miserable way to spend these months. I feel like I'm grieving a version of myself that could just be \"pregnant\" instead of \"a pregnancy with a high-risk history.\" I watch my friends who are expecting, and they’re so free. They talk about birth plans—about water births, about music playlists, about lighting candles. And I just think... *I just want a crash cart in the room and for everyone to stay calm.*\n\nIt makes me feel like such a killjoy, even when I'm just trying to keep myself breathing. I want to tell them, \"You have no idea how lucky you are that your biggest worry is what color to paint the nursery.\" But I don’t say it, because I don't want to cast a shadow on their joy. So, I stay quiet. I keep the numbers hidden, and I keep the fear in my throat, and I just try to make it to the next day. \n\nI’m so tired of being brave, you know? I’m tired of being \"the strong one\" who survives. I just want to be a mother who gets to go home. I really, really want to be that.",
+      "responding_to_question_id": "Q8",
+      "input_tokens": 4777,
+      "output_tokens": 342
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there aspects of your physical self that you felt proud of, anxious about, or uncertain about in relation to pregnancy?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s so strange to even think about \"pride\" in the middle of all this, because my body feels more like a precarious instrument that I’m trying to keep in tune. \n\nI suppose I feel a grim, quiet pride in the fact that I’m still standing—that I’m managing the daily work of being a mother to my firstborn, cooking meals, doing the laundry, and still showing up to every single prenatal appointment, even when I’m shaking. There’s a certain resilience in that, I guess. I am keeping this baby alive through the sheer force of my own hyper-vigilance, and that is a job, even if it feels like a heavy one.\n\nBut underneath that, the anxiety is just constant. I’m so uncertain about what my body is capable of doing. When I was younger, I thought of pregnancy as a natural, beautiful state. Now, I view my body with a deep, lingering suspicion. I’m constantly analyzing it for \"signals\"—is that headache just dehydration, or is it *the* headache? Is that blurriness in my vision real or just fatigue? \n\nI’m uncertain if I’ll be able to trust my body during labor. That is the thing that haunts me the most. I’m terrified that when the time comes, I’ll be a passenger again, and my body will do things that I can’t control. I’m not sure how to bridge that gap—how to go from being a person who is constantly monitoring for signs of failure, to someone who can actually surrender to the process of birth. I don't feel like a miracle of nature; I feel like a survivor trying to navigate a minefield that I’m carrying inside me.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 5145,
+      "output_tokens": 367
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q9",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "I think, sometimes, that I’ve become an expert in \"suffering in silence.\" That sounds dramatic, maybe, but it’s how it feels. People expect a mother to be a portrait of serene anticipation. If I say I’m terrified, I’m \"stressed.\" If I say I can’t breathe from the anxiety, I’m told to \"take a walk.\" No one wants to sit with the reality that, for some of us, pregnancy is a high-stakes medical operation happening in our own skin.\n\nMy husband tries, he really does, but he’s never had to look at his own blood and see his own mortality in a monitor. There’s a distance there that I don’t know how to close. Even with my healthcare team, I feel like I have to \"perform\" wellness. If I show them the full extent of my trauma, will they label me as difficult? Will they be more dismissive? So, I play the part. I nod at the advice. I take the pills. I keep my vitals as steady as I can.\n\nBut in the quiet of this house, I wonder—what happens to all that fear I’m tucking away? Does it just sit there, calcifying? I want to hold my baby. I want that moment of connection, that first look. But I’m so focused on just surviving the process that I’m worried I’ll be too numb or too triggered to even feel the joy when it finally arrives. I just hope that when this is all over, I’m still *me*—not just a medical chart, not just a survivor, but a mother who can finally, finally, just breathe. That’s all I want. To just be able to breathe.",
+      "responding_to_question_id": "Q9",
+      "input_tokens": 5520,
+      "output_tokens": 369
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q10",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "Sometimes I think about what happens after. Everyone asks, \"Are you excited to meet the baby?\" and I feel this wave of guilt because the honest answer is that I’m mostly just desperate for the clock to stop ticking. I’m waiting for the moment they tell me the birth went fine, that there was no crash, no flashing lights, no terrifying blur of faces. \n\nI’m mourning the fact that I’ve missed out on the wonder of it all. I see the joy in other women, and I feel a little bit like a ghost at the feast. I’m so busy protecting my life—and the baby’s life—that I don't feel like I’m actually *living* these months. I’m just existing in a state of high-alert, like a soldier on guard duty who hasn’t slept in weeks.\n\nI’m worried that when I look at this child, I’ll be reminded of the terror, not the joy. I’m worried that the trauma will color everything. I want so badly to be the mother who can look at her child and feel nothing but overwhelming, light-filled love, but right now, my love is wrapped in layers of armor. I have to protect them, you see? I have to be the one who sees the danger before it happens, because the doctors are only looking at the charts, and the world is only looking at the bump. It’s a very heavy armor to wear for nine months. I just hope that once the baby is here, I can finally take the armor off. I really, really hope I can remember how to be soft again.",
+      "responding_to_question_id": "Q10",
+      "input_tokens": 5897,
+      "output_tokens": 342
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q11",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "I think about the future—the part where I’m actually home with this baby—and it’s both the light at the end of the tunnel and another source of terror. People say, \"Oh, the baby will be here soon, you can finally relax,\" but I don’t think they realize that the fear doesn’t just evaporate when the umbilical cord is cut. It stays. It lingers in the way I’ll check the baby's breathing in the middle of the night, or how I’ll probably keep checking my own blood pressure for months after I get home. \n\nI’m worried that I’ve spent so much energy keeping this pregnancy \"safe\" that I’ve completely hollowed myself out. I’ve prioritized survival over everything—even over being a present mother to my first child, who sees me looking at that monitor or staring into the distance, wondering if this is the day the storm breaks. She doesn't understand, of course, but she feels the distance. That guilt is like a lead weight. \n\nI just keep coming back to this idea that I’m being asked to be a hero in my own tragedy. Nobody tells you that you’re going to have to be your own doctor, your own therapist, your own advocate, and your own protector all at once while your body is doing the heaviest work there is. If I survive this—and I truly believe I will, because I have to—I want to be able to talk about it. I want to tell someone that it wasn't just \"high-risk management.\" It was a war. And I won this one. I just need to get to that finish line.",
+      "responding_to_question_id": "Q11",
+      "input_tokens": 6247,
+      "output_tokens": 348
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q12",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "You know, even saying those words out loud—that it’s a war—feels like a confession I’ve been guarding for so long. It feels so forbidden to admit that this \"miracle\" of pregnancy has felt like a siege on my sanity. \n\nWhen I look at my daughter, I see the face of the life I’m trying to protect, and that keeps me going, but it’s also a painful reminder of what could be taken from me. I feel like I’m constantly making a deal with the universe: \"I will do everything right. I will follow every instruction. I will monitor every symptom. Just don't let me leave her motherless. Don't let me go through that darkness again.\"\n\nIt’s such a heavy bargain to make with yourself every single morning. I don’t think people realize that a \"high-risk\" label isn't just about the biology. It’s an identity. It’s walking into a room and being looked at as a set of risks rather than a person with a story, a history, and a future. \n\nI’m so ready for this to be over. I’m ready to stop calculating the odds of my own survival. I just want to be able to look at my kids and not see them through the lens of a \"near-miss.\" I want to be able to close my eyes at night without checking my pulse one last time. I’m holding onto that hope—that one day, the fog in Sandwich will just be fog, and not a metaphor for my life. That’s the dream. That’s the only one I have left.",
+      "responding_to_question_id": "Q12",
+      "input_tokens": 6603,
+      "output_tokens": 345
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a specific situation where you felt judged, overlooked, or not treated as a capable decision-maker regarding your reproductive health?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "It happens in the small ways, the ones that sting because they’re disguised as \"professionalism.\" A few weeks back, I walked into the exam room feeling off—my vision was slightly swimmy, just for a second, and the pressure in my head was distinct. I was nervous, but I was also prepared to discuss it. When I mentioned the vision, the doctor didn't look at me; she just pivoted to her computer screen, scrolled through my previous readings, and said, \"Dorine, your vitals were perfect last week. You’re likely just dehydrated or overtired. Remember, this is a stressful time for you.\"\n\nIn that moment, I wasn't a person reporting a potentially life-threatening symptom; I was a \"stressed-out\" patient whose perception couldn't be trusted. She dismissed my lived experience of *my own body* based on a spreadsheet of numbers from seven days ago. It made me feel so small—like I was a hysterical child rather than a woman who has literally survived the exact crisis she was worried about. \n\nI know my own signs. I’ve earned that knowledge with blood and terror. To have that brushed aside as \"stress\" was incredibly isolating. It forced me into this defensive posture where I realized I have to fight to be taken seriously. I left that room feeling like I had to choose: keep my mouth shut and be \"easy,\" or speak up and be labeled a nervous wreck. I didn't feel like a partner in my care; I felt like an annoyance to their protocol.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 6977,
+      "output_tokens": 322
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q13",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s that exact moment, when they look at their screen instead of me, that I feel my grip on reality start to slip. They’re so focused on the \"how\"—the metrics, the dosages, the scheduled ultrasounds—that they completely lose the \"why.\" My \"why\" is that I’ve already been to the edge of the world once, and I know exactly what the abyss looks like. When they dismiss my concerns as \"stress,\" they’re not just being dismissive; they’re gaslighting my own survival instincts.\n\nI wonder sometimes if they’ve ever had to sit with the crushing reality that they might not come home to their own kids. Does that ever cross their minds when they look at a patient like me? Or am I just another high-risk file that they hope stays within the green lines on their chart?\n\nIt makes me feel like I’m fighting a war on two fronts: the medical danger inside my own body, and the institutional indifference in the doctor’s office. I want to tell them, \"I am the expert on my body. I have the data of trauma in my bones.\" But I don’t. I just nod, because I need them to keep treating me. It’s a bitter, quiet kind of cage, and every day I’m in it, I just hope that when the end comes, it’s not because someone told me to just \"relax\" while the warning signs were flashing behind my eyes. I’m just so, so tired of holding this all by myself.",
+      "responding_to_question_id": "Q13",
+      "input_tokens": 7307,
+      "output_tokens": 323
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did you have reliable and private access to a smartphone or computer throughout your pregnancy, and did that change at any point?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "I have my phone with me almost constantly—it’s like a lifeline, or maybe an anchor, depending on the day. My husband travels so much for work that it’s my only real way of keeping in touch with the world outside this house. And yes, it’s private. I suppose that’s a small mercy. \n\nBut having that access is a double-edged sword. In the quiet hours of the night, when the house is still and my firstborn is finally sleeping, I find myself staring at the screen, looking up symptoms or reading about eclampsia stats, just searching for some kind of answer that the doctors haven't given me. It’s like a compulsion. I’m looking for validation, but all I ever find are more reasons to be afraid. \n\nI haven’t had to worry about someone taking that away from me, or not being able to afford the connection, which I know is a privilege. But it hasn’t changed my isolation. I can talk to friends on there, I can send messages to my husband, but no screen can bridge the gap of what I’m feeling. I could search the entire internet for \"how to survive a high-risk pregnancy without losing your mind,\" and I’d still be the one sitting here in Sandwich, staring at the fog, feeling like I’m waiting for the floor to fall out. It’s a tool, sure. But it doesn't offer me any real safety. Only the doctors can do that, and they’re the ones who make me feel like I’m not really being heard.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 7656,
+      "output_tokens": 332
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q14",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s strange, isn't it? I have the world at my fingertips—I can check my blood pressure trends, I can look up every terrifying case study on eclampsia, I can reach out to family across the globe—and yet, I’ve never felt more profoundly disconnected. The smartphone is a tether to a reality that doesn't include my pain. \n\nWhen I message my husband and say, \"I'm having those headaches again,\" he sends back a reassuring emoji or a \"You're doing great, love.\" He means well, but that digital shorthand feels like a hollow comfort. It doesn't fix the fact that my head is thumping or that I’m sitting here, in this house, completely alone with a toddler and a body that feels like it’s failing. \n\nI’ve realized that my phone is mostly a source of \"evidence.\" I use it to track every fluctuation in my weight, my blood pressure, the baby’s movements—I’m basically building a digital archive of my own risk. It’s like I’m creating a case file, just in case something happens, so that someone will finally believe me when I say I knew something was coming. It’s not about finding community or support; it’s about having a paper trail of my own fear. I’m just trying to make sure that if I go down, the story I was trying to tell is recorded somewhere. That’s a bleak way to use a smartphone, I know, but that’s the reality of surviving a second round of this.",
+      "responding_to_question_id": "Q14",
+      "input_tokens": 7996,
+      "output_tokens": 328
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there moments when a healthcare provider dismissed or minimised a concern you raised about your body or a symptom you were experiencing, and how did that make you feel?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s a specific, hollow feeling when you're in the exam room, bracing yourself to speak your truth, and you see their eyes glaze over before you’ve even finished your sentence.\n\nA few weeks ago, I felt a sharp, persistent pain in my upper abdomen—that classic, terrifying sign that things are going sideways. I didn't want to overreact, but I knew I couldn't just sit on it. I went to the clinic, my heart practically hitting my throat, and I told the doctor, \"I’m scared because this feels exactly like the pressure I had before the seizures started last time.\"\n\nShe didn't even look up from the chart. She just hummed, checked my blood pressure—which happened to be okay at that exact second—and said, \"Dorine, you're just experiencing typical late-second-trimester aches. Your body is changing, and you're hyper-focused on this. Try to stay off the forums and get some rest.\"\n\nIt made me feel like I was invisible, or worse, like I was a burden to their workflow. It made me feel like a child throwing a tantrum instead of a woman fighting for her own life and the life of her child. When a doctor dismisses you like that, they aren't just ignoring a symptom; they are invalidating your entire history. They are effectively telling you that your trauma doesn't matter and that your intuition is wrong. It left me shaking, not from the pain, but from the realization that if things *did* go wrong, they’d be looking at me like I hadn't warned them a dozen times. That feeling of being totally alone, despite being in the one place I’m supposed to be safe, is the loneliest thing I have ever felt.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 8359,
+      "output_tokens": 375
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "I think the only thing I’d add is just how much I want people to know that pregnancy for some of us isn't a \"beautiful journey\"—it’s a marathon where the finish line is a hospital bed. \n\nI’m so tired of the cultural script that says mothers should just be glowing and grateful. I *am* grateful for this baby, more than I can say, but that doesn’t cancel out the fact that my body is a site of previous trauma. I feel like the medical system is set up for the healthy, straightforward pregnancies, and for the rest of us, we’re just... anomalies. We're \"high-risk\" files that need to be cleared, not people who need to be held. \n\nIf there’s any takeaway for the people who create these systems, it’s that we aren't asking for more brochures or more monitors. We’re asking for someone to look us in the eye, acknowledge the fear, and act like they’re on our team. If you treat the emotional wound as seriously as the physical one, maybe we wouldn't feel so alone in the middle of it all. I just want to survive this, and I want to be able to tell my children, \"I fought for you,\" without the memory of that fight being the only thing I can recall when I think of their birth. Thank you for listening. It really means more than you know.",
+      "responding_to_question_id": null,
+      "input_tokens": 8790,
+      "output_tokens": 298
+    }
+  ],
+  "metadata": {
+    "total_turns": 48,
+    "questions_asked": 14,
+    "probes_deployed": 8,
+    "adaptive_followups": 0,
+    "total_input_tokens": 112345,
+    "total_output_tokens": 7715,
+    "estimated_cost_usd": 0.1278,
+    "duration_seconds": 65.2,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 233
+  },
+  "errors": []
+}

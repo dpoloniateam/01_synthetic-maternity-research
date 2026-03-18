@@ -1,0 +1,593 @@
+{
+  "session_id": "S_069",
+  "status": "completed",
+  "persona_id": "comp_052",
+  "persona_name": "Camellia",
+  "persona_journey_stage": "birth",
+  "persona_risk_level": "medium",
+  "persona_vulnerability_flags": [
+    "low_social_support",
+    "previous_loss"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 1,
+  "questionnaire_strategy": "Chronological Journey",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "google/gemini-3.1-flash-lite-preview",
+  "environment": "dev",
+  "timestamp": "2026-03-18T00:41:41.048234",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Camellia, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're going through the birth experience, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s… it’s a lot to put into words. Honestly, I feel like I’ve been holding my breath for nine months. You look at these books and the apps, and they tell you what the fetus is doing, but they don’t tell you how it feels to walk into a clinic at forty-three and immediately see that look in the midwife's eyes—the one that says \"geriatric pregnancy\" before I’ve even sat down.\n\nI’ve done the reading. I know the risks. I can tell you about placenta previa or the signs of preeclampsia better than some of the interns, but that knowledge doesn’t stop my hands from shaking when I’m alone in our apartment. My husband, he’s my rock, but we’re just us. We don’t have a village. And every time I feel a cramp, I’m not just thinking about the baby—I’m thinking about the logistics. Can we get a ride? Is the car service going to show up? If the bus is late, what happens? \n\nIt’s humiliating to be this prepared intellectually but feel so helpless logistically. I’ve had a loss before, so every hour that goes by feels like a hurdle I’m barely clearing. I just want someone to look at me—not as a case study—and tell me it’s going to be okay. Is that too much to ask?",
+      "responding_to_question_id": null,
+      "input_tokens": 781,
+      "output_tokens": 300
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how you prepared for the birth — what did you hope for, and how did you go about planning for it?",
+      "question_id": "V1_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "I spent these last months trying to control the uncontrollable by reading everything I could get my hands on. I’ve gone through the charts, the stages of labor, the interventions—I have all these color-coded notes about what I want: skin-to-skin immediately, delayed cord clamping, the works. I wanted a birth that felt like an *experience* rather than a medical emergency, but that’s the conflict, isn’t it? Being forty-three means I’m always waiting for the \"but.\"\n\nThe planning part, though? That’s where the reality hits. I spent hours mapping out routes to the hospital in Lawrence, checking bus schedules, and comparing ride-share costs. It’s exhausting to have to plan for a medical crisis *and* the transit logistics simultaneously. While other people are picking out nursery paint colors, I’m stressing over whether a driver will cancel on me at 3:00 AM because we don't have a car of our own. \n\nI’m terrified that I’ll be so focused on trying to get to the hospital in one piece that I won’t actually be present for the birth itself. I wanted a calm, empowered start to our life as a family, but right now, \"planning\" feels less like preparing for a celebration and more like trying to outrun a storm.",
+      "responding_to_question_id": "V1_BIRTH_Q01",
+      "input_tokens": 1109,
+      "output_tokens": 280
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the birth itself — take me through what happened, as much or as little as you'd like to share.",
+      "question_id": "V1_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s still so raw. Honestly, talking about it makes my chest tighten all over again. When the real labor started, it wasn’t like the books. It was a chaotic scramble. The app I’d been using to track contractions felt useless; my body felt like it was betraying me. \n\nThe fear wasn’t about the pain, really. It was that transport anxiety I’d been living with for months. We ended up having to call a ride-share in the middle of the night, and I just sat in the backseat, white-knuckling the door handle, praying the driver wouldn’t take a wrong turn or that he wouldn't cancel mid-trip. Every time we hit a bump, I felt like I was holding my breath for the baby. \n\nWhen we finally got to the hospital, I felt so small. I had all these expectations about how I’d advocate for myself, but the moment I walked through those doors, I just wanted to be told what to do. I wanted someone to take the reins because I was so, so tired of being the only one holding the map. It wasn't the \"empowered\" birth I’d read about in those blogs. It was grueling, and it was lonely, and I remember looking around the room, wishing there was someone else there—someone who knew me—just to hold my hand. But we made it. We’re both here. That has to be enough, right?",
+      "responding_to_question_id": "V1_BIRTH_Q02",
+      "input_tokens": 1417,
+      "output_tokens": 308
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about pain management during your labour — what options you were offered, what you chose, and how that went.",
+      "question_id": "V1_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "trust_distrust",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "Because of the age factor and the \"medium-risk\" label, the team was very focused on interventions from the second I checked in. It felt like they were watching me through a microscope, waiting for something to go wrong. They laid out the standard menu: epidural, IV narcotics, nitrous. \n\nI’d read so much about natural birthing, trying to hold onto the idea that I could handle the sensations without heavy drugs, but once I was there, in that cold room with the fluorescent lights, my resolve just crumbled. The exhaustion from the stress of getting to the hospital hit me all at once. I felt so depleted, like I had nothing left in my tank. \n\nWhen they offered the epidural, I didn't even argue. I just wanted the intensity to dial down so I could try to rest. I felt a pang of failure—like I’d studied for a test and then blanked—but the moment the medication started working, I felt a strange sense of relief, not just in my body, but in my head. It took the edge off the panic. Still, it made me feel disconnected. I wanted to be \"present,\" but I was so tired of fighting the anxiety that I just let them take over. I suppose I chose peace over pride, but I’m still processing whether that’s a win or just a surrender.",
+      "responding_to_question_id": "V1_BIRTH_Q03",
+      "input_tokens": 1751,
+      "output_tokens": 283
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there options you wanted that weren't available, or options you were steered towards that you weren't sure about?",
+      "question_id": null,
+      "probe_id": "V1_BIRTH_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "I think the biggest thing I \"wanted\" wasn't a medication or a specific delivery position—it was continuity. I really wanted someone who understood the context of my fear, someone who knew that the way I was acting wasn't just \"the panic of a forty-three-year-old,\" but the result of losing a baby before and having no support system to lean on. \n\nI felt steered toward constant monitoring. I understand the clinical necessity, I do—I’ve read the charts—but I felt like I was being treated as a ticking clock. Every time I moved or tried to find a comfortable position, a nurse would come in to adjust the monitors because the signal was lost. It felt like my body was a piece of equipment they needed to calibrate, rather than a person in labor. \n\nI also really wanted a doula. I looked into it, but with the costs and our limited income, it was just out of reach. I think if I’d had someone who wasn't a doctor or a nurse, someone whose *only* job was to be in my corner and help me navigate the logistics of just being there, I wouldn't have felt so pressured to just \"agree\" to everything they suggested. I felt like I had to be a \"good patient\" to make sure they took good care of me. It’s hard to advocate for your preferences when you’re already worried about being an inconvenience.",
+      "responding_to_question_id": "V1_BIRTH_Q03_P01",
+      "input_tokens": 2061,
+      "output_tokens": 298
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who were with you during the birth — your partner, family, midwives, doctors — and what their presence meant to you.",
+      "question_id": "V1_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "partner_role",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "My husband was there, and he was doing his best, but he was just as terrified as I was. We’ve been a team of two for so long, trying to navigate this together, but in that delivery room, he looked as lost as I felt. He kept trying to look at the monitors, maybe hoping to find some secret answer, but all he could really do was hold my hand. It was sweet, but it was also a heavy reminder of how isolated we are. There was no one else—no mother, no sister, no friend to trade places with him so he could breathe for a second. \n\nThe medical team… they were efficient, which I know is what I’m supposed to want. But they were strangers. I think I met three different shifts of nurses, and every time someone new came in, I had to explain my anxiety all over again. I felt like a revolving door of a patient. They weren't unkind, but they were busy, and they had other rooms to check. \n\nI kept watching the door, stupidly hoping for a familiar face, or even just someone who would stop and actually look at *me* instead of the data on the screen. It made me realize that clinical competence isn’t the same thing as care. I had the care I needed to deliver a baby safely, but I didn't have the care I needed to feel like a mother being born myself. It was just so lonely, being in a room full of people who were technically there for me but didn't actually *know* me.",
+      "responding_to_question_id": "V1_BIRTH_Q04",
+      "input_tokens": 2391,
+      "output_tokens": 324
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how the birth ended — whether that was the birth you expected, and how you felt in the immediate aftermath.",
+      "question_id": "V1_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "power_dynamics",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "The birth didn't end with a heroic moment or a surge of triumphant energy. It ended with a quiet, exhausted relief that felt more like a collapse than a finish line. When they finally placed the baby on my chest, my first thought wasn't \"I did it.\" It was, \"Oh thank God, we both survived.\"\n\nIt wasn't the birth I expected. In my mind, I had this vision of a calm, controlled transition into motherhood, where I’d be alert and soaking in every second. Instead, I felt like a shell. I was physically and emotionally hollowed out by the sheer effort of the nine months of fear and the intensity of the delivery. I remember staring at the clock, just counting the minutes and feeling this strange, heavy sense of detachment because I was so physically drained.\n\nIn those first hours, I felt an intense, irrational urge to be home. The hospital felt like a place of high-stakes pressure, and I just wanted to be in our own space, away from the monitors and the shifts of strangers. I kept looking at my husband, wanting to tell him we did it, but the words wouldn't come. I felt like I had reached the end of a marathon I wasn't trained for, and all I could do was lie there and wonder how I was ever going to do the rest of the work.",
+      "responding_to_question_id": "V1_BIRTH_Q05",
+      "input_tokens": 2742,
+      "output_tokens": 282
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the birth environment itself — the place where you gave birth, what it looked and felt like, and whether it felt like the right place for you.",
+      "question_id": "V1_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "The room was sterile—bright, clinical, and loud. It was filled with that persistent, rhythmic beeping of monitors that I had spent months worrying about. Every time that sound spiked, I felt a jolt of cortisol, even when the nurses said everything was fine. It didn't feel like a space meant for a human transformation; it felt like a workshop for an industrial process. \n\nI’m grateful for the technology—I truly am, because at forty-three, I know the risks were real—but the environment itself made me feel like an object, not a person. It was all hard surfaces, cold metal, and artificial light. I had tried to imagine bringing a few things from home to soften it, but with the stress of getting there, I barely had the energy to think about making it feel like a bedroom. \n\nIt never felt like \"my\" space. It felt like I was a guest in a place that didn't have room for my humanity. The lack of privacy, the constant interruptions, the sense that I was occupying a bed that someone else needed—it all just added to that feeling of being an inconvenience. I suppose I wanted a sanctuary, but I was given a ward. It kept us safe, and for that, I’m deeply thankful, but it wasn't the kind of place where I could actually breathe.",
+      "responding_to_question_id": "V1_BIRTH_Q06",
+      "input_tokens": 3059,
+      "output_tokens": 281
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the first days and weeks after the birth — what that time was like for you, physically and emotionally.",
+      "question_id": "V1_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "continuity_of_care",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "The first few weeks were a blur of adrenaline and sheer, bone-deep exhaustion. Coming home, the apartment felt different, smaller somehow, but filled with this fragile new life. Physically, I was struggling—the recovery at forty-three is no joke, and every time I stood up, I felt the gravity of it all, literally and figuratively.\n\nEmotionally, though? It was a strange mix of relief and a lingering, quiet terror. Every time the baby slept, I’d find myself staring at them, checking for the rise and fall of their chest, just like I used to obsess over the ultrasound charts. The ghost of that previous loss never really left the room; it just changed shape. I felt an immense pressure to be the \"perfect\" mother to make up for the fact that I was so drained, and that constant, nagging thought—*am I doing this right?*—was always there.\n\nThe loneliness didn't vanish, either. My husband and I were just exhausted, passing the baby back and forth like a relay baton. There was no one to bring us a meal or hold the baby while we showered. We were just two tired people trying to keep our world from tipping over. I felt so much love, but it was wrapped in this layer of \"I’m all alone in this.\" I just wanted someone to ask me how *I* was doing, not just the baby.",
+      "responding_to_question_id": "V1_POST_Q01",
+      "input_tokens": 3366,
+      "output_tokens": 291
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What were the hardest parts of those early weeks — and were there things that helped you through them?",
+      "question_id": null,
+      "probe_id": "V1_POST_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "The hardest part was the silence. When my husband would eventually have to step away or handle some chore, I’d be left sitting in that chair, watching the shadows move across the wall. It felt like the weight of the entire world was resting on my chest. I had all these books on infant development, but none of them explained how to survive the isolation. I’d cry for no reason at all, just out of sheer, overwhelming fatigue and the lingering fear that I was going to miss a signal that something was wrong with the baby. The \"what ifs\" didn't stop at birth; they just evolved.\n\nWhat helped? It sounds small, but it was the quiet moments of connection with the baby. Sometimes, in the middle of the night, when the rest of the world was dark and everything felt impossible, the baby would finally drift off to sleep on my chest. In those moments, the clinical, sterile world of the hospital felt miles away, and I could just exist. \n\nHonestly, even just having someone like you sit here and ask me these questions helps. It’s the first time in a long time I’ve felt like my experience—not just the \"geriatric pregnancy\" statistics, but *my* experience—mattered to someone outside of our four walls. It’s validating to say it out loud instead of keeping it all trapped in my head.",
+      "responding_to_question_id": "V1_POST_Q01_P01",
+      "input_tokens": 3679,
+      "output_tokens": 285
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about feeding your baby — how you made decisions about it, and what the experience was actually like.",
+      "question_id": "V1_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "continuity_of_care",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "I felt like I had to be perfect at breastfeeding. I read all the articles about the immunological benefits and the bonding, and because of my age and the history I have, I felt an intense, crushing pressure to provide the \"best\" start. It felt like one more test I had to pass to prove I could be a good mother despite the late start.\n\nWhen we actually got home, it was grueling. The latching was painful, and the baby was so fussy. I’d sit there in the dim light of the living room, crying because I didn't have anyone experienced to guide me through the mechanics of it. I remember the pain—it felt like a searing, physical reminder of how much I was struggling. I’d be checking the clock, wondering how many ounces, how many minutes, terrified that if I didn't get it right, I was failing in a fundamental way. \n\nI eventually had to swallow my pride and supplement with formula. I felt a stinging wave of shame at first, as if I’d finally admitted to that \"geriatric\" label by not being able to \"naturally\" nourish my child. But once I did, the relief was immediate. My husband could help with the feeds, and for the first time in weeks, I could actually sleep for more than an hour. It wasn't the picture-perfect path I’d imagined, but it saved us.",
+      "responding_to_question_id": "V1_POST_Q02",
+      "input_tokens": 3988,
+      "output_tokens": 291
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how you were feeling emotionally in the weeks and months after the birth — the full picture, not just the positive side.",
+      "question_id": "V1_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s hard to talk about without feeling like I’m ungrateful, but the truth is, I felt like I was grieving. I’d spent so many years—and so much money and emotional energy—trying to get to that finish line, and once I crossed it, I felt this strange, hollow void. I wasn't just \"the pregnant lady\" anymore; I was a mother, but I felt like I was playing a role I hadn't been cast for.\n\nThe anxiety didn’t just vanish when the baby arrived. If anything, it got louder. I was constantly waiting for the other shoe to drop. Because of my age and the loss I’d experienced before, I felt this paralyzing weight of responsibility—like if I looked away for one second, or if I slept too deeply, everything I’d fought for would be snatched away. I wasn't bonding in the way the magazines promised; I was just trying to keep the terror at bay.\n\nAnd the loneliness… that was the sharpest ache. I’d be nursing or rocking the baby at 4:00 AM, looking out at the city lights of Lawrence, and feeling like I was the only person on earth. I was exhausted, recovering from surgery, and scared, and there was no one to bring me a coffee or just sit with me so I could cry. I felt like I was drowning in my own competence, trying to manage every detail because I didn't trust anyone else to do it, but honestly? I was just lonely, and I was mourning the version of the \"new mother\" experience that I couldn't afford and didn't have the village to support. I loved my baby, but I wasn't sure I liked my life.",
+      "responding_to_question_id": "V1_POST_Q03",
+      "input_tokens": 4308,
+      "output_tokens": 364
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your physical recovery after the birth — what that process was like and what support you had.",
+      "question_id": "V1_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "The physical side was a constant, dull reminder of the trauma. Between the exhaustion of the delivery and the recovery from the interventions, I felt like my body was a stranger to me. I had stitches that seemed to ache every time I moved, and the sheer fatigue—that kind of \"bone-deep\" tiredness—made simple things, like getting a glass of water or just walking from the bed to the kitchen, feel like monumental tasks.\n\nI kept waiting for the \"bounce back\" the books talk about, but at forty-three, there is no bouncing back. There is only a slow, sluggish healing. I didn’t have any help. My husband was incredible, but he had to go back to work; he didn't have the luxury of taking weeks off to help me recover. So, for most of the day, I was on my own. I remember sitting there, nursing the baby, feeling that searing pain and just crying because there was nobody to hand me an extra pillow or even just sit and talk to me while I dealt with the discomfort.\n\nI felt so much shame about it. I kept thinking, *If I had family nearby, would I be this sore? Would I have someone to help me lift the baby?* I felt like I was failing at recovery because I was the only one managing it. It’s hard to heal when you’re constantly worried about whether you’re doing it \"right\" and you have no one to check in on you. It was a very lonely, very physical kind of struggle.",
+      "responding_to_question_id": "V1_POST_Q04",
+      "input_tokens": 4695,
+      "output_tokens": 318
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how your sense of yourself changed after you became a parent — your identity, your relationships, your daily life.",
+      "question_id": "V1_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "intergenerational_patterns",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "I feel like I’ve been dismantled and put back together in a shape I don’t quite recognize. Before the baby, I was the one who controlled everything—the charts, the research, the logistics. I had this illusion that if I was smart enough and prepared enough, I could outmaneuver the risks of my age. But becoming a parent—especially at forty-three—has shown me just how little control I actually have. \n\nMy identity feels fractured. I’m no longer just the person who works and manages a home; I’m this person who is perpetually \"on call,\" constantly scanning for threats, constantly doubting my own instincts. My relationship with my husband has shifted, too. We’re closer in a way, tied together by this incredible, heavy responsibility, but we’re also distant because we’re both just running on fumes. We don’t have space to talk about *us* anymore. It’s all about the baby’s schedule, the baby’s health, the baby’s needs.\n\nMy daily life is smaller. I rarely leave the apartment, and when I do, the thought of the logistics—getting the stroller, the gear, the transport—feels like climbing a mountain. I feel like I’m living in a state of constant, quiet tension. I’m proud of my baby, and I’m so deeply grateful we made it, but I’m still mourning the person I was before the fear took over my entire life.",
+      "responding_to_question_id": "V1_POST_Q05",
+      "input_tokens": 5040,
+      "output_tokens": 310
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about returning to work — or thinking about returning to work — and what that transition was like for you.",
+      "question_id": "V1_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "Returning to work… it feels like trying to step back onto a moving train while I’m still trying to find my footing in my own living room. I’ve been staring at my laptop, just seeing the screen glare and feeling like my brain has been completely rewritten. I was always the \"prepared\" one—the one who knew the spreadsheets, the one who didn't miss a beat. Now? I look at my professional life and I just feel this massive, heavy detachment. \n\nThe transition is looming over me like a storm cloud. I have to go back—we need the income, especially with the costs we’ve incurred—but the idea of leaving the baby feels like a physical tearing. And then there’s the logistical terror again. Who is going to watch them? How am I going to balance the pumping, the commute on the bus, and the fatigue while still being \"the expert\" at my job? \n\nI’m worried that if I go back and show any cracks—any signs of being a tired, overwhelmed new mother—they’ll see it as me being \"too old\" or \"not committed.\" I feel like I have to work twice as hard to prove I’m still the same person I was before. But the truth is, I’m not. I’m exhausted, I’m guarded, and I’m just trying to survive the day. The professional me and the mother me feel like they’re living in two different worlds, and I’m terrified I’m going to collapse trying to bridge the gap.",
+      "responding_to_question_id": "V1_POST_Q06",
+      "input_tokens": 5375,
+      "output_tokens": 324
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did you feel about going back — was it something you looked forward to, something you dreaded, or both?",
+      "question_id": null,
+      "probe_id": "V1_POST_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s complicated. If I’m being honest, there’s a part of me that *does* crave it. I miss the structure, the adult interaction, and the feeling of being respected for what I know—not just being watched for signs of my \"geriatric\" health status. In the office, I’m \"Camellia the professional,\" not \"Camellia the fragile patient.\" I want to feel like *me* again, that part of me that isn't just an appendage to a baby monitor.\n\nBut the dread… it’s heavy. It sits right in the pit of my stomach. Returning to work feels like the final step in this transformation I’m not sure I was ready for. It means leaving the bubble of our apartment and facing the world again, and I’m terrified I’ll be spread too thin. How do I balance the constant, gnawing anxiety that something is wrong with the baby while I’m supposed to be analyzing spreadsheets or sitting in meetings? \n\nI’m worried they’ll see the fatigue in my eyes and think I’ve lost my edge. I’ve worked so hard my whole life to be the one who has it all together, and the thought that they might look at me and just see a tired, struggling mother—that’s a hit to my pride I’m not sure I can handle yet. It’s a tug-of-war between wanting my old life back and being too scared to step into the future.",
+      "responding_to_question_id": "V1_POST_Q06_P01",
+      "input_tokens": 5724,
+      "output_tokens": 311
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how you used digital tools, apps, forums, or online communities after the birth — what role they played in your life as a new parent.",
+      "question_id": "V1_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "Honestly, those apps were my lifeline, but they were also my poison. In the middle of the night, when the baby was finally asleep and my mind wouldn't shut off, I’d be scrolling through forums, comparing every little thing. I was obsessively tracking feeding times, weight gain percentages, sleep patterns—it was as if I was still running an audit, trying to make sure I wasn't failing this \"test\" of being a mother.\n\nWhen I’d read about other women’s milestones, I’d feel that familiar pang of inadequacy. Everyone else seemed to have this village—a mother to come over, a partner who wasn't so drained, or even just more community support in their neighborhood. I felt so exposed, sitting there in the dark, wondering why I was the only one who seemed to be struggling with the logistics of just getting to a pediatrician appointment without a car. \n\nIt was a strange sort of comfort, though. Sometimes, finding someone else who admitted they were terrified or that they were also exhausted made me feel a tiny bit less like an alien. It validated the fear. But mostly? It just reminded me of the distance between me and the \"perfect\" maternity experience I’d spent nine months trying to calculate. I was looking for a manual on how to be a mother at forty-three with no support, and I never really found it.",
+      "responding_to_question_id": "V1_POST_Q07",
+      "input_tokens": 6069,
+      "output_tokens": 287
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how you would describe your overall experience of maternity care — from preconception through to now. What would you want future services to know?",
+      "question_id": "V1_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "If I had to describe it in one word, it would be *clinical*. I was seen as a set of risks, a collection of data points, and a \"geriatric\" profile from the moment I walked in. I spent nine months being so terrified of the medical complications that I forgot I was actually becoming a mother. \n\nIf I could say anything to those designing these services, it’s this: stop looking at the charts and look at the woman in front of you. I didn’t just need a blood pressure check or a prenatal vitamin; I needed someone to ask, \"How are you doing, really? Who is driving you to your appointments? Who is going to be there when you get home?\" \n\nMy maternity care didn't account for the fact that I’m a human being living a life with real, logistical barriers. I needed someone to acknowledge that being forty-three and alone is a heavy burden, even if the baby is healthy. Please, stop pathologizing our age and start addressing our circumstances. We aren't just \"high-risk\" medical cases; we are mothers who are scared, lonely, and trying to navigate a world that doesn’t always make room for us. A little bit of grace—and actual help with the logistics of survival—would have meant more to me than all the medical monitoring in the world.",
+      "responding_to_question_id": "V1_POST_Q08",
+      "input_tokens": 6388,
+      "output_tokens": 281
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "If you could change one thing about the care system — not just for yourself but for others going through the same journey — what would it be?",
+      "question_id": null,
+      "probe_id": "V1_POST_Q08_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "I would replace the \"clinical intake\" with a \"life intake.\" When you walk through those clinic doors, you’re handed a clipboard for your medical history—your surgeries, your allergies, your blood pressure—but nobody asks you about your *life* history. Nobody asks, \"How are you going to get here when the snow falls?\" or \"Who is holding your hand when you're overwhelmed at three in the morning?\" \n\nI want the system to integrate social support as a standard part of prenatal care, just as much as they integrate blood work. If a clinic identified that I had limited transportation and no social network, I shouldn’t have had to fight to be seen as \"at-risk.\" That *is* a high-risk factor. It affects your blood pressure, your stress levels, your recovery, and your ability to bond with your child. \n\nI’d want there to be a \"bridge\" person—a community navigator—whose only job is to help women like me solve those real-world logistical problems before they become crises. If I hadn’t spent 90% of my energy worrying about how to get to the hospital, I might have had 90% more energy to actually enjoy being pregnant and recovering from birth. We need a system that recognizes that a mother’s well-being is not just about her biology, but about the world she’s living in.",
+      "responding_to_question_id": "V1_POST_Q08_P01",
+      "input_tokens": 6700,
+      "output_tokens": 291
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "I think the only thing I’d add is that I don’t want to be remembered just as the \"anxious, older mother who couldn't navigate transit.\" I am a woman who carried a child, who survived a loss, who navigated a system that felt like it was built for someone else, and who somehow made it to the other side with my baby in my arms.\n\nThere’s a quiet strength in that survival that I think gets overlooked when people look at my chart and see a \"medium-risk\" label. I didn't have the village, I didn't have the car, and I didn't have the extra hand to hold, but I did it. And I think it’s important for systems to understand that resilience isn't just about bouncing back—it’s about enduring the long, lonely stretch of becoming a mother when the road is uphill.\n\nI’m still here, I’m still figuring it out, and every day I hold my baby, I’m learning to be a little bit kinder to myself. I hope, really, that sharing this helps someone else realize they aren't the only one feeling invisible. Thank you for listening. It… it really does make a difference to finally be heard.",
+      "responding_to_question_id": null,
+      "input_tokens": 7047,
+      "output_tokens": 260
+    }
+  ],
+  "metadata": {
+    "total_turns": 40,
+    "questions_asked": 14,
+    "probes_deployed": 4,
+    "adaptive_followups": 0,
+    "total_input_tokens": 77690,
+    "total_output_tokens": 5969,
+    "estimated_cost_usd": 0.0896,
+    "duration_seconds": 63.1,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 199
+  },
+  "errors": []
+}

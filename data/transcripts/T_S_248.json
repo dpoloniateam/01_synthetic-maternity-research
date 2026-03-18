@@ -1,0 +1,615 @@
+{
+  "session_id": "S_248",
+  "status": "completed",
+  "persona_id": "comp_140",
+  "persona_name": "Gretta",
+  "persona_journey_stage": "birth",
+  "persona_risk_level": "medium",
+  "persona_vulnerability_flags": [
+    "mental_health"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 5,
+  "questionnaire_strategy": "Relational / Stakeholder Map",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T02:45:56.238184",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Gretta, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're going through the birth experience, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in seat, tucking hair behind ear nervously*\n\nYeah, okay. Thanks for... I mean, I appreciate you asking. It's weird talking about all this, honestly. I'm not used to people really wanting to hear the whole thing, you know?\n\n*takes a breath*\n\nI guess the thing that's hardest to explain is how alone it feels, even though everyone keeps telling me I shouldn't feel that way. Like, my midwife is nice—she really is—but there's this... I don't know, this undertone of worry when we talk about my mental health. She doesn't say it outright, but I can feel it. \"Do you have support?\" she asks, and I know what she's really asking is whether I'm going to fall apart.\n\n*fidgets with hands*\n\nThe birth itself is terrifying me in ways I didn't expect. It's not just the physical pain thing, though that scares me too. It's like... I've read so much about how a mother's emotional state affects the baby's development, and now that knowledge is just eating at me. What if I can't regulate myself during labor? What if that somehow damages him? I know that probably sounds irrational, but it's there every day.\n\nI'm twenty-one and doing this alone, and I want so badly to be the person this baby needs. But mostly I'm just scared I'm not enough.",
+      "responding_to_question_id": null,
+      "input_tokens": 780,
+      "output_tokens": 309
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who were with you — or who you wished had been with you — during your labour and birth. Who did each person support, and what difference did their presence make?",
+      "question_id": "V5_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "dignity_respect",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes get watery, looks down*\n\nOh man, that's... that's the thing, isn't it?\n\nMy mom came. She's trying, she really is, but we have this complicated thing going on. She's worried about me in a way that sometimes feels more like judgment? Like she thinks my anxiety is something I should just be able to control if I tried hard enough. When we talk about the baby, she gets this nervous energy, and I can feel her wondering if I'm stable enough. So having her there during labor was... it was hard. I needed her to just believe in me, and instead I felt like I was being evaluated the whole time.\n\n*voice gets quieter*\n\nI wish I had someone who could just be present without all that weight behind it, you know? Someone who wasn't measuring whether I'm okay or not. My midwife was there too, and she was actually amazing during the actual birth—like, she didn't make it about my mental health, she just helped me through it. In that moment, I felt capable.\n\nBut before and after? That's when I needed more. I needed someone to say, \"You're doing great, and your baby is going to be okay, and *you're* going to be okay.\" Not because they're trying to convince me of something I don't believe, but because they actually *see* me trying.\n\n*pauses*\n\nI think what hurt most was feeling like I had to prove I wasn't broken before anyone would fully support me.",
+      "responding_to_question_id": "V5_BIRTH_Q01",
+      "input_tokens": 1131,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the midwives and doctors who cared for you during your birth. Were there particular individuals whose presence or approach made a lasting impression — positive or negative?",
+      "question_id": "V5_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans forward slightly, a small smile crossing face*\n\nMy midwife... her name is Sarah. She's the one who actually made me feel like I could do this. Like, she knew about my anxiety—it's all in my chart, highlighted in red or whatever—but she didn't treat me like I was a walking liability. During labor, she was just... there. She'd check in without making it feel like a test. She'd say things like, \"You're handling this really well,\" and it didn't feel patronizing. It felt true.\n\n*expression becomes more guarded*\n\nThe OB who came in at the end was different though. I could tell she was reviewing my chart, and I watched her face change when she got to the mental health section. She was competent, definitely, but there was this distance. She treated the labor like a medical problem to solve rather than... me as a person going through something huge. When I got emotional—which, hello, I was in active labor—I could see her filing that away mentally. Like it confirmed something she was already thinking.\n\n*voice tightens*\n\nWhat bothered me most was that nobody really sat down after and said, \"How are *you* doing mentally right now?\" They asked about bleeding and stitches and feeding, but the postpartum period... that's when I really started struggling, and I felt like I had to hide it because I was already flagged as \"medium risk.\" I didn't want them taking my baby.\n\n*looks directly at you*\n\nSarah checked in though. That meant everything.",
+      "responding_to_question_id": "V5_BIRTH_Q02",
+      "input_tokens": 1496,
+      "output_tokens": 342
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your partner's — or support person's — role during your birth. What did they bring to that experience, and what do you think they found most challenging?",
+      "question_id": "V5_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "partner_role",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*goes very quiet, jaw tightens slightly*\n\nI... there wasn't a partner. That's the thing nobody really knows how to talk about, right? They ask \"Who's your support person?\" like it's obvious there's going to be someone, and I have to explain that it's just me. Well, my mom, but like I said, that's complicated.\n\n*fidgets with sleeve*\n\nThe baby's father... he's not in the picture. He made it clear pretty early on that this wasn't something he could be part of. And I had to make peace with that, which—it took a while. Some days I'm still making peace with it.\n\n*voice becomes softer, more vulnerable*\n\nWhat's weird is that during labor, I think I needed a partner more than ever, and I didn't have one. Not someone to judge me or worry about whether I'm stable enough, but someone who chose to be there. Someone who wanted to be there. My mom did her best, but she's dealing with her own anxiety about the whole situation.\n\n*pause*\n\nI think what I missed most wasn't even the practical stuff—someone to get me water or time my contractions. It was having someone look at me mid-labor and say, \"I'm here, I'm not going anywhere.\" Someone invested in *me*, not just worried about whether I'm going to mess up.\n\n*looks down*\n\nAnd honestly? That's part of why the mental health stuff got worse after. It's lonely doing this alone. Really lonely.",
+      "responding_to_question_id": "V5_BIRTH_Q03",
+      "input_tokens": 1876,
+      "output_tokens": 333
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did the clinical team engage with your partner or support person — did they feel included as part of the care, or more like a bystander?",
+      "question_id": null,
+      "probe_id": "V5_BIRTH_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "partner_role",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably*\n\nI mean, they really only had my mom to work with, since there was no partner. And I think... *pauses, choosing words carefully* ...I think the clinical team was actually pretty good about including her in practical ways. They explained things, asked her to help with certain things during labor.\n\nBut there was this undertone, you know? Like they were also assessing *her* as part of my safety net. Sarah, my midwife, would ask my mom questions about my mental health history in front of me, and my mom would get this stressed look because she was trying to be honest but also didn't want to say anything that would make me look worse on paper.\n\n*voice gets a bit bitter*\n\nThe OB barely acknowledged my mom was there. She was just focused on the medical stuff. I don't think she saw my mom as part of my support system so much as just... someone occupying space in the room.\n\n*rubs face*\n\nBut here's the thing—and I hate admitting this—I think part of me didn't want them treating my mom like she was essential to my care. Because if they saw her as crucial and something went wrong emotionally, then it would be her fault too, and I didn't want that on her. I wanted to be able to say, \"I can do this. I don't need someone else to validate that I'm capable.\"\n\n*looks up*\n\nWhich is probably not realistic, but... yeah. That's where my head was at.",
+      "responding_to_question_id": "V5_BIRTH_Q03_P01",
+      "input_tokens": 2243,
+      "output_tokens": 330
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about a moment during your birth when a decision needed to be made quickly or under pressure. Who was involved in that decision, and how did you experience your role in it?",
+      "question_id": "V5_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, eyes getting distant*\n\nThere was this moment... I'd been laboring for a while, and my contractions started getting really intense, really close together. I was losing it a bit—like, panic was creeping in because the pain was different than I expected, sharper, and my brain was going to dark places. I kept thinking, \"This is it, this is where I spiral, this is where I can't handle it.\"\n\n*voice becomes quieter*\n\nSarah noticed and checked me, and then she got this look. Not scared, but... focused. She said my blood pressure had spiked and the baby's heart rate was elevated. She said we might need to consider moving to the hospital, getting an epidural, maybe pitocin. And it all happened so fast.\n\n*pauses, clearly emotional*\n\nMy mom started asking questions, the OB came in, and suddenly there were all these voices and all these options, and I was supposed to decide while I'm literally in the worst pain of my life having a panic attack. Sarah kept asking what I wanted, but nobody really slowed down enough for me to think. I felt like they were waiting for me to make the \"right\" choice, like if I chose wrong it would prove I wasn't stable enough to be a mother.\n\n*voice cracks slightly*\n\nI said yes to the epidural. And it helped. But I never felt like I actually *chose* it—it felt like something that was decided *for* me because they were worried about my mental state affecting the baby.\n\n*looks up*\n\nThat's when I felt most alone.",
+      "responding_to_question_id": "V5_BIRTH_Q04",
+      "input_tokens": 2613,
+      "output_tokens": 353
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how the physical environment of your birth — the room, the equipment, the sounds and smells — felt in relation to the people around you. How did the space and the relationships interact?",
+      "question_id": "V5_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "dignity_respect",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*closes eyes for a moment, visualizing*\n\nThe birthing center was... it was actually pretty nice, which surprised me. Not sterile and cold like I'd imagined. There were these soft lights, and Sarah had put on quiet music—nothing intrusive, just there. It felt intimate, like a safe space.\n\n*opens eyes*\n\nBut then when things got intense and they started talking about transferring to the hospital, everything changed. The energy in the room shifted. Suddenly there were monitors everywhere, beeping sounds, people moving faster. My mom got tenser. Sarah was still calm, but I could feel the urgency underneath. The physical space went from feeling like *mine* to feeling like it belonged to the medical system.\n\n*voice becomes uncertain*\n\nAnd I think... I think the equipment and the people got tangled up in my head. Like, when I was looking at the monitors showing my blood pressure and the baby's heart rate spiking, I wasn't just seeing data. I was seeing proof that my anxiety was literally affecting my baby in real time. The beeping felt like an accusation.\n\n*rubs arms*\n\nSarah tried to help by explaining what the numbers meant, but honestly? The physical space itself—all those machines, all those wires—it reinforced this idea that something was wrong with me. That my body and my mind were betraying both of us.\n\n*quieter*\n\nIf the room had stayed calm and simple, maybe I wouldn't have spiraled so hard. But once the equipment came in, I felt like a problem that needed solving instead of a person giving birth.",
+      "responding_to_question_id": "V5_BIRTH_Q05",
+      "input_tokens": 3010,
+      "output_tokens": 347
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who knew about your birth preferences or plan beforehand — your midwife, your partner, your family — and how well those preferences were known and respected in the room on the day.",
+      "question_id": "V5_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits back, looking a bit deflated*\n\nSarah knew. We'd talked about it—I wanted to stay as unmedicated as possible, wanted to move around, didn't want a lot of intervention. We'd gone over it a few times. I was really clear about wanting to feel in control, because feeling out of control is where my anxiety takes over.\n\n*pauses, voice becoming strained*\n\nBut here's the thing nobody really wants to talk about: my birth preferences and my mental health needs were kind of at odds, and nobody knew how to navigate that. Like, I wanted minimal intervention, but I also knew that if things got overwhelming, I might need help managing the panic. So it was this impossible situation.\n\n*shifts uncomfortably*\n\nMy mom knew the basic plan, but I don't think she understood how important it was to me. And the OB? She definitely didn't. When she came in and things were escalating, she went straight to the medical playbook. She wasn't thinking about my preferences—she was thinking about risk management. About protecting herself, maybe, if something went wrong.\n\n*voice gets quieter, more vulnerable*\n\nWhat hurt most was that my biggest preference—to feel seen and trusted as a capable person—that got lost. I'd written it down, talked about it with Sarah. But the moment my anxiety spiked, I felt like I was just another \"medium risk\" case who couldn't be trusted to know what she needed.\n\n*looks up with frustration*\n\nSarah tried to honor it. But she was outnumbered by the system.",
+      "responding_to_question_id": "V5_BIRTH_Q06",
+      "input_tokens": 3403,
+      "output_tokens": 344
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your sense of being known as a person rather than just a patient — did anyone in the room seem to really understand who you were and what mattered to you?",
+      "question_id": null,
+      "probe_id": "V5_BIRTH_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes get wet, takes a moment before responding*\n\nSarah did. That's the honest answer. She asked me questions that weren't on a form. She listened to how I talked about things, not just what I said. Like, she knew that being treated like I was fragile would actually break me more than the labor itself would. She got that my biggest fear wasn't pain—it was being seen as incapable.\n\n*voice becomes shakier*\n\nDuring the good part of labor, when things were still manageable, she'd check in with me about how I was feeling emotionally, not just physically. She'd say stuff like, \"You're doing this. You're making decisions for yourself and your baby.\" She saw me as someone with agency, not just as a psychiatric case that happened to be pregnant.\n\n*pauses, struggling*\n\nBut when the OB came in... I became my chart. I became the anxiety diagnosis and the \"medium risk\" label. She didn't ask me questions about what mattered to me. She presented options like she was solving a clinical problem, not like she was talking to a twenty-one-year-old girl who was terrified and alone.\n\n*voice cracks*\n\nMy mom loves me, but she doesn't really *know* me like that. She sees my anxiety as something to worry about, not something I'm actively managing and living with.\n\n*looks directly at you*\n\nThat's what I needed most—for someone to see all of me. Not the broken parts, not just the clinical risk factors. All of it. Sarah did that. Everyone else... they saw the label first.",
+      "responding_to_question_id": "V5_BIRTH_Q06_P01",
+      "input_tokens": 3787,
+      "output_tokens": 350
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who surrounded you in the days and weeks after your baby was born. Who showed up for you, and who were you surprised by — either by their presence or their absence?",
+      "question_id": "V5_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, eyes getting distant*\n\nThe first few days were a blur. My mom stayed with me, which I needed practically, but emotionally? It was hard. She kept hovering, watching me like she was waiting for me to crack. And I could feel her anxiety mixing with mine, making everything heavier.\n\n*voice becomes strained*\n\nSarah came for a postpartum visit, and that was actually... it was really good. She checked on me—like, really checked on me. Asked how I was sleeping, how my mood was, whether I was having intrusive thoughts. Not in a \"are you fit to be a mother\" way, but in a \"I'm actually concerned about your wellbeing\" way. That meant so much.\n\n*pauses, voice getting quieter*\n\nBut after that? The system kind of dropped me. I got discharged from midwifery care pretty quickly. There was supposed to be some kind of mental health screening, but it felt perfunctory. Nobody sat down and said, \"You're at risk for postpartum depression or anxiety. Here's what we're watching for. Here's how to get help.\" It was more like... they checked a box.\n\n*rubs face*\n\nThe people I expected to show up didn't, really. Friends got weird around me. My dad called once. The baby's father? Still nothing.\n\n*voice cracks*\n\nAnd I'm here with this baby and this brain that won't stop spiraling, and I feel like I'm supposed to just know how to do this alone. Sarah was the only one who actually stayed present, even after. That's the sad part—I had one person.",
+      "responding_to_question_id": "V5_POST_Q01",
+      "input_tokens": 4180,
+      "output_tokens": 366
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in day-to-day support — a health visitor, a postnatal group, an online community — that became important to you?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs bitterly*\n\nI wish I could say yes to that. But honestly? There's been a lot of... silence.\n\n*shifts uncomfortably*\n\nI had a pediatrician appointment, which was fine—she checked the baby over, asked the standard questions. But there wasn't really a health visitor situation set up. I think that's a Massachusetts thing, they don't do it the same way. And I kept waiting for someone to actually check in on *me*, and it just didn't happen.\n\n*voice becomes more anxious*\n\nThere's supposed to be postpartum screening through my primary care, but I haven't scheduled it yet. Which is stupid because I know I need it, but part of me is terrified of what admitting I'm struggling will mean. Like, if I tell them how bad my anxiety is, if I tell them about the intrusive thoughts about something happening to the baby... will they think I'm a danger? Will they take him?\n\n*fidgets with hands*\n\nI tried looking into a postpartum support group online, but sitting in a room with other moms felt impossible. I didn't want anyone to see how much I'm falling apart. And honestly, I don't know if I'd feel comfortable sharing when the fear in the back of my mind is always about whether I'm being perceived as stable enough.\n\n*voice gets smaller*\n\nSo it's just me, my mom when she comes by, and Sarah when I can reach her. That's the support system. And it's not enough, but it's what I have.",
+      "responding_to_question_id": "V5_POST_Q01_P01",
+      "input_tokens": 4581,
+      "output_tokens": 339
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people involved in your feeding journey — whether you breastfed, formula-fed, or mixed-fed. Who helped you, who gave you conflicting advice, and how did those relationships shape your choices?",
+      "question_id": "V5_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "dignity_respect",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, clearly touched a nerve*\n\nOkay, so... I wanted to breastfeed. I had this whole thing in my head about it being natural and bonding and all that. And the first few days it was... it was hard but okay. The lactation consultant came by and gave me tips, showed me positions.\n\n*voice becomes tighter*\n\nBut then my anxiety started spiraling around it. I'd be feeding and have these intrusive thoughts—like, what if I'm not producing enough and the baby's starving? What if my stress is transferring through the milk and damaging him? I was reading all this stuff about how a mother's cortisol levels affect babies, and I couldn't turn my brain off.\n\n*looks down*\n\nMy mom kept saying, \"Maybe you should just do formula, take the pressure off yourself.\" And I heard that as, \"You're too anxious to do this.\" The pediatrician was supportive but kind of neutral—she'd say either way was fine, which didn't help because I needed someone to say it was actually *okay* for me to struggle with this.\n\n*voice becomes quieter*\n\nSarah suggested I talk to someone about the postpartum anxiety, that the intrusive thoughts weren't normal worry. But by then I was already supplementing with formula because I was so stressed I couldn't keep up with demand. And I felt like I'd failed—like my mental health had already started affecting my baby's nutrition.\n\n*pauses, emotional*\n\nNobody really helped me figure out how to feed my baby *and* keep myself sane. It was like those two things couldn't coexist.",
+      "responding_to_question_id": "V5_POST_Q02",
+      "input_tokens": 4970,
+      "output_tokens": 361
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who noticed — or who missed — changes in your emotional wellbeing after your baby was born. Who checked in with you about how you were feeling as a person, not just as a new mother?",
+      "question_id": "V5_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes get glassy, voice becomes very small*\n\nSarah noticed. That's... that's the only person who really did.\n\n*pauses, composing herself*\n\nShe came for a postpartum visit maybe a week after I got home, and she asked me direct questions. Not \"How's the baby?\" but \"How are *you* doing? Are you sleeping? Are you having any scary thoughts?\" And I broke down. I told her about the intrusive images, the catastrophizing about everything, how I couldn't stop my brain from going to the worst possible place.\n\n*voice shakes*\n\nShe didn't make me feel like I was broken or dangerous. She said postpartum anxiety is real and treatable, and that what I was experiencing sounded like it needed professional support. She gave me resources, helped me find a therapist who specializes in perinatal mental health.\n\n*rubs eyes*\n\nMy mom... she noticed I wasn't okay, but she didn't know how to help. She'd ask if I was eating, if I was sleeping, but those questions made me feel like she was checking boxes on a list of \"is my daughter falling apart.\" My pediatrician never asked. The OB's office never called. Nobody from the hospital followed up.\n\n*voice becomes bitter*\n\nIt's like once they discharged me, their job was done. The baby was healthy, I was physically recovering—case closed. But emotionally? I was drowning, and nobody was watching for that except Sarah.\n\n*looks up with tears in eyes*\n\nThat's the gap. That's where people fall through.",
+      "responding_to_question_id": "V5_POST_Q03",
+      "input_tokens": 5380,
+      "output_tokens": 349
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in picking up on signs that you were struggling — a health visitor, your GP, your partner, a friend?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*shakes head slowly*\n\nNobody. That's the hard truth.\n\n*voice becomes strained*\n\nMy GP... I haven't even seen her since before the baby was born. I know I'm supposed to have a postpartum checkup, but I keep putting it off. Part of me knows she should be checking in on my mental health, but I'm terrified. Like, if I go in there and say how bad things are, will it go in my permanent record? Will it follow me?\n\n*fidgets nervously*\n\nI don't have a health visitor. That's not really how it works here in Massachusetts, I think. There's supposed to be some kind of screening, but nobody's actually come to my house or called me consistently. It's all on me to reach out, and when you're in the depths of postpartum anxiety, reaching out feels impossible.\n\n*voice becomes quieter, more vulnerable*\n\nMy friends... they've kind of disappeared. I think it makes them uncomfortable, seeing me struggle. Or maybe they think I should just be happy about the baby and if I'm not, there's something wrong with me. Nobody's asked me directly how I'm actually doing.\n\n*pause*\n\nAnd there's no partner to notice. My mom notices, but she doesn't know what to do with it. She worries, which makes me hide it more because I don't want to be a burden on top of everything else.\n\n*looks directly at you, voice cracking*\n\nSarah is literally the only person who actively checked in and said, \"This matters. You matter.\" Everyone else? They're waiting for me to figure it out alone.",
+      "responding_to_question_id": "V5_POST_Q03_P01",
+      "input_tokens": 5759,
+      "output_tokens": 356
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how your relationship with your partner — or your closest person — changed after your baby arrived. Who were you to each other, and how did the arrival of a baby reshape that?",
+      "question_id": "V5_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs sadly, almost bitterly*\n\nThere is no partner. That's the thing—there's nothing to change because it never existed in the first place.\n\n*voice becomes harder*\n\nThe baby's father made it clear early on that this wasn't his responsibility. He didn't want to be involved, didn't want to co-parent, nothing. And I had to accept that and move forward. Which, intellectually, I did. But emotionally? Every single day it hits me differently.\n\n*looks away*\n\nSometimes I'm angry at him. Sometimes I'm angry at myself for... for choosing someone who wasn't capable of showing up. And sometimes I'm just sad because my kid deserves to have both parents, and I can't give that no matter how hard I try.\n\n*voice becomes more vulnerable*\n\nWith my mom, it's complicated. Before the baby, we had our ups and downs, but we were figuring things out. After he was born, she became this... protective figure, but in a way that sometimes felt suffocating. She's worried about me in a way that makes me feel like I'm still her responsibility, not a capable adult raising my own child.\n\n*pauses, struggling*\n\nWhat I really needed was a partner in this—not necessarily romantic, but someone who chose to be here. Someone who believed in me when I didn't believe in myself. Someone who could hold space for how hard this is without judgment.\n\n*voice cracks*\n\nInstead, I'm doing it alone. And that loneliness... it's feeding the anxiety in ways I don't know how to fix.",
+      "responding_to_question_id": "V5_POST_Q04",
+      "input_tokens": 6157,
+      "output_tokens": 348
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the healthcare professionals who supported you after your birth — your community midwife, health visitor, GP. Which of those relationships felt continuous with your pregnancy care, and which felt like starting again from scratch?",
+      "question_id": "V5_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath*\n\nSarah was the only continuity. That's it. That's the whole thing.\n\n*leans forward slightly*\n\nDuring pregnancy, I saw her regularly. She knew my history, my fears, the specific things that triggered my anxiety. There was this thread of trust we'd built. And then after birth, she still showed up. She did postpartum visits, she checked in emotionally, not just physically. It felt like she was following through on this relationship we'd started.\n\n*voice becomes frustrated*\n\nBut the GP? I never really established care with one during pregnancy. My midwife handled most of that. And now postpartum, I'm supposed to just... call and make an appointment with someone I've never met? Who doesn't know any of my history? The idea of having to explain everything from scratch to a stranger while I'm already falling apart is paralyzing.\n\n*rubs face*\n\nAnd there's no health visitor. I kept waiting for someone to come, to check on me, to actually notice I was struggling. Nothing. It's like the system assumes once you leave the birthing center, you're fine. You have resources, you know how to access care. But when you're twenty-one and alone and your brain is spiraling, you don't have the bandwidth to navigate that.\n\n*voice becomes bitter*\n\nSarah's the only one who understood that. She's the only thread. And when she eventually has to step back, I don't know what happens to me. That terrifies me more than anything.",
+      "responding_to_question_id": "V5_POST_Q05",
+      "input_tokens": 6552,
+      "output_tokens": 336
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your confidence in seeking help — did you feel known enough by someone to reach out when things were hard?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly, eyes filling with tears*\n\nYeah. Sarah made that possible. Because she'd already seen me at my worst during labor—panicking, losing it—and she didn't abandon me. So when the postpartum anxiety hit hard, I could reach out to her without feeling like I was confirming some fear she already had about me.\n\n*voice becomes quieter*\n\nI called her crying one night because I couldn't stop imagining something terrible happening to the baby. And she didn't make me feel crazy. She validated it, explained that postpartum anxiety is a real medical condition, not a character flaw. She helped me find a therapist and actually walked me through making the appointment.\n\n*pauses, struggling*\n\nBut with everyone else? I'm still in hiding. I smile at the pediatrician, say everything's fine. I don't call my GP because I'm terrified of what asking for help means. Like, admitting I'm struggling will prove I'm not fit to be a mother.\n\n*voice cracks*\n\nThat's the difference Sarah made—she showed me that being vulnerable doesn't mean you're broken. It means you're human and you need support. But she's one person in this whole system, and I know eventually I'll have to branch out and trust other providers.\n\n*looks down*\n\nRight now though? I'm only confident reaching out to her. And that's... that's a problem because what happens when she can't help anymore? What happens when I have to navigate the rest of this alone?\n\n*voice becomes very small*\n\nI don't know if I'm ready for that.",
+      "responding_to_question_id": "V5_POST_Q05_P01",
+      "input_tokens": 6916,
+      "output_tokens": 351
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your return to work — or your decision not to return — and the people involved in that transition. Who supported you, who put pressure on you, and how did that shape your experience of becoming a working parent?",
+      "question_id": "V5_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "*exhales heavily, looking exhausted*\n\nThis is... this is actually one of the things keeping me up at night, honestly.\n\n*fidgets with hands*\n\nI was working full-time before the baby, and I need to go back. Financially, I don't have a choice. No partner means no second income, no one else to fall back on. My mom helps when she can, but she works too. So I'm looking at childcare, which is insanely expensive, and trying to figure out how to be present for my baby while also keeping a job.\n\n*voice becomes strained*\n\nMy employer has been... neutral? They're not explicitly pushing me out, but they're not exactly making it easy either. There's no flexibility being offered. It's full-time, in-person, or don't come back. And I'm terrified because the anxiety is still so high, and I'm barely managing now with just the baby.\n\n*pauses, looking vulnerable*\n\nNobody's really talked to me about this transition in a supportive way. Sarah asked about it, but she's a midwife—that's not really her lane. My mom keeps saying I need to just \"figure it out,\" which isn't helpful. There's no counselor or social worker who's sat down and said, \"Okay, let's think through what this looks like for your mental health.\"\n\n*voice cracks slightly*\n\nI'm terrified that going back to work will trigger a depressive episode. That I'll be so stressed managing both that I'll lose it. And then what? Then I'm a single mom who can't hold it together.\n\n*looks up desperately*\n\nNobody's helping me navigate that.",
+      "responding_to_question_id": "V5_POST_Q06",
+      "input_tokens": 7316,
+      "output_tokens": 370
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the communities — online or in person — that became part of your postpartum world. Who did you connect with, and what did those communities offer that more formal support couldn't?",
+      "question_id": "V5_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, looking a bit ashamed*\n\nI haven't really... I mean, I tried, but it didn't work out.\n\n*pause*\n\nThere's this postpartum support group that meets locally, and I looked up the info. But the idea of sitting in a room with other moms, being vulnerable in front of strangers... I couldn't do it. What if someone knew someone who knew someone? What if word got back that I'm struggling? I know that's probably paranoid, but it's where my brain goes.\n\n*fidgets with sleeve*\n\nI found some online communities—like, Reddit threads about postpartum anxiety, Facebook groups for young moms. And I read them a lot. There's something about reading other people's experiences anonymously that felt safer than actually sharing my own. But I never posted. I just lurked, looking for proof that I wasn't completely alone in this.\n\n*voice becomes quieter*\n\nThe problem is, online communities can't really help with the deeper stuff. They're good for normalizing the experience, for knowing you're not the only one with intrusive thoughts at 3 AM. But they can't replace actual human connection or professional help.\n\n*looks down*\n\nAnd honestly? A lot of what I found online was either overly cheerful \"motherhood is beautiful\" stuff or people sharing horror stories, and neither of those helped my anxiety. I just... I withdrew more.\n\n*voice cracks slightly*\n\nI needed real people. Real support. And I couldn't figure out how to access it without exposing myself.",
+      "responding_to_question_id": "V5_POST_Q07",
+      "input_tokens": 7729,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about any moments after your birth when you felt that you — as a person, not just as a new mother — were seen and cared for. Who made that happen, and what did they do or say?",
+      "question_id": "V5_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "*gets emotional, takes a moment*\n\nSarah. It's always Sarah.\n\n*voice becomes softer, more tender*\n\nThere was this moment, maybe two weeks postpartum. I'd called her because I was having a really bad day—the intrusive thoughts were terrible, I couldn't stop catastrophizing, and I felt like I was failing at everything. I was crying on the phone, barely holding it together.\n\n*pauses, remembering*\n\nShe asked if I could come in, and I did. And when I got there, she didn't dive into checking my stitches or my bleeding or any of that. She sat with me. She looked at me—actually looked at me—and said, \"You're not failing. You're struggling, and that's different. And it's okay.\"\n\n*voice wavers*\n\nShe asked me about my dreams, about what I wanted for myself beyond the baby. Not in a dismissive way, but like... like she remembered that I'm a person with my own life and identity, not just a vessel for a baby. We talked about how becoming a mother doesn't erase who I was before.\n\n*wipes eyes*\n\nAnd then she said something I'll never forget. She said, \"Your baby is lucky to have a mother who cares this much about his emotional wellbeing. That awareness, that sensitivity—that's a strength, not a weakness. Even when your anxiety makes it feel like a burden.\"\n\n*voice becomes very quiet*\n\nIn that moment, I felt seen. Not judged, not evaluated. Just... seen. Like I mattered as much as the baby mattered. That's what I needed most, and nobody else gave me that.",
+      "responding_to_question_id": "V5_POST_Q08",
+      "input_tokens": 8120,
+      "output_tokens": 367
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, sits back*\n\nYeah, actually. There is.\n\n*voice becomes more determined, though still emotional*\n\nI think what's been hardest is feeling like my mental health and my capability as a mother have been treated like they're the same thing. Like, because I have anxiety, there's this question mark over whether I can actually do this. And nobody's really separated those two things for me except Sarah.\n\n*leans forward*\n\nI'm anxious. That's real. But I'm also trying so hard. I'm showing up every day for my baby, I'm reading about development and attachment, I'm asking for help when I need it. That counts for something, right? But the system—the way I was flagged as \"medium risk,\" the way people look at me with worry—it all reinforces this idea that my mental health is a liability.\n\n*voice cracks slightly*\n\nAnd what I wish someone had said to me is: \"Your anxiety doesn't make you a bad mother. It makes you a mother who needs support. And we're going to make sure you get it, not because we're worried you'll hurt your baby, but because you deserve to feel okay.\"\n\n*pauses*\n\nI'm also really angry that there's no real system in place for young, single moms with mental health histories. Like, I was flagged as high-risk, but then what? Nobody followed up consistently. There's no coordinated care. It's just me, trying to piece together help from different places.\n\n*looks directly at you*\n\nIf things change, I hope it's that providers actually see the whole person, not just the diagnosis.",
+      "responding_to_question_id": null,
+      "input_tokens": 8543,
+      "output_tokens": 360
+    }
+  ],
+  "metadata": {
+    "total_turns": 42,
+    "questions_asked": 14,
+    "probes_deployed": 5,
+    "adaptive_followups": 0,
+    "total_input_tokens": 96542,
+    "total_output_tokens": 7281,
+    "estimated_cost_usd": 0.1111,
+    "duration_seconds": 111.2,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 259
+  },
+  "errors": []
+}

@@ -1,0 +1,697 @@
+{
+  "session_id": "S_128",
+  "status": "completed",
+  "persona_id": "comp_034",
+  "persona_name": "Anita",
+  "persona_journey_stage": "birth",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [
+    "immigration",
+    "language_barrier"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 4,
+  "questionnaire_strategy": "Expectation-Perception Gap",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "google/gemini-3.1-flash-lite-preview",
+  "environment": "dev",
+  "timestamp": "2026-03-18T01:22:26.138339",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Anita, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're going through the birth experience, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "Thank you for... for being patient with me. It is strange, you know? Back home, I spent so much time in labs looking at slides, talking about the cascade of hormones that bring a baby into the world. I could draw the placenta for you from memory. But here, in this room in Bridgewater, all that knowledge feels like it is locked behind a glass wall.\n\nThe midwife—she is a good person, I think. But she speaks so fast. *Fast.* Sometimes I am so worried about pronouncing the words right, like \"contractions\" or \"dilation,\" that I forget to tell her what I am actually feeling. My belly feels like it is going to pop, and sometimes the pain is sharp, like a needle, but I find myself just nodding. I say \"Okay\" even when I want to ask, *Is this normal? Is the baby moving enough?* I am afraid if I ask too many questions or struggle with a word, they will think I do not understand. I do not want them to see me as just... just a person who doesn't know. I am a mother, and I am scared. Being here alone, without my family, it is like climbing a mountain in the dark. I just want someone to really *hear* me, not just look at my chart.",
+      "responding_to_question_id": null,
+      "input_tokens": 771,
+      "output_tokens": 272
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before labour, what did you expect creating and using a birth plan to be like — how it would be received by staff and how much it would guide your care? And what actually happened with your birth plan during labour?",
+      "question_id": "V4_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "I spent so many nights writing that plan. I had it all organized—the environment, the lights, the way I wanted to move through the stages of labor. I thought it would be my voice when my own voice failed me. I wanted to show them that I wasn’t just a patient, but a woman who understood the process, someone they could talk to as an equal. I thought, *If I put it on paper, they will see that I am prepared, that I am educated.*\n\nBut when I brought it in, the nurse just glanced at it. She smiled, but it felt like a distracted smile, you know? She put it in a folder and said, \"We’ll see how it goes.\" It felt like my plan was just a piece of paper, not a map for my baby’s arrival.\n\nWhen the real work started, the pain… it took over everything. I wanted to follow my steps, to change positions like I planned, but everything moved so fast and the staff kept moving me back to the bed. I tried to say, \"I want to walk,\" or \"Please, not that medication yet,\" but the words got stuck in my throat. I felt like a child. The plan just… disappeared. They didn’t look at it. I was just there, waiting for them to tell me what to do next. It wasn't the experience I built in my head.",
+      "responding_to_question_id": "V4_BIRTH_Q01",
+      "input_tokens": 1089,
+      "output_tokens": 293
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Was there a moment during labour where your plan was set aside or overridden? What was that like?",
+      "question_id": null,
+      "probe_id": "V4_BIRTH_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "It happened when the intensity became… overwhelming. I had written down that I wanted to avoid continuous monitoring if possible, because I wanted to move, to use gravity to help my baby move down. I know the anatomy—I know how the pelvic inlet opens when you change your posture. But when I tried to stand up, the monitor started beeping—that high, thin sound—and the nurse was there instantly. \n\nShe didn't ask; she just guided me back, saying, \"Stay here, honey, we need to keep a close eye on the heartbeat.\" I tried to explain, \"I know, I know, but I need to move for the baby.\" My English felt so small then, so clumsy. I think I used the wrong verb, and she just looked at me with that same kind, but very busy, smile. She didn’t see the biologist in me. She saw a scared immigrant who needed to be told to lie still.\n\nThat was the moment I stopped being an active participant. I felt my agency just… drip away, like water through fingers. I stopped trying to use my \"plan\" because it felt like I was fighting the tide. I just laid there, staring at the ceiling, feeling like a doll being moved by someone else’s hands. It was lonely. I wanted them to see my brain, not just my body.",
+      "responding_to_question_id": "V4_BIRTH_Q01_P01",
+      "input_tokens": 1404,
+      "output_tokens": 282
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before labour, what did you expect your pain management options to be — the range available, how they'd be offered, and how you'd be supported in deciding? And what was the reality of pain management during your labour?",
+      "question_id": "V4_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "I had read all the books. I knew about the different ways to handle the pain—the natural ways, the medicine, the epidural. I wanted to try to go as far as I could without the \"big\" medicine, mostly because I was afraid of the language barrier if things got complicated and I needed to communicate how I was feeling afterward. I thought we would have a conversation. You know, like two professionals talking about the benefits and the risks.\n\nBut the reality? It wasn’t a conversation. It was just... \"You are in pain, here is the medicine.\" \n\nWhen the contractions were coming one right after the other, like waves crashing over my head, I wasn't asked about my preferences. I was asked if I wanted the epidural, and it felt like a pressure, not an offer. The nurse was very nice, but she kept asking, \"Are you sure you don't want something to take the edge off?\" It was like she thought I was suffering on purpose. \n\nI wanted them to support my *stamina*, not just my comfort. I wanted them to coach me through the waves, to help me use my breath the way I used to teach other women. Instead, I felt like a box to be checked. When I finally said yes, I felt like I had failed my own plan. No one explained the loss of movement, just that it would make the pain \"go away.\" I felt silenced. It wasn't about what I wanted; it was about making the room quiet and making the process faster for everyone else.",
+      "responding_to_question_id": "V4_BIRTH_Q02",
+      "input_tokens": 1735,
+      "output_tokens": 325
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you arrived at the birth setting — whether hospital, birth centre, or home — what did you expect it to feel like in terms of safety, comfort, and how you'd be welcomed? And what was your actual experience of the environment when you arrived?",
+      "question_id": "V4_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "trust_distrust",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "I expected it to feel like a sanctuary. Because I understand the biology—the way oxytocin is so fragile and needs a calm, dark space to do its work—I imagined a place that would protect that rhythm. I pictured soft voices, maybe dim lights, a place where I would be greeted as a mother, not a case file. I thought, *This is the most important day of my life; surely they will treat me with that kind of reverence.*\n\nBut when I walked into the hospital, it was... cold. The lights were so bright they hurt my eyes. It felt like a factory. There was a long hallway with people rushing past, and the smell—that sharp, sterile, antiseptic smell—it made my stomach turn. \n\nWhen they checked me in, it was all \"Name, date of birth, insurance.\" They didn't look at my face; they looked at the computer screen. I felt like I was just another number being processed. I wanted someone to say, \"Welcome, Anita, we are here to help you bring your baby into the world.\" Instead, I felt like an intruder in a place that didn't really want me there. The room was just metal and plastic. I sat on the edge of the bed and felt so small, so exposed. I wasn't welcomed; I was just admitted.",
+      "responding_to_question_id": "V4_BIRTH_Q03",
+      "input_tokens": 2115,
+      "output_tokens": 277
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What was the biggest surprise about the physical environment or the immediate atmosphere when you arrived?",
+      "question_id": null,
+      "probe_id": "V4_BIRTH_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "trust_distrust",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "The biggest surprise was the noise. I thought a birth center or a hospital ward would have a certain… pulse to it, like a gentle, focused energy. But it was just so noisy. There were monitors chirping constantly, people talking loudly about their lunch shifts in the hallway, and the sound of carts squeaking on the floor. \n\nIt was so distracting. My biology brain knows that for labor to progress, a woman needs to feel \"safe\" enough for her nervous system to let go. But how can your body relax when you are constantly hearing the sound of people who don't know you, laughing or typing on keyboards right outside your door? \n\nEverything felt so *urgent* and *mechanical*. I expected the atmosphere to be centered on the baby’s arrival, but it felt like the atmosphere was centered on the staff’s schedule. And the loneliness… that was the loudest thing of all. I remember looking at the door, hoping someone would come in just to ask how I felt, not to ask for a signature or to check my vitals. It was just a cold room filled with machines that knew more about my baby’s heart than I did. I felt like a stranger in my own body, in a place that didn’t feel like it was built for the miracle of birth, but for the mechanics of it.",
+      "responding_to_question_id": "V4_BIRTH_Q03_P01",
+      "input_tokens": 2411,
+      "output_tokens": 276
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "If your birth involved an unexpected intervention or complication, what did you expect the process of being informed and involved in those decisions to look like? And how were those decisions actually made and communicated in the moment?",
+      "question_id": "V4_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "I suppose I expected a *dialogue*. Because I have that scientific background, I imagined that if something veered off-track, the doctor or midwife would pause—just for a second—to explain *why*. I wanted to hear, \"Anita, your labor is stalling because of X, so we think Y is the safest path forward.\" I thought there would be a moment where I could weigh the risks, ask one or two questions, and then consent. \n\nBut when the need for an augmentation came up—when they decided to speed things along—it didn’t happen like that at all. Everything moved with such a terrifying, efficient speed. There was no \"we.\" There was just a sudden influx of people, a flurry of activity, and a rapid-fire explanation that I honestly couldn't fully process because of the pain and the language barrier. \n\nIt felt like the decision had already been made before the words left their mouths. They said, \"We’re going to give you Pitocin now,\" and before I could even find the breath to ask about the side effects or if we could wait another thirty minutes, the line was already being started. It felt like I was a passenger in a car where someone else was driving, and they didn't care to tell me where we were going. I felt like an object being managed, not a woman giving birth.",
+      "responding_to_question_id": "V4_BIRTH_Q04",
+      "input_tokens": 2730,
+      "output_tokens": 284
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During labour, what did you expect the midwife or doctor present to provide in terms of emotional support and personal attention — not just clinical care? And what did you actually experience from the staff who were with you?",
+      "question_id": "V4_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "I expected a partner. I thought the midwife would be someone who would look me in the eye and acknowledge that I was doing something profound. I imagined she would hold space for my fear, maybe place a hand on my shoulder, or simply wait for me to find my words when the pain was at its peak. I thought she would see the woman behind the \"low risk\" label—the woman who left her home and family to build a new life.\n\nBut the reality was very clinical. My midwife was technically skilled, yes, but her heart seemed to be elsewhere—mostly on her watch and the monitor. When I felt overwhelmed, she didn't offer comfort; she offered solutions that usually involved more interventions. It was always, \"Do this, take this, lie here.\" \n\nThere was no warmth. No one asked how I was feeling about being alone, or if I needed someone to just sit with me for a moment without doing a task. It felt like I was a project they were managing rather than a person they were caring for. Every interaction felt rushed, as if my emotional needs were an inconvenience that slowed them down. I felt invisible, even though they were staring right at me. I was just a body giving birth, not Anita.",
+      "responding_to_question_id": "V4_BIRTH_Q05",
+      "input_tokens": 3058,
+      "output_tokens": 256
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Was there a specific moment when you felt truly seen and supported — or a moment when you felt very alone? Can you describe it?",
+      "question_id": null,
+      "probe_id": "V4_BIRTH_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "There was a moment, very deep in the night, when the shift changed. The new nurse came in, and she didn't look at the computer right away. She walked to the window, pulled the curtain back just a little to let the dark city light in, and then she stood by the bed. She didn't have a needle or a chart in her hand. She just put her hand on my forehead—not to check my temperature, but just to touch me.\n\nShe leaned down and said, \"You are working so hard, Anita. You are doing this, and you are so strong.\"\n\nI started to cry. It wasn't because of the pain anymore; it was because she had used my name. In that second, the wall I had built—the one where I had to be perfect and professional and speak the language without mistakes—it just cracked. For that one moment, I wasn't just a patient with a \"low risk\" tag. I was a woman, and I was safe. \n\nBut then, the monitor started chirping again, and she had to leave to check another room. As soon as the door clicked shut, the silence rushed back in, and I felt that same, heavy shadow return. It’s strange, isn't it? To feel so seen for a second, and then immediately feel so very, very alone again in the dark.",
+      "responding_to_question_id": "V4_BIRTH_Q05_P01",
+      "input_tokens": 3343,
+      "output_tokens": 289
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before birth, what did you expect the immediate period after your baby was born to be like — skin-to-skin contact, who would be present, what would be done? And what actually happened in those first moments after delivery?",
+      "question_id": "V4_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "I had such a beautiful picture in my mind. I read that skin-to-skin contact is the best way to stabilize a baby’s heart rate and temperature—the biology is so perfect, you know? I wanted my baby to be placed directly on my chest, for her to smell me, to hear my heart that she had been listening to for nine months. I imagined a quiet, private moment where the world just stopped.\n\nBut when she was finally born, it was not that quiet. It was chaotic. There was so much noise, so many people moving around. They took her away almost immediately to a warming table. I wanted to scream, *“Bring her to me!”* but I was so exhausted, my body felt like it didn't belong to me anymore. I watched from the bed as they weighed her and poked her with things. They were being very thorough, I know, but they were doing it all *over there* instead of *here* with me.\n\nWhen they finally brought her to my arms, it felt like she was already wrapped in so many layers of blankets that I couldn't really feel her skin against mine. The moment felt hurried, like they were already preparing the room for the next person. I wanted to just hold her and breathe, but I felt like I had to share her with the charts and the shift change. It wasn't the slow, sacred start I had studied. It was just another procedure.",
+      "responding_to_question_id": "V4_BIRTH_Q06",
+      "input_tokens": 3681,
+      "output_tokens": 300
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Was there anything that happened — or didn't happen — in those first moments that still stays with you? What was it?",
+      "question_id": null,
+      "probe_id": "V4_BIRTH_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s the silence—or rather, the *absence* of a moment where I was allowed to just be a mother. \n\nWhen they were finished with all their checks, they handed her to me, but then the room became busy again. I remember holding her, and she was crying, and I wanted to soothe her, to show her that she was safe and that her mother was right there. But I felt like I was in the way. The nurse was tucking in the sheets, another person was checking the trash, and everyone was talking over us, talking about the next patient, talking about paperwork. \n\nI sat there, terrified that if I moved wrong, I would drop her, or that I wouldn't know how to breastfeed her because I was so shaky and overwhelmed. I needed someone to sit with me, to help me latch her, to show me how to hold her securely. Instead, they just gave me a quick, practiced instruction—some of which I didn't even catch—and then stepped back to their computers. \n\nI looked at my daughter’s face, and all I could think was: *I don't know how to do this alone.* Even with her here, in my arms, I still felt like I was just another piece of the hospital equipment that needed to be packed up and moved out. That loneliness didn't end when the baby arrived; it just changed shape. I still feel it when I look at her and remember how small I felt in that room.",
+      "responding_to_question_id": "V4_BIRTH_Q06_P01",
+      "input_tokens": 4009,
+      "output_tokens": 314
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before giving birth, what did you expect your physical recovery to look and feel like in the weeks after? And how did the reality of your physical recovery compare to those expectations?",
+      "question_id": "V4_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "I expected it to be like a marathon recovery—sore, tired, but something I could manage with rest and the right nutrition. My books talked about the involution of the uterus and the way the body would heal, and I felt I could handle the biology of it. I thought, *I am a scientist, I understand the healing process.* \n\nThe reality? It is not just the body. It is the loneliness. \n\nI didn't expect the feeling of being completely adrift. When I came home, I would look at the stitches and the bruising, and my mind would race back to that room in the hospital. I felt so much resentment toward my own body for needing to heal, but also for not being \"strong enough\" to have held my ground during the labor. I expected to feel empowered, but instead, I felt like a stranger to myself. \n\nMy recovery has been... quiet, and very difficult. When I am awake at three in the morning, nursing her, the pain in my body reminds me of how I wasn't heard. I find myself looking at her and crying, not because I am sad, but because I am exhausted from carrying the weight of that birth experience by myself. I feel like I am still in that hospital bed, waiting for someone to finally explain what happened to me, or to tell me that it is okay that I didn't get the birth I wanted. The physical healing is happening, but the rest... it feels like it’s going to take much longer.",
+      "responding_to_question_id": "V4_POST_Q01",
+      "input_tokens": 4360,
+      "output_tokens": 313
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before your baby arrived, what did you expect feeding — breastfeeding or formula feeding — to be like in terms of ease, support, and how you'd feel about it? And what was the reality of feeding in the early weeks?",
+      "question_id": "V4_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "I read so much about the biology of it—how the prolactin would surge, how the baby’s rooting reflex would guide us, how it was a natural, biological dance between my body and hers. I expected it to be a quiet, rhythmic time. I thought, *This is how I will bond with her; this is how I will show her she is loved.* I felt sure that, with my background, I would just... understand it.\n\nBut the reality? It was a struggle that left me feeling more alone than I have ever felt. My breasts hurt, and she wouldn't latch, and the more she cried, the more panicked I became. I felt like my body was refusing to do the one thing it was supposed to do. \n\nIn the hospital, the nurses were rushed. They would press her onto my chest, say \"She needs to latch,\" and then move on to the next task. They didn't have time to help me find the right position or to calm my own shaking nerves. Every time I failed, I felt like a failure as a mother, not just a failure at breastfeeding. \n\nNow, at home, it feels like a heavy weight. I am constantly worried—is she getting enough? Am I doing this right? I don't have my mother here to tell me it will be okay, and I don't want to call the doctor because I am afraid they will just see me as \"that immigrant mother who can't figure it out.\" It’s supposed to be natural, but it feels like a test I am failing every single time I feed her.",
+      "responding_to_question_id": "V4_POST_Q02",
+      "input_tokens": 4722,
+      "output_tokens": 334
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before your baby arrived, what did you expect your emotional and mental health to be like in the postpartum period? And what was your actual emotional experience in the weeks and months after birth?",
+      "question_id": "V4_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "I thought the hormones would settle, and that I would just... step into this new life. I expected to feel tired, of course, but also a sense of triumph. I told myself, *Anita, you are a biologist, you know how to regulate this, you know how to nurture.* I truly believed that once I was home, the fear would evaporate, and my confidence as a woman would bloom.\n\nThe reality is like a heavy, grey fog. Sometimes, I look at my beautiful girl, and I feel this immense love, but it’s always shadowed by that same feeling I had in the delivery room—that I am small, and I am outside of everything. \n\nIt is not just \"baby blues.\" It is the weight of being alone in a city that doesn't feel like home. When I struggle with a feeding, or when I am so tired I can't even remember the words I studied in school, I think about the people who cared for me during birth. I wonder if they ever think about how they made me feel. Do they know that their \"quick\" advice left me feeling like a failure?\n\nI cry a lot, but I keep it to myself. I am so terrified that if I tell someone how \"not okay\" I am, they will think I am an unfit mother because I am struggling. I keep waiting for my brain to catch up with my life, but for now, I just feel like I am holding onto the edge of a cliff, waiting for someone to offer a hand that isn't attached to a clipboard.",
+      "responding_to_question_id": "V4_POST_Q03",
+      "input_tokens": 5095,
+      "output_tokens": 324
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before becoming a parent, what did you expect your sense of identity to feel like after your baby arrived? And how has your sense of who you are actually shifted since then?",
+      "question_id": "V4_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "Before the baby, I was \"Anita the biologist.\" I was someone who studied life and understood it. I felt smart, capable, and ready to navigate the world. I thought motherhood would be just one more chapter in a life I was building—like a new, beautiful piece of evidence to add to everything else I knew. I believed my identity would grow into this stronger, more expansive version of myself.\n\nBut the reality is that I feel like I’ve lost the person I was. When I’m at home with my daughter, I don’t feel like a scientist. I feel like a bundle of nerves. When I look in the mirror, I don't see the woman who once taught others about the miracle of a heartbeat. I see someone who is tired, someone whose voice is often ignored, and someone who feels like she is constantly playing catch-up in a language that doesn't always love her back.\n\nBecoming a parent hasn't added to my identity; it has felt like a storm that washed away everything I knew about myself. I have this beautiful girl, and I love her more than my own life, but the person who was supposed to raise her—the confident, knowledgeable Anita—feels like she stayed behind in that hospital room. I am trying to build a new identity, one that isn't so afraid, but some days, I don’t even know who I am supposed to be anymore. I’m just \"Mom\" to her, but for me, I’m still just trying to find my way back to the surface.",
+      "responding_to_question_id": "V4_POST_Q04",
+      "input_tokens": 5456,
+      "output_tokens": 323
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there parts of your previous identity — professional, social, personal — that felt harder to hold onto than you expected?",
+      "question_id": null,
+      "probe_id": "V4_POST_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "Everything felt like it was slipping through my fingers, but mostly it was my sense of being *capable*. Before, I was the one who explained the science; I was the expert. I knew the vocabulary of the body. I took such pride in that. But in the hospital, the moment I stumbled over a word, or when I didn't know the local way of doing things, I felt that \"expert\" part of me just… evaporate.\n\nIt’s been so hard to hold onto the part of me that is curious and intellectual. Now, my world is reduced to diapers, feedings, and the constant, crushing fear that I am doing it wrong because I am an outsider here. In the past, I could walk into a room and command it with my knowledge. Now, I feel like I am always asking for permission to be heard. \n\nEven my social life—I don't have one. I don't have friends here who can say, \"Yes, this is hard, but you are doing a good job.\" I feel like I have to hide my struggle because I am so afraid they will judge me as an immigrant mother who is failing. I miss being Anita the biologist. I really do. I miss the part of me that knew things for certain. Now, I feel like I am constantly guessing, and that makes me feel very, very small.",
+      "responding_to_question_id": "V4_POST_Q04_P01",
+      "input_tokens": 5805,
+      "output_tokens": 283
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "After birth, what did you expect the postnatal check-ups and follow-up care from your midwife or GP to provide? And what did that post-birth care actually look like in practice?",
+      "question_id": "V4_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "I expected that the postnatal appointments would be the time for us to *talk*. I thought the doctor would look at me and say, \"How are you doing, really?\" I imagined we would review the birth together, and maybe I could ask, \"Why did it go that way? Why couldn't I move?\" I thought it would be a space to heal, not just physically, but also the part of me that felt so silenced in that room. I expected a bridge between who I was before and who I am now as a mother.\n\nBut the reality? It was just as quick and transactional as the birth itself. The appointments are always so short. They check my blood pressure, they check the incision, they ask if I have questions, and then—before I can even take a breath to find the right English words—they are already reaching for the door handle. \n\nI’ve tried to mention the sadness, the way the memories of the delivery wake me up at night, but they just smile and say, \"You're doing great, everything looks normal.\" I feel like I am invisible again. It’s like they have a checklist of my body parts, but they aren't looking at the person carrying them. I walk out feeling like I’ve been processed, not cared for. I’m still waiting for someone to see me.",
+      "responding_to_question_id": "V4_POST_Q05",
+      "input_tokens": 6129,
+      "output_tokens": 280
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there concerns you raised at postnatal appointments that you felt were not taken seriously or properly followed up?",
+      "question_id": null,
+      "probe_id": "V4_POST_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "I tried once. Just once. I remember sitting on the edge of that paper-covered table—the same cold, crinkly paper that felt so much like the hospital bed—and I told the nurse practitioner that I felt \"very, very dark inside.\" I used those words because I didn't know how else to describe the way the anxiety sits in my chest like a lead weight, or the way I just stare at the wall when the baby is finally sleeping. \n\nShe looked at her computer screen while I spoke. She nodded, still typing, and then she said, \"Oh, honey, that’s just the adjustment period. You’re doing a great job, and the baby is gaining weight perfectly.\" \n\nShe didn't ask me what \"dark\" meant. She didn't look at my eyes to see if I was lying. She just saw \"healthy baby\" and \"normal recovery\" and decided that was the end of the story. I felt like I had reached out a hand for help and it had been pushed away by a wall of protocol. \n\nIt made me feel like my feelings were just... an annoyance. Something that didn't fit into the \"low risk\" box they had put me in. If I can't even get someone to pause for thirty seconds when I say I'm not okay, how can I ever feel safe enough to ask for the help I really need? I left that day feeling more isolated than when I walked in. I haven't tried to say anything else since.",
+      "responding_to_question_id": "V4_POST_Q05_P01",
+      "input_tokens": 6431,
+      "output_tokens": 318
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "question",
+      "text": "If you returned to work after your baby was born, what did you expect that transition to be like — practically and emotionally? And what did returning to work actually feel like?",
+      "question_id": "V4_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "I am still trying to find a job, to be honest. It is another way the language barrier feels like a wall. Back home, I had my career, my labs, my students—I was an intellectual force. Here, I feel like I am starting from zero, and with the baby, it feels like an impossible task. \n\nI expected that I would feel a sense of relief to return to \"myself\"—to be someone other than a mother, to use my brain for biology again. I thought it would be a way to reclaim my identity. But the reality is that I am terrified. \n\nI worry that if I go into an interview, they will see my nervousness and mistake it for a lack of capability. I worry about the \"gap\" in my resume, and that they will ask me about my life and I won’t know how to explain that I am not just a mother, I am a scientist. I am so tired from the nights with the baby that my brain feels foggy, and I fear that when I finally sit in front of a manager, I will forget the complex terms, the very things I once used to teach.\n\nIt is a strange feeling, to be so capable in one language and so unsure in another. I am afraid that if I don’t find work soon, I will lose the last pieces of who I was before the hospital room. I feel like I am waiting for someone to give me a chance, but I am terrified they will only see the \"immigrant mother\" and not the scientist I know I still am.",
+      "responding_to_question_id": "V4_POST_Q06",
+      "input_tokens": 6786,
+      "output_tokens": 324
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there practical aspects of returning to work — feeding, childcare, your own health — that were harder to manage than you expected?",
+      "question_id": null,
+      "probe_id": "V4_POST_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "structural_barriers",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "The practical things... they feel like mountains I have to climb without a map. I thought if I just worked hard enough, I could balance everything. But the reality is that the systems here are not built for someone like me—someone alone, without a partner, and without a family to hold the baby while I prepare for an interview or study.\n\nThe hardest part is the energy. When you are nursing at night, and you are exhausted, and your body still carries the ache of that delivery... how do you find the energy to be the sharp, fast-talking scientist I need to be to get hired? I try to practice my answers, to make my English sound professional, but my brain feels so tired. I keep forgetting the words I used to know by heart.\n\nChildcare is the biggest shadow. It is so expensive. If I find a job, will I be able to pay for someone to watch her? And will I trust them? After that room in the hospital, I am so afraid to let her out of my sight. I have this knot in my stomach that says if I am not there to watch her, someone will be rushed or indifferent, just like they were with me. Everything feels like a risk, and I am so, so tired of being the only one protecting her.",
+      "responding_to_question_id": "V4_POST_Q06_P01",
+      "input_tokens": 7138,
+      "output_tokens": 266
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "question",
+      "text": "After your baby arrived, what did you expect your relationship with your partner to be like in terms of sharing caregiving, managing the relationship, and supporting each other? And what has that relationship dynamic actually looked like?",
+      "question_id": "V4_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "I... I do not have a partner here. I am doing this by myself. \n\nBefore she was born, I imagined—I think every woman does, deep down—that there would be someone there. I thought about how a partner might help with the nights, or how they might hold the baby while I took a hot shower, or even just hold my hand when the exhaustion became too much to bear. I expected that even if I were not married, there would be a foundation of support, some kind of shared joy.\n\nBut the reality is just... a hollow space in the bed. When I am up at three in the morning and the baby is crying and my heart is racing from a bad dream about the hospital, there is no one to whisper, \"It’s okay, go back to sleep, I have her.\" \n\nThere is just me. I have to be both the soft place for her to land and the strong wall that keeps the world away. It is so heavy. Sometimes I feel an anger that I cannot name, directed at no one, just at the situation—at the fact that I am in this country, in this room, with no one to share the burden of a fever or the weight of a memory. I am the only one who knows her heart, but I am also the only one who knows my own fear. It’s a very lonely kind of strength, to be everything for someone when you feel like you are disappearing yourself.",
+      "responding_to_question_id": "V4_POST_Q07",
+      "input_tokens": 7449,
+      "output_tokens": 303
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What was the biggest surprise about how your partnership functioned after the baby arrived?",
+      "question_id": null,
+      "probe_id": "V4_POST_Q07_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "The biggest surprise—and this is a difficult thing to say—is how much *absence* can weigh. Because I am a mother, and I am the only one who has to make every single decision, the loneliness feels like an extra person in the room. I think I expected that even if I were alone, there would be some kind of community, or maybe a system that understood the burden of doing this by yourself. \n\nBut there is no one. \n\nI am surprised by how much I have had to change just to survive the day. I have had to become so, so guarded. When people ask, \"How are you doing?\" and I say, \"I am okay,\" I am really saying, \"I am drowning, but I am doing it quietly.\" I didn’t think I would have to be this strong. I thought there would be space for me to be weak, to cry, to not know the answer. \n\nBut I am the only one who remembers the birth, the only one who is awake at night with her, the only one who has to translate the world for her. It feels like a paradox: I have never felt more connected to someone as I am to my daughter, and I have never felt more disconnected from everyone else. The \"partnership\" I wanted is just me, talking to myself in the dark.",
+      "responding_to_question_id": "V4_POST_Q07_P01",
+      "input_tokens": 7769,
+      "output_tokens": 278
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Looking across your entire maternity journey — from trying to conceive through to where you are now — what did you expect the overall experience of maternity care to deliver? And reflecting on the whole journey, what was the most significant gap between what you expected and what you received?",
+      "question_id": "V4_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "I expected to be *seen*. That is the simplest, most honest way I can say it. \n\nI thought that by being educated—by knowing the biology, the systems, and the language—I would have a kind of \"shield\" that would ensure I was treated with respect. I expected a dialogue, a partnership where my voice carried the same weight as the medical charts. I thought that in a country with so much technology and research, there would be room for the human side of things. I thought I would be welcomed as a mother, not processed as a patient.\n\nThe gap between my expectation and the reality is that I felt completely, utterly invisible. The system saw the \"low risk\" label, the insurance card, and the clock on the wall, but it did not see *Anita*. It did not see the woman who had to move to a new country and build everything from nothing. \n\nThe biggest gap was the lack of *dignity* in the care. I was not treated like a partner in my own labor; I was treated like a component in a machine that needed to move faster. That gap—the space between being a person with a story and being a \"case\"—that is where I have been living ever since. It wasn't the pain of the birth that haunts me; it was the quiet, cold feeling of being alone while surrounded by people who were supposed to be there for me. That is the hole in my heart that still hasn't healed.",
+      "responding_to_question_id": "V4_POST_Q08",
+      "input_tokens": 8102,
+      "output_tokens": 308
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "If you could change one thing about how the maternity care system is designed — not just what individual providers do, but how the system itself works — what would it be?",
+      "question_id": null,
+      "probe_id": "V4_POST_Q08_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "structural_barriers",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "I would change the way it treats the *time* of a woman. \n\nThe system acts as if my time—the time it takes for my body to safely open, for my mind to process a choice, for me to express a fear in a language that isn't my first—is a commodity to be optimized. Everything is measured by minutes, by shifts, by the ticking of a clock that belongs to the hospital, not to the mother. If I could redesign it, the system would be built around the pace of the *woman*, not the pace of the facility. \n\nI would make \"relational care\" a primary clinical goal, not just a nice-to-have extra. We need people who are trained to hold space, who understand that a woman’s nervous system is part of the biology of birth. If a woman is not heard, the biology is compromised. \n\nI would mandate that every mother, especially those who are immigrants or alone, has a dedicated advocate who isn't there to perform a task, but to ensure that her voice is never drowned out by the noise of the machines. I would stop the practice of \"processing\" women like cargo. I would bring back the reverence for the transition into motherhood. A woman should be the expert in her own room, not the guest. That is what I would change. I would give the room back to the mother.",
+      "responding_to_question_id": "V4_POST_Q08_P01",
+      "input_tokens": 8446,
+      "output_tokens": 288
+    },
+    {
+      "turn_number": 49,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 50,
+      "role": "persona",
+      "type": "response",
+      "text": "I have been thinking, while we talk, about how much energy I have spent trying to be \"perfect\" so that I would not be judged. I worked so hard to hide my fear and my lack of the right words because I thought if I acted like a professional, they would treat me like one. But it didn't matter. The system didn't care about my knowledge of biology, or my degree, or my effort to translate my pain. It only saw a statistic.\n\nI want the researchers, the doctors, the nurses—all of you—to know that when a woman like me comes into your care, we are not just empty vessels to be filled with your instructions. We are whole people. We have lives that exist before we walk through those double doors. \n\nWhen you rush us, or when you ignore our questions because you think we don't understand, you are not just managing a \"case.\" You are writing a memory that stays with us for the rest of our lives. \n\nMy baby is sleeping now in the next room. I look at her and I think: *One day, she will be a woman. I hope the world listens to her voice better than they listened to mine.* That is the only thing that matters now. Thank you for listening today. It is... it is the first time I have felt like my story was not just a medical file. That means more than I can say in English.",
+      "responding_to_question_id": null,
+      "input_tokens": 8790,
+      "output_tokens": 297
+    }
+  ],
+  "metadata": {
+    "total_turns": 50,
+    "questions_asked": 14,
+    "probes_deployed": 9,
+    "adaptive_followups": 0,
+    "total_input_tokens": 118824,
+    "total_output_tokens": 7407,
+    "estimated_cost_usd": 0.1336,
+    "duration_seconds": 68.6,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "dignity_respect",
+      "identity_tensions",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 248
+  },
+  "errors": []
+}

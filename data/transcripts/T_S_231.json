@@ -1,0 +1,931 @@
+{
+  "session_id": "S_231",
+  "status": "completed",
+  "persona_id": "comp_047",
+  "persona_name": "Briana",
+  "persona_journey_stage": "third_trimester",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [
+    "immigration",
+    "language_barrier",
+    "low_income"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 3,
+  "questionnaire_strategy": "Scenario-Based / Critical Incident",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T02:33:17.454435",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Briana, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're getting closer to your due date, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in the chair, one hand resting on my belly, and gives a small, tired smile*\n\nYes, okay. Thank you for... for asking me. Most times, nobody really asks, you know? They just tell me what to do.\n\n*pauses, choosing words carefully*\n\nIt's hard to explain. I am... I was a nurse. In my country, I knew everything about pregnancy, about babies. I could help other mothers. Now... *gestures vaguely* ...now I am the one who doesn't understand the papers they give me, and I'm too embarrassed to ask again.\n\nThe clinic here, it's good, I think. The doctors are kind. But everything is so fast. Ten minutes, and then I'm out. I have so many questions, but by the time I understand what they ask me, the appointment is finished. The interpreter, she doesn't always come, and my husband, he cannot leave work to translate for me every time.\n\n*rubs my lower back*\n\nAnd the money... it's not just the appointment. It's the bus, the time I lose from looking for work. We have four children already. This baby — *another kick* — this baby, we are happy, but we are also scared. How do we manage?\n\nWhat makes me most sad is that I know the science. I understand what is happening in my body. But they look at my face and think I don't understand anything. That's the hardest part.",
+      "responding_to_question_id": null,
+      "input_tokens": 810,
+      "output_tokens": 321
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine it's the morning after you've taken a positive pregnancy test. Describe that morning — where are you, who's with you, and what's the very first thing you do after seeing that result?",
+      "question_id": "V3_PREG_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes get a little softer, and I smile despite myself*\n\nOh... that morning. I remember it so clearly, even though it was... maybe three months ago now?\n\n*settles back in the chair*\n\nI am in the bathroom. Very early — maybe five in the morning. The apartment is still dark and quiet. My husband is sleeping, the children are sleeping. I have the test in my hand, and I am shaking a little bit. Not scared shaking, but... surprised shaking. We thought maybe we were finished, you know? Four children, my body is tired, our life is already so full.\n\nThe first thing I do is sit on the edge of the bathtub. Just sit there. I don't move for maybe two minutes. I look at that positive line and I think about my exhaustion, and then I think about the baby — this new person who will be here soon — and my eyes get wet.\n\n*touches chest*\n\nThen I go back to bed and I touch my husband's shoulder. Very gently. I tell him, \"Amor, we are going to have another baby.\" He is quiet for a moment, and then he pulls me close and he cries a little bit too.\n\n*voice becomes softer, more vulnerable*\n\nThat moment, it was... it was just ours, you know? Before the worry, before the appointments and the money problems. Just two people who made a life together. A moment of... of still having hope, even when things are hard.",
+      "responding_to_question_id": "V3_PREG_Q01",
+      "input_tokens": 1177,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "When you decided who to tell first — or whether to tell anyone at all — what was behind that decision? What felt safe or risky about sharing the news?",
+      "question_id": null,
+      "probe_id": "V3_PREG_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, hands fidgeting with the hem of my shirt*\n\nAh, this is... it's complicated.\n\n*takes a breath*\n\nI told my husband first, of course. He is my family here. But after that... I waited. Almost two weeks, I think. My mother-in-law, she lives close by, and she was already asking me questions — \"Why are you tired? Why don't you eat the rice?\" — and I knew if I told her, the whole family would know by the end of the day.\n\n*looks down*\n\nAnd my family back home... I didn't tell them for a long time. I was ashamed, maybe? Or afraid they would worry. We are already struggling, and my mother, she would want to help, but she cannot. She would feel bad. So I waited until I was past the first trimester to tell her. Safer that way, I think.\n\n*meets your eyes*\n\nAt work — the jobs I was trying to find — I didn't tell anyone. I knew if they knew I was pregnant, they would not hire me. So I lied on the applications. I said I was available full-time. *pauses, guilt crossing her face* I know this was wrong, but what else could I do?\n\nAnd the clinic... I went alone the first time. I didn't even tell my husband I made the appointment. I needed to know first if everything was okay, if this pregnancy was... real, I guess. Safe to hope about.\n\n*quiet*\n\nSharing the news, it wasn't happy like before. It was strategic.",
+      "responding_to_question_id": "V3_PREG_Q01_P01",
+      "input_tokens": 1540,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're at your 20-week anomaly scan. The sonographer goes quiet for a moment and says they need to take a closer look at something. What goes through your mind in that silence, and how do you respond in the room?",
+      "question_id": "V3_PREG_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*face goes pale, and I grip the armrest*\n\nOh God. Oh God, no.\n\n*voice becomes very quiet and shaky*\n\nThat silence... I know that silence. I've heard it before in hospitals, and it never means something good. My heart, it just stops. Everything stops.\n\n*closes eyes*\n\nIn my head, I am thinking of a thousand things at once. Is it the heart? The brain? Is this baby... is this baby going to live? I'm thinking about my other children — what do I tell them? I'm thinking about my husband at work, how I will call him with bad news. I'm thinking about money, about hospitals, about being here without my family to help.\n\n*opens eyes, voice very controlled, almost clinical*\n\nBut in the room... I don't move. I just lie there, very still. The sonographer, she is looking at the screen, not at my face. I want to ask her what is wrong, but my English words have disappeared. I am just... frozen.\n\n*swallows hard*\n\nI think to myself, \"You know the anatomy. You were a nurse. You can understand what she is seeing.\" But I cannot look at the screen from where I am. The not-knowing is worse than knowing, I think.\n\n*voice cracks slightly*\n\nFinally, I ask very quietly, \"Is my baby okay?\" And I wait for her to answer, and in that wait, I have already prepared myself for the worst. Because when you are an immigrant, when you have nothing, you always prepare for the worst.",
+      "responding_to_question_id": "V3_PREG_Q02",
+      "input_tokens": 1947,
+      "output_tokens": 344
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "In that moment, how much did you feel like you could ask questions or speak up — or did something stop you? What shaped that?",
+      "question_id": null,
+      "probe_id": "V3_PREG_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs bitterly, shaking head*\n\nOh, I could ask. Of course I could ask. But...\n\n*struggles for words, frustration building*\n\nMy English, it abandons me when I am scared. The words are there, in my head, but they don't come out right. I know the medical terms — I learned them in my own language as a nurse — but here, I mix everything. I get confused. And the sonographer, she is busy, she is focused on the screen, and I don't want to... to bother her with my bad English while she is trying to do her job.\n\n*voice becomes smaller*\n\nAlso, there is something else. In my country, you don't question the doctor. You listen. You trust. The hierarchy is very clear. Here, I know it's supposed to be different — I read this in the pamphlet — but I am not from here. I am the immigrant. I am the one who doesn't understand the system. So maybe if I ask too many questions, they think I am difficult. Or stupid.\n\n*touches belly protectively*\n\nAnd honestly? I was terrified. When you are terrified, you become... small. You become quiet. You don't demand answers because you are afraid of what the answers might be.\n\n*looks up with tired eyes*\n\nIf my husband had been there, maybe it would be different. But alone? With my broken English and my fear? I just waited. I waited for them to tell me what was wrong.",
+      "responding_to_question_id": "V3_PREG_Q02_P01",
+      "input_tokens": 2322,
+      "output_tokens": 330
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you've just been offered the option of a screening test for a chromosomal condition. The midwife explains the test briefly and asks if you'd like to go ahead. How does that conversation feel, and how do you make your decision?",
+      "question_id": "V3_PREG_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "motivations"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in seat, anxiety visible in my shoulders*\n\nShe explains it very quickly. I hear the words — \"Down syndrome,\" \"risk,\" \"blood test\" — but it's like she is speaking fast and I am trying to catch the words like... like catching water with my hands.\n\n*demonstrates with hands, frustrated*\n\nI want to say, \"Can you explain again? Slower?\" But she is looking at me like she expects an answer right now. So I nod, and I say \"okay,\" but inside I am panicking because I don't really understand what this test means. Will it hurt the baby? What happens if they find something? What do I do with this information?\n\n*voice becomes quieter*\n\nI think about my other children. I think about how I already struggle. If this baby has... something, how do we manage? But I also think — I know from my nursing — that knowledge is better than not knowing. At least then we can prepare.\n\n*pauses, wrestling with something*\n\nBut the decision... it's not really my decision, is it? If I say no, she will think I don't care about my baby's health. If I say yes, I am agreeing to something I don't fully understand. So I say yes, because that's what a good mother does. That's what the test is supposed to tell me — that I am being a good mother.\n\n*looks away*\n\nBut really, I am just saying yes because I am afraid to say no. And I am afraid to ask for more time to think.",
+      "responding_to_question_id": "V3_PREG_Q03",
+      "input_tokens": 2707,
+      "output_tokens": 336
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did you feel you had enough time and information to make that decision freely — or did you sense any pressure, either to accept or decline?",
+      "question_id": null,
+      "probe_id": "V3_PREG_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans forward, elbows on knees, speaking with more intensity*\n\nNo. No, I did not have enough time.\n\n*voice becomes firmer, more honest*\n\nThere was pressure, yes. Not... not mean pressure. The midwife was not unkind. But there is always pressure when you are me. When you don't speak the language perfectly, when you know the clinic has many patients waiting, when you are aware that you are taking up space and time.\n\n*gestures with frustration*\n\nShe presented it like — \"This is what we do. Most women do this test.\" So what am I supposed to say? \"No, I don't want it\"? Then I am the strange mother who doesn't want to know if her baby is healthy. I am the difficult one.\n\n*voice becomes quieter, more vulnerable*\n\nAnd there is pressure from myself too. I know — from my training, from my experience — that information is power. So if I refuse, am I being reckless? Am I putting my baby at risk because I cannot speak English well enough to understand a ten-minute conversation?\n\n*rubs face tiredly*\n\nWhat I needed was time. I needed to go home, maybe talk to my husband in Spanish where we can really talk, and then come back and say yes or no with understanding. But that's not how the clinic works. It's all so fast, so efficient.\n\n*looks at you directly*\n\nThey gave me the choice, but not the freedom to make it. You understand the difference?",
+      "responding_to_question_id": "V3_PREG_Q03_P01",
+      "input_tokens": 3074,
+      "output_tokens": 336
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're 28 weeks pregnant and you receive a call from a midwife you've never met before, telling you about a result from your routine blood test. This is the third different midwife you've spoken to this pregnancy. How does that feel, and what does it mean for how you receive that information?",
+      "question_id": "V3_PREG_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*jaw tightens, and I feel the frustration rising in my chest*\n\nThis... this happens to me. Not imagine — this is real.\n\n*voice becomes sharp with irritation*\n\nI don't even know her name. She is calling from a number I don't recognize, and she is telling me about my blood, my baby, and I have to ask her to repeat everything because I cannot understand her accent on the phone. On the phone! It's so much harder than face-to-face.\n\n*stands up restlessly, then sits back down*\n\nAnd she doesn't know me. She doesn't know that I am a nurse. She doesn't know my history with the other four pregnancies. She doesn't know that I am already anxious about money and work and everything. She just reads from the paper what my result is.\n\n*voice wavers between anger and despair*\n\nI have seen maybe... five different midwives? Six? Every time I go to the clinic, it's someone new. They don't know my story. They don't know what I've already worried about. So when this one calls with something \"abnormal\" — I don't even understand what it is, exactly — I feel very alone.\n\n*touches chest*\n\nIf it was the same midwife, someone who knows me, who I have built trust with... maybe I could ask better questions. Maybe I could say, \"I am scared, help me understand.\" But with a stranger on the phone? I just say \"okay\" and \"thank you\" and I hang up and I cry.\n\n*quietly*\n\nAnd then I have to wait for my husband to come home to translate what this means.",
+      "responding_to_question_id": "V3_PREG_Q04",
+      "input_tokens": 3481,
+      "output_tokens": 364
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe what it's been like to build a picture of your care across different midwives and appointments — has anything fallen through the cracks?",
+      "question_id": null,
+      "probe_id": "V3_PREG_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a long breath, and I can see the weight of it all settling on my shoulders*\n\nEverything falls through the cracks. It's like... it's like I am telling my story five times, but nobody is listening to the whole story.\n\n*counts on fingers*\n\nOne midwife asks about my diet. I tell her we don't have much money, and she gives me a pamphlet about nutrition. I never see her again. The next midwife doesn't know I said this. She just sees I am... not gaining enough weight maybe, and she looks concerned, but we never talk about why.\n\n*voice becomes more emotional*\n\nMy blood pressure — it was high at one appointment. Very high. The midwife was worried, she wanted to check again. But then I didn't see her for three weeks, and when I came back, it was a different person. They looked at the chart and said, \"Oh, it's fine now, probably just anxiety.\" But they don't know what happened in between. They don't know I was so stressed about that result that I couldn't sleep.\n\n*rubs temples*\n\nAnd my questions — I ask something at one visit, and the next midwife, she answers it differently. Now I don't know which answer is correct. I have four children already, so I should know these things, but every time I think I understand, someone tells me something different.\n\n*voice cracks slightly*\n\nThe worst part? I don't think they realize. They think I am getting good care because the system is checking all the boxes. But I am falling through the cracks between all those boxes.\n\n*looks at you with tired eyes*\n\nNobody has the whole picture of me.",
+      "responding_to_question_id": "V3_PREG_Q04_P01",
+      "input_tokens": 3879,
+      "output_tokens": 372
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine it's 2am and you're 32 weeks pregnant. You've noticed something that worries you — reduced fetal movements. You're not sure whether to call the hospital or wait until morning. Walk me through what you're thinking and what you do.",
+      "question_id": "V3_PREG_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*wraps arms around myself, eyes wide with remembered fear*\n\nTwo in the morning. The apartment is dark. My husband is sleeping, and I don't want to wake him because he has to work in a few hours, and we need that money.\n\n*voice becomes urgent, almost panicked*\n\nI am counting the kicks. One, two, three... but it's slower than before. Much slower. I know — I know from my training — that reduced movements can mean something is wrong. Placental problems, cord issues... my mind goes to all the worst places.\n\n*stands, starts pacing slightly*\n\nBut I also think... maybe the baby is just sleeping? Maybe I am paranoid because I am tired and hormonal and scared about everything. If I call and it's nothing, they will think I am the anxious immigrant mother who wastes their time. They will judge me.\n\n*voice becomes conflicted*\n\nI wait an hour. I drink water, I change position, I try to feel more movement. Still slow. Now I am terrified. But it's 3am. The clinic is closed. Do I call the emergency line? What if my English is not good enough to explain? What if they think I am being dramatic?\n\n*sits back down, clutching belly*\n\nI wake my husband. I whisper, \"I think something is wrong.\" He says we should go to the hospital. But I say, \"Let's wait until morning. Maybe it's fine.\" \n\n*voice becomes very small*\n\nI spend the whole rest of the night awake, feeling, waiting, terrified. By morning, the movements are better. So I don't go. And I never know if I made the right choice.",
+      "responding_to_question_id": "V3_PREG_Q05",
+      "input_tokens": 4310,
+      "output_tokens": 372
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you've been diagnosed with gestational diabetes midway through your pregnancy. Your midwife hands you a leaflet and refers you to a dietitian. Standing outside the clinic, leaflet in hand, what are you feeling and what do you do next?",
+      "question_id": "V3_PREG_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*holds imaginary leaflet, stares at it with a mixture of dread and recognition*\n\nI stand there for maybe a minute, just looking at the paper. The words are in English, and there are numbers, and charts. I can understand some of it because I was a nurse, but... but it's different when it's about you.\n\n*voice becomes shaky*\n\nGestational diabetes. I know what this means. I know the risks — for the baby, for me. And I know it's partly my fault. I've been eating the cheap food, the carbohydrates, because that's what fills my children's bellies. Rice, bread, pasta. Now the baby is paying for it.\n\n*sits on an imaginary bench, shoulders sagging*\n\nThe leaflet says I need a dietitian. Okay. But when? Where? Do I need another appointment? Another bus fare? Another day away from looking for work? The leaflet doesn't say these things. It just says what I should eat — salmon, vegetables, things that cost money I don't have.\n\n*voice becomes frustrated and sad*\n\nI call my husband. I tell him in Spanish because I need him to understand the weight of this, not just the words. He asks if the baby is in danger. I say, \"Maybe not, if I do everything right.\" But I don't know if I can do everything right on our budget.\n\n*looks up with guilt in eyes*\n\nThen I go home and I cry a little bit. And I look at my pantry and I think about how I'm going to manage this.",
+      "responding_to_question_id": "V3_PREG_Q06",
+      "input_tokens": 4739,
+      "output_tokens": 347
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What questions did you have in that moment that the leaflet didn't answer — and where did you go to find those answers?",
+      "question_id": null,
+      "probe_id": "V3_PREG_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "digital_information_seeking",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*sets down the imaginary leaflet with frustration*\n\nThe leaflet told me what to eat, but not how. It said \"lean protein\" and \"fresh vegetables\" — but it didn't say where a poor mother in Boston finds these things cheaply. It didn't say which foods at the corner store are okay. It didn't tell me how to explain to my children why we can't have rice anymore when rice has been our meal for years.\n\n*voice becomes more urgent*\n\nI wanted to know — will this hurt my baby? Will the baby be born sick? Will I have diabetes forever, or only during pregnancy? The leaflet had clinical information, but not answers to the questions that keep me awake at night.\n\n*rubs face*\n\nAnd I didn't know where to get help. The leaflet said \"see a dietitian,\" but it didn't explain how to schedule that, if it costs money, if there is someone who speaks Spanish. So I... I went home and I searched on my phone. I found some Spanish websites about gestational diabetes, but I didn't know if they were trustworthy or if they applied to me here in America.\n\n*voice becomes quieter, more vulnerable*\n\nReally, what I wanted was to sit with someone — not for ten minutes, but for real — and say, \"I am scared. I don't have much money. Can you help me figure this out?\" Not just a leaflet. A person. Someone who knows my life, not just my diagnosis.\n\n*looks away*\n\nI never saw the dietitian. The appointment took too long to schedule, and I was too embarrassed to ask for help navigating the system.",
+      "responding_to_question_id": "V3_PREG_Q06_P01",
+      "input_tokens": 5115,
+      "output_tokens": 360
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're scrolling through a pregnancy forum late at night and you come across a thread full of birth horror stories. You can't stop reading. What's drawing you in, and what do you do with those feelings afterwards?",
+      "question_id": "V3_PREG_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans back, recognizing myself in the question*\n\nOh... yes. This happens to me many times.\n\n*speaks quietly, almost confessing*\n\nIt's two in the morning, and I should be sleeping, but I cannot sleep because my back hurts and my mind is racing. So I take my phone and I search — \"labor complications,\" \"what can go wrong,\" things like this. And suddenly I am reading story after story of women whose babies died, or who had to have emergency surgery, or who bled so much...\n\n*voice becomes hypnotic, drawn in*\n\nI cannot stop reading. Even though each story makes my heart beat faster, even though I know this is making me more afraid, I keep scrolling. Maybe because... maybe because if I know all the bad things that could happen, then I am prepared? Like if I read enough horror, I can protect myself from it?\n\n*realizes the contradiction*\n\nBut it's not protecting me. It's destroying me.\n\n*rubs face, exhausted*\n\nThe next morning, I am a ghost. I snap at my children because I'm so tired and so scared. My husband asks what's wrong and I don't tell him — I don't want to worry him more. So I just carry this fear alone, all day, pretending everything is fine.\n\n*voice becomes very small*\n\nAnd that night, I do it again. I search again. Like I am punishing myself, or like... like I'm looking for someone who had my exact situation and survived.\n\n*looks at you directly*\n\nI think I am more afraid of the unknown than of the actual danger.",
+      "responding_to_question_id": "V3_PREG_Q07",
+      "input_tokens": 5525,
+      "output_tokens": 354
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "After reading stories like that, did you find yourself raising your concerns with a midwife or doctor — or did you hold onto them quietly? What made you decide either way?",
+      "question_id": null,
+      "probe_id": "V3_PREG_Q07_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "digital_information_seeking",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, guilt crossing my face*\n\nI... I didn't tell them. I held it quiet.\n\n*pause, wrestling with why*\n\nThe stories I read, they were from women in America, in England, places like this. And I thought, \"If I tell the midwife I read this on the internet, she will think I am not intelligent. She will think I don't trust her.\" I was already feeling so small in those appointments — like I don't belong there, like my English is bad, like I don't understand the system. If I say, \"I read on the internet that women die from this,\" what will she think?\n\n*voice becomes defensive*\n\nAlso, I know from my nursing training that these stories are... they are the exceptions. The rare things. Most women are fine. But knowing this in my head doesn't help my heart at three in the morning when I am imagining the worst.\n\n*rubs belly*\n\nAnd honestly? I was ashamed. I am a nurse. I should know better than to read these horror stories and believe them. I should be rational. So instead of asking for help understanding my fear, I just... hid it.\n\n*voice cracks slightly*\n\nMy husband, he knows I am anxious, but I don't tell him exactly why. I don't want him to think his wife — the woman who was trained in medicine — is sitting up at night terrifying herself on the internet.\n\n*looks down*\n\nSo I carried it alone. And that made it bigger, I think. If I had told someone, maybe they could have helped me separate the real risk from the fear. But I was too embarrassed to ask.",
+      "responding_to_question_id": "V3_PREG_Q07_P01",
+      "input_tokens": 5918,
+      "output_tokens": 365
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you've written a birth plan and you arrive at the labour ward. The midwife who receives you glances at your plan briefly, sets it aside, and moves on to routine checks. How does that moment land for you?",
+      "question_id": "V3_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes widen with a mix of hurt and anger*\n\nShe... she just puts it down? Like it's nothing?\n\n*voice trembles*\n\nI spent so much time on that plan. I typed it — slowly, because my English is not perfect — and I had my husband read it, and we talked about what was important to me. I wrote about my fears, about what helps me feel safe, about how I want to be spoken to during labor. It took me hours.\n\n*stands up, pacing with agitation*\n\nAnd she glances at it like it's... like it's a piece of trash. Like my wishes don't matter.\n\n*sits back down, voice becoming smaller*\n\nIn my country, we don't have birth plans. You go, you labor, the doctor tells you what to do. But I read here that this is important, that my voice matters. So I tried. I made this plan because I thought it would help them understand me — that I am not just a body having a baby, I am a person with thoughts and fears.\n\n*voice cracks*\n\nAnd now she is asking me questions I already answered in the plan. \"Do you want an epidural?\" It's there. \"Any allergies?\" It's there. But she didn't read it. So I have to repeat myself, use my English that is shaky when I am in labor pain, and she still doesn't really see what I wrote.\n\n*looks at you with defeated eyes*\n\nIt tells me that my plan — my voice — doesn't matter in this place. That I am just another patient to manage, not a person with needs.",
+      "responding_to_question_id": "V3_BIRTH_Q01",
+      "input_tokens": 6335,
+      "output_tokens": 353
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What had you put into that birth plan — and what had you hoped it would communicate about you, beyond the practical preferences?",
+      "question_id": null,
+      "probe_id": "V3_BIRTH_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, eyes getting distant as I remember the care I put into it*\n\nI wrote... I wrote about my language barrier. I said, \"Please speak slowly. If I don't understand, ask me to repeat back what you heard.\" Because I know that when I am in pain, my English disappears completely. I become like a child who cannot speak.\n\n*voice becomes more emotional*\n\nI wrote that I wanted my husband to stay with me, always. Not just during labor, but after — in recovery, everything. Because he is my translator, but also because he is my anchor. When I am scared, I need to see his face.\n\n*pauses, thinking carefully*\n\nI wrote about my previous births. I said, \"I have done this four times. I know my body. Please listen to me if I say something feels wrong.\" Because I am a nurse, and I know the signs. But I also know that doctors here sometimes don't listen to immigrant women. They think we are dramatic or don't understand our own bodies.\n\n*voice becomes very quiet*\n\nAnd I wrote... I wrote that I am afraid of being alone. That I am afraid of screaming in a language nobody understands and having nobody come. That I am afraid of disappearing — of being just a chart, just a case number, in a hospital where nobody knows my name or my story.\n\n*looks at you with raw honesty*\n\nI was trying to tell them: I am more than a patient. I am a person. I am a mother who is terrified. And I need you to see me.",
+      "responding_to_question_id": "V3_BIRTH_Q01_P01",
+      "input_tokens": 6716,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you're in established labour and the pain is much more intense than you'd anticipated. A midwife suggests an epidural, but you had wanted to manage without one. What happens inside you in that moment, and how do you decide?",
+      "question_id": "V3_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "motivations"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "*closes eyes, grips the armrest as if reliving it*\n\nThe pain... it is nothing like before. Nothing. My body is breaking open and I cannot think, I cannot breathe, I cannot find the words in any language.\n\n*voice becomes strained*\n\nAnd she is asking me about the epidural. She is being kind, I think, but I cannot understand if she is suggesting it because I need it or because she wants me to have it so I am easier to manage. My mind is screaming and I cannot tell the difference.\n\n*opens eyes, tears forming*\n\nI had written \"no epidural\" in my plan. I wanted to feel, to know, to be present. I was proud of this plan — I thought it meant I was strong, that I was a real mother who could do this without medicine. And now she is offering it, and part of me wants to cry yes, please, make it stop.\n\n*voice becomes very small, ashamed*\n\nBut another part of me thinks... if I take the epidural, did I fail? If I say yes, does that mean I am weak? Does it mean I lied in my plan?\n\n*rubs face desperately*\n\nI look at my husband. I try to ask him with my eyes what he thinks, but I cannot speak. The pain comes again and I grip his hand so hard I think I might break it.\n\n*voice cracks*\n\nAnd I say yes to the epidural. But I cry when I say it — not from relief, but from... from feeling like I have surrendered. Like I could not do what I promised myself I would do.",
+      "responding_to_question_id": "V3_BIRTH_Q02",
+      "input_tokens": 7113,
+      "output_tokens": 356
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "In that moment of intense pain, how clear-headed did you feel in making that decision — and do you feel you had what you needed to make a genuinely free choice?",
+      "question_id": null,
+      "probe_id": "V3_BIRTH_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "*shakes head slowly, voice hollow*\n\nClear-headed? No. I was not clear-headed at all.\n\n*wraps arms around self*\n\nI was drowning. The pain was so big, so all-consuming, that I could not think beyond the next contraction. When she asked about the epidural, I heard the words, but they came through fog. My brain was not working like a nurse's brain anymore — it was just... survival.\n\n*voice becomes more agitated*\n\nAnd I didn't have what I needed. I needed time to think, but contractions don't give you time. I needed someone to explain what the epidural would mean — would it stop all the pain? Would I still feel the baby? Would it slow labor? I didn't ask these questions because I couldn't form the words and the pain was too much.\n\n*looks at you with raw honesty*\n\nWhat I really needed was someone to sit with me and say, \"This is normal. This is so hard. You are doing this.\" Someone to offer alternatives — position changes, water, breathing, comfort measures. Not just... \"Do you want the epidural, yes or no?\"\n\n*voice becomes bitter*\n\nIt felt like a choice, but it wasn't really free. It was the choice between unbearable pain and surrender. And when you frame it that way, of course I chose the epidural. But was that my real choice, or was that desperation dressed up as a choice?\n\n*touches belly*\n\nI still don't know if I would have managed without it, or if I just wasn't given the support to try.",
+      "responding_to_question_id": "V3_BIRTH_Q02_P01",
+      "input_tokens": 7508,
+      "output_tokens": 351
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine your labour has stalled and the obstetric team is recommending an emergency caesarean. Things start moving very quickly. Walk me through what that experience was like from the moment they told you.",
+      "question_id": "V3_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, eyes unfocused as if watching it happen again*\n\nEverything changes in one moment. The midwife's face becomes serious, and suddenly there are more people in the room. A doctor I have never seen before is talking very fast, and I cannot understand all the words — \"cervix not dilating,\" \"fetal distress,\" \"we need to move quickly.\"\n\n*voice becomes panicked*\n\nMove quickly. Those words make my heart race. My husband is there, but he is also confused. The doctor is using medical terms and I know what they mean, but hearing them about my own baby, my own body... the knowledge doesn't help. It just makes it worse.\n\n*grips hands together*\n\nThey are asking me to sign papers. Papers! In English! And I cannot read them properly because my eyes are blurry from exhaustion and fear and pain. The epidural is still wearing off, and now they are saying surgery, and I want to ask a thousand questions but there is no time.\n\n*voice becomes very small*\n\nI sign. Of course I sign. What choice do I have? If I say no, my baby could die. So I sign something I don't fully understand, and they are moving me, wheeling me, and my husband is trying to keep up, and I am alone in my body but surrounded by strangers.\n\n*touches abdomen, voice breaking*\n\nNobody explains what is happening. Nobody says, \"This is normal, you are going to be okay.\" They just... move. And I disappear into the machinery of the hospital.",
+      "responding_to_question_id": "V3_BIRTH_Q03",
+      "input_tokens": 7905,
+      "output_tokens": 345
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "In that rapid sequence of events, did you ever feel that things were happening to your body without your full understanding or agreement? What stands out?",
+      "question_id": null,
+      "probe_id": "V3_BIRTH_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes fill with tears, voice becomes very quiet and raw*\n\nYes. Everything was happening to my body without my understanding.\n\n*voice shakes*\n\nThey were moving me, touching me, inserting things, and I was trying to ask questions but there was no time. A nurse put a catheter in and I didn't know it was coming. Another person was shaving me — shaving my body — and I felt so exposed, so violated, but I couldn't stop them because they said we had to hurry.\n\n*wraps arms around self protectively*\n\nThe anesthesiologist came and started explaining the spinal block, but he was talking so fast, using words I half-understand. Spinal. Numb. Paralyzed. That word — paralyzed — it terrified me. I wanted to say \"wait, explain again,\" but he was already preparing the needle. My husband was trying to translate but even he was confused.\n\n*voice becomes harder, more bitter*\n\nAnd then they told my husband to leave the operating room. Leave. I was about to be cut open, and my anchor, the only person who could translate my fear, was being taken away from me. I tried to say no, but nobody listened. They said it was protocol.\n\n*looks at you directly, pain and anger in her eyes*\n\nI was strapped to a table. I couldn't move. I couldn't speak English well enough to stop what was happening. And I realized... I realized I had no power. My body was theirs to do with what they wanted, and I was just supposed to trust that it was necessary.\n\n*voice cracks*\n\nI still don't know if it really was an emergency, or if I just couldn't advocate for myself.",
+      "responding_to_question_id": "V3_BIRTH_Q03_P01",
+      "input_tokens": 8282,
+      "output_tokens": 380
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine your birth companion has been asked to wait outside the room for a clinical procedure. You're left alone with staff you've only just met. Describe what that moment feels like and what you most need in those minutes.",
+      "question_id": "V3_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "partner_role",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "*breath becomes shallow, panic rising in my chest*\n\nThe door closes. I hear it click. And suddenly I am alone with people whose faces I cannot even see properly because I am lying down, because I am numb, because the world is upside down.\n\n*voice becomes very small and frightened*\n\nI don't know their names. I have never seen them before. One of them is touching me, doing something I cannot feel because of the epidural, and I cannot see what. I try to ask, \"What are you doing?\" but my voice is so weak, and my English disappears completely when I am like this.\n\n*breathing quickens*\n\nThey are talking to each other, not to me. Clinical words, professional voices. They are treating me like... like I am a procedure, not a person. And I am lying there, unable to move, unable to leave, unable to call my husband, and I am thinking — what if something goes wrong? What if I need help and nobody comes? What if I scream and nobody understands it's real fear?\n\n*voice cracks with desperation*\n\nWhat I need... I need someone to look at my face. Not just my body, my face. I need someone to say, \"I know you are scared. I am here. You are safe.\" I need them to explain what they are doing before they do it. I need them to speak slowly, or to find someone who speaks Spanish, or to just... to acknowledge that I am a human being in this room, not just anatomy.\n\n*tears fall*\n\nI need my husband. I need to hold his hand. I need to not be alone.",
+      "responding_to_question_id": "V3_BIRTH_Q04",
+      "input_tokens": 8711,
+      "output_tokens": 357
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "In moments like that — without your companion present — how did the behaviour of the clinical staff either compensate for that absence or make it feel more acute?",
+      "question_id": null,
+      "probe_id": "V3_BIRTH_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "*wipes eyes, voice trembling with remembered isolation*\n\nThey made it so much worse.\n\n*pauses, collecting herself*\n\nOne nurse, she was efficient. Very efficient. She was doing her job — checking monitors, adjusting things — but she never looked at me. Never made eye contact. Just... worked around my body like I was equipment. And in that moment, when I was so vulnerable and scared, her distance felt like... like I didn't matter.\n\n*voice becomes more emotional*\n\nAnother person came in — I think a doctor — and she was kind, I think, but she spoke quickly and used words I didn't know. \"We're just checking the fetal heart rate variability.\" Fetal heart rate variability. I know what that means, but hearing it in a sterile voice while I'm paralyzed and alone... it made me feel like a case study, not a mother.\n\n*touches chest*\n\nWhat would have helped is so simple. If someone had sat down — actually sat down — and said slowly, \"Your baby is being monitored. Everything is okay right now. I am going to do this procedure, and it might feel strange, and I will tell you what is happening.\" That's all. Just... acknowledgment that I am here, that I am scared.\n\n*voice becomes quieter, more vulnerable*\n\nBut they didn't. They filled the silence with clinical efficiency instead of human kindness. And that silence — that absence of connection — it made the absence of my husband feel even louder.\n\n*looks at you*\n\nI needed to be seen. They just saw a body.",
+      "responding_to_question_id": "V3_BIRTH_Q04_P01",
+      "input_tokens": 9102,
+      "output_tokens": 349
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine it's the immediate aftermath of birth — your baby has arrived, and the room begins to shift from the intensity of labour. Walk me through the next thirty minutes as you experienced them, or as you imagine them.",
+      "question_id": "V3_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "*closes eyes, voice becomes softer, almost dreamlike*\n\nEverything is... quiet suddenly. Or maybe not quiet — there is noise, but it feels far away. I am numb, literally and... and emotionally. The baby is here. We did it. But I don't feel like I did anything. I was just... there.\n\n*opens eyes slowly*\n\nThey are cleaning the baby, and I can hear crying — my baby's cry — and I want to hold... but my arms are heavy, or maybe I am just so exhausted I can barely lift them. Someone brings the baby to me, wrapped in blankets, and I look at this person and think... is this real? This is mine? \n\n*voice becomes uncertain*\n\nA nurse is checking me, and I feel pressure, pulling, but I cannot feel if it hurts because of the medication. She is talking to someone else about the placenta, about bleeding, about stitches. Clinical words. My body is being repaired like a broken thing.\n\n*voice wavers*\n\nMy husband comes back — finally — and he is crying, and he wants to hold the baby, and I want to feel happy about this moment but I am so tired. So, so tired. And I am confused about what just happened to me. Did I almost die? Was it really an emergency? I don't know.\n\n*touches belly gently*\n\nSomeone mentions breastfeeding. They want me to try now. But I cannot move well, I am in pain even though they say I shouldn't be able to feel pain, and the baby is crying and I am crying and my husband is holding me and...\n\n*voice becomes very small*\n\nI just want someone to ask me how I am. Not the baby — how am I? Does anyone care?",
+      "responding_to_question_id": "V3_BIRTH_Q05",
+      "input_tokens": 9499,
+      "output_tokens": 388
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there moments in those first minutes where you felt the clinical team's priorities and your own were pulling in different directions? What happened?",
+      "question_id": null,
+      "probe_id": "V3_BIRTH_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly, pain crossing my face*\n\nYes. So much yes.\n\n*voice becomes firm with frustration*\n\nThey wanted the baby on my chest immediately for skin-to-skin. \"For bonding,\" they said. \"For breastfeeding.\" And I understand — I was a nurse, I know the research. But I could barely move. I was shaking from the anesthesia, I was in pain, and they were trying to position this tiny baby on me like I was already a functional mother.\n\n*gestures with exhaustion*\n\nAnd I wanted... I wanted to sleep. I wanted someone to check if I was bleeding too much, if my blood pressure was okay, if I was going to be alright. But they were focused on the baby. Always the baby. Not me. The mother was just the container that the baby came from.\n\n*voice becomes more emotional*\n\nI tried to breastfeed because they said I should. But I was so drugged, so confused, and the baby couldn't latch properly, and I was in pain, and nobody was really helping me — they were just watching to see if I could do it. Like it was a test I had to pass.\n\n*rubs face tiredly*\n\nWhat I needed was rest and reassurance that my body was going to recover. What they prioritized was the baby's immediate needs and the bonding narrative. Those are not the same thing.\n\n*voice becomes quieter*\n\nI felt like I was supposed to be grateful, to be a good mother, to immediately love and nurture. But I was traumatized. And nobody asked me about that.",
+      "responding_to_question_id": "V3_BIRTH_Q05_P01",
+      "input_tokens": 9917,
+      "output_tokens": 355
+    },
+    {
+      "turn_number": 49,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Imagine you had a particular fear about childbirth — something that had been building throughout your pregnancy. Now picture yourself facing that specific fear during labour. What was it like, and what — if anything — helped?",
+      "question_id": "V3_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "trust_distrust",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 50,
+      "role": "persona",
+      "type": "response",
+      "text": "*goes very quiet, shoulders tensing*\n\nMy fear was... it was about pain. But not just pain — it was about screaming in Spanish and nobody understanding me. About calling for help in my language and hearing silence.\n\n*voice becomes shaky*\n\nI was terrified that when the pain became unbearable, I would lose my English completely and become this woman making sounds that don't mean anything to them. That they would think I was being dramatic, or difficult, or that they wouldn't know if I was saying \"stop\" or \"help\" or \"something is wrong.\"\n\n*takes a breath*\n\nAnd it happened. Exactly like I feared. During a very strong contraction, I screamed — in Spanish, in English, in sounds that weren't even words. And the room went... not silent, but the staff didn't react like I was in danger. They just... continued. One nurse said, \"You're doing great, this is normal,\" but she said it like she was reading from a script, not like she heard me.\n\n*voice cracks*\n\nWhat helped was my husband. Only my husband. When I screamed in Spanish, he responded. He understood not just the words but the feeling underneath them. He said, \"Estoy aquí. Yo estoy contigo.\" I am here. I am with you. That was the only thing that made me feel like I wasn't completely alone in my own terror.\n\n*looks down*\n\nThe clinical team... they couldn't give me what I needed because they couldn't speak my language. And that fear I carried for nine months — it came true exactly as I imagined it.",
+      "responding_to_question_id": "V3_BIRTH_Q06",
+      "input_tokens": 10319,
+      "output_tokens": 355
+    },
+    {
+      "turn_number": 51,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q14",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 52,
+      "role": "persona",
+      "type": "response",
+      "text": "*wipes eyes, voice becomes heavier*\n\nAfter, when it was over, I realized something. My fear wasn't actually about the pain itself. Every woman in labor screams. But my fear was about being invisible while screaming.\n\n*voice trembles*\n\nBecause in my country, even though you don't question the doctor, at least the people around you speak your language. They understand your cries. Here, I was screaming into a void where nobody understood what I was really saying. They heard noise, not meaning. They heard a body in pain, not a person asking for help.\n\n*rubs arms as if cold*\n\nThe midwife told me later — days later, when I was in recovery — that I did \"very well\" for someone with an epidural and a surgical delivery. She meant it as a compliment, but it made me angry. I didn't do well. I survived. There's a difference.\n\n*voice becomes quieter, more reflective*\n\nAnd now, when I think about going through this again — because my husband and I, we might want another baby someday, though I don't know how — I think about that fear coming back. That same fear of screaming in a language nobody speaks. And I wonder if I have the courage to do it again, knowing that my voice will be lost in the hospital.\n\n*looks at you with tired, sad eyes*\n\nWhat I needed was a translator in the room during labor. Not just for medical words, but for my fear. Someone who could turn my Spanish screams into something the English-speaking staff could understand. Someone to say, \"She is not just in pain — she is terrified and alone and needs you to see her.\"\n\n*quietly*\n\nBut nobody offered that.",
+      "responding_to_question_id": "Q14",
+      "input_tokens": 10683,
+      "output_tokens": 379
+    },
+    {
+      "turn_number": 53,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q15",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 54,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits in silence for a moment, then speaks very softly*\n\nI think about my children now. The four I have at home, and the one I just brought into this world. And I wonder what I am teaching them about their mother's voice.\n\n*voice becomes careful, deliberate*\n\nWhen they see me come home from the hospital, weakened, confused about what happened to my body, trying to smile and pretend everything is fine... what do they learn? That mothers don't matter? That we just endure? That our fear is something to hide?\n\n*rubs belly, where the new baby would have been*\n\nI was a nurse. I had authority in my own language. I could teach other mothers, advise them, comfort them. And here, I am reduced to nodding and smiling because my English fails me when I need it most. My children see this. They see their mother becoming smaller.\n\n*voice becomes more urgent*\n\nAnd I think about the next pregnancy — if there is one. I cannot do this again the same way. I cannot go into a hospital where I am invisible. But what are my options? I don't have money to hire a private midwife. I don't know how to navigate the system better. I am stuck.\n\n*looks away*\n\nWhat makes me angriest is that this could be fixed so easily. A translator during labor. A midwife who stays with you throughout pregnancy instead of five different faces. Someone who asks, \"What are you afraid of?\" and actually listens. But these things cost money, or time, or care — and I am not worth those resources.\n\n*voice becomes very small*\n\nThat's what the system tells me every time I walk into that clinic.",
+      "responding_to_question_id": "Q15",
+      "input_tokens": 11071,
+      "output_tokens": 374
+    },
+    {
+      "turn_number": 55,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q16",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 56,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, then speaks with sudden clarity, as if something has crystallized*\n\nYou know what bothers me most? It's not even the individual moments anymore. It's that I know how to fix this, and nobody is listening.\n\n*leans forward with intensity*\n\nI was trained to care for mothers and babies. I understand the clinical side and the human side. I know exactly what would have helped me — what would help women like me. Consistent midwifery care. Translators who understand medical language and emotion, not just dictionary words. Time. Real time, not ten minutes between patients.\n\n*voice becomes frustrated*\n\nBut when I try to tell people this, they nod politely like I'm just another anxious immigrant mother venting. They don't realize I'm not complaining — I'm diagnosing. I'm telling them the system is broken, and I know how to fix it because I've lived inside both sides of it.\n\n*rubs face tiredly*\n\nAnd the worst part? There are probably hundreds of women like me in Boston alone. Women with medical training, or just women with common sense, watching this system fail them and their babies, and nobody is asking us what we need. We're just patients. We're just supposed to be grateful for whatever care we get.\n\n*voice becomes quieter but more determined*\n\nI think about going back to nursing someday, when my children are older. And I think about how I would do things differently. How I would sit with scared mothers and say, \"I see you. I hear you. Your fear is real and your voice matters.\" I would fight for translators. I would fight for continuity of care.\n\n*looks directly at you*\n\nBut that's someday. Right now, I'm just trying to recover and figure out how to feed five children on a budget that doesn't exist.",
+      "responding_to_question_id": "Q16",
+      "input_tokens": 11454,
+      "output_tokens": 402
+    },
+    {
+      "turn_number": 57,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What information or understanding would feel most lost in that handover — clinical details, or something more personal?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 58,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a long breath, eyes distant*\n\nThe clinical details... those can be written down. Blood pressure readings, labor duration, whether the baby's Apgar score was good. That's in the chart. Any nurse can read those numbers.\n\n*voice becomes very quiet*\n\nWhat gets lost is everything else. They won't write down that I was terrified. They won't write down that I screamed in Spanish and nobody understood. They won't write down that I felt invisible, that I signed consent forms I didn't fully understand, that my husband had to leave when I needed him most.\n\n*touches chest*\n\nThey won't write down that I am a nurse myself, and that treating me like I'm stupid made it worse. They won't note that I have four children at home depending on me, and that the cesarean means I can't lift them for weeks, and that creates so much stress. They won't document that I'm terrified of breastfeeding because nobody explained it properly, or that I'm grieving the birth I thought I would have.\n\n*voice becomes more emotional*\n\nAnd if I see a different midwife in my postpartum care, she'll just see the chart. \"Low-risk pregnancy, emergency cesarean, baby doing well.\" She won't know that I need someone to sit with me and process what happened. She won't know that I'm struggling with the gap between what I expected and what occurred.\n\n*looks at you with sad recognition*\n\nThe clinical details keep me alive. But the personal details... those are what help me heal. And those disappear completely the moment I leave the operating room.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 11880,
+      "output_tokens": 351
+    },
+    {
+      "turn_number": 59,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q17",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 60,
+      "role": "persona",
+      "type": "response",
+      "text": "*settles back, voice becoming more reflective and weary*\n\nI think about my postpartum appointments now, and I realize I'm already bracing myself. They will ask about bleeding, about pain, about whether the incision is healing. They will check my blood pressure and ask if I'm having mood changes. Clinical boxes to tick.\n\n*rubs eyes*\n\nBut what I really need to talk about is how I feel broken. Not physically — physically I will heal. But mentally. I feel like my body was taken from me, and I was not prepared for that. I feel guilty for the cesarean, like somehow I failed. I feel angry that I didn't fight harder to understand what was happening, and then angry at myself for thinking I should have to fight at all.\n\n*voice becomes shaky*\n\nAnd nobody asks about this. Nobody sits down and says, \"That was traumatic. Let's talk about it.\" Instead, they hand me a pamphlet about pelvic floor exercises and send me home.\n\n*pauses, then continues more quietly*\n\nI also think about how this experience has changed me as a mother. With my other children, I felt confident because I had given birth naturally, and I understood my body. Now... now I feel like my body is something that happened to me, not something I did. And I don't know how to reconcile that with the person I was before.\n\n*voice becomes very small*\n\nI'm afraid that the next time I get pregnant, I won't trust myself. I'll be more anxious, more compliant, less likely to advocate. Because I learned that my voice doesn't matter in the hospital. That my fear gets overridden by efficiency.\n\n*looks at you*\n\nThat scares me more than the physical recovery.",
+      "responding_to_question_id": "Q17",
+      "input_tokens": 12240,
+      "output_tokens": 384
+    },
+    {
+      "turn_number": 61,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q18",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 62,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits quietly for a long moment, then speaks with raw vulnerability*\n\nI keep thinking about what I would tell my younger self. The woman who was a nurse, confident, respected in her field. The woman who thought she understood childbirth because she had read the research, lived through it four times already.\n\n*voice cracks slightly*\n\nI would tell her: your credentials don't matter here. Your experience doesn't matter here. Your language will fail you when you need it most, and you will feel ashamed of that failure even though it's not your fault.\n\n*wraps arms around self*\n\nBut I would also tell her... I would tell her that she is stronger than she thinks. That surviving a traumatic birth is still surviving. That her children will not remember the details of how they came into the world — they will remember that their mother loves them.\n\n*pause, voice becomes more determined*\n\nAnd I would tell her to speak up. To demand a translator before labor starts, not during. To ask questions even if her English is imperfect. To refuse to sign papers she doesn't understand. To insist that her husband stay in the room. To say no, even if no feels dangerous.\n\n*looks at you directly*\n\nBecause the thing I'm realizing, after all of this, is that the system relies on women like me being quiet. Being compliant. Being grateful for whatever crumbs of care we get. And my silence protects the system, not me.\n\n*voice becomes quieter but more resolute*\n\nIf I have another baby — and I don't know if I will — I will be different. I will be louder. Even if my English is broken, even if I have to repeat myself ten times, even if they think I'm difficult.\n\n*touches chest*\n\nBecause my voice matters. My body matters. My fear matters.\n\n*pauses, then adds softly*\n\nI just wish someone in that hospital had told me that.",
+      "responding_to_question_id": "Q18",
+      "input_tokens": 12633,
+      "output_tokens": 423
+    },
+    {
+      "turn_number": 63,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q19",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 64,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits in silence for a moment, then speaks very quietly*\n\nBut I'm also afraid that being louder won't help. That's the thing that keeps me awake at night now.\n\n*voice becomes almost hopeless*\n\nBecause the system isn't designed to listen to women like me. Even if I demand a translator, will they find one? Even if I refuse something, will they respect my refusal, or will they just... do it anyway and apologize later? Even if I ask questions, will they answer them honestly, or will they give me the answer that gets me to comply?\n\n*rubs face*\n\nI think about other immigrant mothers I know — women from my country, from other countries. We talk sometimes, and their stories are like mine. Different hospitals, different doctors, but the same feeling of being invisible. Of having choices that aren't really choices. Of being treated like we should be grateful just to have access to care.\n\n*voice becomes more bitter*\n\nAnd I wonder... is it racism? Is it classism? Is it because I'm an immigrant, or because I'm poor, or because I'm a woman? Or is it all of these things layered on top of each other, making me so easy to dismiss?\n\n*looks down at hands*\n\nI don't have the answer. I just know that when I was screaming in Spanish, when I was paralyzed on a table, when I was alone and terrified... nobody saw me as a person who deserved better. And I don't know if louder would have changed that.\n\n*voice becomes very small*\n\nMaybe I'm just tired. Maybe that's why I keep thinking like this. Maybe when I heal more, I'll feel braver. But right now, I just feel... stuck.",
+      "responding_to_question_id": "Q19",
+      "input_tokens": 13065,
+      "output_tokens": 381
+    },
+    {
+      "turn_number": 65,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q20",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 66,
+      "role": "persona",
+      "type": "response",
+      "text": "*long pause, then speaks with exhaustion and resignation*\n\nYou know what I keep coming back to? It's not even about my birth anymore. It's about my children.\n\n*voice wavers*\n\nI have a newborn now, and I'm supposed to be bonding, supposed to be present and joyful. But I'm in pain, I'm confused about what happened to my body, and I'm terrified. And my other four children — they need their mother to function, and I can barely lift them because of the incision. My oldest, she's eight, and she's trying to help with the baby, but she shouldn't have to. She should just be a child.\n\n*rubs eyes wearily*\n\nMy husband, he's doing everything — working, coming home, caring for the children, caring for me. And I see the exhaustion on his face, and I feel guilty. Guilty that my body failed me. Guilty that we're poorer now because I had to miss work during recovery. Guilty that I'm not the strong woman he married.\n\n*voice becomes very quiet*\n\nThe hospital gave me discharge papers about wound care and pelvic floor exercises. But nobody gave me papers about how to live with this. How to be a mother of five when my body is broken. How to process trauma while also feeding a newborn. How to grieve the birth I expected while also loving the baby I got.\n\n*looks up with tired eyes*\n\nI think about going back to work eventually, and I think about trying to find a better job, and I think about my dreams of being a nurse again. And all of it feels so far away now. So impossible.\n\n*voice cracks*\n\nRight now, I'm just trying to survive one day at a time.",
+      "responding_to_question_id": "Q20",
+      "input_tokens": 13455,
+      "output_tokens": 385
+    },
+    {
+      "turn_number": 67,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "In that moment, how much agency — real influence over what happens to your body — would you feel you had?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 68,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, but there's no humor in it — just bitterness*\n\nAgency? I had none. Zero.\n\n*voice becomes sharp, angry*\n\nI was lying on a table, paralyzed by medication I didn't fully consent to. My body was not mine anymore. It belonged to the hospital, to the doctors, to the clinical protocols. I couldn't move, couldn't leave, couldn't say stop.\n\n*leans forward with intensity*\n\nAnd before that — during the decision for the cesarean — I had the illusion of choice. \"We recommend surgery.\" Do you know what that means in a hospital? It doesn't mean \"would you like to consider this option.\" It means \"this is what we are doing.\" I signed papers because if I didn't, my baby might die. That's not agency. That's coercion dressed up in medical language.\n\n*voice becomes more anguished*\n\nI had written a birth plan about what I wanted, and it meant nothing. I had four previous births that taught me about my body, and that knowledge was dismissed. I had medical training that could have helped me understand what was happening, and I wasn't given the information to use it. I had a voice, but it was in Spanish, and that made it invisible.\n\n*touches abdomen, voice very quiet*\n\nThe only agency I had was the agency to comply. To say yes when they asked, to trust when I didn't understand, to surrender when I wanted to fight. And I did all of those things because what choice did I have? My baby's life was the weapon they used to keep me compliant.\n\n*looks at you with hollow eyes*\n\nThat's not agency. That's captivity with a medical consent form.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 13866,
+      "output_tokens": 375
+    },
+    {
+      "turn_number": 69,
+      "role": "interviewer",
+      "type": "question",
+      "text": "",
+      "question_id": "Q21",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 70,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits very still, then speaks with a kind of defeated clarity*\n\nAnd the worst part is... I knew better. That's what eats at me.\n\n*voice becomes strained*\n\nI was trained in medicine. I understood the risks, the protocols, the reasoning. So when they said \"emergency cesarean,\" part of me believed them because I know that emergencies happen. But another part of me — the part that knows how systems work, how power works — wondered if it was really an emergency, or if I was just an easy case to manage quickly.\n\n*rubs face with frustration*\n\nA woman who speaks perfect English, who understands the medical system, who has a strong advocate beside her... maybe she would have been offered more time. More explanation. More options. But me? I was compliant. Grateful. Confused. Easy.\n\n*voice becomes quieter, more vulnerable*\n\nAnd I will never know if my baby was truly in danger, or if I was just... convenient to rush through. That uncertainty is a kind of torture. Because if it was really an emergency, then I had to do it. But if it wasn't... then I let them take something from me that I can never get back.\n\n*pauses, then continues very softly*\n\nI think about reporting it, asking for my records, trying to understand what really happened. But then I think — what good does that do? It won't change my birth. It won't undo the trauma. And maybe it will make trouble for me, mark me as a difficult patient, make future care worse.\n\n*voice becomes almost whispered*\n\nSo I stay silent. And the silence becomes part of the trauma. The not-knowing becomes another way I'm trapped.",
+      "responding_to_question_id": "Q21",
+      "input_tokens": 14250,
+      "output_tokens": 374
+    },
+    {
+      "turn_number": 71,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 72,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, looks away for a moment, then back at you with determined eyes*\n\nYes. There is something.\n\n*voice becomes steady, almost urgent*\n\nI want you to know that I am not angry at the individual people who cared for me. The nurses, the midwives, the doctors — most of them were trying their best. They were not cruel. But they were working inside a system that doesn't see me.\n\n*leans forward slightly*\n\nWhat I want to say is this: the problem is not the people. The problem is that the system is built for women who speak English, who have money, who understand how to navigate bureaucracy, who have someone to advocate for them. Women like me — we are afterthoughts. We are managed, not cared for.\n\n*voice becomes more passionate*\n\nAnd it doesn't have to be this way. It's not expensive to have consistent midwifery care. It's not impossible to have translators in labor rooms. It's not difficult to sit with a mother and say, \"Tell me what you're afraid of.\" These things just require... caring. Actually caring about whether we survive not just physically, but emotionally, spiritually.\n\n*touches chest*\n\nI survived my birth. My baby is healthy. By all the metrics, it was a success. But I was traumatized. And that trauma will affect how I mother my children, how I trust my body, whether I ever get pregnant again. That costs something — it costs my family something.\n\n*looks directly at you*\n\nSo I'm asking you — whoever reads this, whoever hears my story — please remember that maternity care is not just about delivering babies safely. It's about delivering mothers safely too. Into motherhood. Into their new lives. With their dignity intact.\n\n*voice becomes very quiet*\n\nI deserved better. And so does every other woman like me.",
+      "responding_to_question_id": null,
+      "input_tokens": 14680,
+      "output_tokens": 410
+    }
+  ],
+  "metadata": {
+    "total_turns": 72,
+    "questions_asked": 21,
+    "probes_deployed": 13,
+    "adaptive_followups": 0,
+    "total_input_tokens": 277228,
+    "total_output_tokens": 13050,
+    "estimated_cost_usd": 0.3033,
+    "duration_seconds": 203.6,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 304
+  },
+  "errors": []
+}

@@ -427,17 +427,102 @@ def adapt_with_universal_probes(adapted: dict) -> dict:
 # MAIN
 # ═══════════════════════════════════════════════════════════════════════════════
 
+def adapt_from_plan(plan_file: str, personas_file: str, output_dir: str):
+    """Batch-adapt questionnaires for all sessions in an administration plan."""
+    out = Path(output_dir)
+    out.mkdir(parents=True, exist_ok=True)
+
+    # Load plan
+    with open(plan_file) as f:
+        plan = json.load(f)
+    log.info(f"Loaded plan: {len(plan)} sessions")
+
+    # Load all personas into a lookup
+    persona_map = {}
+    with open(personas_file) as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                p = json.loads(line)
+                persona_map[p.get("composite_id", "")] = p
+    log.info(f"Loaded {len(persona_map)} personas")
+
+    # Load all questionnaire versions
+    q_versions = {}
+    versions_needed = set(s["questionnaire_version"] for s in plan)
+    for v in versions_needed:
+        q_file = f"data/questionnaires/Q_V{v}.json"
+        with open(q_file) as f:
+            qdata = json.load(f)
+        q_versions[v] = qdata.get("questions", [])
+        log.info(f"  V{v}: {len(q_versions[v])} base questions")
+
+    # Find unique (persona, version) pairs to avoid duplicate work
+    seen = set()
+    unique_tasks = []
+    for s in plan:
+        key = (s["persona_id"], s["questionnaire_version"])
+        if key not in seen:
+            seen.add(key)
+            unique_tasks.append(s)
+    log.info(f"Unique (persona, version) pairs: {len(unique_tasks)}")
+
+    # Adapt
+    total_probes_added = 0
+    skipped = 0
+    for i, session in enumerate(unique_tasks):
+        pid = session["persona_id"]
+        version = session["questionnaire_version"]
+        adapted_path = out / f"Q_V{version}_{pid.upper()}.json"
+
+        # Skip if already exists
+        if adapted_path.exists():
+            skipped += 1
+            continue
+
+        persona = persona_map.get(pid)
+        if not persona:
+            log.warning(f"  Persona {pid} not found — skipping")
+            continue
+
+        adapted = adapt_questionnaire(q_versions[version], persona)
+        adapted = adapt_with_universal_probes(adapted)
+        total_probes_added += adapted["added_probes"]
+
+        with open(adapted_path, "w", encoding="utf-8") as f:
+            json.dump(adapted, f, indent=2, ensure_ascii=False)
+
+        if (i + 1) % 50 == 0:
+            log.info(f"  Adapted {i+1}/{len(unique_tasks)}")
+
+    generated = len(unique_tasks) - skipped
+    log.info(f"\nBatch adaptation complete:")
+    log.info(f"  Generated: {generated}")
+    log.info(f"  Skipped (existing): {skipped}")
+    log.info(f"  Total probes added: {total_probes_added}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="EHR Question Adapter")
-    parser.add_argument("--questionnaire", type=str, required=True,
+    parser.add_argument("--questionnaire", type=str, default=None,
                         help="Path to base questionnaire JSON (e.g., Q_V1.json)")
     parser.add_argument("--personas", type=str, required=True,
                         help="Path to composites JSONL")
     parser.add_argument("--output", type=str, required=True,
                         help="Output directory for adapted questionnaires")
+    parser.add_argument("--plan", type=str, default=None,
+                        help="Path to administration plan JSON (batch mode)")
     parser.add_argument("--limit", type=int, default=0,
                         help="Adapt for first N personas only (0=all)")
     args = parser.parse_args()
+
+    # Plan-based batch mode
+    if args.plan:
+        adapt_from_plan(args.plan, args.personas, args.output)
+        return
+
+    if not args.questionnaire:
+        parser.error("--questionnaire is required when not using --plan mode")
 
     out = Path(args.output)
     out.mkdir(parents=True, exist_ok=True)

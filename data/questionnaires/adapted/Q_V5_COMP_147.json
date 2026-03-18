@@ -1,0 +1,988 @@
+{
+  "persona_id": "comp_147",
+  "persona_name": "Hermine",
+  "journey_stage": "birth",
+  "risk_level": "low",
+  "vulnerability_flags": [
+    "rural_isolation"
+  ],
+  "complications": [],
+  "relevant_phases": [
+    "birth",
+    "postpartum"
+  ],
+  "base_question_count": 37,
+  "adapted_question_count": 14,
+  "filtered_out": 23,
+  "added_probes": 2,
+  "questions": [
+    {
+      "question_id": "V5_BIRTH_Q01",
+      "version": 5,
+      "journey_phase": "birth",
+      "question_text": "Tell me about the people who were with you — or who you wished had been with you — during your labour and birth. Who did each person support, and what difference did their presence make?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_BIRTH_Q01_P01",
+          "probe_text": "Who else was involved in the room — midwives, doctors, a doula — and how did the relationships between those people affect the atmosphere?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q01_P02",
+          "probe_text": "Were there moments when the people there didn't quite understand what you needed — and how did that feel in the intensity of labour?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q01_P03",
+          "probe_text": "How did that affect your ability to feel safe, in control, or like yourself during that experience?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "How does distance to your hospital or clinic affect your pregnancy experience?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers"
+          ],
+          "probe_id": "V5_BIRTH_Q01_UNIV_04",
+          "source": "universal_adaptation"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "informal_care_networks",
+        "dignity_respect",
+        "autonomy_vs_dependence"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "77386006"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V5_BIRTH_Q02",
+      "version": 5,
+      "journey_phase": "birth",
+      "question_text": "Tell me about the midwives and doctors who cared for you during your birth. Were there particular individuals whose presence or approach made a lasting impression — positive or negative?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_BIRTH_Q02_P01",
+          "probe_text": "How did that affect your trust in what was happening — did you feel like a partner in decisions or more like something was being done to you?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q02_P02",
+          "probe_text": "Were there moments when a shift handover or a change in personnel broke a connection you'd built — how did that affect you?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q02_P03",
+          "probe_text": "How did the way staff interacted with each other in the room shape your sense of safety and confidence in your care?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "dignity_respect"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "hcp_interactions",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "assurance",
+        "empathy",
+        "reliability"
+      ],
+      "target_latent_dimensions": [
+        "continuity_of_care",
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "200839001"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V5_BIRTH_Q03",
+      "version": 5,
+      "journey_phase": "birth",
+      "question_text": "Tell me about your partner's — or support person's — role during your birth. What did they bring to that experience, and what do you think they found most challenging?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_BIRTH_Q03_P01",
+          "probe_text": "How did the clinical team engage with your partner or support person — did they feel included as part of the care, or more like a bystander?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "partner_role",
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q03_P02",
+          "probe_text": "Were there moments when your partner needed support themselves — and who, if anyone, was there for them?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "partner_role",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q03_P03",
+          "probe_text": "How did that experience change or deepen your relationship, looking back on it now?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "partner_role",
+            "identity_tensions"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "informal_caregiver_interactions",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "tangibles"
+      ],
+      "target_latent_dimensions": [
+        "partner_role",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V5_BIRTH_Q04",
+      "version": 5,
+      "journey_phase": "birth",
+      "question_text": "Tell me about a moment during your birth when a decision needed to be made quickly or under pressure. Who was involved in that decision, and how did you experience your role in it?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_BIRTH_Q04_P01",
+          "probe_text": "Who else was involved — your partner, a doula, a consultant — in advocating for you or influencing what happened?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q04_P02",
+          "probe_text": "How did that compare to what you had hoped or planned for — did the reality of that moment match what you had imagined?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q04_P03",
+          "probe_text": "How did that experience sit with you afterwards — did it leave you feeling respected in how the situation was handled?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_thematic_areas": [
+        "decision_making",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "responsiveness",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "power_dynamics",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "200839001",
+        "15394000",
+        "386639001"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V5_BIRTH_Q05",
+      "version": 5,
+      "journey_phase": "birth",
+      "question_text": "Tell me about how the physical environment of your birth — the room, the equipment, the sounds and smells — felt in relation to the people around you. How did the space and the relationships interact?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_BIRTH_Q05_P01",
+          "probe_text": "Who else was involved in shaping that environment — did anyone advocate for changes to make the space feel safer or more personal?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q05_P02",
+          "probe_text": "Were there structural limitations — layout, staffing ratios, available equipment — that you were aware of, and how did they affect your sense of being cared for?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q05_P03",
+          "probe_text": "How did the birth environment compare to what you had imagined or hoped for — and how did the people in the room compensate for or add to any gap?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "dignity_respect"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "hcp_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "tangibles",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "structural_barriers",
+        "dignity_respect",
+        "autonomy_vs_dependence"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_rural",
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V5_BIRTH_Q06",
+      "version": 5,
+      "journey_phase": "birth",
+      "question_text": "Tell me about the people who knew about your birth preferences or plan beforehand — your midwife, your partner, your family — and how well those preferences were known and respected in the room on the day.",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_BIRTH_Q06_P01",
+          "probe_text": "How did that affect your sense of being known as a person rather than just a patient — did anyone in the room seem to really understand who you were and what mattered to you?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q06_P02",
+          "probe_text": "Who else was involved in advocating for your birth preferences when you couldn't speak for yourself — and what happened?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_BIRTH_Q06_P03",
+          "probe_text": "Were there moments when your preferences were overridden — how was that communicated to you, and how did it feel?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "dignity_respect"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "goals_expectations",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "reliability",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "continuity_of_care",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "386639001"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk",
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V5_POST_Q01",
+      "version": 5,
+      "journey_phase": "postpartum",
+      "question_text": "Tell me about the people who surrounded you in the days and weeks after your baby was born. Who showed up for you, and who were you surprised by — either by their presence or their absence?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_POST_Q01_P01",
+          "probe_text": "Who else was involved in day-to-day support — a health visitor, a postnatal group, an online community — that became important to you?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q01_P02",
+          "probe_text": "How did those relationships compare to the care you received from the formal health system in those early weeks?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q01_P03",
+          "probe_text": "Were there gaps — times when you needed someone and no one was available — and how did you navigate those alone?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_text": "How does distance to your hospital or clinic affect your pregnancy experience?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers"
+          ],
+          "probe_id": "V5_POST_Q01_UNIV_04",
+          "source": "universal_adaptation"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "support_sources",
+        "informal_caregiver_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "responsiveness"
+      ],
+      "target_latent_dimensions": [
+        "informal_care_networks",
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent",
+        "if_rural"
+      ]
+    },
+    {
+      "question_id": "V5_POST_Q02",
+      "version": 5,
+      "journey_phase": "postpartum",
+      "question_text": "Tell me about the people involved in your feeding journey — whether you breastfed, formula-fed, or mixed-fed. Who helped you, who gave you conflicting advice, and how did those relationships shape your choices?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_POST_Q02_P01",
+          "probe_text": "Who else was involved — a lactation consultant, a feeding group, an app, or family members — and how did their views align or conflict?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q02_P02",
+          "probe_text": "Were there moments when you felt judged by people around you — clinical or personal — for your feeding decisions, and how did that affect you?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "dignity_respect"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q02_P03",
+          "probe_text": "How did that compare to what the formal health system told you about feeding — did the official guidance feel helpful or prescriptive?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "power_dynamics"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "decision_making",
+        "informal_caregiver_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "autonomy_vs_dependence",
+        "dignity_respect",
+        "informal_care_networks"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V5_POST_Q03",
+      "version": 5,
+      "journey_phase": "postpartum",
+      "question_text": "Tell me about the people who noticed — or who missed — changes in your emotional wellbeing after your baby was born. Who checked in with you about how you were feeling as a person, not just as a new mother?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_POST_Q03_P01",
+          "probe_text": "Who else was involved in picking up on signs that you were struggling — a health visitor, your GP, your partner, a friend?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q03_P02",
+          "probe_text": "Were there barriers — stigma, not wanting to worry others, lack of time — that made it hard to let people in to how you were truly feeling?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q03_P03",
+          "probe_text": "How did it feel when someone did or didn't see you clearly in that period — what did recognition or invisibility do to you?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "trust_distrust"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "hcp_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "responsiveness"
+      ],
+      "target_latent_dimensions": [
+        "continuity_of_care",
+        "dignity_respect",
+        "structural_barriers"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent",
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V5_POST_Q04",
+      "version": 5,
+      "journey_phase": "postpartum",
+      "question_text": "Tell me about how your relationship with your partner — or your closest person — changed after your baby arrived. Who were you to each other, and how did the arrival of a baby reshape that?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_POST_Q04_P01",
+          "probe_text": "How did that affect your sense of who you were — as a partner, as an individual, as a new parent — in those early weeks and months?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "partner_role"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q04_P02",
+          "probe_text": "Who else was involved in navigating that transition with you — your own family of origin, a postnatal group, a couples therapist?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "intergenerational_patterns"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q04_P03",
+          "probe_text": "Were there moments of real tension between you — and how did those moments affect your capacity to care for your baby and yourself?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "partner_role",
+            "identity_tensions"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "informal_caregiver_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "partner_role",
+        "identity_tensions",
+        "intergenerational_patterns"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V5_POST_Q05",
+      "version": 5,
+      "journey_phase": "postpartum",
+      "question_text": "Tell me about the healthcare professionals who supported you after your birth — your community midwife, health visitor, GP. Which of those relationships felt continuous with your pregnancy care, and which felt like starting again from scratch?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_POST_Q05_P01",
+          "probe_text": "How did that affect your confidence in seeking help — did you feel known enough by someone to reach out when things were hard?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "continuity_of_care",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q05_P02",
+          "probe_text": "Who else was involved in bridging any gaps in formal care — an NCT group, a doula, a friend who had recently had a baby?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q05_P03",
+          "probe_text": "Were there structural factors — reduced home visits, short appointment times, digital-only access — that limited those postnatal professional relationships?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "hcp_interactions",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "reliability",
+        "empathy",
+        "continuity_of_carer"
+      ],
+      "target_latent_dimensions": [
+        "continuity_of_care",
+        "structural_barriers",
+        "trust_distrust"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_rural",
+        "if_high_risk",
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V5_POST_Q06",
+      "version": 5,
+      "journey_phase": "postpartum",
+      "question_text": "Tell me about your return to work — or your decision not to return — and the people involved in that transition. Who supported you, who put pressure on you, and how did that shape your experience of becoming a working parent?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_POST_Q06_P01",
+          "probe_text": "How did that affect your sense of who you are — did going back to work feel like reclaiming something, or losing something, or both?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "identity_tensions",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q06_P02",
+          "probe_text": "Who else was involved in making that transition possible or difficult — childcare providers, your employer, your partner, your healthcare team?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q06_P03",
+          "probe_text": "Were there structural realities — financial necessity, lack of flexible working, inadequate maternity leave — that meant the decision didn't feel truly free?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "risks_barriers",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "identity_tensions",
+        "structural_barriers",
+        "autonomy_vs_dependence"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V5_POST_Q07",
+      "version": 5,
+      "journey_phase": "postpartum",
+      "question_text": "Tell me about the communities — online or in person — that became part of your postpartum world. Who did you connect with, and what did those communities offer that more formal support couldn't?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_POST_Q07_P01",
+          "probe_text": "Who else was involved in pointing you toward those communities — a midwife, a friend, an algorithm — and how did that shape which communities you found?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q07_P02",
+          "probe_text": "How did engaging with those communities affect your sense of normality — did they help you calibrate what you were going through?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q07_P03",
+          "probe_text": "Were there ways those communities also created pressure or comparison — and how did you manage that?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "identity_tensions"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "digital_information",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "responsiveness",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_rural",
+        "if_language_barrier"
+      ]
+    },
+    {
+      "question_id": "V5_POST_Q08",
+      "version": 5,
+      "journey_phase": "postpartum",
+      "question_text": "Tell me about any moments after your birth when you felt that you — as a person, not just as a new mother — were seen and cared for. Who made that happen, and what did they do or say?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_POST_Q08_P01",
+          "probe_text": "Who else was involved in moments of genuine care for you — not just the baby — that stayed with you?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q08_P02",
+          "probe_text": "How did those moments compare to the times when you felt invisible or reduced to your function as a carer rather than a full human being?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_POST_Q08_P03",
+          "probe_text": "What would it have meant to you to have had more of those moments — and what do you think would need to change in maternity care to make that more possible?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "structural_barriers"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "assurance"
+      ],
+      "target_latent_dimensions": [
+        "dignity_respect",
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk",
+        "if_single_parent"
+      ]
+    }
+  ],
+  "adapted_at": "2026-03-17T23:25:28.372356"
+}

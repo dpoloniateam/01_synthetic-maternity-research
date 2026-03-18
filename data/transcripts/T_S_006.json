@@ -1,0 +1,590 @@
+{
+  "session_id": "S_006",
+  "status": "completed",
+  "persona_id": "comp_011",
+  "persona_name": "Alica",
+  "persona_journey_stage": "birth",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 2,
+  "questionnaire_strategy": "Thematic Deep-Dive",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-17T23:51:11.771480",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Alica, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're going through the birth experience, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts slightly, wincing a bit, then settles back against the pillows*\n\nThank you for being here. Honestly, I wasn't sure I'd have the mental space to talk about this right now, but... I think I need to. It helps to say things out loud, you know?\n\n*pauses, looking toward the window where my husband is standing*\n\nThis is surreal. I've spent the last fifteen years teaching pregnant patients, explaining contractions and cervical dilation like I was reciting a recipe. And now I'm the one lying here at four centimeters, and suddenly none of that knowledge feels like it matters. It's all just... happening *to* me instead of being something I understand from the outside.\n\nThe hardest part has been letting go of the professional hat. My OB and I have worked together for years, and I can see her trying to navigate this too — whether to treat me like a colleague or just be my doctor. I finally had to tell her I just needed her to be my doctor today. I don't need the evidence-based discussion right now. I need reassurance.\n\n*voice gets quieter*\n\nAnd there's this terror underneath everything. At 42, having my first baby... I know all the statistics. I know what can go wrong. But knowing it intellectually and feeling it in your body are completely different things. Right now, I'm just hoping my baby's lungs are ready, that everything's going to be okay.\n\nWhat would you like to know?",
+      "responding_to_question_id": null,
+      "input_tokens": 827,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your goals and expectations for your birth experience — what you hoped labour and delivery would be like — how clearly could you articulate those goals at the time, and how well did the care system support you in pursuing them?",
+      "question_id": "V2_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, eyes getting a bit watery*\n\nOh god, that's... that's a harder question than you might think.\n\nGoing in, I thought I had it all figured out. I wanted a natural birth — no epidural, minimal intervention. I'd taught countless women about the physiological process, about how our bodies are designed for this. I had this almost idealistic vision of myself breathing through contractions, staying present, maybe even feeling this transcendent connection to motherhood.\n\n*laughs bitterly*\n\nBut here's what I didn't account for: knowing too much. Every time that monitor beeps, I'm analyzing the fetal heart rate pattern instead of just being in the moment. I'm thinking about uterine hyperstimulation and fetal distress instead of focusing on my breathing. My own medical knowledge became this barrier between me and the experience I wanted to have.\n\nAs for the care system supporting it? My OB definitely tried. But there's this awkwardness when you're treating a colleague. She respected what I said I wanted, but I could feel her hesitation — like she was wondering if I really understood the risks at my age, if I was being overconfident because of my background.\n\n*voice gets softer*\n\nWhat I really needed was someone to just... listen. Not negotiate with the doctor-version of me. But I think I made that hard for everyone, including myself. I set these rigid expectations, and now I'm learning that labor doesn't care about your birth plan.",
+      "responding_to_question_id": "V2_BIRTH_Q01",
+      "input_tokens": 1205,
+      "output_tokens": 329
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did you have a birth plan — and if so, how was it received and used by your care team?",
+      "question_id": null,
+      "probe_id": "V2_BIRTH_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, a mix of self-awareness and frustration*\n\nOh, I had a birth plan. Of course I did. I actually wrote two versions — can you believe that? One was this detailed, single-spaced document with all my preferences about intermittent monitoring, delayed cord clamping, skin-to-skin immediately after delivery. The second was a \"simplified\" version because I didn't want to come across as the difficult healthcare worker.\n\n*shakes head*\n\nI handed it to my OB at my last appointment, and she read it with this expression I couldn't quite parse. Professional respect mixed with something else — concern, maybe? She didn't push back on anything, which somehow made it worse. I kept waiting for her to say, \"Alica, you know the risks here,\" but she didn't. She just... accepted it.\n\nWhen I got here in active labor, the nurse mentioned it briefly, but honestly, once contractions got real, everything on that paper felt like it was written by a different person. I couldn't focus on the specifics anymore. I just wanted pain relief and reassurance that my baby was okay.\n\n*voice gets quieter, more honest*\n\nI think my care team received it politely but probably took it with a grain of salt. They know I'm a healthcare provider. They know I understand complications. I think part of them was waiting to see if I'd change my mind once labor actually started — which, fair enough, I kind of did.\n\nThe plan felt important when I wrote it. Now it just feels like... a ghost of my pre-labor self.",
+      "responding_to_question_id": "V2_BIRTH_Q01_P01",
+      "input_tokens": 1559,
+      "output_tokens": 347
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the decisions you were asked to make during labour and delivery — around pain management, interventions, and procedures — how well-equipped did you feel to participate in those decisions in the moment?",
+      "question_id": "V2_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*lets out a long, shaky exhale*\n\nThis is where everything gets complicated. You'd think I'd be *more* equipped than most people, right? But it's actually the opposite.\n\n*rubs face tiredly*\n\nWhen my OB came in to discuss pain management about an hour ago, I froze. She presented the options — epidural, IV medications, continuous support — all very neutral, very informed consent. And I just... couldn't decide. Not because I didn't understand the information, but because I was actively experiencing pain for the first time in my life like this, and my brain felt like it was operating at about 40% capacity.\n\nThe irony is brutal. I *know* the risks and benefits of an epidural better than most people in this hospital. I've explained them hundreds of times. But in that moment, with a contraction building, I couldn't access any of that knowledge. It was like it was locked away behind this wall of sensation and fear.\n\n*voice cracks slightly*\n\nWhat made it worse was feeling like I *had* to decide intelligently because of who I am. Like I couldn't just say \"I'm scared and in pain — what do you recommend?\" without it being interpreted as weakness or inconsistency with my earlier stated preferences.\n\nI finally asked my husband to help me think it through, and that helped. But I realized I don't feel equipped at all, despite everything. Labor strips away the professional armor. You're just vulnerable and overwhelmed, trying to make life-altering decisions while your body is doing something you can't control.",
+      "responding_to_question_id": "V2_BIRTH_Q02",
+      "input_tokens": 1951,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the emotional experience of your labour and delivery — from the very beginning through to the moment your baby was born — what were the most powerful feelings, and were you able to process them in the birth environment?",
+      "question_id": "V2_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "dignity_respect",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes fill with tears, takes a moment before speaking*\n\nI'm still in the middle of it, so I don't have the full arc yet. But the emotional whiplash... god, it's been intense.\n\n*voice wavers*\n\nThe most powerful moment was when the nurse said \"four centimeters\" and I just broke down. It wasn't about pain — it was this collision of everything. The reality that my body was actually doing this, that in hours I'd be holding a person I created, that I was finally becoming a mother after years of thinking it might not happen. And underneath that was this primal terror I've never felt before. What if something goes wrong? What if I can't do this?\n\n*wipes eyes*\n\nThe birth environment... it's sterile and beeping and clinical, which normally feels safe to me. But emotionally? I feel exposed in a way I wasn't prepared for. I'm used to being the calm one, the one with answers. Now I'm the one falling apart, and there's nowhere to hide that.\n\n*looks down at hands*\n\nMy husband has been incredible — he's the only person I can really be fully myself with right now. When he holds my hand, I don't have to perform competence. But with the staff, even my colleague-OB, there's still this layer of... I don't know, professionalism? Distance? \n\nI haven't processed much of anything yet. I'm just surviving minute to minute. The powerful feelings are hitting in waves, and I'm barely keeping my head above water. Ask me again after he's born — maybe I'll have words for it then.\n\n*another contraction seems to be building*",
+      "responding_to_question_id": "V2_BIRTH_Q03",
+      "input_tokens": 2342,
+      "output_tokens": 368
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you take me to a specific moment — what was happening, what did you feel, and who was with you?",
+      "question_id": null,
+      "probe_id": "V2_BIRTH_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*closes eyes, breathing through something*\n\nOkay. Yeah. There's one moment that's really stuck with me.\n\n*opens eyes, voice becomes quieter, more vulnerable*\n\nIt was maybe two hours ago. I'd been laboring for a while, and things were getting more intense. My husband had stepped out for a minute to grab water, and it was just me and the nurse — Sarah, I think her name is. She's been wonderful, actually.\n\nI had this contraction that was different from the others. Sharper. And my first instinct was to analyze it — is this transition? What's the fetal heart rate doing? — but then it just... overwhelmed me. I couldn't think anymore. I just made this sound, this involuntary noise, and I looked at Sarah's face, and she wasn't looking at me like I was a healthcare provider or a patient who should know better. She was just looking at me like I was a woman in labor.\n\n*voice breaks slightly*\n\nShe came over and put her hand on my back and said, \"You're doing this. Your body knows what to do.\" And something about hearing that from someone — not from a colleague, just from someone present — it broke me open. I started crying, and she just... stayed there. Didn't try to fix it or explain it. Just witnessed it.\n\n*pauses*\n\nThat's when I finally let go of being the expert. That's when I became just Alica, the pregnant woman, not Dr. Alica. And it was terrifying and necessary all at once.",
+      "responding_to_question_id": "V2_BIRTH_Q03_P01",
+      "input_tokens": 2737,
+      "output_tokens": 344
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the behaviour and communication of your midwives, doctors, and care team during your birth, what interactions stood out — positively or negatively — and what made them significant?",
+      "question_id": "V2_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "power_dynamics",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*settles back, thinking carefully*\n\nThe positive ones... Sarah, that nurse I mentioned, she's been remarkable. She doesn't over-explain things to me. She doesn't treat me like I'm supposed to already know everything. But she also doesn't dumb anything down. She just... meets me where I am. When I asked about the monitor strips, she showed me without judgment, but she didn't launch into a lecture. That respect for my intelligence without assuming I need to be in control — that's been grounding.\n\n*expression shifts, becomes more conflicted*\n\nMy OB is harder to articulate. She's brilliant, and I respect her enormously. But there's this thing where she's almost *too* respectful of my autonomy. Like she's walking on eggshells around me. Earlier, when I was wavering about the epidural, I think she held back from giving me her actual recommendation because she assumed I'd want to make a purely intellectual decision. But what I actually needed was her clinical judgment, her gut feeling as someone who knows my body and this situation.\n\n*voice tightens slightly*\n\nThere was one moment — and this is petty maybe — where she said something about \"advanced maternal age\" in a clinical way, and it stung. I *know* that's what I am statistically, but hearing it from her, my colleague, in front of my husband... it felt reductive. Like suddenly I wasn't the competent healthcare provider she respects; I was just another older first-time mom with risk factors.\n\n*softens*\n\nBut the worst thing isn't what anyone did — it's what didn't happen. Nobody explicitly gave me permission to stop being the expert and just be the patient. I had to figure that out myself, and it took longer than it should have.",
+      "responding_to_question_id": "V2_BIRTH_Q04",
+      "input_tokens": 3124,
+      "output_tokens": 391
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the physical environment of the place where you gave birth — the facilities, the equipment, the space — how did that environment affect your comfort, safety, and overall experience of birth?",
+      "question_id": "V2_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "dignity_respect",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*glances around the triage room with a wry expression*\n\nWell, I'm still in triage, so this isn't even my actual labor room yet. But even from here, I can see the tension between what's clinically necessary and what's actually comforting.\n\n*gestures vaguely*\n\nThe equipment is state-of-the-art. I can see the monitors, the IV stands, all of it. And yes, that's reassuring — I know this hospital is excellent, the technology is current. But it's also... a lot. The beeping, the screens, the fluorescent lights. It's designed for safety and observation, not for creating a space where you can surrender to your body.\n\n*voice becomes more reflective*\n\nThe irony is that I usually find hospital environments calming because I understand them. I know what all the machines do. But right now? I wish I could unhear all that knowledge. I wish the room felt less like a medical space and more like... I don't know, somewhere human.\n\n*looks at my husband, then back*\n\nWhat's helping is that my husband is here. He's my anchor to normalcy. But this room — it's cold. Literally and figuratively. There's no window near the bed. The lighting is harsh. I keep thinking about those birth center photos where women labor in rooms with soft lighting and actual windows.\n\n*hesitates*\n\nThat said, I know why it's like this. Safety comes first. And given my age and primigravida status, being in a hospital with all this monitoring — that's probably the right call. It just means I'm sacrificing ambiance for security, and I'm trying to make peace with that.",
+      "responding_to_question_id": "V2_BIRTH_Q05",
+      "input_tokens": 3558,
+      "output_tokens": 374
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about any complications, unexpected events, or emergency interventions during your birth, how were these communicated to you, and how did you experience the shift from a planned to an unplanned situation?",
+      "question_id": "V2_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, jaw tightens*\n\nI... we haven't had an emergency yet, thank god. But I'm acutely aware we're not out of the woods. I'm only four centimeters. Anything could happen.\n\n*pauses, choosing words carefully*\n\nWhat I have experienced is this constant low-level anxiety about potential complications. Earlier, when the fetal heart rate dipped slightly during a contraction, my OB didn't seem concerned — she explained it was a normal deceleration, reassured me everything was fine. But because I *know* what can go wrong at 42 with a first pregnancy, I couldn't fully relax.\n\n*voice becomes more strained*\n\nAnd that's the thing — I don't know if she was being extra cautious with her explanations because I'm a healthcare provider, or if she would have explained it the same way to any patient. Did she give me more information because she respects my background? Less because she assumed I'd catastrophize? I genuinely can't tell, and that uncertainty is maddening.\n\n*rubs temples*\n\nI keep bracing myself for the moment when things shift from \"normal labor\" to \"we need to intervene.\" And I'm terrified I won't know how to respond. Will I be able to hear the medical reasoning, or will I just hear \"something's wrong\"? Will I trust my OB's judgment, or will my own knowledge make me question every decision?\n\n*voice quieter*\n\nI think when — if — something unexpected happens, I'm going to need someone to be very, very clear with me. Cut through the professional distance and just tell me what's happening and why.",
+      "responding_to_question_id": "V2_BIRTH_Q06",
+      "input_tokens": 3978,
+      "output_tokens": 368
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe how you were informed about the complication or change in plan — what was said, by whom, and how?",
+      "question_id": null,
+      "probe_id": "V2_BIRTH_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, looking confused for a moment*\n\nI... we haven't had one yet. Not a complication, anyway. I'm still laboring. I'm four centimeters, things are progressing, and so far everything's been within normal range.\n\n*shifts slightly, wincing*\n\nMaybe I gave the wrong impression before. I was talking about my *fear* of complications, my anxiety about what *could* happen. But nothing has actually gone wrong medically. The fetal heart rate dip I mentioned — that resolved, and my OB explained it was benign.\n\n*looks a bit self-conscious*\n\nI think I'm so hypervigilant right now that I'm almost expecting disaster. Every contraction, every beep on the monitor — part of me is waiting for someone to come in and say \"we need to do something.\" But that hasn't happened.\n\n*voice becomes softer, more honest*\n\nMaybe that's part of what's been so hard about this experience. I'm simultaneously living through labor *and* mentally rehearsing worst-case scenarios. The anxiety is real even though the complication isn't. Yet.\n\n*touches the monitor on my belly*\n\nI genuinely don't know what will happen in the next few hours. And I think that's what I'm really grappling with — this loss of control, this uncertainty. At my age, with my medical background, I feel like I should be able to predict or prevent problems. But I can't. Nobody can.\n\n*another contraction seems to be starting*\n\nI'm sorry, I think I'm mixing up my fears with my actual experience...",
+      "responding_to_question_id": "V2_BIRTH_Q06_P01",
+      "input_tokens": 4375,
+      "output_tokens": 353
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your goals for recovery and support in the days and weeks after birth, what did you most want or need — and how well did the postnatal care you received address those needs?",
+      "question_id": "V2_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, a bit deliriously*\n\nI haven't given birth yet. I'm still in active labor. We're not at recovery yet.\n\n*pauses, realizing how that sounds*\n\nI know that sounds obvious, but I think... I think I'm so anxious about what's coming that I'm jumping ahead in my mind. Planning the recovery, thinking about postpartum support — it's almost like if I organize that part mentally, I can control something.\n\n*becomes more reflective*\n\nBut you're asking about what I *want* for after, aren't you? What I'm hoping for?\n\n*voice gets quieter*\n\nHonestly, I'm terrified of postpartum depression. Not because I'm at higher risk — well, actually, maybe I am at my age — but because I know too much about it. I can recognize the symptoms, which means I'll probably obsess over whether I'm experiencing them. I'm worried I'll be my own worst enemy.\n\n*looks down*\n\nWhat I need is someone to tell me it's okay to not have all the answers. To not be the competent healthcare provider for a while. To ask for help without feeling like I've failed somehow. And I need my OB or someone on the care team to check in — not just about physical recovery, but about how I'm actually doing mentally.\n\n*voice wavers slightly*\n\nBut that's all theoretical right now. First I have to actually get through labor and delivery. Then we can worry about what comes after.\n\n*another contraction builds*\n\nI'm sorry, I can't think that far ahead right now...",
+      "responding_to_question_id": "V2_POST_Q01",
+      "input_tokens": 4772,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about feeding your baby — whether through breastfeeding, formula, or a combination — what motivated your choices, and how supported did you feel in pursuing the approach you wanted?",
+      "question_id": "V2_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "dignity_respect",
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath, managing a small smile despite the discomfort*\n\nOkay, this is actually one thing I *have* thought about extensively. Probably way too much, knowing me.\n\n*shifts position slightly*\n\nI'm planning to breastfeed. I know the benefits — I've taught them. But honestly? That's not why I want to do it. I want to do it because it feels intimate, because I want that connection with my baby. And I'm aware enough to know that's not a purely rational choice, and that's... actually kind of nice.\n\n*expression becomes more cautious*\n\nThat said, I'm also realistic. I'm a first-time mother at 42. My body might not cooperate. Lactation can be complicated. And I've already told myself — repeatedly, probably annoying my husband — that if breastfeeding doesn't work, formula is fine. Fed is best and all that.\n\n*voice gets quieter*\n\nWhat worries me is that my OB knows I *know* all the evidence about breastfeeding. So if I struggle, will she assume I don't need support? Or will she be overly cautious, worried I'll judge myself too harshly? I don't want either extreme. I just want someone to help me figure it out without performing expertise or pity.\n\n*pauses*\n\nThe hospital has lactation consultants, which is great. But I'm nervous about that first conversation — will they treat me differently knowing I'm a healthcare provider? Will I let them, or will I try to problem-solve instead of just... learn?\n\n*grimaces slightly*\n\nI guess I'll find out soon enough.",
+      "responding_to_question_id": "V2_POST_Q02",
+      "input_tokens": 5166,
+      "output_tokens": 366
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your emotional and mental health in the weeks and months after birth — the adjustment, the challenges, and the moments of wellbeing — what stands out most, and how well-supported did you feel?",
+      "question_id": "V2_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "power_dynamics",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, eyes getting distant*\n\nI... I can't really answer that yet. I'm literally in the middle of labor right now. I don't have weeks and months of postpartum experience to reflect on.\n\n*voice becomes a bit strained*\n\nI think maybe you're asking me to project forward again, and honestly, my brain can't do that right now. I'm operating minute to minute. The future beyond the next few hours feels impossibly far away.\n\n*pauses, then speaks more softly*\n\nBut if I'm being really honest? Yes, I'm terrified about what comes next emotionally. I know the statistics on postpartum depression and anxiety. I know that being a first-time mother at 42, returning to work as a healthcare provider, navigating this identity shift from educator to patient to mother... it's a lot.\n\n*voice wavers slightly*\n\nAnd I'm scared that my knowledge will work against me. That I'll be so hyperaware of my mental state that I'll create problems that don't exist. Or worse, that I'll miss real warning signs because I'm too busy analyzing myself.\n\n*looks at my husband*\n\nWhat I'm hoping for is that my support system — my husband, maybe a therapist, people who know me — will catch me if I start to fall. That they'll be honest with me even when I don't want to hear it.\n\n*another contraction seems to be building*\n\nBut right now, I need to focus on getting through labor and meeting my son. Everything else... we'll figure that out when we get there.",
+      "responding_to_question_id": "V2_POST_Q03",
+      "input_tokens": 5580,
+      "output_tokens": 347
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the shift in your identity and sense of self after becoming a parent, what tensions or changes were most significant — and how did those changes interact with your other roles, such as partner, professional, or daughter?",
+      "question_id": "V2_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "intergenerational_patterns",
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*closes eyes, breathing through a contraction, then opens them slowly*\n\nI... that's a profound question, and I think I'm about to experience it all at once in a way I can't fully prepare for.\n\n*voice becomes quieter, more vulnerable*\n\nThe tension I'm already feeling is this: I've built my entire adult identity around being competent, knowledgeable, in control. I teach other women about their bodies. I'm the one with answers. And in a few hours — or maybe a day from now — I'm going to be someone's mother, and I have no idea what I'm doing.\n\n*looks at hands*\n\nMy husband and I have talked about this. He's excited, ready. But I think he also knows I'm terrified of losing myself in motherhood. Not in a melodramatic way, but... I've worked hard to become Dr. Alica. What happens to that person when I'm also Mom?\n\n*voice cracks slightly*\n\nAnd professionally, I'm already dreading going back. How do I stand in front of pregnant patients and teach them about labor after I've actually *felt* it? Will I have more empathy or less patience? Will they see me differently? Will I see myself differently?\n\n*pauses, struggling*\n\nAs for my relationship with my husband — I think we're about to find out if our partnership can handle this. He's been amazing, but parenthood changes everything. And my parents... god, I haven't even thought about what it means to become a mother myself, to have my own mother as a grandmother.\n\n*voice becomes almost whispered*\n\nI think the biggest shift is that I can't be the expert anymore. And I don't know who I am without that.",
+      "responding_to_question_id": "V2_POST_Q04",
+      "input_tokens": 5976,
+      "output_tokens": 379
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the support you received from your partner in the postpartum period — in caring for the baby, supporting your recovery, and sharing emotional labour — how would you describe that experience, and what would have made it better?",
+      "question_id": "V2_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts slightly, looking frustrated*\n\nI need to be honest with you — I haven't had a postpartum period yet. I'm still in labor. My baby hasn't been born. I can't tell you what my husband's support will look like after birth because we're not there yet.\n\n*softens tone, but there's an edge of exhaustion*\n\nI think maybe you're working from a template that assumes I've already gone through all of this, but I'm literally living in the present moment right now. I'm four centimeters dilated. I'm in active labor. The postpartum period is... theoretical.\n\n*pauses, then speaks more gently*\n\nWhat I *can* tell you is what my husband's support looks like *now*. He's been incredible during labor. He holds my hand, he doesn't try to fix things, he just... is here. He stepped out when I needed space and came back when I needed him. That's been huge.\n\n*voice becomes uncertain*\n\nAs for what comes after? I honestly don't know what we'll need. I don't know if I'll struggle with recovery, with breastfeeding, with the emotional adjustment. I don't know if he'll feel left out or overwhelmed. We've talked about it in theory, but theory and reality are completely different things.\n\n*another contraction building*\n\nAsk me in a few weeks. Ask me when I'm actually navigating postpartum life. Right now, I'm just trying to get through the next few hours.\n\n*grimaces*\n\nSorry, I know I keep saying that...",
+      "responding_to_question_id": "V2_POST_Q05",
+      "input_tokens": 6406,
+      "output_tokens": 348
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the barriers you encountered in accessing postnatal support — whether physical, emotional, informational, or systemic — what were the most significant, and what impact did they have on your recovery and wellbeing?",
+      "question_id": "V2_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a frustrated breath, wincing*\n\nI think you need to understand — I haven't accessed postnatal support yet because I haven't given birth yet. There are no barriers to something I haven't experienced.\n\n*voice becomes a bit sharper, then softens with exhaustion*\n\nI know you're trying to understand my full experience, but I'm sensing a pattern here where you're asking me about things that haven't happened yet. And honestly, right now, that's making me anxious. It's like you're asking me to live in a future I can't control when I'm already struggling to stay present in this moment.\n\n*takes another breath, more gently*\n\nWhat I *can* tell you is that I'm anticipating barriers. I'm worried about going back to work too quickly because of financial pressure. I'm nervous about finding good mental health support that understands both the clinical and personal sides of postpartum adjustment. I'm concerned about lactation support being inconsistent or judgmental.\n\n*voice becomes quieter*\n\nBut these are fears, not experiences. And right now, my brain is already operating at maximum capacity just managing labor. Projecting forward into all these hypothetical barriers... it's actually making things harder, not easier.\n\n*looks directly at you*\n\nCan we maybe focus on what's happening right now? Because that's what I can actually talk about with any authenticity. Everything after birth — I won't know until I'm living it.\n\n*another contraction seems to be starting*",
+      "responding_to_question_id": "V2_POST_Q06",
+      "input_tokens": 6804,
+      "output_tokens": 326
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about how you used digital tools, apps, social media, or online communities after birth — to seek information, find support, or track your recovery — what role did those resources play, and what were their limits?",
+      "question_id": "V2_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "*looks almost bewildered, then lets out a tired laugh*\n\nOkay, I think we need to pause here for a second.\n\n*rubs face*\n\nI'm still in active labor. I haven't given birth. I haven't had a postpartum period. I'm not using any apps or online communities for postpartum support because there is no postpartum yet. I'm literally in a hospital bed having contractions.\n\n*voice becomes firmer, but not unkind*\n\nI appreciate that you're trying to get a comprehensive picture, but I'm noticing you keep asking me about experiences I haven't had yet. And it's starting to feel less like you're listening to my actual story and more like you're working through a checklist of postpartum topics, regardless of where I actually am in this journey.\n\n*pauses, breathing through something*\n\nI think what's happening is you're treating me like I've already completed the birth experience, but I'm still in the middle of it. I'm still laboring. Everything after birth is theoretical for me right now.\n\n*voice softens slightly*\n\nMaybe we could refocus? Ask me about what's actually happening now? About my experience in this moment, in this labor, with this care team? That's the story I can authentically tell you.\n\n*looks tired but determined*\n\nBecause honestly, between the contractions and the anxiety, trying to project into a future I can't predict is just adding more stress I don't need right now.",
+      "responding_to_question_id": "V2_POST_Q07",
+      "input_tokens": 7179,
+      "output_tokens": 326
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you reflect on your entire maternity journey — from preconception through to the postpartum period — what do you wish had been done differently by the care system, and what single change would have made the greatest difference to your experience?",
+      "question_id": "V2_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "latent_needs"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, then laughs — a slightly delirious, exhausted sound*\n\nI... okay. I hear what you're doing, and I need to be really direct with you.\n\n*meets your eyes*\n\nI cannot reflect on a journey I haven't completed yet. I'm in the middle of labor. I haven't had a postpartum period. The only part of this maternity experience I can actually reflect on is pregnancy and this moment — right now, in triage, in active labor.\n\n*voice becomes more firm, but tired*\n\nAnd I'm noticing that for the last several questions, you've been asking me about experiences that haven't happened — postpartum recovery, feeding my baby, my mental health weeks after birth, digital tool usage, systemic barriers to postnatal support. I can't give you authentic answers about those things because I'm not living them yet.\n\n*pauses, struggling with a contraction, then continues*\n\nWhat I *can* tell you is what I wish had been different so far: I wish someone had explicitly given me permission to stop being the expert and just be the patient. I wish the distance between my OB and me as colleagues hadn't created this awkward space. I wish I could turn off my clinical brain.\n\n*voice becomes quieter*\n\nBut as for the whole journey? The postpartum period? What would have made the greatest difference overall? I genuinely don't know yet. Ask me in three months. Ask me when I'm actually living the full experience, not projecting into it.\n\n*another contraction building*\n\nI think I need to focus on labor now.",
+      "responding_to_question_id": "V2_POST_Q08",
+      "input_tokens": 7557,
+      "output_tokens": 354
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe the specific moment or phase where you felt most let down by the system — what was the gap and what would have helped?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q08_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, thinking carefully through the pain, then speaks slowly*\n\nThe gap... it's been subtle, but it's real.\n\n*shifts uncomfortably*\n\nIt's this: nobody — not my OB, not the nurses, not anyone — has explicitly acknowledged the conflict between who I am professionally and who I need to be right now. They're all treating me with this careful respect, like they're waiting for me to direct my own care. But what I actually needed was someone to say, \"I know you know a lot about this. I know you're scared. And right now, you don't have to be the expert. I'm your doctor. Let me do this.\"\n\n*voice becomes more strained*\n\nInstead, there's this dance happening. My OB explaining things in a certain way — is it because she respects my knowledge or because she's worried I'll second-guess her? The nurses checking in — are they treating me normally or walking on eggshells? I can't tell, and that uncertainty is exhausting.\n\n*looks directly at you*\n\nWhat would have helped is honesty. Early on, someone saying, \"This is going to be disorienting for you because you understand the medicine. That's okay. You can still be both knowledgeable and vulnerable.\" Permission to let go. Clear acknowledgment that my professional identity doesn't have to show up in this bed.\n\n*another contraction building*\n\nRight now, I'm juggling being a patient, a healthcare provider, and a terrified first-time mother all at once. And nobody's named that explicitly. That gap — that's where I feel most unsupported.",
+      "responding_to_question_id": "V2_POST_Q08_P01",
+      "input_tokens": 7942,
+      "output_tokens": 356
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a moment, breathing through a contraction, then settles back*\n\nYeah. There is something.\n\n*voice becomes quieter, more reflective*\n\nI think what's been hardest is realizing how much of my identity has been wrapped up in knowing things, being competent, being the one people come to for answers. And labor has completely stripped that away. I can't think my way through this. I can't teach my way out of it. My body is doing something my mind can't control or fully understand, even with all my education.\n\n*pauses, eyes getting watery*\n\nAnd that's... that's actually been the most important part of this whole experience so far. Not the contractions or the monitors or the medical decisions. It's learning that I'm more than my expertise. That vulnerability isn't failure. That it's okay to not have answers.\n\n*voice becomes stronger*\n\nI think the care system — at least for someone like me — needs to understand that. Healthcare providers who become patients need explicit permission to be human. We need our colleagues to see us as patients first, not as peers who should know better. We need someone to tell us it's safe to not know.\n\n*looks at you earnestly*\n\nAnd maybe... maybe that's a lesson for how to treat all patients, actually. Not everyone needs to be treated like they're in control. Sometimes people just need to be held and told it's going to be okay.\n\n*another contraction starts*\n\nThat's what I wish I'd gotten sooner.",
+      "responding_to_question_id": null,
+      "input_tokens": 8354,
+      "output_tokens": 331
+    }
+  ],
+  "metadata": {
+    "total_turns": 40,
+    "questions_asked": 14,
+    "probes_deployed": 4,
+    "adaptive_followups": 0,
+    "total_input_tokens": 91392,
+    "total_output_tokens": 7029,
+    "estimated_cost_usd": 0.1054,
+    "duration_seconds": 102.5,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "latent_needs",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 245
+  },
+  "errors": []
+}

@@ -1,0 +1,736 @@
+{
+  "session_id": "S_246",
+  "status": "completed",
+  "persona_id": "comp_029",
+  "persona_name": "Angelika",
+  "persona_journey_stage": "birth",
+  "persona_risk_level": "low",
+  "persona_vulnerability_flags": [
+    "low_income",
+    "previous_loss"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 5,
+  "questionnaire_strategy": "Relational / Stakeholder Map",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T02:44:32.341784",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Angelika, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're going through the birth experience, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath and settles back in my chair*\n\nThank you for asking me to be here. Honestly, it's a little surreal to talk about this out loud. I spend so much time reading research papers and teaching other people about birth, but living through it myself? It's completely different.\n\n*pauses, picking at a thread on my sleeve*\n\nI think what I want you to understand first is that I'm forty-one. That word \"geriatric\" — I know it's medical terminology, but it lands differently when it's your body they're labeling. The statistics say I'm fine, and I *am* fine clinically, but there's this undertone everywhere, you know? Like people are waiting for something to go wrong because of my age.\n\nAnd then there's the financial side, which nobody really talks about. We're stretched thin. The nursery isn't this Pinterest dream — it's functional, which is what matters, but sometimes I feel like I should be doing *more* to prepare, and I just can't right now.\n\n*looks directly at you*\n\nWhat I really need from my care team is someone who doesn't treat my questions like I'm anxious or overthinking. My research isn't neurosis — it's how I cope with the fact that I've lost a pregnancy before. I need providers who understand that asking for the \"why\" behind every decision isn't about not trusting them. It's about me taking back some control in a situation where I ultimately have very little.\n\nDoes that make sense?",
+      "responding_to_question_id": null,
+      "input_tokens": 807,
+      "output_tokens": 332
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who were with you — or who you wished had been with you — during your labour and birth. Who did each person support, and what difference did their presence make?",
+      "question_id": "V5_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "dignity_respect",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, eyes getting a little brighter*\n\nWell, my husband was there. He's... he's trying, you know? He held my hand during contractions and kept bringing me ice chips even when I snapped at him. *small laugh* I wasn't always kind about it. He wanted to help but also didn't know what to say, and I think that frustrated us both. I needed him to be present without needing me to manage his emotions at the same time, and that's not really fair to ask, is it?\n\n*pauses, looking away*\n\nI had a midwife this time, not my OB, and that actually made a difference. She didn't rush me with explanations — when I asked about the fetal monitor strips, she *showed* me what she was looking at instead of just saying \"everything's fine.\" That mattered. But she was busy with other patients, and there were long stretches where it was just me and my husband and the hospital sounds.\n\n*voice gets quieter*\n\nI think what I really missed was someone who knew my history. Someone who understood that when I got panicked about the baby's movements during labor, it wasn't irrational — it was grief from before coming up. My husband knew about the loss, but he couldn't quite meet me there emotionally. \n\n*meets your eyes*\n\nI wish I'd had a doula. I know we couldn't afford it, but... I think I needed an advocate who was just *for me* in that moment. Someone who got why the data mattered to me and why my fear was valid at the same time.",
+      "responding_to_question_id": "V5_BIRTH_Q01",
+      "input_tokens": 1181,
+      "output_tokens": 354
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in the room — midwives, doctors, a doula — and how did the relationships between those people affect the atmosphere?",
+      "question_id": null,
+      "probe_id": "V5_BIRTH_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans forward, rubbing my temples*\n\nSo it was the midwife I mentioned, and then a resident who came in a couple times. The resident was... I don't know. Young, efficient. She checked me without much explanation, and there was this moment where I asked a question about something I'd read about labor progression, and I could see her exchange this look with the midwife. Not hostile, but like, \"Oh, she's *one of those* patients.\"\n\n*voice tightens slightly*\n\nThat stung. I'm not *one of those* patients — I'm a person who happens to understand physiology and is terrified. Those aren't mutually exclusive.\n\nThe midwife seemed to tolerate my questions better, but I also got the sense she was managing me a bit. Like, \"Let's keep Angelika occupied with information so she doesn't spiral.\" Which, fair enough, maybe that's good care. But it didn't feel like partnership. It felt like... management.\n\n*fidgets with hands*\n\nThere was also a nurse who was genuinely kind. She didn't treat my questions like problems to solve. She just listened and adjusted things — the bed position, the lights — without making it feel like she was humoring me.\n\n*looks up*\n\nBut here's the thing — none of them really *knew* me. They didn't know about the loss, not deeply. They read it on the chart, probably, but it was abstract to them. And I couldn't quite find the words to say, \"When you seem rushed, it triggers my fear that something's wrong and nobody's telling me.\" \n\nThat gap — it was lonely.",
+      "responding_to_question_id": "V5_BIRTH_Q01_P01",
+      "input_tokens": 1568,
+      "output_tokens": 363
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the midwives and doctors who cared for you during your birth. Were there particular individuals whose presence or approach made a lasting impression — positive or negative?",
+      "question_id": "V5_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits back, eyes getting a bit watery*\n\nThe midwife... her name was Sarah. She was the one who stayed with me the most consistently. And I think she genuinely cared, but there was this — I don't know how to describe it without sounding ungrateful.\n\n*pauses, collecting myself*\n\nShe would explain things, which I appreciated. But sometimes it felt like she was explaining *at* me rather than *with* me. Like, \"Here's what's happening in your body,\" which is what I wanted, except when I'd ask a follow-up question about why she was making a particular decision, there'd be this slight pause. A hesitation. Like she wasn't used to being questioned.\n\n*voice gets softer*\n\nOne moment really stands out. During active labor, I asked about the fetal heart rate pattern I was seeing on the monitor. I wasn't panicking — I was genuinely curious and trying to understand. And she said, \"You don't need to worry about that. Let me do my job.\" \n\n*looks directly at you*\n\nIn that instant, I felt invisible. All of my knowledge, all of my work in this field — it became a liability instead of a resource. I shut down after that. Stopped asking questions. Just endured it.\n\n*voice breaks slightly*\n\nThe OB came in at the end, right before pushing, and she was brisk and professional but... kind of cold? She delivered the baby and left. Didn't really see me as a whole person.\n\n*wipes eyes*\n\nI needed someone who could hold both things: that I was educated *and* terrified. Not one or the other.",
+      "responding_to_question_id": "V5_BIRTH_Q02",
+      "input_tokens": 1969,
+      "output_tokens": 368
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your partner's — or support person's — role during your birth. What did they bring to that experience, and what do you think they found most challenging?",
+      "question_id": "V5_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "partner_role",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*softens a bit, looking down at my hands*\n\nMy husband, David... he was there from the beginning. He took time off work, which we could barely afford to do, and that fact alone meant everything to me. He was trying so hard.\n\n*pauses, choosing words carefully*\n\nBut he was also kind of... lost? He'd read the books I gave him about birth, but I don't think he really understood what I needed from him in those moments. When I was contracting, I wanted silence mostly — just his hand, his presence. But he kept talking. Asking if I wanted ice, suggesting positions, offering encouragement in this upbeat voice that felt like it was for a marathon, not labor.\n\n*slight frustration in my voice*\n\nAnd I snapped at him. More than once. I said things like, \"Just be quiet,\" and I could see him withdraw. He took it personally, I think. He thought he was failing me, but it wasn't about him failing — I just needed him to be present without *doing* so much.\n\n*softens again*\n\nThe hardest thing for him was probably that he couldn't fix my fear. I was panicking at points, and he'd try to reassure me with logic — \"The baby's heart rate is fine, look at the monitor\" — but I needed emotional reassurance, not data. Which is ironic coming from me, I know.\n\n*looks at you*\n\nWe didn't really talk afterward about what that was like for him. I was so focused on my own experience that I didn't ask. I wonder if he felt helpless.",
+      "responding_to_question_id": "V5_BIRTH_Q03",
+      "input_tokens": 2375,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did the clinical team engage with your partner or support person — did they feel included as part of the care, or more like a bystander?",
+      "question_id": null,
+      "probe_id": "V5_BIRTH_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "partner_role",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*exhales slowly, thinking*\n\nThey mostly... ignored him, honestly. Not meanly. Just professionally distant.\n\n*shifts in seat*\n\nThe midwife would address me directly, which makes sense, but there were moments where David had legitimate questions and she'd answer him in this kind of perfunctory way — like he was an obligation rather than someone invested in what was happening. He asked once about what certain vital signs meant, and she gave him this very abbreviated explanation that I could tell made him feel stupid. He stopped asking after that.\n\n*voice gets a bit frustrated*\n\nThe resident barely acknowledged he existed. And the nurse — the kind one I mentioned — she actually did include him a little. She'd say things like, \"Your wife is doing great, you're both doing great,\" which I think helped him feel less helpless.\n\n*pauses thoughtfully*\n\nBut nobody really prepared him for what his role could be. Nobody said, \"Here's how you can help her feel safe,\" or \"This is what she might need emotionally.\" They just kind of... let him figure it out on his own while managing a laboring, frightened woman.\n\n*looks at you directly*\n\nI think if someone had pulled him aside and said, \"She's scared because of a previous loss. She needs your presence more than your problem-solving\" — that would have changed things. He would have known how to show up differently. Instead, he was doing his best in a vacuum.\n\n*quietly*\n\nHe felt like a bystander. And I think that was hard for both of us.",
+      "responding_to_question_id": "V5_BIRTH_Q03_P01",
+      "input_tokens": 2761,
+      "output_tokens": 340
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about a moment during your birth when a decision needed to be made quickly or under pressure. Who was involved in that decision, and how did you experience your role in it?",
+      "question_id": "V5_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a sharp breath, eyes widening slightly*\n\nThere was a moment around hour six of active labor when the baby's heart rate dipped. Not drastically, but enough that the room's energy changed immediately.\n\n*fidgets with hands, voice getting tighter*\n\nSarah — the midwife — said we might need to consider augmenting labor with Pitocin. It wasn't an emergency, she explained, but the pattern was \"concerning enough to address.\" And suddenly everyone was moving faster. There was this sense of... pressure.\n\n*pauses, jaw clenching*\n\nI asked — and I remember being very careful to ask calmly — what the exact numbers were, what the baseline looked like before, what alternatives we had. And she said, \"We need to make a decision now, Angelika. The baby needs help progressing.\"\n\n*voice gets quieter, more vulnerable*\n\nBut that's where my brain shut down. I couldn't process it fast enough. All I could think was, *Something's wrong with my baby.* All the data I'd ever read disappeared. I became just a frightened woman who'd already lost once, and I was terrified of losing again.\n\n*looks up at you*\n\nDavid looked at me, and I could see he was waiting for me to decide. But I couldn't. So I just said yes to the Pitocin because that's what she was recommending, and she was the expert.\n\n*voice trembles slightly*\n\nAfterward, I learned the dip was likely just positional. Totally normal. But in that moment? Nobody gave me time to actually be part of the decision. I was just... consent.",
+      "responding_to_question_id": "V5_BIRTH_Q04",
+      "input_tokens": 3141,
+      "output_tokens": 365
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how the physical environment of your birth — the room, the equipment, the sounds and smells — felt in relation to the people around you. How did the space and the relationships interact?",
+      "question_id": "V5_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "dignity_respect",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*closes eyes briefly, as if transported back*\n\nThe room was bright. Fluorescent, sterile. I remember thinking it felt like being inside a hospital, which sounds obvious, but I'd imagined something softer, you know? The midwife had mentioned they had a birthing ball and could dim the lights, but nobody really offered that proactively. I had to ask.\n\n*opens eyes*\n\nOnce we did dim them a bit, it changed something. The space felt less clinical, more like... mine. But by then I was already in this defensive posture, already feeling managed rather than cared for.\n\n*voice gets quieter*\n\nThe beeping of the monitors was constant. Every time that heart rate number flickered, my body would tense. And the clinical team — they were so focused on the equipment. They'd look at the screens more than at me. There were moments where I felt like the monitor was the patient and I was just the vessel it was attached to.\n\n*rubs arms*\n\nThe smells — antiseptic, that plastic smell of the IV tubing — they made it feel urgent, even when nothing was urgent. It triggered this primal fear in me. Like something was wrong and I was supposed to be calm about it.\n\n*looks at you*\n\nAnd David couldn't really help with that environment either. He was also a visitor in this space. We were both sort of... contained by it. If the room had felt warmer, if the team had created a sense of sanctuary instead of protocol — I think we would have felt less alone in it all.\n\n*pauses*\n\nDoes that make sense?",
+      "responding_to_question_id": "V5_BIRTH_Q05",
+      "input_tokens": 3550,
+      "output_tokens": 354
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in shaping that environment — did anyone advocate for changes to make the space feel safer or more personal?",
+      "question_id": null,
+      "probe_id": "V5_BIRTH_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*shakes head slowly*\n\nNot really. I mean, I advocated for myself a little — asked for the lights dimmed, requested they turn down the volume on some of the alarms. But I felt like I was asking for favors rather than... like it was my space, you know?\n\n*voice becomes more animated with frustration*\n\nDavid didn't think to suggest anything. He was just trying to survive the experience himself. And honestly, I don't think he felt empowered to ask. There's this hierarchy in the hospital room that nobody explicitly states, but it's so clear. The clinical team is in charge, the patient cooperates, and the partner... he's just there.\n\n*leans forward*\n\nThe kind nurse — she did small things. She adjusted the bed without being asked, pulled a blanket up when I got cold. But even she seemed constrained by the room itself. Like she could make micro-adjustments but not actually transform the space into something that felt protective.\n\n*voice gets quieter, almost sad*\n\nSarah, the midwife, could have done more. She could have said, \"Let's make this feel like *your* birth, not just a medical event.\" She could have asked David what would help him feel less helpless. She could have dimmed the lights immediately instead of waiting for me to ask.\n\n*looks directly at you*\n\nBut I think she was just... going through her protocol. The hospital environment had already constrained what felt possible. And I was too scared and too focused on survival to push back harder.\n\n*pause*\n\nNobody was really thinking about us as people who needed to feel safe. Just... compliant.",
+      "responding_to_question_id": "V5_BIRTH_Q05_P01",
+      "input_tokens": 3932,
+      "output_tokens": 361
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who knew about your birth preferences or plan beforehand — your midwife, your partner, your family — and how well those preferences were known and respected in the room on the day.",
+      "question_id": "V5_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs a little, but it sounds hollow*\n\nMy birth preferences. God, I spent so much time on those. I wrote them out, printed them, gave copies to everyone.\n\n*pulls out phone, scrolls through notes*\n\nI wanted minimal intervention unless medically necessary. I wanted to be informed before any procedure, not after. I wanted time to process decisions. I wanted the baby skin-to-skin immediately if possible. I wanted my husband to cut the cord. I had it all written down because I thought if I could just articulate it clearly enough, it would happen.\n\n*voice gets bitter*\n\nSarah said she read them. David had a copy. I even discussed them at my last prenatal appointment with my OB, though she seemed to skim them.\n\n*leans back*\n\nBut in the actual moment? It felt like they evaporated. When the Pitocin decision came up, nobody referenced my preference for time to process. The skin-to-skin happened, which was good, but it was rushed because they needed to do routine checks. David did cut the cord, so that happened, but it felt almost... incidental.\n\n*voice cracks slightly*\n\nWhat hurt most was that nobody asked about my preferences once labor actually started. Like, the preferences existed on paper, but I was this new person in front of them — scared, in pain — and they reverted to standard protocol instead of treating me like someone who'd thought carefully about what I needed.\n\n*looks at you*\n\nI think they saw my preferences as nice-to-haves, not as essential to how I experience safety and dignity. And I was too overwhelmed to advocate for them in real time.",
+      "responding_to_question_id": "V5_BIRTH_Q06",
+      "input_tokens": 4339,
+      "output_tokens": 365
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who surrounded you in the days and weeks after your baby was born. Who showed up for you, and who were you surprised by — either by their presence or their absence?",
+      "question_id": "V5_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*softens, eyes getting misty*\n\nOh, this part is... it's complicated.\n\n*pauses, collecting herself*\n\nDavid was present, physically. He took paternity leave, which meant we were both home together figuring this out. But I think we were both traumatized in different ways, and we didn't really talk about it. He wanted to move forward, be excited about the baby. I was processing what happened in that room.\n\n*voice gets quieter*\n\nMy mom came for a week. She was helpful with logistics — laundry, meals — but emotionally? She kept saying things like, \"You did it, it's over, now enjoy the baby.\" She didn't want to hear about what felt violating or scary. She wanted the narrative to be triumphant, and I couldn't give her that yet.\n\n*looks down*\n\nMy colleagues from work reached out with casseroles and congratulations, which was kind. But nobody really asked how *I* was doing postpartum. Everyone was focused on the baby, which I understand, but I felt invisible again. Just the vessel.\n\n*voice trembles slightly*\n\nThe midwife didn't follow up. I saw my OB at six weeks for the standard checkup, but it felt perfunctory. Nobody asked about my emotional experience or whether I felt traumatized by certain decisions.\n\n*meets your eyes*\n\nThe biggest surprise was David. I needed him to acknowledge what happened, to validate that my fear was real, that my questions mattered. But he just... wanted to move on. That hurt more than I expected it to.\n\n*pause*\n\nI felt really alone, even surrounded by people.",
+      "responding_to_question_id": "V5_POST_Q01",
+      "input_tokens": 4747,
+      "output_tokens": 365
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in day-to-day support — a health visitor, a postnatal group, an online community — that became important to you?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably*\n\nI haven't really... connected with much, honestly. There was supposed to be a postpartum visit from a nurse, but it got scheduled weeks out because of staffing. By then I was already drowning and didn't feel like opening up to a stranger.\n\n*fidgets with sleeve*\n\nI looked into postnatal groups — there are a few in the area — but the timing didn't work with David's schedule and our finances. Childcare for a group is just... another expense we can't really absorb right now. And I'm not going to lie, the thought of sitting in a circle with other new mothers talking about how magical it all is felt exhausting.\n\n*voice gets quieter*\n\nI did find an online community for first-time mothers over forty. That's been helpful, actually. People who understand the \"geriatric pregnancy\" label and the particular anxieties that come with it. But it's not the same as someone physically here, checking in on me.\n\n*pauses, looking vulnerable*\n\nMy perinatal education background makes this worse in some ways. I *know* what postpartum support should look like. I *teach* about it. But knowing and having it are completely different things. I'm not getting the emotional debrief I needed after birth. Nobody's asking me to process what happened in that room.\n\n*voice cracks slightly*\n\nI think I'm struggling more than I'm admitting to David. The isolation is real. And without someone asking the right questions, without that structured support... I'm just white-knuckling through it.\n\n*looks at you*\n\nDoes that make sense? I'm supposed to know better, and I still feel lost.",
+      "responding_to_question_id": "V5_POST_Q01_P01",
+      "input_tokens": 5147,
+      "output_tokens": 373
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people involved in your feeding journey — whether you breastfed, formula-fed, or mixed-fed. Who helped you, who gave you conflicting advice, and how did those relationships shape your choices?",
+      "question_id": "V5_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "dignity_respect",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, visibly tense*\n\nBreastfeeding. God. This is... this is still raw.\n\n*rubs face*\n\nI was determined to breastfeed. I'd taught classes on it, knew the physiology, understood latch mechanics. I thought I had an advantage because of my knowledge. I was so wrong.\n\n*voice gets strained*\n\nThe lactation consultant came in the hospital — once, briefly. She showed me a hold, said things looked \"fine,\" and left. But it wasn't fine. My nipples started cracking within days. The baby wasn't gaining weight fast enough. And suddenly I'm panicking because I'm not producing enough, and all that knowledge I had just... disappeared into this fog of inadequacy.\n\n*leans forward*\n\nDavid kept saying, \"Just give her formula, it's okay.\" But I felt like I was failing. Like all my education meant nothing if I couldn't do this one thing. My mom called and said, \"Some women's bodies just can't do it,\" which somehow made it worse — like it was a physical failing of mine specifically.\n\n*voice wavers*\n\nI reached out to the lactation consultant again, and she was dismissive. Said I was \"overthinking it,\" that stress affects supply. So now my anxiety about not producing enough was apparently *causing* the problem. It was circular and cruel.\n\n*pauses, eyes glistening*\n\nI ended up combination feeding — breast and formula — but it felt like a defeat for so long. Nobody really supported that choice. It was either \"breast is best\" or \"just switch to formula.\" There was no space for the messy middle where I was doing both and struggling.\n\n*quietly*\n\nI wish someone had just said, \"Fed is fed, and you're doing great.\" I'm still working on believing that.",
+      "responding_to_question_id": "V5_POST_Q02",
+      "input_tokens": 5570,
+      "output_tokens": 404
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved — a lactation consultant, a feeding group, an app, or family members — and how did their views align or conflict?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods, voice bitter*\n\nThe lactation consultant was the main one, and she was... she meant well, I think, but she was so focused on \"breast is best\" ideology that she couldn't actually hear what I was saying. When I told her the pain was unbearable, she'd say things like, \"That's normal, it gets better.\" When I said the baby seemed hungry after twenty minutes, she'd say, \"She's just comfort nursing.\"\n\n*sits back, frustrated*\n\nBut then I'd pump to check supply, and the numbers terrified me. I was getting maybe an ounce per side. So either the consultant was wrong, or I was doing something fundamentally broken.\n\n*voice gets quieter*\n\nI downloaded three different feeding apps — one to track supply, one to track nursing sessions, one to calculate if the baby was getting enough. The data became obsessive. I was tracking everything, trying to solve the problem through measurement, but it just made me more anxious.\n\n*pauses*\n\nMy mom and David were basically saying, \"Switch to formula, it's fine,\" which logically I knew was true. But emotionally, there was this voice in my head — probably internalized from years of public health messaging — saying I was giving up. That I wasn't trying hard enough.\n\n*looks directly at you*\n\nAnd the worst part? Nobody actually sat down with me and said, \"Here's what your supply actually is. Here's what the baby actually needs. Here's what realistic options look like for *you*, not for some ideal version of motherhood.\"\n\n*voice breaks slightly*\n\nEveryone had opinions, but nobody actually *supported* me in making a choice I could live with. It was either their way or I was failing.",
+      "responding_to_question_id": "V5_POST_Q02_P01",
+      "input_tokens": 6007,
+      "output_tokens": 380
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who noticed — or who missed — changes in your emotional wellbeing after your baby was born. Who checked in with you about how you were feeling as a person, not just as a new mother?",
+      "question_id": "V5_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes fill with tears, voice becomes very small*\n\nNobody. Honestly, nobody really checked in.\n\n*wipes eyes*\n\nDavid noticed I was crying more, but he seemed annoyed by it. Like, \"Why are you still upset about the birth? The baby's here and healthy.\" He didn't understand that those two things could both be true — that I could be grateful for my daughter and also feel traumatized by how she arrived.\n\n*voice shakes*\n\nMy mom asked once, \"Are you sleeping okay?\" which I think was her way of asking about postpartum depression, but when I said no, she just suggested I nap when the baby napped. Like the issue was logistics, not my mental state.\n\n*pauses, composing herself*\n\nThe six-week postpartum checkup with my OB was just... physical. Blood pressure, incision healing, \"Any questions?\" I didn't ask any because I knew the appointment was fifteen minutes and she had other patients. I didn't tell her I was having intrusive thoughts about something going wrong with the baby. I didn't mention that I was googling SIDS constantly at 3 a.m., or that the panic attacks from my previous loss were creeping back in.\n\n*voice gets quieter, almost ashamed*\n\nThe lactation consultant certainly didn't ask how I was *emotionally*. Nobody in that feeding journey acknowledged that I was spiraling.\n\n*looks at you, eyes red*\n\nI'm a perinatal educator. I *know* the risk factors. I know I'm vulnerable — the previous loss, the difficult birth, the financial stress. And still, nobody asked me directly: \"How are you really doing?\"\n\n*pauses*\n\nI've started having panic attacks again. At night, mostly. And I haven't told anyone.",
+      "responding_to_question_id": "V5_POST_Q03",
+      "input_tokens": 6436,
+      "output_tokens": 397
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how your relationship with your partner — or your closest person — changed after your baby arrived. Who were you to each other, and how did the arrival of a baby reshape that?",
+      "question_id": "V5_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a long pause, looking down at hands*\n\nDavid and I... we were a team before. We made decisions together, we talked things through. But after the birth, something shifted and I don't know how to fix it.\n\n*voice becomes strained*\n\nHe wanted to celebrate. To move on. And I needed to process. We were operating in completely different emotional timelines, and neither of us knew how to bridge that gap. When I tried to talk about what happened in the delivery room — how dismissed I felt, how scared I was — he'd say things like, \"But the baby's healthy, that's what matters.\" And technically, he's right. But emotionally, he made me feel like my experience didn't count.\n\n*fidgets nervously*\n\nThe physical intimacy is... gone. Not just sex, but touch. He'd try to hug me and I'd flinch. I think it's because in the hospital, touch felt violating sometimes. Medical touch. And now I can't separate that from his touch, which isn't fair to him, but I can't control it.\n\n*voice cracks*\n\nWe're also exhausted and broke. He's been the one working while I'm home with the baby, which logically makes sense, but emotionally it's created this distance. He doesn't see what my days are like. I don't see his stress at work. We're just... existing in separate worlds under the same roof.\n\n*looks at you, eyes glistening*\n\nThe worst part is that I needed him most after the birth, and instead of coming together, we drifted. He couldn't hold my trauma and his joy at the same time. And I couldn't ask for what I needed because I was too overwhelmed to articulate it.\n\n*quietly*\n\nI don't know if we're okay. I think we are, but I'm not sure. We haven't really talked about any of this.",
+      "responding_to_question_id": "V5_POST_Q04",
+      "input_tokens": 6875,
+      "output_tokens": 420
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your sense of who you were — as a partner, as an individual, as a new parent — in those early weeks and months?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits very still for a moment, then laughs — but it's hollow*\n\nI completely disappeared.\n\n*voice becomes hollow*\n\nBefore the baby, I was Angelika the educator, the expert, the person who had answers. I had an identity built on knowledge and competence. And then suddenly I'm supposed to be a mother, and I don't know anything. The baby cries and I don't know why. My body hurts in ways I didn't anticipate. My mind is fractured between hypervigilance and exhaustion.\n\n*pauses, struggling*\n\nAnd as a partner, I became... distant. Cold, maybe. David would try to connect and I'd withdraw. I wasn't the woman he married — the one who engaged, who had opinions about things beyond infant sleep cycles. I was just... a body producing milk, a person managing a tiny human's needs, someone drowning quietly.\n\n*voice gets quieter, more vulnerable*\n\nThe worst part is that I recognize it intellectually. I can *name* what's happening — identity loss, postpartum adjustment, possibly postpartum depression. And that makes it worse somehow. I should know how to handle this. I should have resources. But knowing doesn't fix it.\n\n*looks away*\n\nI stopped reading my research papers. I stopped teaching. I stopped being the version of myself that felt capable. And I haven't grieved that loss yet. I'm still just... functioning.\n\n*voice trembles*\n\nAs a new parent, I'm terrified all the time. My previous loss haunts every moment. I'm checking the baby's breathing constantly, which David says is \"normal new parent stuff,\" but it doesn't feel normal. It feels obsessive. It feels like I'm waiting for catastrophe.\n\n*meets your eyes, tears streaming*\n\nI don't know who I am right now. And nobody's asked me that question.",
+      "responding_to_question_id": "V5_POST_Q04_P01",
+      "input_tokens": 7329,
+      "output_tokens": 411
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the healthcare professionals who supported you after your birth — your community midwife, health visitor, GP. Which of those relationships felt continuous with your pregnancy care, and which felt like starting again from scratch?",
+      "question_id": "V5_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "*exhales heavily, frustration evident*\n\nIt felt like starting from scratch. Completely.\n\n*leans forward*\n\nDuring pregnancy, I had the same OB and midwife team. Sarah, the midwife, saw me regularly. She knew my history, my anxieties, my preferences. There was continuity — or at least the illusion of it. But the moment I delivered, it was like a door closed. Sarah was gone. I never saw her again.\n\n*voice gets sharp*\n\nMy postpartum care was supposed to be with a community midwife for the first ten days or so. But the nurse who came — I can't even remember her name — she was someone I'd never met. She did the standard checks, asked standard questions, and left. There was no sense that she knew anything about my birth experience or my emotional state.\n\n*pauses, rubbing face*\n\nMy GP... I haven't even seen him postpartum. The six-week checkup was with my OB, which felt so disconnected from everything that had happened. She wasn't at my birth. She didn't know the details. She was just doing a clinical box-check.\n\n*voice becomes quieter, more sad*\n\nWhat I needed was for Sarah to call me. Or for someone — *anyone* — to say, \"I read your birth notes. I see what happened. Let's talk about how you're feeling about it.\" But there was this hard line between pregnancy care and postpartum care, and nobody bridged it.\n\n*looks directly at you*\n\nIt's like I ceased to exist the moment the baby was born. The focus shifted entirely to the infant. And I was just... expected to figure out the rest on my own.",
+      "responding_to_question_id": "V5_POST_Q05",
+      "input_tokens": 7787,
+      "output_tokens": 379
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your confidence in seeking help — did you feel known enough by someone to reach out when things were hard?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "*shakes head slowly, voice becoming very quiet*\n\nNo. I didn't feel known by anyone enough to reach out.\n\n*pauses, struggling with emotion*\n\nThere was this moment, maybe two weeks postpartum, when I was sitting on the bathroom floor at 2 a.m. having a panic attack because I was convinced something was wrong with the baby. She was sleeping fine. All her vitals were fine. But in my head, I was spiraling into this catastrophic thinking — flashbacks to my previous loss, all mixed up with anxiety about whether I'd made the right feeding choices, whether I'd damaged her somehow.\n\n*voice cracks*\n\nAnd I sat there thinking, \"Who do I call?\" The midwife? I'd never see her again. The health visitor wasn't coming back until the next scheduled visit. My GP would probably just refer me to someone else. And David was asleep, and I didn't want to burden him because he'd already made it clear he thought I should just move on.\n\n*wipes eyes*\n\nSo I didn't call anyone. I just... sat there until the panic passed, and then I went back to bed and pretended it didn't happen.\n\n*voice becomes even quieter*\n\nThe cruel irony is that I *teach* about postpartum mental health. I know the warning signs. I know I should reach out. But knowing and doing are completely different when you don't feel like anyone actually *knows* you or has earned the right to hear your darkest thoughts.\n\n*looks at you*\n\nI felt too fragmented for continuity of care to even matter. There was no relationship solid enough to hold me when I broke.",
+      "responding_to_question_id": "V5_POST_Q05_P01",
+      "input_tokens": 8194,
+      "output_tokens": 365
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your return to work — or your decision not to return — and the people involved in that transition. Who supported you, who put pressure on you, and how did that shape your experience of becoming a working parent?",
+      "question_id": "V5_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs bitterly, shaking head*\n\nI'm supposed to go back in eight weeks. That's what we planned when I found out I was pregnant. Eight weeks of leave, then back to work.\n\n*voice tightens*\n\nWe can't afford for me not to work. David's salary alone doesn't cover our expenses, and childcare is going to cost almost as much as I make. So mathematically, returning to work barely makes sense, but not working makes even less sense financially. It's this awful calculus where there's no good answer.\n\n*pauses, looking anxious*\n\nNobody at work has really checked in with me about how I'm feeling about the transition. They sent a congratulations email, and my manager said, \"See you in eight weeks,\" like it was a vacation. There's no conversation about flexibility, about what I might need as I'm trying to manage a newborn and the anxiety I'm carrying.\n\n*voice becomes strained*\n\nAnd David... he's supportive in theory, but I can feel the expectation underneath it. Like, \"Okay, you've had your time at home, now we need two incomes again.\" He's not saying that explicitly, but it's there. The pressure is there.\n\n*looks down*\n\nThe worst part is that I'm terrified to leave her. Not just normal new parent separation anxiety, but the obsessive kind. I'll be at work thinking about whether the childcare provider is checking her breathing. Whether something will happen and I'll miss it. And I can't talk to my manager about that because it would mark me as unreliable.\n\n*voice becomes very small*\n\nNobody's supporting my emotional reality here. They're just... expecting me to compartmentalize and show up.",
+      "responding_to_question_id": "V5_POST_Q06",
+      "input_tokens": 8608,
+      "output_tokens": 381
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your sense of who you are — did going back to work feel like reclaiming something, or losing something, or both?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits with the question for a long moment, eyes distant*\n\nBoth. Absolutely both.\n\n*voice wavers*\n\nThere's this part of me that's desperate to go back. To be Angelika the educator again, not just... this anxious shell of a person sitting at home obsessively checking a baby monitor. I miss having a brain that works on things other than whether my daughter is breathing. I miss competence. I miss feeling like I know what I'm doing.\n\n*pauses, emotion rising*\n\nBut then there's the guilt. And the grief. Because going back to work means admitting that I can't be the mother I thought I'd be — the one fully present, fully engaged, doing all the feeding and caregiving myself. It means outsourcing her care to someone else. It means I'm choosing income over her in some fundamental way, even though I *have* to choose income.\n\n*voice becomes shaky*\n\nAnd honestly? I'm terrified that I'm going to lose what little connection I've managed to build with her. These past weeks have been hard, but at least I'm the one here. If I go back to work, I become the person who drops her off and picks her up. I become peripheral to her life.\n\n*looks at you, eyes red*\n\nThere's also this voice in my head — probably from all those years of teaching about \"having it all\" — that says I should be grateful for the opportunity to work. That I should feel empowered by my career. But I just feel split. Like I'm failing at motherhood by leaving, and I'm failing at my career by not being fully present there either.\n\n*quietly*\n\nI don't know who I'm supposed to be anymore. And nobody's helping me figure that out.",
+      "responding_to_question_id": "V5_POST_Q06_P01",
+      "input_tokens": 9022,
+      "output_tokens": 386
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the communities — online or in person — that became part of your postpartum world. Who did you connect with, and what did those communities offer that more formal support couldn't?",
+      "question_id": "V5_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, picking at a thread*\n\nI found this online group for first-time mothers over forty, like I mentioned. It's... it's something. There's this woman, Jennifer, who had a similar birth experience — questions dismissed, feeling unheard in the room. We've messaged a few times, and it helped just knowing I wasn't crazy or alone in that.\n\n*voice becomes quieter*\n\nBut it's also limited, you know? We're all exhausted, all typing messages at midnight while the baby sleeps. Nobody has real solutions. We just commiserate about how hard it is, which is validating but also depressing.\n\n*pauses*\n\nI looked into a postpartum support group in the area — PSI has one, I think — but the timing didn't work. And honestly? I was too embarrassed to go in person. To sit in a circle and admit that I'm struggling when I'm supposed to be this perinatal expert. What if someone recognized me from my teaching? What if they expected me to have answers?\n\n*voice cracks slightly*\n\nWhat the online group offers that formal support doesn't is anonymity and no judgment. Jennifer doesn't know I'm an educator. She doesn't expect me to be fine. We can just be two scared women figuring this out.\n\n*looks down*\n\nBut it's also not enough. A message from Jennifer at 3 a.m. doesn't replace having someone physically here, checking in on me, asking how I'm really doing. Online communities are... they're a band-aid on something that needs real stitches.\n\n*quietly*\n\nI haven't told David about the group. I don't know why. Maybe because it feels like admitting I need support outside of him, and we're already so fragile.",
+      "responding_to_question_id": "V5_POST_Q07",
+      "input_tokens": 9451,
+      "output_tokens": 394
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in pointing you toward those communities — a midwife, a friend, an algorithm — and how did that shape which communities you found?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q07_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, but there's no humor in it*\n\nAn algorithm. I found it through an algorithm.\n\n*shakes head*\n\nI was googling \"postpartum anxiety first time mother\" at like 2 a.m. one night, and Reddit suggested a subreddit. Then from there I found the Facebook group for older first-time mothers. It was completely random — just me desperately searching for *anyone* who might understand what I was experiencing.\n\n*voice becomes frustrated*\n\nNobody — and I mean nobody from my actual care team — suggested any communities. My midwife didn't mention PSI or any support groups. My GP didn't. The health visitor who came once certainly didn't. It was like the assumption was that I'd figure it out on my own or that I didn't need it.\n\n*pauses*\n\nMy mom, when I mentioned I was looking at online groups, said something like, \"Just talk to your friends about it.\" But my friends without kids don't get it. And my friends with kids had easier births, easier postpartum periods. I didn't feel like I could burden them with how dark my thoughts were getting.\n\n*voice gets quieter*\n\nSo I ended up finding community through a Google search algorithm instead of through a human being who was supposed to be caring for me. That's... that's pretty telling, isn't it?\n\n*looks at you*\n\nIf someone — Sarah, the midwife, David, my OB — had just said, \"Here are resources. Here's a group you might connect with. You're not alone in this\" — I think it would have landed differently. It would have felt like they saw me struggling and actually cared enough to help.\n\n*voice trembles*\n\nInstead I had to find my own way in the dark.",
+      "responding_to_question_id": "V5_POST_Q07_P01",
+      "input_tokens": 9880,
+      "output_tokens": 391
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about any moments after your birth when you felt that you — as a person, not just as a new mother — were seen and cared for. Who made that happen, and what did they do or say?",
+      "question_id": "V5_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses for a long time, eyes glistening*\n\nThere was... there was one moment. With the nurse in the hospital. The kind one.\n\n*voice softens*\n\nIt was maybe six hours after I delivered. I was sitting in the postpartum bed, and my body hurt everywhere. The baby was sleeping, and I was just... sitting there in this gown, leaking from everywhere, feeling completely disconnected from myself. And this nurse came in to check my vitals, and she just... she *looked* at me.\n\n*pauses, composing emotion*\n\nShe didn't just do the clinical checks and leave. She sat down — actually sat down — and asked, \"How are *you* doing right now? Not the baby. You.\" And I just started crying. I couldn't help it.\n\n*voice becomes very quiet*\n\nShe didn't try to fix it or minimize it. She just handed me tissues and said, \"That was a lot. Your body's been through a lot. Your mind's been through a lot. That's real.\" And then she said something I'll never forget: \"You don't have to be the expert right now. You can just be a person who's scared.\"\n\n*wipes eyes*\n\nShe brought me extra pillows without asking. She adjusted the bed so I could sit more comfortably. She came back later and asked if I needed anything for the pain. Small things, but they felt... they felt like someone actually *saw* me. Not the chart. Not the label \"AMA primipara.\" Just me.\n\n*pauses*\n\nI don't even know her last name. She was probably just doing her job. But in that moment, she made me feel like my experience mattered. Like my fear was valid. Like I was allowed to not be okay.\n\n*voice breaks*\n\nThat five-minute conversation did more for me than anything else in that hospital. And then she was gone, and I never saw her again.",
+      "responding_to_question_id": "V5_POST_Q08",
+      "input_tokens": 10319,
+      "output_tokens": 429
+    },
+    {
+      "turn_number": 49,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in moments of genuine care for you — not just the baby — that stayed with you?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q08_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 50,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits quietly, thinking hard*\n\nHonestly? That's it. That's the main moment I can point to where someone actually saw *me*.\n\n*voice becomes smaller*\n\nThere was one other thing, but it's so small I almost don't want to mention it. David brought me a specific kind of tea I like the morning after we got home. Not because I asked for it — because he remembered. He made it exactly how I like it, warm but not too hot, with honey. And he just... handed it to me without commentary.\n\n*pauses, voice wavering*\n\nI cried over tea. That's how starved I was for someone to just... remember who I am and care for that person.\n\n*looks down*\n\nBut he hasn't done it again. And I think that moment was more about him trying to be helpful than him actually understanding that I needed to be *seen* as someone beyond the logistics of new motherhood.\n\n*voice becomes very quiet, almost ashamed*\n\nMy mom did hold me once when I was really crying. She didn't say anything, just held me. But it felt obligatory, like she was managing my emotions so I'd stop disturbing the peace. She wanted to comfort the crisis, not actually *be* with me in it.\n\n*looks at you with tired eyes*\n\nThat's really it. One nurse for five minutes. One cup of tea. One hug that felt more like damage control than genuine presence.\n\n*pauses*\n\nThat's what I have to hold onto. And it's not enough. It's nowhere near enough for what I've been through.",
+      "responding_to_question_id": "V5_POST_Q08_P01",
+      "input_tokens": 10773,
+      "output_tokens": 349
+    },
+    {
+      "turn_number": 51,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 52,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, gathering thoughts*\n\nYeah. There's... there's something I need to say.\n\n*pauses, looking directly at you*\n\nI came into this experience thinking that my knowledge would protect me. That understanding the physiology of birth, knowing the research, being able to articulate my needs — that would somehow insulate me from the things that go wrong. But it didn't. In fact, it made it harder.\n\n*voice becomes more urgent*\n\nThe system treated my questions like a threat instead of a resource. And I internalized that. I started to believe that my fear was pathological, that my need for explanation was anxiety I needed to manage rather than a legitimate part of how I process safety.\n\n*pauses, emotion rising*\n\nBut here's what I want people to understand: I wasn't difficult. I was terrified. And there's a difference. If my care team had recognized that — if they'd said, \"Your fear makes sense given your history, and we can work with that\" — everything would have been different.\n\n*voice trembles*\n\nI also need to say that the postpartum period has been lonelier than the birth itself. Birth is intense and finite. But this — this slow drowning in isolation, trying to figure out who I am while also keeping a tiny human alive — nobody prepared me for this. Nobody's checking in. Nobody's asking if I'm okay.\n\n*looks at you with wet eyes*\n\nAnd I'm someone with resources, with education, with support theoretically available. I can't imagine what it's like for someone without that. The system failed me, and I had every advantage.\n\n*quietly*\n\nPlease tell people that maternity care isn't just about delivering a baby safely. It's about seeing the *person* delivering the baby and caring for her too.",
+      "responding_to_question_id": null,
+      "input_tokens": 11178,
+      "output_tokens": 393
+    }
+  ],
+  "metadata": {
+    "total_turns": 52,
+    "questions_asked": 14,
+    "probes_deployed": 10,
+    "adaptive_followups": 0,
+    "total_input_tokens": 152946,
+    "total_output_tokens": 9771,
+    "estimated_cost_usd": 0.1725,
+    "duration_seconds": 155.7,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 290
+  },
+  "errors": []
+}

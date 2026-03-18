@@ -1,0 +1,753 @@
+{
+  "session_id": "S_103",
+  "status": "completed",
+  "persona_id": "comp_065",
+  "persona_name": "Chanell",
+  "persona_journey_stage": "second_trimester",
+  "persona_risk_level": "medium",
+  "persona_vulnerability_flags": [],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 1,
+  "questionnaire_strategy": "Chronological Journey",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T01:01:45.902256",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Chanell, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're in the middle of your pregnancy, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts slightly on the chair, tucking one leg underneath me*\n\nYeah, of course. I appreciate you asking, actually. It's... it's kind of nice to talk about this outside the clinic setting, you know?\n\n*pauses, looking down at my hands for a moment*\n\nHonestly, I think what's been strangest about this pregnancy is that I know *too much*. I spent the last decade talking parents through genetic screening results, explaining what a microdeletion means, the whole clinical picture. And now I'm sitting in the same exam room, but from the other side, and my brain won't turn off. I catch myself analyzing the sonographer's expressions, wondering if she saw something she didn't say out loud.\n\n*slight laugh*\n\nWhich is ridiculous because I know how screening works. I know the numbers. But knowing the numbers and living with the uncertainty are two completely different things.\n\nThe thing is, this is my seventh pregnancy. I've never lost one. Statistically, I should be fine. But at thirty-six, with a \"medium risk\" label on my chart... it just hits differently now. And doing this alone means I'm the only one analyzing the NIPT results at midnight, you know? \n\n*looks up*\n\nMy OB is great, but there's this awkward dance where she knows I understand the medicine, but I also need her to just tell me everything's okay in plain language. Not the clinical breakdown—just... reassurance.",
+      "responding_to_question_id": null,
+      "input_tokens": 793,
+      "output_tokens": 322
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the moment you found out you were pregnant — and what the weeks that followed were like for you.",
+      "question_id": "V1_PREG_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "informal_care_networks",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*exhales slowly, a small smile crossing my face*\n\nOh God. Okay, so... I wasn't exactly planning this one, which is funny because at my age, you'd think I'd be more careful. But life happens, right? I remember taking the test at home—early morning, before work—and just staring at those two lines for probably longer than was reasonable. \n\n*rubs my arm*\n\nMy first feeling wasn't joy. It was actually... panic? Which sounds terrible, but it's honest. I thought, \"Okay, Chanell, you're thirty-six, unmarried, you've got a good job but it's demanding, and now you're doing this alone. Again.\" That first week was a lot of sitting with that reality. I didn't tell anyone for a while. Just kept going to work, presenting case studies on rare conditions, and meanwhile there's this secret growing inside me.\n\n*voice gets quieter*\n\nThe weeks after that were different though. Once I let it settle, I felt... relieved? I wanted this, I think. I have six kids already. I know what I'm doing. And then the clinical part of my brain kicked in—scheduling the early screening, thinking about my age and the risks. That's when it got heavy.\n\n*looks at you directly*\n\nTelling my family was easier than I expected. They're used to me. But telling my boss that I'd need maternity leave again? That felt different. More shame in it, somehow. Like I was inconveniencing them. Even though logically I know that's not fair.",
+      "responding_to_question_id": "V1_PREG_Q01",
+      "input_tokens": 1141,
+      "output_tokens": 347
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your antenatal care — the appointments, check-ups, and the people who looked after you during your pregnancy. What was that experience like overall?",
+      "question_id": "V1_PREG_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans back, thinking*\n\nIt's been... fine? I mean, my OB is competent. She knows her stuff, and I respect her. But there's this weird dynamic that I don't think either of us has quite figured out yet. She'll start explaining something about screening sensitivity or what a particular marker means, and I'll cut her off because I already know the epidemiology. And then I can see her shift—like she's recalibrating who she's talking to.\n\n*fidgets with my sleeve*\n\nWhat I actually *need* from her is different from what I *know*. I need her to say \"your baby's heartbeat is strong\" without me having to decode her clinical neutrality. But because she knows I'm a peer, she treats me like one. And I hate that I have to ask her to dumb it down sometimes. It feels... weak.\n\nThe appointments themselves are fine. Standard stuff—the anatomy scan, the NIPT testing. But that's where my curse really kicks in. I'm sitting there watching the sonographer, and my brain is cataloging every measurement, every pause. I find myself looking for the shadows that I've spent years teaching other people to find in their own ultrasounds. It's exhausting.\n\n*voice gets smaller*\n\nAnd between appointments, there's just... silence. I go home, I look at my results online, and I'm alone with my thoughts and my knowledge. My coworkers don't really understand. My family checks in, but they don't get why I'm anxious when statistically everything is fine.\n\nI wish I could just be a patient and not a clinician.",
+      "responding_to_question_id": "V1_PREG_Q02",
+      "input_tokens": 1525,
+      "output_tokens": 359
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did you see the same midwife or provider regularly, or was it different people each time? How did that feel?",
+      "question_id": null,
+      "probe_id": "V1_PREG_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly*\n\nIt's been the same OB, which I think has been good in some ways. Consistency matters. She knows my history—all seven pregnancies, knows I'm reliable, knows I'm not going to panic over normal discomfort. There's a shorthand there, you know?\n\n*pauses, considering*\n\nBut that consistency also means she knows exactly how much I know. So there's no fresh start where I get to just be \"a pregnant person\" instead of \"Chanell, the genetic counselor who's read every study.\" It cuts both ways.\n\nI haven't seen a midwife, actually. It's all been with the OB in her practice. I think part of me wondered about trying midwifery care this time around—something different, maybe someone who wouldn't know my professional background going in. But then I thought about starting over with a stranger at thirty-six weeks pregnant with a \"medium risk\" label, and that felt like more anxiety than it's worth.\n\n*shifts position*\n\nThe nurses and front desk staff, they're fine. Professional. But they're not really part of the continuity. It's really just me and my OB in that exam room, doing this dance where we're both trying to figure out how to relate to each other.\n\n*looks away briefly*\n\nI wonder sometimes if it would be different if I had a partner, if I had someone else in the room asking questions on my behalf. Maybe the dynamic would shift. Maybe I wouldn't feel like I have to be so competent all the time.",
+      "responding_to_question_id": "V1_PREG_Q02_P01",
+      "input_tokens": 1912,
+      "output_tokens": 340
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about any screening or testing you were offered or had during your pregnancy — how did you make sense of it all and make decisions about it?",
+      "question_id": "V1_PREG_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "digital_information_seeking",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath, rubbing my face*\n\nOh man. Okay, so the screening conversation was... complicated for me in ways I didn't anticipate.\n\nWhen they brought up NIPT, I said yes immediately. Obviously. I work in this field—I know the sensitivity and specificity, I know it's non-invasive, I know it catches most chromosomal abnormalities. But here's the thing nobody tells you: knowing the science doesn't make getting the results any less terrifying.\n\n*voice tightens slightly*\n\nI remember the moment those results populated in my patient portal. I was at work, and I just... froze. All those conversations I've had with other parents explaining what a 1 in 2,500 probability means—suddenly I'm looking at *my* numbers. And intellectually I know that's still low risk. But emotionally? That probability became personal in a way I couldn't have anticipated.\n\n*shifts uncomfortably*\n\nThen came the anatomy scan. And I spent that whole appointment analyzing the sonographer's silence. Every pause felt significant. I kept thinking about the microdeletions I study, the rare conditions that don't show up on standard screening. I was looking for shadows that probably weren't there.\n\n*meets your eyes*\n\nThe hardest part is that I can't unknow what I know. Other pregnant people at thirty-six might just get screened and trust the results. I'm sitting there thinking about false negatives and what conditions slip through. It's paralyzing sometimes.\n\nI didn't pursue amniocentesis. The risk-benefit didn't warrant it at my results. But man, the mental math on that decision was exhausting.",
+      "responding_to_question_id": "V1_PREG_Q03",
+      "input_tokens": 2285,
+      "output_tokens": 369
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How was the information about tests explained to you — did you feel you had enough to make the decision that was right for you?",
+      "question_id": null,
+      "probe_id": "V1_PREG_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, but there's an edge to it*\n\nThat's the ironic part, right? Yes, I had enough information. Probably too much information, honestly. My OB gave me the standard counseling—the pamphlets, the numbers, the risks. But she also kind of... abbreviated it? Like she knew I could look it all up myself if I wanted.\n\n*leans forward*\n\nAnd I *did* want to. I went home and pulled the actual studies, looked at the meta-analyses on NIPT accuracy across different populations, the positive predictive value, all of it. So technically, I made an incredibly informed decision.\n\nBut here's what I'm realizing now—that's not actually what I needed.\n\n*voice becomes quieter*\n\nWhat I needed was someone to sit with me and acknowledge that knowing the *statistics* doesn't mean you're not terrified. I needed my OB to say, \"Okay, I'm going to explain this, and then I'm going to tell you what I would recommend, because right now you're a patient, not a colleague.\" Instead, we kind of... danced around it. She gave me the information, and I made the decision in isolation.\n\n*rubs my temples*\n\nThe weird thing is, I can't even blame her. What am I supposed to say? \"Please treat me like I'm less educated than I am\"? That feels ridiculous coming out of my mouth. But I think I needed permission to just... not be the expert for once.\n\nThe decision was right. But the process of getting there felt lonely.",
+      "responding_to_question_id": "V1_PREG_Q03_P01",
+      "input_tokens": 2683,
+      "output_tokens": 347
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about where you turned for information and support during your pregnancy — what sources mattered most to you, and why?",
+      "question_id": "V1_PREG_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "trust_distrust",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, looking a bit vulnerable*\n\nHonestly? I mostly turned inward. Which probably isn't the healthiest thing, but it's what I did.\n\n*counts on fingers*\n\nI went to the literature first—PubMed, the major journals. When I got my NIPT results back, I pulled the actual studies on what those specific markers mean, looked at the outcomes data. It felt safer somehow, more objective. But it's also... a lot. And sometimes I'd find myself in these rabbit holes at midnight, reading about conditions that are statistically so rare they barely matter, but suddenly they're *my* worry.\n\nI didn't really turn to other pregnant people. I have friends, but none of them know this world the way I do. How do I explain that I'm anxious not because I don't understand the numbers, but because I understand them *too well*? They'd say, \"But the odds are in your favor,\" and I'd want to scream, \"I KNOW.\"\n\n*looks down*\n\nMy family checks in, but they don't get it either. They're just happy I'm having another baby. And that's... I appreciate it, but it also feels isolating. Like we're having two different conversations.\n\n*voice gets quieter*\n\nIf I'm being really honest, I didn't seek out support groups or anything like that. I think some part of me didn't want to sit in a room with other pregnant women and pretend I was just like them. Because I'm not, and that felt unfair to them.\n\nWhat I *really* needed was someone who gets both worlds—the clinical and the human one. I haven't found that yet.",
+      "responding_to_question_id": "V1_PREG_Q04",
+      "input_tokens": 3058,
+      "output_tokens": 368
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how your body changing during pregnancy felt for you — physically and emotionally. How did you relate to those changes?",
+      "question_id": "V1_PREG_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "identity_tensions",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts weight, looking somewhat uncomfortable*\n\nOh. That's... yeah. That's a different question than I was expecting.\n\n*pauses, considering*\n\nPhysically, I'm fine. I've done this six times before. My body knows what to do. The nausea in the first trimester was manageable. I'm tired, my skin is doing weird things, my joints ache a little more than they used to. It's all... expected. Textbook.\n\n*touches my abdomen almost absently*\n\nBut emotionally? That's where it gets complicated.\n\n*voice becomes more hesitant*\n\nI think there's this thing about being single and pregnant at thirty-six where your body becomes this very visible statement about your life choices. I walk around Gardner, and I'm aware that people are doing math. Unmarried, six kids already, now a seventh. I can feel the judgment sometimes, even if it's probably just in my head.\n\n*looks away*\n\nAnd then there's the aging piece. My skin is tightening as I move into this trimester. I can see it. I'm not as elastic as I was at twenty-eight. The changes feel heavier somehow—not just physical, but like evidence of time passing, of doing this alone repeatedly.\n\n*voice quiets*\n\nWhat's strange is that my body feels like the most reliable part of this whole experience. It's *performing* well. Strong heartbeat, good measurements, no complications. But my mind keeps waiting for it to betray me. Like my body and my brain are having two different pregnancies.\n\nI don't really talk about that part with anyone.",
+      "responding_to_question_id": "V1_PREG_Q05",
+      "input_tokens": 3455,
+      "output_tokens": 358
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there aspects of the physical changes that were harder to come to terms with than others?",
+      "question_id": null,
+      "probe_id": "V1_PREG_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "body_image_autonomy",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a moment, jaw tightening slightly*\n\nThe visibility of it, honestly. That's the hardest part.\n\n*crosses arms*\n\nI work in a professional environment where I'm respected for my mind, my expertise. And then I walk in showing, and suddenly I'm... different. People treat me differently. They ask questions they wouldn't ask otherwise. \"Oh, congratulations!\" with this certain tone. Like they're recalibrating who I am based on what they can see.\n\n*voice becomes more tense*\n\nAnd at my age, with my history, there's this weird thing where I feel like I have to justify it somehow. Not to anyone explicitly, but internally. Like my body is making a choice that my brain has to defend. That shouldn't bother me as much as it does, but it does.\n\n*unfolds arms, places hand on abdomen*\n\nThe other thing—and this is harder to say—is that my body belongs to me in a way it won't once this baby arrives. I'm hyperaware of that now. These changes, the weight gain, the stretch marks, the way clothes don't fit anymore... it's temporary, but it's also a preview of what's coming. Seven kids means seven times I've gone through this. Seven times my body has been inhabited, transformed, claimed.\n\n*looks down*\n\nSometimes I wonder if I'm doing this to myself by choice, or if I'm just... continuing a pattern because it's what I know how to do. Whether my body and I are aligned on that decision.\n\n*quieter*\n\nThat's the part that keeps me up at night more than any screening result.",
+      "responding_to_question_id": "V1_PREG_Q05_P01",
+      "input_tokens": 3834,
+      "output_tokens": 358
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the role your partner, family, or close friends played during your pregnancy. What was their involvement like?",
+      "question_id": "V1_PREG_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "partner_role",
+        "informal_care_networks",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*long pause, then a small, somewhat bitter laugh*\n\nWell, there's no partner, so that's... that's a big blank space right there.\n\n*fidgets with my hands*\n\nI think that's the thing nobody really prepares you for. All the prenatal education assumes you have someone. Someone to go to appointments with, someone to process the information with, someone to sit with you at midnight when you're spiraling about genetic probabilities. There's just... me.\n\n*voice steadier but quieter*\n\nMy family is supportive. They are. My parents know what's going on, my siblings check in. But there's this underlying current of—I don't know—concern? Resignation? Like they've accepted that this is my pattern, but they're not entirely comfortable with it. They ask if I'm \"okay doing this alone again,\" and I always say yes because what else am I going to say?\n\n*looks up*\n\nThe thing is, I *am* okay. I'm capable. But capable and lonely aren't mutually exclusive, and I think sometimes my family confuses the two.\n\n*rubs face*\n\nMy coworkers are friendly but distant. I can't really talk to them about the deeper stuff—the fear, the isolation. That would be too vulnerable in a professional setting.\n\n*voice becomes smaller*\n\nThe drive home from the clinic after appointments, especially the anatomy scan... that's when it hits hardest. I'm alone with my thoughts and my knowledge and my results. And there's no one to say, \"Hey, the heartbeat looked good,\" or to just sit with the anxiety.\n\nI've made peace with it, mostly. But I won't pretend it doesn't matter.",
+      "responding_to_question_id": "V1_PREG_Q06",
+      "input_tokens": 4219,
+      "output_tokens": 373
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How included did your partner or support person feel in appointments and decisions — and how did you feel about that?",
+      "question_id": null,
+      "probe_id": "V1_PREG_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "partner_role",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, then gives a direct answer*\n\nThere is no partner. There's no support person in the appointments.\n\n*meets your eyes, a bit defensively*\n\nI go alone. Every time. The anatomy scan, the bloodwork, the check-ups with my OB. It's just me on that exam table, just me in the waiting room.\n\n*softens slightly*\n\nAnd honestly? Part of me is relieved about that. I don't have to manage someone else's anxiety on top of my own. I don't have to explain to a partner why I'm obsessing over measurements or why a sonographer's silence is making me spiral. I can just sit with my own thoughts.\n\n*voice becomes more complex*\n\nBut there's also this thing where I notice other pregnant women with partners in the room. The partner asking questions, holding the ultrasound pictures, being included in the conversation. And I feel... not envious exactly, but aware. Aware of what I'm not getting.\n\n*looks away*\n\nMy OB has never asked me directly about support at home. She assumes I'm managing, and I guess I am. But I think she might handle things differently if she knew there was literally no one. Like maybe she'd check in more, or spend more time reassuring me instead of just giving me the data.\n\n*voice quieter*\n\nThe hardest part about decisions is making them alone. The NIPT results, the amniocentesis decision, what to do if something shows up on screening—that's all just me, thinking it through. Which is fine. I'm competent. But I'm starting to realize that competence doesn't mean I don't need someone.",
+      "responding_to_question_id": "V1_PREG_Q06_P01",
+      "input_tokens": 4617,
+      "output_tokens": 368
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about any worries or fears you carried during your pregnancy — about your health, your baby, the birth, or anything else.",
+      "question_id": "V1_PREG_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "trust_distrust",
+        "power_dynamics",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, clearly touching something deep*\n\nOh God. Where do I even start?\n\n*rubs my face*\n\nThe biggest one is that I know exactly what can go wrong. I spend my days explaining to terrified parents what a microdeletion means, what the prognosis looks like for conditions most people have never heard of. And now I can't un-know any of that. So when I'm lying in bed at night, my brain cycles through all these rare conditions—the ones that don't show up on standard screening, the ones that only present at birth or in infancy.\n\n*voice tightens*\n\nI look at my NIPT results and intellectually I know they're good. But I also know the false negative rate. I know what slips through. And at thirty-six, that risk compounds in ways that keep me awake.\n\n*pauses, then continues more vulnerably*\n\nThe other fear is more... existential, I guess. I'm doing this alone. If something goes wrong—not just medically, but in terms of complications during labor, postpartum issues—I'm the one managing it. I'm the one making the decisions. I'm the one recovering with six other kids depending on me.\n\n*voice becomes quieter*\n\nAnd then there's this fear I don't talk about much: that I'm broken somehow. That there's something about me that means I keep doing this alone, keep choosing this path. Like maybe my body or my life is trying to tell me something and I'm just... not listening.\n\n*meets your eyes, raw*\n\nThe birth itself doesn't scare me. But everything after? The exhaustion, the isolation, the weight of being solely responsible? That terrifies me.",
+      "responding_to_question_id": "V1_PREG_Q07",
+      "input_tokens": 5016,
+      "output_tokens": 380
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were you able to share those fears with your care team — and if so, how did they respond?",
+      "question_id": null,
+      "probe_id": "V1_PREG_Q07_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, but it's tinged with frustration*\n\nNot really, no.\n\n*leans back*\n\nI mean, I could *technically* bring them up. My OB is professional, competent. But there's this unspoken understanding between us that I'm not supposed to be the anxious patient. I'm the one who understands the statistics, who can translate the medical jargon, who doesn't need hand-holding.\n\n*voice becomes more bitter*\n\nSo I don't bring up the midnight spirals about rare microdeletions I've studied. I don't mention that I'm terrified about postpartum recovery alone. I don't say, \"I know the false negative rate on NIPT and it's keeping me awake.\" Because if I do, I'm admitting that I'm not as together as I'm supposed to be.\n\n*shifts uncomfortably*\n\nThere was one moment during my anatomy scan where the sonographer took a long time measuring something, and my heart just dropped. And afterward, I wanted to ask my OB directly: \"Did you see something?\" But instead I just... didn't. I looked at the measurements myself later, analyzed them, assured myself. Because asking felt like admitting I couldn't handle the uncertainty.\n\n*voice quieter*\n\nI think my care team sees a competent woman who's had six healthy pregnancies. They don't see someone who's carrying the weight of knowing too much, who's processing this completely alone, who sometimes feels like she's drowning.\n\n*rubs my arm*\n\nAnd honestly? I'm not sure how to let them see that without feeling like I'm failing at something.",
+      "responding_to_question_id": "V1_PREG_Q07_P01",
+      "input_tokens": 5420,
+      "output_tokens": 361
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you first started thinking about having a child, what did you hope your relationship with your healthcare providers would look like — and were there any ways you worried it might not live up to that?",
+      "question_id": "Q8",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, thinking back*\n\nYou know, with my first pregnancy—I was young, in my twenties, still building my career in genetics counseling. I think I had this naive hope that my providers would just... see me as a person first, a professional second. That we'd have this collaborative relationship where I could ask questions without feeling like I was challenging their authority.\n\n*voice becomes reflective*\n\nI wanted to be treated like I mattered, but not like I had all the answers. I wanted someone who could explain things thoroughly but also recognize when I needed reassurance instead of data.\n\n*expression shifts to something more troubled*\n\nBut as I moved further into my career, as I became more knowledgeable, I started to realize that dynamic was never going to be simple. Especially now. I think part of me hoped that by this point in my life, I'd have found a provider who could hold both things—respect my knowledge but also see my vulnerability. Someone who wouldn't assume I had it all figured out just because I could recite sensitivity and specificity numbers.\n\n*voice becomes smaller*\n\nWhat I worried about, and what's kind of happening, is that I'd become trapped between two worlds. Not quite a patient, not quite a peer. And that the loneliness of that in-between space would make the whole experience harder than it needs to be.\n\n*looks at you directly*\n\nI think I also worried that no one would really understand what it's like to know this much and still be afraid. And... yeah. That's pretty much where I am.",
+      "responding_to_question_id": "Q8",
+      "input_tokens": 5823,
+      "output_tokens": 339
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Thinking back to when you and your partner — or the people closest to you — were weighing up whether and when to start trying for a baby, how did those conversations actually go? Who felt like they had the most say, and did that feel right to you?",
+      "question_id": "Q9",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts weight, a bit of defensiveness creeping in*\n\nThere wasn't really a \"we\" conversation, because there's no partner. That's... that's the reality I've been navigating.\n\n*pauses, choosing words carefully*\n\nWith my family, there were conversations, but not the kind you're describing. My parents have made their peace with my choices over the years, but I know they wish things were different. They're supportive but... resigned, I guess. They don't get why I keep choosing this path.\n\n*voice becomes more reflective*\n\nHonestly? The decision to have this baby was mostly mine alone. I thought about it, weighed the logistics, considered whether I had the capacity to do it again. And I decided yes. But it wasn't a conversation where multiple people had equal say—it was me making a unilateral choice about my own body and my own life.\n\n*rubs my arm*\n\nWhich is fine. It's my body, my life. But sometimes I wonder if the fact that *only* I get to decide means I'm also the only one carrying the weight of it. Like, if someone else had a say in the decision, maybe they'd also share some of the burden?\n\n*voice gets quieter*\n\nI think what bothers me most is that I've never really had that partnership in planning pregnancy. The \"should we do this?\" conversation with someone who has skin in the game. It's always just been me, deciding for myself and everyone else.\n\n*meets your eyes*\n\nSometimes I'm not sure if that autonomy is empowering or just... isolating.",
+      "responding_to_question_id": "Q9",
+      "input_tokens": 6220,
+      "output_tokens": 351
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did older family members — parents or grandparents — have a view that found its way into the decision, even indirectly?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath, looking away*\n\nMy parents... they love my kids. They're involved grandparents. But I think they carry a lot of quiet disappointment about how my life has unfolded.\n\n*fidgets with my sleeve*\n\nMy mom has never said outright, \"You shouldn't have another baby alone,\" but I feel it in the way she asks if I'm \"sure about this\" or if I've \"thought it through.\" Like she's checking to see if I'm making a rational decision or just repeating a pattern. There's this undercurrent of concern that maybe I'm not taking care of myself the way I should be.\n\n*voice becomes more guarded*\n\nAnd my dad... he's more distant about it. He asks how I'm feeling, makes sure I have what I need. But there's this resignation there too, like he's accepted that this is who I am and what I do, but he wishes it were different for me.\n\n*looks at you*\n\nI don't think they actively influenced my decision to get pregnant. But their reactions to previous pregnancies—the way they've supported me but also expressed worry—that definitely shaped how I think about myself doing this. Like maybe I'm supposed to feel bad about it, or apologize for it somehow.\n\n*voice quieter*\n\nThe thing is, I *am* competent. I *can* do this. But I think part of me still carries my parents' unspoken hope that someday I wouldn't have to do it alone. That maybe this time would be different.\n\n*pause*\n\nIt wasn't.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 6601,
+      "output_tokens": 346
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before you became pregnant, how did you feel about your body and what it was capable of — and did those feelings change at all as you started thinking about pregnancy?",
+      "question_id": "Q10",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a long moment, clearly accessing something personal*\n\nBefore this pregnancy? I felt... capable. My body has done what I asked it to do six times. It's reliable. Strong. I trusted it.\n\n*voice becomes more complex*\n\nBut there's also this thing about being a single woman in her mid-thirties, working in a professional field. You develop a certain relationship with your body that's about *you*—how you look, how you feel, what you want from it. It's yours in a way that's uncomplicated.\n\n*touches my abdomen almost absently*\n\nAnd then pregnancy changes that. Your body becomes public property in some ways. People comment on it, ask questions, make assumptions. As a woman alone, especially with my history, there's an extra layer of judgment or concern that comes with it being visible.\n\n*voice tightens*\n\nThe feelings did change when I started thinking about this pregnancy. I went from \"my body is mine\" to \"my body is doing something that the world has opinions about.\" And because I'm doing it alone, it feels more... exposed somehow.\n\n*looks down*\n\nWhat's strange is that professionally, I celebrate female bodies and their capabilities all the time. I counsel parents about healthy pregnancies, about resilience. But personally? There's this voice in my head questioning whether my body is making the right choice by doing this again, alone, at thirty-six.\n\n*quieter*\n\nI trust my body's *function*. The heartbeat, the measurements, the capability to grow a healthy baby. But I'm not sure I trust my body's *judgment* about what it should be doing anymore.",
+      "responding_to_question_id": "Q10",
+      "input_tokens": 6983,
+      "output_tokens": 359
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there things about your body you felt confident about, and things that worried you or felt uncertain?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly, considering*\n\nThe thing I'm most confident about is that my body *works*. Seven pregnancies, no losses. No gestational diabetes, no preeclampsia, no major complications. My body knows how to do this. That's not arrogance—it's just data.\n\n*voice becomes more measured*\n\nAnd physically, I feel good right now. Strong. The nausea passed, I'm in that sweet spot of the second trimester where I have energy. My body feels capable in a way that's reassuring.\n\n*pauses, then shifts*\n\nBut there's the aging piece. At thirty-six, the risks compound in ways they didn't at twenty-eight. My OB labeled me \"medium risk\" and that label sits with me. I know what that means statistically, but it also means my body is less forgiving now. If something goes wrong, the outcomes might be different.\n\n*voice becomes quieter, more vulnerable*\n\nAnd then there's the postpartum piece. I've recovered six times before, but I'm not as young. I know my body will be more tired, take longer to bounce back. And I'll be doing it alone, which means there's no one to tag in when I'm exhausted.\n\n*rubs my face*\n\nWhat worries me most is this gap between what my body *can* do and what my body should be doing at this stage of my life. Like maybe my body is capable, but that doesn't mean it's wise to keep asking it to do this.\n\n*meets your eyes*\n\nI trust my body. But I'm not sure I trust my own judgment about what I'm asking it to carry.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 7365,
+      "output_tokens": 367
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "question",
+      "text": "If you saw a GP, nurse, or any other health professional before you became pregnant — even just for something routine — what was that experience like, and did it give you any sense of what maternity care might be like down the line?",
+      "question_id": "Q11",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "*thinks back*\n\nI see my regular doctor maybe once a year for an annual physical, just routine stuff. And honestly, those visits are pretty straightforward—she knows my history, asks the standard questions, we're done in twenty minutes.\n\n*leans back*\n\nBut I don't think those encounters really prepared me for what maternity care would feel like, because the dynamic is so different. With my regular GP, I'm just another patient. She doesn't know my professional background unless I mention it. But once you're pregnant and your OB knows you work in genetics counseling? Everything changes.\n\n*voice becomes more thoughtful*\n\nI think what I didn't anticipate was how much harder it would be to be a *vulnerable* patient when you're also knowledgeable. With my GP, I can just describe symptoms and trust her expertise. But with my OB, there's this constant negotiation happening—am I asking questions because I need reassurance, or because I'm trying to problem-solve like a clinician?\n\n*shifts uncomfortably*\n\nAnd the routine visits before pregnancy didn't really signal what the emotional landscape would be like. Nobody asked me about my support system, about how I was feeling about doing this alone. It was all very clinical and efficient. Which is fine, but it didn't prepare me for needing something different during pregnancy.\n\n*quieter*\n\nI think if someone had asked me then, \"How will you handle being both the expert and the patient?\" I wouldn't have known how hard that would actually be.",
+      "responding_to_question_id": "Q11",
+      "input_tokens": 7784,
+      "output_tokens": 331
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before you were pregnant, what kinds of conversations were you having with the people around you — family, friends, your partner — about having a baby, and whose input felt most meaningful to you?",
+      "question_id": "Q12",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, a bit ruefully*\n\nOkay, so there's still no partner in this picture. That's consistent, right? There just... isn't one.\n\n*settles back*\n\nConversations with family were mostly them asking when I was going to \"settle down\" or gently suggesting that maybe I should think about meeting someone before having another baby. My mom especially would say things like, \"Wouldn't it be nice to have someone to share this with?\" And I'd agree that yes, theoretically it would be. But that's not my life.\n\n*voice becomes more direct*\n\nMy closest friends know me well enough not to push it, but I could feel their concern. They'd ask if I was \"sure\" about this, if I'd thought about the logistics. And yeah, I had. I always do. But their input felt more like... worry than genuine collaboration, you know?\n\n*pauses*\n\nWhose input felt most meaningful? Honestly, my own. Because at the end of the day, it's my body, my life, my responsibility. I made the decision and I live with it. And I think that's actually made me more isolated in some ways—because I've never had to genuinely weigh someone else's perspective against my own.\n\n*voice quieter*\n\nSometimes I wonder if that's a strength or a limitation. Like, am I confident and autonomous, or am I just... alone and calling it choice?\n\n*looks at you*\n\nI don't think anyone around me had meaningful input because nobody was really going to be the one living it with me.",
+      "responding_to_question_id": "Q12",
+      "input_tokens": 8157,
+      "output_tokens": 344
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Were there things about your own body, your health history, or just the way you felt about yourself physically that made the idea of pregnancy feel complicated or uncertain — even before anything had actually happened?",
+      "question_id": "Q13",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a long time answering, clearly touching something real*\n\nYeah. Yeah, there was stuff.\n\n*crosses arms*\n\nAt thirty-six, you start noticing things. My metabolism isn't what it was. Recovery takes longer. I look in the mirror and I see the evidence of time passing—the way my skin doesn't bounce back quite as easily, the fine lines that are becoming less fine. And I knew that pregnancy would accelerate all of that.\n\n*voice becomes more vulnerable*\n\nThere's also this thing about having six kids already. My body has been through a lot. Six pregnancies, six labors, six postpartum recoveries. And I think part of me wondered if my body was... tired. Like, does my body want to do this again? Or am I just asking it to because I know how?\n\n*unfolds arms, places hand on abdomen*\n\nThe professional knowledge doesn't help here either. I know the statistics on maternal age and complications. I know that at thirty-six, my risks are higher than they were at twenty-eight. That's not abstract information—it's about *my* body, *my* risk. And that made the idea of pregnancy feel heavier than it used to.\n\n*voice quieter*\n\nAnd then there's the deeper thing—this question of whether my body and I are still aligned on big decisions. Like, is my body choosing this, or am I just... using my body to fulfill something in myself that maybe I should examine more carefully?\n\n*meets your eyes*\n\nI felt physically capable but emotionally uncertain about whether I should be doing this to my body again.",
+      "responding_to_question_id": "Q13",
+      "input_tokens": 8543,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did you have any concerns about your weight, fitness, or a health condition that felt like it might be a barrier?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "*shakes head*\n\nNo, nothing like that. My weight is fine, I'm generally healthy. No chronic conditions, no complications from previous pregnancies that would be red flags now.\n\n*pauses*\n\nI think if there had been a concrete medical barrier—something my doctor said I should be cautious about—it would almost be easier, you know? There would be a legitimate external reason to reconsider. But I don't have that excuse.\n\n*voice becomes more introspective*\n\nMy concerns were more... existential. It wasn't \"can my body do this?\" It was \"should my body be doing this?\" And those are very different questions.\n\n*shifts*\n\nI'm fit enough. I walk, I'm active. I work full-time in a demanding job. My body handles the physical demands of life and pregnancy. But there's this fatigue that's deeper than physical—it's the fatigue of doing this alone repeatedly, of knowing what's coming, of being aware of my own aging in real time.\n\n*rubs my face*\n\nSo no, there wasn't a health barrier. Just... the weight of choice, I guess. The knowledge that my body is capable of this, but the question of whether I should keep asking it to be.\n\n*quieter*\n\nSometimes I think a health condition would have been simpler than this ambivalence.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 8922,
+      "output_tokens": 296
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "question",
+      "text": "In the time before you became pregnant, was there any one person — professional or otherwise — who felt like a consistent, reliable source of support or guidance, someone you could come back to with questions?",
+      "question_id": "Q14",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, thinking hard*\n\nNot really, no.\n\n*fidgets slightly*\n\nI have colleagues at work who I respect professionally, but we don't have that kind of relationship. We talk about cases, about the latest research, but not about... me. About my life choices or my fears or what I'm carrying.\n\n*voice becomes more measured*\n\nMy family is there, but as I mentioned, there's this undertone of concern mixed with acceptance. They show up, but I don't feel like I can be fully honest with them about my ambivalence or my struggles without reinforcing their worry that I'm not okay.\n\n*looks away*\n\nAnd my OB before I was pregnant? We didn't have an established relationship. So there wasn't really anyone I could turn to and say, \"I'm thinking about doing this again, and I'm scared, and I'm not sure about the wisdom of it.\"\n\n*voice quiets*\n\nI think that's one of the reasons this pregnancy has felt so isolating. There's no one consistent person who knows my full story—the professional part, the personal part, the scared part. I'm fragmented across different relationships, and no one person sees all of me.\n\n*meets your eyes*\n\nThe irony is that I spend my days being that person for other people. I'm the one they come to with their big questions, their fears about genetic risk, their uncertainties. But I don't have anyone doing that for me.\n\n*pause*\n\nI think I've gotten used to that, but I'm not sure that's actually healthy.",
+      "responding_to_question_id": "Q14",
+      "input_tokens": 9261,
+      "output_tokens": 342
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What made that person feel reliable or trustworthy as a source of support at that stage?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, realizing the question*\n\nOh. I think I misunderstood. You're asking about someone who *was* reliable before I got pregnant.\n\n*sits with it for a moment*\n\nHonestly? There really isn't one. That's the hard answer.\n\n*voice becomes quieter*\n\nI mean, my parents are there, but \"reliable\" and \"trustworthy\" in the way you're asking... they come with baggage. They worry, they judge gently, they want things to be different for me. That doesn't make them unreliable exactly, but it makes it hard to be fully honest with them.\n\n*shifts uncomfortably*\n\nI think the person I relied on most was... myself. My own knowledge, my own ability to research and understand and problem-solve. I could turn to the literature, to data, to my own clinical expertise. That felt safe because I controlled it.\n\n*voice becomes more reflective*\n\nBut that's not really a person, is it? And I'm realizing now that relying solely on yourself—on your intellect and your capability—leaves out the part where someone just... knows you. Sees you as a whole person and sits with you in your uncertainty without trying to fix it or judge it.\n\n*looks at you directly*\n\nI didn't have that before I got pregnant. And I think that's part of why this pregnancy feels so heavy. Because I'm still that person—the one doing all the research, making all the decisions alone, carrying all the weight.\n\n*quieter*\n\nMaybe I should have looked for that before I decided to do this again.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 9625,
+      "output_tokens": 354
+    },
+    {
+      "turn_number": 49,
+      "role": "interviewer",
+      "type": "question",
+      "text": "As you were thinking about whether to have a baby, did it feel like a decision you were genuinely free to make in your own time and your own way — or were there pressures, expectations, or circumstances that meant it was never quite fully your choice?",
+      "question_id": "Q15",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 50,
+      "role": "persona",
+      "type": "response",
+      "text": "*long silence, visibly processing*\n\nThat's... that's a really good question. And harder to answer than I expected.\n\n*rubs my face*\n\nOn the surface, yes. It was my choice. My body, my life, my decision. No one forced me. No one said \"you have to have another baby.\" I made the call.\n\n*voice becomes more uncertain*\n\nBut underneath that? I'm not entirely sure it was as free as I like to tell myself.\n\n*leans forward*\n\nThere's this pattern I've fallen into—having babies, raising them, doing it alone. And at some point, does a pattern become a choice? Or does it become a compulsion? Like, am I choosing pregnancy because I genuinely want another child, or because it's what I know how to do? Because it's familiar in a way that actually building a different kind of life—maybe with a partner, maybe without children—isn't?\n\n*voice tightens*\n\nAnd then there's the professional pressure, in a weird way. I work with families who've made these reproductive decisions. I understand the medical side so deeply. Part of me felt like... I *should* be able to handle this. That choosing to have another baby was proof I'm capable, competent, in control.\n\n*meets your eyes*\n\nBut was that freedom, or was that ego?\n\n*quieter*\n\nI think if I'm being really honest, the choice felt freer before I actually got pregnant. Once those two lines showed up, I started questioning whether I'd actually chosen this or just... continued a pattern because stopping would mean admitting something about myself I'm not ready to face.",
+      "responding_to_question_id": "Q15",
+      "input_tokens": 10035,
+      "output_tokens": 361
+    },
+    {
+      "turn_number": 51,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Once you were pregnant, how much did you feel like you were in the driving seat of your own care — and were there moments when you felt yourself handing that over to others, willingly or not?",
+      "question_id": "Q16",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 52,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath*\n\nThat's... complicated.\n\n*shifts in seat*\n\nI think I've maintained the illusion of being in the driver's seat more than I actually am. I make decisions about screening, I read the results, I understand the implications. But in terms of actual control? It's more fragmented than I'd like to admit.\n\n*voice becomes more reflective*\n\nThere are moments where I hand it over willingly. During the anatomy scan, I just... let the sonographer do her job. I didn't ask a million questions. I watched her face, analyzed her silence, and then went home and analyzed the measurements myself. So I gave up control in the moment, then took it back later through my own research.\n\n*leans back*\n\nBut there are other moments where I'm not sure if I'm handing it over or if it's just being taken. Like, my OB makes clinical recommendations based on my age and risk profile, and I *accept* them. Not because I've independently verified every piece of evidence, but because... I'm tired of being the expert. I want someone else to tell me what's best.\n\n*voice gets quieter*\n\nExcept I can't fully do that either, because my brain won't stop analyzing. So I'm stuck in this middle ground where I'm nominally in control, but I've also abdicated responsibility in ways that make me anxious.\n\n*looks at you*\n\nThe hardest part is that being alone means there's no one to share that driving. No one to say \"you take this turn, I'll handle that one.\" It's all me, all the time. And sometimes I want to pull over and let someone else navigate.",
+      "responding_to_question_id": "Q16",
+      "input_tokens": 10441,
+      "output_tokens": 367
+    },
+    {
+      "turn_number": 53,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there points where relying on others felt like a relief, and others where it felt like losing something?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 54,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly*\n\nYeah. Both. Definitely both.\n\n*settles back*\n\nThe relief comes in small moments. When my OB just... tells me something is fine without me having to ask seventeen follow-up questions. When she says \"the heartbeat is strong\" and I can just believe her instead of analyzing her tone for hidden concern. There's this lightness that comes with not being responsible for understanding every detail.\n\n*voice becomes more conflicted*\n\nBut it doesn't last long. Because the moment I hand over that responsibility, I feel myself slipping. Like I'm losing my footing somehow. If I'm not the one analyzing, if I'm not the one researching, if I'm just... trusting... then what happens if something goes wrong? Who do I blame? Myself for not staying vigilant?\n\n*stands up slightly, then sits back down*\n\nAnd there's this shame in needing that relief, honestly. Like I *should* be able to carry all of this myself without needing someone to reassure me. The fact that I want to hand it over feels like weakness.\n\n*voice becomes quieter*\n\nWhen I rely on my OB, I lose the sense that I'm in control. And control—even the illusion of it—feels safer than vulnerability. But control also means I'm entirely alone with the anxiety. So I'm trading one form of exhaustion for another.\n\n*meets your eyes*\n\nI think what I'm realizing is that I've never learned how to truly share this. To let someone help without feeling like I'm failing at something. And at this point in pregnancy, I'm not sure how to start.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 10833,
+      "output_tokens": 359
+    },
+    {
+      "turn_number": 55,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When decisions came up during your pregnancy — about tests, appointments, birth plans, or anything else — how did you and your partner navigate those together, and did it ever feel like you weren't quite on the same page?",
+      "question_id": "Q17",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 56,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, then speaks directly*\n\nThere's no partner. We've kind of circled around this a few times, but I want to be clear about it because it shapes everything.\n\n*voice steady but quieter*\n\nThere's no one to navigate decisions with. No \"we.\" It's just me, alone in my apartment at night, looking at my NIPT results on the patient portal, making the call about whether to pursue further testing. Me, thinking through the amniocentesis risk-benefit analysis with no one to talk it through with.\n\n*shifts*\n\nAnd I think that's actually made the decision-making harder in ways I didn't anticipate. Because when you're alone, you can't externalize the anxiety. You can't say \"what do you think?\" and have someone else shoulder some of the weight. You *have* to decide, and you have to live with that decision entirely on your own.\n\n*voice becomes more vulnerable*\n\nWith my OB, I try to present myself as having it figured out. Like I've already thought through all the angles and I'm just confirming my clinical reasoning with her. But really? I'm just trying to get reassurance in a way that doesn't make me seem incompetent.\n\n*looks away*\n\nSometimes I wonder what it would be like to have someone say, \"Okay, let's think about this together. Here's what I think, here's what you think, and here's what we decide.\" Instead of just... me, deciding, and then having to live with it alone.\n\n*quieter*\n\nThere's no \"not on the same page\" when there's only one person reading the book.",
+      "responding_to_question_id": "Q17",
+      "input_tokens": 11240,
+      "output_tokens": 360
+    },
+    {
+      "turn_number": 57,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there decisions where your partner's view really mattered to you, and ones where you needed it to be your call alone?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 58,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, looking at you directly*\n\nI think you're still working under the assumption that there's a partner, and I want to be clear: there isn't one. There's never been one in this pregnancy.\n\n*voice is patient but firm*\n\nSo there aren't decisions where a partner's view mattered, because there's no partner to have a view. There's just me, making all the calls.\n\n*sits back*\n\nAnd honestly? I think that's part of what makes this so hard. Because theoretically, every decision *should* be mine alone—my body, my choice, right? And I believe that. But in practice, having no one to bounce things off of, no one whose perspective might challenge mine or affirm my thinking... it's isolating in a way I didn't fully anticipate.\n\n*voice becomes more reflective*\n\nIf there were a partner, I think I'd want some decisions to be collaborative—the big ones about birth plans, about what happens if complications arise. But other things, like what I do with my own body during pregnancy, those would need to be mine alone.\n\n*quieter*\n\nThe irony is that without a partner, everything is technically my call alone. But that doesn't make it feel like freedom. It just makes it feel lonely.\n\n*meets your eyes*\n\nI think that's the distinction I'm realizing—having the power to decide and having someone to help you carry the weight of that decision are two very different things.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 11629,
+      "output_tokens": 321
+    },
+    {
+      "turn_number": 59,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 60,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a moment, looking thoughtful*\n\nYeah, actually. There is something.\n\n*pauses, choosing words carefully*\n\nI think what I want people to understand is that knowledge doesn't protect you from fear. And competence doesn't mean you don't need support. I've spent this whole conversation talking about how much I know, how capable I am, and that's all true. But underneath that is someone who's terrified and lonely and not sure she's making the right choices.\n\n*voice becomes more passionate*\n\nAnd I think that's something my care team doesn't quite see. They see a woman who understands the medicine, who can advocate for herself, who doesn't need hand-holding. But what they don't see is that I *want* to be seen as more than just competent. I want to be asked, \"How are you really doing?\" Not the clinical version of that question, but the human one.\n\n*rubs my arm*\n\nThe other thing is... I think there's an assumption that single women doing this are somehow *choosing* to be alone, like we're rejecting partnership. But for me, it's not that simple. I'm alone because that's how my life worked out. And I've made peace with a lot of that. But I haven't made peace with the idea that being alone means I should also be isolated from genuine support and connection during something this profound.\n\n*quieter*\n\nI wish someone had asked me early on, \"What would actually help you feel supported right now?\" Instead of just assuming I had it figured out.",
+      "responding_to_question_id": null,
+      "input_tokens": 12006,
+      "output_tokens": 337
+    }
+  ],
+  "metadata": {
+    "total_turns": 60,
+    "questions_asked": 17,
+    "probes_deployed": 11,
+    "adaptive_followups": 0,
+    "total_input_tokens": 191426,
+    "total_output_tokens": 10536,
+    "estimated_cost_usd": 0.2125,
+    "duration_seconds": 160.9,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 249
+  },
+  "errors": []
+}

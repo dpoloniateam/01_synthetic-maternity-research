@@ -1,0 +1,418 @@
+{
+  "persona_id": "comp_050",
+  "persona_name": "Camellia",
+  "journey_stage": "preconception",
+  "risk_level": "low",
+  "vulnerability_flags": [],
+  "complications": [],
+  "relevant_phases": [
+    "preconception"
+  ],
+  "base_question_count": 37,
+  "adapted_question_count": 6,
+  "filtered_out": 31,
+  "added_probes": 0,
+  "questions": [
+    {
+      "question_id": "V5_PREC_Q01",
+      "version": 5,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about the people who were part of your world when you first started thinking about having a baby — who came to mind, and what role did each of them play in those early conversations?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_PREC_Q01_P01",
+          "probe_text": "Who else was involved in those early conversations that perhaps surprised you — someone you didn't expect to turn to?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "intergenerational_patterns"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q01_P02",
+          "probe_text": "How did the people around you shape what you thought was possible or realistic at that stage?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q01_P03",
+          "probe_text": "Were there people whose opinions felt more weighty or harder to set aside — and how did that affect you emotionally?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "identity_tensions"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "goals_expectations",
+        "informal_caregiver_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "informal_care_networks",
+        "intergenerational_patterns",
+        "autonomy_vs_dependence"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V5_PREC_Q02",
+      "version": 5,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about your partner's involvement — or the involvement of someone close to you — when you were deciding whether and when to try for a baby. How did those conversations go, and who held the most influence?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_PREC_Q02_P01",
+          "probe_text": "Were there moments when you and your partner — or people close to you — wanted different things? How did you navigate that?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "partner_role",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q02_P02",
+          "probe_text": "Who else was involved in those family-planning discussions beyond your immediate relationship — family members, friends, or even online communities?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "intergenerational_patterns"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q02_P03",
+          "probe_text": "How did that affect your sense of ownership over the decision?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "identity_tensions"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "decision_making",
+        "informal_caregiver_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "partner_role",
+        "autonomy_vs_dependence",
+        "intergenerational_patterns"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent"
+      ]
+    },
+    {
+      "question_id": "V5_PREC_Q03",
+      "version": 5,
+      "journey_phase": "preconception",
+      "question_text": "Think about the healthcare professionals you saw before you became pregnant — a GP, a fertility specialist, or anyone else. Tell me about those relationships. Who felt most helpful, and who felt more distant?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_PREC_Q03_P01",
+          "probe_text": "Can you describe a specific moment with a healthcare professional where you felt truly heard — or not heard at all?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q03_P02",
+          "probe_text": "How did those early professional relationships shape your expectations of the care you'd receive during pregnancy?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q03_P03",
+          "probe_text": "Were there structural things — waiting times, cost, location, language — that affected which professionals you were able to see?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "power_dynamics"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "hcp_interactions",
+        "risks_barriers"
+      ],
+      "target_servqual_dimensions": [
+        "assurance",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "trust_distrust",
+        "structural_barriers",
+        "dignity_respect"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "72892002",
+        "161744009"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk",
+        "if_language_barrier",
+        "if_rural"
+      ]
+    },
+    {
+      "question_id": "V5_PREC_Q04",
+      "version": 5,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about the people — online or offline — who you turned to for information and reassurance before you got pregnant. Who was most influential, and how did their advice or stories shape what you believed about pregnancy?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_PREC_Q04_P01",
+          "probe_text": "Who else was involved in pointing you toward those sources — a friend, a family member, or did you find them yourself?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q04_P02",
+          "probe_text": "How did online communities or social media compare to advice from people in your personal life — did they fill different gaps?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q04_P03",
+          "probe_text": "Were there times when the information you found created anxiety or confusion rather than reassurance? How did that affect you?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "digital_information_seeking",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "digital_information",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "reliability"
+      ],
+      "target_latent_dimensions": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "autonomy_vs_dependence"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V5_PREC_Q05",
+      "version": 5,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about the women in your family — your mother, grandmothers, sisters, or aunts — and how their experiences of pregnancy and motherhood influenced your own thinking before you even started trying.",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_PREC_Q05_P01",
+          "probe_text": "How did their stories — whether positive or difficult — show up in your own expectations or fears?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q05_P02",
+          "probe_text": "Were there things you consciously wanted to do differently from the women before you — and where did that desire come from?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q05_P03",
+          "probe_text": "How did that affect your relationships with those family members once you began your own journey?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "informal_caregiver_interactions"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "intergenerational_patterns",
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "161744009"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_high_risk"
+      ]
+    },
+    {
+      "question_id": "V5_PREC_Q06",
+      "version": 5,
+      "journey_phase": "preconception",
+      "question_text": "Tell me about a time — if there was one — when trying to conceive felt harder than you expected. Who was around you during that period, and how did those relationships change or hold steady?",
+      "question_type": "relational",
+      "probes": [
+        {
+          "probe_id": "V5_PREC_Q06_P01",
+          "probe_text": "Who else was involved in supporting you — or perhaps adding to the pressure — at that time?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q06_P02",
+          "probe_text": "How did the healthcare system respond to your concerns during that time — did it feel like a relationship or more like a series of transactions?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "continuity_of_care"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V5_PREC_Q06_P03",
+          "probe_text": "Were there barriers — financial, geographical, or systemic — that shaped who you could turn to or what care you could access?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "risks_barriers"
+      ],
+      "target_servqual_dimensions": [
+        "empathy",
+        "responsiveness"
+      ],
+      "target_latent_dimensions": [
+        "structural_barriers",
+        "trust_distrust",
+        "informal_care_networks"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "161744009",
+        "17369002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_miscarriage_history",
+        "if_high_risk",
+        "if_single_parent"
+      ]
+    }
+  ],
+  "adapted_at": "2026-03-17T23:25:28.342151"
+}

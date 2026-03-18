@@ -1,0 +1,878 @@
+{
+  "session_id": "S_226",
+  "status": "completed",
+  "persona_id": "comp_095",
+  "persona_name": "Laronda",
+  "persona_journey_stage": "third_trimester",
+  "persona_risk_level": "high",
+  "persona_vulnerability_flags": [
+    "fear_of_childbirth",
+    "high_risk_medical",
+    "previous_trauma"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 5,
+  "questionnaire_strategy": "Relational / Stakeholder Map",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T02:26:48.475263",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Laronda, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're getting closer to your due date, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in seat and tucks one leg underneath me, offering a small, tired smile*\n\nYeah, okay. Thanks for asking. I'll be honest—talking about this is... it's not easy, but maybe it should be.\n\n*pauses, looking down at my swollen ankles*\n\nI'm thirty-six weeks right now, and I keep checking my watch like the baby's going to arrive early just out of spite. With my first four pregnancies, I thought I had this figured out, you know? But this time feels completely different. The pre-eclampsia diagnosis hit me harder than I expected. I think because I *understand* what it means—all the mechanisms, the cascade of problems that can happen—it's almost worse than if I didn't know.\n\n*rubs temples*\n\nMy background in genetics means I'm probably my own worst enemy sometimes. I'll get a test result and immediately start spiraling through worst-case scenarios before my doctor even calls to explain it. My husband keeps telling me I need to just... trust the process. But trusting feels impossible when you've had complicated deliveries before. There were emergencies with some of my other babies that I'm still processing, honestly.\n\n*looks up, making brief eye contact*\n\nI want to be the \"good patient\" who just does what she's told. But instead, I'm the one asking too many questions, showing up with printed research, probably driving everyone crazy. I just need someone to help me feel like this will actually be okay.",
+      "responding_to_question_id": null,
+      "input_tokens": 827,
+      "output_tokens": 326
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the midwives, doctors, and other healthcare professionals who were part of your pregnancy care. Which relationships felt most important to you, and why?",
+      "question_id": "V5_PREG_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*exhales slowly, considering*\n\nMy OB—Dr. Patterson—she's been with me for three pregnancies now, so there's history there. And I think that matters, especially with what I've been through. She doesn't talk down to me, which I appreciate. When I come in with questions about my NIPT results or the umbilical artery flow studies, she actually *engages* with the data instead of just telling me to stop worrying. That's huge for someone like me.\n\n*fidgets with the edge of my sleeve*\n\nBut here's the thing... I'm not sure she fully gets how scared I am. Like, clinically, yes. She knows the risks. She adjusts my medications, monitors me closely. But there's this emotional piece that feels... I don't know, sort of glossed over? She's efficient. Professional. Which is good, but sometimes I leave appointments feeling like I've been processed rather than *heard*.\n\n*voice gets quieter*\n\nI wish there was someone—maybe a therapist, a counselor, someone trained in pregnancy trauma—who was actually integrated into my care team. Not just suggested as an afterthought. Because the anxiety isn't just about the numbers on my blood pressure cuff. It's about what happened with my other deliveries, the way my body responded. Those memories live in my body, you know?\n\n*looks up*\n\nMy midwife for some check-ins—she's better at the listening part. More present. But I don't get to see her consistently, and that's frustrating. I need *both*—the clinical expertise and someone who sits with the fear.",
+      "responding_to_question_id": "V5_PREG_Q01",
+      "input_tokens": 1189,
+      "output_tokens": 359
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in your care that you'd like to mention — community midwives, consultants, support workers, interpreters?",
+      "question_id": null,
+      "probe_id": "V5_PREG_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*shakes head slightly*\n\nHonestly? It's mostly just been Dr. Patterson and the occasional midwife at the clinic for routine visits. There's no real... team, I guess. It's very siloed.\n\n*leans back*\n\nI haven't had an interpreter—I speak English fluently, obviously—but I *have* needed what I'd call a \"medical translator\" in a different way. Someone who could help me *interpret* my own anxiety and trauma through a maternity care lens. That's not really a role that exists in the system I'm in, though.\n\nThere's a perinatal mental health screening they did once—just a quick questionnaire at an appointment. The OB's nurse handed it to me, I filled it out, and then... nothing. No follow-up. No referral. Just checked a box that I was \"screened.\"\n\n*voice tightens slightly*\n\nWhat I really needed was someone who understood both the clinical side *and* trauma—someone who could sit between me and Dr. Patterson and say, \"Here's what Laronda knows intellectually about her condition, and here's what her nervous system is experiencing.\" But that person doesn't exist in my care.\n\n*rubs forehead*\n\nI've had to do a lot of the emotional labor myself. My husband tries, but he's not equipped for this either. And I'm too tired to keep being my own case manager on top of everything else. That's what's missing—someone whose actual *job* is to hold the psychological piece while everyone else manages the medical piece.",
+      "responding_to_question_id": "V5_PREG_Q01_P01",
+      "input_tokens": 1579,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your partner's — or your closest support person's — involvement during your pregnancy appointments and day-to-day experience. How did their presence or absence shape things for you?",
+      "question_id": "V5_PREG_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "partner_role",
+        "informal_care_networks",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*softens a bit, but there's an edge of frustration*\n\nMy husband, Mark—he tries. He really does. He comes to most of my appointments, takes notes, asks the doctor questions. He's genuinely invested. But there's this... gap between us right now that I hate admitting.\n\n*looks away*\n\nHe sees this pregnancy as something to manage and get through. He looks at the nursery we're setting up, thinks about the baby, and feels hope. Which is beautiful, honestly. But I'm living in a completely different emotional reality. I'm cycling through worst-case scenarios while he's trying to calm me down, and it just creates this tension where I feel like he doesn't *get* how serious my fear is.\n\n*voice wavers slightly*\n\nWhen I'm obsessing over my blood pressure readings or crying about what happened during my third delivery, he says things like, \"The doctors have it under control\" or \"You're going to be fine.\" And I know he means well, but it makes me feel... unseen? Like my legitimate medical anxiety is just anxiety he needs to fix, not something real he needs to witness.\n\n*picks at a thread on my pants*\n\nDay-to-day, he's there. But we're not really *together* in this. He goes to work, I'm home monitoring my symptoms, checking my numbers obsessively. There's no one really holding space for how isolating this is—being high-risk, knowing too much, terrified all the time.\n\n*looks up*\n\nI think I need him to just... sit with me in the fear sometimes, instead of trying to logic it away.",
+      "responding_to_question_id": "V5_PREG_Q02",
+      "input_tokens": 1963,
+      "output_tokens": 360
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your relationship with each other — did pregnancy bring you closer together or create tensions?",
+      "question_id": null,
+      "probe_id": "V5_PREG_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*long pause, eyes getting glassy*\n\nIt's created tension. Real tension.\n\n*voice becomes more measured, careful*\n\nI love Mark. He's a good man. But... we're not communicating about the hard stuff the way we need to. He thinks if he's present at appointments and supportive on the surface, that should be enough. And maybe for other pregnancies it would have been. But this one is different because *I'm* different. I'm more afraid. More aware of what can go wrong.\n\n*wraps arms around myself*\n\nLast week, I had a breakdown after a clinic visit—nothing was wrong, just the usual monitoring—but I couldn't stop crying. He held me, but then twenty minutes later he was trying to distract me, make me feel better, move on. And I just... I needed to stay in it for a while longer. To process it. He couldn't do that, and I felt abandoned even though he was right there.\n\n*voice cracks slightly*\n\nThe worst part is, I feel like I'm burdening him. Like my fear is too much, too clinical, too constant. So I start hiding it. I'll check my blood pressure in the bathroom instead of asking him to help me track it. I'll cry quietly at night instead of telling him I'm terrified about delivery. And that distance—that's what's really damaging us.\n\n*looks directly at me*\n\nWe need help. Professional help, not just him being supportive. Because right now, I'm essentially going through this alone, even though he's sleeping next to me every night.",
+      "responding_to_question_id": "V5_PREG_Q02_P01",
+      "input_tokens": 2346,
+      "output_tokens": 348
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people — friends, family, online communities — who you turned to most during your pregnancy when you had questions or worries. How did those relationships work alongside your formal care?",
+      "question_id": "V5_PREG_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "motivations"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*lets out a bitter laugh*\n\nThat's the thing—I don't really have that. Not in a healthy way, anyway.\n\n*shifts uncomfortably*\n\nMost of my friends don't have kids, or their pregnancies were straightforward. When I try to explain what I'm dealing with—the pre-eclampsia, the trauma from before, the anxiety—their eyes kind of glaze over. They mean well, but they'll say stuff like, \"Oh, my sister had high blood pressure and everything was fine!\" Like that's supposed to comfort me. It doesn't. It just makes me feel like I'm overreacting.\n\n*rubs face*\n\nMy mom is... complicated. She had difficult pregnancies too, and instead of that being bonding, it just amplifies my fear. She keeps telling me horror stories about what happened to her, which is NOT helpful right now. I've had to set boundaries with her, which creates guilt because she's trying to connect.\n\n*hesitates, then continues quietly*\n\nI'm on a couple of online forums for high-risk pregnancies. That's actually where I feel most understood, ironically. People there *get* it. They understand the constant monitoring, the anxiety between appointments, the way you're hyperaware of every symptom. But there's a problem—half the time people are sharing worst-case scenarios, and I spiral harder. And none of it replaces actual human connection.\n\n*looks down*\n\nI think I'm too isolated. Too much in my own head with my genetics background, too afraid to burden people who wouldn't understand anyway. That isolation is making everything feel heavier.",
+      "responding_to_question_id": "V5_PREG_Q03",
+      "input_tokens": 2736,
+      "output_tokens": 355
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about a time during your pregnancy when you had to make a significant decision about a test, a procedure, or a care option. Who was involved in that decision with you, and how did each person's input land?",
+      "question_id": "V5_PREG_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, clearly steeling myself*\n\nThe NIPT testing. That was... that was big for me.\n\n*fidgets with hands*\n\nWhen they offered it at my first trimester screening, I immediately said yes. I mean, I have a genetics background—I know what these tests can detect, the sensitivity, the specificity. I thought I wanted the information. But then the results came back with a \"low risk\" flag that wasn't quite as reassuring as it should have been, and I completely spiraled.\n\n*voice becomes more agitated*\n\nI spent three days analyzing the actual numbers—the z-scores, the fetal fraction percentages. I was looking up chromosome variants that the report didn't even mention. Dr. Patterson called to give me the results over the phone, very matter-of-fact: \"Everything looks good, Laronda. Low risk across the board.\" And I said, \"But what about the borderline markers on...\" and she kind of cut me off. Said I was reading too much into data that was designed for a different purpose.\n\n*pauses, clearly hurt*\n\nThat made me feel stupid. Like my knowledge was a liability instead of an asset. Mark thought I should just accept the results and move on. My mom wanted me to do an amniocentesis for definitive answers, which felt like overkill. And I was stuck in the middle, knowing enough to ask the right questions but not having anyone who actually wanted to *engage* with those questions.\n\n*looks up, frustrated*\n\nNobody asked me, \"Laronda, what information do *you* need to feel safe?\" It was all about what the tests could tell us, not about what I actually needed psychologically to move forward. I made the decision to decline further testing, but I'm not sure it was the right one. I'm still not sure.",
+      "responding_to_question_id": "V5_PREG_Q04",
+      "input_tokens": 3140,
+      "output_tokens": 402
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your sense of being in control of your own care — did you feel like the decision was truly yours?",
+      "question_id": null,
+      "probe_id": "V5_PREG_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*jaw tightens, eyes getting watery*\n\nNo. Not really.\n\n*voice becomes quieter, more vulnerable*\n\nI mean, technically, yes—nobody forced me to do anything. But that's different from actually feeling like I had agency, you know? It felt more like I was choosing between bad options that other people had already framed for me.\n\n*stands up, walks to the window, then sits back down*\n\nDr. Patterson's approach was basically, \"Here's what the data shows, here's what we recommend.\" Very clinical, very final. Like there was one right answer and I was being irrational for questioning it. Mark kept asking, \"What do the doctors think?\" Like my own knowledge and instincts didn't matter. And my mom was pushing her own agenda based on her fears, not mine.\n\n*voice cracks*\n\nWhat I needed was someone to say, \"Laronda, you understand this stuff. What are *you* worried about? What would make you feel safe? Let's figure this out together.\" Instead, I felt like I had to shrink myself down. Hide how much I actually know. Stop asking questions that made people uncomfortable.\n\n*wipes eyes*\n\nBy the time I \"made\" that decision, I was so exhausted and invalidated that I don't even know if it was my choice anymore or just me giving up. And now I live with this low-level doubt about whether I made the right call, which feeds back into the anxiety.\n\n*looks directly at me, voice steadier but raw*\n\nThat's the thing nobody tells you about high-risk pregnancies—you lose control not just physically, but psychologically. And nobody seems to notice.",
+      "responding_to_question_id": "V5_PREG_Q04_P01",
+      "input_tokens": 3570,
+      "output_tokens": 368
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how your relationships with people outside the healthcare system — your employer, your community, your cultural or faith community — shaped your pregnancy experience. Who was supportive, who added pressure?",
+      "question_id": "V5_PREG_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "intergenerational_patterns",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath*\n\nWork has been... complicated. I'm between jobs right now, actually. I was in a genetics counseling role—ironic, given my situation—but the stress of this pregnancy and the high-risk label made it impossible to keep up. My employer wasn't exactly hostile, but there wasn't flexibility either. It was like, \"Can you do the job or not?\" And I couldn't, so I stepped back.\n\n*voice becomes defensive*\n\nThat decision itself was loaded with guilt. I felt like I was failing—as an employee, as a provider of income for my family. And culturally, in my family, there's this expectation that you keep working, keep pushing, don't make a fuss. My parents kept asking when I was going back, like taking time for my health during a high-risk pregnancy was indulgent.\n\n*rubs arms*\n\nAs for faith community—we're not particularly religious, so that's not really a factor. But I do feel this weird isolation from other moms in general. Like, I can't just be pregnant the way they are. I can't go to prenatal yoga or mommy groups without feeling like a cautionary tale waiting to happen. The fear keeps me home, keeps me separate.\n\n*voice gets quieter*\n\nMy neighborhood friends know I'm high-risk, but they don't know what to do with that information. They'll invite me to things and I have to decline because of monitoring appointments or because my anxiety is too high. I think they've stopped trying. And that loneliness—that's real pressure too, in a way. It makes me feel like my body has somehow excluded me from normal life.",
+      "responding_to_question_id": "V5_PREG_Q05",
+      "input_tokens": 3980,
+      "output_tokens": 365
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the moments in your pregnancy when your body was being examined or discussed by healthcare professionals. Who was present during those interactions, and how did their presence affect how you felt?",
+      "question_id": "V5_PREG_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "body_image_autonomy",
+        "dignity_respect",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, wrapping arms tighter around myself*\n\nThe ultrasounds are the worst. Every single time.\n\n*voice becomes quieter*\n\nThere's this moment when the tech is measuring things, clicking around on the screen, and I can't see what they're seeing. They're silent. And in that silence, my brain fills in every horrible possibility. Is the baby okay? Are they seeing something? Meanwhile, Mark is sitting next to me trying to look at the screen like he understands what he's looking at, and I'm internally screaming.\n\n*pauses, clearly struggling*\n\nLast week during my growth scan, the tech took longer than usual. Didn't say anything. Just kept measuring the same thing over and over. Mark grabbed my hand—which should have been comforting, but honestly it made me more panicked because I could feel *his* anxiety too. He was scared but trying to hide it. And I'm lying there, exposed, with this cold gel on my belly, feeling completely powerless and watched.\n\n*voice tightens*\n\nWhen Dr. Patterson came in to review the images, she was all business. \"Everything looks appropriate for gestational age.\" But she said it while I was still half-undressed, sitting up trying to compose myself. There was no space for me to just... breathe. No acknowledgment that the process itself is traumatizing for someone like me with my history.\n\n*looks down*\n\nMark being there sometimes makes it worse, actually. I feel like I have to perform normalcy for him while my body is being scrutinized. And when he's *not* there, I feel completely alone during the examination. Either way, I'm exposed and vulnerable and nobody's really tending to that emotional piece.\n\n*voice becomes very small*\n\nI just want someone to ask if I'm okay before they move on to the next measurement.",
+      "responding_to_question_id": "V5_PREG_Q06",
+      "input_tokens": 4385,
+      "output_tokens": 408
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about who was involved in helping you navigate the maternity system — booking appointments, understanding your options, knowing your rights. Who helped you find your way, and who made it harder?",
+      "question_id": "V5_PREG_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "autonomy_vs_dependence",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs bitterly*\n\nThat would be... me. Just me.\n\n*leans forward, elbows on knees*\n\nI've basically had to become my own patient advocate because no one else was doing it. I'm the one calling to schedule appointments, following up on test results, keeping track of all the different recommendations from different providers. I have a spreadsheet—literally a spreadsheet—tracking my blood pressure readings, appointment dates, medication changes, all of it.\n\n*voice becomes frustrated*\n\nThe clinic's scheduling system is a nightmare. I'll call, get put on hold, transferred around. Once I was told my appointment was at 2 PM when it was actually at 3 PM, and I showed up late because nobody clarified. Small thing, but when you're already anxious and trying to manage everything yourself, it's one more failure point.\n\n*rubs temples*\n\nAs for understanding my options—honestly, I've had to educate *myself* about what options even exist. Dr. Patterson presents things very definitively, like \"This is what we're doing.\" There's no real conversation about alternatives. Like, could I choose a midwife-led birth plan? Could I do continuous monitoring versus intermittent? I don't even know what's available to me because nobody sat down and explained the full picture.\n\n*voice becomes harder*\n\nMy rights? I don't even know what those are in Massachusetts. Is there a patient advocate I could call? Should there be? I've never been offered one. Mark suggested I look things up online, but I'm so exhausted from managing everything else that the idea of becoming my own legal researcher on top of everything feels impossible.\n\n*looks up, voice weary*\n\nI'm doing all the navigation alone, and I'm drowning.",
+      "responding_to_question_id": "V5_PREG_Q07",
+      "input_tokens": 4835,
+      "output_tokens": 388
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who were with you — or who you wished had been with you — during your labour and birth. Who did each person support, and what difference did their presence make?",
+      "question_id": "V5_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "dignity_respect",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, eyes distant*\n\nI... I haven't given birth yet. I'm still thirty-six weeks. But honestly?\n\n*voice becomes shaky*\n\nThat's what terrifies me most right now. The thought of labor, of delivery. Because I remember the other times, and some of those memories are... they're traumatic.\n\n*wraps hands around stomach protectively*\n\nWith my third baby, things escalated quickly. There were complications, and suddenly there were all these people in the room—nurses, residents, my OB, an anesthesiologist. It was chaos and bright lights and urgent voices, and Mark was trying to be supportive but he looked as panicked as I felt. I needed him to be my anchor, but he was just as lost as I was.\n\n*voice cracks*\n\nI don't want that again. But I also don't know how to prevent it. And I'm terrified that with the pre-eclampsia, things could get even worse this time.\n\n*looks directly at me, vulnerability raw*\n\nWhat I need during labor is someone who knows me. Someone who understands my history, my trauma, my fears. Someone who will advocate for me if things get intense, who won't just defer to medical protocol but will *fight* for my autonomy and dignity. I need Mark there, but I also need him to be more than just present—I need him to be my voice when I can't find mine.\n\n*voice becomes very quiet*\n\nI'm dreading it, honestly. I don't know if I can do this again.",
+      "responding_to_question_id": "V5_BIRTH_Q01",
+      "input_tokens": 5265,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the midwives and doctors who cared for you during your birth. Were there particular individuals whose presence or approach made a lasting impression — positive or negative?",
+      "question_id": "V5_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, realizing the confusion*\n\nOh, I... I'm sorry, I think I wasn't clear. I haven't had this baby yet. I'm still waiting. Thirty-six weeks, remember?\n\n*fidgets nervously*\n\nBut you're asking me to think about what's coming, and that's exactly what keeps me up at night. Because I have memories from my other births—four of them—and some of those experiences left scars.\n\n*voice becomes reflective, almost haunted*\n\nWith my second baby, there was a resident who was rough during a cervical check. I remember tensing up, and instead of slowing down or asking if I was okay, she just powered through. And I felt so... violated. Humiliated. My OB at the time wasn't there—it was just this resident and a nurse who didn't intervene.\n\n*looks away*\n\nThat's what I'm afraid will happen again. That during labor, when I'm vulnerable and in pain, someone will treat my body like a problem to solve rather than a person to care for. That Mark will be there but helpless. That Dr. Patterson won't be the one delivering—it might be someone I've never met—and they won't know my history, my fears, my trauma.\n\n*voice becomes urgent*\n\nI need to know who's going to be there when this happens. I need to have conversations *now* about how I want to be treated, what my boundaries are, what support I actually need. But I don't even know how to have those conversations or with whom.\n\n*looks at me directly*\n\nThat's what terrifies me most—the unknown people and the unknown moment.",
+      "responding_to_question_id": "V5_BIRTH_Q02",
+      "input_tokens": 5646,
+      "output_tokens": 371
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your partner's — or support person's — role during your birth. What did they bring to that experience, and what do you think they found most challenging?",
+      "question_id": "V5_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "partner_role",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a long breath, clearly wrestling with difficult feelings*\n\nI haven't given birth to this baby yet, so I can't tell you how Mark will actually show up. But based on our other births and how things are between us right now... I'm worried.\n\n*voice becomes uncertain*\n\nWith my previous deliveries, Mark was physically present, but emotionally he was kind of... adrift. He didn't know what to do with my pain. He'd try to comfort me, but there's this helplessness in his eyes that made me feel like I was burdening him with my suffering, you know? Like my labor was something he had to *endure* rather than something we were doing together.\n\n*rubs face*\n\nWhat he found challenging was the intensity of it all. The screaming, the fear, the medical chaos. He'd try to be the calm one, but I could feel his anxiety underneath. And I needed him to be *with* me in the intensity, not standing apart from it trying to manage it.\n\n*voice becomes more vulnerable*\n\nThis time, I'm terrified it'll be worse because of the pre-eclampsia complications. If things go south fast—if I need emergency interventions—I'm not sure Mark knows how to advocate for me or how to hold space for trauma while it's happening. He'll probably just defer to the doctors, and I'll be alone in my fear even with him standing right there.\n\n*looks down*\n\nI haven't told him how scared I am about this part. How much I need him to show up differently than he has before. And I don't know how to have that conversation without making him feel like he failed me.",
+      "responding_to_question_id": "V5_BIRTH_Q03",
+      "input_tokens": 6055,
+      "output_tokens": 364
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about a moment during your birth when a decision needed to be made quickly or under pressure. Who was involved in that decision, and how did you experience your role in it?",
+      "question_id": "V5_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*hesitates, then speaks carefully*\n\nAgain, I haven't had this baby yet. But I've *lived* through moments like that before, and that's exactly why I'm so afraid.\n\n*voice becomes tense*\n\nWith my third delivery, things changed really fast. My blood pressure spiked—ironically, similar to what's happening now—and suddenly there were conversations happening around me about induction, about monitoring, about risks. And I was in labor, exhausted, in pain, and these decisions were being made *at* me, not *with* me.\n\n*leans forward, intensity rising*\n\nI remember asking questions—\"What exactly are you recommending? Why?\" And the attending just said, \"We need to move quickly. Trust us.\" And Mark looked at the doctor, not at me, like he was waiting for permission to agree with them. I felt completely erased from my own medical crisis.\n\n*voice cracks*\n\nThe worst part was, I *understood* the clinical reasoning. I could have engaged with the data, asked smart questions, been part of that decision-making process. But there was no time, or they didn't think I needed time, or they just didn't want to deal with a patient who asks too many questions when things are urgent.\n\n*looks directly at me, raw vulnerability showing*\n\nThat's what haunts me. The feeling that my body and my baby were being managed while I was... sidelined. And now, facing this delivery with pre-eclampsia risks, I'm terrified it'll happen again. That I'll be too scared or too medicated to advocate for myself, and nobody else will do it for me.",
+      "responding_to_question_id": "V5_BIRTH_Q04",
+      "input_tokens": 6459,
+      "output_tokens": 363
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how the physical environment of your birth — the room, the equipment, the sounds and smells — felt in relation to the people around you. How did the space and the relationships interact?",
+      "question_id": "V5_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "dignity_respect",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "*stares down at hands, breathing becoming shallow*\n\nI... I can smell it right now, actually. Just thinking about it.\n\n*voice becomes very quiet*\n\nThat hospital smell—the disinfectant, the medical equipment—it triggers something in me. It's like my nervous system goes back to those moments where everything became urgent and scary. Even walking into my clinic for routine appointments, that smell hits me and I have this visceral panic response.\n\n*wraps arms around self*\n\nThe delivery rooms themselves are sterile. Cold. There's all this equipment around you—monitors, IV poles, machines beeping—and it's supposed to make you feel safe, I guess. But for me, it just amplifies the sense that my body is a problem that needs to be managed by technology rather than... I don't know, held and supported by actual people.\n\n*voice becomes more agitated*\n\nWith my third birth, I remember being in this bright, clinical room with all these people coming in and out. The fluorescent lights felt harsh. And Mark was sitting in this uncomfortable chair in the corner, separate from me. The physical distance between us—even though he was right there—it felt like a metaphor for how alone I was in that moment.\n\n*looks up, eyes glistening*\n\nI need the people around me to create a sense of calm, of safety, of protection. But how can they do that when the *space itself* is designed for emergency response, not for human connection? The beeping machines, the cold metal, the clinical voices...\n\n*voice becomes very small*\n\nI don't know how to feel safe in that environment, no matter who's there with me.",
+      "responding_to_question_id": "V5_BIRTH_Q05",
+      "input_tokens": 6866,
+      "output_tokens": 363
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who knew about your birth preferences or plan beforehand — your midwife, your partner, your family — and how well those preferences were known and respected in the room on the day.",
+      "question_id": "V5_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs, but there's no humor in it*\n\nI don't have a birth plan. Not really.\n\n*shifts uncomfortably*\n\nI mean, I've *thought* about what I want. I know I don't want unnecessary interventions. I know I want to be treated with dignity. I know I want Mark to actually be my advocate, not just a bystander. But I haven't actually... written it down. Discussed it with anyone formally.\n\n*voice becomes defensive*\n\nPart of me thinks, what's the point? With pre-eclampsia, with being high-risk, do I even get to have preferences? Or are those decisions already made for me by the medical necessity of my condition? Dr. Patterson hasn't asked me about a birth plan. She's just told me what's going to happen—continuous monitoring, IV access, close watch on my blood pressure.\n\n*rubs face tiredly*\n\nAnd honestly, my knowledge of genetics and obstetrics works against me here. I know *too much* about what can go wrong. So even if I tried to write preferences, they'd probably be overly cautious or contradictory. Like, I want to labor naturally but I'm terrified of complications. I want autonomy but I'm afraid my body will betray me.\n\n*voice becomes quieter*\n\nMark doesn't know what my preferences are because I haven't articulated them. My mom would just tell me I'm being naive if I try to plan anything. And the midwife I see occasionally—we haven't had a real conversation about this either.\n\n*looks at me with exhaustion*\n\nNobody's asked me what I actually want for this birth. And I'm not sure I know how to ask for it.",
+      "responding_to_question_id": "V5_BIRTH_Q06",
+      "input_tokens": 7275,
+      "output_tokens": 378
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you first started thinking about having a baby, were there particular people — a midwife, GP, or someone else — whose opinion you felt you could really rely on? What made you feel you could trust them?",
+      "question_id": "Q14",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, thinking back, expression softens slightly*\n\nBefore all of this—before the high-risk label, before the pre-eclampsia—I had a midwife I really liked with my second pregnancy. Her name was Susan. She was the complete opposite of Dr. Patterson.\n\n*sits up a little straighter, remembering*\n\nSusan would sit down. Like, actually *sit* with me. She'd ask about my life, my fears, not just my vital signs. And when I'd bring up something clinical or ask a question, she didn't make me feel stupid for knowing things. She'd say, \"Okay, you understand the science—now let's talk about how you're *feeling* about it.\"\n\n*voice becomes wistful*\n\nShe wasn't there for my delivery that time—I ended up with someone else—but during pregnancy, she was the one person who made me feel like I could breathe a little. Like my anxiety was valid, not something to be medicated away or minimized.\n\n*looks down*\n\nI haven't seen her since. She doesn't work at my current practice. And I think that's part of why this pregnancy feels so isolating. I don't have that person anymore—the one who got both the clinical and emotional piece.\n\n*voice becomes frustrated*\n\nWhat made her trustworthy was that she listened more than she talked. She didn't have all the answers ready. She sat with uncertainty alongside me instead of trying to eliminate it. And that made me feel... safe? Like my body and my mind were both being cared for, not just monitored.\n\n*looks up sadly*\n\nI wish I could find that again.",
+      "responding_to_question_id": "Q14",
+      "input_tokens": 7701,
+      "output_tokens": 364
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there any moments where that trust felt shaken, or where you felt your concerns weren't being taken seriously?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, then nods slowly*\n\nActually, yes. Even with Susan.\n\n*voice becomes more guarded*\n\nThere was a moment during my second pregnancy when I was having some bleeding in the second trimester. It wasn't heavy, but I was terrified. And when I called Susan, she was... reassuring, maybe too reassuring? She said, \"This happens sometimes, we'll monitor it,\" very calmly. And I appreciated her calm, but part of me needed her to take my fear more seriously.\n\n*fidgets with hands*\n\nI remember thinking, \"Does she understand how scared I am right now? Or is she just defaulting to the clinical 'it's probably fine' response?\" There was this moment where I felt like maybe my anxiety was being dismissed as overreaction rather than understood as legitimate concern.\n\n*voice becomes quieter*\n\nAnd honestly, looking back, I think that's when the seeds of doubt started. Because even someone I trusted couldn't quite bridge that gap between my clinical knowledge and my emotional reality. She was good at the emotional piece, but when I started asking specific questions about risk percentages or what could cause bleeding, she'd kind of redirect back to reassurance instead of engaging with the data.\n\n*looks away*\n\nSo even trust has these cracks in it. And I think that's part of why I'm so isolated now. I learned that even people I trusted couldn't fully hold both sides of who I am—the person who understands genetics *and* the person who is terrified.\n\n*voice becomes very small*\n\nMaybe I'm just... too much for anyone to really get.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 8091,
+      "output_tokens": 352
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Thinking back to conversations you had with healthcare professionals before you became pregnant — whether about timing, fertility, or your overall health — did you ever feel like decisions were being made for you rather than with you?",
+      "question_id": "Q15",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a sharp breath, clearly hitting something raw*\n\nOh. Yeah. Before this pregnancy, actually.\n\n*leans back, eyes distant*\n\nAfter my fourth baby, I had some postpartum complications—nothing catastrophic, but enough that my OB at the time suggested I might want to think carefully about another pregnancy. She used words like \"advanced maternal age\" and \"increased risks\" and kind of... painted this picture of how difficult another pregnancy could be.\n\n*voice becomes defensive*\n\nAnd I get it. Medically, she wasn't wrong. But the way she said it felt like she was already deciding *for* me that I shouldn't have another baby. Like my desire to expand my family was being weighed against clinical statistics, and the statistics were winning the conversation.\n\n*rubs arms*\n\nI didn't feel like we were having a discussion about my values, my family planning goals, what I actually wanted. It was more like she was informing me of the risks and implying I'd be irresponsible to proceed. Which, you know, maybe I was. Maybe I made a bad choice getting pregnant anyway.\n\n*voice cracks slightly*\n\nBut that decision—to have this fifth baby—it should have been *mine*. Not something I was pressured away from or tacitly approved despite warnings. I needed someone to say, \"Here are the risks. Here's what support you'd need. What do *you* want to do?\" Instead, I felt judged for my choice before I even made it.\n\n*looks up, pain in eyes*\n\nAnd now I'm living with that doubt. Like maybe I shouldn't have done this.",
+      "responding_to_question_id": "Q15",
+      "input_tokens": 8488,
+      "output_tokens": 358
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before you became pregnant, how did you feel about your body — particularly in relation to the idea of pregnancy and everything that comes with it? Was that something you talked about openly with anyone?",
+      "question_id": "Q16",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "*long silence, clearly wrestling with something deep*\n\nI... that's a hard question.\n\n*voice becomes very quiet*\n\nBefore this pregnancy, after four kids, my body felt like it had done its job. It had carried babies, delivered them, recovered. But there was also this underlying sense of... fatigue? Not just physical, but like my body had proven it could do difficult things, which meant I couldn't really say no to doing them again.\n\n*wraps hands around stomach protectively*\n\nI never really talked openly about it with anyone. Mark would say things like, \"Your body is amazing,\" which is sweet but also kind of... dismissive? Like, yes, it's amazing at reproduction, but what about the rest of me? What about the toll it takes? What about the fact that I'm *terrified* of what it's capable of doing wrong?\n\n*voice becomes more raw*\n\nMy background in genetics means I understand my body at this cellular level. I know about chromosomal abnormalities, about placental insufficiency, about how easily things can spiral. And that knowledge... it's like living in my body with constant dread. Like I'm waiting for it to fail me.\n\n*looks down*\n\nI never said that to anyone because it sounds ungrateful. I have four healthy children. I should be thankful my body \"works.\" But the truth is, I've been terrified of my body for years. Terrified of what it might do, what it might fail at. And nobody asked me about that fear before I got pregnant again.\n\n*voice becomes very small*\n\nI think I was already grieving this body before the pre-eclampsia even happened.",
+      "responding_to_question_id": "Q16",
+      "input_tokens": 8887,
+      "output_tokens": 365
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you were searching online or using apps for information before pregnancy, how did you decide what to trust? Were there sources that felt reliable to you, and others that didn't?",
+      "question_id": "Q17",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods, leaning forward with a bit more energy*\n\nOh, this is where my genetics background actually becomes a curse.\n\n*pulls out phone, then puts it away*\n\nI know how to read medical literature. I know about peer review, sample sizes, statistical significance. So when I'm looking things up—and I'm always looking things up—I can spot the difference between a legitimate study and some mommy blog making claims. That should be an advantage, right?\n\n*voice becomes frustrated*\n\nBut it's not. Because now I'm reading primary literature about pre-eclampsia at three in the morning, looking at maternal mortality rates, understanding exactly how quickly things can deteriorate. I find the *right* sources—PubMed, ACOG guidelines, peer-reviewed journals—and they terrify me more than the unreliable stuff would.\n\n*rubs temples*\n\nI trust medical databases because I understand them. But that trust is a double-edged sword. I'm not just getting reassurance from reliable sources, I'm getting worst-case data that feeds my anxiety. And there's nobody to help me contextualize it, to say, \"Yes, that's accurate information, but here's what it actually means for *you specifically.*\"\n\n*voice becomes quieter*\n\nThe apps—like the pregnancy tracking ones—they're useless to me. Too simplified. But the obstetric forums where people are discussing actual case studies? Those feel reliable but they're also echo chambers of fear. Everyone's sharing their complications.\n\n*looks up, exhausted*\n\nI think the problem is I'm too knowledgeable to be comforted by simple reassurance, but not knowledgeable enough to feel truly confident in my own interpretations. So I'm stuck in this anxious limbo, researching endlessly, trusting nothing completely.",
+      "responding_to_question_id": "Q17",
+      "input_tokens": 9291,
+      "output_tokens": 400
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did you ever come across advice or information that felt hard to access — perhaps because of cost, language, or just not knowing where to start?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, considering*\n\nCost hasn't been a barrier for me, thankfully. Mark has good insurance through his job, and even though I'm not working right now, we're covered. I know that's a privilege.\n\n*shifts uncomfortably*\n\nLanguage isn't an issue either—I speak English fluently. But I think there's a different kind of language barrier happening for me, actually. The medical jargon, the system itself... it's designed for people who either don't understand it or who are willing to just accept what doctors tell them.\n\n*voice becomes more reflective*\n\nFor someone like me who understands the terminology but is also drowning in anxiety? There's no real pathway. The educational materials they give you are either too dumbed-down or too technical. There's nothing that bridges the gap between \"here's what pre-eclampsia is\" and \"here's how to live with the terror of having pre-eclampsia while you understand exactly what it means.\"\n\n*leans back*\n\nAs for not knowing where to start—yeah, that's been harder. Like, I needed mental health support specifically for pregnancy trauma and medical anxiety. But how do you find a therapist who understands both? The postpartum support organizations exist, but I'm not postpartum yet. My OB's office doesn't have integrated mental health services. I'd have to search on my own, pay out of pocket probably, coordinate it myself.\n\n*voice becomes weary*\n\nThe information is technically accessible to me. But the *support* to actually process that information? That's what's missing. And that gap has been isolating.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 9723,
+      "output_tokens": 355
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before you became pregnant, were there things about your body — your weight, a health condition, your age, or anything else — that felt like they might be seen as a problem or a risk by healthcare professionals? How did that feel?",
+      "question_id": "Q18",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a breath, jaw tightening*\n\nMy age. Thirty-six isn't ancient, but it's old enough that every provider mentions it. \"Advanced maternal age,\" they call it. I hate that phrase.\n\n*voice becomes defensive*\n\nI'm healthier than I was in my twenties. I exercise, I eat well, I understand my body. But the moment I walk into a clinic, the first thing they note is that I'm thirty-six and having my fifth baby. Like those two facts automatically bump me into this high-risk category before they even examine me.\n\n*fidgets with hands*\n\nThere's this subtle judgment, I think. Not overt, but it's there. Like, \"Why are you having another baby at your age? Don't you know the risks?\" I felt it from my previous OB before this pregnancy even happened. And it made me question my own choices before I'd even made them.\n\n*voice becomes quieter*\n\nMy weight has never been flagged as a major issue, but I'm aware of how it's been noted in my charts. There's always this implication that if something goes wrong, it might be because of that. Not just a complication—a *preventable* complication, which carries shame.\n\n*looks away*\n\nAnd now with the pre-eclampsia, I wonder if they think, \"Well, what did you expect at thirty-six, having your fifth pregnancy?\" Like my body was always destined to fail me, and I should have known better.\n\n*voice cracks slightly*\n\nI never felt like my healthcare providers saw me as someone making a informed, autonomous choice. Just as a risk category with a number attached.",
+      "responding_to_question_id": "Q18",
+      "input_tokens": 10129,
+      "output_tokens": 366
+    },
+    {
+      "turn_number": 49,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did anyone ever make you feel judged or reduced to a health risk rather than seen as a whole person?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 50,
+      "role": "persona",
+      "type": "response",
+      "text": "*eyes well up, voice becomes very tight*\n\nYes. Multiple times.\n\n*takes a moment to compose herself*\n\nMy previous OB—the one before Dr. Patterson—she made me feel like a cautionary tale. After my third delivery, when I had those complications, she looked at me like I was... irresponsible? Like I'd done something to cause it. And then when I got pregnant again, she basically told me I was gambling with my life.\n\n*voice shakes*\n\nShe never asked about my mental health after that traumatic birth. Never asked what support I needed. Just kept emphasizing the risks, the statistics, the \"advanced maternal age.\" It felt like she was adding up all my risk factors and concluding that I was a problem to be managed, not a person to be cared for.\n\n*wipes eyes*\n\nAnd even Dr. Patterson, who I generally trust clinically... when I come in with anxiety or when I'm asking detailed questions, I can see it in her face. Like she's thinking, \"Here's the anxious patient again.\" Not \"Here's a woman with legitimate trauma and medical knowledge who needs support.\" Just a checkbox labeled \"high-risk, high-maintenance.\"\n\n*voice becomes harder*\n\nMy mom made it worse after my last birth. She said things like, \"I told you not to have another one,\" like I'd proven myself incapable of making good decisions. And Mark... he loves me, but sometimes when I'm spiraling, I see him looking at me like I'm this fragile, broken thing that he has to protect from herself.\n\n*looks directly at me, raw vulnerability*\n\nNobody sees *me*. They see a walking list of complications. And that's so isolating.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 10520,
+      "output_tokens": 378
+    },
+    {
+      "turn_number": 51,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before you were pregnant, how involved was your partner — or someone close to you — in conversations about trying for a baby, including any appointments or decisions about your health?",
+      "question_id": "Q19",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 52,
+      "role": "persona",
+      "type": "response",
+      "text": "*settles back, thinking*\n\nMark and I... we didn't really plan this pregnancy the way you're supposed to.\n\n*voice becomes a bit defensive*\n\nWe talked about it in this vague way—like, \"Do you want another baby?\" And he said yes, I said yes, and then it just happened. There wasn't a big, intentional conversation about timing or preparation or what we'd need to do to support a pregnancy. We just kind of... let it happen.\n\n*rubs face*\n\nAnd that's partly on me. I knew the risks. I knew my age, my history. I could have suggested we see a maternal-fetal medicine specialist beforehand, or a therapist to process my previous trauma. But I didn't. I just... got pregnant.\n\n*voice becomes quieter*\n\nMark wasn't really involved in pre-pregnancy planning because there wasn't any. He didn't come to any appointments beforehand—there were none. We didn't have conversations with my OB about how to optimize for a healthier pregnancy given my history. It was just this assumption that we'd figure it out as we went.\n\n*looks down*\n\nI think if Mark had been more involved in those early conversations—if we'd actually *prepared* together instead of just deciding together—maybe things would feel different now. Maybe he'd understand the weight of this more. Maybe I wouldn't feel so alone in carrying all this knowledge and fear.\n\n*voice becomes very small*\n\nBut we don't do that kind of planning. We're not that kind of couple. And now I'm paying for it.",
+      "responding_to_question_id": "Q19",
+      "input_tokens": 10935,
+      "output_tokens": 344
+    },
+    {
+      "turn_number": 53,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Did your partner come to any consultations with you, and if so, how did that change the dynamic in those appointments?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 54,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly*\n\nYeah, Mark comes to most of my appointments with Dr. Patterson. But it's... complicated.\n\n*shifts uncomfortably*\n\nWhen he's there, I feel like the appointment becomes about *him* understanding things instead of about *me* being heard. Like Dr. Patterson will explain something and I can see Mark nodding, processing it clinically, and then he'll ask questions like he's the one who needs reassurance. Which, I mean, he does. But it takes the focus away from my emotional experience.\n\n*voice becomes frustrated*\n\nI'll try to ask about my anxiety or how scared I am, and Mark will jump in with, \"But what do the numbers actually show?\" or \"Isn't that within normal range?\" Like he's trying to logic away my fear right there in the appointment. And Dr. Patterson will engage with *him* on that clinical discussion instead of staying with *me* in the emotional piece.\n\n*looks away*\n\nSometimes I wish he wouldn't come. Not because I don't want his support, but because his presence changes the dynamic in a way that makes me feel even less seen. The appointment becomes about reassuring *him* that everything's okay, and I'm supposed to absorb that reassurance passively.\n\n*voice becomes quieter*\n\nAnd he doesn't really advocate for me. If I ask a question and Dr. Patterson shuts it down, he doesn't push back. He just accepts the doctor's authority. So I'm left feeling like even my partner is siding with the system against me.\n\n*looks at me*\n\nIt's like having him there is supposed to feel supportive, but mostly it just highlights how alone I actually am.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 11307,
+      "output_tokens": 368
+    },
+    {
+      "turn_number": 55,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Before you became pregnant, were there moments in your interactions with the healthcare system where you felt like your voice mattered — and moments where it really didn't? I'd love to hear about both, if you're comfortable sharing.",
+      "question_id": "Q20",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 56,
+      "role": "persona",
+      "type": "response",
+      "text": "*pauses, considering carefully*\n\nThere was one moment that stands out. Years ago, after my second baby, I had a postpartum appointment with Susan—the midwife I mentioned. I was struggling with something, I can't even remember what now, and instead of just moving through the checklist, she asked me to tell her what I actually needed.\n\n*voice softens slightly*\n\nAnd I did. I told her I was terrified of my body, that the pregnancy and birth had shaken something in me. And she just... listened. Didn't try to fix it immediately. Didn't redirect to clinical outcomes. She sat with it and said, \"That makes sense. Let's figure out how to support you through that.\"\n\n*pauses, the softness fading*\n\nThat was maybe the only time I felt like my voice actually *mattered*. Like what I was saying wasn't being filtered through a medical lens first—it was just being heard as a human experience.\n\n*voice becomes harder*\n\nEvery other time? My voice didn't matter much. After my third delivery with the complications, I tried to talk about what happened, about how traumatic it was. But the focus was on the clinical outcome—the baby was fine, I was fine, so we moved on. My emotional experience of it wasn't relevant to the medical record.\n\n*leans forward, intensity rising*\n\nAnd now? With Dr. Patterson, with the clinic system, with Mark sitting there nodding along... my voice gets filtered through everyone else's framework. I'm the anxious patient. The overeducated patient. The one asking too many questions. Not someone whose experience and fear are legitimate and deserve genuine engagement.\n\n*voice becomes very quiet*\n\nI learned that my voice matters less the more you know and the more afraid you are.",
+      "responding_to_question_id": "Q20",
+      "input_tokens": 11724,
+      "output_tokens": 392
+    },
+    {
+      "turn_number": 57,
+      "role": "interviewer",
+      "type": "question",
+      "text": "As your pregnancy progressed, how did your sense of what you wanted from your care change — particularly around having your own wishes respected and feeling like you were genuinely in charge of decisions about your body?",
+      "question_id": "Q21",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 58,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans back, eyes distant*\n\nAt the beginning, I thought I had it figured out. I was going to be informed, collaborative, ask the right questions. I was going to *use* my knowledge as an asset.\n\n*voice becomes more uncertain*\n\nBut as things progressed—as the complications started showing up—my sense of agency just... eroded. Slowly at first, then faster.\n\n*rubs arms*\n\nWhen they first mentioned pre-eclampsia as a possibility, I wanted to understand it fully, engage with the data, maybe even question whether the diagnosis was solid. But by the time it was confirmed, I was so exhausted and scared that I just... accepted it. Stopped asking as many questions. Started viewing my body as this unreliable thing that needed to be managed by professionals instead of something I could partner with them on.\n\n*voice becomes quieter*\n\nNow, at thirty-six weeks, I don't even know what I want anymore. I wanted autonomy, but autonomy feels dangerous when you know too much about what can go wrong. I wanted to be heard, but being heard means acknowledging how terrified I actually am, and that feels like losing control completely.\n\n*looks up, vulnerability raw*\n\nSo I've kind of... given up? I go to appointments, I listen to what they tell me, I take my medications. I've stopped advocating for myself because it feels futile. Like the pre-eclampsia has decided for me. My body has decided for me.\n\n*voice cracks*\n\nI wanted to be in charge of my own care, but I think I'm just trying to survive it now.",
+      "responding_to_question_id": "Q21",
+      "input_tokens": 12160,
+      "output_tokens": 358
+    },
+    {
+      "turn_number": 59,
+      "role": "interviewer",
+      "type": "question",
+      "text": "During your pregnancy, how involved was your partner — or anyone else close to you — in decisions about your care, appointments, or birth plan? How did you feel about that level of involvement?",
+      "question_id": "Q22",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 60,
+      "role": "persona",
+      "type": "response",
+      "text": "*sighs heavily*\n\nMark's involved, but... it's passive involvement. He comes to appointments, he's *there*, but he's not really *engaged* in decision-making. He listens to what Dr. Patterson says and assumes that's the plan. He doesn't push back or ask clarifying questions or advocate for what *I* might want.\n\n*voice becomes frustrated*\n\nAnd I haven't really given him permission to do more, I guess. I haven't said, \"Here's what I need from you. Here's how I want you to show up for me in these decisions.\" So he defaults to deferring to the doctors, which leaves me feeling like I'm making all these medical decisions alone, even though he's sitting right there.\n\n*fidgets with hands*\n\nAs for a birth plan—we don't have one. Mark hasn't asked about it. My mom, when I've tried to talk to her about what I want for labor, just brings up her own experiences and what she thinks I should do. It's not collaborative. It's prescriptive.\n\n*voice becomes smaller*\n\nI think what I'm realizing is that nobody's really asking me what I want. And I'm not really asking them to. So the decisions are kind of just... happening to me. Dr. Patterson decides what monitoring protocol makes sense. The hospital's policies decide what happens during labor. And Mark and my family are just kind of... along for the ride.\n\n*looks at me directly*\n\nI wanted to feel like I was in control of my own care. Instead, I feel like I'm just being swept along by everyone else's expectations and the medical system's protocols. And I don't know how to change that at this point.",
+      "responding_to_question_id": "Q22",
+      "input_tokens": 12560,
+      "output_tokens": 372
+    },
+    {
+      "turn_number": 61,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there times when your partner's presence in appointments changed what was said — by you, or by the healthcare professionals?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 62,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly, clearly having thought about this*\n\nAll the time, actually.\n\n*voice becomes quieter*\n\nWhen Mark's there, I tend to... soften my questions? Like, I'll have something I want to ask Dr. Patterson about my anxiety or my fear, and then Mark sits down next to me and I can feel his presence, and suddenly I'm worried about how I'll sound. Will he think I'm being irrational? Will the doctor think I'm being difficult?\n\n*wraps arms around self*\n\nSo I end up asking clinical questions instead of emotional ones. I'll ask about my protein levels or the baby's heart rate instead of saying, \"I'm having panic attacks between appointments and I don't know how to cope.\" Because somehow Mark being there makes the emotional stuff feel more... exposed? More vulnerable in a way I'm not comfortable with.\n\n*voice becomes more direct*\n\nAnd Dr. Patterson? She definitely changes her approach when he's there. She speaks more to *him* sometimes. Like she's explaining things in a way that will reassure him, not necessarily in a way that addresses my actual concerns. She'll give me clinical data and then look at Mark to see if he understands, if he's satisfied with that answer.\n\n*leans forward, frustration evident*\n\nLast appointment, I started to mention how scared I am about labor, and Mark immediately jumped in with statistics about how pre-eclampsia outcomes have improved. And Dr. Patterson nodded along with him like, \"Yes, reassurance received.\" But *my* fear wasn't addressed. It was... managed. Around. Like it was something to be solved with data rather than something to be heard.\n\n*voice cracks slightly*\n\nWhen Mark's there, I become smaller. And everyone acts like that's fine.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 12959,
+      "output_tokens": 389
+    },
+    {
+      "turn_number": 63,
+      "role": "interviewer",
+      "type": "question",
+      "text": "How did your relationship with your body change during pregnancy — did you feel more connected to it, or did it bring up feelings that were harder to sit with? Was there anyone you felt safe talking to about that?",
+      "question_id": "Q23",
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 64,
+      "role": "persona",
+      "type": "response",
+      "text": "*long pause, eyes glistening*\n\nMy relationship with my body has gotten worse, not better.\n\n*voice becomes very small*\n\nWith my earlier pregnancies, there was this sense of... awe, maybe? Like, my body was doing something incredible. But this time, especially with the pre-eclampsia, I feel like my body is betraying me. It's swelling, it's retaining fluid, my blood pressure is climbing. Every symptom feels like evidence that I can't be trusted with this pregnancy.\n\n*rubs swollen ankles*\n\nAnd the monitoring—all the blood pressure checks, the urine tests, the ultrasounds—it's constant surveillance of my body. I'm hyperaware of every sensation now. A headache means pre-eclampsia. Swelling means it's getting worse. I've become obsessed with my body in this clinical way that feels so disconnected from actually *inhabiting* it, if that makes sense.\n\n*voice becomes harder*\n\nI don't feel safe in my own skin anymore. And as for talking about it... no. I haven't really talked to anyone about how much I hate my body right now. Mark would try to reassure me that I'm beautiful or strong, but that's not what I need. I need someone to acknowledge that my body feels like an enemy. That I'm grieving what it used to feel like to just... exist in my body without constant dread.\n\n*looks away*\n\nSusan, that midwife, she might have been someone I could talk to. But she's not in my life anymore. So I just sit with this alone—hating my body, afraid of what it's going to do, feeling completely disconnected from it.\n\n*voice cracks*\n\nI don't recognize myself anymore.",
+      "responding_to_question_id": "Q23",
+      "input_tokens": 13394,
+      "output_tokens": 388
+    },
+    {
+      "turn_number": 65,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Were there comments — from a healthcare professional, partner, or someone else — that affected how you felt about your changing body?",
+      "question_id": null,
+      "probe_id": "P1",
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 66,
+      "role": "persona",
+      "type": "response",
+      "text": "*jaw tightens, eyes narrow*\n\nOh God, yes.\n\n*voice becomes sharp*\n\nMy OB—not Dr. Patterson, the one before—she made a comment during one of my postpartum appointments after my fourth baby. We were talking about another potential pregnancy, and she said something like, \"Well, at your age and with your body having gone through four pregnancies already, you need to be realistic about what's ahead.\"\n\n*pauses, clearly still stung*\n\nWhat she meant was clear: your body is worn out, you're getting older, don't expect this to be easy. And I *internalized* that. I started seeing my body as depleted, as damaged goods. Like it had been used up by four pregnancies and now I was asking it to do the impossible.\n\n*voice becomes quieter*\n\nThen when I got pregnant anyway, there was this undercurrent of, \"Well, you were warned.\" Like my body's current struggles are my own fault for not listening to her prophecy of decline.\n\n*looks up, pain evident*\n\nAnd Mark, he tries to be supportive, but sometimes he'll say things like, \"Your body is so brave for doing this,\" which sounds nice but actually feels like he's pitying me. Like I'm this heroic martyr pushing my broken body through something it shouldn't be doing.\n\n*voice cracks*\n\nNobody's said, \"Your body is changing and that's normal and you deserve compassion through it.\" They've all said variations of, \"Your body is struggling and you should have known better.\" And I've absorbed that message completely.\n\n*wraps hands around stomach protectively*\n\nI hate what my body has become. And I hate that healthcare professionals helped me hate it.",
+      "responding_to_question_id": "P1",
+      "input_tokens": 13810,
+      "output_tokens": 380
+    },
+    {
+      "turn_number": 67,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 68,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, eyes welling up*\n\nYeah. There is.\n\n*pauses, gathering courage*\n\nI think what I need people to understand is that being knowledgeable doesn't make you less afraid. It makes you *more* afraid. And the healthcare system isn't equipped to handle that. There's no space for someone like me—someone who understands the science but is also traumatized by it.\n\n*voice becomes urgent*\n\nAnd I feel so... invisible in that gap. I'm not the patient who needs basic education about what pre-eclampsia is. But I'm also not the patient who can just accept clinical reassurance and move on. I'm stuck in this middle place where nobody knows how to care for me.\n\n*wipes eyes*\n\nI needed someone—maybe a maternal mental health specialist, maybe a trauma-informed therapist, maybe just someone whose *job* is to see the whole person—integrated into my care from the beginning. Not as an afterthought. Not as something I have to seek out myself while I'm already drowning.\n\n*voice becomes very quiet*\n\nAnd my partner. He loves me, but he needed support too. We both needed help understanding how to be together through this kind of fear. Instead, we're just both kind of... floundering separately while trying to pretend we're on the same team.\n\n*looks directly at me*\n\nI'm terrified of giving birth. I'm terrified of my body. I'm terrified of being seen as a burden or a problem instead of a person. And nobody's really addressed any of that in a meaningful way.\n\n*voice cracks*\n\nI just want someone to help me feel like I'm not alone in this.",
+      "responding_to_question_id": null,
+      "input_tokens": 14246,
+      "output_tokens": 375
+    }
+  ],
+  "metadata": {
+    "total_turns": 68,
+    "questions_asked": 23,
+    "probes_deployed": 9,
+    "adaptive_followups": 0,
+    "total_input_tokens": 254041,
+    "total_output_tokens": 12508,
+    "estimated_cost_usd": 0.2791,
+    "duration_seconds": 199.7,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 263
+  },
+  "errors": []
+}

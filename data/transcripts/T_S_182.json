@@ -1,0 +1,712 @@
+{
+  "session_id": "S_182",
+  "status": "completed",
+  "persona_id": "comp_007",
+  "persona_name": "Alvera",
+  "persona_journey_stage": "birth",
+  "persona_risk_level": "high",
+  "persona_vulnerability_flags": [
+    "fear_of_childbirth",
+    "high_risk_medical"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 5,
+  "questionnaire_strategy": "Relational / Stakeholder Map",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "google/gemini-3.1-flash-lite-preview",
+  "environment": "dev",
+  "timestamp": "2026-03-18T01:57:16.481158",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Alvera, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're going through the birth experience, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "I appreciate you asking. Honestly, it’s hard to know where to even start. I’ve done this three times before, so you’d think I’d feel like an old pro, right? But this… this is just different. Having twins makes everything feel so much heavier, and then the pre-eclampsia diagnosis came in like a storm cloud I just can’t shake. \n\nThe drive from Sandisfield to the hospital is the worst part. Every bump in the road feels like a threat, and I’m constantly checking for that dull, throbbing ache behind my eyes. I sit on that cold, crinkly paper in the exam room, and my doctor just talks about protocols and delivery management. She’s efficient, sure, but I feel like I’m just a data point on a chart—a \"high-risk complication\" to be managed rather than a person. It’s isolating. My husband tries, he really does, but he’s not the one feeling the twins moving in sync or the constant, quiet panic that my body is going to give out right at the finish line. I’m not scared of the labor pains; I’ve survived that. I’m scared of the loss of control. I just want to know that I’m going to make it through to the other side with them in my arms.",
+      "responding_to_question_id": null,
+      "input_tokens": 766,
+      "output_tokens": 282
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who were with you — or who you wished had been with you — during your labour and birth. Who did each person support, and what difference did their presence make?",
+      "question_id": "V5_BIRTH_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "dignity_respect",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "Honestly, it’s a blur of white coats and sterile equipment. My husband, he’s been my rock, but even he looks a little shell-shocked when the nurses start talking about magnesium drips and fetal heart rate monitors. He’s standing there, trying to be strong for me, but I can see the flicker of panic in his eyes, too. He’s trying to hold my hand, but it’s hard for him to reach me when I’m so locked inside my own head, terrified that one of these spikes in my pressure is going to be the one that changes everything.\n\nI keep wishing there was someone—maybe a midwife or just a nurse who didn’t seem so rushed—who would actually look me in the eye instead of at the monitor. I don’t need more instructions on how to push or how to breathe; I need someone to acknowledge that I’m drowning in this fear. My mother isn't around, and sometimes I find myself wishing she were, just to tell me I’m going to be okay. Instead, I’m surrounded by people who see me as a “case.” It makes me feel incredibly small, like I’m just a vessel they’re trying to keep from breaking before they get these babies out. I just want to feel like a mother, not a ticking clock.",
+      "responding_to_question_id": "V5_BIRTH_Q01",
+      "input_tokens": 1089,
+      "output_tokens": 278
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the midwives and doctors who cared for you during your birth. Were there particular individuals whose presence or approach made a lasting impression — positive or negative?",
+      "question_id": "V5_BIRTH_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s funny, the people I remember most aren't necessarily the ones with the most initials after their names. My doctor—the one in charge of my chart—is brilliant, I know that. She’s the one keeping us alive. But she’s so clinical, so focused on the blood pressure readings and the \"protocols\" that I feel like I’m just an extension of the monitor on the wall. When she talks to me, it’s all \"we need to monitor this\" and \"we should prepare for that.\" It’s efficient, but it’s cold. It makes me feel like I’m already failing, like my body is a faulty machine that needs their constant, urgent intervention.\n\nThen there was one nurse, Sarah, during a shift change. She didn't just come in and start clicking buttons on the machine. She noticed I was clutching the sheets until my knuckles turned white, and instead of giving me a lecture on my levels, she just put her hand on my arm and asked, \"How are you doing, Alvera? Not the numbers, but you?\" I almost cried right then and there. That one question made me feel human again. I just wish I had more of that—someone who recognizes that behind the high-risk label, there's a woman who is terrified but trying her absolute best to keep these two babies safe.",
+      "responding_to_question_id": "V5_BIRTH_Q02",
+      "input_tokens": 1401,
+      "output_tokens": 286
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your trust in what was happening — did you feel like a partner in decisions or more like something was being done to you?",
+      "question_id": null,
+      "probe_id": "V5_BIRTH_Q02_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "That is the heart of it, isn't it? When things go \"high-risk,\" you lose your voice almost as fast as you lose your status as a patient. I stopped feeling like a partner a long time ago. Everything is framed as a \"necessary protocol\" or a \"precaution,\" and while I understand the logic—I really do—it feels like I’m a passenger in my own body. \n\nWhen they talk about the birth plan, it’s not really a *plan* anymore. It’s a list of potential emergencies they’re waiting for. I feel like they’re waiting for me to fail. Every time I ask a question, I get an answer that’s meant to reassure me, but it just sounds like they’re managing a liability. I want to be involved, but how do I negotiate when the room is already full of people who have decided how this is going to go based on my chart? \n\nIt makes me pull back. I become quiet, I nod, I sign the papers, and I shut down. It’s a defense mechanism, I suppose. If I stop caring about the decisions, maybe it won't hurt as much when they take the choice away from me. I hate that I feel this way, but it’s hard to be a partner when you feel like you’re being treated like a broken object that needs to be fixed.",
+      "responding_to_question_id": "V5_BIRTH_Q02_P01",
+      "input_tokens": 1718,
+      "output_tokens": 293
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your partner's — or support person's — role during your birth. What did they bring to that experience, and what do you think they found most challenging?",
+      "question_id": "V5_BIRTH_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "partner_role",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "My husband, he’s been trying his best to be that anchor I need, but I think the weight of it is crushing him, too. He’s not a doctor, and he’s not used to hospitals. Seeing all those blinking lights, hearing the constant beeping of the monitors, and watching me go through these waves of pain and fear—I think he feels helpless. That’s the hardest part for him, I can see it. He wants to \"fix\" things like he always does with the house or the car, but he can’t fix my blood pressure. He can’t fix the fact that we’re in this high-risk situation.\n\nSometimes, when he’s just sitting there, I catch him staring at the equipment instead of me. I think he’s terrified that the next alarm is going to be the one that changes everything for us. He tries to rub my back or hold my hand, but he’s so gentle, almost like he’s afraid I’ll break. I need him to be stronger than that, but I also know he’s just as scared as I am. We’re both just waiting, watching, and hoping we can just make it through. He’s my rock, but sometimes I feel like we’re two people trying to hold onto each other while standing on a sinking ship.",
+      "responding_to_question_id": "V5_BIRTH_Q03",
+      "input_tokens": 2050,
+      "output_tokens": 282
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did the clinical team engage with your partner or support person — did they feel included as part of the care, or more like a bystander?",
+      "question_id": null,
+      "probe_id": "V5_BIRTH_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "partner_role",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s a mix, really. They acknowledge him, sure—they tell him where to stand or when to move out of the way for a procedure, but it feels like he’s just another piece of furniture in the room that they have to navigate around. They talk *at* him about me, or they talk *to* me and barely glance his way, like he’s just a visitor who wandered into a situation he doesn’t have the clearance to understand. \n\nI think the team views him as a bystander who might get in the way if things go sideways. They don’t really invite him into the conversation, and they certainly don’t ask him how *he* is doing, which I think he needs. He’s expected to just stay calm and support me, but he’s never been given any guidance on how to do that while everything feels so volatile. If they treated him more like a teammate—explained the \"why\" behind the tests or just acknowledged his role in keeping me steady—maybe he wouldn't look so lost. Instead, he just stands in the corner, quiet and watchful, waiting for someone to tell him it's okay to breathe again. We’re both being sidelined, just in different ways.",
+      "responding_to_question_id": "V5_BIRTH_Q03_P01",
+      "input_tokens": 2364,
+      "output_tokens": 260
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about a moment during your birth when a decision needed to be made quickly or under pressure. Who was involved in that decision, and how did you experience your role in it?",
+      "question_id": "V5_BIRTH_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "goals"
+      ],
+      "target_latent": [
+        "power_dynamics",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "There was this moment, midway through, when the fetal monitors started screaming—one of the twins had a sudden dip in heart rate. It wasn't a slow conversation; it was instant. The room, which had been relatively quiet, suddenly felt like a hive of activity. Doctors and nurses swarmed in, and for those few minutes, I didn't exist. I was just the bed they were working around. \n\nMy doctor was shouting orders about position changes and oxygen, and my husband was backed into the corner, his face completely pale. Nobody asked me what I wanted, or explained what was happening in plain English. It was all \"get her on her side\" and \"prep for possible intervention.\" In that moment, I felt like a spectator to my own body. My role wasn't to decide; my role was to obey and endure. \n\nI remember gasping, trying to ask if they were okay, but the clinical focus was so sharp and narrow that my voice didn't seem to reach them. It wasn't a choice; it was an extraction. I think that was the scariest point, where I realized that if things truly went wrong, my input wouldn't just be ignored—it would be seen as an obstacle to their efficiency. It solidified that fear I’ve been carrying: that I’m not a participant, just a set of vitals to be managed until the twins are out.",
+      "responding_to_question_id": "V5_BIRTH_Q04",
+      "input_tokens": 2663,
+      "output_tokens": 294
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved — your partner, a doula, a consultant — in advocating for you or influencing what happened?",
+      "question_id": null,
+      "probe_id": "V5_BIRTH_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "power_dynamics",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "There wasn't anyone else, really. No doula, no advocate. It was just me and my husband, and honestly, we were both so overwhelmed by the sheer pace of the hospital system that we didn't have the space to advocate for anything. My husband tried to speak up once, asking what was happening with the monitors, but one of the nurses gave him a look—that \"please step back\" look—and he just went quiet. He didn't want to be \"the difficult husband,\" and I didn't want to be \"the difficult patient.\" We both felt that if we pushed back, we might be seen as interfering with the experts who were supposedly keeping the babies safe.\n\nIt’s a lonely place to be. You’re taught to trust the professionals, but when you’re in that room, you realize their priority is the medical outcome—the \"safe delivery\"—not necessarily how I’m experiencing the process or what I’m feeling. I look back and wonder if I should have been firmer, or if my husband should have demanded more explanations, but in that moment, the power dynamic is so skewed. When you’re labeled \"high-risk,\" it’s like your voice is stripped away because everything you say is filtered through the lens of your medical condition. We were just waiting for them to tell us what to do next.",
+      "responding_to_question_id": "V5_BIRTH_Q04_P01",
+      "input_tokens": 2983,
+      "output_tokens": 283
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how the physical environment of your birth — the room, the equipment, the sounds and smells — felt in relation to the people around you. How did the space and the relationships interact?",
+      "question_id": "V5_BIRTH_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "dignity_respect",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "The room itself feels like a machine. It’s sterile, bright, and filled with these constant, rhythmic beeps that seem to dictate the pace of my heartbeat. There’s a specific smell—a sharp, antiseptic scent that hits you the moment you walk in—and it just makes my stomach turn because I know what it signals. Everything in that room is designed for efficiency, not comfort. The monitors, the IV stands, the crash cart in the corner... they’re all constant, looming reminders that things could go wrong at any second.\n\nThe space makes the distance between me and the staff feel even wider. They stand by the monitors, looking at the screens, while I’m physically tethered to the bed by cords and tubes. It creates this barrier where they’re interacting with the *data* and I’m just the medium for it. When a nurse comes in, she doesn’t enter my \"space\" to connect; she enters the space of the equipment. \n\nEven the lighting contributes to it—it’s so clinical and unforgiving, like there’s nowhere to hide my fear. I’ve found myself staring at the ceiling tiles, trying to focus on anything other than the monitors, just to keep from spiraling. The physical environment reinforces that I’m not a person giving birth; I’m a patient in a high-risk bay. The technology is everywhere, and it consumes the entire atmosphere, leaving very little room for me or my husband to just exist as a family.",
+      "responding_to_question_id": "V5_BIRTH_Q05",
+      "input_tokens": 3308,
+      "output_tokens": 313
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in shaping that environment — did anyone advocate for changes to make the space feel safer or more personal?",
+      "question_id": null,
+      "probe_id": "V5_BIRTH_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "No one advocated for anything. Not me, not my husband. We were too intimidated, I think. When you’re in a room like that—surrounded by flashing red lights and the hum of monitors—you feel like an intruder in a workspace. You don’t ask for the lights to be dimmed or for a little music, because you’re terrified that doing so might make you seem like you aren’t taking the \"risk\" seriously. You think, *“If I make this space feel more like home, am I ignoring the fact that my blood pressure could kill us?”*\n\nThe staff certainly didn’t offer to make it warmer. They move with such purpose and speed that the idea of \"personalizing\" the room seems absurd to them, I’m sure. To them, every piece of equipment is placed for a reason, and moving it—or changing anything—would be a safety hazard. \n\nI think we were both just desperate to be \"good patients.\" If we were quiet and let them work, they’d do a better job, right? That’s the lie I kept telling myself. I look back and realize the room stayed cold, bright, and clinical because that’s how they view the work of birth: as a procedure. My husband didn’t speak up because he didn't want to be \"that guy.\" So, the room stayed a machine, and we stayed small inside of it.",
+      "responding_to_question_id": "V5_BIRTH_Q05_P01",
+      "input_tokens": 3647,
+      "output_tokens": 298
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who knew about your birth preferences or plan beforehand — your midwife, your partner, your family — and how well those preferences were known and respected in the room on the day.",
+      "question_id": "V5_BIRTH_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "autonomy_vs_dependence",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "I had a birth plan. I spent hours writing it out, agonizing over the words, trying to sound reasonable while still asking for the things that mattered to me. I wanted a bit more movement, maybe dimmed lights during the early phase, and I wanted my husband to be the one to announce the twins' genders. I gave copies to the practice before I was even admitted.\n\nBut when the day arrived, and the \"high-risk\" label took over, that piece of paper might as well have been blank. My doctor barely glanced at it. She was kind, I suppose, but she treated it like a fairy tale—something that was nice to think about in a low-risk world but entirely irrelevant to the reality of pre-eclampsia. When I tried to bring up the, you know, \"softer\" parts of my plan, the response was always the same: \"Alvera, right now, our priority is monitoring your blood pressure and the babies' heart rates.\"\n\nIt felt like they were telling me my preferences were a luxury I couldn't afford. My husband tried to advocate, but he was shut down so quickly by the urgency of the monitors that he just stopped trying. It’s devastating, really. You prepare for this transition into motherhood, you try to build a bridge to that moment, and then the clinical team just burns it down because they’re only seeing the disaster they’re trying to prevent. My preferences weren't \"respected\"; they were sidelined as obstacles to safety. I felt like I was being robbed of my own experience before it had even really begun.",
+      "responding_to_question_id": "V5_BIRTH_Q06",
+      "input_tokens": 3987,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your sense of being known as a person rather than just a patient — did anyone in the room seem to really understand who you were and what mattered to you?",
+      "question_id": null,
+      "probe_id": "V5_BIRTH_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "I’m not sure they even looked at me long enough to see a person. When you’re labeled \"high-risk,\" it’s like there’s a filter on everything you say. My preferences weren't just ignored; they were dismissed as if I was being naive or reckless. It felt like they looked at my chart—at the pre-eclampsia, the twins, the blood pressure—and decided that my desires didn't have any weight compared to their protocol. \n\nIt’s a strange, hollow feeling to realize that the most important day of your life, the day you meet your children, is being handled by people who don't know the first thing about you. They didn't know how long I’d dreamed of being a mother, or how much I’d worried about these babies. To them, I was just a vessel with a failing system. \n\nThe only time I felt seen was that one moment with that nurse, Sarah. But even she was just a flicker in a sea of cold, clinical efficiency. Everyone else was so busy \"managing the risk\" that they forgot that behind the diagnosis, there was a woman who was terrified and needed to feel safe, not just physically, but emotionally. I wasn't Alvera to them. I was just the set of vitals they were trying to get to the finish line, no matter what it cost my spirit along the way.",
+      "responding_to_question_id": "V5_BIRTH_Q06_P01",
+      "input_tokens": 4352,
+      "output_tokens": 293
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who surrounded you in the days and weeks after your baby was born. Who showed up for you, and who were you surprised by — either by their presence or their absence?",
+      "question_id": "V5_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s strange, but coming home from the hospital felt like stepping back into a world that had moved on while I was stuck in that sterile, high-pressure bubble. Everyone was just so relieved the babies were here—and believe me, I am too—but nobody seemed to realize that I was still carrying the trauma of that labor.\n\nI was surprised by how many people reached out with \"Congratulations!\" and \"Aren't you lucky?\" but never asked, \"How are *you* doing, Alvera?\" It’s like they see the twins and the \"happy ending,\" and they assume everything is fine. My husband has been a saint, honestly, but he’s just as haunted by those hours as I am. We don't really talk about the hospital much. We’re both just trying to survive the sheer exhaustion of having two newborns.\n\nI was surprised by my sister. She’s not exactly the \"maternal\" type, but she’s the only one who actually showed up at my house, put a hot meal on the table, and told me, \"I know that was a terrifying experience.\" She didn't try to silver-line it. She just sat with me while I cried, letting me talk about the monitors and the feeling of losing control. I think the people who \"showed up\" were the ones who didn't try to fix me or rush my healing, but were just willing to sit in the messy, hard reality of it all.",
+      "responding_to_question_id": "V5_POST_Q01",
+      "input_tokens": 4687,
+      "output_tokens": 308
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people involved in your feeding journey — whether you breastfed, formula-fed, or mixed-fed. Who helped you, who gave you conflicting advice, and how did those relationships shape your choices?",
+      "question_id": "V5_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "dignity_respect",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "Feeding two babies at once feels like a never-ending, high-stakes science experiment. Because they were born into that \"high-risk\" environment, the pressure started the moment they were out. The hospital staff was so obsessed with their weight gain—constantly measuring, charting, and scrutinizing every ounce—that it felt like the hospital was just a continuation of the monitoring, only now it was the babies instead of my blood pressure.\n\nI wanted to breastfeed, but the advice was a total, chaotic mess. One nurse would insist I position them one way, and then the next shift, a different nurse would tell me that was all wrong and try to force a different latch. They were so clinical, so focused on the *mechanics* of the transfer, that they didn’t care that I was exhausted, crying, and physically sore from the delivery. It felt like I was being audited.\n\nMy husband tries to help with bottles, but he’s so worried about doing it \"right\" that he’s as tense as I am. We end up bickering over schedules and amounts because we’re both terrified of them losing weight. It’s supposed to be a bonding moment, but right now, it just feels like another checklist item. I feel like I’m failing at the \"perfect\" way to feed them, and everyone’s advice just makes me feel like I’m falling further behind.",
+      "responding_to_question_id": "V5_POST_Q02",
+      "input_tokens": 5041,
+      "output_tokens": 293
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who noticed — or who missed — changes in your emotional wellbeing after your baby was born. Who checked in with you about how you were feeling as a person, not just as a new mother?",
+      "question_id": "V5_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s like I’ve become invisible behind the twins. Everyone who comes over—the neighbors, some of my husband’s coworkers—they walk through the door and their eyes go straight to the babies. It’s \"Oh, look at them!\" or \"Are they sleeping through the night?\" Nobody stops to look at *me* and realize that I’m still shaking, that I’m still waking up in a panic thinking I hear the hospital monitors, or that I’m struggling to feel like I’m in charge of my own house again.\n\nMy husband tries, but he’s so sleep-deprived himself that he’s just focused on the next feeding, the next diaper, the next hurdle. He knows I had a hard time, but I don’t think he knows how to bridge the gap between \"we survived\" and \"we’re actually okay.\" \n\nIt’s my sister again, she’s the only one who really sees it. She’ll come over and, instead of picking up a baby, she’ll sit down on the couch next to me and say, \"Alvera, you look like you’re a thousand miles away. Tell me what’s in your head.\" She’s the only one who doesn't treat my birth experience like it’s just a \"difficult chapter\" that’s closed. She knows I’m still standing in that hospital room, and for that, I’m just so grateful. Everyone else seems to think that because the babies are breathing, I should be perfect, too. They’ve completely missed the part where I’m still trying to find myself again.",
+      "responding_to_question_id": "V5_POST_Q03",
+      "input_tokens": 5380,
+      "output_tokens": 345
+    },
+    {
+      "turn_number": 31,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how your relationship with your partner — or your closest person — changed after your baby arrived. Who were you to each other, and how did the arrival of a baby reshape that?",
+      "question_id": "V5_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 32,
+      "role": "persona",
+      "type": "response",
+      "text": "Before the babies, my husband and I were a team, a unit. We were equals. We navigated Sandisfield life together, planned for our future, and handled the curveballs as a pair. But when we brought these two home, that equilibrium just... evaporated. It’s like we’re both drowning in the same pool, but we can’t reach out to pull each other up because we’re too busy trying to keep our own heads above water.\n\nWe’ve shifted into this \"survival mode\" where our entire relationship is defined by logistics. Who’s on shift? Who’s more sleep-deprived? Did we hit the feeding schedule? It feels transactional. I look at him, and instead of seeing the man I love—the one who held my hand through the terror of that hospital room—I see someone else who is just as exhausted, just as anxious, and just as traumatized as I am. We don't talk about our feelings because we’re both terrified that if we start, we’ll never stop crying. \n\nThere’s this unspoken distance between us now, born from the fact that we’re both still carrying the weight of that birth. He’s my partner, but he feels like a roommate who’s also in the trenches. I miss who we were before the high-risk label pinned us down. I just want to find a moment where we aren’t \"Mom\" and \"Dad,\" just two people who survived a storm together.",
+      "responding_to_question_id": "V5_POST_Q04",
+      "input_tokens": 5766,
+      "output_tokens": 311
+    },
+    {
+      "turn_number": 33,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your sense of who you were — as a partner, as an individual, as a new parent — in those early weeks and months?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 34,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s honestly like I’ve been hollowed out. Before, I knew who I was—I was a woman with a life, someone who had her own rhythm. Now, I feel like I’ve been completely subsumed by the “high-risk” experience. I’m just a vessel for these two little lives, and my own identity feels like it’s been pushed into the backseat of a car I’m not even driving.\n\nAs a partner, I feel guilty. I look at my husband and I see his exhaustion, and I know he sees mine, but we don't have the bandwidth to reconnect. I’m not the partner I was—the one who could joke around or just exist without the shadow of the monitors hanging over us. As a mother, I’m constantly second-guessing myself. Everything feels like a test I’m failing because I’m so focused on \"getting it right\" to make up for the fact that my body couldn't carry them to term perfectly. \n\nThe worst part is that I don't feel like an \"individual\" anymore. I feel like a medical chart come to life. People talk about the \"glow\" of motherhood, but all I feel is the lingering weight of being a patient. I’m still trying to figure out how to be Alvera again, the one who wasn't just defined by blood pressure readings and NICU-style stress. I just want to breathe without feeling like I’m waiting for the next emergency.",
+      "responding_to_question_id": "V5_POST_Q04_P01",
+      "input_tokens": 6110,
+      "output_tokens": 314
+    },
+    {
+      "turn_number": 35,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the healthcare professionals who supported you after your birth — your community midwife, health visitor, GP. Which of those relationships felt continuous with your pregnancy care, and which felt like starting again from scratch?",
+      "question_id": "V5_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 36,
+      "role": "persona",
+      "type": "response",
+      "text": "It felt like being cut loose. The moment I left the hospital, the high-intensity monitoring just stopped, and I was expected to transition into this \"normal\" recovery. But nothing about it felt normal. My GP, for instance—she barely looked at my chart from the birth. It was like, \"Oh, the babies are out, you're cleared,\" and she moved on to the next appointment. I wanted to talk about the trauma of that delivery, the fear that still makes my heart race when I'm tired, but she was focused on my postpartum physical checkup. \n\nThe community midwife was a bit better, but it still felt like starting from scratch. She wasn't there in that delivery room; she didn't see the monitors, the panic, or the way the team treated me. I had to explain it all over again, and honestly, trying to put that experience into words for someone who wasn't there felt exhausting. It was like I was retelling a war story to someone who wanted to talk about breastfeeding positions.\n\nThere was no \"continuity\" in terms of how I felt as a person. The pregnancy care was all about the *risk*, and the postpartum care was all about the *infants*. I felt like a piece of equipment that had been \"returned to service\" and was now being ignored, while the babies got all the attention. I just wanted someone—anyone—to see that the \"high-risk\" label didn't just disappear when the twins arrived. It’s still inside me.",
+      "responding_to_question_id": "V5_POST_Q05",
+      "input_tokens": 6468,
+      "output_tokens": 318
+    },
+    {
+      "turn_number": 37,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your confidence in seeking help — did you feel known enough by someone to reach out when things were hard?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 38,
+      "role": "persona",
+      "type": "response",
+      "text": "That’s the thing—it destroyed my confidence to ask for help. When you spend months being treated like a broken, complicated object, you start to believe that’s all you are. You stop believing that a doctor or a nurse actually *cares* about your internal state. Why reach out when you assume the answer will just be another clinical, cold protocol that doesn't actually address the fear?\n\nI felt like if I went to someone and said, \"I'm still drowning,\" they’d just check a box, maybe hand me a pamphlet on postpartum depression, and send me out the door. I didn't feel \"known\" by a single person in the clinical system. To them, I was just a case that had been successfully closed. How can you be vulnerable with someone who doesn’t even look you in the eye?\n\nSo, I didn't ask. I went home and kept it all inside. I convinced myself that I just had to \"get through it\" on my own, like I did in the delivery room. It made me feel like an island, completely isolated in my own home. I think that’s the real tragedy—that the care I received made me feel so small and so misunderstood that I stopped believing that asking for help would actually make a difference. I just retreated further into myself.",
+      "responding_to_question_id": "V5_POST_Q05_P01",
+      "input_tokens": 6813,
+      "output_tokens": 275
+    },
+    {
+      "turn_number": 39,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your return to work — or your decision not to return — and the people involved in that transition. Who supported you, who put pressure on you, and how did that shape your experience of becoming a working parent?",
+      "question_id": "V5_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 40,
+      "role": "persona",
+      "type": "response",
+      "text": "Returning to work felt less like a choice and more like a cliff I was being pushed off. I’m a full-time employee, and the financial reality of having twins doesn’t leave much room for \"taking time.\" But even the thought of it triggered a panic attack. I remember sitting at the kitchen table, staring at my laptop, and feeling like I was still tethered to those hospital monitors. \n\nMy manager was... professional, I guess. She kept asking about my \"return date\" as if I were a project that had been paused for maintenance. There was no real conversation about how the birth had changed me, or how I was managing the exhaustion and the lingering, quiet fear that something might still go wrong. It was all about productivity. I felt immense pressure to just snap back into who I was before the pregnancy, like I could just put the trauma in a drawer and leave it there while I logged in.\n\nI felt so isolated because no one at work seemed to understand that \"maternity leave\" wasn't just a break—it was a period of survival. I wanted someone to ask, \"How are you doing after everything?\" but instead, it was just, \"Are you ready to jump back in?\" It made me feel like my identity was being shredded. I’m expected to be a high-performing employee and a resilient mother, but nobody sees the version of me that’s still trying to catch her breath. I’m terrified that if I show any weakness, I’ll be labeled as \"difficult\" or \"unprepared\" all over again.",
+      "responding_to_question_id": "V5_POST_Q06",
+      "input_tokens": 7136,
+      "output_tokens": 326
+    },
+    {
+      "turn_number": 41,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the communities — online or in person — that became part of your postpartum world. Who did you connect with, and what did those communities offer that more formal support couldn't?",
+      "question_id": "V5_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 42,
+      "role": "persona",
+      "type": "response",
+      "text": "I didn't find much in the \"formal\" world, honestly. The doctors and the clinics felt like they were just ticking boxes on a clipboard, and I felt like I was being processed rather than cared for. So, I started looking elsewhere. I ended up in an online group for moms of twins—specifically those of us who had \"high-risk\" pregnancies.\n\nThat space? It was like finally being able to exhale after holding my breath for months. I didn't have to explain why I was still checking my blood pressure three times a day, or why the sound of a rhythmic beep makes my skin crawl. They *knew*. When I’d post about that hollow, empty feeling—that sense of being a medical record instead of a mother—they didn't offer me a pamphlet or a clinical protocol. They just said, \"Me too. I’m still here, too.\"\n\nIt offered me a kind of permission that the doctors never did. It was permission to be exhausted, to be traumatized, and to be angry about the way I was handled. Those women—strangers on the internet—became my real support system. They weren't judging my feeding choices or checking my vitals; they were just witnessing my life. It made me realize that I wasn't crazy for feeling like I’d lost myself in that hospital room. It was the only place where I finally felt like I was allowed to be a person again.",
+      "responding_to_question_id": "V5_POST_Q07",
+      "input_tokens": 7503,
+      "output_tokens": 301
+    },
+    {
+      "turn_number": 43,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in pointing you toward those communities — a midwife, a friend, an algorithm — and how did that shape which communities you found?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q07_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 44,
+      "role": "persona",
+      "type": "response",
+      "text": "It wasn't a midwife or a doctor, that’s for sure. They were too busy focusing on the physiological metrics. It was actually a quiet, desperate search in the middle of the night. I was sitting there, nursing one of the twins while the other was finally asleep, and I just typed \"feeling lost after high-risk birth\" into my phone. It felt like a confession.\n\nI didn’t find these communities because a professional suggested them; I found them because an algorithm—that cold, indifferent piece of code—fed me a link after I kept doom-scrolling about birth trauma. In a way, it’s ironic: the only thing that seemed to \"see\" my emotional state was a search engine tracking my misery. \n\nThose spaces weren't curated by \"experts\" who talk down to you about postpartum depression screening; they were curated by people who had actually walked through the fire. When I finally clicked, it felt like opening a door into a room where I didn't have to explain myself. I didn't have to apologize for my fear or my anger. It wasn't \"prescribed\" care, but it was the only care that actually touched the parts of me that were still back in that hospital bed, terrified and silenced. It’s sad, isn't it? That I had to go to a screen to find the empathy that should have been in the delivery room.",
+      "responding_to_question_id": "V5_POST_Q07_P01",
+      "input_tokens": 7836,
+      "output_tokens": 294
+    },
+    {
+      "turn_number": 45,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about any moments after your birth when you felt that you — as a person, not just as a new mother — were seen and cared for. Who made that happen, and what did they do or say?",
+      "question_id": "V5_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 46,
+      "role": "persona",
+      "type": "response",
+      "text": "It didn’t happen in the clinic, that’s for sure. It happened about three weeks ago, in my kitchen, in the middle of a total breakdown. My husband was at work, the twins were both screaming, and I was just standing there, unable to move, feeling that familiar, icy grip of panic tightening around my chest. My friend, Elena, showed up unannounced. She didn't look at the babies. She looked at me, saw the mess, and didn't even ask if I was \"okay.\" \n\nShe just walked over, took the baby out of my arms, and said, \"Alvera, you aren't a medical case today. You’re just you, and you’re exhausted.\" She made me sit down, made me tea, and then she asked me about the book I used to read before the pregnancy. Not the parenting books. Not the twin-management books. Just a book about, I don't know, a life that had nothing to do with being a mother or a patient. \n\nFor twenty minutes, we didn't talk about weight gain or blood pressure or sleep schedules. We talked about me. She saw the Alvera who existed before the \"high-risk\" label, and for the first time in months, I felt like I was allowed to step out of that hospital room. She didn’t try to fix my postpartum, she just reminded me that I’m still in there, somewhere, beneath all the protocols and the panic. It was the first time I felt like a human being again.",
+      "responding_to_question_id": "V5_POST_Q08",
+      "input_tokens": 8176,
+      "output_tokens": 326
+    },
+    {
+      "turn_number": 47,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in moments of genuine care for you — not just the baby — that stayed with you?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q08_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 48,
+      "role": "persona",
+      "type": "response",
+      "text": "Honestly, there weren't many. It felt like everyone else in my life was so dazzled by the \"miracle\" of the twins that they didn't see the woman who had been through a car crash of an experience. \n\nMy husband’s mother, she actually did something that surprised me. She’s usually so focused on the “right” way to do things—the nursery, the feeding schedules, all of that. But one night, she came over when the babies were finally settled, and she just sat across from me in the living room. She didn’t pick up a baby. She didn't look at the monitors or the pump. She looked at me and said, \"I know you're terrified, Alvera. I can see it in your hands.\" She just held them—my hands—and told me that I had done something incredibly brave, and that it was okay if I didn't feel \"joyful\" yet. She didn't try to make me smile for a photo; she just acknowledged that the trauma was real.\n\nThat stayed with me. It was like she reached into that sterile hospital room and pulled me out of it. Most people only offer help that’s about the babies—\"Let me hold them so you can sleep,\" or \"Are they eating enough?\" But she was the only other person, besides my sister and Elena, who treated me like a person who had survived something, not just a mother who was \"on the clock.\" It was a tiny moment, but it felt like the first time I could actually let my guard down.",
+      "responding_to_question_id": "V5_POST_Q08_P01",
+      "input_tokens": 8526,
+      "output_tokens": 331
+    },
+    {
+      "turn_number": 49,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 50,
+      "role": "persona",
+      "type": "response",
+      "text": "You know, I’ve been sitting here thinking about it, and there is one thing. I think people—the doctors, the nurses, even my own family—they have this idea that the \"birth\" is the finish line. Like once the babies are out and they’re breathing, you’ve hit the goal, and you should just be able to snap back to who you were before. But nobody tells you that the \"high-risk\" label doesn't just peel off because you're home.\n\nIt feels like I’m living in two timelines. There’s the one where I’m a mother to these two beautiful babies, and then there’s the one where I’m still standing in that white, sterile room, waiting for the other shoe to drop. I wish there was someone—just one professional—who had sat me down before I left the hospital and said, \"You went through something heavy, and you’re allowed to be changed by it. You’re allowed to be scared, even when everyone says it’s 'all over.'\"\n\nI want people to know that maternity care shouldn't just be about the biological outcome. It needs to be about the person who is *having* the birth. If we keep treating birth like a manufacturing process where the only thing that matters is the product, we’re going to keep leaving women like me behind, feeling hollowed out in our own homes. I’m just... I’m still here, waiting to be \"found\" again. Thanks for listening. It’s the first time I’ve said that out loud.",
+      "responding_to_question_id": null,
+      "input_tokens": 8913,
+      "output_tokens": 334
+    }
+  ],
+  "metadata": {
+    "total_turns": 50,
+    "questions_asked": 14,
+    "probes_deployed": 9,
+    "adaptive_followups": 0,
+    "total_input_tokens": 118683,
+    "total_output_tokens": 7565,
+    "estimated_cost_usd": 0.1338,
+    "duration_seconds": 70.1,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 243
+  },
+  "errors": []
+}

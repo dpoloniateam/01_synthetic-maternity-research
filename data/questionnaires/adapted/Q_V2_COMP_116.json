@@ -1,0 +1,441 @@
+{
+  "persona_id": "comp_116",
+  "persona_name": "Elenore",
+  "journey_stage": "preconception",
+  "risk_level": "low",
+  "vulnerability_flags": [],
+  "complications": [],
+  "relevant_phases": [
+    "preconception"
+  ],
+  "base_question_count": 33,
+  "adapted_question_count": 5,
+  "filtered_out": 28,
+  "added_probes": 0,
+  "questions": [
+    {
+      "question_id": "V2_PREC_Q01",
+      "version": 2,
+      "journey_phase": "preconception",
+      "question_text": "When you think about your goals for starting or growing your family, what were the most important outcomes you hoped to achieve — for yourself, your relationship, and your future child?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V2_PREC_Q01_P01",
+          "probe_text": "You mentioned [goal] — can you tell me more specifically what that would look like if it was fully achieved?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "goals_expectations",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q01_P02",
+          "probe_text": "What was driving that particular goal for you at that time in your life?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q01_P03",
+          "probe_text": "How did the goals you held at that point compare to what you actually experienced as you moved forward?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q01_P04",
+          "probe_text": "Were there goals you held privately that you felt difficult to express to your partner, family, or healthcare provider?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "partner_role",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q01_P05",
+          "probe_text": "Were there any wider circumstances — financial, workplace, housing — that shaped what goals felt realistic or achievable for you?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_thematic_areas": [
+        "goals_expectations",
+        "emotional_experiences"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "identity_tensions",
+        "intergenerational_patterns",
+        "structural_barriers"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "medium",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "77386006"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V2_PREC_Q02",
+      "version": 2,
+      "journey_phase": "preconception",
+      "question_text": "When you think about your motivations for seeking preconception care or health advice before becoming pregnant, what was it that prompted you to take action — or, if you did not seek any care, what held you back?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V2_PREC_Q02_P01",
+          "probe_text": "What specifically triggered that decision at that moment rather than earlier or later?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q02_P02",
+          "probe_text": "Were there people in your life — family, friends, your partner — whose opinions or experiences influenced whether and how you sought care?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "informal_care_networks",
+            "intergenerational_patterns"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q02_P03",
+          "probe_text": "How did your experience of seeking or not seeking care feel emotionally — was it straightforward, uncertain, or something else?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "trust_distrust",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q02_P04",
+          "probe_text": "Were there any practical or systemic obstacles — cost, access, language, time — that affected your ability to get preconception advice?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q02_P05",
+          "probe_text": "If you used online sources, apps, or forums to guide your preparation, how did that information shape your expectations of formal care?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "digital_information_seeking"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_thematic_areas": [
+        "decision_making",
+        "risks_barriers"
+      ],
+      "target_servqual_dimensions": [
+        "reliability",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "structural_barriers",
+        "digital_information_seeking",
+        "trust_distrust"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_language_barrier",
+        "if_rural"
+      ]
+    },
+    {
+      "question_id": "V2_PREC_Q03",
+      "version": 2,
+      "journey_phase": "preconception",
+      "question_text": "When you think about how you actually behaved during the preconception period — your lifestyle choices, health actions, information-seeking — what did you do, and how did those behaviours reflect what you truly believed was important?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V2_PREC_Q03_P01",
+          "probe_text": "Can you walk me through a specific thing you did or changed during that period and what led you to that particular action?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q03_P02",
+          "probe_text": "Were there behaviours you intended to adopt but found difficult to sustain — and what got in the way?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q03_P03",
+          "probe_text": "How much were your behaviours shaped by guidance from a healthcare provider versus your own research, instincts, or cultural practices?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "power_dynamics",
+            "intergenerational_patterns"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q03_P04",
+          "probe_text": "How did your body feel to you during this time — and did your relationship with your body influence any of the decisions you made?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "body_image_autonomy"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q03_P05",
+          "probe_text": "Were there community, cultural, or family practices that guided your behaviours in ways that might not be reflected in standard medical advice?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "decision_making",
+        "support_sources"
+      ],
+      "target_servqual_dimensions": [
+        "assurance",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "body_image_autonomy",
+        "intergenerational_patterns",
+        "informal_care_networks"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "72892002"
+      ],
+      "ehr_adaptation_triggers": []
+    },
+    {
+      "question_id": "V2_PREC_Q04",
+      "version": 2,
+      "journey_phase": "preconception",
+      "question_text": "When you think about your emotional experience during the preconception period — the waiting, the uncertainty, and the anticipation — what feelings stand out most strongly, and were any of those feelings hard to acknowledge or talk about?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V2_PREC_Q04_P01",
+          "probe_text": "Can you describe a specific moment when those feelings were particularly intense — what was happening and how did you respond?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q04_P02",
+          "probe_text": "Were there emotions you felt you could not share openly — with your partner, family, or a healthcare provider — and why?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "partner_role",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q04_P03",
+          "probe_text": "How did those feelings compare to what you had expected or imagined the preconception period would feel like?",
+          "probe_type": "contrast",
+          "target_latent_dimensions": [
+            "identity_tensions"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q04_P04",
+          "probe_text": "Did any healthcare interactions during this period make you feel more or less understood emotionally?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "dignity_respect",
+            "trust_distrust"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q04_P05",
+          "probe_text": "Were there societal or cultural pressures — around timing, fertility, or readiness — that influenced how you felt during this period?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "intergenerational_patterns",
+            "structural_barriers"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "emotional_experiences",
+        "goals_expectations"
+      ],
+      "target_servqual_dimensions": [
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "identity_tensions",
+        "partner_role",
+        "dignity_respect"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "medium",
+        "depth": "high",
+        "innovation_relevance": "medium"
+      },
+      "snomed_context_codes": [
+        "77386006"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_miscarriage_history"
+      ]
+    },
+    {
+      "question_id": "V2_PREC_Q05",
+      "version": 2,
+      "journey_phase": "preconception",
+      "question_text": "When you think about the barriers you encountered — or anticipated — in your path to conception or early pregnancy preparation, what were the most significant obstacles, and how did you navigate them?",
+      "question_type": "open_ended",
+      "probes": [
+        {
+          "probe_id": "V2_PREC_Q05_P01",
+          "probe_text": "Were those barriers primarily practical, emotional, relational, or something else — and can you give me a concrete example?",
+          "probe_type": "clarification",
+          "target_latent_dimensions": [
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q05_P02",
+          "probe_text": "How did encountering those obstacles affect your sense of confidence or control over your own reproductive journey?",
+          "probe_type": "emotion",
+          "target_latent_dimensions": [
+            "autonomy_vs_dependence",
+            "power_dynamics"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q05_P03",
+          "probe_text": "Were there barriers that were invisible to your healthcare team — things they did not ask about or seemed unaware of?",
+          "probe_type": "elaboration",
+          "target_latent_dimensions": [
+            "latent_needs",
+            "structural_barriers"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q05_P04",
+          "probe_text": "How did your partner or support network help — or not help — in overcoming those obstacles?",
+          "probe_type": "motivation",
+          "target_latent_dimensions": [
+            "partner_role",
+            "informal_care_networks"
+          ],
+          "source": "base"
+        },
+        {
+          "probe_id": "V2_PREC_Q05_P05",
+          "probe_text": "Were there barriers that you feel are specific to your background, culture, socioeconomic situation, or location that others might not face?",
+          "probe_type": "structural",
+          "target_latent_dimensions": [
+            "structural_barriers",
+            "intergenerational_patterns"
+          ],
+          "source": "base"
+        }
+      ],
+      "target_kbv_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_thematic_areas": [
+        "risks_barriers",
+        "agency_disempowerment"
+      ],
+      "target_servqual_dimensions": [
+        "reliability",
+        "empathy"
+      ],
+      "target_latent_dimensions": [
+        "structural_barriers",
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "expected_evaluation_contribution": {
+        "breadth": "high",
+        "depth": "high",
+        "innovation_relevance": "high"
+      },
+      "snomed_context_codes": [
+        "48194001"
+      ],
+      "ehr_adaptation_triggers": [
+        "if_single_parent",
+        "if_language_barrier",
+        "if_rural",
+        "if_high_risk"
+      ]
+    }
+  ],
+  "adapted_at": "2026-03-17T23:25:28.197025"
+}

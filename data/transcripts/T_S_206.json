@@ -1,0 +1,446 @@
+{
+  "session_id": "S_206",
+  "status": "completed",
+  "persona_id": "comp_115",
+  "persona_name": "Elaine",
+  "persona_journey_stage": "postpartum",
+  "persona_risk_level": "medium",
+  "persona_vulnerability_flags": [
+    "rural_isolation"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 5,
+  "questionnaire_strategy": "Relational / Stakeholder Map",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "google/gemini-3.1-flash-lite-preview",
+  "environment": "dev",
+  "timestamp": "2026-03-18T02:14:09.456692",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Elaine, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're adjusting to life after having your baby, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "Thanks for asking. It’s… it’s been quiet. I think that’s the part that catches you off guard the most. Out here in Dartmouth, when the sun goes down and the trees start looking like shadows against the windows, the silence just sort of presses in on you. \n\nI’m twenty-three, and I think I walked into this whole thing thinking I had it handled. I read everything. I had the pamphlets, the apps, the \"ideal\" plan for how this was all supposed to go. But holding her at 3:00 AM, when my body feels like it’s falling apart and my skin is raw from trying to get her to latch, none of those pamphlets help. They don’t talk about the sheer, physical loneliness of it. \n\nThe clinic? They see me as \"low risk,\" just a number on a chart. They ask me if I’m eating, if the baby’s gaining weight, and they check the box. But they don’t see me sitting on the nursery floor yesterday, sobbing because I felt like I was failing her. They don't see that I’m doing this alone. I’m trying to hit these \"gold standards\" for nutrition, but I’m just a person who is bone-tired and terrified that I’m doing it all wrong. It feels like I’m performing motherhood rather than living it.",
+      "responding_to_question_id": null,
+      "input_tokens": 750,
+      "output_tokens": 294
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who surrounded you in the days and weeks after your baby was born. Who showed up for you, and who were you surprised by — either by their presence or their absence?",
+      "question_id": "V5_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "That’s a hard question to answer without sounding bitter, I suppose. Honestly? There was no one to \"show up.\" My house is tucked away far enough that people don’t just drop by, and I think that distance gave everyone an excuse to stay away.\n\nI kept waiting for someone to just *be* there—not to give advice or ask how the breastfeeding was going, but to just sit in the kitchen and have a coffee while I took a shower that lasted longer than three minutes. But nobody did. I was surprised by how quickly the \"congratulations\" texts turned into silence. It’s like once the birth announcement was sent, people checked that box and went back to their lives.\n\nI didn't expect to feel this abandoned. Maybe I should have, being unmarried and living out here, but I really thought there would be more of a village. Instead, it’s just me. I feel like a ghost in my own house. The people I thought would be my rock—people I’ve known for years—have been the most absent. It’s strange, the people you think will be there for the hard stuff are often just there for the highlight reel. Now that the reality is messy and exhausting, I’m just... invisible.",
+      "responding_to_question_id": "V5_POST_Q01",
+      "input_tokens": 1086,
+      "output_tokens": 263
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in day-to-day support — a health visitor, a postnatal group, an online community — that became important to you?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "I wish I could tell you about some amazing village, but the truth is, my support system is basically a few parenting forums I scroll through while I’m rocking her in the dark. But even those don't really help. If anything, they make me feel worse. Everyone on there seems to have it together, or they’re posting these perfect photos of their setups, and I’m sitting here with cracked skin and a house that’s slowly turning into a disaster zone.\n\nAs for the professionals, I had one telehealth check-in, and it was… well, it was exactly what I expected. They asked their list of questions—\"Is the baby feeding? Any signs of postpartum depression?\"—and I just found myself saying \"fine, everything's fine.\" It felt like if I actually said, \"I’m losing my mind and I don’t know if I can do this another day,\" they’d just point me toward a pamphlet or tell me to come into the clinic, which is a forty-minute drive I can’t handle right now. \n\nI don't have a health visitor coming by. I don't have a group. It’s just me, the baby, and the woods. Sometimes I wonder if I’m invisible to them because I’m not \"sick\" enough, or maybe just because I’m young and they assume I’ll just figure it out on my own.",
+      "responding_to_question_id": "V5_POST_Q01_P01",
+      "input_tokens": 1381,
+      "output_tokens": 298
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people involved in your feeding journey — whether you breastfed, formula-fed, or mixed-fed. Who helped you, who gave you conflicting advice, and how did those relationships shape your choices?",
+      "question_id": "V5_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "dignity_respect",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s funny, the feeding journey is supposed to be this natural, bonding experience, but for me, it’s become a source of genuine trauma. At the clinic, they were so pushy about \"exclusive breastfeeding\" being the gold standard. They hammered that into me during my prenatal visits until I felt like my identity as a mother was entirely tied to my ability to produce milk. \n\nBut when I actually started, it was torture. Every time she latched, I’d flinch. I was so raw and exhausted that I’d just sit there and cry while she was at my breast. The advice I got was all contradictory—one nurse told me to keep pushing through the pain, another told me to adjust my posture, and a third just handed me a brochure with a diagram that looked nothing like the reality of a screaming, hungry infant.\n\nIt felt like they were judging me. I wanted to ask for formula—just to give my body a break, just to have one night where I wasn't the only thing keeping her alive—but I was too scared of the look I’d get. I was terrified they’d mark me down as a failure, or worse, someone who wasn't \"trying hard enough.\" So, I kept quiet. I let them believe I was doing it their way, even while I was falling apart inside. The \"experts\" made me feel like if I deviated from the plan, I was failing her. It’s a lot of pressure to put on someone who’s barely sleeping three hours a night.",
+      "responding_to_question_id": "V5_POST_Q02",
+      "input_tokens": 1725,
+      "output_tokens": 322
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who noticed — or who missed — changes in your emotional wellbeing after your baby was born. Who checked in with you about how you were feeling as a person, not just as a new mother?",
+      "question_id": "V5_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "That’s the thing—nobody really asked about *Elaine*. They ask about the baby’s weight, the baby’s sleeping schedule, the baby’s feeding. I am just the vessel that provides those things. \n\nWhen I go to the clinic, the providers are efficient. They have these charts to fill out, and they look at me, but they don't *see* me. They see a twenty-three-year-old who looks tired—but everyone says, \"Oh, that’s just new motherhood, it’ll pass.\" They don’t see the way my hands shake when I’m trying to set her down, or how I’ve stopped leaving the house because the thought of packing the bag and driving that long, lonely stretch of road feels like climbing a mountain. \n\nMy own family? They’re miles away, and they call to ask if I’m \"getting the hang of it yet.\" How do I say no? How do I tell them that I feel like I’m drowning in this house? I feel like if I admitted I wasn't okay, it would confirm every fear they had about me being a young, single mother. So, I play the part. I say, \"She’s doing great, I’m just tired.\" And they say, \"Good, you’re doing a great job.\" \n\nIt’s like they’re waiting for me to be the \"success story\" I promised to be, so I don't give them the truth. The truth is, I’m scared, and I’m lonelier than I ever knew it was possible to be.",
+      "responding_to_question_id": "V5_POST_Q03",
+      "input_tokens": 2093,
+      "output_tokens": 345
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in picking up on signs that you were struggling — a health visitor, your GP, your partner, a friend?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "To be honest, no one has really picked up on it, or maybe they’re choosing to look past it because it’s easier than dealing with it. \n\nMy GP? She’s the one who sees \"low risk\" on my chart and treats our appointments like a drive-thru. She’s nice, I guess, but she’s always in a rush. She asks those scripted questions about my mood, but she does it while she's already halfway out the door, looking at her watch. When I say, \"I'm okay,\" she just scribbles something down and moves on. I want to grab her arm sometimes and say, *Wait, did you hear the tremor in my voice? Did you see that I’ve lost weight because I forget to eat?* But I don't. I just hold the baby tighter and nod.\n\nThere’s no partner to notice the crying in the dark or the way I just stare at the wall when the baby finally falls asleep. My friends are all living their own lives, and I think they assume if I was really struggling, I’d reach out. But how do you reach out when you feel like you’re failing at the one job you’re supposed to be naturally good at? \n\nIt’s just… it’s just the quiet, and me, and the fear that if I say, \"I'm not doing okay,\" the whole thin, fragile house of cards I’ve built will just collapse. So I keep the struggle to myself, and everyone else keeps their distance.",
+      "responding_to_question_id": "V5_POST_Q03_P01",
+      "input_tokens": 2467,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about how your relationship with your partner — or your closest person — changed after your baby arrived. Who were you to each other, and how did the arrival of a baby reshape that?",
+      "question_id": "V5_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "I think it’s hard to talk about this because there isn’t a \"partner\" to talk about. The person who should have been there—the person I thought was going to be in this with me—he just… he didn’t show up for the reality of it. When the positive test happened, there were promises, there were big ideas about what we’d be like as a team. But the moment the responsibility became real, the moment it stopped being an abstract idea and started being a tiny human who cries at 3:00 AM and needs constant, grueling work, he just drifted away.\n\nIt wasn't even a big, explosive breakup. It was just a slow, painful evaporation. He started spending more time at work, or \"busy\" with his friends, until eventually, the distance was just a chasm I couldn't bridge. \n\nIt makes me feel like I’m mourning two things at once: the life I thought I’d have and the person I thought I was becoming. I went from being a girl who had a partner to someone who’s suddenly a single mother in a house that feels way too big. It’s reshaped everything. I look at her, and I see the beauty of her, but I also see the physical proof of my isolation. I’m doing this entire, exhausting, beautiful, terrifying journey in a house built for two, and now it’s just the echo of my own footsteps. It’s… it’s a very heavy realization.",
+      "responding_to_question_id": "V5_POST_Q04",
+      "input_tokens": 2835,
+      "output_tokens": 317
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your sense of who you were — as a partner, as an individual, as a new parent — in those early weeks and months?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "partner_role"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s been a total identity crisis. Before the baby, I felt like I had a trajectory—I had my job, my independence, and this plan for a partnership. I was Elaine the individual, and I was Elaine the partner. Now, those versions of me feel like they’ve been erased, or at least buried under layers of spit-up and exhaustion.\n\nAs a parent, I feel like a fraud. I walk around carrying all these clinical expectations of what a \"good mother\" looks like—calm, breastfeeding effortlessly, naturally glowing—and when I look in the mirror, I just see someone who’s fraying at the edges. Because I’m doing this alone, I don’t have anyone to bounce my reality off of. I don’t have someone to say, \"Hey, you’re doing great, take a nap.\" So I have to be the one who tells me I’m okay, but I don’t believe it. \n\nI’ve lost the \"me\" who could just leave the house on a whim or get a full night’s sleep. I’m just \"Mom\" now, and even that feels like a title I haven’t earned yet. It’s hard to feel like a capable adult when you’re constantly wondering if you’re failing the only person who depends on you. I feel smaller, quieter, and somehow much older than twenty-three. It’s a very lonely transformation.",
+      "responding_to_question_id": "V5_POST_Q04_P01",
+      "input_tokens": 3185,
+      "output_tokens": 304
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the healthcare professionals who supported you after your birth — your community midwife, health visitor, GP. Which of those relationships felt continuous with your pregnancy care, and which felt like starting again from scratch?",
+      "question_id": "V5_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "It honestly felt like I was dropped off a cliff the moment I left the hospital. During pregnancy, there was this rhythm—I saw the same faces, they knew my history, they knew I was on my own. I felt like a \"patient\" who was being monitored. But as soon as the baby was born, that continuity just vanished. \n\nThe GP I saw afterward felt like a complete stranger. It was starting from scratch, but worse, because they didn’t have the context of my situation. They just saw a chart. There was no \"How are you coping, Elaine?\" there was just \"How is the weight gain?\" and \"Are you still breastfeeding?\" If they had looked at my file and seen that I’m living alone out here, maybe they would have approached me differently. But they didn't. \n\nI kept hoping a health visitor would be that bridge, someone to keep that connection alive, but that feels like a myth out here in Dartmouth. The appointments are so disjointed. It’s like I’m a different person to every different provider I see, and I have to re-explain my exhaustion and my isolation every single time. It’s draining. I’m tired of introducing myself to people who are supposed to be caring for me, only for them to check a box and send me back into the silence. It isn’t care; it’s just processing.",
+      "responding_to_question_id": "V5_POST_Q05",
+      "input_tokens": 3533,
+      "output_tokens": 291
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your return to work — or your decision not to return — and the people involved in that transition. Who supported you, who put pressure on you, and how did that shape your experience of becoming a working parent?",
+      "question_id": "V5_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "structural_barriers",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "The pressure to return to work feels like a cold weight in my stomach. I’m currently looking for full-time work again, and it’s this relentless, quiet panic. I have to find something because the bills don't stop, and there’s no one else to share the load. \n\nThe people involved in this \"transition\"—if you can call it that—are mostly impersonal voices on the other end of a phone or faceless names on a job board. There’s no support system to help with the logistics of childcare. I look at the local job listings, and the sheer impossibility of balancing an infant's needs with an employer’s expectations makes me feel sick. Employers don’t see the raw, sleep-deprived mother; they see a resume gap they’re suspicious of or a candidate who might be \"distracted.\"\n\nThe pressure is mostly internal, but it’s fueled by the fear of being inadequate. I feel like I’m failing at being a full-time parent because I *have* to work, and I’m terrified I’ll be a failure at work because I’m being a full-time parent in total isolation. It’s a lose-lose. Nobody has sat me down to discuss how to manage this transition or how to stay healthy while doing it. It’s just, \"Can you work these hours?\" and I have to say yes, even though I’m barely keeping my head above water as it is.",
+      "responding_to_question_id": "V5_POST_Q06",
+      "input_tokens": 3872,
+      "output_tokens": 308
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did that affect your sense of who you are — did going back to work feel like reclaiming something, or losing something, or both?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s both, I think, but mostly it feels like a surrender. \n\nWhen I look at the job postings, part of me craves it—I crave the adult conversation, the structure, the feeling of being \"Elaine the professional\" again instead of just \"Elaine the mother who doesn't know what she's doing.\" I want to reclaim that sense of purpose that isn't just about whether or not the baby ate enough ounces. I want to feel capable in a world that isn't measured in diapers and tears.\n\nBut the other part of me—the part that’s sitting here in this quiet house—feels like I’m losing the chance to just *be* with her. I feel like if I go back to work, I’m admitting that I couldn't \"handle\" the stay-at-home reality. It’s like a failure of endurance. And the logistics of it? It terrifies me. How do you go to a meeting when you’ve been up all night with a baby who won't latch? How do you pretend to be sharp and focused when you’re literally leaking and raw and your heart is beating with that electric, constant fear that you're missing something important?\n\nIt feels like I’m being forced to split myself in two, and I’m scared that in the process, I’m just going to end up being half of both people—a worse mother and a distracted employee. It’s not a transition; it’s a compromise I’m not sure I’m ready for.",
+      "responding_to_question_id": "V5_POST_Q06_P01",
+      "input_tokens": 4210,
+      "output_tokens": 329
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the communities — online or in person — that became part of your postpartum world. Who did you connect with, and what did those communities offer that more formal support couldn't?",
+      "question_id": "V5_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "To be honest, the \"communities\" I’ve found feel a bit like a double-edged sword. I spend hours in these online parenting forums because I’m so starved for any kind of interaction, but they’re mostly just echo chambers of curated perfection. You see moms posting about their sleep-training success or their perfect breastfeeding setups, and it just makes my failure feel more singular, more \"me\" versus everyone else. \n\nBut sometimes—late at night, when the world is pitch black outside—I’ll find a thread where someone is finally honest. Someone will say, \"I’m losing my mind,\" or \"I hate breastfeeding today,\" and that’s when I feel a flicker of, well, *humanity*. Those anonymous voices offer me something the clinic never could: permission to be messy. \n\nThe formal support I’ve had, like the clinic or the doctor’s office, is all about *outcomes*. Are you meeting the milestones? Is the weight okay? The online stuff, even with all the toxic perfection, is the only place I can find someone who admits that this *hurts*. It’s a sad substitute for having a real person sitting on my sofa, telling me I’m okay, but it’s all I’ve got. It’s the only place where I’m not just a data point in a chart; I’m just a mom in the dark, wondering if tomorrow will be any different.",
+      "responding_to_question_id": "V5_POST_Q07",
+      "input_tokens": 4580,
+      "output_tokens": 304
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in pointing you toward those communities — a midwife, a friend, an algorithm — and how did that shape which communities you found?",
+      "question_id": null,
+      "probe_id": "V5_POST_Q07_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "There wasn't a midwife or a doctor who pointed me to them—the professionals were too busy focused on the physical checklist of \"is the baby healthy?\" to care about my mental need for connection. My social workers or clinic staff didn't offer a directory of support groups, not even for new, isolated mothers. It felt like they didn't even consider the \"me\" part of the motherhood equation.\n\nSo, honestly? It was the algorithm. It was the middle-of-the-night scrolling when I was feeding her, desperate for someone—*anyone*—to say that the pain I was feeling was normal. I’d search for terms like \"nipple pain with latching\" or \"is it normal to feel alone in the suburbs,\" and the phone just fed me back whatever was most popular or heavily sponsored.\n\nIt shaped my experience in a weird way because it meant I ended up in these echo chambers of \"Pinterest-perfect\" parenting. Because the algorithm prioritizes the loudest, most aesthetic voices, I wasn't finding support—I was finding evidence of my own inadequacy. I wasn't choosing a community; I was being sold an image of what a mother *should* be. If I’d had a real person—a human being in a white coat—actually sit with me and say, \"Elaine, you are isolated and this is hard, try this specific local group,\" I might have found a lifeline instead of just more ways to compare myself to strangers.",
+      "responding_to_question_id": "V5_POST_Q07_P01",
+      "input_tokens": 4916,
+      "output_tokens": 309
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about any moments after your birth when you felt that you — as a person, not just as a new mother — were seen and cared for. Who made that happen, and what did they do or say?",
+      "question_id": "V5_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "goals"
+      ],
+      "target_latent": [
+        "dignity_respect",
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "You know, it’s really hard to think of a moment. Maybe that’s the most telling thing—if I have to sit here and struggle to remember one instance where someone looked past the \"postpartum chart\" and really *saw* me, that says everything.\n\nThere was one time, a few weeks back, when I had to go into the clinic because I was terrified about a fever she had. I was a wreck, shaking, and there was this one nurse—not my usual one, just someone who happened to be on that shift. She didn't look at the computer screen right away. She looked at *me*. I had these dark circles under my eyes, and I’m sure I looked like I hadn't slept in a week. She just stopped and said, \"You look like you're carrying the weight of the world, Elaine. You're doing a brave thing.\" \n\nShe didn't tell me to drink more water or change my feeding position. She just validated that it was hard. For those thirty seconds, I felt like a human being again, not just a malfunctioning piece of biological equipment. It wasn't much—she couldn't fix my life or the isolation—but it was the only time someone didn't treat my exhaustion like a clinical error to be corrected. It was the only time I felt seen. Every other interaction has just been about the baby. I'm just the supporting character in her story, and that nurse was the only one who reminded me that I’m actually the main character in mine, too.",
+      "responding_to_question_id": "V5_POST_Q08",
+      "input_tokens": 5271,
+      "output_tokens": 327
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "I think just... I want people to know that the \"clinical gold standard\" is a lonely place to live when you're doing it by yourself in the middle of nowhere. I spent so much time trying to be the perfect patient, checking every box, making sure I followed every guideline—not because I felt supported, but because I was terrified that if I slipped up, I’d be labeled \"incompetent\" or \"high risk.\" \n\nWe talk about maternal health as if it’s just about heart rates, blood pressure, and breastfeeding ounces. But what about the silence? What about the fact that I haven't had a full conversation with another adult face-to-face in weeks? My health isn’t just about my physical body; it’s about the fact that I’m drowning, and I don't know who to signal for help without sounding like I’m failing.\n\nIf the system could just see us—really see us—before we reach a breaking point, maybe we wouldn't feel like we’re navigating this path in the dark. I’m not a complication. I’m just a young woman who was told motherhood would be instinctual and joyful, and instead, found out it’s the hardest thing I’ve ever done, and I’m doing it completely alone. That’s the real story.",
+      "responding_to_question_id": null,
+      "input_tokens": 5654,
+      "output_tokens": 282
+    }
+  ],
+  "metadata": {
+    "total_turns": 30,
+    "questions_asked": 8,
+    "probes_deployed": 5,
+    "adaptive_followups": 0,
+    "total_input_tokens": 47558,
+    "total_output_tokens": 4620,
+    "estimated_cost_usd": 0.0568,
+    "duration_seconds": 43.3,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 204
+  },
+  "errors": []
+}

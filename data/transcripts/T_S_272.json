@@ -1,0 +1,367 @@
+{
+  "session_id": "S_272",
+  "status": "completed",
+  "persona_id": "comp_100",
+  "persona_name": "Deidre",
+  "persona_journey_stage": "preconception",
+  "persona_risk_level": "medium",
+  "persona_vulnerability_flags": [
+    "low_social_support",
+    "previous_loss"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 5,
+  "questionnaire_strategy": "Relational / Stakeholder Map",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "google/gemini-3.1-flash-lite-preview",
+  "environment": "dev",
+  "timestamp": "2026-03-18T02:57:15.090123",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Deidre, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're thinking about starting a family, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "I appreciate you asking. It’s… strange, honestly. I spend so much time writing about the biology of it—the clinical precision of blastocysts and neural tubes—that I’ve sort of turned myself into a textbook. It’s a defense mechanism, I think. If I can explain the mechanics, maybe I can control the outcome. But standing on this Red Line platform, waiting for a train that’s perpetually delayed, the science doesn't really offer much comfort.\n\nBeing thirty-six and having walked this path before—well, \"walked\" isn't the right word. I lost the first one. That memory is a physical weight. Every time I get on the T to head to a specialist, I’m bracing for that same silence in the ultrasound room. My husband is working constantly, so it’s usually just me and my backpack, gripping the handrail, trying to ignore the nausea and the fact that I’m essentially navigating this alone in a city that feels very loud and very cold.\n\nI want this, so much, but I’m terrified to trust my own body again. I’m exhausted by the logistics, the \"medium risk\" labels, and the way I feel like I have to perform being a capable, informed patient just to get anyone to listen to the panic underneath. I’m ready to talk, but please, just… bear with me if I need a minute. It’s hard to put into words.",
+      "responding_to_question_id": null,
+      "input_tokens": 782,
+      "output_tokens": 304
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people who were part of your world when you first started thinking about having a baby — who came to mind, and what role did each of them play in those early conversations?",
+      "question_id": "V5_PREC_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "motivations"
+      ],
+      "target_latent": [
+        "informal_care_networks",
+        "intergenerational_patterns",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "When I first started thinking about this—the second time around—the world felt much smaller than it did the first. Back then, it was all excitement, all these plans with my husband, Mark. We were going to be this team, this unit. But now? Now the \"team\" feels spread thin. Mark is working these grueling double shifts, trying to make up for the financial hit of the last loss and the sheer cost of living in Boston. He’s supportive, sure, but he’s never actually *there* for the appointments. I hear him on the phone at night, voice raspy from exhaustion, telling me it’ll be different this time, but his voice sounds just as scared as mine.\n\nMy family is all back in the Midwest, and talking to them is like trying to explain a foreign language. They want to be helpful, but they don’t get the \"medium risk\" medical jargon, and they certainly don't get the cold, clinical distance of the Boston health system. I don't want to burden them with my panic because they’re already worried sick from a thousand miles away. \n\nHonestly, the people who occupy my world now are the ones I pass on the train and the technicians behind the desk. It’s lonely. I’m surrounded by people, but I feel like I’m in a bubble of \"if this goes wrong, I’m the one who has to hold it together.\"",
+      "responding_to_question_id": "V5_PREC_Q01",
+      "input_tokens": 1127,
+      "output_tokens": 300
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about your partner's involvement — or the involvement of someone close to you — when you were deciding whether and when to try for a baby. How did those conversations go, and who held the most influence?",
+      "question_id": "V5_PREC_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "partner_role",
+        "autonomy_vs_dependence",
+        "intergenerational_patterns"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "It was a heavy conversation, to be honest. It wasn't the kind of romantic, candlelit talk you see in movies. It was late at night, the apartment was quiet, and we were both just staring at the ceiling, feeling the absence of what we lost. \n\nMark… he wanted this so badly, maybe even more than I did. But he’s the one who sees the spreadsheets. He’s the one picking up the double shifts, terrified that our insurance won't cover a complication or that the \"medium risk\" label is just the beginning of a financial drain we can't handle. He’s incredibly protective, but that protection feels like distance sometimes. He’d say, \"Deidre, are you sure your body is ready?\" and every time he asked, it felt like he was questioning my capability, even though I know he’s just terrified of losing me, too.\n\nI think I held the most influence in the \"when,\" which is funny because I feel like I have the least control. I had to be the one to look at the medical data, to tell him that we were technically \"okay\" to try again, even if I was shaking while I said it. He looks to me for the green light because I’m the one who reads the journals, but God, I wish he’d just hold my hand and tell me it’ll be okay, regardless of what the science says. That’s what I’m actually looking for, isn’t it? Not a risk assessment, but a partner.",
+      "responding_to_question_id": "V5_PREC_Q02",
+      "input_tokens": 1473,
+      "output_tokens": 324
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Think about the healthcare professionals you saw before you became pregnant — a GP, a fertility specialist, or anyone else. Tell me about those relationships. Who felt most helpful, and who felt more distant?",
+      "question_id": "V5_PREC_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "trust_distrust",
+        "structural_barriers",
+        "dignity_respect"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "The clinical interactions have been a mixed bag, but they mostly leave me feeling like a data point rather than a person. My GP is fine—she’s efficient—but she’s a generalist. She sees my age and my history and immediately pivots to the specialist, which I understand, but it feels like being passed along a conveyor belt. \n\nThe specialist? That’s where the distance really bites. There’s a specific OB I see who is technically brilliant. She knows exactly which tests to run, and she listens when I talk about my progesterone levels or my fears about the neural tube. But she’s so clinical, so focused on the \"medium risk\" protocols, that she doesn't seem to notice when I’m staring at the wall, trying not to cry. \n\nThe most helpful person I’ve encountered wasn't even a doctor. It was a nurse—or maybe a phlebotomist—at the lab. I was having a particularly rough morning, feeling that familiar dread, and she just caught my eye while she was prepping the needle. She didn't ask about my clinical history or my risk factors; she just asked if I’d had a chance to get a decent breakfast, and she said it with actual warmth in her voice. That tiny bit of humanity felt like a lifeline. Everyone else? They’re just managing my biology. I’m just trying to keep my head above water.",
+      "responding_to_question_id": "V5_PREC_Q03",
+      "input_tokens": 1839,
+      "output_tokens": 296
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a specific moment with a healthcare professional where you felt truly heard — or not heard at all?",
+      "question_id": null,
+      "probe_id": "V5_PREC_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "dignity_respect",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "I remember one visit, about two months ago. I was sitting on that crinkly paper, feeling like I was under a microscope, and I started trying to explain how the trauma of the last ultrasound was still manifesting. I was using all these articulate words, trying to sound \"reasonable\" so they wouldn’t label me as \"anxious\"—because once you’re labeled as an anxious patient, they stop listening to your physical concerns and start looking at you like you’re a problem to be managed.\n\nI told the OB, \"I know the statistics, I know the probability of recurrence, but my body feels like it’s waiting for a disaster.\" I wanted her to just acknowledge the fear, to say, \"I know this is hard.\" Instead, she looked at her tablet, tapped the screen, and said, \"Deidre, your blood work is perfectly within the expected range for your age. Let's focus on the upcoming scan.\" \n\nShe didn't look up. She didn't pause. She basically just edited my feelings out of the medical record. It wasn't that she was *mean*, but the dismissal felt like a physical shove. In that second, I wasn't a woman who had gone through hell; I was just a set of variables that were currently trending in the right direction. I left feeling completely invisible, like my brain and my heart weren't part of the pregnancy at all.",
+      "responding_to_question_id": "V5_PREC_Q03_P01",
+      "input_tokens": 2159,
+      "output_tokens": 297
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the people — online or offline — who you turned to for information and reassurance before you got pregnant. Who was most influential, and how did their advice or stories shape what you believed about pregnancy?",
+      "question_id": "V5_PREC_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "I turned to medical journals and specialized embryology blogs, which, in hindsight, was probably my biggest mistake. I spent hours dissecting peer-reviewed studies on advanced maternal age and recurrence risks. I thought if I knew every possible complication, I could avoid it. It gave me a false sense of agency, but it also meant I was constantly \"pre-grieving.\" I’d read a paper and immediately start mapping out what would happen if *my* body did exactly what the paper said it might. \n\nOnline forums were even worse. I found these groups for \"medium-risk\" moms, but they were echo chambers of anxiety. You see one story about a late-term complication, and suddenly that’s your reality for the next three days. It wasn't reassurance; it was just more data to feed my fear.\n\nHonestly, I haven't found a single person who balances the science with actual human comfort. My friends, the ones who haven't been through this, just offer toxic positivity—\"Everything happens for a reason,\" or \"You're so knowledgeable, you'll be fine.\" It’s infuriating. It feels like they think if I just *believe* hard enough, the biology will cooperate. I don't need platitudes, and I don't need more PubMed articles. I just need someone to tell me it’s okay to be scared.",
+      "responding_to_question_id": "V5_PREC_Q04",
+      "input_tokens": 2500,
+      "output_tokens": 289
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in pointing you toward those sources — a friend, a family member, or did you find them yourself?",
+      "question_id": null,
+      "probe_id": "V5_PREC_Q04_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "digital_information_seeking"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "I found them myself, which I think says a lot about how I’ve been coping. There wasn't a doctor or a mentor who pointed me toward anything; it was all late-night, blue-light-induced searches on my laptop while Mark was asleep. I think I gravitated toward the medical journals specifically because they felt safer than talking to actual people. You can’t be disappointed by a peer-reviewed study, right? It doesn't offer false hope, and it doesn't try to invalidate how you feel—it just sits there, cold and factual.\n\nI actually kept this from most of my friends. When you’ve had a loss, you don’t want to be the \"pregnancy loss person\" in your friend group. People start to look at you with this pitying, tilted head, and I couldn't bear that. So, I became my own researcher. I went down these rabbit holes because I felt like I had to be the smartest person in the room just to get the doctors to take my concerns seriously. \n\nLooking back, I realize I wasn't searching for information to *learn*; I was searching to *prepare for the worst*. It’s a lonely way to navigate a beginning. Nobody pointed me to these sources because nobody was watching me closely enough to see that I was drowning in the data.",
+      "responding_to_question_id": "V5_PREC_Q04_P01",
+      "input_tokens": 2816,
+      "output_tokens": 279
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about the women in your family — your mother, grandmothers, sisters, or aunts — and how their experiences of pregnancy and motherhood influenced your own thinking before you even started trying.",
+      "question_id": "V5_PREC_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "intergenerational_patterns",
+        "identity_tensions",
+        "autonomy_vs_dependence"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "It’s complicated. My mother and my aunts, they come from a generation where you just… did it. They didn't have the apps or the detailed embryology breakdowns. They didn't have the language of \"medium risk\" or \"recurrence rates.\" When I talk to my mom about my fears, she mostly gives me this bewildered look. She’ll tell me, \"Deidre, just breathe. It’ll happen when it’s meant to.\" \n\nTo her, my struggle is just an over-complication of a natural process. She’s not wrong, but that perspective makes me feel so alienated. It makes me feel like my body is failing a test that everyone else passed without studying for. Growing up, I remember my aunt talking about her pregnancies as if they were just chores she had to fit in between harvest and work—no drama, no mourning, no constant, suffocating monitoring. \n\nI think that influenced me in the worst way: I’ve spent my life thinking that if I *don't* have that effortless experience, there’s something fundamentally \"wrong\" with me. I feel like I’ve broken the lineage, in a way. I’m the woman in the family who knows the science of why things go wrong, but I have absolutely no idea how to just *be* a mother, because I’m so stuck in the logistics of just getting there.",
+      "responding_to_question_id": "V5_PREC_Q05",
+      "input_tokens": 3135,
+      "output_tokens": 295
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did their stories — whether positive or difficult — show up in your own expectations or fears?",
+      "question_id": null,
+      "probe_id": "V5_PREC_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "intergenerational_patterns",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "Their stories are these ghosts in the room that I can’t quite exorcise. Because my mom and aunts never talked about the *hard* parts—they either didn't experience them, or they had this stoic, Midwestern \"just get on with it\" attitude—I grew up with this expectation that pregnancy should be this quiet, inevitable transformation. \n\nBut when my own path veered into loss, those stories became a trap. I felt like I was failing at being a \"natural\" woman because I needed medical interventions and because I was terrified. It made my fear feel like a character flaw. If my grandmother could do it with nothing but a midwife and sheer grit, why couldn't I do it with all this advanced medical technology at my fingertips? \n\nIt created this binary in my head: either you’re the \"natural\" mother who trusts her body implicitly, or you’re the \"medicalized\" mother who’s neurotic and broken. I don't see a middle ground where a woman can be both human and supported by science. So, I carry this guilt—that I’m too smart for my own good, or too weak for the \"natural\" way. I feel like I’m constantly disappointing the women who came before me, even though they’ve never actually said a word of judgment. It’s all in my head, I know, but that doesn't make it any less suffocating.",
+      "responding_to_question_id": "V5_PREC_Q05_P01",
+      "input_tokens": 3451,
+      "output_tokens": 297
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "Tell me about a time — if there was one — when trying to conceive felt harder than you expected. Who was around you during that period, and how did those relationships change or hold steady?",
+      "question_id": "V5_PREC_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "behaviours"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "trust_distrust",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "It was that first month after the loss. I thought I’d be \"fine\" because I’m so rational, but the reality hit like a physical blow. We were trying again, and every negative test felt like the world was confirming that I was broken. \n\nDuring that time, I felt like I was losing my connection to Mark. He was so caught up in his work, trying to save us, and I was so caught up in the charting and the BBT thermometers. We weren’t a couple anymore; we were two people in the same house trying to solve a puzzle that wouldn't click. One night, I just threw the fertility kit across the room. I don't think I’d ever seen him look so scared—not for the baby, but for me. He didn't know what to do, so he just walked out to the kitchen and made coffee. That silence was the hardest part. \n\nMy friendships shifted, too. The ones who didn't have kids just couldn't sit in the discomfort with me. They’d try to distract me with brunch plans, and I wanted to scream because I didn't want a mimosa, I wanted to stop feeling like my body was a failed experiment. The only thing that held steady was my own obsession with the data. It was the only thing I could count on. That was the lowest point—realizing that I’d traded my peace of mind for a stack of spreadsheets that couldn't give me the one thing I needed: a healthy, heartbeat-thumping promise.",
+      "responding_to_question_id": "V5_PREC_Q06",
+      "input_tokens": 3789,
+      "output_tokens": 325
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Who else was involved in supporting you — or perhaps adding to the pressure — at that time?",
+      "question_id": null,
+      "probe_id": "V5_PREC_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "informal_care_networks",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "It wasn't a person, really—it was the system. The sheer friction of trying to get care in Boston added so much pressure it was suffocating. When you're \"medium risk,\" you aren't an emergency, but you aren't \"normal\" enough to just have a quiet, peaceful experience. You’re in this gray area where you’re constantly reminded that you need extra eyes on you, but the people providing those eyes are overworked and rushed.\n\nMy employer was a massive source of pressure, though they didn't know it. I have a demanding job, and trying to hide these appointments—sneaking out to the lab, timing the T, then rushing back to a screen to act like I wasn't just sitting in a clinic waiting for someone to tell me if my hormone levels were \"correct\"—was exhausting. I felt like I was leading a double life.\n\nThen there was the collective weight of society, I suppose. Every time I opened social media, there were these \"pregnancy announcements\" that looked so effortless. It’s a performative industry, isn't it? Even the way we announce pregnancies on Instagram makes it look like this magical, simple transition. Seeing that while I was struggling to just get to a clinic on time… it added this layer of, \"Why is this so hard for me?\" It felt like a public failure, even if I was the only one who really knew the extent of it.",
+      "responding_to_question_id": "V5_PREC_Q06_P01",
+      "input_tokens": 4135,
+      "output_tokens": 300
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "You know, I’ve been thinking about what you asked—about the \"medium risk\" label. I realized I haven't really said how much I hate that term. It sounds so… bureaucratic. It’s like being told you’re in a waiting room that has no exit. \n\nWhen you’re \"medium risk,\" you’re not sick enough for the specialized, high-touch support that the really complex cases get, but you’re too \"complicated\" for the relaxed, reassuring care that people with healthy, simple pregnancies get. You’re just caught in this limbo where you have to do all the heavy lifting yourself. You have to be the one to remember the follow-up appointments, the one to double-check the labs, the one to track every single symptom. \n\nI just wish there was a space in the system for people like me—people who know too much, who have been through enough to lose their innocence, but who aren't \"bad enough\" to warrant a human touch. I don't just need a better doctor; I need a witness. I need someone to see that even though the blood work says I’m \"fine,\" I’m carrying a backpack full of ghosts onto the subway every morning. \n\nIf your research can do anything, I hope it helps the people in these clinics realize that a woman walking in alone for her third appointment isn't just a clinical file. She’s a person holding her breath, waiting for someone to finally exhale with her. That’s all I really want—for someone to just notice that I’m holding my breath.",
+      "responding_to_question_id": null,
+      "input_tokens": 4491,
+      "output_tokens": 336
+    }
+  ],
+  "metadata": {
+    "total_turns": 24,
+    "questions_asked": 6,
+    "probes_deployed": 4,
+    "adaptive_followups": 0,
+    "total_input_tokens": 31697,
+    "total_output_tokens": 3642,
+    "estimated_cost_usd": 0.039,
+    "duration_seconds": 33.2,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 250
+  },
+  "errors": []
+}

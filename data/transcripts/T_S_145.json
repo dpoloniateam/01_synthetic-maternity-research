@@ -1,0 +1,449 @@
+{
+  "session_id": "S_145",
+  "status": "completed",
+  "persona_id": "comp_083",
+  "persona_name": "Cristina",
+  "persona_journey_stage": "postpartum",
+  "persona_risk_level": "medium",
+  "persona_vulnerability_flags": [
+    "language_barrier",
+    "low_social_support",
+    "single_parent"
+  ],
+  "persona_latent_dimensions": [
+    "power_dynamics",
+    "identity_tensions",
+    "structural_barriers",
+    "trust_distrust_providers",
+    "autonomy_vs_dependence",
+    "informal_care_networks",
+    "emotional_labor_of_care",
+    "knowledge_asymmetry",
+    "temporal_pressure"
+  ],
+  "questionnaire_version": 2,
+  "questionnaire_strategy": "Thematic Deep-Dive",
+  "interviewer_model": "openai/gpt-5-mini-2025-08-07",
+  "persona_model": "anthropic/claude-haiku-4-5",
+  "environment": "dev",
+  "timestamp": "2026-03-18T01:35:23.575397",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "interviewer",
+      "type": "opening",
+      "text": "Hello Cristina, thank you so much for taking the time to speak with me today. I'm a researcher studying maternity care experiences, and I'm really interested in hearing your personal story. I understand you're adjusting to life after having your baby, and I'd love to hear about your experience in your own words. There are no right or wrong answers — I'm just here to listen and learn from you. Everything you share will help us understand how to make maternity care better. Shall we begin?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 2,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts in chair, glancing toward the baby monitor before looking back at you*\n\nYes, okay. Thank you for... for asking me to talk about this. It is hard sometimes, you know? To say things out loud.\n\n*pauses, choosing words carefully*\n\nThe pregnancy and birth, the medical part — that was okay, I think. The doctors, they did their job. But after? After is when everything became complicated. I am home alone with my baby, and I am... I am terrified all the time. Not in a way that doctors can fix with medicine. It is different.\n\n*rubs face*\n\nThe biggest problem right now is that I cannot go places. I do not have a car, and this town — it is not like the city where I can take buses everywhere. When my son needs to see the doctor, I have to call someone, ask someone, and usually... nobody can help. So I wait. I worry. I Google things on my phone at three in the morning, and I read all the things that could be wrong, and I think about diseases I studied in my work, and...\n\n*voice becomes quieter*\n\nIt is frustrating because I understand this medical world. I know what to look for. But I cannot reach it when I need to. And when I do get to the clinic, the providers, they see me and they speak slowly, like I am not... like I don't understand anything. \n\nSo I am alone and worried and invisible.",
+      "responding_to_question_id": null,
+      "input_tokens": 798,
+      "output_tokens": 320
+    },
+    {
+      "turn_number": 3,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your goals for recovery and support in the days and weeks after birth, what did you most want or need — and how well did the postnatal care you received address those needs?",
+      "question_id": "V2_POST_Q01",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 4,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans back, expression becoming more distant*\n\nWhat I needed... I needed someone to see me. Not just as a patient with checkboxes, but as a person who is alone now. A person who is scared.\n\n*voice tightens slightly*\n\nMy goals were simple, I think. I wanted to make sure my baby was healthy — that we were both recovering okay. And I wanted... I wanted not to feel so isolated. When you are postpartum, your body is healing, your hormones are crazy, and you are responsible for a tiny human who cannot do anything without you. When you do not have a partner, when you do not have family nearby, when you do not have transportation... it becomes very heavy.\n\n*pauses, fidgeting with her hands*\n\nThe postnatal care? The visits were... they checked my stitches, they weighed the baby, they asked if I was depressed. Yes, fine. But did they ask how I would get to the next appointment? No. Did they ask if I had someone to help? Not really. There was no... no real plan. They gave me papers with instructions, but nobody helped me think about how I would actually do these things.\n\n*voice becomes firmer, with an edge of frustration*\n\nAnd the support groups they mentioned — they are during the day when I am working, or in parts of town I cannot reach. So they might as well not exist for me.\n\nWhat I needed most was someone to say, \"How will you actually do this?\" and then help me figure it out. That never happened.",
+      "responding_to_question_id": "V2_POST_Q01",
+      "input_tokens": 1162,
+      "output_tokens": 343
+    },
+    {
+      "turn_number": 5,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "What did 'good' postnatal care look like in your mind before you gave birth — and how did that compare to what you actually experienced?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q01_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 6,
+      "role": "persona",
+      "type": "response",
+      "text": "*closes eyes for a moment, as if remembering something from another life*\n\nBefore, when I was pregnant, I imagined... I thought it would be like the textbooks say, you know? The clinical information I read — good prenatal visits, education about recovery, maybe someone checking in on you. Clear instructions. Follow-up appointments that made sense.\n\n*opens eyes, voice becoming softer*\n\nI thought there would be acknowledgment that I was a single mother this time. That maybe they would ask more questions, offer more resources. I am not stupid — I know the statistics about single mothers and postpartum depression. I thought doctors would... I don't know, be more careful? More attentive?\n\n*slight bitter laugh*\n\nWhat I actually got was very different. The visits felt rushed. The midwife or doctor would come, do their check very quickly, and then they were gone. Nobody asked about my work situation or how I was managing everything alone. Nobody asked if I had someone to call at two in the morning when I was panicking about something my baby did.\n\n*voice becomes more emotional*\n\nAnd the biggest thing — nobody helped me plan. How would I get my baby to appointments? What if I got sick? What happens if something goes wrong and I need help? These are not small questions for me, but they seemed to be invisible questions for them.\n\n*looks directly at you*\n\nGood care, I think, means seeing the whole person — not just the body that gave birth. It means asking hard questions and actually listening to the answers. That is not what happened.",
+      "responding_to_question_id": "V2_POST_Q01_P01",
+      "input_tokens": 1539,
+      "output_tokens": 341
+    },
+    {
+      "turn_number": 7,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about feeding your baby — whether through breastfeeding, formula, or a combination — what motivated your choices, and how supported did you feel in pursuing the approach you wanted?",
+      "question_id": "V2_POST_Q02",
+      "probe_id": null,
+      "target_dimensions": [
+        "motivations",
+        "behaviours"
+      ],
+      "target_latent": [
+        "autonomy_vs_dependence",
+        "dignity_respect",
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 8,
+      "role": "persona",
+      "type": "response",
+      "text": "*shifts uncomfortably, looking down*\n\nAh, this is... this is a sensitive topic for me.\n\n*takes a breath*\n\nI wanted to breastfeed. With my other children, I did it, and I knew the benefits — the antibodies, especially for infections. Given what I study, what I know about RSV and how vulnerable newborns are... I wanted that protection for him. It made sense to me scientifically and emotionally.\n\n*voice becomes quieter, more strained*\n\nBut my body... my body had other ideas. The pain was intense. And I was working full-time almost immediately after birth because I cannot afford not to work. I was exhausted in a way I had never been before. Pumping at work, trying to maintain supply while being stressed and alone...\n\n*pauses, jaw tightens*\n\nThe lactation consultant I saw, she was nice, but she only came once. One visit. She gave me tips, but then I was on my own again, struggling in the evenings after work, after taking care of the other children. I tried to call for help, but getting someone on the phone was impossible. The language barrier made it harder too — I would try to explain the pain, the engorgement, and the words would not come right, and I felt like maybe she did not understand how bad it was.\n\n*voice becomes resigned*\n\nSo I supplemented with formula. Then mostly formula. I felt guilty about it, even though I understand the science says formula is fine. But I felt like I was failing at something I should be able to do.\n\nNobody really supported any choice, honestly. They just... expected me to manage it alone.",
+      "responding_to_question_id": "V2_POST_Q02",
+      "input_tokens": 1922,
+      "output_tokens": 368
+    },
+    {
+      "turn_number": 9,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about your emotional and mental health in the weeks and months after birth — the adjustment, the challenges, and the moments of wellbeing — what stands out most, and how well-supported did you feel?",
+      "question_id": "V2_POST_Q03",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "power_dynamics",
+        "continuity_of_care"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 10,
+      "role": "persona",
+      "type": "response",
+      "text": "*long pause, eyes glistening slightly*\n\nThis is the hardest part to talk about.\n\n*voice becomes very quiet*\n\nThe emotions... they are not simple. There is joy when I look at my baby sleeping, yes. But it is mixed with so much fear and loneliness that sometimes the joy gets buried underneath.\n\n*rubs eyes*\n\nThe first weeks were... I think I was in survival mode. Just getting through each day. Feeding, changing, working, trying to sleep. But as the weeks went on, the reality of being completely alone started to sink in. My ex-husband, he is not involved much. My family is far away. My friends, they have their own families. So at night, when the baby finally sleeps and the house is quiet, I sit there and I think about everything I have lost — my marriage, my partner, my sense of stability.\n\n*voice cracks slightly*\n\nAnd then I worry. About my son getting sick, about whether I am doing everything right, about money, about whether I am a good mother when I am so tired and sad. The knowledge I have about viruses and infections, it makes it worse. I see every symptom as a potential crisis.\n\n*looks at you directly*\n\nDid anyone ask me how I was doing emotionally? The doctor asked the depression screening questions — \"Do you feel sad?\" — but it felt like a checkbox. Nobody said, \"You are alone. This is hard. Let us help you find support.\" \n\nI never felt supported. I felt watched, judged maybe, but not supported. There is a difference.",
+      "responding_to_question_id": "V2_POST_Q03",
+      "input_tokens": 2338,
+      "output_tokens": 347
+    },
+    {
+      "turn_number": 11,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a period when you felt particularly low, overwhelmed, or unlike yourself — what was happening and who or what helped?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q03_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "identity_tensions",
+        "informal_care_networks"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 12,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a shaky breath, gripping the edge of the table*\n\nThere was... there was a moment about six weeks after he was born. I remember it very clearly.\n\n*voice becomes very small*\n\nI had just come home from work — I work in a lab, so I am around chemicals, samples, all day. I am tired in a way that does not make sense, like my bones are made of lead. And my son, he had this cough. Not severe, but persistent. And I kept thinking about bronchiolitis, about how quickly it can progress in infants, about the viral replication rates...\n\n*rubs face*\n\nI called the clinic three times that day. The first time, they said to monitor him. The second time, the nurse seemed irritated with me, like I was being a worried mother for no reason. I could not explain well enough in English that I was not just worried — I was watching for specific signs. My accent, my broken words, I think she dismissed me.\n\n*voice trembles*\n\nThat night, I sat on the kitchen floor — literally on the floor at midnight — and I cried. Not just cried. I sobbed. I thought, \"What am I doing? I cannot do this alone. I cannot protect him. I cannot reach help when I need it.\"\n\n*pauses, composes herself slightly*\n\nWhat helped? Honestly? The next morning, my neighbor brought over soup. She did not know what was wrong. She just... knocked and left it. That small thing — someone seeing me, acknowledging I existed — it broke through something. It did not fix anything, but it reminded me I was not completely invisible.\n\n*voice quieter*\n\nI needed more of that. I still do.",
+      "responding_to_question_id": "V2_POST_Q03_P01",
+      "input_tokens": 2715,
+      "output_tokens": 381
+    },
+    {
+      "turn_number": 13,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the shift in your identity and sense of self after becoming a parent, what tensions or changes were most significant — and how did those changes interact with your other roles, such as partner, professional, or daughter?",
+      "question_id": "V2_POST_Q04",
+      "probe_id": null,
+      "target_dimensions": [
+        "latent_needs",
+        "motivations"
+      ],
+      "target_latent": [
+        "identity_tensions",
+        "intergenerational_patterns",
+        "body_image_autonomy"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 14,
+      "role": "persona",
+      "type": "response",
+      "text": "*stares at hands for a long moment, processing*\n\nThis is... this is the question nobody asks, but it is everything.\n\n*voice becomes thoughtful, tinged with sadness*\n\nBefore, I was Dr. Cristina in my mind — the scientist. The person who understood complex systems, who contributed something meaningful. I had a marriage, a partnership. We were building something together. I was a daughter to my mother, even from far away. These identities, they fit together somehow.\n\n*looks up, eyes distant*\n\nNow? Now I am just... a mother. Only a mother. And a single one, which somehow feels like a different category entirely.\n\n*voice becomes tighter*\n\nAt work, I try to be the professional. I put on my lab coat and I focus on the research. But my mind is always somewhere else — is my son okay? Did the sitter remember to give him his vitamins? Can I afford next month's childcare? I am not present the way I used to be. My colleagues, they notice. I see it in how they look at me.\n\n*rubs eyes*\n\nAnd my mother... she calls and she wants to know if I am okay, if the baby is okay, but I cannot tell her the truth because she is already worried and sad about the divorce. So I become the strong one again, the daughter who has it handled, even though I am falling apart.\n\n*voice becomes raw*\n\nThe worst part is that my scientific identity — the thing that made me feel smart, capable — it is now a burden. I know too much about what can go wrong. I cannot unknow it. And nobody understands that I am not just a worried mother. I am a worried mother who understands microbiology.\n\n*pauses*\n\nI have lost the person I was. I do not know who I am becoming.",
+      "responding_to_question_id": "V2_POST_Q04",
+      "input_tokens": 3145,
+      "output_tokens": 403
+    },
+    {
+      "turn_number": 15,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the support you received from your partner in the postpartum period — in caring for the baby, supporting your recovery, and sharing emotional labour — how would you describe that experience, and what would have made it better?",
+      "question_id": "V2_POST_Q05",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 16,
+      "role": "persona",
+      "type": "response",
+      "text": "*face goes very still, jaw clenches*\n\nMy partner...\n\n*long silence*\n\nThere is no partner anymore. That is part of why I am here, why everything is so hard.\n\n*voice becomes controlled, careful*\n\nDuring the pregnancy, he was... present, I think. We were trying. We had problems, but we were still together. And when the baby was born, for maybe two weeks, he was there. He helped. He brought things, he held the baby sometimes.\n\n*looks away*\n\nBut then things fell apart very quickly. The stress, the money problems, the way he did not understand what I needed — or maybe he understood and did not care. I do not know anymore. By the time my son was eight weeks old, we were no longer together. He moved out. Now he sees the baby maybe once a week, sometimes less.\n\n*voice becomes harder*\n\nSo the postpartum support from a partner? It does not exist for me. There is no one to share the night wakings, no one to hold the baby while I shower, no one to just... be there. The emotional labour is entirely mine. All of it.\n\n*pauses, voice quieter*\n\nWhat would have made it better? If he had stayed, if we had been able to work through things... But that is fantasy now. What would actually help is if the system recognized that single mothers exist and we need more. More resources, more flexibility at work, more understanding from healthcare providers.\n\n*looks at you*\n\nThat is the reality I am living in.",
+      "responding_to_question_id": "V2_POST_Q05",
+      "input_tokens": 3599,
+      "output_tokens": 338
+    },
+    {
+      "turn_number": 17,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "How did the division of caregiving responsibilities compare to what you and your partner had discussed or assumed before the birth?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q05_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "partner_role",
+        "identity_tensions"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 18,
+      "role": "persona",
+      "type": "response",
+      "text": "*laughs bitterly, shaking head*\n\nWe did not really discuss it. That was part of the problem.\n\n*leans forward, voice becoming more animated with frustration*\n\nBefore the baby came, we talked about... practical things. Where the crib would go, what we would name him. But the actual division of labor? The emotional work? No. We assumed it would just... happen. That I would do most of it because I am the mother, and he would help when he could.\n\n*voice becomes sharper*\n\nWhich is a very naive assumption when you are both already exhausted. When he works long hours and I work long hours and we have three other children and a marriage that is already struggling.\n\n*rubs face*\n\nI think he believed that once the baby was here, everything would feel different — that he would feel like a father and want to be involved. Maybe he did feel that way, but it was not enough to make him stay. The reality of four children, of my exhaustion, of the financial pressure... it was too much.\n\n*voice becomes quieter, more resigned*\n\nSo what we \"assumed\" before — that we would be partners in this — never happened. There was no real division because there was no partnership by the time the baby needed care the most.\n\n*looks directly at you*\n\nI think many couples have these conversations that are not really conversations. They are just... silence and hope that things will work out. And when they do not work out, you are left alone wondering why nobody prepared you for that possibility.",
+      "responding_to_question_id": "V2_POST_Q05_P01",
+      "input_tokens": 3963,
+      "output_tokens": 336
+    },
+    {
+      "turn_number": 19,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about the barriers you encountered in accessing postnatal support — whether physical, emotional, informational, or systemic — what were the most significant, and what impact did they have on your recovery and wellbeing?",
+      "question_id": "V2_POST_Q06",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "structural_barriers",
+        "autonomy_vs_dependence",
+        "power_dynamics"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 20,
+      "role": "persona",
+      "type": "response",
+      "text": "*takes a deep breath, seems to gather herself*\n\nThe barriers... they are like layers. Each one makes the next one worse.\n\n*counts on fingers*\n\nThe transportation, that is the most obvious one. No car means I cannot get to appointments when I need them. The clinic is three miles away. Three miles. In a city, nothing. Here? It might as well be thirty miles. So I miss appointments, I delay care, and then I worry that I am being a bad mother for not getting my baby to the doctor fast enough.\n\n*voice becomes more frustrated*\n\nThen there is work. I had to go back full-time very quickly because I need the money. There is no flexibility. So I am working, pumping at lunch in a bathroom stall, rushing to pick up children from school, coming home to a baby who needs me, and I have nothing left. No energy for recovery. My body is still healing and I am running on empty.\n\n*pauses, voice becomes quieter*\n\nThe language barrier — this one hurts me more than people realize. I am educated. I have a degree. I understand medical concepts in Spanish and in English, but when I am tired and stressed and trying to explain a symptom to a doctor, my English fails me. And they look at me like I am less intelligent than I am. They speak slowly. They use simple words. And I become smaller in that moment.\n\n*eyes water slightly*\n\nBut the biggest barrier? It is the invisibility. The system does not see single mothers like me. The resources, the support groups, the follow-up care — they are designed for people who have support systems, who can drive places, who speak English fluently. For people like me? We fall through every crack.\n\n*voice becomes very quiet*\n\nThe impact is that I recover alone. My body heals, but my mind... my mind is still struggling. And nobody checks on that.",
+      "responding_to_question_id": "V2_POST_Q06",
+      "input_tokens": 4349,
+      "output_tokens": 415
+    },
+    {
+      "turn_number": 21,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe a specific instance where you needed help but found it difficult to access — what happened and what got in the way?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q06_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 22,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods slowly, as if she knew this question was coming*\n\nYes. There is one moment that... it stays with me.\n\n*takes a shaky breath*\n\nIt was about three weeks after birth. I developed mastitis — very painful infection in my breast. I knew what it was immediately because I have had it before. I knew I needed antibiotics, that I needed to be seen by a doctor.\n\n*voice becomes tighter*\n\nSo I called the clinic in the morning. They said they could see me in two days. Two days! I was in pain, I had a fever, I could barely function. I asked if there was anything sooner, and the receptionist, she said no, everything was booked.\n\n*stands up slightly, agitated*\n\nI did not have a car that day. My neighbor who sometimes helps, she was working. I called my ex — he did not answer. I thought about taking the bus, but I would need to get the baby ready, find the stop, figure out which bus goes there. The website was confusing. The bus schedule, it did not match the clinic hours.\n\n*sits back down, voice becomes hollow*\n\nSo I waited. I went to work the next day running a fever because I could not miss the paycheck. I was miserable. And when I finally got to the appointment two days later, the doctor looked at me and said, \"You should have come in sooner. This could have gotten worse.\"\n\n*looks at you with exhaustion and anger*\n\nI wanted to come in sooner! But how? Nobody asked that question. Nobody said, \"Do you have transportation? Do you need help arranging this?\" They just... assumed I could get there.\n\n*voice becomes very quiet*\n\nI got the antibiotics. I recovered. But I learned that the system does not care about my barriers. It only cares that I did not appear when they had time for me.",
+      "responding_to_question_id": "V2_POST_Q06_P01",
+      "input_tokens": 4793,
+      "output_tokens": 417
+    },
+    {
+      "turn_number": 23,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you think about how you used digital tools, apps, social media, or online communities after birth — to seek information, find support, or track your recovery — what role did those resources play, and what were their limits?",
+      "question_id": "V2_POST_Q07",
+      "probe_id": null,
+      "target_dimensions": [
+        "behaviours",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "digital_information_seeking",
+        "informal_care_networks",
+        "trust_distrust"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 24,
+      "role": "persona",
+      "type": "response",
+      "text": "*nods, seems almost relieved by this question*\n\nThis... this is where I survived, actually. Online.\n\n*leans forward slightly*\n\nWhen I could not get to the clinic, when I could not talk to someone on the phone, I had my phone. Google became my doctor at three in the morning. I would search symptoms, I would read about RSV transmission, about feeding problems, about postpartum recovery. Because of my background, I could usually understand the medical articles, even the complex ones.\n\n*voice becomes more animated*\n\nThere are Facebook groups for mothers — I found some in Spanish, some in English. When I felt alone, I would scroll through and see other women saying similar things. That helped. Just knowing I was not the only one struggling.\n\n*expression becomes more complicated*\n\nBut the limits... they are real. I spent hours reading things that scared me more than they helped. I would see a symptom in my baby and I would spiral into worst-case scenarios because I understand the pathophysiology too well. Other mothers on these groups, they would say things that were not accurate, and I would correct them, and sometimes they would not listen because I am just another tired mom online, not a scientist.\n\n*voice becomes quieter*\n\nAnd the apps — tracking apps for feeding, sleep, development — they are helpful for the data, yes. But they do not ask about my mental health. They do not know that I am alone. They just say things like \"Make sure you rest\" or \"Reach out to your support system,\" and I want to scream because I don't have those things.\n\n*rubs eyes*\n\nThe internet gave me information but not real help. It filled time but not the emptiness.",
+      "responding_to_question_id": "V2_POST_Q07",
+      "input_tokens": 5259,
+      "output_tokens": 374
+    },
+    {
+      "turn_number": 25,
+      "role": "interviewer",
+      "type": "question",
+      "text": "When you reflect on your entire maternity journey — from preconception through to the postpartum period — what do you wish had been done differently by the care system, and what single change would have made the greatest difference to your experience?",
+      "question_id": "V2_POST_Q08",
+      "probe_id": null,
+      "target_dimensions": [
+        "goals",
+        "latent_needs"
+      ],
+      "target_latent": [
+        "continuity_of_care",
+        "dignity_respect",
+        "latent_needs"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 26,
+      "role": "persona",
+      "type": "response",
+      "text": "*leans back, eyes distant, as if looking at the entire journey at once*\n\nIf I think about everything... from when I found out I was pregnant to now, sitting here alone with my baby...\n\n*voice becomes thoughtful, measured*\n\nThe care system treated me like my body was the patient. They checked my blood pressure, my weight, they did ultrasounds. They monitored the baby's heartbeat. But they never treated me like a whole person with a life that was falling apart around me.\n\n*pauses*\n\nThey never asked the hard questions early enough. \"How is your marriage?\" \"Do you have support at home?\" \"What happens after the baby comes?\" If someone had asked those things during pregnancy, maybe things would have been different. Maybe I could have gotten help before the crisis.\n\n*voice becomes firmer*\n\nBut the single change? The one thing that would have made the greatest difference?\n\n*looks directly at you*\n\nSomeone — just one person — who could coordinate my care. Someone who knew about transportation, who understood the language barrier, who could connect me to resources before I needed them desperately. Not just a midwife or a doctor checking boxes. Someone who saw my whole situation and said, \"Here is how we will make this work for you specifically.\"\n\n*voice becomes quieter, more vulnerable*\n\nAnd they would need to check in. Not once at six weeks. Regularly. Because the hardest part was not the birth. It was after, when I was alone and nobody was looking.\n\n*pauses*\n\nIf someone had been my advocate, my bridge to the system... I think everything would be different now.",
+      "responding_to_question_id": "V2_POST_Q08",
+      "input_tokens": 5685,
+      "output_tokens": 355
+    },
+    {
+      "turn_number": 27,
+      "role": "interviewer",
+      "type": "probe",
+      "text": "Can you describe the specific moment or phase where you felt most let down by the system — what was the gap and what would have helped?",
+      "question_id": null,
+      "probe_id": "V2_POST_Q08_P01",
+      "target_dimensions": [],
+      "target_latent": [
+        "continuity_of_care",
+        "structural_barriers"
+      ],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 28,
+      "role": "persona",
+      "type": "response",
+      "text": "*closes eyes, voice becomes very small*\n\nThe moment was about four weeks postpartum. Right when I went back to work.\n\n*opens eyes, looking directly at you*\n\nI remember the morning so clearly. I had to drop my baby with a sitter I could barely afford, who I barely knew. My body was still bleeding, still healing. My breasts were engorged because I was trying to maintain supply while working. I had not slept more than two hours at a time in weeks. And I had to go to the lab and pretend everything was normal.\n\n*voice trembles*\n\nThe system — the doctors, the clinic — they cleared me to return to work at six weeks. \"You are medically cleared,\" they said. As if my body healing meant I was ready to be alone again, to be a full-time worker and a full-time mother with no support.\n\n*leans forward, intensity building*\n\nNobody said, \"Wait. You do not have childcare arranged. You do not have a partner. You do not have family here. How are you actually going to do this?\" Nobody offered resources or flexibility. Nobody connected me with a postpartum doula, or a support group that met in the evenings, or even just... someone to call when I was breaking down.\n\n*voice becomes raw*\n\nThe gap was between medical clearance and actual survival. I was \"cleared\" but I was drowning. And the system just... washed its hands. Six-week checkup, everything looks good, goodbye.\n\n*sits back*\n\nWhat would have helped? A real plan. Someone saying, \"Let us figure out how you will actually live these next months. Let us connect you to resources. Let us check in weekly, not in six months.\"\n\n*voice becomes almost whisper*\n\nI needed them to see that I was not just physically healing. I was emotionally and practically breaking apart.",
+      "responding_to_question_id": "V2_POST_Q08_P01",
+      "input_tokens": 6071,
+      "output_tokens": 413
+    },
+    {
+      "turn_number": 29,
+      "role": "interviewer",
+      "type": "closing",
+      "text": "Thank you so much for sharing all of that with me. Your experiences and insights are incredibly valuable. Before we finish, is there anything else about your maternity experience that we haven't covered today — anything that feels important to you that you'd like to add?",
+      "question_id": null,
+      "probe_id": null,
+      "target_dimensions": [],
+      "target_latent": [],
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "turn_number": 30,
+      "role": "persona",
+      "type": "response",
+      "text": "*sits quietly for a moment, thinking*\n\nThere is something... yes.\n\n*voice becomes deliberate*\n\nI want people to understand that I am not asking for pity. I am not a victim who needs to be saved. I am a competent person — I have a degree, I understand science, I can take care of my children. But the system made me feel incompetent. It made me feel less than.\n\n*gestures with frustration*\n\nWhen providers looked at me — the single mother, the woman with an accent, the one without transportation — they saw a problem to manage, not a person to support. And that... that changes how you see yourself. After a while, you start to believe what they seem to believe about you.\n\n*voice becomes stronger*\n\nThe other thing is that my knowledge became a curse. I know too much about what can go wrong with newborns. I know the infection rates, the complications, the worst-case scenarios. And nobody helped me process that. Nobody said, \"Your clinical knowledge is making you more anxious, and that is normal and we can help.\" Instead, I just... carried it alone at night while my baby slept.\n\n*pauses, eyes glistening*\n\nAnd finally... I want to say that I love my son fiercely. Even in the darkness, even when I am terrified, even when I am alone — I love him. But I should not have had to choose between my recovery and my survival. The system should have helped me do both.\n\n*looks at you*\n\nThat is what I wish you understood.",
+      "responding_to_question_id": null,
+      "input_tokens": 6540,
+      "output_tokens": 343
+    }
+  ],
+  "metadata": {
+    "total_turns": 30,
+    "questions_asked": 8,
+    "probes_deployed": 5,
+    "adaptive_followups": 0,
+    "total_input_tokens": 53878,
+    "total_output_tokens": 5494,
+    "estimated_cost_usd": 0.0649,
+    "duration_seconds": 83.5,
+    "dimensions_covered": [
+      "behaviours",
+      "goals",
+      "latent_needs",
+      "motivations"
+    ],
+    "latent_dimensions_surfaced": [
+      "autonomy_vs_dependence",
+      "body_image_autonomy",
+      "continuity_of_care",
+      "digital_information_seeking",
+      "dignity_respect",
+      "identity_tensions",
+      "informal_care_networks",
+      "intergenerational_patterns",
+      "latent_needs",
+      "partner_role",
+      "power_dynamics",
+      "structural_barriers",
+      "trust_distrust"
+    ],
+    "catch_all_response_length": 258
+  },
+  "errors": []
+}
