@@ -1,0 +1,341 @@
+# Extracted from: Paper Designing Sharper User Research_Final.docx
+
+Designing Sharper User Research: AI and Synthetic Users in the Front End of Innovation
+
+Abstract
+
+The use of artificial intelligence (AI) to support innovation activities has expanded rapidly, but attention has largely focused on firm-level adoption, business models, and ideation systems, while the micro-level design of user research instruments has remained under-examined. In this paper, it is proposed that interview-assisted AI and synthetic users can be mobilised as a front-end innovation capability to design a sharper interview guide for maternity-care user research. Drawing on the knowledge-based view of the firm, organisations are conceptualised as knowledge-creation systems, and AI-enabled synthetic user research, the combination of structured synthetic personas and interview-assisted AI, is framed as a micro-capability that expands and structures user knowledge before fieldwork with real participants. Two studies are outlined in the context of maternity care, a complex and ethically sensitive service journey covering preconception, pregnancy, birth and post-partum. In Study 1, a design-laboratory approach is adopted: synthetic maternity personas are constructed, AI-moderated synthetic interviews are generated, and the interview guide is iteratively refined through gap analysis of topic coverage, probing depth and the surfacing of latent dimensions such as power, identity and structural barriers. In Study 2, the resulting guide is evaluated by an expert panel of innovation scholars and maternity-care professionals along knowledge-facing and innovation-facing criteria, including breadth of coverage, depth of latent insight, innovation relevance, and strategic actionability of the insights expected to be produced. A theoretical contribution is made by positioning AI-enabled synthetic user research as a knowledge-creation capability in the front end of innovation; a methodological contribution is offered by presenting a replicable pipeline for AI-based stress-testing of interview guides; and managerial implications are drawn by framing synthetic labs as part of innovation infrastructure for generating richer, more innovation-relevant user insights in high-stakes service contexts.
+
+1. Introduction
+
+Artificial intelligence (AI) is increasingly being deployed to support innovation activities across the development funnel, spanning opportunity identification, concept evaluation, and portfolio decision-making. Nevertheless, the extant literature has tended to privilege firm-level adoption, business model shifts, and idea-generation systems, while the micro-level capabilities through which user insights are created at the front end of innovation have been comparatively under-examined. As a result, the potential role of AI in the design of user research instruments has remained largely unexplored.
+
+Thus, the purpose of this paper is to examine how interview-assisted AI combined with synthetic users can be used upstream to design, pilot, and calibrate user research protocols and instruments, particularly interview guides, and whether this “stress-tested” interview guide has the ability to produce richer, more innovation-relevant insights when used with real participants. The core claim is that AI-enabled synthetic users and interview-assisted AI are complementary front-end innovation capabilities intended to augment, rather than replace, early-stage user research conducted by humans.  
+
+By integrating these AI-driven methods, the rigor and inclusivity of user research design methods are enhanced, thereby improving the validity and robustness of innovation studies. Adopting this approach, innovation management researchers can initiate data collection with an interview guide “stress-tested” across a wide range of synthetic user journeys. Included in this opportunity window are the generation and optimization of interview flows, the production of synthetic transcripts for pretesting, and the stress-testing of guides across diverse simulated user scenarios.
+
+The knowledge-based view (KBV), an extension of the resource‑based view (RBV), is adopted to conceptualise organisations as systems in which heterogeneous knowledge is created, integrated, and applied to enable innovation. Within this lens, early-stage user research is treated as a core knowledge-creation process through which users’ goals, motivations, and behaviours are rendered intelligible for subsequent development decisions. 
+
+Interview-assisted AI and synthetic personas are conceptualised as knowledge-creation mechanisms capable of expanding the design space of prospective user journeys prior to engagement with real users, thereby shaping the information set on which downstream innovation choices are made. AI‑driven synthetic personas are adopted as mechanisms for generating new, knowledge‑rich content rather than merely representing existing users (Li, B. et al, 2024). Therefore, the study’s objective is to assess whether and how these mechanisms can be operationalised as a micro-capability at the front end of innovation.
+
+Maternity care is selected as the empirical context for designing better research instruments (interview guides). The journey is complex and emotionally intensive, spanning preconception, pregnancy, birth, and post-partum, while ethical, logistical, and emotional constraints impose meaningful limitations on conventional field research. Given the potential consequences of mis-specified user needs, this context provides a stringent test of whether AI-enabled synthetic user research can enhance the breadth and depth of user knowledge and whether the resulting insights are innovation-relevant and strategically actionable.
+
+A capability labelled AI-enabled synthetic user research is examined using two studies. The capability combines structured synthetic maternity personas with interview-assisted AI to design, pilot, and calibrate an interview guide. In study 1 (design-laboratory phase), synthetic maternity personas are constructed; AI-moderated synthetic interviews are generated; and the guide is iteratively refined by analysing where latent dimensions are surfaced or missed.
+
+In study 2 (expert evaluation), an expert panel comprising innovation scholars and maternity-care professionals evaluates the resulting guide along knowledge-facing and innovation-facing criteria, namely breadth of coverage, depth of latent insight (goals, motivations, behaviours), and perceived innovation relevance and strategic actionability of the insights the guide is expected to generate.
+
+The research contributes to Innovation Management theory by introducing and empirically examining “AI-enabled synthetic user research” as a front-end of innovation capability for designing better research instruments (interview guides) that can improve the quality of insights from real users while maintaining human-centeredness and ethical rigor.
+
+The paper makes three contributions. Theoretically, it extends the AI-for-innovation literature by conceptualising AI-enabled synthetic user research as a knowledge-creation capability at the front end of innovation, showing how AI and synthetic personas reshape user-knowledge-creation routines rather than merely automating analysis. Methodologically, it introduces a replicable pipeline for using synthetic users and interview-assisted AI to stress-test and refine interview guides, clarifying the proper role of synthetic data as a design testbed rather than a substitute for real user voices. Managerially, it offers guidance on how organisations can build synthetic labs as part of their innovation infrastructure, and demonstrates how expert evaluations of an AI-stress-tested guide can provide evidence about its potential to generate innovation-relevant, strategically actionable insights in maternity care and other complex service domains.
+
+2. Background literature
+
+2.1 AI in innovation management
+
+AI is increasingly framed as an innovation capability at the firm and process levels, enabling new ways to sensing opportunities, seizing them through new products and services, and reconfiguring assets and routines (Gama & Magistretti, 2025; Sreenivasan & Suresh, 2024). Recent work in innovation management examines how AI shapes innovation capabilities and proposes a taxonomy of AI applications that replace, reinforce, or reveal new patterns, based on a portfolio of empirical cases (Gama & Magistretti, 2025). These contributions show that AI can enhance innovation capabilities across technological, organizational, and environmental dimensions, for example, by automating scanning, supporting idea evaluation, or enabling new forms of data-driven experimentation. However, this body of work remains largely at the firm level, focusing on adoption, innovation processes, and business models rather than on the micro-level design of early-stage user research. 
+
+Building on the taxonomy of AI applications proposed by Gama and Magistretti (2025), which distinguishes between the replacement, reinforcement, and revelation of innovation capabilities, AI-enabled synthetic user research is conceptualised as a micro-level sensing capability situated at the front end of innovation. Rather than focusing on AI for idea evaluation or business model reconfiguration, the analytical focus shifts to how AI reconfigures user insight practices. In doing so, the internal mechanisms through which AI shapes these practices are rendered visible, thereby introducing a finer level of analytical granularity into existing innovation capability frameworks.
+
+Reviews of AI and corporate innovation similarly map streams such as AI and product innovation, AI and innovation processes, and AI and knowledge, but they do not explicitly conceptualize AI-enabled user research methods as a distinct capability in the front end of innovation (Bahoo et al., 2023; Lehmann et al., 2025). Even when AI is discussed in relation to design and innovation (e.g., in work on design thinking and AI synergies), the focus is on how AI supports ideation, concept generation, or solution development, not on how AI can help design better user research instruments that ultimately feed innovation decisions (Sreenivasan & Suresh, 2024; Bouschery et al., 2023).
+
+In parallel, recent managerial work has begun to explore generative AI (GenAI) in market research. An article on “How Gen AI Is Transforming Market Research” proposes four classes of opportunities for GenAI: (1) supporting current practices, (2) replacing them with synthetic data, (3) filling gaps in market understanding, and (4) creating new kinds of data and insights (Korst et al., 2025). The authors explicitly discuss synthetic interviewers that can pose follow-up questions to respondents, AI-assisted transcription and synthesis of qualitative data, and “digital twin” panels used as virtual respondents in large-scale studies (Korst et al., 2025). However, this literature is largely conceptual and managerial, mapping opportunities and risks such as bias, representativeness, hallucinations, and data security, and illustrating them with practice-based examples. It does not rigorously evaluate whether AI-designed or AI-stress-tested research designs actually produce better innovation-relevant insights than traditional designs, nor does it systematically compare the goals, motivations, and behaviors surfaced in AI-augmented versus conventional user research workflows.
+
+This leaves a gap: we know that AI can augment innovation capabilities at a macro level, but we know far less about how AI can be mobilized to improve the quality of insights generated by user research, which is the depth and breadth of goals, motivations, and behaviors surfaced during early-stage exploration.
+
+2.2 AI personas and synthetic users  
+
+Emerging work on AI-generated personas shows that large language models (LLMs) can quickly, at scale, create numerous fictitious user profiles that approximate real users’ goals, contexts, and constraints (Sattele & Ortiz Nicolás, 2024). These AI personas have been proposed as an additional tool for human-centered design (HCD), extending the range of methods available to designers and enabling them to challenge self-centered assumptions by exposing design teams to a wider range of user perspectives (Sattele & Ortiz Nicolás, 2024; Sreenivasan & Suresh, 2024). At the same time, the literature raises serious questions about how to use AI personas and synthetic users responsibly. Scholars highlight the need for guidance on how to prompt and constrain generative models to obtain diverse and realistic personas, how to manage bias and stereotyping in generated profiles, and how to address issues of “opacity” in how AI subtly reshapes designers’ cognition, ethics, and attention (e.g., Andrada et al., 2023; Sattele & Ortiz Nicolás, 2024).
+
+Medical informatics and health information technology offer related examples of synthetic data being used to support design and evaluation. For instance, a five-step process for creating structured synthetic patient data has been used to evaluate novel health IT prototypes while respecting privacy constraints (Pollack et al., 2019). Synthetic datasets and digital twins are also increasingly discussed in medical AI as complements or alternatives to real-world data, though debates focus primarily on governance, standards, and comparability to patient data, rather than on the design of user research workflows (Boraschi D, van der Schaar M, Costa A, Milne R., 2025).
+
+Outside the health domain, practitioner work demonstrates how persona prompting and multi-agent architectures can be used to conduct “synthetic user research,” where AI agents role-play different user archetypes and respond to stimuli such as concepts, prototypes, or marketing materials (Koc, 2024). These experiments suggest that AI-generated synthetic users could be useful for probing edge cases, testing discussion guides, or iterating quickly on research instruments, but they are typically presented as technical demonstrations or case examples, with little empirical validation of their impact on innovation outcomes or the quality of insights.
+
+Across these streams, AI is mostly positioned either as a high-level innovation capability (e.g., “AI for innovation” at the firm/process level) or as a means to generate or analyze data more efficiently. What is underdeveloped is a systematic understanding of AI as an interviewing copilot and synthetic user generator that can help researchers design sharper user research instruments. In particular: i) Innovation-management reviews recognize AI as shaping core innovation capabilities but stop short of theorizing AI-enabled user research as a specific capability in the front end of innovation (Bahoo et al., 2023; Gama & Magistretti, 2025; Lehmann et al., 2025); ii) GenAI in market research is framed through conceptual use cases and practitioner surveys, rather than through controlled comparisons of AI-augmented versus traditional user research designs (Korst et al., 2025); iii) AI personas, synthetic users, and synthetic patient data are promising but methodologically under-theorized: it lacks robust guidance on how to design, stress-test, and validate AI-generated synthetic participants within rigorous, human-centered innovation processes (Pollack et al., 2019; Sattele & Ortiz Nicolás, 2024).
+
+2.3 Knowledge‑based view (KBV) 
+
+This paper addresses these gaps by conceptualizing interview-assisted AI and synthetic users as a front-end innovation capability. The theoretical framework is anchored in the knowledge‑based view (KBV), under which firms are understood as heterogeneous bundles of knowledge assets and knowledge‑creation mechanisms, and are posited to exist because specialised knowledge can be integrated and applied to coordinated action more effectively within organisations than through markets (Grant, 1996).  From this standpoint, innovation is treated as contingent upon the creation, combination, and mobilisation of technical, market, user, and organisational knowledge through routinised processes and social structures (Kogut & Zander, 1992).  
+
+Within this tradition, knowledge creation has been theorised as an ongoing conversion and recombination of tacit and explicit knowledge, with firms developing combinative capabilities that generate novel knowledge by recombining existing elements (Nonaka, 1994; Kogut & Zander, 1992).  Building on these foundations, dynamic‑capabilities research has specified the microfoundations of sensing, seizing, and reconfiguring, emphasising the routines and decision rules that enable opportunity identification under uncertainty (Teece, 2007).  Complementarily, the market‑sensing literature has highlighted the distinctive capability of market‑driven organisations to detect and interpret emerging customer and competitor signals (Day, 1994), while the market‑orientation stream has formalised the organisation‑wide generation, dissemination, and responsiveness to market intelligence (Jaworski & Kohli, 1993).  Finally, user‑driven innovation scholarship has underscored the informational value of advanced user needs and contexts as inputs to early‑stage design (von Hippel, 1986). 
+
+Interview‑assisted AI and synthetic personas are therefore conceptualised as knowledge‑creation mechanisms that enable the exploration of a broader design space of prospective user journeys prior to field engagement. In dynamic‑capability terms, AI‑enabled synthetic user research is treated as a micro‑level sensing capability that supports the identification and interpretation of latent needs, goals, and behaviours in complex service contexts, thereby complementing market‑sensing routines and user‑driven approaches at the front end of innovation (Day, 1994; Jaworski & Kohli, 1993; Teece, 2007; von Hippel, 1986).
+
+3. Research questions
+
+Within this study, analytical attention is directed to a specific micro‑capability: AI‑enabled synthetic user research, defined as the use of synthetic personas and interview‑assisted AI to design, pilot, and calibrate an interview guide for maternity‑care user research. The research questions are structured to examine: (1) how this capability reconfigures knowledge‑creation routines, (2) the nature of the user knowledge it is expected to generate, and (3) the capability bundle and governance mechanisms required for its responsible deployment.
+
+From a knowledge‑based perspective, the first research question concerns how AI‑enabled synthetic user research reconfigures the processes by which user knowledge is created at the front end of innovation.
+
+RQ1: How can AI‑enabled synthetic user research (combining synthetic maternity personas with interview‑assisted AI) be used to design and stress‑test an interview guide for maternity‑care user research, and how can this capability reshape knowledge‑creation routines (e.g., topic coverage, probing strategies, and journey framing) without compromising human‑centredness or methodological rigour?
+
+This question is addressed primarily in Study 1, which conceptualises the synthetic laboratory as an instrument‑design and capability‑building phase.
+
+In knowledge‑based view terms, the second research question focuses on the knowledge characteristics, i.e., the content and quality of the user knowledge that the AI‑stress‑tested interview guide is expected to generate when applied in fieldwork with real users, as well as on its relevance for innovation.
+
+RQ2: When assessed by experts, to what extent does the AI‑stress‑tested interview guide enable the generation of user knowledge that is (a) broad in coverage, (b) deep in its capture of latent goals, motivations, and behaviours, and (c) highly rated in terms of innovation relevance and strategic actionability for maternity‑care innovation?
+
+This question is examined in Study 2 through expert evaluation of the interview guide along knowledge‑oriented and innovation‑oriented dimensions.
+
+Finally, the knowledge‑based view emphasises that knowledge‑creation capabilities depend on a capacity bundle, i.e., the specific combinations of resources, routines, and governance mechanisms. The third research question, therefore, examines the conditions required for AI‑enabled synthetic user research to function as a stable organisational capability.
+
+RQ3: What configurations of resources, routines, and governance mechanisms constitute AI‑enabled synthetic user research as a knowledge‑creation capability in maternity‑care innovation, and how can risks such as bias, opacity, and over‑reliance on synthetic data be effectively managed?
+
+This question is addressed across both studies through systematic documentation and analysis of the design process, AI interactions, and the research team's reflexive accounts.
+
+4. Research design
+
+The empirical context is maternity care, a high-stakes, emotionally intense service journey encompassing preconception, pregnancy, labour and birth, and the post-partum period. The maternity journey is particularly suitable for this study because users’ goals, motivations, and behaviours change across stages and are shaped by clinical, emotional, relational, and institutional factors. The domain has strong ethical and privacy constraints, which make it both attractive and risky for data-intensive AI approaches. Maternity care is a recognised area for service and experience innovation, where improved user research can directly inform the design of new services, digital tools, and care processes. Situating the study in this context enables us to stress-test AI-enabled synthetic user research in a complex service setting and derive implications for human-centered innovation in other domains.
+
+To address RQ1, a qualitative study focusing on instrument development was undertaken. It involved generating synthetic personas and leveraging interview-assisted AI to iteratively develop and refine user research workflows, including the construction of interview guides and probe selection. The goal was to assess how these AI-enabled methods streamline design processes while preserving human-centeredness and methodological rigor.
+
+To address RQ2 and RQ3, an evaluation and capability analysis was conducted. In this phase, the stress-tested with synthetic users and interview-assisted AI was assessed by experienced researchers in innovation management and maternity care. The evaluation focused on determining the extent to which these stress-tested guides could improve real maternity care interviews by uncovering valuable user insights. 
+
+4.1 Study 1 
+
+Within the proposed framework, this capability is operationalised as an interrelated bundle of resources, namely, large language models, synthetic personas, and specialised methodological expertise, supported by routinised activities such as persona construction, synthetic interviewing, and comparative analysis, and underpinned by governance mechanisms that address ethical considerations and bias management. This operationalisation is consistent with capability-based perspectives on AI in innovation management, which emphasise the orchestration of resources, routines, and controls in enabling systematic opportunity sensing and knowledge generation at the front end of innovation.
+
+The first study is primarily oriented toward addressing RQ1 by strengthening the user research design and by demonstrating the capability bundle and governance mechanisms required for the use of synthetic users. The development of the interview guide is carried out through a combination of initial question formulation and probe selection. Probe selection, the process of selecting specific follow‑up questions or prompts to elicit deeper insights during qualitative interviews, is considered a critical component, as probes do not constitute the main questions in the interview guide (Robinson, 2023). Instead, they are supportive questions intended to clarify participant responses (e.g., “Can you tell me more about that experience?”), explore underlying motivations or feelings (e.g., “What made you feel that way?”), or encourage elaboration (e.g., “Could you give an example?”).
+
+In user research, the careful selection of probes is considered essential because they facilitate the uncovering of rich, nuanced data on user goals, behaviors, and pain points. Consequently, understanding the impact of a strengthened interview guide on the capacity to reveal deeper and broader user goals, motivations, and behaviors is of critical importance..
+
+Step 1 – Build synthetic maternity personas 
+
+This study treats AI-enabled synthetic user research as a design laboratory for developing and refining an interview guide before fieldwork with real users.
+
+A set of synthetic maternity personas (8-12) structured as templates, each specifying values across different dimensions, was first constructed to represent diverse pregnancy trajectories. 
+
+Drawing on the literature on maternity-care experiences, existing qualitative data (maternity narratives, patient-experience reports, and clinical expertise), key dimensions shaping maternity journeys were identified, including: 
+
+Care pathway: obstetric-led, midwife-led, mixed, fragmented care – it will be assumed that obstetric-led is the most common pattern.
+
+Journey stage: preconception/pregnancy/birth/postpartum
+
+Demographic attributes: age, socio-economic status, migration background
+
+Clinical attributes: risk status, model of care, complications
+
+Contextual attributes: rural/urban, geography, social support, employment
+
+Encoded latent dimensions: these latent dimensions are encoded in the persona spec that can be key differentiators: previous trauma, fears, high-risk pregnancy, mental health issues, social support, digital literacy, autonomy vs. dependence, trust/distrust in providers, and informal care networks. etc.
+
+Personas are designed to span combinations of journey stage emphasis (preconception, pregnancy, birth, post-partum) and structurally vulnerable situations (e.g., low income, language barriers, previous trauma). These persona specifications are designated as Synthetic Data Type 1 within the proposed framework, comprising parametric descriptions of hypothetical yet plausible users that delineate the design space for stress-testing.
+
+Step 2 – Draft an initial AI-augmented interview guide
+
+The interview guide was developed using an AI-assisted approach. A large language model, configured with safety and privacy settings, was prompted with the study objectives (including goals, motivations, and behaviors) and relevant literature to generate candidate questions and probes for each phase of the maternity journey. Additional prompts were introduced to ensure coverage of emotional, social, and structural dimensions, including experiences of support, power dynamics, and stigma. These outputs were iteratively refined to ensure conceptual clarity and alignment with the research aims.
+
+A semi-structured interview guide was then constructed, organized around the four primary journey phases: preconception, pregnancy, birth, and postpartum. Each phase included open-ended questions and probes designed to elicit information on user goals and expectations, decision-making processes and behaviors, emotional experiences, interactions with healthcare professionals, informal caregivers, and digital tools, as well as perceived risks, barriers, and sources of support.
+
+Throughout the development process, interview-assisted AI functioned as a co-design mechanism. The model was provided with the study framework and thematic structure and instructed to propose further questions and follow-up probes. These AI-generated suggestions were subsequently reviewed and revised by the research team to ensure clinical appropriateness and adherence to human-centered research principles. 
+
+The resulting draft interview guide, augmented through AI-assisted generation and human oversight, was then subjected to stress testing using synthetic personas to evaluate its robustness and its capacity to elicit comprehensive and meaningful insights. This small number of synthetic interviews served to calibrate tone, length, and level of detail.
+
+Step 3 – Conduct synthetic interviews with the AI-augmented guide
+
+Prompt templates were developed for (a) the interviewer role (following the draft guide) and (b) the persona role (responding consistently with the persona template). 
+
+For each persona, a large language model was instructed to engage in role-play by adopting the characteristics defined in the corresponding persona specification. This specification included concrete demographic and contextual attributes, such as “a 28-year-old first-time mother living in a rural area”. The model assumed the role of both participant and interviewer, with one instance serving as the persona and another, or a companion model, conducting the interview according to the AI-assisted guide. Thus, for each persona, several synthetic interviews were conducted using the AI-augmented guide.
+
+To stress-test the interview guide, synthetic interview transcripts were generated through AI-mediated role-play. The model internalized each persona’s attributes and responded to interview questions from that standpoint, while a separate model instance followed the interview guide sequentially and employed all embedded probes. This configuration ensured that the interaction replicated a realistic interview flow and that the guide was systematically evaluated across diverse user profiles.
+
+Multiple synthetic interviews were conducted for each persona to capture variation in potential responses. All transcripts were retained, and the full set of prompts, system instructions, and configuration parameters was logged to support traceability and reproducibility. All transcripts were stored in a secure repository, labelled by persona and iteration. The resulting materials constitute Synthetic Data Type 2, representing controlled conversational data that emulate how individuals with differing maternity trajectories might respond to the interview protocol.
+
+Step 4 – Conduct gap analysis
+
+The synthetic interview transcripts were systematically analysed to evaluate the AI-assisted interviewer's performance. Particular attention was given to identifying instances in which important thematic areas, such as dignity, power, continuity, identity, and structural inequities, were inadequately addressed. The richness and specificity of the goals, motivations, and behaviours expressed by the synthetic participants were also examined to determine whether the guide elicited sufficiently detailed and contextually grounded responses. The synthetic interview transcripts were analysed using content analysis, with a coding framework anchored in the pre-specified dimensions and key constructs (goals, motivations, behaviours, journey stages). 
+
+The analysis assessed which questions prompted more nuanced, emotionally layered narratives and whether particular stages of the maternity journey, such as the postpartum period or the partner’s perspective, were underexplored. The extent to which latent dimensions encoded in each persona specification were made explicit in the responses was also evaluated. For each synthetic persona, occurrences of encoded latent dimensions (e.g., trust, identity tensions, structural barriers) were identified and coded, the particular position where the question/prob is situated, the journey phase, and the form of expression. Thus, for each persona, synthetic transcripts were coded to assess: (a) dimensions consistently surfaced across personas; (b) dimensions remaining hidden or only weakly expressed; (c) questions eliciting rich, emotionally nuanced narratives; and (d) journey stages comparatively under-explored (e.g., post-partum, partner perspective).
+
+Findings from this analysis informed the iterative refinement of the interview guide. The research team revised the gaps and refined the guide adding or sharpening probes where synthetic interviews reveal gaps, ensuring that: i) Probes were added or revised when the synthetic interviews revealed thematic gaps, particularly in user goals, motivations, and behaviours across all stages of the journey, using explicit rules such as: “If [latent dimension X] rarely appears across personas, add or sharpen probes on X.”; ii) Additional prompts were incorporated to capture experiences of agency and disempowerment, the role of informal care networks, and the use of digital tools or informal information channels; iii) Prompts designed to surface underrepresented dimensions, including identity, power relations, and structural barriers, were introduced to enhance the depth and inclusivity of the data-gathering process. The sequence and flow of the guide were adjusted to more accurately reflect the progression of the maternity journey.
+
+All modifications to the guide were documented with justification in an audit trail, along with their analytic rationale, to preserve transparency and replicability. To ensure replicability, several methodological specifications were defined a priori. The large language model(s) employed, including version information, were specified. Prompt templates used for persona generation and interview simulation were documented. A sampling strategy for synthetic personas was implemented, stratified by key pregnancy journey stages, medical risk factors, and socio‑demographic characteristics. Iterative refinement was governed by clear stopping criteria, defined as saturation in the emergence of new probes or themes. All prompts were archived, in full or in part, as online appendices. Any redactions required for ethical reasons were explicitly noted.
+
+Iteration proceeded until thematic saturation was judged to have been reached at the persona level, defined as the point at which additional synthetic interviews failed to yield new probe categories or reveal previously unaddressed journey gaps.
+
+The outputs of Study 1 comprised: (i) a stress-tested interview guide (the AI-enabled guide) and (ii) a methodological log detailing the resources, routines, and governance practices employed. These artefacts directly inform RQ1 (reconfiguration of knowledge-creation routines) and contribute to RQ3 by specifying AI-enabled synthetic user research as a knowledge-creation capability, together with its enabling controls and safeguards.
+
+To address the capability-focused RQ3, a methodological log was maintained throughout the study. This log documented the time invested in persona development, prompting activities, and subsequent analytical work. It also captured challenges encountered during the process and recorded reflections on how the use of AI and synthetic users shaped the research team’s reasoning and decision-making. At a later stage, the methodological log was subjected to thematic analysis to identify the resources, routines, and governance elements that constitute the emerging capability. This analysis provided insight into how integrating AI-assisted methods and synthetic user simulations contributed to capability development within the research process. 
+
+The resulting stress-tested interview guide demonstrated how synthetic users and interview-assisted AI can be used to systematically strengthen the research design before engaging with real participants. This study was conducted as an instrument phase. Diverse synthetic pregnancy journeys and personas were generated, and an interview‑assisted AI approach was used to iteratively refine and stress‑test the interview guide. As a result, a sharper interview protocol and a set of design principles were produced. This design was motivated by prior work on synthetic patient data (Pollack et al., 2019) and by ongoing debates on the governance of synthetic data.
+
+4.2 Study 2
+
+Study 2 provides an expert assessment of the AI-stress-tested guide, focusing on the type of user knowledge it is expected to generate and its value for innovation. This second study primarily addresses RQ2, strengthening the quality of user research, while also highlighting the enabling capabilities of RQ3. 
+
+This study deliberately relies on expert assessment of the AI-stress-tested interview guide rather than a comparative field experiment against a conventionally designed guide. Within the domain of maternity care, no widely recognised “gold standard” interview protocol exists for comprehensively mapping user goals, motivations, and behaviours across the full service journey. Consequently, the construction of a “traditional” comparison guide would itself constitute a novel design effort, rendering any observed differences between the two instruments difficult to interpret. Furthermore, the primary objective of this study is to evaluate AI‑enabled synthetic user research as a knowledge‑creation capability at the front end of innovation, rather than to estimate the effect size of a specific guide relative to an ad‑hoc comparator. At this early design‑laboratory stage, reliance on the informed judgment of experienced innovation scholars and maternity‑care experts is considered both ethically and practically preferable, as it enables appraisal of the guide according to criteria of breadth, depth, and innovation relevance prior to exposing large numbers of patients and professionals to the protocol. The expert evaluation is therefore presented as a necessary first step to establish the plausibility and strategic value of the proposed capability, which may subsequently be complemented by comparative field studies with real users and alternative interview guides.
+
+Step 1 – Create an instrument to assess the quality of the stress-tested interview guide
+
+An instrument was developed in study 1 to evaluate the quality of the stress-tested interview guide. The final AI-augmented and stress-tested version of the guide was prepared alongside a concise description of the design context, including the maternity-journey framework and the overarching research objectives. 
+
+An online survey was then constructed to support a systematic assessment of the guide. The survey included 7-point Likert-type rating items designed to evaluate six dimensions. 
+
+Breadth of coverage – the extent to which the guide covers a wide range of user goals, motivations and behaviours across journey stages;
+
+Depth and latentness – the extent to which questions are likely to elicit subtle, non-obvious, emotional and structural aspects of users’ experiences;
+
+Human-centredness and sensitivity – perceived respectfulness, safety and appropriateness for discussing maternity experiences;
+
+Innovation relevance – the extent to which the guide is likely to generate insights that can inform new or improved services, products, or experience innovations;
+
+Strategic actionability – the extent to which anticipated insights would support strategic decisions (e.g., prioritising opportunity areas, selecting target segments, designing interventions);
+
+Methodological rigour/structure – clarity and coherence of the guide as a research instrument.
+
+The survey also incorporated open-ended questions to capture qualitative reflections. 
+
+To what extent does the interview guide provide comprehensive coverage across all stages of the journey and accommodate diverse contexts and emerging issues?
+
+To what extent does the interview guide facilitate the elicitation of subtle or non-obvious dimensions, including emotional and structural factors?
+
+To what extent does the interview guide enable the identification of insights that could inform the development of new services, products, or experience innovations?
+
+What types of innovation opportunities could be uncovered through the use of this guide?
+
+Where are the potential gaps or risks in this guide, including missing topics or ethical concerns?
+
+What organisational capabilities and governance mechanisms, such as training, ethical oversight, or technical infrastructure, are necessary for effective deployment of the guide? 
+
+These prompts asked respondents to comment on the types of innovation opportunities the guide might reveal, to identify potential gaps or risks, and to consider the organisational capabilities required to deploy the guide effectively.
+
+Step 2 – Use an expert panel to assess the quality of the stress-tested interview guide
+
+Recruitment:
+
+An expert panel of 15–20 participants evaluated the quality of the stress-tested interview guide based on the outlined dimensions. Experts were recruited from two groups roughly balanced between:
+
+Innovation experts: scholars in innovation/innovation management, design or user research, and senior practitioners with substantial experience in front-end innovation projects.
+
+Maternity-care experts: clinicians (obstetricians and nurses) and patient-experience or psychology and social services working in maternity services.
+
+Innovation experts are identified through publication records and relevant professional networks. Maternity-care experts are recruited via hospital, professional, and association networks.
+
+Procedure:
+
+The experts received the guide and survey electronically. They were provided electronically with the AI-stress-tested interview guide, which included an overview of the journey phases and the full question set. They also received a brief description outlining the study’s purpose and the characteristics of the intended target population, along with an online evaluation instrument designed to assess the guide.
+
+Each expert was instructed to review the interview guide as if they were planning a study in their own organisation. Then they were asked to evaluate the guide across multiple dimensions and record their assessments using both rating scales and open-ended responses.
+
+The survey was completed online at the experts’ convenience. Basic background information, including disciplinary training, years of experience, country of practice, and professional role, was collected to contextualise the evaluations.
+
+Step 3 – Analyze the results
+
+Quantitative analysis 
+
+A quantitative analysis was conducted to primarily address RQ2. Descriptive statistics, including means and standard deviations, were computed for each rating dimension to summarise expert evaluations. Internal consistency was assessed for all multi‑item scales, typically using Cronbach’s alpha, to evaluate the measurement structure's reliability.
+
+Where relevant, comparisons between expert groups were performed. Ratings from innovation specialists and maternity‑care specialists were compared using either t‑tests or appropriate nonparametric alternatives. These comparisons were undertaken to explore potential differences in perceptions of the relevance of innovation, human‑centredness, and the strategic applicability of the interview guide.
+
+Together, these analyses provided a quantitative assessment of how the AI‑stress‑tested interview guide was judged on its breadth of coverage, depth of insight, and capacity to support innovation‑oriented outcomes, including innovation relevance and strategic actionability.
+
+Qualitative analysis
+
+A qualitative analysis was conducted to address the research questions (RQ2 & RQ3). The open-ended survey responses were examined using thematic analysis to identify perceptions of the innovation opportunities enabled by the interview guide, as well as perceived gaps, risks, and limitations. The analysis also focused on organisational capabilities and governance requirements described by respondents. 
+
+This thematic analysis to evaluate the performance of the stress-tested interview guide across all specified dimensions follows a protocol:
+
+The research team familiarised itself with the transcripts.
+
+Initial codes were generated inductively, with particular attention to user goals, motivations, and behaviors at each stage of the journey.
+
+Codes are grouped into themes and higher-order dimensions.
+
+Themes are mapped onto the maternity journey (preconception, pregnancy, birth, post-partum), producing comparative journey maps for each condition.
+
+Coding was carried out independently by two researchers. Each coder reviewed the data and contributed to the iterative development of a shared coding scheme. Themes included opportunities for new service concepts, digital tools, or pathway redesign; concerns regarding reliance on AI, missing or insufficiently explored topics, and ethical sensitivities; and requirements related to skills, organisational processes, and data governance. Discrepancies between coders were discussed until agreement was reached, thereby strengthening the reliability of the coding process and the resulting thematic structure.
+
+Integrated analysis 
+
+Lastly, the quantitative and qualitative findings were integrated through joint displays that systematically aligned thematic patterns from the qualitative analysis with the corresponding rating distributions derived from the quantitative data. This integrative strategy facilitated a structured assessment of how specific themes corresponded with variations in expert evaluations, including differential assessments of innovation relevance and strategic value.
+
+The integrated analysis further elucidated the forms of user knowledge that experts anticipated the interview guide would generate, as well as how they envisaged such knowledge informing innovation‑related decision‑making. These insights directly advanced the investigation of the research questions by clarifying the perceived role of the guide as an instrument for the production of user knowledge. Moreover, the joint interpretation provided a conceptual basis for identifying the capability bundles and governance mechanisms that experts deemed necessary for the guide’s effective organisational deployment.
+
+4.3 Trustworthiness, ethics, and replicability
+
+To make the capability dimension explicit, the design process was systematically documented and analysed. This included detailed records of the time, effort, and iterative cycles involved in developing the interview guide, logs of interactions with interview‑assisted AI and synthetic personas, and researcher reflections on the strengths and limitations of synthetic stress‑testing. Particular attention was given to cases in which synthetic simulations revealed potential blind spots that could later be examined in real interview contexts.
+
+The findings were subsequently interpreted through an innovation‑capabilities lens. This involved identifying the relevant resource base, which encompassed AI tools, synthetic personas, and methodological expertise; the routines underpinning the work, such as persona construction, simulation, comparative analysis, and guide refinement; and the governance mechanisms, including ethical safeguards, bias‑checking procedures, and reflexive practices that shaped decision‑making throughout the study.
+
+To enhance reliability, validity, and overall trustworthiness, the research employed a blinded expert evaluation process designed to reduce confirmation bias when assessing the quality of insights produced by the interview‑assisted AI guide. A consistent analytical protocol was applied across studies, analytic decisions were carefully documented, and reflexive memos captured how interactions with AI systems and synthetic users influenced both the research design and the interpretation of findings.
+
+Additional procedural safeguards further strengthened trustworthiness. All persona specifications, prompts, and decision rules used in Study 1 were systematically documented to ensure transparency and auditability. The refinement of the interview guide followed a clearly defined, stepwise process, allowing full traceability of design decisions across iterative cycles. Study 2 incorporated a diverse panel of experts, and both quantitative ratings and rich qualitative feedback were gathered to enable triangulation. A reflexive log was maintained throughout the entire research process to document how engagements with AI and synthetic users informed instrument design choices and interpretive judgements.
+
+Ethical considerations were addressed by consistently distinguishing synthetic from real data. Study 1 relied exclusively on synthetic personas and AI‑generated transcripts, while Study 2 involved only expert professionals who provided informed consent, with all responses anonymised. No real patient data were collected or analysed. Consequently, the overall research design constitutes a low‑risk, upstream evaluation appropriate for assessing the capabilities of AI‑enabled synthetic user research prior to any deployment involving actual patients.
+
+AI Ethics and Disclosure: In accordance with JPIM 2025 guidelines on the use of artificial intelligence, transparency regarding AI tools utilized in this research is disclosed herein. Large Language Models (LLMs) from OpenAI (GPT-5.2) and Anthropic (Claude 3.5 Sonnet) and Google (Gemini) were actively employed to orchestrate the Synthetic Design Laboratory, construct structured personas, role-play synthetic participants, and act as an interview-assisted agent during testing. AI was rigorously isolated entirely to synthetic exploratory protocols (Study 1 design and evaluation testing), and strict human oversight governed prompt specification and data synthesis. No patient data or proprietary healthcare records were uploaded to or processed by these AI tools.
+
+5. Results 
+
+5.1 Evaluative Analysis of Conversational Yield: From Surface Needs to Latent Insights
+
+A fundamental challenge in the Front End of Innovation (FEI) is transcending surface-level user requests to uncover the latent, structural, and emotional drivers that inform breakthrough service design. To evaluate the efficacy of the Synthetic Design Laboratory as a hybrid simulation and high-fidelity micro-sensing capability for innovation (e.g., Korst et al., 2025; Lehmann et al., 2025), we conducted a comparative analysis of conversational data yielded by two distinct prompt calibrations of the Generative Interviewer Agent.
+
+In accordance with the knowledge-based view (KBV), the iterative calibration of the interviewer agent is framed as a knowledge-creation routine. This routine functions to convert tacit user vulnerabilities and complex social realities into explicit innovation requirements before human fieldwork begins, thereby systematically augmenting the organization's absorptive capacity.
+
+Our analysis utilized a structured classification rubric that delineates between Needs (i.e., explicit, logistical, or transactional requirements focusing on "what" the user wants) and Insights (i.e., deeper understandings revealing hidden truths, structural tensions, and underlying reasons for user actions, focusing on "why" the user behaves or feels a certain way).
+
+5.1.1 Baseline Extraction (Run 1): The "Customer Service" Paradigm
+
+In the initial simulation, the interviewer agent operated with a generalised objective to identify support gaps. However, lacking strict qualitative constraints, the Large Language Model (LLM) defaulted to a solution-oriented "customer service" paradigm. The extracted data yielded 100% surface-level Needs, primarily capturing logistical requests. While actionable, this functional data failed to uncover the profound systemic friction causing the participant's distress.
+
+5.1.2 Calibrated Extraction: The Qualitative Researcher Paradigm
+
+Following iterative calibration, the agent was strictly constrained to investigate emotional states and structural barriers, adopting the posture of an empathetic ethnographic researcher. This calibration profoundly shifted the data yield, producing transcripts composed of 75% Insights and only 25% Needs. This dramatic enhancement reveals the capacity of the Synthetic Design Laboratory to operate as a high-fidelity micro-sensing capability for innovation. By simulating real-world tensions and power dynamics, the laboratory significantly enhances the ecological value of the research design upstream.
+
+The calibrated synthetic user generated deep, reflective elaboration, yielding powerful latent insights critical for human-centered design in maternity care:
+
+- The "Stigma of Accommodation" Insight: The synthetic participant revealed that requesting logistical support—such as a stool for physical relief at work or assignment extensions at university—is paradoxically perceived as a capitulation. Within environments characterized by institutional skepticism, utilizing accommodations is internalized not as a right, but as a "demographic failure" that merely serves to "prove them right" regarding her perceived incapacity.
+
+- The "Private Struggle" Insight: The data surfaced a paralyzing latent belief that "needing help equals failure." Having internalized the judgment of family and peers, the participant equated asking for support with confirming negative societal stereotypes. Consequently, vulnerable users routinely isolate themselves, hiding severe pain and food insecurity as a behavioral response to mitigate the risk of institutional let-down.
+
+- The "Competent Patient" Paradox: The transcripts additionally revealed a critical tension wherein the user's attempts to navigate complex care pathways assertively are met with systemic resistance. Being "too knowledgeable" or advocating too strongly creates unexpected friction with authority figures in both healthcare and academic settings, further marginalizing the patient.
+
+5.1.3 Governance and Replicability
+
+To ensure the responsible deployment of this knowledge-creation routine, robust governance mechanisms were instrumental. The continual generation of an "Audit Trail"—encompassing granular JSON logs of exact prompt-reply payloads and dynamic summary reports of token utilization—ensures ethical transparency and full replicability of the synthetic user research. This pipeline clarifies the methodological boundary: synthetic data is operationalized strictly as a design testbed to sharpen research instruments, rather than as a substitute for real user voices.
+
+6. Conclusions
+
+6.1 Theoretical, methodological, and managerial implications
+
+6.2 Limitations and directions for future research
+
+References
+
+Bahoo, S., Cucculelli, M., & Peroni, C. (2023). Artificial intelligence and corporate innovation. Technological Forecasting and Social Change, 188, 122264.
+
+Boraschi, D., van der Schaar, M., Costa, A., & Milne, R. (2025). Governing synthetic data in medical research: The time is now. The Lancet Digital Health, 7(4), e233–e234.
+
+Bouschery, S. G., Blazevic, V., & Piller, F. T. (2023). Augmenting human innovation teams with artificial intelligence: Exploring transformer-based language models. Journal of Product Innovation Management, 40(2), 139–153.
+
+Day, G. S. (1994). The capabilities of market driven organizations. Journal of Marketing, 58(4), 37–52. https://doi.org/10.1177/002224299405800404
+
+Gama, F., & Magistretti, S. (2025). Artificial intelligence in innovation management: A review of innovation capabilities and a taxonomy of AI applications. Journal of Product Innovation Management, 42(2), 131–154.
+
+Grant, R. M. (1996). Toward a knowledge-based theory of the firm. Strategic Management Journal, 17(Winter Special Issue), 109–122. https://doi.org/10.1002/smj.4250171110
+
+Jaworski, B. J., & Kohli, A. K. (1993). Market orientation: Antecedents and consequences. Journal of Marketing, 57(3), 53–70. https://doi.org/10.1177/002224299305700304
+
+Koc, V. (2024). Creating synthetic user research: Persona prompting & autonomous agents. Towards Data Science.
+
+Kogut, B., & Zander, U. (1992). Knowledge of the firm, combinative capabilities, and the replication of technology. Organization Science, 3(3), 383–397. https://doi.org/10.1287/orsc.3.3.383
+
+Korst, J., Puntoni, S., & Toubia, O. (2025, May–June). How Gen AI is transforming market research. Harvard Business Review.
+
+Lehmann, S. L., Dahlke, J., Pianta, V., & Ebersberger, B. (2025). Artificial intelligence and corporate ideation systems. Journal of Product Innovation Management. Advance online publication. https://doi.org/10.1111/jpim.12782
+
+Li, B., Xu, W., Zhang, Y., et al. (2024). Scaling synthetic data creation with 1,000,000,000 personas. arXiv:2406.20094.
+
+Nonaka, I. (1994). A dynamic theory of organizational knowledge creation. Organization Science, 5(1), 14–37. https://doi.org/10.1287/orsc.5.1.14
+
+Oliver, C. R. (2023). Probing in qualitative research interviews: Theory and practice. Qualitative Research in Psychology, 20(3), 382–397. https://doi.org/10.1080/14780887.2023.2238625
+
+Pollack, A. H., Simon, T. D., Snyder, J., & Pratt, W. (2019). Creating synthetic patient data to support the design and evaluation of novel health information technology. Journal of Biomedical Informatics, 95, 103201.
+
+Sattele, V., & Ortiz, J. C. (2024). Generating user personas with AI: Reflecting on its implications for design. In C. Gray, E. Ciliotta Chehade, P. Hekkert, L. Forlano, P. Ciuccarelli, & P. Lloyd (Eds.), DRS2024: Boston, 23–28 June. https://doi.org/10.21606/drs.2024.1024
+
+Sreenivasan, A., & Suresh, M. (2024). Design thinking and artificial intelligence: A systematic literature review exploring synergies. International Journal of Innovation Studies, 8, 297–312.
+
+Teece, D. J. (2007). Explicating dynamic capabilities: The nature and microfoundations of (sustainable) enterprise performance. Strategic Management Journal, 28(13), 1319–1350. https://doi.org/10.1002/smj.640
+
+von Hippel, E. (1986). Lead users: A source of novel product concepts. Management Science, 32(7), 791–805. https://doi.org/10.1287/mnsc.32.7.791
