@@ -1,0 +1,66 @@
+## Table 7: Saturation Metrics
+
+| Metric | Value |
+|---|---|
+| Total Transcripts | 110 |
+| Original Transcripts | 60 |
+| Refinement Transcripts | 50 |
+| Total Unique Themes | 3925 |
+| Pre-Refinement Themes | 2108 |
+| Post-Refinement New Themes | 1817 |
+| Refinement Novelty Rate | 46.3% |
+| Plateau Point (Combined) | Not reached |
+| Plateau Point (Original) | Not reached |
+|   Gap -- Unique Codes | 14 |
+|   Gap -- Plateau At | 5 |
+|   Innovation -- Unique Codes | 17 |
+|   Innovation -- Plateau At | 5 |
+|   Kbv -- Unique Codes | 6 |
+|   Kbv -- Plateau At | 4 |
+|   Latent -- Unique Codes | 14 |
+|   Latent -- Plateau At | 4 |
+|   Thematic -- Unique Codes | 3874 |
+|   Thematic -- Plateau At | Not reached |
+| Original Mean Yield | 35.13 |
+| Refinement Mean Yield | 36.34 |
+| Mann-Whitney U | 1427.0 |
+| p-value | 0.663252 |
+| Significant | False |
+
+```latex
+\begin{table}[htbp]
+\caption{Thematic saturation metrics}
+\label{tab:saturation}
+\centering
+\begin{tabular}{lc}
+\hline
+Metric & Value \\
+\hline
+Total Transcripts & 110 \\
+Original Transcripts & 60 \\
+Refinement Transcripts & 50 \\
+Total Unique Themes & 3925 \\
+Pre-Refinement Themes & 2108 \\
+Post-Refinement New Themes & 1817 \\
+Refinement Novelty Rate & 46.3\% \\
+Plateau Point (Combined) & Not reached \\
+Plateau Point (Original) & Not reached \\
+  Gap -- Unique Codes & 14 \\
+  Gap -- Plateau At & 5 \\
+  Innovation -- Unique Codes & 17 \\
+  Innovation -- Plateau At & 5 \\
+  Kbv -- Unique Codes & 6 \\
+  Kbv -- Plateau At & 4 \\
+  Latent -- Unique Codes & 14 \\
+  Latent -- Plateau At & 4 \\
+  Thematic -- Unique Codes & 3874 \\
+  Thematic -- Plateau At & Not reached \\
+Original Mean Yield & 35.13 \\
+Refinement Mean Yield & 36.34 \\
+Mann-Whitney U & 1427.0 \\
+p-value & 0.663252 \\
+Significant & False \\
+\hline
+\end{tabular}
+\end{table}
+```
