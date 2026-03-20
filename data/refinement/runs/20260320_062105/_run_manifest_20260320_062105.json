@@ -1,0 +1,28 @@
+{
+  "timestamp": "20260320_062105",
+  "module": "robustness_tester",
+  "inputs_read": [
+    "data/refinement/refinement_plan.json",
+    "data/questionnaires/refined/Q_V4_R1.json"
+  ],
+  "outputs_written": [
+    "data/refinement/adversarial_personas_20260320_062105.jsonl",
+    "data/refinement/adversarial_personas.jsonl",
+    "data/transcripts/adversarial/T_ADV_001_20260320_062105.json",
+    "data/transcripts/adversarial/T_ADV_002_20260320_062105.json",
+    "data/transcripts/adversarial/T_ADV_003_20260320_062105.json",
+    "data/transcripts/adversarial/T_ADV_004_20260320_062105.json",
+    "data/transcripts/adversarial/T_ADV_005_20260320_062105.json"
+  ],
+  "config": {
+    "n_profiles": 5,
+    "profiles": [
+      "low_health_literacy",
+      "language_barrier",
+      "hostile_distrustful",
+      "rural_isolated",
+      "early_pregnancy_ambivalent"
+    ]
+  },
+  "cost_usd": 0.2994
+}

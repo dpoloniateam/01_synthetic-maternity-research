@@ -274,7 +274,7 @@ def main():
     log.info(f"Model: {get_provider(TASK_NAME)}/{get_model(TASK_NAME)}")
 
     t_dir = Path(args.transcripts)
-    t_files = sorted(t_dir.glob("T_S_*.json"))
+    t_files = sorted(list(t_dir.glob("T_S_*.json")) + list(t_dir.glob("T_ADV_*.json")))
     if args.limit > 0:
         t_files = t_files[:args.limit]
     log.info(f"Will map {len(t_files)} transcripts")
