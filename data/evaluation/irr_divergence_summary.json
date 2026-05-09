@@ -1,0 +1,108 @@
+{
+  "n_transcripts": 30,
+  "n_observations": 150,
+  "by_dimension": {
+    "clinical_grounding": {
+      "mean_max_disagreement": 0.833,
+      "sd_max_disagreement": 1.053,
+      "n_full_agreement": 13,
+      "n_disagreement_ge_2_points": 5,
+      "n_disagreement_ge_3_points": 1,
+      "n_observations": 30
+    },
+    "emotional_depth": {
+      "mean_max_disagreement": 0.4,
+      "sd_max_disagreement": 0.968,
+      "n_full_agreement": 22,
+      "n_disagreement_ge_2_points": 1,
+      "n_disagreement_ge_3_points": 1,
+      "n_observations": 30
+    },
+    "latent_surfacing": {
+      "mean_max_disagreement": 0.433,
+      "sd_max_disagreement": 0.971,
+      "n_full_agreement": 21,
+      "n_disagreement_ge_2_points": 1,
+      "n_disagreement_ge_3_points": 1,
+      "n_observations": 30
+    },
+    "narrative_quality": {
+      "mean_max_disagreement": 0.867,
+      "sd_max_disagreement": 1.008,
+      "n_full_agreement": 11,
+      "n_disagreement_ge_2_points": 4,
+      "n_disagreement_ge_3_points": 1,
+      "n_observations": 30
+    },
+    "specificity": {
+      "mean_max_disagreement": 0.733,
+      "sd_max_disagreement": 0.944,
+      "n_full_agreement": 12,
+      "n_disagreement_ge_2_points": 1,
+      "n_disagreement_ge_3_points": 1,
+      "n_observations": 30
+    }
+  },
+  "by_provider_pair": {
+    "anthropic_minus_google": {
+      "mean": 0.327,
+      "sd": 0.562,
+      "p25": 0.0,
+      "p75": 1.0,
+      "n_positive": 50,
+      "n_negative": 4,
+      "n_zero": 96
+    },
+    "anthropic_minus_openai": {
+      "mean": 0.4,
+      "sd": 1.017,
+      "p25": 0.0,
+      "p75": 1.0,
+      "n_positive": 43,
+      "n_negative": 6,
+      "n_zero": 101
+    },
+    "google_minus_openai": {
+      "mean": 0.073,
+      "sd": 1.024,
+      "p25": 0.0,
+      "p75": 0.0,
+      "n_positive": 19,
+      "n_negative": 27,
+      "n_zero": 104
+    }
+  },
+  "systematic_bias": {
+    "clinical_grounding": {
+      "anthropic_minus_google_mean": 0.067,
+      "anthropic_minus_openai_mean": 0.733,
+      "google_minus_openai_mean": 0.667
+    },
+    "emotional_depth": {
+      "anthropic_minus_google_mean": 0.2,
+      "anthropic_minus_openai_mean": 0.267,
+      "google_minus_openai_mean": 0.067
+    },
+    "latent_surfacing": {
+      "anthropic_minus_google_mean": 0.233,
+      "anthropic_minus_openai_mean": 0.133,
+      "google_minus_openai_mean": -0.1
+    },
+    "narrative_quality": {
+      "anthropic_minus_google_mean": 0.633,
+      "anthropic_minus_openai_mean": 0.367,
+      "google_minus_openai_mean": -0.267
+    },
+    "specificity": {
+      "anthropic_minus_google_mean": 0.5,
+      "anthropic_minus_openai_mean": 0.5,
+      "google_minus_openai_mean": 0.0
+    }
+  },
+  "transcript_level_stability": {
+    "n_transcripts": 30,
+    "mean_per_transcript_disagreement": 0.653,
+    "sd_per_transcript_disagreement": 0.896,
+    "n_high_disagreement_transcripts_ge_2": 1
+  }
+}
