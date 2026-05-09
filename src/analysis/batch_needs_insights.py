@@ -15,7 +15,7 @@ Usage:
 """
 import os, json, glob, argparse, time, re, logging, sys
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from collections import defaultdict
 from dotenv import load_dotenv
 load_dotenv("/home/dpolonia/01_synthetic-maternity-research/.env", override=True)
@@ -250,7 +250,7 @@ def main():
 
     with open(SUMMARY_MD, "w") as f:
         f.write(f"# Needs vs Insights — Batch Classification\n\n")
-        f.write(f"Generated: {datetime.utcnow().isoformat()}Z  \n")
+        f.write(f"Generated: {datetime.now(timezone.utc).isoformat()}  \n")
         f.write(f"Model: `{PROVIDER}/{MODEL}`  \n")
         f.write(f"Sessions classified: {overall['n_sessions']}; total Q-R pairs: {overall['n_pairs']}\n\n")
         f.write(f"## Overall\n\n")
