@@ -1,0 +1,387 @@
+===========================================================================
+HUMAN-RATER IRR & USER-EVALUATION TUTORIAL
+Synthetic Maternity Research project
+For: Daniel Polónia (dpolonia@gmail.com)
+     Rui S. Patrício  (rui.s.patricio@gmail.com)
+Date: 2026-05-09
+===========================================================================
+
+You have both been invited to act as human raters on a coder-elicitation
+website at:
+
+    https://synthetic-mat-irr-0134.web.app
+
+This document explains:
+  - the two studies you may be asked to complete
+  - why each study is methodologically necessary
+  - how each one works in practice
+  - how each one impacts the publication of Paper 1 and Paper 2
+
+Read it in full before you start. The 30 transcripts in Paper 1 should
+take roughly 90–120 minutes per coder. Paper 2 will be a separate task
+released once the stimulus packet is finalised.
+
+
+===========================================================================
+1.  THE BIG PICTURE — WHY HUMAN RATERS AT ALL?
+===========================================================================
+
+The project generates synthetic patient interviews using three large
+language models (Anthropic Claude, Google Gemini, OpenAI GPT). Every
+transcript is "scored" for richness on five dimensions, and the scores
+are used to (a) compare the five questionnaire versions in Paper 1 and
+(b) argue that synthetic interviews are ecologically usable in Paper 2.
+
+The obvious problem: if the three LLMs that scored the transcripts were
+trained on overlapping internet corpora, their agreement could be
+artificial — they might agree because they share priors, not because
+the transcripts are genuinely rich. Reviewers will (rightly) flag this.
+
+We have already addressed this in two ways:
+  (1) A divergence-pattern analysis showing the three LLMs do NOT track
+      each other in lockstep across dimensions and transcripts.
+  (2) A deterministic, non-LLM rater that scores the same transcripts
+      using only mechanical text features (word counts, named entities,
+      keyword maps) — sharing zero training corpus with any LLM. Adding
+      this fourth rater drops the joint ICC from 0.90 to 0.68 ("good"),
+      and the ground-truth-anchored "latent_surfacing" dimension stays
+      at 0.81 ("excellent"). This is moderate evidence against the
+      shared-corpus critique.
+
+What this is missing is a HUMAN baseline. That is what the two of you
+will provide. Two independent human coders, blinded to all model scores,
+scoring the same 30 transcripts on the same rubric, with their averaged
+scores feeding directly into a 5-rater inter-rater reliability report.
+
+
+===========================================================================
+2.  PAPER 1 — IRR BASELINE
+===========================================================================
+
+----- 2.1  Why it is necessary -----
+
+The contribution claim of Paper 1 is roughly: "synthetic interviews
+generated under EHR-grounded personas reach rich coverage of the
+qualitative-research dimensions used in maternity-care research." That
+claim depends on a credible measure of richness. The current measure is
+multi-LLM consensus, which a sceptical reviewer can dismiss as
+"three artefacts of the same training data agreeing with each other".
+
+A two-coder human IRR closes that gap completely. With it, the chain
+of evidence is:
+
+   transcripts ─┬─ 3 LLM raters     (consensus from independent providers)
+                ├─ deterministic    (no shared training corpus)
+                └─ 2 human coders   (no model involvement at all)
+
+If all three rater families reach acceptable agreement (ICC ≥ 0.60), the
+shared-corpus critique is answered with hard numbers, not with hand
+waving. The first-round submission becomes much harder to reject on
+this single point.
+
+Without it, the limitation section is forced to be defensive: "we cannot
+fully exclude the possibility that LLM agreement reflects shared
+training data; future work should include a human-coded baseline." Most
+top journals in qualitative methods or design research will treat
+"future work" promises as a reason to ask for a major revision.
+
+----- 2.2  How it works -----
+
+Stimulus:
+  30 transcripts pre-selected as a stratified sample of the 300-session
+  main corpus (6 per questionnaire version, balanced on persona risk
+  level). Each transcript is windowed to its first 5 question-response
+  pairs — the same window the LLM raters saw, so the comparison is
+  matched on stimulus.
+
+Rubric:
+  Five dimensions, 0–5 integer scale, full anchor descriptions in
+  data/evaluation/coder_kit/CODEBOOK.md. The dimensions:
+    • emotional_depth     layered, embodied, contradictory feelings
+    • specificity         numerals, places, scene-setting
+    • latent_surfacing    how many of the persona's encoded latent
+                          dimensions are textually evidenced
+    • narrative_quality   temporal/causal connectives, story-shape
+    • clinical_grounding  specific maternity-care terminology
+
+Procedure (per coder, independently):
+  1.  Go to https://synthetic-mat-irr-0134.web.app
+  2.  Click "Sign in", enter your Gmail address. You will receive an
+      email link from noreply@synthetic-mat-irr-0134.firebaseapp.com.
+      Click it on the same device. (If it lands in spam, mark "not
+      spam" and the next email arrives in the inbox normally.)
+  3.  You are redirected to the queue: 30 transcripts in fixed order,
+      each marked "pending" or "✓ submitted".
+  4.  Read the codebook in full once before scoring.
+  5.  For each transcript: read all 5 Q-R pairs, then score each of the
+      5 dimensions, optionally write a short note about anything that
+      affected your judgment, click Submit.
+  6.  Each submission is locked once you press Submit; do not attempt
+      to re-score a transcript. If you change your mind on something,
+      log it in the "notes" field of the next transcript so the lead
+      author has the trail.
+  7.  Do NOT discuss specific transcripts or scores with the other
+      coder until both queues are 30/30.
+
+Calibration:
+  Before scoring transcripts 4–30, both coders independently score
+  transcripts 1–3 (S_002, S_019, S_023), then meet for ~30 minutes
+  to compare anchor interpretations and resolve any consistent
+  divergence in how each interprets the rubric. Re-score those three
+  if and only if the divergence was a clear rubric misreading. After
+  that meeting, score the remaining 27 in silence.
+
+What happens to your scores:
+  Every submission is timestamped and tagged with your email. A
+  nightly Cloud Scheduler job dumps Firestore to a JSON file in
+  Cloud Storage. Once both coders are at 30/30, the lead author runs
+  src/evaluation/merge_human_responses.py — this requires both coders
+  per session and averages your two scores into a single integer per
+  dimension. The averaged scores then enter the same extended_irr.py
+  pipeline that already handles the 3 LLMs and the deterministic rater.
+
+----- 2.3  How it will impact Paper 1 -----
+
+A 5-rater report will be added to the Methods, Results, and Limitations
+sections of the manuscript. Concretely:
+
+Methods (insert):
+  "Two independent human coders (one author, one external collaborator)
+   scored the same 30 transcripts on the same five-dimension rubric,
+   blinded to all model scores. Coder agreement was computed on
+   averaged human scores against each automatic rater, and a five-rater
+   ICC(2,1) was computed across the full set."
+
+Results (replace the existing 4-rater paragraph):
+  "Composite-richness ICC was 0.903 across the three LLM raters, 0.681
+   when the deterministic non-LLM rater was added, and X.XXX when the
+   two-coder human baseline was further included (k = 5). All pairwise
+   Spearman correlations between the human coders and any individual
+   LLM rater were positive and within [ρ_min, ρ_max], indicating that
+   the LLMs track human richness judgments rather than each other."
+
+Limitations:
+  Removes the prominent 'LLM-as-judge' bullet entirely. Replaces it
+  with a much narrower one about the relatively small (n = 30) human
+  sample and the single-codebook design.
+
+Reviewer impact:
+  Two of the three most likely reviewer objections to the JPIM
+  submission (shared-corpus critique; absence of human baseline) become
+  inapplicable. The third (synthetic-personas-aren't-real-people) is
+  what Paper 2 addresses.
+
+Approximate cost to you: 90–120 min of focused reading per coder.
+
+
+===========================================================================
+3.  PAPER 2 — USER / EXPERT EVALUATION
+===========================================================================
+
+----- 3.1  Why it is necessary -----
+
+Paper 1 establishes that synthetic interviews are internally consistent
+and rich by computational/rater standards. Paper 2 needs to establish
+something weaker but more important to the qualitative-research
+community: "synthetic interviews look like real interviews to people
+who actually do or use maternity-care research." Without that, Paper 1's
+contribution is interesting but ungrounded — a metric that nobody in
+the target field has accepted yet.
+
+A user / expert evaluation provides the ecological-validity bridge.
+We collect judgements like:
+  • "How realistic does this persona's account feel to you?"
+  • "If a colleague brought you this transcript, would you treat it as
+     a genuine patient interview?"
+  • "Where did the response break believability, if anywhere?"
+  • Free-text quotes flagging hallucinations, anachronisms, or culturally
+     implausible elements.
+
+These are NOT attempts to score richness. They are attempts to elicit
+expert plausibility judgments, the same way a pilot study with real
+participants would be reviewed by a senior qualitative researcher
+before fielding.
+
+The two of you may be asked to act as expert raters in Paper 2, in
+addition to (or instead of) recruiting external maternity-care
+researchers and clinicians.
+
+----- 3.2  How it works -----
+
+Stimulus:
+  A separate packet — typically a smaller subset (e.g. 12 personas
+  combined with 1–2 of their highest-richness transcripts each), or
+  the full 12 latent-dimension persona summaries. Decided when the
+  Paper 2 design is finalised; not yet uploaded.
+
+Instrument:
+  Different from Paper 1. Likert scales (1–7) on plausibility,
+  realism, and usefulness; a small set of free-text prompts asking
+  for specific quotes that broke (or maintained) believability;
+  optionally a forced-choice "would you treat this as a real
+  patient interview?" question.
+
+Authentication:
+  For external participants, anonymous-with-invite-token: each
+  participant gets a unique URL like
+  https://synthetic-mat-irr-0134.web.app/?invite=<token>&study=paper2_users
+  that auto-signs them in to a one-off identity, no email needed.
+  For the two of you, the same email-link sign-in you use for Paper 1
+  works (Firestore allowlist updated to include the Paper 2 study).
+
+Procedure:
+  1.  You receive a link to /queue?study=paper2_users (or an invite
+      URL for external participants).
+  2.  Each item shows a persona/transcript and the question form.
+  3.  Submit. Move on.
+  4.  No allowlist needed for external participants — the study
+      document has open_to_anyone: true. Anyone with the invite URL
+      can submit, but each participant can submit each item exactly
+      once (the response document ID is rater_uid + session_id, so
+      duplicates merge rather than accumulate).
+
+Reuse of Paper-1 infrastructure:
+  ZERO new Cloud Run services, ZERO new Firestore collections, ZERO
+  new IAM bindings. The backend already supports two response shapes:
+  scores (Paper 1) and answers (Paper 2). The frontend already detects
+  whether the study has dimensions or questions and renders the right
+  form. Total marginal infrastructure cost: a different study document
+  in Firestore.
+
+----- 3.3  How it will impact Paper 2 -----
+
+Paper 2's central claim becomes operationalisable rather than aspirational:
+
+  "On a 7-point realism scale, expert maternity-care researchers (n = X)
+   rated synthetic transcripts at a mean of M (SD = SD), comparable to
+   their ratings of pilot transcripts from real-participant interviews
+   (M_pilot = M', SD = SD'), with no statistically significant
+   difference (Welch's t(df) = t, p = p)."
+
+That sentence — backed by 200+ Likert ratings collected through the
+website — is what gets Paper 2 past peer review. Without it, the paper
+has elaborate methodology and no human bar to clear.
+
+Practical consequences for the two of you:
+  • If you act as expert raters, expect ~30 minutes for the first
+    Paper 2 invitation (fewer items, simpler form than Paper 1).
+  • If you act as recruiters, the website URL and invite-token format
+    are what you give to your own networks of maternity-care experts.
+
+Approximate cost to each of you: 30 min as participants, ~0 min as
+recruiters once the URL is shared.
+
+
+===========================================================================
+4.  CONSENT, PRIVACY, AND YOUR RIGHTS  (please read once)
+===========================================================================
+
+We process your personal data (email, scores, optional notes,
+timestamps) under GDPR.
+
+Controller: Universidade de Aveiro, represented by Daniel Polónia.
+            Email dpolonia@ua.pt.  DPO: dpo@ua.pt.
+
+Lawful basis: your explicit consent (Article 6(1)(a)).
+              You will be asked to tick three confirmations the first
+              time you visit the queue page; until you do, the website
+              refuses to record any submission.
+
+What is collected:
+  - your email (held in Google Identity Platform, used for sign-in)
+  - the integer scores you submit
+  - any free-text notes you choose to write
+  - timestamps and a hashed copy of your email (consent record)
+
+What is NOT collected:
+  - IP address, geolocation, device fingerprint, behavioural analytics,
+    your real-life identity beyond what your email implies, demographic
+    or health data of any kind.
+
+Your data NEVER goes to:
+  - Anthropic, Google, or OpenAI's LLM APIs.  Those providers receive
+    only synthetic transcript text, never your identity or your scores.
+
+Where data is stored:
+  - Google Cloud, region europe-west2 (London, UK — EU-adequate).
+
+Retention:
+  - Submissions: 12 months after publication of the corresponding paper,
+    then automatically deleted by a scheduled job.
+  - Consent record: 24 months after publication, to evidence valid
+    consent if a complaint is filed.
+  - Aggregated, irreversibly de-identified statistics published in the
+    paper: indefinitely (research output).
+
+Your rights — all self-service at https://synthetic-mat-irr-0134.web.app/me :
+  - Article 15 / 20: download all your data as JSON.
+  - Article 17:      delete every submission and consent record we hold
+                     about you.  (Aggregated statistics already published
+                     cannot be retracted but raw records will be erased.)
+  - Article 16, 18, 21: email dpolonia@ua.pt; we respond within 30 days.
+  - Article 77: complain to CNPD (Portugal) at https://www.cnpd.pt or
+                to your local supervisory authority.
+
+AI Act (Article 50) transparency:
+  - The transcripts you score are AI-generated by foundation models
+    (Anthropic Claude, Google Gemini, OpenAI GPT) acting as both
+    interviewer and persona over synthetic Synthea EHR data.
+  - They depict no real patient.
+  - Full system card on the website at /transparency, also at
+    docs/AI_ACT_TRANSPARENCY.md in the project repository.
+
+Compliance docs in the repository (read if you want the long form):
+  - docs/COMPLIANCE.md          top-level GDPR / AI Act / EHDS map
+  - docs/ROPA.md                Article 30 records of processing
+  - docs/DPIA.md                Article 35 impact assessment
+  - docs/PRIVACY_NOTICE.md      mirror of the public privacy notice
+  - docs/SECURITY.md            technical and organisational measures
+  - docs/AI_ACT_TRANSPARENCY.md AI Act system card
+
+
+===========================================================================
+5.  WHAT TO DO NOW
+===========================================================================
+
+Daniel:
+  Run this once, paste the URL into a calendar invite for both of us,
+  block 2 hours next week, and we agree to score in silence:
+
+    cd ~/01_synthetic-maternity-research/website/api
+    GCP_PROJECT=synthetic-mat-irr-0134 STUDY_ID=paper1_irr \
+      TITLE="Paper 1 — IRR baseline" \
+      ALLOWLIST="dpolonia@gmail.com,rui.s.patricio@gmail.com" \
+      npm run seed
+
+  This re-seeds the Paper 1 study document with the two Gmail addresses
+  in the rater_allowlist. Existing 30 sessions are not touched.
+
+Rui:
+  Wait for Daniel to confirm the seed went through, then:
+  1.  Go to https://synthetic-mat-irr-0134.web.app
+  2.  Click Sign in, enter rui.s.patricio@gmail.com.
+  3.  Click the email link Firebase sends.
+  4.  Read CODER_TUTORIAL.txt (this file) in full.
+  5.  Read CODEBOOK.md once.
+  6.  Score transcripts 1–3 (S_002, S_019, S_023).
+  7.  30-minute calibration call with Daniel, then score 4–30 in
+      silence.
+
+Both:
+  When both queues read 30/30 ✓ submitted, Daniel runs the analysis:
+
+    DATE=$(date -u +%F) && \
+    gcloud storage cp \
+      "gs://synthetic-mat-irr-0134-data/exports/paper1_irr/${DATE}.json" \
+      data/evaluation/human_baseline/raw_responses.json && \
+    python -m src.evaluation.merge_human_responses && \
+    python -m src.evaluation.extended_irr
+
+  The 5-rater report lands in
+  data/evaluation/human_baseline/extended_irr_report.md
+  and the JPIM submission can be revised the same evening.
+
+
+===========================================================================
+END
+===========================================================================

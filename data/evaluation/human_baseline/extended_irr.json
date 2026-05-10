@@ -1,0 +1,82 @@
+{
+  "n_subjects": 30,
+  "raters": [
+    "anthropic",
+    "google",
+    "openai",
+    "deterministic"
+  ],
+  "by_dimension": {
+    "emotional_depth": {
+      "icc_llm_only": 0.903,
+      "alpha_llm_only": 0.901,
+      "icc_with_deterministic": 0.666,
+      "alpha_with_deterministic": 0.644,
+      "interpretation_with_deterministic": "good",
+      "n": 30
+    },
+    "specificity": {
+      "icc_llm_only": 0.879,
+      "alpha_llm_only": 0.876,
+      "icc_with_deterministic": 0.552,
+      "alpha_with_deterministic": 0.511,
+      "interpretation_with_deterministic": "fair",
+      "n": 30
+    },
+    "latent_surfacing": {
+      "icc_llm_only": 0.91,
+      "alpha_llm_only": 0.908,
+      "icc_with_deterministic": 0.81,
+      "alpha_with_deterministic": 0.803,
+      "interpretation_with_deterministic": "excellent",
+      "n": 30
+    },
+    "narrative_quality": {
+      "icc_llm_only": 0.846,
+      "alpha_llm_only": 0.842,
+      "icc_with_deterministic": 0.717,
+      "alpha_with_deterministic": 0.703,
+      "interpretation_with_deterministic": "good",
+      "n": 30
+    },
+    "clinical_grounding": {
+      "icc_llm_only": 0.854,
+      "alpha_llm_only": 0.849,
+      "icc_with_deterministic": 0.534,
+      "alpha_with_deterministic": 0.493,
+      "interpretation_with_deterministic": "fair",
+      "n": 30
+    }
+  },
+  "pairwise_with_deterministic": {
+    "emotional_depth": {
+      "anthropic_vs_deterministic": 0.501,
+      "google_vs_deterministic": 0.578,
+      "openai_vs_deterministic": 0.433
+    },
+    "specificity": {
+      "anthropic_vs_deterministic": 0.514,
+      "google_vs_deterministic": 0.484,
+      "openai_vs_deterministic": 0.557
+    },
+    "latent_surfacing": {
+      "anthropic_vs_deterministic": 0.571,
+      "google_vs_deterministic": 0.451,
+      "openai_vs_deterministic": 0.53
+    },
+    "narrative_quality": {
+      "anthropic_vs_deterministic": 0.426,
+      "google_vs_deterministic": 0.616,
+      "openai_vs_deterministic": 0.378
+    },
+    "clinical_grounding": {
+      "anthropic_vs_deterministic": 0.41,
+      "google_vs_deterministic": 0.459,
+      "openai_vs_deterministic": 0.544
+    }
+  },
+  "composite": {
+    "icc_llm_only": 0.903,
+    "icc_with_deterministic": 0.681
+  }
+}

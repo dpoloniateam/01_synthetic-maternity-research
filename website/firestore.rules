@@ -1,0 +1,48 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() { return request.auth != null; }
+    function rater() { return request.auth.token.email; }
+    function isOwn(uid) { return request.auth.uid == uid; }
+
+    match /studies/{studyId} {
+      // Studies are world-readable (titles + dimensions, not allowlists
+      // — the API endpoint strips rater_allowlist before returning).
+      allow read: if isSignedIn();
+      allow write: if false;  // server-side seed only
+
+      match /sessions/{sid} {
+        // Read only if you are signed in AND either the study is open
+        // to anyone OR your email is in the allowlist.
+        allow read: if isSignedIn() &&
+          (get(/databases/$(database)/documents/studies/$(studyId)).data.open_to_anyone == true ||
+           rater() in get(/databases/$(database)/documents/studies/$(studyId)).data.rater_allowlist);
+        allow write: if false;  // server-side seed only
+      }
+
+      match /responses/{rid} {
+        // Read only your own responses.
+        allow read: if isSignedIn() && resource.data.rater_uid == request.auth.uid;
+        // Submissions go through the API (which validates payloads,
+        // checks consent, and stamps server timestamps). Block direct
+        // client writes — defence in depth.
+        allow write: if false;
+      }
+
+      match /consents/{coderUid} {
+        // Read your own consent record only.
+        allow read: if isSignedIn() && isOwn(coderUid);
+        // Server-side write only (POST /api/consent).
+        allow write: if false;
+      }
+    }
+
+    match /dsar_log/{logId} {
+      // Audit log of DSAR events. No one reads from the client. Lead
+      // author can read via Firebase Console / gcloud CLI as project
+      // Owner — that's an IAM role, not a security-rule scope.
+      allow read, write: if false;
+    }
+  }
+}
