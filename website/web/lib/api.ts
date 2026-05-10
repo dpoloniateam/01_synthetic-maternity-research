@@ -14,12 +14,27 @@ async function authedFetch(path: string, init?: RequestInit): Promise<Response> 
   });
 }
 
+export type QuestionKind = "likert_7" | "single_select" | "text_short" | "text_long";
+
+export interface QuestionDef {
+  id: string;
+  text: string;
+  scale?: string;
+  kind?: QuestionKind;
+  options?: string[];
+  placeholder?: string;
+  optional?: boolean;
+  dimension_id?: string;
+  dimension_label?: string;
+}
+
 export interface Study {
   id: string;
   title: string;
   instrument: string;
   dimensions?: string[];
-  questions?: Array<{ id: string; text: string; scale?: string }>;
+  questions?: QuestionDef[];
+  dimension_meta?: Array<{ id: string; label: string; definition: string }>;
   open_to_anyone: boolean;
 }
 
@@ -39,10 +54,10 @@ export interface SessionDetail {
   session_id: string;
   instrument: string;
   dimensions: string[] | null;
-  questions: Array<{ id: string; text: string; scale?: string }> | null;
+  questions: QuestionDef[] | null;
   payload: {
     session_id: string;
-    version?: number;
+    version?: number | string;
     persona_journey_stage?: string;
     persona_risk_level?: string;
     persona_vulnerability_flags?: string[];
@@ -52,6 +67,8 @@ export interface SessionDetail {
       question_text: string;
       response_text: string;
     }>;
+    stimulus_markdown?: string;
+    design_context?: string[];
   };
 }
 
