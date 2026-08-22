@@ -1,0 +1,15 @@
+# Concordance: audited criteria and the literature that codifies them
+
+| Criterion | Audited as | Source | Scopus | Identifier |
+|---|---|---|---|---|
+| leading_loaded_wording | Leading / loaded terms column; lexicon of presupposition markers, agreement-seeking tags and evaluatively charged terms | Bradburn, N. M., Sudman, S., & Wansink, B. (2004). Asking Questions: The Definitive Guide to Questionnaire Design. | not_covered (monograph; not indexed as a Scopus source record) | - |
+|  |  | Foddy, W. (1993). Constructing Questions for Interviews and Questionnaires: Theory and Practice in Social Research. | not_covered (monograph; not indexed as a Scopus source record) | - |
+| readability | Flesch reading ease per item; items below 50 flagged for plain-language rewording | Bradburn, N. M., Sudman, S., & Wansink, B. (2004). Asking Questions: The Definitive Guide to Questionnaire Design. | not_covered (monograph; not indexed as a Scopus source record) | - |
+| item_burden | Words per stem, interrogative units per stem, and discretionary probes per item | Bradburn, N. M., Sudman, S., & Wansink, B. (2004). Asking Questions: The Definitive Guide to Questionnaire Design. | not_covered (monograph; not indexed as a Scopus source record) | - |
+|  |  | Foddy, W. (1993). Constructing Questions for Interviews and Questionnaires: Theory and Practice in Social Research. | not_covered (monograph; not indexed as a Scopus source record) | - |
+| expectation_perception_pairing | E-P paired column; sequential expectation prompt and perception prompt treated as expectancy-disconfirmation elicitation rather than a double-barrelled flaw | Oliver, R. L. (1980). A cognitive model of the antecedents and consequences of satisfaction decisions. | covered_via_crossref (resolved through Crossref; Scopus entitlement unavailable) | 10.2307/3150499 |
+|  |  | Parasuraman, A., Zeithaml, V. A., & Berry, L. L. (1985). A conceptual model of service quality and its implications for future research. | covered_via_crossref (resolved through Crossref; Scopus entitlement unavailable) | 10.1177/002224298504900403 |
+| guide_development_phases | Mapping of the laboratory onto a prescribed phase sequence for semi-structured interview guide development | Kallio, H., Pietila, A.-M., Johnson, M., & Kangasniemi, M. (2016). Systematic methodological review: developing a framework for a qualitative semi-structured interview guide. | covered_via_crossref (resolved through Crossref; Scopus entitlement unavailable) | 10.1111/jan.13031 |
+| protocol_refinement | Mapping of the revision and consolidation cycle onto an interview protocol refinement framework | Castillo-Montoya, M. (2016). Preparing for interview research: the interview protocol refinement framework. | covered_via_crossref (resolved through Crossref; Scopus entitlement unavailable) | 10.46743/2160-3715/2016.2337 |
+
+Sources resolved: 0 in Scopus, 4 via Crossref, 2 not covered (monographs are not indexed as Scopus source records). Retrieval calls this run: 4.
