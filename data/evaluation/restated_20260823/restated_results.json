@@ -1,0 +1,2320 @@
+{
+ "corpus": {
+  "responses_total": 6458,
+  "responses_empty": 1611,
+  "responses_nonempty": 4847,
+  "sessions_total": 300,
+  "sessions_by_model": {
+   "anthropic/claude-haiku-4-5": 100,
+   "openai/gpt-5-mini-2025-08-07": 100,
+   "google/gemini-3.1-flash-lite-preview": 100
+  },
+  "empty_responses_by_model": {
+   "openai/gpt-5-mini-2025-08-07": 1611
+  },
+  "zero_richness_sessions_by_version": {
+   "1": 22,
+   "2": 12,
+   "3": 16,
+   "4": 9,
+   "5": 16
+  },
+  "failing_model_sessions_by_version": {
+   "1": 25,
+   "2": 20,
+   "3": 22,
+   "4": 17,
+   "5": 16
+  },
+  "set_sizes": {
+   "A_design_based": 200,
+   "B_response_based": 223,
+   "C_gemini_only": 100
+  },
+  "published_all_responses": {
+   "n_responses": 6458,
+   "mean_composite_richness": 3.06,
+   "dimension_means": {
+    "emotional_depth": 3.32,
+    "specificity": 2.95,
+    "latent_surfacing": 3.28,
+    "narrative_quality": 3.13,
+    "clinical_grounding": 2.59
+   }
+  },
+  "A_design_based": {
+   "n_responses": 4816,
+   "mean_composite_richness": 4.06,
+   "dimension_means": {
+    "emotional_depth": 4.41,
+    "specificity": 3.93,
+    "latent_surfacing": 4.36,
+    "narrative_quality": 4.16,
+    "clinical_grounding": 3.44
+   }
+  },
+  "B_response_based": {
+   "n_responses": 4847,
+   "mean_composite_richness": 4.06,
+   "dimension_means": {
+    "emotional_depth": 4.41,
+    "specificity": 3.93,
+    "latent_surfacing": 4.36,
+    "narrative_quality": 4.16,
+    "clinical_grounding": 3.45
+   }
+  },
+  "surfacing_rate_9dim_published": 72.1,
+  "surfacing_rate_9dim_A": 99.4,
+  "surfacing_rate_9dim_B": 96.1,
+  "surfacing_rate_9dim_C": 99.1
+ },
+ "published_all_sessions": {
+  "table3": {
+   "set": "published_all_sessions",
+   "version_stats": {
+    "V1": {
+     "n": 60,
+     "richness_mean": 2.32,
+     "richness_sd": 1.96,
+     "ci95": [
+      1.83,
+      2.82
+     ],
+     "surfacing_rate_pct": 60.9
+    },
+    "V2": {
+     "n": 60,
+     "richness_mean": 2.81,
+     "richness_sd": 1.83,
+     "ci95": [
+      2.35,
+      3.27
+     ],
+     "surfacing_rate_pct": 76.1
+    },
+    "V3": {
+     "n": 60,
+     "richness_mean": 2.64,
+     "richness_sd": 1.97,
+     "ci95": [
+      2.14,
+      3.14
+     ],
+     "surfacing_rate_pct": 69.8
+    },
+    "V4": {
+     "n": 60,
+     "richness_mean": 2.99,
+     "richness_sd": 1.78,
+     "ci95": [
+      2.54,
+      3.44
+     ],
+     "surfacing_rate_pct": 80.7
+    },
+    "V5": {
+     "n": 60,
+     "richness_mean": 2.96,
+     "richness_sd": 1.8,
+     "ci95": [
+      2.5,
+      3.41
+     ],
+     "surfacing_rate_pct": 73.0
+    }
+   },
+   "kruskal_wallis": {
+    "H": 14.6,
+    "p": 0.0056
+   },
+   "pairwise_cohens_d": {
+    "V1_vs_V2": -0.256,
+    "V1_vs_V3": -0.161,
+    "V1_vs_V4": -0.355,
+    "V1_vs_V5": -0.335,
+    "V2_vs_V3": 0.089,
+    "V2_vs_V4": -0.1,
+    "V2_vs_V5": -0.081,
+    "V3_vs_V4": -0.186,
+    "V3_vs_V5": -0.167,
+    "V4_vs_V5": 0.019
+   }
+  },
+  "within_subject": {
+   "Group_A_V1_vs_V2": {
+    "n_pairs": 30,
+    "mean_diff": -0.203,
+    "wilcoxon_W": 28.5,
+    "p": 0.0025,
+    "favours": "V2"
+   },
+   "Group_B_V1_vs_V3": {
+    "n_pairs": 30,
+    "mean_diff": -0.06,
+    "wilcoxon_W": 37.5,
+    "p": 0.0207,
+    "favours": "V3"
+   },
+   "Group_C_V2_vs_V4": {
+    "n_pairs": 30,
+    "mean_diff": 0.015,
+    "wilcoxon_W": 179.5,
+    "p": 0.8194,
+    "favours": "V2"
+   },
+   "Group_D_V3_vs_V5": {
+    "n_pairs": 30,
+    "mean_diff": 0.123,
+    "wilcoxon_W": 22.0,
+    "p": 0.0003,
+    "favours": "V3"
+   },
+   "Group_E_V4_vs_V5": {
+    "n_pairs": 30,
+    "mean_diff": 0.101,
+    "wilcoxon_W": 68.0,
+    "p": 0.0191,
+    "favours": "V4"
+   }
+  },
+  "heatmap_canonical_alias_merged": {
+   "V1": {
+    "autonomy_vs_dependence": 58.3,
+    "body_image_autonomy": 1.7,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 1.7,
+    "dignity_respect": 8.3,
+    "identity_tensions": 61.7,
+    "informal_care_networks": 61.7,
+    "intergenerational_patterns": 5.0,
+    "partner_role": 5.0,
+    "power_dynamics": 61.7,
+    "structural_barriers": 63.3,
+    "trust_distrust": 60.0
+   },
+   "V2": {
+    "autonomy_vs_dependence": 73.3,
+    "body_image_autonomy": 1.7,
+    "continuity_of_care": 6.7,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 10.0,
+    "identity_tensions": 80.0,
+    "informal_care_networks": 75.0,
+    "intergenerational_patterns": 1.7,
+    "partner_role": 0.0,
+    "power_dynamics": 75.0,
+    "structural_barriers": 78.3,
+    "trust_distrust": 78.3
+   },
+   "V3": {
+    "autonomy_vs_dependence": 71.7,
+    "body_image_autonomy": 1.7,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 6.7,
+    "dignity_respect": 6.7,
+    "identity_tensions": 73.3,
+    "informal_care_networks": 68.3,
+    "intergenerational_patterns": 1.7,
+    "partner_role": 0.0,
+    "power_dynamics": 70.0,
+    "structural_barriers": 71.7,
+    "trust_distrust": 66.7
+   },
+   "V4": {
+    "autonomy_vs_dependence": 78.3,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 3.3,
+    "identity_tensions": 85.0,
+    "informal_care_networks": 76.7,
+    "intergenerational_patterns": 1.7,
+    "partner_role": 0.0,
+    "power_dynamics": 80.0,
+    "structural_barriers": 81.7,
+    "trust_distrust": 80.0
+   },
+   "V5": {
+    "autonomy_vs_dependence": 73.3,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 6.7,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 5.0,
+    "identity_tensions": 73.3,
+    "informal_care_networks": 73.3,
+    "intergenerational_patterns": 5.0,
+    "partner_role": 0.0,
+    "power_dynamics": 73.3,
+    "structural_barriers": 73.3,
+    "trust_distrust": 73.3
+   }
+  },
+  "heatmap_canonical_as_published_no_alias": {
+   "V1": {
+    "autonomy_vs_dependence": 58.3,
+    "body_image_autonomy": 1.7,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 1.7,
+    "dignity_respect": 8.3,
+    "identity_tensions": 61.7,
+    "informal_care_networks": 61.7,
+    "intergenerational_patterns": 5.0,
+    "partner_role": 5.0,
+    "power_dynamics": 61.7,
+    "structural_barriers": 63.3,
+    "trust_distrust": 0.0
+   },
+   "V2": {
+    "autonomy_vs_dependence": 73.3,
+    "body_image_autonomy": 1.7,
+    "continuity_of_care": 6.7,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 10.0,
+    "identity_tensions": 80.0,
+    "informal_care_networks": 75.0,
+    "intergenerational_patterns": 1.7,
+    "partner_role": 0.0,
+    "power_dynamics": 75.0,
+    "structural_barriers": 78.3,
+    "trust_distrust": 0.0
+   },
+   "V3": {
+    "autonomy_vs_dependence": 71.7,
+    "body_image_autonomy": 1.7,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 6.7,
+    "dignity_respect": 6.7,
+    "identity_tensions": 73.3,
+    "informal_care_networks": 68.3,
+    "intergenerational_patterns": 1.7,
+    "partner_role": 0.0,
+    "power_dynamics": 70.0,
+    "structural_barriers": 71.7,
+    "trust_distrust": 0.0
+   },
+   "V4": {
+    "autonomy_vs_dependence": 78.3,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 3.3,
+    "identity_tensions": 85.0,
+    "informal_care_networks": 76.7,
+    "intergenerational_patterns": 1.7,
+    "partner_role": 0.0,
+    "power_dynamics": 80.0,
+    "structural_barriers": 81.7,
+    "trust_distrust": 0.0
+   },
+   "V5": {
+    "autonomy_vs_dependence": 73.3,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 6.7,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 5.0,
+    "identity_tensions": 73.3,
+    "informal_care_networks": 73.3,
+    "intergenerational_patterns": 5.0,
+    "partner_role": 0.0,
+    "power_dynamics": 73.3,
+    "structural_barriers": 73.3,
+    "trust_distrust": 0.0
+   }
+  },
+  "heatmap_nine_encoded": {
+   "V1": {
+    "autonomy_vs_dependence": 58.3,
+    "emotional_labor_of_care": 61.7,
+    "identity_tensions": 61.7,
+    "informal_care_networks": 61.7,
+    "knowledge_asymmetry": 61.7,
+    "power_dynamics": 61.7,
+    "structural_barriers": 63.3,
+    "temporal_pressure": 58.3,
+    "trust_distrust_providers": 60.0
+   },
+   "V2": {
+    "autonomy_vs_dependence": 73.3,
+    "emotional_labor_of_care": 76.7,
+    "identity_tensions": 80.0,
+    "informal_care_networks": 75.0,
+    "knowledge_asymmetry": 78.3,
+    "power_dynamics": 75.0,
+    "structural_barriers": 78.3,
+    "temporal_pressure": 70.0,
+    "trust_distrust_providers": 78.3
+   },
+   "V3": {
+    "autonomy_vs_dependence": 71.7,
+    "emotional_labor_of_care": 68.3,
+    "identity_tensions": 73.3,
+    "informal_care_networks": 68.3,
+    "knowledge_asymmetry": 73.3,
+    "power_dynamics": 70.0,
+    "structural_barriers": 71.7,
+    "temporal_pressure": 65.0,
+    "trust_distrust_providers": 66.7
+   },
+   "V4": {
+    "autonomy_vs_dependence": 78.3,
+    "emotional_labor_of_care": 81.7,
+    "identity_tensions": 85.0,
+    "informal_care_networks": 76.7,
+    "knowledge_asymmetry": 81.7,
+    "power_dynamics": 80.0,
+    "structural_barriers": 81.7,
+    "temporal_pressure": 81.7,
+    "trust_distrust_providers": 80.0
+   },
+   "V5": {
+    "autonomy_vs_dependence": 73.3,
+    "emotional_labor_of_care": 73.3,
+    "identity_tensions": 73.3,
+    "informal_care_networks": 73.3,
+    "knowledge_asymmetry": 73.3,
+    "power_dynamics": 73.3,
+    "structural_barriers": 73.3,
+    "temporal_pressure": 70.0,
+    "trust_distrust_providers": 73.3
+   }
+  },
+  "gap_yield": {
+   "V1": {
+    "gaps": 83,
+    "innovations": 110
+   },
+   "V2": {
+    "gaps": 87,
+    "innovations": 119
+   },
+   "V3": {
+    "gaps": 83,
+    "innovations": 111
+   },
+   "V4": {
+    "gaps": 104,
+    "innovations": 128
+   },
+   "V5": {
+    "gaps": 85,
+    "innovations": 116
+   }
+  },
+  "ranking_alias_merged": {
+   "V1": {
+    "quality": 2.32,
+    "coverage": 0.324,
+    "innovation": 3.22,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 2.351,
+    "rank": 5
+   },
+   "V2": {
+    "quality": 2.81,
+    "coverage": 0.4,
+    "innovation": 3.43,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 2.686,
+    "rank": 3
+   },
+   "V3": {
+    "quality": 2.64,
+    "coverage": 0.365,
+    "innovation": 3.23,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 2.534,
+    "rank": 4
+   },
+   "V4": {
+    "quality": 2.99,
+    "coverage": 0.406,
+    "innovation": 3.87,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 2.851,
+    "rank": 1
+   },
+   "V5": {
+    "quality": 2.96,
+    "coverage": 0.38,
+    "innovation": 3.35,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 2.705,
+    "rank": 2
+   }
+  },
+  "ranking_as_published_coding": {
+   "V1": {
+    "quality": 2.32,
+    "coverage": 0.274,
+    "innovation": 3.22,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 2.226,
+    "rank": 5
+   },
+   "V2": {
+    "quality": 2.81,
+    "coverage": 0.335,
+    "innovation": 3.43,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 2.542,
+    "rank": 3
+   },
+   "V3": {
+    "quality": 2.64,
+    "coverage": 0.31,
+    "innovation": 3.23,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 2.402,
+    "rank": 4
+   },
+   "V4": {
+    "quality": 2.99,
+    "coverage": 0.339,
+    "innovation": 3.87,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 2.705,
+    "rank": 1
+   },
+   "V5": {
+    "quality": 2.96,
+    "coverage": 0.319,
+    "innovation": 3.35,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 2.566,
+    "rank": 2
+   }
+  },
+  "dimension_means_transcript_level": {
+   "V1": {
+    "emotional_depth": 2.55,
+    "specificity": 2.28,
+    "latent_surfacing": 2.49,
+    "narrative_quality": 2.4,
+    "clinical_grounding": 1.9
+   },
+   "V2": {
+    "emotional_depth": 3.02,
+    "specificity": 2.77,
+    "latent_surfacing": 3.01,
+    "narrative_quality": 2.88,
+    "clinical_grounding": 2.37
+   },
+   "V3": {
+    "emotional_depth": 2.9,
+    "specificity": 2.54,
+    "latent_surfacing": 2.81,
+    "narrative_quality": 2.69,
+    "clinical_grounding": 2.25
+   },
+   "V4": {
+    "emotional_depth": 3.24,
+    "specificity": 2.86,
+    "latent_surfacing": 3.2,
+    "narrative_quality": 3.07,
+    "clinical_grounding": 2.58
+   },
+   "V5": {
+    "emotional_depth": 3.21,
+    "specificity": 2.87,
+    "latent_surfacing": 3.2,
+    "narrative_quality": 3.03,
+    "clinical_grounding": 2.47
+   }
+  }
+ },
+ "A_design_based": {
+  "table3": {
+   "set": "A_design_based",
+   "version_stats": {
+    "V1": {
+     "n": 35,
+     "richness_mean": 3.97,
+     "richness_sd": 0.16,
+     "ci95": [
+      3.91,
+      4.02
+     ],
+     "surfacing_rate_pct": 99.7
+    },
+    "V2": {
+     "n": 40,
+     "richness_mean": 4.05,
+     "richness_sd": 0.15,
+     "ci95": [
+      4.0,
+      4.1
+     ],
+     "surfacing_rate_pct": 98.9
+    },
+    "V3": {
+     "n": 38,
+     "richness_mean": 4.12,
+     "richness_sd": 0.18,
+     "ci95": [
+      4.07,
+      4.18
+     ],
+     "surfacing_rate_pct": 99.4
+    },
+    "V4": {
+     "n": 43,
+     "richness_mean": 4.1,
+     "richness_sd": 0.14,
+     "ci95": [
+      4.06,
+      4.14
+     ],
+     "surfacing_rate_pct": 99.5
+    },
+    "V5": {
+     "n": 44,
+     "richness_mean": 4.03,
+     "richness_sd": 0.19,
+     "ci95": [
+      3.98,
+      4.09
+     ],
+     "surfacing_rate_pct": 99.5
+    }
+   },
+   "kruskal_wallis": {
+    "H": 22.03,
+    "p": 0.0002
+   },
+   "pairwise_cohens_d": {
+    "V1_vs_V2": -0.543,
+    "V1_vs_V3": -0.931,
+    "V1_vs_V4": -0.906,
+    "V1_vs_V5": -0.375,
+    "V2_vs_V3": -0.435,
+    "V2_vs_V4": -0.329,
+    "V2_vs_V5": 0.111,
+    "V3_vs_V4": 0.155,
+    "V3_vs_V5": 0.5,
+    "V4_vs_V5": 0.409
+   }
+  },
+  "within_subject": {
+   "Group_A_V1_vs_V2": {
+    "n_pairs": 19,
+    "mean_diff": -0.111,
+    "wilcoxon_W": 28.5,
+    "p": 0.013,
+    "favours": "V2"
+   },
+   "Group_B_V1_vs_V3": {
+    "n_pairs": 16,
+    "mean_diff": -0.096,
+    "wilcoxon_W": 17.5,
+    "p": 0.009,
+    "favours": "V3"
+   },
+   "Group_C_V2_vs_V4": {
+    "n_pairs": 21,
+    "mean_diff": -0.012,
+    "wilcoxon_W": 92.5,
+    "p": 0.6405,
+    "favours": "V4"
+   },
+   "Group_D_V3_vs_V5": {
+    "n_pairs": 22,
+    "mean_diff": 0.12,
+    "wilcoxon_W": 22.0,
+    "p": 0.0019,
+    "favours": "V3"
+   },
+   "Group_E_V4_vs_V5": {
+    "n_pairs": 22,
+    "mean_diff": 0.068,
+    "wilcoxon_W": 67.0,
+    "p": 0.0918,
+    "favours": "V4"
+   }
+  },
+  "heatmap_canonical_alias_merged": {
+   "V1": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 2.9,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 2.9,
+    "dignity_respect": 14.3,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 8.6,
+    "partner_role": 8.6,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 100.0
+   },
+   "V2": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 2.5,
+    "continuity_of_care": 7.5,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 12.5,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 2.5,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 97.5
+   },
+   "V3": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 2.6,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 10.5,
+    "dignity_respect": 10.5,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 2.6,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 97.4
+   },
+   "V4": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 4.7,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 95.3,
+    "intergenerational_patterns": 2.3,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 100.0
+   },
+   "V5": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 9.1,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 6.8,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 6.8,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 100.0
+   }
+  },
+  "heatmap_canonical_as_published_no_alias": {
+   "V1": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 2.9,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 2.9,
+    "dignity_respect": 14.3,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 8.6,
+    "partner_role": 8.6,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   },
+   "V2": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 2.5,
+    "continuity_of_care": 7.5,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 12.5,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 2.5,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   },
+   "V3": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 2.6,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 10.5,
+    "dignity_respect": 10.5,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 2.6,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   },
+   "V4": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 4.7,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 95.3,
+    "intergenerational_patterns": 2.3,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   },
+   "V5": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 9.1,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 6.8,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 6.8,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   }
+  },
+  "heatmap_nine_encoded": {
+   "V1": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 97.1,
+    "trust_distrust_providers": 100.0
+   },
+   "V2": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 92.5,
+    "trust_distrust_providers": 97.5
+   },
+   "V3": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 97.4,
+    "trust_distrust_providers": 97.4
+   },
+   "V4": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 95.3,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 100.0,
+    "trust_distrust_providers": 100.0
+   },
+   "V5": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 95.5,
+    "trust_distrust_providers": 100.0
+   }
+  },
+  "gap_yield": {
+   "V1": {
+    "gaps": 65,
+    "innovations": 85
+   },
+   "V2": {
+    "gaps": 75,
+    "innovations": 102
+   },
+   "V3": {
+    "gaps": 74,
+    "innovations": 95
+   },
+   "V4": {
+    "gaps": 89,
+    "innovations": 107
+   },
+   "V5": {
+    "gaps": 81,
+    "innovations": 109
+   }
+  },
+  "ranking_alias_merged": {
+   "V1": {
+    "quality": 3.97,
+    "coverage": 0.531,
+    "innovation": 4.29,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.484,
+    "rank": 5
+   },
+   "V2": {
+    "quality": 4.05,
+    "coverage": 0.519,
+    "innovation": 4.42,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.528,
+    "rank": 3
+   },
+   "V3": {
+    "quality": 4.12,
+    "coverage": 0.52,
+    "innovation": 4.45,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.562,
+    "rank": 1
+   },
+   "V4": {
+    "quality": 4.1,
+    "coverage": 0.502,
+    "innovation": 4.56,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.554,
+    "rank": 2
+   },
+   "V5": {
+    "quality": 4.03,
+    "coverage": 0.519,
+    "innovation": 4.32,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.499,
+    "rank": 4
+   }
+  },
+  "ranking_as_published_coding": {
+   "V1": {
+    "quality": 3.97,
+    "coverage": 0.448,
+    "innovation": 4.29,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.317,
+    "rank": 5
+   },
+   "V2": {
+    "quality": 4.05,
+    "coverage": 0.438,
+    "innovation": 4.42,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.364,
+    "rank": 3
+   },
+   "V3": {
+    "quality": 4.12,
+    "coverage": 0.439,
+    "innovation": 4.45,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.398,
+    "rank": 1
+   },
+   "V4": {
+    "quality": 4.1,
+    "coverage": 0.419,
+    "innovation": 4.56,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.387,
+    "rank": 2
+   },
+   "V5": {
+    "quality": 4.03,
+    "coverage": 0.436,
+    "innovation": 4.32,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.333,
+    "rank": 4
+   }
+  },
+  "dimension_means_transcript_level": {
+   "V1": {
+    "emotional_depth": 4.36,
+    "specificity": 3.88,
+    "latent_surfacing": 4.26,
+    "narrative_quality": 4.09,
+    "clinical_grounding": 3.24
+   },
+   "V2": {
+    "emotional_depth": 4.37,
+    "specificity": 4.0,
+    "latent_surfacing": 4.32,
+    "narrative_quality": 4.16,
+    "clinical_grounding": 3.41
+   },
+   "V3": {
+    "emotional_depth": 4.53,
+    "specificity": 3.96,
+    "latent_surfacing": 4.39,
+    "narrative_quality": 4.21,
+    "clinical_grounding": 3.52
+   },
+   "V4": {
+    "emotional_depth": 4.45,
+    "specificity": 3.91,
+    "latent_surfacing": 4.39,
+    "narrative_quality": 4.2,
+    "clinical_grounding": 3.54
+   },
+   "V5": {
+    "emotional_depth": 4.37,
+    "specificity": 3.91,
+    "latent_surfacing": 4.36,
+    "narrative_quality": 4.13,
+    "clinical_grounding": 3.37
+   }
+  }
+ },
+ "B_response_based": {
+  "table3": {
+   "set": "B_response_based",
+   "version_stats": {
+    "V1": {
+     "n": 38,
+     "richness_mean": 3.98,
+     "richness_sd": 0.18,
+     "ci95": [
+      3.93,
+      4.04
+     ],
+     "surfacing_rate_pct": 96.2
+    },
+    "V2": {
+     "n": 46,
+     "richness_mean": 4.08,
+     "richness_sd": 0.17,
+     "ci95": [
+      4.03,
+      4.13
+     ],
+     "surfacing_rate_pct": 94.9
+    },
+    "V3": {
+     "n": 44,
+     "richness_mean": 4.12,
+     "richness_sd": 0.19,
+     "ci95": [
+      4.07,
+      4.18
+     ],
+     "surfacing_rate_pct": 95.2
+    },
+    "V4": {
+     "n": 51,
+     "richness_mean": 4.13,
+     "richness_sd": 0.18,
+     "ci95": [
+      4.08,
+      4.18
+     ],
+     "surfacing_rate_pct": 95.0
+    },
+    "V5": {
+     "n": 44,
+     "richness_mean": 4.03,
+     "richness_sd": 0.19,
+     "ci95": [
+      3.98,
+      4.09
+     ],
+     "surfacing_rate_pct": 99.5
+    }
+   },
+   "kruskal_wallis": {
+    "H": 22.55,
+    "p": 0.0002
+   },
+   "pairwise_cohens_d": {
+    "V1_vs_V2": -0.535,
+    "V1_vs_V3": -0.737,
+    "V1_vs_V4": -0.809,
+    "V1_vs_V5": -0.248,
+    "V2_vs_V3": -0.238,
+    "V2_vs_V4": -0.302,
+    "V2_vs_V5": 0.271,
+    "V3_vs_V4": -0.058,
+    "V3_vs_V5": 0.486,
+    "V4_vs_V5": 0.552
+   }
+  },
+  "within_subject": {
+   "Group_A_V1_vs_V2": {
+    "n_pairs": 20,
+    "mean_diff": -0.076,
+    "wilcoxon_W": 47.0,
+    "p": 0.0546,
+    "favours": "V2"
+   },
+   "Group_B_V1_vs_V3": {
+    "n_pairs": 17,
+    "mean_diff": -0.125,
+    "wilcoxon_W": 19.0,
+    "p": 0.0046,
+    "favours": "V3"
+   },
+   "Group_C_V2_vs_V4": {
+    "n_pairs": 22,
+    "mean_diff": 0.016,
+    "wilcoxon_W": 124.0,
+    "p": 0.9493,
+    "favours": "V2"
+   },
+   "Group_D_V3_vs_V5": {
+    "n_pairs": 22,
+    "mean_diff": 0.12,
+    "wilcoxon_W": 33.0,
+    "p": 0.0015,
+    "favours": "V3"
+   },
+   "Group_E_V4_vs_V5": {
+    "n_pairs": 22,
+    "mean_diff": 0.069,
+    "wilcoxon_W": 72.0,
+    "p": 0.0794,
+    "favours": "V4"
+   }
+  },
+  "heatmap_canonical_alias_merged": {
+   "V1": {
+    "autonomy_vs_dependence": 92.1,
+    "body_image_autonomy": 2.6,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 2.6,
+    "dignity_respect": 13.2,
+    "identity_tensions": 97.4,
+    "informal_care_networks": 97.4,
+    "intergenerational_patterns": 7.9,
+    "partner_role": 7.9,
+    "power_dynamics": 97.4,
+    "structural_barriers": 100.0,
+    "trust_distrust": 94.7
+   },
+   "V2": {
+    "autonomy_vs_dependence": 91.3,
+    "body_image_autonomy": 2.2,
+    "continuity_of_care": 6.5,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 10.9,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 93.5,
+    "intergenerational_patterns": 2.2,
+    "partner_role": 0.0,
+    "power_dynamics": 93.5,
+    "structural_barriers": 97.8,
+    "trust_distrust": 97.8
+   },
+   "V3": {
+    "autonomy_vs_dependence": 97.7,
+    "body_image_autonomy": 2.3,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 9.1,
+    "dignity_respect": 9.1,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 93.2,
+    "intergenerational_patterns": 2.3,
+    "partner_role": 0.0,
+    "power_dynamics": 95.5,
+    "structural_barriers": 97.7,
+    "trust_distrust": 90.9
+   },
+   "V4": {
+    "autonomy_vs_dependence": 92.2,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 3.9,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 90.2,
+    "intergenerational_patterns": 2.0,
+    "partner_role": 0.0,
+    "power_dynamics": 94.1,
+    "structural_barriers": 96.1,
+    "trust_distrust": 94.1
+   },
+   "V5": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 9.1,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 6.8,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 6.8,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 100.0
+   }
+  },
+  "heatmap_canonical_as_published_no_alias": {
+   "V1": {
+    "autonomy_vs_dependence": 92.1,
+    "body_image_autonomy": 2.6,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 2.6,
+    "dignity_respect": 13.2,
+    "identity_tensions": 97.4,
+    "informal_care_networks": 97.4,
+    "intergenerational_patterns": 7.9,
+    "partner_role": 7.9,
+    "power_dynamics": 97.4,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   },
+   "V2": {
+    "autonomy_vs_dependence": 91.3,
+    "body_image_autonomy": 2.2,
+    "continuity_of_care": 6.5,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 10.9,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 93.5,
+    "intergenerational_patterns": 2.2,
+    "partner_role": 0.0,
+    "power_dynamics": 93.5,
+    "structural_barriers": 97.8,
+    "trust_distrust": 0.0
+   },
+   "V3": {
+    "autonomy_vs_dependence": 97.7,
+    "body_image_autonomy": 2.3,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 9.1,
+    "dignity_respect": 9.1,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 93.2,
+    "intergenerational_patterns": 2.3,
+    "partner_role": 0.0,
+    "power_dynamics": 95.5,
+    "structural_barriers": 97.7,
+    "trust_distrust": 0.0
+   },
+   "V4": {
+    "autonomy_vs_dependence": 92.2,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 3.9,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 90.2,
+    "intergenerational_patterns": 2.0,
+    "partner_role": 0.0,
+    "power_dynamics": 94.1,
+    "structural_barriers": 96.1,
+    "trust_distrust": 0.0
+   },
+   "V5": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 9.1,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 6.8,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 6.8,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   }
+  },
+  "heatmap_nine_encoded": {
+   "V1": {
+    "autonomy_vs_dependence": 92.1,
+    "emotional_labor_of_care": 97.4,
+    "identity_tensions": 97.4,
+    "informal_care_networks": 97.4,
+    "knowledge_asymmetry": 97.4,
+    "power_dynamics": 97.4,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 92.1,
+    "trust_distrust_providers": 94.7
+   },
+   "V2": {
+    "autonomy_vs_dependence": 91.3,
+    "emotional_labor_of_care": 95.7,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 93.5,
+    "knowledge_asymmetry": 97.8,
+    "power_dynamics": 93.5,
+    "structural_barriers": 97.8,
+    "temporal_pressure": 87.0,
+    "trust_distrust_providers": 97.8
+   },
+   "V3": {
+    "autonomy_vs_dependence": 97.7,
+    "emotional_labor_of_care": 93.2,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 93.2,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 95.5,
+    "structural_barriers": 97.7,
+    "temporal_pressure": 88.6,
+    "trust_distrust_providers": 90.9
+   },
+   "V4": {
+    "autonomy_vs_dependence": 92.2,
+    "emotional_labor_of_care": 96.1,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 90.2,
+    "knowledge_asymmetry": 96.1,
+    "power_dynamics": 94.1,
+    "structural_barriers": 96.1,
+    "temporal_pressure": 96.1,
+    "trust_distrust_providers": 94.1
+   },
+   "V5": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 95.5,
+    "trust_distrust_providers": 100.0
+   }
+  },
+  "gap_yield": {
+   "V1": {
+    "gaps": 69,
+    "innovations": 91
+   },
+   "V2": {
+    "gaps": 86,
+    "innovations": 116
+   },
+   "V3": {
+    "gaps": 82,
+    "innovations": 109
+   },
+   "V4": {
+    "gaps": 102,
+    "innovations": 125
+   },
+   "V5": {
+    "gaps": 81,
+    "innovations": 109
+   }
+  },
+  "ranking_alias_merged": {
+   "V1": {
+    "quality": 3.98,
+    "coverage": 0.511,
+    "innovation": 4.21,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.448,
+    "rank": 5
+   },
+   "V2": {
+    "quality": 4.08,
+    "coverage": 0.496,
+    "innovation": 4.39,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.506,
+    "rank": 3
+   },
+   "V3": {
+    "quality": 4.12,
+    "coverage": 0.498,
+    "innovation": 4.34,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.514,
+    "rank": 1
+   },
+   "V4": {
+    "quality": 4.13,
+    "coverage": 0.477,
+    "innovation": 4.45,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.514,
+    "rank": 2
+   },
+   "V5": {
+    "quality": 4.03,
+    "coverage": 0.519,
+    "innovation": 4.32,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.499,
+    "rank": 4
+   }
+  },
+  "ranking_as_published_coding": {
+   "V1": {
+    "quality": 3.98,
+    "coverage": 0.432,
+    "innovation": 4.21,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.287,
+    "rank": 5
+   },
+   "V2": {
+    "quality": 4.08,
+    "coverage": 0.415,
+    "innovation": 4.39,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.341,
+    "rank": 3
+   },
+   "V3": {
+    "quality": 4.12,
+    "coverage": 0.422,
+    "innovation": 4.34,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.357,
+    "rank": 1
+   },
+   "V4": {
+    "quality": 4.13,
+    "coverage": 0.399,
+    "innovation": 4.45,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.353,
+    "rank": 2
+   },
+   "V5": {
+    "quality": 4.03,
+    "coverage": 0.436,
+    "innovation": 4.32,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.333,
+    "rank": 4
+   }
+  },
+  "dimension_means_transcript_level": {
+   "V1": {
+    "emotional_depth": 4.38,
+    "specificity": 3.92,
+    "latent_surfacing": 4.24,
+    "narrative_quality": 4.14,
+    "clinical_grounding": 3.25
+   },
+   "V2": {
+    "emotional_depth": 4.39,
+    "specificity": 4.02,
+    "latent_surfacing": 4.39,
+    "narrative_quality": 4.13,
+    "clinical_grounding": 3.46
+   },
+   "V3": {
+    "emotional_depth": 4.57,
+    "specificity": 3.98,
+    "latent_surfacing": 4.37,
+    "narrative_quality": 4.21,
+    "clinical_grounding": 3.48
+   },
+   "V4": {
+    "emotional_depth": 4.48,
+    "specificity": 3.97,
+    "latent_surfacing": 4.41,
+    "narrative_quality": 4.23,
+    "clinical_grounding": 3.57
+   },
+   "V5": {
+    "emotional_depth": 4.37,
+    "specificity": 3.91,
+    "latent_surfacing": 4.36,
+    "narrative_quality": 4.14,
+    "clinical_grounding": 3.37
+   }
+  }
+ },
+ "C_gemini_only": {
+  "table3": {
+   "set": "C_gemini_only",
+   "version_stats": {
+    "V1": {
+     "n": 14,
+     "richness_mean": 4.02,
+     "richness_sd": 0.16,
+     "ci95": [
+      3.93,
+      4.1
+     ],
+     "surfacing_rate_pct": 99.2
+    },
+    "V2": {
+     "n": 20,
+     "richness_mean": 4.14,
+     "richness_sd": 0.12,
+     "ci95": [
+      4.09,
+      4.19
+     ],
+     "surfacing_rate_pct": 99.4
+    },
+    "V3": {
+     "n": 16,
+     "richness_mean": 4.18,
+     "richness_sd": 0.16,
+     "ci95": [
+      4.1,
+      4.26
+     ],
+     "surfacing_rate_pct": 98.6
+    },
+    "V4": {
+     "n": 27,
+     "richness_mean": 4.14,
+     "richness_sd": 0.13,
+     "ci95": [
+      4.09,
+      4.18
+     ],
+     "surfacing_rate_pct": 99.2
+    },
+    "V5": {
+     "n": 23,
+     "richness_mean": 4.1,
+     "richness_sd": 0.13,
+     "ci95": [
+      4.05,
+      4.16
+     ],
+     "surfacing_rate_pct": 99.0
+    }
+   },
+   "kruskal_wallis": {
+    "H": 11.17,
+    "p": 0.0247
+   },
+   "pairwise_cohens_d": {
+    "V1_vs_V2": -0.876,
+    "V1_vs_V3": -0.997,
+    "V1_vs_V4": -0.855,
+    "V1_vs_V5": -0.59,
+    "V2_vs_V3": -0.303,
+    "V2_vs_V4": 0.009,
+    "V2_vs_V5": 0.282,
+    "V3_vs_V4": 0.308,
+    "V3_vs_V5": 0.534,
+    "V4_vs_V5": 0.266
+   }
+  },
+  "within_subject": {
+   "Group_A_V1_vs_V2": {
+    "n_pairs": 7,
+    "mean_diff": -0.173,
+    "wilcoxon_W": 0.0,
+    "p": 0.0312,
+    "favours": "V2"
+   },
+   "Group_B_V1_vs_V3": {
+    "n_pairs": 7,
+    "mean_diff": -0.091,
+    "wilcoxon_W": 4.5,
+    "p": 0.125,
+    "favours": "V3"
+   },
+   "Group_C_V2_vs_V4": {
+    "n_pairs": 13,
+    "mean_diff": 0.045,
+    "wilcoxon_W": 19.5,
+    "p": 0.1367,
+    "favours": "V2"
+   },
+   "Group_D_V3_vs_V5": {
+    "n_pairs": 9,
+    "mean_diff": 0.101,
+    "wilcoxon_W": 4.0,
+    "p": 0.0547,
+    "favours": "V3"
+   },
+   "Group_E_V4_vs_V5": {
+    "n_pairs": 14,
+    "mean_diff": 0.075,
+    "wilcoxon_W": 28.0,
+    "p": 0.1239,
+    "favours": "V4"
+   }
+  },
+  "heatmap_canonical_alias_merged": {
+   "V1": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 7.1,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 7.1,
+    "dignity_respect": 28.6,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 14.3,
+    "partner_role": 14.3,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 100.0
+   },
+   "V2": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 5.0,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 20.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 5.0,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 100.0
+   },
+   "V3": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 6.2,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 12.5,
+    "dignity_respect": 25.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 0.0,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 93.8
+   },
+   "V4": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 3.7,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 92.6,
+    "intergenerational_patterns": 0.0,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 100.0
+   },
+   "V5": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 8.7,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 8.7,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 4.3,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 100.0
+   }
+  },
+  "heatmap_canonical_as_published_no_alias": {
+   "V1": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 7.1,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 7.1,
+    "dignity_respect": 28.6,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 14.3,
+    "partner_role": 14.3,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   },
+   "V2": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 5.0,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 20.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 5.0,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   },
+   "V3": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 6.2,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 12.5,
+    "dignity_respect": 25.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 0.0,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   },
+   "V4": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 0.0,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 3.7,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 92.6,
+    "intergenerational_patterns": 0.0,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   },
+   "V5": {
+    "autonomy_vs_dependence": 100.0,
+    "body_image_autonomy": 0.0,
+    "continuity_of_care": 8.7,
+    "digital_information_seeking": 0.0,
+    "dignity_respect": 8.7,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "intergenerational_patterns": 4.3,
+    "partner_role": 0.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "trust_distrust": 0.0
+   }
+  },
+  "heatmap_nine_encoded": {
+   "V1": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 92.9,
+    "trust_distrust_providers": 100.0
+   },
+   "V2": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 95.0,
+    "trust_distrust_providers": 100.0
+   },
+   "V3": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 93.8,
+    "trust_distrust_providers": 93.8
+   },
+   "V4": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 92.6,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 100.0,
+    "trust_distrust_providers": 100.0
+   },
+   "V5": {
+    "autonomy_vs_dependence": 100.0,
+    "emotional_labor_of_care": 100.0,
+    "identity_tensions": 100.0,
+    "informal_care_networks": 100.0,
+    "knowledge_asymmetry": 100.0,
+    "power_dynamics": 100.0,
+    "structural_barriers": 100.0,
+    "temporal_pressure": 91.3,
+    "trust_distrust_providers": 100.0
+   }
+  },
+  "gap_yield": {
+   "V1": {
+    "gaps": 26,
+    "innovations": 34
+   },
+   "V2": {
+    "gaps": 38,
+    "innovations": 51
+   },
+   "V3": {
+    "gaps": 30,
+    "innovations": 36
+   },
+   "V4": {
+    "gaps": 54,
+    "innovations": 65
+   },
+   "V5": {
+    "gaps": 41,
+    "innovations": 56
+   }
+  },
+  "ranking_alias_merged": {
+   "V1": {
+    "quality": 4.02,
+    "coverage": 0.559,
+    "innovation": 4.29,
+    "breadth": 0.58,
+    "blind_spots_lt20": 5,
+    "composite": 3.602,
+    "rank": 2
+   },
+   "V2": {
+    "quality": 4.14,
+    "coverage": 0.525,
+    "innovation": 4.45,
+    "breadth": 0.58,
+    "blind_spots_lt20": 5,
+    "composite": 3.64,
+    "rank": 1
+   },
+   "V3": {
+    "quality": 4.18,
+    "coverage": 0.531,
+    "innovation": 4.12,
+    "breadth": 0.58,
+    "blind_spots_lt20": 5,
+    "composite": 3.599,
+    "rank": 3
+   },
+   "V4": {
+    "quality": 4.14,
+    "coverage": 0.497,
+    "innovation": 4.41,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.534,
+    "rank": 4
+   },
+   "V5": {
+    "quality": 4.1,
+    "coverage": 0.518,
+    "innovation": 4.22,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.506,
+    "rank": 5
+   }
+  },
+  "ranking_as_published_coding": {
+   "V1": {
+    "quality": 4.02,
+    "coverage": 0.476,
+    "innovation": 4.29,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.435,
+    "rank": 3
+   },
+   "V2": {
+    "quality": 4.14,
+    "coverage": 0.442,
+    "innovation": 4.45,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.473,
+    "rank": 1
+   },
+   "V3": {
+    "quality": 4.18,
+    "coverage": 0.453,
+    "innovation": 4.12,
+    "breadth": 0.5,
+    "blind_spots_lt20": 6,
+    "composite": 3.438,
+    "rank": 2
+   },
+   "V4": {
+    "quality": 4.14,
+    "coverage": 0.414,
+    "innovation": 4.41,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.367,
+    "rank": 4
+   },
+   "V5": {
+    "quality": 4.1,
+    "coverage": 0.435,
+    "innovation": 4.22,
+    "breadth": 0.42,
+    "blind_spots_lt20": 7,
+    "composite": 3.339,
+    "rank": 5
+   }
+  },
+  "dimension_means_transcript_level": {
+   "V1": {
+    "emotional_depth": 4.48,
+    "specificity": 3.83,
+    "latent_surfacing": 4.33,
+    "narrative_quality": 4.17,
+    "clinical_grounding": 3.28
+   },
+   "V2": {
+    "emotional_depth": 4.49,
+    "specificity": 4.01,
+    "latent_surfacing": 4.4,
+    "narrative_quality": 4.25,
+    "clinical_grounding": 3.53
+   },
+   "V3": {
+    "emotional_depth": 4.58,
+    "specificity": 3.95,
+    "latent_surfacing": 4.48,
+    "narrative_quality": 4.32,
+    "clinical_grounding": 3.56
+   },
+   "V4": {
+    "emotional_depth": 4.51,
+    "specificity": 3.9,
+    "latent_surfacing": 4.4,
+    "narrative_quality": 4.26,
+    "clinical_grounding": 3.61
+   },
+   "V5": {
+    "emotional_depth": 4.48,
+    "specificity": 3.91,
+    "latent_surfacing": 4.41,
+    "narrative_quality": 4.2,
+    "clinical_grounding": 3.49
+   }
+  }
+ },
+ "canonical_dimensions_not_persona_encoded": [
+  "body_image_autonomy",
+  "continuity_of_care",
+  "digital_information_seeking",
+  "dignity_respect",
+  "intergenerational_patterns",
+  "partner_role"
+ ],
+ "refinement_like_for_like": {
+  "published_V4_all_60": {
+   "V4_set": "all 60 sessions (as published)",
+   "V4_n": 60,
+   "V4_richness": 2.99,
+   "V4_surfacing_pct": 80.7,
+   "V4_R1_n": 50,
+   "V4_R1_richness": 4.09,
+   "V4_R1_surfacing_pct": 98.9,
+   "delta_richness_pct": 36.9,
+   "mann_whitney_U": 1103.5,
+   "p": 0.0174,
+   "cohens_d": 0.833,
+   "V4_dimension_means": {
+    "emotional_depth": 3.24,
+    "specificity": 2.86,
+    "latent_surfacing": 3.2,
+    "narrative_quality": 3.07,
+    "clinical_grounding": 2.58
+   },
+   "V4_R1_dimension_means": {
+    "emotional_depth": 4.49,
+    "specificity": 3.85,
+    "latent_surfacing": 4.42,
+    "narrative_quality": 4.19,
+    "clinical_grounding": 3.5
+   }
+  },
+  "A_design_based": {
+   "V4_set": "V4 without gpt-5-mini sessions",
+   "V4_n": 43,
+   "V4_richness": 4.1,
+   "V4_surfacing_pct": 99.5,
+   "V4_R1_n": 50,
+   "V4_R1_richness": 4.09,
+   "V4_R1_surfacing_pct": 98.9,
+   "delta_richness_pct": -0.1,
+   "mann_whitney_U": 1103.5,
+   "p": 0.8291,
+   "cohens_d": -0.036,
+   "V4_dimension_means": {
+    "emotional_depth": 4.45,
+    "specificity": 3.91,
+    "latent_surfacing": 4.39,
+    "narrative_quality": 4.2,
+    "clinical_grounding": 3.54
+   },
+   "V4_R1_dimension_means": {
+    "emotional_depth": 4.49,
+    "specificity": 3.85,
+    "latent_surfacing": 4.42,
+    "narrative_quality": 4.19,
+    "clinical_grounding": 3.5
+   }
+  },
+  "B_response_based": {
+   "V4_set": "V4 non-empty transcripts, empty responses dropped",
+   "V4_n": 51,
+   "V4_richness": 4.13,
+   "V4_surfacing_pct": 95.0,
+   "V4_R1_n": 50,
+   "V4_R1_richness": 4.09,
+   "V4_R1_surfacing_pct": 98.9,
+   "delta_richness_pct": -1.0,
+   "mann_whitney_U": 1429.5,
+   "p": 0.2955,
+   "cohens_d": -0.234,
+   "V4_dimension_means": {
+    "emotional_depth": 4.48,
+    "specificity": 3.97,
+    "latent_surfacing": 4.41,
+    "narrative_quality": 4.23,
+    "clinical_grounding": 3.57
+   },
+   "V4_R1_dimension_means": {
+    "emotional_depth": 4.49,
+    "specificity": 3.85,
+    "latent_surfacing": 4.42,
+    "narrative_quality": 4.19,
+    "clinical_grounding": 3.5
+   }
+  },
+  "C_gemini_only": {
+   "V4_set": "V4 gemini-voiced sessions (same model as V4_R1)",
+   "V4_n": 27,
+   "V4_richness": 4.14,
+   "V4_surfacing_pct": 99.2,
+   "V4_R1_n": 50,
+   "V4_R1_richness": 4.09,
+   "V4_R1_surfacing_pct": 98.9,
+   "delta_richness_pct": -1.0,
+   "mann_whitney_U": 783.0,
+   "p": 0.2509,
+   "cohens_d": -0.297,
+   "V4_dimension_means": {
+    "emotional_depth": 4.51,
+    "specificity": 3.9,
+    "latent_surfacing": 4.4,
+    "narrative_quality": 4.26,
+    "clinical_grounding": 3.61
+   },
+   "V4_R1_dimension_means": {
+    "emotional_depth": 4.49,
+    "specificity": 3.85,
+    "latent_surfacing": 4.42,
+    "narrative_quality": 4.19,
+    "clinical_grounding": 3.5
+   }
+  },
+  "V4_R1_persona_model": {
+   "(blank → code default gemini-3.1-flash-lite-preview)": 50
+  },
+  "V4_R1_empty_responses": 0,
+  "surfacing_arithmetic": {
+   "V4_published_pct": 80.7,
+   "V4_nonzero_sessions": 51,
+   "V4_nonzero_mean_surfacing_pct": 95.0
+  }
+ },
+ "inter_rater": {
+  "n_published": 30,
+  "icc21_published": 0.903,
+  "alpha_simplified_published_composite": 0.901,
+  "empty_transcripts": [
+   "S_077",
+   "S_121",
+   "S_177",
+   "S_106",
+   "S_122",
+   "S_228"
+  ],
+  "n_nonempty": 24,
+  "icc21_nonempty": 0.141,
+  "alpha_simplified_nonempty_composite": 0.105,
+  "by_dimension_nonempty": {
+   "emotional_depth": {
+    "icc21_published": 0.903,
+    "icc21_nonempty": 0.172,
+    "alpha_simplified_nonempty": 0.162
+   },
+   "specificity": {
+    "icc21_published": 0.879,
+    "icc21_nonempty": 0.191,
+    "alpha_simplified_nonempty": 0.139
+   },
+   "latent_surfacing": {
+    "icc21_published": 0.91,
+    "icc21_nonempty": 0.058,
+    "alpha_simplified_nonempty": 0.055
+   },
+   "narrative_quality": {
+    "icc21_published": 0.846,
+    "icc21_nonempty": 0.107,
+    "alpha_simplified_nonempty": 0.045
+   },
+   "clinical_grounding": {
+    "icc21_published": 0.854,
+    "icc21_nonempty": 0.331,
+    "alpha_simplified_nonempty": 0.27
+   }
+  },
+  "pairwise_spearman_nonempty_composite": {
+   "anthropic_vs_google": {
+    "rho": 0.563,
+    "p": 0.0042
+   },
+   "anthropic_vs_openai": {
+    "rho": 0.398,
+    "p": 0.0543
+   },
+   "google_vs_openai": {
+    "rho": 0.432,
+    "p": 0.0352
+   }
+  },
+  "empty_transcripts_model": {
+   "S_077": "openai/gpt-5-mini-2025-08-07",
+   "S_121": "openai/gpt-5-mini-2025-08-07",
+   "S_177": "openai/gpt-5-mini-2025-08-07",
+   "S_106": "openai/gpt-5-mini-2025-08-07",
+   "S_122": "openai/gpt-5-mini-2025-08-07",
+   "S_228": "openai/gpt-5-mini-2025-08-07"
+  }
+ },
+ "needs_insights": {
+  "published_all_sessions": {
+   "V1": {
+    "sessions": 60,
+    "pairs_total": 1383,
+    "neither": 452,
+    "needs_pct_of_classified": 1.5,
+    "insights_pct_of_classified": 40.6,
+    "mixed_pct_of_classified": 57.9,
+    "needs_pct_of_all_pairs": 1.0,
+    "insights_pct_of_all_pairs": 27.3,
+    "insights_to_needs_ratio": 27.0
+   },
+   "V2": {
+    "sessions": 60,
+    "pairs_total": 1055,
+    "neither": 248,
+    "needs_pct_of_classified": 2.4,
+    "insights_pct_of_classified": 29.6,
+    "mixed_pct_of_classified": 68.0,
+    "needs_pct_of_all_pairs": 1.8,
+    "insights_pct_of_all_pairs": 22.7,
+    "insights_to_needs_ratio": 12.6
+   },
+   "V3": {
+    "sessions": 60,
+    "pairs_total": 1085,
+    "neither": 298,
+    "needs_pct_of_classified": 2.4,
+    "insights_pct_of_classified": 32.8,
+    "mixed_pct_of_classified": 64.8,
+    "needs_pct_of_all_pairs": 1.8,
+    "insights_pct_of_all_pairs": 23.8,
+    "insights_to_needs_ratio": 13.6
+   },
+   "V4": {
+    "sessions": 60,
+    "pairs_total": 1168,
+    "neither": 234,
+    "needs_pct_of_classified": 1.3,
+    "insights_pct_of_classified": 19.1,
+    "mixed_pct_of_classified": 79.7,
+    "needs_pct_of_all_pairs": 1.0,
+    "insights_pct_of_all_pairs": 15.2,
+    "insights_to_needs_ratio": 14.8
+   },
+   "V5": {
+    "sessions": 60,
+    "pairs_total": 1487,
+    "neither": 330,
+    "needs_pct_of_classified": 1.3,
+    "insights_pct_of_classified": 28.7,
+    "mixed_pct_of_classified": 70.0,
+    "needs_pct_of_all_pairs": 1.0,
+    "insights_pct_of_all_pairs": 22.3,
+    "insights_to_needs_ratio": 22.1
+   },
+   "V4_R1": {
+    "sessions": 50,
+    "pairs_total": 1145,
+    "neither": 0,
+    "needs_pct_of_classified": 0.4,
+    "insights_pct_of_classified": 20.8,
+    "mixed_pct_of_classified": 78.8,
+    "needs_pct_of_all_pairs": 0.4,
+    "insights_pct_of_all_pairs": 20.8,
+    "insights_to_needs_ratio": 47.6
+   },
+   "V4_ADV": {
+    "sessions": 5,
+    "pairs_total": 80,
+    "neither": 5,
+    "needs_pct_of_classified": 16.0,
+    "insights_pct_of_classified": 16.0,
+    "mixed_pct_of_classified": 68.0,
+    "needs_pct_of_all_pairs": 15.0,
+    "insights_pct_of_all_pairs": 15.0,
+    "insights_to_needs_ratio": 1.0
+   },
+   "overall": {
+    "sessions": 355,
+    "pairs_total": 7403,
+    "neither": 1567,
+    "needs_pct_of_classified": 1.6,
+    "insights_pct_of_classified": 28.0,
+    "mixed_pct_of_classified": 70.3,
+    "needs_pct_of_all_pairs": 1.3,
+    "insights_pct_of_all_pairs": 22.1,
+    "mixed_pct_of_all_pairs": 55.5,
+    "neither_pct_of_all_pairs": 21.2,
+    "insights_to_needs_ratio": 17.03
+   }
+  },
+  "A_design_based_plus_V4R_V4ADV": {
+   "V1": {
+    "sessions": 35,
+    "pairs_total": 919,
+    "neither": 0,
+    "needs_pct_of_classified": 1.5,
+    "insights_pct_of_classified": 41.1,
+    "mixed_pct_of_classified": 57.3,
+    "needs_pct_of_all_pairs": 1.5,
+    "insights_pct_of_all_pairs": 41.1,
+    "insights_to_needs_ratio": 27.0
+   },
+   "V2": {
+    "sessions": 40,
+    "pairs_total": 808,
+    "neither": 5,
+    "needs_pct_of_classified": 2.4,
+    "insights_pct_of_classified": 29.8,
+    "mixed_pct_of_classified": 67.9,
+    "needs_pct_of_all_pairs": 2.4,
+    "insights_pct_of_all_pairs": 29.6,
+    "insights_to_needs_ratio": 12.6
+   },
+   "V3": {
+    "sessions": 38,
+    "pairs_total": 796,
+    "neither": 12,
+    "needs_pct_of_classified": 2.4,
+    "insights_pct_of_classified": 32.9,
+    "mixed_pct_of_classified": 64.7,
+    "needs_pct_of_all_pairs": 2.4,
+    "insights_pct_of_all_pairs": 32.4,
+    "insights_to_needs_ratio": 13.6
+   },
+   "V4": {
+    "sessions": 43,
+    "pairs_total": 937,
+    "neither": 12,
+    "needs_pct_of_classified": 1.3,
+    "insights_pct_of_classified": 19.1,
+    "mixed_pct_of_classified": 79.6,
+    "needs_pct_of_all_pairs": 1.3,
+    "insights_pct_of_all_pairs": 18.9,
+    "insights_to_needs_ratio": 14.8
+   },
+   "V5": {
+    "sessions": 44,
+    "pairs_total": 1156,
+    "neither": 2,
+    "needs_pct_of_classified": 1.3,
+    "insights_pct_of_classified": 28.8,
+    "mixed_pct_of_classified": 69.9,
+    "needs_pct_of_all_pairs": 1.3,
+    "insights_pct_of_all_pairs": 28.7,
+    "insights_to_needs_ratio": 22.1
+   },
+   "V4_R1": {
+    "sessions": 50,
+    "pairs_total": 1145,
+    "neither": 0,
+    "needs_pct_of_classified": 0.4,
+    "insights_pct_of_classified": 20.8,
+    "mixed_pct_of_classified": 78.8,
+    "needs_pct_of_all_pairs": 0.4,
+    "insights_pct_of_all_pairs": 20.8,
+    "insights_to_needs_ratio": 47.6
+   },
+   "V4_ADV": {
+    "sessions": 5,
+    "pairs_total": 80,
+    "neither": 5,
+    "needs_pct_of_classified": 16.0,
+    "insights_pct_of_classified": 16.0,
+    "mixed_pct_of_classified": 68.0,
+    "needs_pct_of_all_pairs": 15.0,
+    "insights_pct_of_all_pairs": 15.0,
+    "insights_to_needs_ratio": 1.0
+   },
+   "overall": {
+    "sessions": 255,
+    "pairs_total": 5841,
+    "neither": 36,
+    "needs_pct_of_classified": 1.7,
+    "insights_pct_of_classified": 28.1,
+    "mixed_pct_of_classified": 70.2,
+    "needs_pct_of_all_pairs": 1.6,
+    "insights_pct_of_all_pairs": 28.0,
+    "mixed_pct_of_all_pairs": 69.8,
+    "neither_pct_of_all_pairs": 0.6,
+    "insights_to_needs_ratio": 17.02
+   }
+  },
+  "note": "percentages 'of classified' exclude pairs labelled NEITHER, as the pipeline and Table 4 do; 'of all pairs' use the Q-R pair column as denominator"
+ },
+ "cost": {
+  "main_phase_interviews_usd": 38.41,
+  "refinement_interviews_usd": 8.53,
+  "n_main": 300,
+  "n_ref": 50,
+  "source": {
+   "main": "transcript metadata",
+   "refinement": "transcript metadata"
+  },
+  "logged_refinement_layer_usd_methodology_log": 0.6371,
+  "lower_bound_total_usd": 47.58,
+  "unlogged": "main-phase quality scoring, service mapping, inter-rater runs, persona narratives, questionnaire generation, needs/insights classification"
+ }
+}
