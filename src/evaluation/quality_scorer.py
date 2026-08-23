@@ -212,7 +212,8 @@ def extract_qr_pairs(transcript: dict, persona: dict, questionnaires: dict) -> l
             "response_text_length": len(turn.get("text", "").split()),
             "journey_stage": transcript.get("persona_journey_stage", ""),
             "risk_level": transcript.get("persona_risk_level", ""),
-            "encoded_latent": list(persona.get("latent_dimensions", {}).keys()) if isinstance(persona.get("latent_dimensions"), dict) else persona.get("latent_dimensions", []),
+            "encoded_latent": (persona.get("latent_dimensions_canonical") or (list(persona.get("latent_dimensions", {}).keys()) if isinstance(persona.get("latent_dimensions"), dict) else persona.get("latent_dimensions", []))),   # canonical twelve when the v2 pool is used (development 5)
+            "persona_model": transcript.get("persona_model"),
             "target_dimensions": all_targets,
         })
 
@@ -220,10 +221,40 @@ def extract_qr_pairs(transcript: dict, persona: dict, questionnaires: dict) -> l
 
 
 def score_transcript(transcript: dict, persona: dict, questionnaires: dict) -> list:
-    """Score all Q-R pairs in a transcript. Returns list of scored records."""
+    """Score all Q-R pairs in a transcript. Returns list of scored records.
+    With an experiment configuration (EXPERIMENT_CONFIG / config/experiment.yaml), the arm's judge panel scores through
+    src.evaluation.judge_client with structured outputs and the reliability block is attached (development 6);
+    set SDL_LEGACY_JUDGE=1 to force the March 2026 single-judge path. A panel failure is an error, not a silent fallback."""
     pairs = extract_qr_pairs(transcript, persona, questionnaires)
     if not pairs:
         return []
+    if os.environ.get("SDL_LEGACY_JUDGE", "0") != "1":
+        from src.config.experiment import current_arm
+        from src.evaluation.judge_panel import score_with_panel
+        arm = current_arm()
+        judges = list(arm.judges) + ([arm.open_rater] if arm.open_rater else [])
+        if not judges:
+            raise RuntimeError(f"Arm {arm.name} has no judges configured")
+        panel = score_with_panel(judges, pairs, session_id=transcript.get("session_id", ""))
+        primary = judges[0].label
+        scored = []
+        for i, pair in enumerate(pairs):
+            r = panel["per_judge"][primary][i] if i < len(panel["per_judge"][primary]) else None
+            if not r:
+                log.warning(f"  {transcript.get('session_id')}: pair {i} ({pair['question_id']}) has no valid score from {primary}")
+                continue
+            record = {"session_id": transcript["session_id"], "question_id": pair["question_id"], "response_text_length": pair["response_text_length"],
+                      "scores": {d: r["scores"][d]["score"] for d in r["scores"]}, "evidence": {d: r["scores"][d]["evidence"] for d in r["scores"]},
+                      "composite_richness": r["composite_richness"], "kbv_dimensions_present": r["kbv_dimensions_present"],
+                      "latent_dimensions_surfaced": r["latent_dimensions_surfaced"], "latent_dimensions_encoded_but_absent": r["latent_dimensions_encoded_but_absent"],
+                      "thematic_areas_covered": r["thematic_areas_covered"], "judge": primary,
+                      "panel": {l: (res[i]["scores"] if i < len(res) and res[i] else None) for l, res in panel["per_judge"].items()},
+                      "panel_composites": {l: (res[i]["composite_richness"] if i < len(res) and res[i] else None) for l, res in panel["per_judge"].items()},
+                      "persona_model": pair.get("persona_model")}
+            scored.append(record)
+        if scored:
+            scored[0]["panel_reliability"] = panel["reliability"]
+        return scored
 
     scored = []
     # Process in batches

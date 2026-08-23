@@ -30,6 +30,14 @@ def load_jsonl(path: str) -> list:
     return records
 
 
+def _normalise_phase(phase):
+    try:
+        from src.questionnaire.ehr_adapter import normalise_phase
+        return normalise_phase(phase)
+    except Exception:
+        return phase
+
+
 def refine_questionnaire(questionnaire: dict, fixes: dict, plan: dict) -> tuple:
     """Apply fixes to questionnaire, return (refined_q, audit_trail)."""
     refined = copy.deepcopy(questionnaire)
@@ -69,8 +77,11 @@ def refine_questionnaire(questionnaire: dict, fixes: dict, plan: dict) -> tuple:
             existing_probes = questions[idx].get("probes", questions[idx].get("follow_ups", []))
             if isinstance(existing_probes, list):
                 new_probe = {
+                    "probe_text": probe["probe_text"],          # key read by the interviewer (development 4)
                     "text": probe["probe_text"],
+                    "probe_type": probe.get("probe_type", "elaboration"),
                     "target_dimension": probe.get("target_dimension", ""),
+                    "target_latent_dimensions": [probe["target_dimension"]] if probe.get("target_dimension") else [],
                     "added_in_refinement": True,
                 }
                 existing_probes.append(new_probe)
@@ -103,9 +114,13 @@ def refine_questionnaire(questionnaire: dict, fixes: dict, plan: dict) -> tuple:
             "question_id": new_qid,
             "question_text": probes[0]["probe_text"],
             "text": probes[0]["probe_text"],
-            "journey_phase": phase,
+            "journey_phase": _normalise_phase(phase),   # filter vocabulary (development 4); raw label kept
+            "journey_phase_raw": phase,
             "target_latent_dimensions": list({p.get("target_dimension", "") for p in probes}),
-            "probes": [{"text": p["probe_text"], "target_dimension": p.get("target_dimension", ""), "added_in_refinement": True} for p in probes[1:]],
+            "probes": [{"probe_text": p["probe_text"], "text": p["probe_text"], "probe_type": p.get("probe_type", "elaboration"),
+                        "target_dimension": p.get("target_dimension", ""),
+                        "target_latent_dimensions": [p["target_dimension"]] if p.get("target_dimension") else [],
+                        "added_in_refinement": True} for p in probes[1:]],
             "refined": True,
             "refinement_action": "new_question",
         }

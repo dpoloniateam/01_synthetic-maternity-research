@@ -246,6 +246,45 @@ VULNERABILITY_PROBES = {
     ],
 }
 
+# Phase vocabulary used by the refiner and by hand-written instruments; normalised before filtering
+# (development 4, 23 Aug 2026: V4_R1's new questions carried phases the filter did not know and were dropped
+# for every persona). "*" means the question applies to every journey stage.
+PHASE_ALIASES = {
+    "preconception": "preconception", "pre-conception": "preconception", "pre_conception": "preconception",
+    "pregnancy": "pregnancy", "antenatal": "pregnancy", "prenatal": "pregnancy", "first_trimester": "pregnancy",
+    "second_trimester": "pregnancy", "third_trimester": "pregnancy",
+    "birth": "birth", "intrapartum": "birth", "labour": "birth", "labor": "birth", "delivery": "birth",
+    "postpartum": "postpartum", "postnatal": "postpartum", "post-partum": "postpartum", "post_partum": "postpartum",
+    "any": "*", "all": "*", "full_journey": "*", "full-journey": "*", "cross-phase": "*", "cross_phase": "*", "crossphase": "*", "*": "*",
+}
+
+
+def normalise_phase(phase) -> str:
+    """Map any phase label to the filter vocabulary (preconception | pregnancy | birth | postpartum | *)."""
+    if phase is None:
+        return "pregnancy"
+    key = str(phase).strip().lower()
+    if key in PHASE_ALIASES:
+        return PHASE_ALIASES[key]
+    for k, v in PHASE_ALIASES.items():
+        if k in key:
+            return v
+    return key
+
+
+def normalise_probe(p):
+    """Probe dicts must expose probe_text (what the interviewer deploys); the refiner wrote `text`."""
+    if isinstance(p, str):
+        return {"probe_text": p, "probe_type": "elaboration", "target_latent_dimensions": []}
+    if isinstance(p, dict):
+        if not p.get("probe_text") and p.get("text"):
+            p["probe_text"] = p["text"]
+        if not p.get("target_latent_dimensions") and p.get("target_dimension"):
+            p["target_latent_dimensions"] = [p["target_dimension"]]
+        p.setdefault("probe_type", "elaboration")
+    return p
+
+
 # Journey stage relevance for question filtering
 STAGE_TO_PHASES = {
     "preconception":     ["preconception"],
@@ -292,10 +331,9 @@ def adapt_questionnaire(base_questions: list, persona: dict) -> dict:
     added_probe_count = 0
 
     for base_q in base_questions:
-        q_phase = base_q.get("journey_phase", "pregnancy")
-
-        # Filter: only include questions relevant to this persona's stage
-        if q_phase not in relevant_phases:
+        q_phase = normalise_phase(base_q.get("journey_phase", base_q.get("phase", "pregnancy")))
+        # Filter: only include questions relevant to this persona's stage ("*" applies to every stage)
+        if q_phase != "*" and q_phase not in relevant_phases:
             continue
 
         q = copy.deepcopy(base_q)
@@ -305,12 +343,10 @@ def adapt_questionnaire(base_questions: list, persona: dict) -> dict:
 
         # Tag all existing probes as "base"; normalise string probes to dicts
         normalised_probes = []
-        for p in q.get("probes", []):
-            if isinstance(p, str):
-                normalised_probes.append({"probe_text": p, "probe_type": "elaboration",
-                                          "target_latent_dimensions": [], "source": "base"})
-            else:
-                p["source"] = "base"
+        for p in list(q.get("probes", [])) + list(q.get("follow_ups", []) if isinstance(q.get("follow_ups"), list) else []):
+            p = normalise_probe(p)
+            if isinstance(p, dict):
+                p.setdefault("source", "refinement" if p.get("added_in_refinement") else "base")
                 normalised_probes.append(p)
         q["probes"] = normalised_probes
 

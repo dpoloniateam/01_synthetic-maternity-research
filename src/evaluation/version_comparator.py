@@ -67,75 +67,30 @@ def cohens_d(vals1, vals2):
 
 
 def kruskal_wallis_h(groups):
-    """Compute Kruskal-Wallis H statistic (simplified)."""
-    all_vals = []
-    for g in groups:
-        for v in g:
-            all_vals.append(v)
-    n = len(all_vals)
-    if n < 2:
+    """Kruskal–Wallis H with tie correction and exact chi-square p-value (scipy.stats.kruskal).
+    Replaces the March 2026 routine (development 7, 23 Aug 2026), which was not tie-corrected, mis-scaled
+    and floored p at 0.001 — on null groups it returned H = 42, p = 0.001 where scipy gives H = 0.28, p = 0.99."""
+    from scipy import stats
+    groups = [list(g) for g in groups if len(g) > 0]
+    if len(groups) < 2 or sum(len(g) for g in groups) < 3:
         return 0, 1.0
-
-    # Rank all values
-    sorted_vals = sorted(range(n), key=lambda i: all_vals[i])
-    ranks = [0] * n
-    for rank, idx in enumerate(sorted_vals):
-        ranks[idx] = rank + 1
-
-    # Split ranks back into groups
-    idx = 0
-    group_ranks = []
-    for g in groups:
-        gr = ranks[idx:idx + len(g)]
-        group_ranks.append(gr)
-        idx += len(g)
-
-    # H statistic
-    k = len(groups)
-    h = (12 / (n * (n + 1))) * sum(
-        len(gr) * (mean(gr) - (n + 1) / 2) ** 2
-        for gr in group_ranks
-    )
-
-    # Approximate p-value using chi-square with k-1 df
-    # Very rough approximation
-    df = k - 1
-    p = max(0.001, 1 - _chi2_cdf(h, df)) if h > 0 else 1.0
-
-    return round(h, 3), round(p, 4)
-
-
-def _chi2_cdf(x, df):
-    """Very rough chi-square CDF approximation."""
-    if x <= 0:
-        return 0
-    # Wilson-Hilferty approximation
-    z = ((x / df) ** (1 / 3) - (1 - 2 / (9 * df))) / math.sqrt(2 / (9 * df))
-    return 0.5 * (1 + math.erf(z / math.sqrt(2)))
+    try:
+        res = stats.kruskal(*groups)
+    except ValueError:          # all values identical
+        return 0, 1.0
+    return round(float(res.statistic), 3), float(res.pvalue)
 
 
 def wilcoxon_signed_rank(diffs):
-    """Simplified Wilcoxon signed-rank test."""
+    """Wilcoxon signed-rank test on paired differences (scipy.stats.wilcoxon; zeros dropped as in the
+    original; exact distribution for small n). Returns (statistic, p)."""
+    from scipy import stats
     diffs = [d for d in diffs if d != 0]
     n = len(diffs)
     if n < 5:
         return 0, 1.0
-
-    abs_diffs = [(abs(d), d) for d in diffs]
-    abs_diffs.sort(key=lambda x: x[0])
-
-    w_plus = sum(i + 1 for i, (_, d) in enumerate(abs_diffs) if d > 0)
-    w_minus = sum(i + 1 for i, (_, d) in enumerate(abs_diffs) if d < 0)
-    w = min(w_plus, w_minus)
-
-    # Normal approximation for n >= 10
-    mu = n * (n + 1) / 4
-    sigma = math.sqrt(n * (n + 1) * (2 * n + 1) / 24)
-    if sigma == 0:
-        return w, 1.0
-    z = (w - mu) / sigma
-    p = 2 * (1 - 0.5 * (1 + math.erf(abs(z) / math.sqrt(2))))
-    return round(z, 3), round(p, 4)
+    res = stats.wilcoxon(diffs)
+    return round(float(res.statistic), 3), float(res.pvalue)
 
 
 def quality_comparison(summaries: list) -> dict:

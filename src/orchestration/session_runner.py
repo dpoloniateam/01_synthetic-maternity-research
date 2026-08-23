@@ -16,6 +16,11 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from src.config.models import tracker, ENV
 from src.orchestration.questionnaire_interview import run_questionnaire_interview
+try:
+    from src.config.experiment import load_experiment
+    from src.provenance.request_cache import get_cache, CostHaltError
+except Exception:  # configuration layer absent
+    load_experiment = None; get_cache = None; CostHaltError = RuntimeError
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)-8s | %(message)s")
 log = logging.getLogger(__name__)
@@ -78,9 +83,16 @@ def run_batch(plan_file: str, output_dir: str, limit: int = 0,
         plan = plan[:limit]
     log.info(f"Will run {len(plan)} sessions (parallel={parallel})")
 
-    # Cost ceiling
+    # Cost ceiling: the experiment's halt (owner's rule, USD 50) when configured; the environment table otherwise
     ceiling = COST_CEILINGS.get(ENV.value, 20.0)
-    log.info(f"Cost ceiling: ${ceiling:.2f} ({ENV.value})")
+    cache = None
+    if get_cache is not None:
+        try:
+            cache = get_cache(); ceiling = cache.meter.halt_usd
+            log.info(f"Provenance run dir: {cache.run_dir}")
+        except Exception as e:
+            log.warning(f"No provenance cache: {e}")
+    log.info(f"Cost ceiling: ${ceiling:.2f}")
 
     # Run sessions
     results = []
@@ -90,10 +102,10 @@ def run_batch(plan_file: str, output_dir: str, limit: int = 0,
     if parallel <= 1:
         # Sequential execution
         for i, session in enumerate(plan):
-            # Cost check
-            cost = tracker.summary()
-            if cost["total_cost_usd"] >= ceiling:
-                log.warning(f"Cost ceiling reached (${cost['total_cost_usd']:.2f} >= ${ceiling:.2f})")
+            # Cost check (provenance meter when present, legacy tracker otherwise)
+            spent = cache.meter.total if cache is not None else tracker.summary()["total_cost_usd"]
+            if spent >= ceiling:
+                log.warning(f"Cost ceiling reached (${spent:.2f} >= ${ceiling:.2f}) — halting; approval required")
                 break
 
             try:
@@ -178,6 +190,12 @@ def run_batch(plan_file: str, output_dir: str, limit: int = 0,
         "version_x_stage": {k: dict(v) for k, v in sorted(vs_dist.items())},
     }
 
+    if cache is not None:
+        try:
+            summary["provenance_cost_usd"] = round(cache.meter.total, 4)
+            summary["provenance_manifest"] = str(cache.manifest({"batch_summary": {k: v for k, v in summary.items() if k != "failed_sessions"}})["run_dir"])
+        except Exception as e:
+            log.warning(f"Manifest not written: {e}")
     # Save summary
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)

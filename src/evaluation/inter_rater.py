@@ -180,34 +180,15 @@ def select_sample(transcripts_dir: Path, plan: list, n: int = 30) -> list:
 
 
 def compute_icc(ratings_matrix: list) -> float:
-    """Compute ICC(2,1) — two-way random, absolute agreement.
-    ratings_matrix: list of [rater1, rater2, rater3] per subject."""
-    n = len(ratings_matrix)
-    k = len(ratings_matrix[0]) if ratings_matrix else 0
-    if n < 2 or k < 2:
+    """ICC(2,1) — two-way random, absolute agreement — via src.evaluation.reliability (development 7)."""
+    from src.evaluation.reliability import icc2_1
+    import math
+    if not ratings_matrix or len(ratings_matrix) < 2 or len(ratings_matrix[0]) < 2:
         return 0
-
-    # Grand mean
-    all_vals = [v for row in ratings_matrix for v in row]
-    grand_mean = sum(all_vals) / len(all_vals)
-
-    # Row means (subjects)
-    row_means = [sum(row) / k for row in ratings_matrix]
-    # Col means (raters)
-    col_means = [sum(ratings_matrix[i][j] for i in range(n)) / n for j in range(k)]
-
-    # Mean squares
-    ms_rows = k * sum((rm - grand_mean) ** 2 for rm in row_means) / max(n - 1, 1)
-    ms_cols = n * sum((cm - grand_mean) ** 2 for cm in col_means) / max(k - 1, 1)
-    ms_error = sum((ratings_matrix[i][j] - row_means[i] - col_means[j] + grand_mean) ** 2
-                    for i in range(n) for j in range(k)) / max((n - 1) * (k - 1), 1)
-
-    # ICC(2,1)
-    denom = ms_rows + (k - 1) * ms_error + k * (ms_cols - ms_error) / n
-    if denom == 0:
+    v = icc2_1(ratings_matrix)
+    if v is None or (isinstance(v, float) and math.isnan(v)):
         return 0
-    icc = (ms_rows - ms_error) / denom
-    return round(max(min(icc, 1.0), -1.0), 3)
+    return round(max(min(v, 1.0), -1.0), 3)
 
 
 def compute_krippendorff_alpha(ratings_matrix: list) -> float:

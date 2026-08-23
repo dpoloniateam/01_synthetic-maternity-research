@@ -1,0 +1,25 @@
+# Azure Container Apps Job — runs one arm of the experiment as a manual job (development 9).
+# az containerapp job create --name sdl2-arm-p --resource-group <rg> --environment <env> --yaml cloud/azure_container_apps_job.yaml
+properties:
+  triggerType: Manual
+  replicaTimeout: 86400
+  replicaRetryLimit: 1
+  template:
+    containers:
+      - name: sdl2
+        image: <registry>.azurecr.io/sdl2:latest
+        args: ["--arm", "P", "--limit", "30", "--repetitions", "3"]
+        resources: {cpu: 1.0, memory: 2Gi}
+        env:
+          - {name: EXPERIMENT_CONFIG, value: config/experiment.yaml}
+          - {name: SDL_RUN_DIR, value: /data/runs/current}
+          - {name: SDL_COST_HALT_USD, value: "50"}
+          - {name: OPENAI_API_KEY, secretRef: openai-api-key}
+          - {name: ANTHROPIC_API_KEY, secretRef: anthropic-api-key}
+          - {name: GOOGLE_API_KEY, secretRef: google-api-key}
+          - {name: XAI_API_KEY, secretRef: xai-api-key}
+          - {name: HF_TOKEN, secretRef: hf-token}
+        volumeMounts:
+          - {volumeName: runs, mountPath: /data}
+    volumes:
+      - {name: runs, storageType: AzureFile, storageName: sdl2-runs}

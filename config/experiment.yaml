@@ -1,0 +1,75 @@
+# Synthetic Design Laboratory 2 — experiment configuration (development 2 of the dry-run report, 23 Aug 2026)
+# The design is data, not code: arms, roles, models, snapshots, regions, caps, savings flags, seeds and repetitions live here.
+# Select an arm with EXPERIMENT_ARM (default below); select this file with EXPERIMENT_CONFIG.
+experiment:
+  name: sdl2
+  version: 1
+  default_arm: P
+  seeds: [11]
+  repetitions: 1
+  cost_halt_usd: 50            # owner's rule: halt and ask above USD 50 cumulative per run
+  output_root: data/runs
+  persona_pool: data/composite_personas/composites_v2.jsonl   # canonical twelve encoded (development 5); v1 pool preserved
+  dimension_universe: canonical_twelve
+
+# Prices are USD per 1M tokens, list, 23 Aug 2026 (Rerun_cost_estimate_v02 §1). price_cached = cached-input rate.
+arms:
+  P:
+    description: proprietary frontier — best model per provider, caching/Batch/Flex on (rule of 23 Aug 2026)
+    persona_voices:
+      - {provider: openai,    model: gpt-5.6-sol,            snapshot: null, region: global, effort: default, max_output_tokens: 2000, flex: true,  cache: true, price_in: 4.00, price_cached: 0.40, price_out: 20.00, retention: "OpenAI API: no training, 30-day abuse retention unless ZDR"}
+      - {provider: anthropic, model: claude-opus-5,          snapshot: null, region: us,     effort: default, max_output_tokens: 2000, cache: true,             price_in: 5.00, price_cached: 0.50, price_out: 25.00, retention: "Anthropic API: no training by default"}
+      - {provider: google,    model: gemini-3.1-pro-preview, snapshot: null, region: global, effort: default, max_output_tokens: 2000, thinking_budget: 4096,   price_in: 2.00, price_cached: 0.50, price_out: 12.00, retention: "Gemini API paid tier: no training; project must be billed"}
+    judges:
+      - {provider: google,    model: gemini-3.1-pro-preview, snapshot: null, region: global, max_output_tokens: 8000, thinking_budget: 4096, structured: true, batch: true,  price_in: 2.00, price_cached: 0.50, price_out: 12.00}
+      - {provider: anthropic, model: claude-opus-5,          snapshot: null, region: us,     max_output_tokens: 8000, structured: true, batch: true, cache: true, price_in: 5.00, price_cached: 0.50, price_out: 25.00}
+    open_rater: null
+    classifier:  {provider: openai,    model: gpt-5.6-sol,            max_output_tokens: 2000, batch: true, structured: true, price_in: 4.00, price_cached: 0.40, price_out: 20.00}
+    mapping:     {provider: google,    model: gemini-3.1-pro-preview, max_output_tokens: 8000, batch: true, structured: true, price_in: 2.00, price_cached: 0.50, price_out: 12.00}
+    generation:  {provider: anthropic, model: claude-fable-5,         max_output_tokens: 32000, price_in: 10.00, price_cached: 1.00, price_out: 50.00}
+    narratives:  {provider: google,    model: gemini-3.1-pro-preview, max_output_tokens: 4000, batch: true, price_in: 2.00, price_cached: 0.50, price_out: 12.00}
+    refinement:  {provider: anthropic, model: claude-fable-5,         max_output_tokens: 32000, price_in: 10.00, price_cached: 1.00, price_out: 50.00}
+    interviewer: scripted
+  P_independent_judge:
+    description: proprietary frontier with an independent judge — voices Sol / Gemini 3.1 Pro / Grok 4.6, judge Opus 5
+    persona_voices:
+      - {provider: openai,    model: gpt-5.6-sol,            max_output_tokens: 2000, flex: true, cache: true, price_in: 4.00, price_cached: 0.40, price_out: 20.00}
+      - {provider: google,    model: gemini-3.1-pro-preview, max_output_tokens: 2000, thinking_budget: 4096, price_in: 2.00, price_cached: 0.50, price_out: 12.00}
+      - {provider: xai,       model: grok-4.6,               max_output_tokens: 2000, price_in: 2.00, price_cached: 0.50, price_out: 6.00, retention: "xAI: data-sharing credit declined; standard terms"}
+    judges:
+      - {provider: anthropic, model: claude-opus-5, max_output_tokens: 8000, structured: true, batch: true, cache: true, price_in: 5.00, price_cached: 0.50, price_out: 25.00}
+    open_rater: null
+    classifier:  {provider: openai, model: gpt-5.6-sol, max_output_tokens: 2000, batch: true, structured: true, price_in: 4.00, price_cached: 0.40, price_out: 20.00}
+    mapping:     {provider: google, model: gemini-3.1-pro-preview, max_output_tokens: 8000, batch: true, structured: true, price_in: 2.00, price_cached: 0.50, price_out: 12.00}
+    generation:  {provider: anthropic, model: claude-fable-5, max_output_tokens: 32000, price_in: 10.00, price_cached: 1.00, price_out: 50.00}
+    narratives:  {provider: google, model: gemini-3.1-pro-preview, max_output_tokens: 4000, batch: true, price_in: 2.00, price_cached: 0.50, price_out: 12.00}
+    refinement:  {provider: anthropic, model: claude-fable-5, max_output_tokens: 32000, price_in: 10.00, price_cached: 1.00, price_out: 50.00}
+    interviewer: scripted
+  O_hosted:
+    description: open frontier served as an API through the Hugging Face router (provider rates, no markup); cheapest live provider
+    persona_voices:
+      - {provider: hf, model: "deepseek-ai/DeepSeek-V4-Pro:cheapest",   base_url: "https://router.huggingface.co/v1", api_key_env: HF_TOKEN, max_output_tokens: 2000, price_in: 1.30, price_cached: 1.30, price_out: 2.60}
+      - {provider: hf, model: "moonshotai/Kimi-K3:cheapest",            base_url: "https://router.huggingface.co/v1", api_key_env: HF_TOKEN, max_output_tokens: 2000, price_in: 2.85, price_cached: 2.85, price_out: 14.25}
+      - {provider: hf, model: "Qwen/Qwen3.5-397B-A17B:cheapest",        base_url: "https://router.huggingface.co/v1", api_key_env: HF_TOKEN, max_output_tokens: 2000, price_in: 0.45, price_cached: 0.45, price_out: 3.00}
+    judges:
+      - {provider: hf, model: "zai-org/GLM-5.2:cheapest", base_url: "https://router.huggingface.co/v1", api_key_env: HF_TOKEN, max_output_tokens: 8000, structured: false, price_in: 0.75, price_cached: 0.75, price_out: 2.40}
+    open_rater: null
+    classifier:  {provider: hf, model: "openai/gpt-oss-120b:cheapest", base_url: "https://router.huggingface.co/v1", api_key_env: HF_TOKEN, max_output_tokens: 2000, price_in: 0.037, price_cached: 0.037, price_out: 0.17}
+    mapping:     {provider: hf, model: "google/gemma-4-31B-it:cheapest", base_url: "https://router.huggingface.co/v1", api_key_env: HF_TOKEN, max_output_tokens: 8000, price_in: 0.13, price_cached: 0.13, price_out: 0.38}
+    generation:  {provider: hf, model: "deepseek-ai/DeepSeek-V4-Pro:cheapest", base_url: "https://router.huggingface.co/v1", api_key_env: HF_TOKEN, max_output_tokens: 32000, price_in: 1.30, price_cached: 1.30, price_out: 2.60}
+    narratives:  {provider: hf, model: "google/gemma-4-31B-it:cheapest", base_url: "https://router.huggingface.co/v1", api_key_env: HF_TOKEN, max_output_tokens: 4000, price_in: 0.13, price_cached: 0.13, price_out: 0.38}
+    refinement:  {provider: hf, model: "moonshotai/Kimi-K3:cheapest", base_url: "https://router.huggingface.co/v1", api_key_env: HF_TOKEN, max_output_tokens: 32000, price_in: 2.85, price_cached: 2.85, price_out: 14.25}
+    interviewer: scripted
+  O_self:
+    description: open weights self-hosted (Ollama on this machine or a rented GPU) — pilot only on the laptop
+    persona_voices:
+      - {provider: ollama, model: "qwen3.5:9b", base_url: "http://localhost:11434/v1", api_key_env: OLLAMA_API_KEY, max_output_tokens: 2000, price_in: 0, price_cached: 0, price_out: 0}
+    judges:
+      - {provider: ollama, model: "gemma4", base_url: "http://localhost:11434/v1", api_key_env: OLLAMA_API_KEY, max_output_tokens: 8000, structured: false, price_in: 0, price_cached: 0, price_out: 0}
+    open_rater: null
+    classifier:  {provider: ollama, model: "qwen3.5:9b", base_url: "http://localhost:11434/v1", api_key_env: OLLAMA_API_KEY, max_output_tokens: 2000, price_in: 0, price_cached: 0, price_out: 0}
+    mapping:     {provider: ollama, model: "qwen3.5:9b", base_url: "http://localhost:11434/v1", api_key_env: OLLAMA_API_KEY, max_output_tokens: 4000, price_in: 0, price_cached: 0, price_out: 0}
+    generation:  {provider: ollama, model: "qwen3.5:9b", base_url: "http://localhost:11434/v1", api_key_env: OLLAMA_API_KEY, max_output_tokens: 8000, price_in: 0, price_cached: 0, price_out: 0}
+    narratives:  {provider: ollama, model: "qwen3.5:9b", base_url: "http://localhost:11434/v1", api_key_env: OLLAMA_API_KEY, max_output_tokens: 2000, price_in: 0, price_cached: 0, price_out: 0}
+    refinement:  {provider: ollama, model: "qwen3.5:9b", base_url: "http://localhost:11434/v1", api_key_env: OLLAMA_API_KEY, max_output_tokens: 8000, price_in: 0, price_cached: 0, price_out: 0}
+    interviewer: scripted

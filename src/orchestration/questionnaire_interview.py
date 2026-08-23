@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv(".env", override=True)
 
 from src.orchestration.interviewer_agent import QuestionnaireInterviewer
-from src.orchestration.persona_agent import PersonaAgent
+from src.orchestration.persona_agent import PersonaAgent, EmptyResponseError
 from src.orchestration.transcript_builder import TranscriptBuilder
 from src.questionnaire.ehr_adapter import adapt_questionnaire, adapt_with_universal_probes
 
@@ -86,7 +86,7 @@ def run_questionnaire_interview(session_config: dict, output_dir: str = "data/tr
 
     # 1. Load persona
     try:
-        persona = _load_persona(persona_id)
+        persona = _load_persona(persona_id, session_config.get("persona_pool", "data/composite_personas/composites.jsonl"))
     except Exception as e:
         log.error(f"  Failed to load persona {persona_id}: {e}")
         return {"session_id": session_id, "status": "failed", "error": str(e)}
@@ -112,7 +112,7 @@ def run_questionnaire_interview(session_config: dict, output_dir: str = "data/tr
     persona_model_str = session_config.get("persona_model", "google/gemini-3.1-flash-lite-preview")
     p_provider, p_model = _parse_model_string(persona_model_str)
 
-    persona_agent = PersonaAgent(persona, p_provider, p_model)
+    persona_agent = PersonaAgent(persona, p_provider, p_model, session_id=session_id)
 
     # 4. Create transcript builder
     tb = TranscriptBuilder(session_config, persona)
@@ -155,6 +155,7 @@ def run_questionnaire_interview(session_config: dict, output_dir: str = "data/tr
                     resp,
                     responding_to=action.get("question_id"),
                     in_tok=in_tok, out_tok=out_tok,
+                    meta=persona_agent.last_usage,
                 )
                 last_response = resp
 
@@ -170,6 +171,7 @@ def run_questionnaire_interview(session_config: dict, output_dir: str = "data/tr
                     resp,
                     responding_to=action.get("probe_id"),
                     in_tok=in_tok, out_tok=out_tok,
+                    meta=persona_agent.last_usage,
                 )
                 last_response = resp
 
@@ -206,8 +208,12 @@ def _call_with_retry(agent: PersonaAgent, message: str, max_retries: int = MAX_R
     for attempt in range(max_retries):
         try:
             return agent.respond(message)
+        except EmptyResponseError:
+            raise
         except Exception as e:
             last_error = e
+            if "Cost halt" in str(e):
+                raise
             if attempt < max_retries - 1:
                 wait = 2 ** attempt
                 log.warning(f"  Retry {attempt+1}/{max_retries} after {wait}s: {e}")

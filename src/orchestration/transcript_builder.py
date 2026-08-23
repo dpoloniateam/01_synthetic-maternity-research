@@ -64,8 +64,9 @@ class TranscriptBuilder:
 
     def add_persona_turn(self, text: str, responding_to: str = None,
                          in_tok: int = 0, out_tok: int = 0,
-                         is_catch_all: bool = False):
-        """Record a persona response turn."""
+                         is_catch_all: bool = False, meta: dict = None):
+        """Record a persona response turn (with finish reason, snapshot, cached/reasoning tokens — development 3)."""
+        meta = meta or {}
         self.turns.append({
             "turn_number": len(self.turns) + 1,
             "role": "persona",
@@ -74,6 +75,13 @@ class TranscriptBuilder:
             "responding_to_question_id": responding_to,
             "input_tokens": in_tok,
             "output_tokens": out_tok,
+            "empty": not (text or "").strip(),
+            "finish_reason": meta.get("finish_reason"),
+            "truncated": bool(meta.get("truncated")),
+            "model_snapshot": meta.get("snapshot"),
+            "request_id": meta.get("request_id"),
+            "cached_tokens": meta.get("cached_tokens"),
+            "reasoning_tokens": meta.get("reasoning_tokens", meta.get("thinking_tokens")),
         })
         self.total_input_tokens += in_tok
         self.total_output_tokens += out_tok

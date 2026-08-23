@@ -1,0 +1,27 @@
+{
+  "jobDefinitionName": "sdl2-arm-p",
+  "type": "container",
+  "platformCapabilities": ["FARGATE"],
+  "containerProperties": {
+    "image": "<account>.dkr.ecr.eu-central-1.amazonaws.com/sdl2:latest",
+    "command": ["--arm", "P", "--limit", "30", "--repetitions", "3"],
+    "resourceRequirements": [{"type": "VCPU", "value": "1"}, {"type": "MEMORY", "value": "2048"}],
+    "environment": [
+      {"name": "EXPERIMENT_CONFIG", "value": "config/experiment.yaml"},
+      {"name": "SDL_RUN_DIR", "value": "/data/runs/current"},
+      {"name": "SDL_COST_HALT_USD", "value": "50"}
+    ],
+    "secrets": [
+      {"name": "OPENAI_API_KEY", "valueFrom": "arn:aws:secretsmanager:eu-central-1:<account>:secret:sdl2/openai"},
+      {"name": "ANTHROPIC_API_KEY", "valueFrom": "arn:aws:secretsmanager:eu-central-1:<account>:secret:sdl2/anthropic"},
+      {"name": "GOOGLE_API_KEY", "valueFrom": "arn:aws:secretsmanager:eu-central-1:<account>:secret:sdl2/google"},
+      {"name": "HF_TOKEN", "valueFrom": "arn:aws:secretsmanager:eu-central-1:<account>:secret:sdl2/hf"}
+    ],
+    "networkConfiguration": {"assignPublicIp": "ENABLED"},
+    "executionRoleArn": "arn:aws:iam::<account>:role/sdl2-batch-execution",
+    "jobRoleArn": "arn:aws:iam::<account>:role/sdl2-batch-job",
+    "logConfiguration": {"logDriver": "awslogs"}
+  },
+  "timeout": {"attemptDurationSeconds": 86400},
+  "retryStrategy": {"attempts": 1}
+}

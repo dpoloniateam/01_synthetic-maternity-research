@@ -1,0 +1,28 @@
+# Google Cloud Run Job (development 9). gcloud run jobs replace cloud/cloud_run_job.yaml --region europe-west1
+apiVersion: run.googleapis.com/v1
+kind: Job
+metadata:
+  name: sdl2-arm-p
+spec:
+  template:
+    spec:
+      taskCount: 1
+      template:
+        spec:
+          maxRetries: 0
+          timeoutSeconds: 86400
+          containers:
+            - image: europe-west1-docker.pkg.dev/<project>/sdl2/sdl2:latest
+              args: ["--arm", "P", "--limit", "30", "--repetitions", "3"]
+              resources: {limits: {cpu: "1", memory: "2Gi"}}
+              env:
+                - {name: EXPERIMENT_CONFIG, value: config/experiment.yaml}
+                - {name: SDL_RUN_DIR, value: /data/runs/current}
+                - {name: SDL_COST_HALT_USD, value: "50"}
+                - {name: OPENAI_API_KEY, valueFrom: {secretKeyRef: {name: openai-api-key, key: latest}}}
+                - {name: ANTHROPIC_API_KEY, valueFrom: {secretKeyRef: {name: anthropic-api-key, key: latest}}}
+                - {name: GOOGLE_API_KEY, valueFrom: {secretKeyRef: {name: google-api-key, key: latest}}}
+              volumeMounts: [{name: runs, mountPath: /data}]
+          volumes:
+            - name: runs
+              csi: {driver: gcsfuse.run.googleapis.com, volumeAttributes: {bucketName: sdl2-runs}}
